@@ -1,0 +1,32 @@
+HONDA ACCORD MOTOR PROJECT — REFERENCE LIBRARY
+
+Open index.html for the offline diagram library.
+
+To feed the teardown skill:
+1. Supply 01_Research/Honda_F22_Engine_Skill_Brief.md (or the .txt copy).
+2. Supply the ten original photos in ../Pictures of engine/.
+3. Supply the relevant diagrams in 02_OEM_Diagrams/ and their same-name JSON
+   parts tables. Catalog_Parts.csv combines all 489 catalog entries.
+4. Use the service supplement and cited factory manual for measurements and
+   operation. The exploded drawings are not dimensioned manufacturing plans.
+
+CONTENTS
+- 20 full-size OEM diagram PNGs.
+- 20 matching JSON parts tables, with callouts and source URLs.
+- Research brief in Markdown and plain text.
+- 280-page 1996 Honda Accord Coupe/Aerodeck service supplement PDF.
+- Combined catalog CSV, source reading list, download manifest and checksums.
+
+The photographed engine is consistent with SOHC VTEC, but its stamped code
+is still unconfirmed. F22B1 / 1994 US Accord EX is a provisional reference.
+The KL 4AT catalog does not establish your donor engine's market or gearbox.
+The 1996 supplement is NOT the complete 1994–1997 shop manual.
+
+CATALOG NOTES
+Require Quantity means installed requirement; Package Quantity is a sales
+quantity. Alternative sizes, bearing grades, suppliers and replacement part
+numbers must not be modeled as additional simultaneously installed parts.
+Original photos remain in your existing Pictures of engine folder.
+
+Package destination:
+/Users/juannicolasnievesramos/Desktop/Honda Accord Motor Project/Honda Reference Library

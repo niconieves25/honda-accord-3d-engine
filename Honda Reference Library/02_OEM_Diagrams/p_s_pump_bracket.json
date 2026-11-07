@@ -1,0 +1,250 @@
+{
+  "slug": "p_s_pump_bracket",
+  "label": "Power-Steering Pump – Bracket",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/p_s_pump_bracket.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/9736e477fa837ec365c2626728398362.png",
+  "downloaded_at": "2026-11-07T01:16:28.894Z",
+  "image_file": "02_OEM_Diagrams/p_s_pump_bracket.png",
+  "parts_file": "02_OEM_Diagrams/p_s_pump_bracket.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Hanger, Engine",
+      "details": "",
+      "part_number": "11911-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hanger~engine~11911-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Stay B, Engine Harness",
+      "details": "",
+      "part_number": "32750-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~engine~harness~32750-p0a-a00.html"
+    },
+    {
+      "callout": "3",
+      "description": "Pump Sub-Assy., Power Steering (REMAN PART INCLUDES PULLEY)",
+      "details": "",
+      "part_number": "56110-P0A-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pump~sub~assy~56110-p0a-013.html"
+    },
+    {
+      "callout": "4",
+      "description": "Spacer, Pump Seal",
+      "details": "",
+      "part_number": "56167-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spacer~pump~seal~56167-py3-000.html"
+    },
+    {
+      "callout": "5",
+      "description": "Pulley, Power Steering Pump",
+      "details": "Replaced By: 56483-P02-305",
+      "part_number": "56483-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-p0a-003.html"
+    },
+    {
+      "callout": "6",
+      "description": "Belt, Power Steering Pump (BANDO)",
+      "details": "Replaced By: 56992-P0A-J03",
+      "part_number": "56992-P0A-J01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~belt~power~steering~56992-p0a-j01.html"
+    },
+    {
+      "callout": "7",
+      "description": "Bracket, Power Steering Pump",
+      "details": "",
+      "part_number": "56994-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~power~steering~56994-p0a-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Bolt, Power Steering Pump Adjusting",
+      "details": "",
+      "part_number": "56995-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~power~steering~56995-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Bolt, Special (8X62)",
+      "details": "",
+      "part_number": "56996-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~plate~based~56996-p0a-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Stay, Power Steering Pump Adjuster",
+      "details": "",
+      "part_number": "56998-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~power~steering~56998-p0a-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Bolt, Power Steering Pump Adjusting",
+      "details": "",
+      "part_number": "90091-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~power~steering~90091-p0a-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Nut, Power Steering Pulley",
+      "details": "",
+      "part_number": "90305-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~power~steering~pulley~90305-p0a-003.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bearing, Needle (1010) (NTN)",
+      "details": "",
+      "part_number": "91021-148-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~needle~91021-148-004.html"
+    },
+    {
+      "callout": "14",
+      "description": "Bearing, Radial Ball (15X38X12)",
+      "details": "",
+      "part_number": "91048-PY3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~radial~ball~91048-py3-003.html"
+    },
+    {
+      "callout": "15",
+      "description": "Roller (5X26.8)",
+      "details": "",
+      "part_number": "91148-PY3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~roller~91148-py3-003.html"
+    },
+    {
+      "callout": "16",
+      "description": "Roller (4.5X49.8)",
+      "details": "",
+      "part_number": "91149-PY3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~roller~91149-py3-003.html"
+    },
+    {
+      "callout": "17",
+      "description": "Seal, Power Steering Pump",
+      "details": "Fit Note: Mfg.Origin: JPN",
+      "part_number": "91249-P02-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~power~steering~91249-p02-003.html"
+    },
+    {
+      "callout": "17",
+      "description": "Seal, Power Steering Pump (SHOWA)",
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_number": "91249-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~power~steering~91249-p0a-003.html"
+    },
+    {
+      "callout": "18",
+      "description": "O-Ring (5.8X1.9) (NOK)",
+      "details": "Fit Note: Mfg.Origin: JPN",
+      "part_number": "91317-P02-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91317-p02-003.html"
+    },
+    {
+      "callout": "18",
+      "description": "O-Ring (5.8X1.9) (SHOWA)",
+      "details": "Fit Note: Mfg.Origin: USA\nReplaced By: 91317-P02-003",
+      "part_number": "91317-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91317-p0a-003.html"
+    },
+    {
+      "callout": "19",
+      "description": "O-Ring (13.0X1.9)",
+      "details": "",
+      "part_number": "91345-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91345-py3-000.html"
+    },
+    {
+      "callout": "20",
+      "description": "O-Ring (22.1X1.9)",
+      "details": "",
+      "part_number": "91346-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91346-py3-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "O-Ring (16.8X1.9)",
+      "details": "",
+      "part_number": "91347-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91347-py3-000.html"
+    },
+    {
+      "callout": "22",
+      "description": "O-Ring (54.0X1.9)",
+      "details": "",
+      "part_number": "91348-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91348-py3-000.html"
+    },
+    {
+      "callout": "23",
+      "description": "O-Ring (68.5X1.9)",
+      "details": "",
+      "part_number": "91349-PY3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91349-py3-000.html"
+    },
+    {
+      "callout": "24",
+      "description": "Nut, Flange (8MM)",
+      "details": "",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "25",
+      "description": "Nut-Washer (8MM)",
+      "details": "",
+      "part_number": "90202-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~washer~90202-p0a-a01.html"
+    },
+    {
+      "callout": "26",
+      "description": "Circlip (INNER) (38MM)",
+      "details": "",
+      "part_number": "94520-38000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~circlip~inner~94520-38000.html"
+    },
+    {
+      "callout": "27",
+      "description": "Bolt, Flange (6X12)",
+      "details": "",
+      "part_number": "95701-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06012-08.html"
+    },
+    {
+      "callout": "28",
+      "description": "Bolt, Flange (6X14)",
+      "details": "",
+      "part_number": "95701-06014-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-08.html"
+    },
+    {
+      "callout": "29",
+      "description": "Bolt, Flange (6X20)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "95701-06020-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06020-08.html"
+    },
+    {
+      "callout": "30",
+      "description": "Bolt, Flange (8X28)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "95701-08028-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08028-08.html"
+    },
+    {
+      "callout": "31",
+      "description": "Bolt, Flange (10X30)",
+      "details": "",
+      "part_number": "95701-10030-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10030-08.html"
+    },
+    {
+      "callout": "32",
+      "description": "Bolt, Flange (10X40)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-10040-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10040-08.html"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "water_hose",
+  "label": "Water Hose",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_hose.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ee8cd6ebf4745c9051da34fa55202951.png",
+  "downloaded_at": "2026-11-07T01:16:16.180Z",
+  "image_file": "02_OEM_Diagrams/water_hose.png",
+  "parts_file": "02_OEM_Diagrams/water_hose.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Hose, Fast Idle Valve Control",
+      "details": "",
+      "part_number": "19507-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~fast~idle~valve~19507-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Hose A, Electronic Air Control Valve",
+      "details": "",
+      "part_number": "19508-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~electronic~air~19508-p0a-000.html"
+    },
+    {
+      "callout": "3",
+      "description": "Hose B, Electronic Air Control Valve",
+      "details": "",
+      "part_number": "19510-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~electronic~air~19510-p0a-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Hose A, Breather Heater",
+      "details": "Replaced By: 19514-P0A-305",
+      "part_number": "19514-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~breather~heater~19514-p0a-000.html"
+    },
+    {
+      "callout": "5",
+      "description": "Hose B, Breather Heater",
+      "details": "",
+      "part_number": "19515-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~breather~heater~19515-p0a-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Clamp, Hose (13MM)",
+      "details": "",
+      "part_number": "19517-P08-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~hose~19517-p08-003.html"
+    },
+    {
+      "callout": "7",
+      "description": "Clamp, Tube (D12)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "91405-PD1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-pd1-004.html"
+    },
+    {
+      "callout": "8",
+      "description": "Clamp, Tube (D12)",
+      "details": "Require Quantity: 6\nPackage Quantity: 1",
+      "part_number": "91405-PD1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-pd1-004.html"
+    },
+    {
+      "callout": "9",
+      "description": "Clamp, Tube (D12.5)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95002-41250-04",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~95002-41250-04.html"
+    }
+  ]
+}

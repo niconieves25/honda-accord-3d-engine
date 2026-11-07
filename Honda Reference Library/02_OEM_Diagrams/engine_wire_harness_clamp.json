@@ -1,0 +1,257 @@
+{
+  "slug": "engine_wire_harness_clamp",
+  "label": "Engine Wire Harness – Clamp",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/engine_wire_harness_clamp.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/35abf6dca04e0b1ac43daea272be3dcb.png",
+  "downloaded_at": "2026-11-07T01:16:23.275Z",
+  "image_file": "02_OEM_Diagrams/engine_wire_harness_clamp.png",
+  "parts_file": "02_OEM_Diagrams/engine_wire_harness_clamp.json",
+  "parts": [
+    {
+      "callout": "2",
+      "description": "Bracket, Alternator",
+      "details": "",
+      "part_number": "31112-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~alternator~31112-p0a-a00.html"
+    },
+    {
+      "callout": "3",
+      "description": "Stay, Alternator",
+      "details": "",
+      "part_number": "31113-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~alternator~31113-p0a-a00.html"
+    },
+    {
+      "callout": "4",
+      "description": "Wire Harness, Engine",
+      "details": "",
+      "part_number": "32110-P0A-A50",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~engine~32110-p0a-a50.html"
+    },
+    {
+      "callout": "5",
+      "description": "Holder A, Harness",
+      "details": "",
+      "part_number": "32127-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~harness~32127-p0a-a00.html"
+    },
+    {
+      "callout": "6",
+      "description": "Holder B, Harness",
+      "details": "",
+      "part_number": "32128-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~harness~32128-p0a-a00.html"
+    },
+    {
+      "callout": "7",
+      "description": "Holder C, Harness",
+      "details": "",
+      "part_number": "32129-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~harness~32129-p0a-a00.html"
+    },
+    {
+      "callout": "8",
+      "description": "Cable, Sub-Ground (SOHC)",
+      "details": "",
+      "part_number": "32610-SV4-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cable~sub~ground~32610-sv4-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Clamp A, Engine Harness",
+      "details": "",
+      "part_number": "32741-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~engine~harness~32741-p0a-a00.html"
+    },
+    {
+      "callout": "10",
+      "description": "Clamp F, Engine Wire Harness",
+      "details": "",
+      "part_number": "32746-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~engine~wire~32746-p0a-a00.html"
+    },
+    {
+      "callout": "11",
+      "description": "Stay, Wire Harness Clamp",
+      "details": "",
+      "part_number": "32748-P13-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~wire~harness~clamp~32748-p13-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Switch, Oil Pressure (TEC)",
+      "details": "",
+      "part_number": "37240-PT0-014",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~switch~oil~pressure~37240-pt0-014.html"
+    },
+    {
+      "callout": "12",
+      "description": "Switch, Oil Pressure (DENSO)",
+      "details": "Replaced By: 37240-PT0-014",
+      "part_number": "37240-PT0-023",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~switch~oil~pressure~37240-pt0-023.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bolt, Tensioner",
+      "details": "",
+      "part_number": "56995-PV0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~tensioner~56995-pv0-000.html"
+    },
+    {
+      "callout": "14",
+      "description": "Sensor Assy., Speed (MATSUSHITA)",
+      "details": "",
+      "part_number": "78410-SV4-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~78410-sv4-003.html"
+    },
+    {
+      "callout": "15",
+      "description": "Joint, Speed Sensor (MATSUSHITA)",
+      "details": "",
+      "part_number": "78411-SM4-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~joint~speed~sensor~78411-sm4-003.html"
+    },
+    {
+      "callout": "16",
+      "description": "Bolt, Flange (10X43)",
+      "details": "",
+      "part_number": "90075-PD3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90075-pd3-000.html"
+    },
+    {
+      "callout": "17",
+      "description": "Bolt (6X15) (MAIN FUSE BOX)",
+      "details": "",
+      "part_number": "90114-SM4-900",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~90114-sm4-900.html"
+    },
+    {
+      "callout": "18",
+      "description": "Bolt, Ground (6X16)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90149-SE0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~ground~90149-se0-003.html"
+    },
+    {
+      "callout": "19",
+      "description": "Bolt, Adjuster Special",
+      "details": "",
+      "part_number": "90311-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~adjuster~special~90311-pt0-000.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt, Special (10X90)",
+      "details": "",
+      "part_number": "90313-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~special~90313-pt0-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "Clip, Alternator Cord",
+      "details": "",
+      "part_number": "91506-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~alternator~wire~91506-p0a-a01.html"
+    },
+    {
+      "callout": "22",
+      "description": "Band, Wire Harness (90.4MM) (BLACK)",
+      "details": "",
+      "part_number": "91507-PT3-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~91507-pt3-a01.html"
+    },
+    {
+      "callout": "24",
+      "description": "Band, Wire Harness (123.5MM) (BLUE)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "91547-SF4-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~91547-sf4-003.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bolt, Flange (10X35)",
+      "details": "",
+      "part_number": "95701-10035-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10035-08.html"
+    },
+    {
+      "callout": "26",
+      "description": "Bolt-Washer (6X12)",
+      "details": "",
+      "part_number": "93403-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06012-08.html"
+    },
+    {
+      "callout": "27",
+      "description": "Nut, Flange (6MM)",
+      "details": "",
+      "part_number": "94050-06080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-06080.html"
+    },
+    {
+      "callout": "28",
+      "description": "Nut, Flange (8MM)",
+      "details": "",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "29",
+      "description": "Bolt, Flange (6X10)",
+      "details": "",
+      "part_number": "95701-06010-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06010-08.html"
+    },
+    {
+      "callout": "30",
+      "description": "Bolt, Flange (6X12)",
+      "details": "Require Quantity: 3\nPackage Quantity: 10",
+      "part_number": "95701-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06012-08.html"
+    },
+    {
+      "callout": "31",
+      "description": "Bolt, Flange (6X16)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06016-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06016-08.html"
+    },
+    {
+      "callout": "32",
+      "description": "Bolt, Flange (8X16)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "95701-08016-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08016-08.html"
+    },
+    {
+      "callout": "33",
+      "description": "Bolt, Flange (8X18)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-08018-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08018-08.html"
+    },
+    {
+      "callout": "34",
+      "description": "Bolt, Flange (10X35)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "95701-10035-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10035-08.html"
+    },
+    {
+      "callout": "35",
+      "description": "Bolt, Flange (12X70)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 4\nPackage Quantity: 1",
+      "part_number": "95701-12070-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-12070-08.html"
+    },
+    {
+      "callout": "35",
+      "description": "Bolt, Flange (12X70)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 6\nPackage Quantity: 1",
+      "part_number": "95701-12070-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-12070-08.html"
+    }
+  ]
+}

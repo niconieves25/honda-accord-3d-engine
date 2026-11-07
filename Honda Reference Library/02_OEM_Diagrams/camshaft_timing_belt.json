@@ -1,0 +1,215 @@
+{
+  "slug": "camshaft_timing_belt",
+  "label": "Camshaft – Timing Belt",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/camshaft_timing_belt.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/7b05dfb927672e696b07aa972a142c60.png",
+  "downloaded_at": "2026-11-07T01:15:50.240Z",
+  "image_file": "02_OEM_Diagrams/camshaft_timing_belt.png",
+  "parts_file": "02_OEM_Diagrams/camshaft_timing_belt.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Cover, Timing Belt (LOWER)",
+      "details": "",
+      "part_number": "11810-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~timing~belt~11810-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Rubber, Timing Belt Seal (LOWER)",
+      "details": "",
+      "part_number": "11811-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~timing~belt~seal~11811-pt0-000.html"
+    },
+    {
+      "callout": "3",
+      "description": "Cover, Timing Belt (UPPER)",
+      "details": "",
+      "part_number": "11820-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~timing~belt~11820-p0a-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Cover, Timing Belt Back",
+      "details": "",
+      "part_number": "11830-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~timing~belt~back~11830-p0a-000.html"
+    },
+    {
+      "callout": "5",
+      "description": "Rubber A, Timing Belt Back Seal",
+      "details": "",
+      "part_number": "11831-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~timing~belt~back~11831-p0a-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Rubber B, Timing Belt Back Seal",
+      "details": "",
+      "part_number": "11832-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~timing~belt~back~11832-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Rubber C, Timing Belt Back Seal",
+      "details": "",
+      "part_number": "11833-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~timing~belt~11833-pt0-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Rubber A, Engine Mounting Bracket Seal",
+      "details": "",
+      "part_number": "11925-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~engine~mount~11925-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Rubber B, Engine Mounting Bracket Seal",
+      "details": "",
+      "part_number": "11926-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~engine~mount~11926-p0a-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Adjuster, Balancer Belt (NIPPON SEIKO)",
+      "details": "",
+      "part_number": "13404-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~adjuster~balancer~belt~13404-pt0-004.html"
+    },
+    {
+      "callout": "11",
+      "description": "Belt, Balancer Timing (UNITTA)",
+      "details": "",
+      "part_number": "13405-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~belt~balancer~timing~13405-pt0-004.html"
+    },
+    {
+      "callout": "12",
+      "description": "Spring, Belt Adjuster",
+      "details": "",
+      "part_number": "13407-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~belt~adjuster~13407-p0a-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bracket, Balancer Belt Adjuster",
+      "details": "",
+      "part_number": "13415-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~balancer~belt~13415-p0a-000.html"
+    },
+    {
+      "callout": "14",
+      "description": "Camshaft",
+      "details": "",
+      "part_number": "14111-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~camshaft~14111-p0a-000.html"
+    },
+    {
+      "callout": "15",
+      "description": "Pulley, Timing Belt Driven",
+      "details": "",
+      "part_number": "14210-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~timing~belt~driven~14210-pt0-003.html"
+    },
+    {
+      "callout": "16",
+      "description": "Belt, Timing (112RU24 D-100) (UNITTA)",
+      "details": "",
+      "part_number": "14400-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~belt~timing~14400-p0a-004.html"
+    },
+    {
+      "callout": "17",
+      "description": "Adjuster, Timing Belt (NIPPON SEIKO)",
+      "details": "",
+      "part_number": "14510-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~adjuster~timing~belt~14510-pt0-004.html"
+    },
+    {
+      "callout": "18",
+      "description": "Spring, Timing Belt Adjuster",
+      "details": "",
+      "part_number": "14516-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~timing~belt~adjuster~14516-p0a-000.html"
+    },
+    {
+      "callout": "19",
+      "description": "Bolt A, Timing Belt Cover",
+      "details": "Require Quantity: 9\nPackage Quantity: 10",
+      "part_number": "90007-679-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~timing~belt~cover~90007-679-000.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt, Timing Belt Adjuster Spring",
+      "details": "",
+      "part_number": "90015-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~timing~belt~adjuster~90015-pt0-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "Bolt, Timing Belt Adjuster",
+      "details": "",
+      "part_number": "90016-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~timing~belt~adjuster~90016-pt0-000.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt-Washer (8X22)",
+      "details": "Replaced By: 90032-ZW5-003",
+      "part_number": "90031-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90031-pt0-003.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt-Washer (8X22)",
+      "details": "",
+      "part_number": "90032-ZW5-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90032-zw5-003.html"
+    },
+    {
+      "callout": "23",
+      "description": "Bolt, Sub-Belt Adjuster Spring",
+      "details": "",
+      "part_number": "90051-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sub~belt~adjuster~90051-pt0-000.html"
+    },
+    {
+      "callout": "24",
+      "description": "Nut (10MM)",
+      "details": "",
+      "part_number": "90216-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~90216-p0a-000.html"
+    },
+    {
+      "callout": "25",
+      "description": "Rubber, Timing Belt Adjuster",
+      "details": "",
+      "part_number": "90401-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~timing~belt~adjuster~90401-pt0-000.html"
+    },
+    {
+      "callout": "26",
+      "description": "Washer (10.3X25)",
+      "details": "",
+      "part_number": "90501-MB7-610",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~90501-mb7-610.html"
+    },
+    {
+      "callout": "27",
+      "description": "Key (25.4X13)",
+      "details": "",
+      "part_number": "90741-657-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~key~90741-657-000.html"
+    },
+    {
+      "callout": "28",
+      "description": "Oil Seal (28X42X8) (ARAI)",
+      "details": "",
+      "part_number": "91213-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91213-pt0-003.html"
+    }
+  ]
+}

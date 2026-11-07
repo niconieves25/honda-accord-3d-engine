@@ -1,0 +1,110 @@
+{
+  "slug": "high_tension_cord_spark_plug",
+  "label": "High Tension Cord – Spark Plug",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/high_tension_cord_spark_plug.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/65aa479ecfa76e350650f2d8cbc30219.png",
+  "downloaded_at": "2026-11-07T01:16:13.897Z",
+  "image_file": "02_OEM_Diagrams/high_tension_cord_spark_plug.png",
+  "parts_file": "02_OEM_Diagrams/high_tension_cord_spark_plug.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Wire Assy., Ignition (SUMITOMO)",
+      "details": "",
+      "part_number": "32700-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~assy~32700-p0a-a00.html"
+    },
+    {
+      "callout": "2",
+      "description": "Wire, Resistance (NO.1) (SUMITOMO)",
+      "details": "",
+      "part_number": "32701-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32701-p0a-a00.html"
+    },
+    {
+      "callout": "3",
+      "description": "Wire, Resistance (NO.2) (SUMITOMO)",
+      "details": "",
+      "part_number": "32702-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32702-p0a-a00.html"
+    },
+    {
+      "callout": "4",
+      "description": "Wire, Resistance (NO.3) (SUMITOMO)",
+      "details": "",
+      "part_number": "32703-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32703-p0a-a00.html"
+    },
+    {
+      "callout": "5",
+      "description": "Wire, Resistance (NO.4) (SUMITOMO)",
+      "details": "",
+      "part_number": "32704-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32704-p0a-a00.html"
+    },
+    {
+      "callout": "9",
+      "description": "Clamp B, Ignition Wire",
+      "details": "",
+      "part_number": "32766-PM3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~ignition~wire~32766-pm3-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Clamp C, Ignition Wire",
+      "details": "",
+      "part_number": "32766-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~ignition~wire~32766-p0a-a00.html"
+    },
+    {
+      "callout": "11",
+      "description": "Grommet, Ignition Wire",
+      "details": "",
+      "part_number": "32767-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~ignition~wire~32767-pt0-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Clamp A, Ignition Wire",
+      "details": "",
+      "part_number": "32767-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~ignition~wire~32767-p0a-a00.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bolt-Washer (8X28)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "90003-P01-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90003-p01-000.html"
+    },
+    {
+      "callout": "14",
+      "description": "Spark Plug (ZFR5F-11) (NGK)",
+      "details": "Require Quantity: 4\nPackage Quantity: 10",
+      "part_number": "98079-5514G",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5514g.html"
+    },
+    {
+      "callout": "14",
+      "description": "Spark Plug (KJ20CR-L11) (DENSO)",
+      "details": "",
+      "part_number": "98079-5615G",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5615g.html"
+    },
+    {
+      "callout": "14",
+      "description": "Spark Plug (KJ16CR-L11) (DENSO)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "98079-5515G",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5515g.html"
+    },
+    {
+      "callout": "14",
+      "description": "Spark Plug (ZFR6F-11) (NGK)",
+      "details": "",
+      "part_number": "98079-5614G",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5614g.html"
+    }
+  ]
+}

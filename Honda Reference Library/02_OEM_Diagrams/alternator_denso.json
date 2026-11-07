@@ -1,0 +1,166 @@
+{
+  "slug": "alternator_denso",
+  "label": "Alternator (Denso)",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/alternator_denso.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/b8113b251ef45a565eb922518c48bf4e.png",
+  "downloaded_at": "2026-11-07T01:16:24.370Z",
+  "image_file": "02_OEM_Diagrams/alternator_denso.png",
+  "parts_file": "02_OEM_Diagrams/alternator_denso.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Ac Generator Assy.",
+      "details": "",
+      "part_number": "31100-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~generator~assy~31100-p0a-003.html"
+    },
+    {
+      "callout": "1",
+      "description": "Alternator Core Id 9761219-549 101211-5490-5490  (DENSO)",
+      "details": "",
+      "part_number": "06311-P0A-A01RM",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~alternator~assy~06311-p0a-a01rm.html"
+    },
+    {
+      "callout": "2",
+      "description": "Rotor Assy.  (N/A FOR USA: SEE ASSEMBLY)",
+      "details": "",
+      "part_number": "31101-PV1-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rotor~assy~31101-pv1-a01.html"
+    },
+    {
+      "callout": "3",
+      "description": "Holder Assy., Brush",
+      "details": "",
+      "part_number": "31105-PR7-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~assy~31105-pr7-a01.html"
+    },
+    {
+      "callout": "4",
+      "description": "Bearing, RR. Generator",
+      "details": "",
+      "part_number": "31111-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~31111-pt0-003.html"
+    },
+    {
+      "callout": "5",
+      "description": "Bearing, FR. Generator",
+      "details": "",
+      "part_number": "31114-PT0-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~31114-pt0-013.html"
+    },
+    {
+      "callout": "6",
+      "description": "Bush, Insulation",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "31118-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bush~insulation~31118-pt0-003.html"
+    },
+    {
+      "callout": "7",
+      "description": "Bush, Insulation",
+      "details": "",
+      "part_number": "31119-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bush~insulation~31119-pt0-003.html"
+    },
+    {
+      "callout": "8",
+      "description": "Rectifier Assy.",
+      "details": "",
+      "part_number": "31127-PT2-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rectifier~assy~31127-pt2-013.html"
+    },
+    {
+      "callout": "9",
+      "description": "Cover, RR. End",
+      "details": "",
+      "part_number": "31135-PT0-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~31135-pt0-013.html"
+    },
+    {
+      "callout": "10",
+      "description": "Cover, Bearing",
+      "details": "",
+      "part_number": "31138-PD1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~bearing~31138-pd1-004.html"
+    },
+    {
+      "callout": "11",
+      "description": "Pulley",
+      "details": "",
+      "part_number": "31141-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~31141-p0a-003.html"
+    },
+    {
+      "callout": "12",
+      "description": "Nut, Pulley Lock",
+      "details": "",
+      "part_number": "31142-PD1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~pulley~lock~31142-pd1-004.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bolt, Stud (6X68)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "31145-PD1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~31145-pd1-004.html"
+    },
+    {
+      "callout": "14",
+      "description": "Screw",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "31146-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~31146-pt0-003.html"
+    },
+    {
+      "callout": "15",
+      "description": "Screw-Washer",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "31147-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~31147-pt0-003.html"
+    },
+    {
+      "callout": "16",
+      "description": "Screw",
+      "details": "",
+      "part_number": "31147-P13-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~31147-p13-003.html"
+    },
+    {
+      "callout": "17",
+      "description": "Screw, Wave Washer",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "31148-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~wave~washer~31148-pt0-003.html"
+    },
+    {
+      "callout": "18",
+      "description": "Screw, Wave Washer",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "31148-P13-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~wave~washer~31148-p13-003.html"
+    },
+    {
+      "callout": "19",
+      "description": "Regulator Assy.",
+      "details": "Replaced By: 31150-P1E-A01",
+      "part_number": "31150-PT2-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~regulator~assy~31150-pt2-003.html"
+    },
+    {
+      "callout": "20",
+      "description": "Nut-Washer (5MM)",
+      "details": "Require Quantity: 7\nPackage Quantity: 1",
+      "part_number": "90231-PD1-014",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~washer~90231-pd1-014.html"
+    },
+    {
+      "callout": "21",
+      "description": "Nut, Hex. (6MM)",
+      "details": "",
+      "part_number": "90232-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~hex~90232-pt0-003.html"
+    }
+  ]
+}

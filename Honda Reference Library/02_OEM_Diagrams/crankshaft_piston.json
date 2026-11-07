@@ -1,0 +1,411 @@
+{
+  "slug": "crankshaft_piston",
+  "label": "Crankshaft – Piston",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/crankshaft_piston.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/11d5e3bf5dbefb490bba4ca66a900d9b.png",
+  "downloaded_at": "2026-11-07T01:15:51.687Z",
+  "image_file": "02_OEM_Diagrams/crankshaft_piston.png",
+  "parts_file": "02_OEM_Diagrams/crankshaft_piston.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Piston Set A (STD)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1\nReplaced By: 13010-P1E-000",
+      "part_number": "13010-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~piston~set~13010-p0a-000.html"
+    },
+    {
+      "callout": "1",
+      "description": "Piston Set B (STD)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1\nReplaced By: 13020-P1E-000",
+      "part_number": "13020-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~piston~set~13020-p0a-000.html"
+    },
+    {
+      "callout": "1",
+      "description": "Piston Set B (STD)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "13020-P1E-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~piston~set~13020-p1e-000.html"
+    },
+    {
+      "callout": "1",
+      "description": "Piston Set (OVER SIZE) (0.25)",
+      "details": "Replaced By: 13030-P0A-010",
+      "part_number": "13030-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~piston~set~13030-p0a-000.html"
+    },
+    {
+      "callout": "1",
+      "description": "Piston Set (OVER SIZE) (0.50)",
+      "details": "Replaced By: 13040-P0A-010",
+      "part_number": "13040-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~piston~set~13040-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (STD) (TEIKOKU)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 4\nPackage Quantity: 1\nReplaced By: 13011-P0A-004",
+      "part_number": "13011-PT2-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-pt2-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (STD) (RIKEN)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 4\nPackage Quantity: 1\nReplaced By: 13011-P0A-004",
+      "part_number": "13011-PT2-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-pt2-004.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.25) (TEIKOKU)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nReplaced By: 13021-PT0-B03",
+      "part_number": "13021-PT1-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13021-pt1-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.50) (RIKEN)",
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_number": "13031-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13031-p0a-004.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (STD)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 4\nPackage Quantity: 1\nReplaced By: 13011-P0A-004",
+      "part_number": "13011-P0H-A03",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-p0h-a03.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.25) (RIKEN)",
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_number": "13021-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13021-p0a-004.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.25) (RIKEN)",
+      "details": "Fit Note: Mfg.Origin: JPN\nReplaced By: 13021-PT0-B04",
+      "part_number": "13021-PT1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13021-pt1-004.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.50) (TEIKOKU)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nReplaced By: 13031-PT0-B03",
+      "part_number": "13031-PT1-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13031-pt1-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Ring Set, Piston (OVER SIZE) (0.50) (RIKEN)",
+      "details": "Fit Note: Mfg.Origin: JPN\nReplaced By: 13031-PT0-B03",
+      "part_number": "13031-PT1-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13031-pt1-004.html"
+    },
+    {
+      "callout": "3",
+      "description": "Washer Set, Thrust (TAIHO)",
+      "details": "",
+      "part_number": "13014-P11-810",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~set~thrust~13014-p11-810.html"
+    },
+    {
+      "callout": "5",
+      "description": "Pin, Piston",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "13112-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~piston~13112-pt0-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Nut, Connecting Rod",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13205-ME2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~connecting~rod~13205-me2-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Rod, Connecting",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "13210-PT3-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rod~connecting~13210-pt3-a00.html"
+    },
+    {
+      "callout": "8",
+      "description": "Bolt, Connecting Rod",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13213-ME2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~connecting~rod~13213-me2-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Crankshaft",
+      "details": "",
+      "part_number": "13310-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~crankshaft~13310-p0a-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing D, Main (YELLOW) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13324-PT0-004",
+      "part_number": "13324-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13324-pt0-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing C, Main (GREEN) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13323-PT0-003",
+      "part_number": "13323-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13323-pt0-004.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing E, Main (PINK) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 10\nPackage Quantity: 1",
+      "part_number": "13325-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13325-pt0-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing A, Main (BLACK) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13321-PT0-004",
+      "part_number": "13321-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13321-p0h-a01.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing A, Main (BLACK) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13321-PT0-004",
+      "part_number": "13321-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13321-pt0-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing A, Main (BLACK) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1",
+      "part_number": "13321-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13321-pt0-004.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing B, Main (BROWN) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 10\nPackage Quantity: 1",
+      "part_number": "13322-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13322-pt0-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing C, Main (GREEN) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13323-PT0-003",
+      "part_number": "13323-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13323-p0h-a01.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing C, Main (GREEN) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1",
+      "part_number": "13323-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13323-pt0-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing D, Main (YELLOW) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 10\nPackage Quantity: 1\nReplaced By: 13324-PT0-004",
+      "part_number": "13324-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13324-p0h-a01.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bearing D, Main (YELLOW) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 10\nPackage Quantity: 1",
+      "part_number": "13324-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13324-pt0-004.html"
+    },
+    {
+      "callout": "11",
+      "description": "Shaft, RR. Balancer",
+      "details": "",
+      "part_number": "13400-PT3-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~shaft~13400-pt3-010.html"
+    },
+    {
+      "callout": "12",
+      "description": "Shaft, FR. Balancer",
+      "details": "",
+      "part_number": "13401-P5M-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~shaft~13401-p5m-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Pulley B, FR. Timing Belt Driven",
+      "details": "",
+      "part_number": "13402-PT7-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~13402-pt7-a01.html"
+    },
+    {
+      "callout": "14",
+      "description": "Metal F, Thrust Balancer Shaft",
+      "details": "",
+      "part_number": "13406-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~metal~thrust~balancer~13406-pt0-003.html"
+    },
+    {
+      "callout": "15",
+      "description": "Pulley, Balancer Belt Drive",
+      "details": "Replaced By: 13408-PT2-003",
+      "part_number": "13408-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~balancer~belt~13408-pt0-003.html"
+    },
+    {
+      "callout": "18",
+      "description": "Pulley, Timing Belt Drive",
+      "details": "",
+      "part_number": "13621-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~timing~belt~drive~13621-p0a-003.html"
+    },
+    {
+      "callout": "19",
+      "description": "Plate, Timing Belt Guide",
+      "details": "",
+      "part_number": "13622-PV1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~timing~belt~guide~13622-pv1-000.html"
+    },
+    {
+      "callout": "20",
+      "description": "Pulley, Crankshaft",
+      "details": "",
+      "part_number": "13810-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~crankshaft~13810-p0a-003.html"
+    },
+    {
+      "callout": "21",
+      "description": "Bolt-Washer (16X49)",
+      "details": "",
+      "part_number": "90017-RJA-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90017-rja-003.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt, Flange (6X18)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90019-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90019-pt0-000.html"
+    },
+    {
+      "callout": "23",
+      "description": "Bolt-Washer (8X22)",
+      "details": "Replaced By: 90032-ZW5-003",
+      "part_number": "90031-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90031-pt0-003.html"
+    },
+    {
+      "callout": "23",
+      "description": "Bolt-Washer (8X22)",
+      "details": "",
+      "part_number": "90032-ZW5-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90032-zw5-003.html"
+    },
+    {
+      "callout": "24",
+      "description": "Key (4.5X38.5)",
+      "details": "",
+      "part_number": "90704-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~key~90704-pt0-000.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing D, Connecting Rod (GREEN) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13214-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13214-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing E, Connecting Rod (YELLOW) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13215-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13215-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing A, Connecting Rod (BLUE) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13211-PH3-004",
+      "part_number": "13211-PH3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13211-ph3-003.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing B, Connecting Rod (BLACK) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13212-PH3-004",
+      "part_number": "13212-PH3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13212-ph3-003.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing A, Connecting Rod (BLUE) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13211-PH3-004",
+      "part_number": "13211-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13211-p0h-a01.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing A, Connecting Rod (BLUE) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13211-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13211-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing B, Connecting Rod (BLACK) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13212-PH3-004",
+      "part_number": "13212-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13212-p0h-a01.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing B, Connecting Rod (BLACK) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13212-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13212-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing C, Connecting Rod (BROWN) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13213-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13213-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing F, Connecting Rod (PINK) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN, USA\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13216-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13216-ph3-004.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing G, Connecting Rod (RED) (GLACIER VANDERVELL)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13217-PH3-004",
+      "part_number": "13217-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13217-p0h-a01.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing G, Connecting Rod (RED) (DAIDO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1\nReplaced By: 13217-PH3-004",
+      "part_number": "13217-PH3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13217-ph3-003.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bearing G, Connecting Rod (RED) (TAIHO)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 8\nPackage Quantity: 1",
+      "part_number": "13217-PH3-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13217-ph3-004.html"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "catalog": "1994 Accord 4 Door EX KL 4AT",
+  "identity_status": "Provisional SOHC VTEC reference; photographed engine stamp not confirmed",
+  "diagrams": [
+    {
+      "slug": "valve_rocker_arm",
+      "label": "Valve – Rocker Arm",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/valve_rocker_arm.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/543cf4a172cbf2f00f5565a7f2d4a58d.png",
+      "downloaded_at": "2026-11-07T01:15:39.121Z",
+      "image_file": "02_OEM_Diagrams/valve_rocker_arm.png",
+      "parts_file": "02_OEM_Diagrams/valve_rocker_arm.json",
+      "part_rows": 18
+    },
+    {
+      "slug": "cylinder_head",
+      "label": "Cylinder Head",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_head.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/495ddcc603d3933532009aaf02e7dbba.png",
+      "downloaded_at": "2026-11-07T01:15:49.194Z",
+      "image_file": "02_OEM_Diagrams/cylinder_head.png",
+      "parts_file": "02_OEM_Diagrams/cylinder_head.json",
+      "part_rows": 27
+    },
+    {
+      "slug": "camshaft_timing_belt",
+      "label": "Camshaft – Timing Belt",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/camshaft_timing_belt.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/7b05dfb927672e696b07aa972a142c60.png",
+      "downloaded_at": "2026-11-07T01:15:50.240Z",
+      "image_file": "02_OEM_Diagrams/camshaft_timing_belt.png",
+      "parts_file": "02_OEM_Diagrams/camshaft_timing_belt.json",
+      "part_rows": 29
+    },
+    {
+      "slug": "crankshaft_piston",
+      "label": "Crankshaft – Piston",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/crankshaft_piston.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/11d5e3bf5dbefb490bba4ca66a900d9b.png",
+      "downloaded_at": "2026-11-07T01:15:51.687Z",
+      "image_file": "02_OEM_Diagrams/crankshaft_piston.png",
+      "parts_file": "02_OEM_Diagrams/crankshaft_piston.json",
+      "part_rows": 57
+    },
+    {
+      "slug": "cylinder_block_oil_pan",
+      "label": "Cylinder Block – Oil Pan",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_block_oil_pan.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0ba5d32b1fedf3383ccb2e4a122b54ff.png",
+      "downloaded_at": "2026-11-07T01:15:53.396Z",
+      "image_file": "02_OEM_Diagrams/cylinder_block_oil_pan.png",
+      "parts_file": "02_OEM_Diagrams/cylinder_block_oil_pan.json",
+      "part_rows": 41
+    },
+    {
+      "slug": "oil_pump_oil_strainer",
+      "label": "Oil Pump – Oil Strainer",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/oil_pump_oil_strainer.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8f9801808e9d31b1d90c0b33b93acbcb.png",
+      "downloaded_at": "2026-11-07T01:15:57.015Z",
+      "image_file": "02_OEM_Diagrams/oil_pump_oil_strainer.png",
+      "parts_file": "02_OEM_Diagrams/oil_pump_oil_strainer.json",
+      "part_rows": 35
+    },
+    {
+      "slug": "water_pump_sensor",
+      "label": "Water Pump – Sensor",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_pump_sensor.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/16bf95684ace0e21d9c55f099affed1e.png",
+      "downloaded_at": "2026-11-07T01:15:59.164Z",
+      "image_file": "02_OEM_Diagrams/water_pump_sensor.png",
+      "parts_file": "02_OEM_Diagrams/water_pump_sensor.json",
+      "part_rows": 32
+    },
+    {
+      "slug": "intake_manifold",
+      "label": "Intake Manifold",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/intake_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/586cadcb7a1188b09e4e5398c4459f37.png",
+      "downloaded_at": "2026-11-07T01:16:03.782Z",
+      "image_file": "02_OEM_Diagrams/intake_manifold.png",
+      "parts_file": "02_OEM_Diagrams/intake_manifold.json",
+      "part_rows": 39
+    },
+    {
+      "slug": "cylinder_head_cover",
+      "label": "Cylinder Head Cover",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_head_cover.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/659d0e3b2a5d162e4e824286d6876928.png",
+      "downloaded_at": "2026-11-07T01:16:06.586Z",
+      "image_file": "02_OEM_Diagrams/cylinder_head_cover.png",
+      "parts_file": "02_OEM_Diagrams/cylinder_head_cover.json",
+      "part_rows": 12
+    },
+    {
+      "slug": "exhaust_manifold",
+      "label": "Exhaust Manifold",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/exhaust_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3006db8929e7cddfe542e538bf1dbd12.png",
+      "downloaded_at": "2026-11-07T01:16:07.666Z",
+      "image_file": "02_OEM_Diagrams/exhaust_manifold.png",
+      "parts_file": "02_OEM_Diagrams/exhaust_manifold.json",
+      "part_rows": 11
+    },
+    {
+      "slug": "throttle_body",
+      "label": "Throttle Body",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/throttle_body.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a47931f6adb5cf0ab19b25d1f93464db.png",
+      "downloaded_at": "2026-11-07T01:16:11.364Z",
+      "image_file": "02_OEM_Diagrams/throttle_body.png",
+      "parts_file": "02_OEM_Diagrams/throttle_body.json",
+      "part_rows": 28
+    },
+    {
+      "slug": "distributor_hitachi",
+      "label": "Distributor (Hitachi)",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/distributor_hitachi.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/e854b7ce011a1eb2a1f9566e3179bb91.png",
+      "downloaded_at": "2026-11-07T01:16:12.506Z",
+      "image_file": "02_OEM_Diagrams/distributor_hitachi.png",
+      "parts_file": "02_OEM_Diagrams/distributor_hitachi.json",
+      "part_rows": 11
+    },
+    {
+      "slug": "high_tension_cord_spark_plug",
+      "label": "High Tension Cord – Spark Plug",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/high_tension_cord_spark_plug.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/65aa479ecfa76e350650f2d8cbc30219.png",
+      "downloaded_at": "2026-11-07T01:16:13.897Z",
+      "image_file": "02_OEM_Diagrams/high_tension_cord_spark_plug.png",
+      "parts_file": "02_OEM_Diagrams/high_tension_cord_spark_plug.json",
+      "part_rows": 14
+    },
+    {
+      "slug": "breather_tube",
+      "label": "Breather Tube",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/breather_tube.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/350ea3f447560ffaa6dfee2f107368bd.png",
+      "downloaded_at": "2026-11-07T01:16:15.070Z",
+      "image_file": "02_OEM_Diagrams/breather_tube.png",
+      "parts_file": "02_OEM_Diagrams/breather_tube.json",
+      "part_rows": 7
+    },
+    {
+      "slug": "water_hose",
+      "label": "Water Hose",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_hose.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ee8cd6ebf4745c9051da34fa55202951.png",
+      "downloaded_at": "2026-11-07T01:16:16.180Z",
+      "image_file": "02_OEM_Diagrams/water_hose.png",
+      "parts_file": "02_OEM_Diagrams/water_hose.json",
+      "part_rows": 9
+    },
+    {
+      "slug": "install_pipe_tubing",
+      "label": "Install Pipe – Tubing",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/install_pipe_tubing.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/d5674df46c2701b7d491ab3bf8a621b5.png",
+      "downloaded_at": "2026-11-07T01:16:21.799Z",
+      "image_file": "02_OEM_Diagrams/install_pipe_tubing.png",
+      "parts_file": "02_OEM_Diagrams/install_pipe_tubing.json",
+      "part_rows": 20
+    },
+    {
+      "slug": "engine_wire_harness_clamp",
+      "label": "Engine Wire Harness – Clamp",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/engine_wire_harness_clamp.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/35abf6dca04e0b1ac43daea272be3dcb.png",
+      "downloaded_at": "2026-11-07T01:16:23.275Z",
+      "image_file": "02_OEM_Diagrams/engine_wire_harness_clamp.png",
+      "parts_file": "02_OEM_Diagrams/engine_wire_harness_clamp.json",
+      "part_rows": 35
+    },
+    {
+      "slug": "alternator_denso",
+      "label": "Alternator (Denso)",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/alternator_denso.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/b8113b251ef45a565eb922518c48bf4e.png",
+      "downloaded_at": "2026-11-07T01:16:24.370Z",
+      "image_file": "02_OEM_Diagrams/alternator_denso.png",
+      "parts_file": "02_OEM_Diagrams/alternator_denso.json",
+      "part_rows": 22
+    },
+    {
+      "slug": "p_s_pump_bracket",
+      "label": "Power-Steering Pump – Bracket",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/p_s_pump_bracket.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/9736e477fa837ec365c2626728398362.png",
+      "downloaded_at": "2026-11-07T01:16:28.894Z",
+      "image_file": "02_OEM_Diagrams/p_s_pump_bracket.png",
+      "parts_file": "02_OEM_Diagrams/p_s_pump_bracket.json",
+      "part_rows": 34
+    },
+    {
+      "slug": "clutch_torque_converter",
+      "label": "Clutch – Torque Converter",
+      "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+      "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/clutch_torque_converter.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/58358fcab90a834a7871a895b65aa9ff.png",
+      "downloaded_at": "2026-11-07T01:16:31.141Z",
+      "image_file": "02_OEM_Diagrams/clutch_torque_converter.png",
+      "parts_file": "02_OEM_Diagrams/clutch_torque_converter.json",
+      "part_rows": 8
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,299 @@
+{
+  "slug": "cylinder_block_oil_pan",
+  "label": "Cylinder Block – Oil Pan",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_block_oil_pan.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0ba5d32b1fedf3383ccb2e4a122b54ff.png",
+  "downloaded_at": "2026-11-07T01:15:53.396Z",
+  "image_file": "02_OEM_Diagrams/cylinder_block_oil_pan.png",
+  "parts_file": "02_OEM_Diagrams/cylinder_block_oil_pan.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Block Assy., Cylinder",
+      "details": "Fit Note: Mfg.Origin: JPN\nReplaced By: 11000-P0A-305",
+      "part_number": "11000-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~block~assy~11000-p0a-000.html"
+    },
+    {
+      "callout": "1",
+      "description": "Block Assy., Cylinder",
+      "details": "Fit Note: Mfg.Origin: USA\nReplaced By: 11000-P0A-406",
+      "part_number": "11000-P0H-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~block~assy~11000-p0h-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Bolt, Sealing (16MM)",
+      "details": "",
+      "part_number": "11106-PT0-300",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~11106-pt0-300.html"
+    },
+    {
+      "callout": "3",
+      "description": "Bolt, Sealing (16MM)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1\nReplaced By: 11107-PAA-A00",
+      "part_number": "11107-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~11107-pt0-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Bolt, Sealing (22MM)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "11126-PK1-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~11126-pk1-003.html"
+    },
+    {
+      "callout": "5",
+      "description": "Bridge, Bearing Cap",
+      "details": "Replaced By: 11130-PT0-030",
+      "part_number": "11130-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bridge~bearing~cap~11130-pt0-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Pan, Oil",
+      "details": "",
+      "part_number": "11200-PT0-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pan~oil~11200-pt0-010.html"
+    },
+    {
+      "callout": "7",
+      "description": "Plate, Baffle",
+      "details": "",
+      "part_number": "11221-PT2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~baffle~11221-pt2-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Gasket, Oil Pan",
+      "details": "",
+      "part_number": "11251-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~pan~11251-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Cover Assy., R. Side",
+      "details": "Replaced By: 11300-PT0-000",
+      "part_number": "11300-PT0-B00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~assy~11300-pt0-b00.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bracket, Engine Mounting",
+      "details": "",
+      "part_number": "11910-P0A-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~engine~mounting~11910-p0a-010.html"
+    },
+    {
+      "callout": "11",
+      "description": "Washer, Sealing Bolt",
+      "details": "",
+      "part_number": "12207-634-300",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~sealing~bolt~12207-634-300.html"
+    },
+    {
+      "callout": "12",
+      "description": "Metal, Balancer Shaft (NO.1) (DAIDO)",
+      "details": "",
+      "part_number": "13421-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~metal~balancer~shaft~13421-pt0-003.html"
+    },
+    {
+      "callout": "13",
+      "description": "Metal, Balancer Shaft (NO.2) (DAIDO)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "13422-PT0-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~metal~balancer~shaft~13422-pt0-013.html"
+    },
+    {
+      "callout": "14",
+      "description": "Metal, Balancer Shaft (NO.3) (DAIDO)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "13423-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~metal~balancer~shaft~13423-pt0-003.html"
+    },
+    {
+      "callout": "17",
+      "description": "Bolt, Drain Plug (28MM)",
+      "details": "",
+      "part_number": "90001-PM3-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~drain~plug~90001-pm3-003.html"
+    },
+    {
+      "callout": "18",
+      "description": "Bolt-Washer (11X121)",
+      "details": "Require Quantity: 10\nPackage Quantity: 1",
+      "part_number": "90007-PAA-T01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90007-paa-t01.html"
+    },
+    {
+      "callout": "19",
+      "description": "Bolt, Mounting Bracket (10X32.5)",
+      "details": "",
+      "part_number": "90008-PM3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~mounting~bracket~90008-pm3-000.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt, Mounting Bracket (10X53)",
+      "details": "",
+      "part_number": "90008-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~mounting~bracket~90008-p0a-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "Bolt, Drain Plug (14MM)",
+      "details": "",
+      "part_number": "90009-PH1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~drain~plug~90009-ph1-000.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt B, Mounting Bracket (10X56.2)",
+      "details": "",
+      "part_number": "90009-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~mounting~bracket~90009-p0a-000.html"
+    },
+    {
+      "callout": "23",
+      "description": "Bolt, Stud (10X35)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90030-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90030-pt0-000.html"
+    },
+    {
+      "callout": "24",
+      "description": "Bolt, Stud (6X28)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90041-PA5-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90041-pa5-000.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bolt, Stud (12X60)",
+      "details": "",
+      "part_number": "90041-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90041-pt0-000.html"
+    },
+    {
+      "callout": "26",
+      "description": "Bolt, Stud (6X28)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90042-PR3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90042-pr3-000.html"
+    },
+    {
+      "callout": "27",
+      "description": "Bolt, Flange (6X18)",
+      "details": "Require Quantity: 10\nPackage Quantity: 1",
+      "part_number": "95701-06018-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06018-08.html"
+    },
+    {
+      "callout": "27",
+      "description": "Bolt, Flange (6X18)",
+      "details": "Require Quantity: 10\nPackage Quantity: 1\nReplaced By: 95701-06018-08",
+      "part_number": "90051-PH7-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90051-ph7-000.html"
+    },
+    {
+      "callout": "28",
+      "description": "Bolt, Drain Plug (12MM)",
+      "details": "",
+      "part_number": "90061-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~drain~plug~90061-pt0-000.html"
+    },
+    {
+      "callout": "29",
+      "description": "Pin, Dowel (16X22)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90705-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~90705-pt0-000.html"
+    },
+    {
+      "callout": "30",
+      "description": "Pin, Dowel (13X20)",
+      "details": "Require Quantity: 11\nPackage Quantity: 1",
+      "part_number": "90715-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~90715-pc6-000.html"
+    },
+    {
+      "callout": "31",
+      "description": "Oil Seal (80X100X10) (NOK)",
+      "details": "",
+      "part_number": "91214-PLE-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91214-ple-003.html"
+    },
+    {
+      "callout": "31",
+      "description": "Oil Seal (80X100X10) (ARAI)",
+      "details": "Replaced By: 91214-PLE-003",
+      "part_number": "91214-PH3-751",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91214-ph3-751.html"
+    },
+    {
+      "callout": "32",
+      "description": "Gasket, Bearing Cap Bridge (ARAI)",
+      "details": "",
+      "part_number": "91323-PH7-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~bearing~cap~bridge~91323-ph7-003.html"
+    },
+    {
+      "callout": "33",
+      "description": "Bolt-Washer (6X16)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "93404-06016-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93404-06016-08.html"
+    },
+    {
+      "callout": "34",
+      "description": "Nut, Flange (6MM)",
+      "details": "Require Quantity: 6\nPackage Quantity: 10",
+      "part_number": "94050-06080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-06080.html"
+    },
+    {
+      "callout": "35",
+      "description": "Washer, Drain Plug (12MM)",
+      "details": "",
+      "part_number": "94109-12000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~drain~plug~94109-12000.html"
+    },
+    {
+      "callout": "36",
+      "description": "Washer, Drain Plug (14MM)",
+      "details": "",
+      "part_number": "94109-14000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~drain~plug~94109-14000.html"
+    },
+    {
+      "callout": "37",
+      "description": "Pin, Dowel (6X10)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "94301-06100",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-06100.html"
+    },
+    {
+      "callout": "38",
+      "description": "Pin, Dowel (10X16)",
+      "details": "Require Quantity: 6\nPackage Quantity: 1",
+      "part_number": "94301-10160",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-10160.html"
+    },
+    {
+      "callout": "39",
+      "description": "Pin, Dowel (12X20)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "94301-12200",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-12200.html"
+    },
+    {
+      "callout": "40",
+      "description": "Bolt, Flange (6X18)",
+      "details": "Require Quantity: 12\nPackage Quantity: 1",
+      "part_number": "95701-06018-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06018-08.html"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "slug": "valve_rocker_arm",
+  "label": "Valve – Rocker Arm",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/valve_rocker_arm.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/543cf4a172cbf2f00f5565a7f2d4a58d.png",
+  "downloaded_at": "2026-11-07T01:15:39.121Z",
+  "image_file": "02_OEM_Diagrams/valve_rocker_arm.png",
+  "parts_file": "02_OEM_Diagrams/valve_rocker_arm.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Arm Assy., Inlet Rocker (JAPAN)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14620-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~assy~14620-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Arm A, Exhaust Rocker (JAPAN)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14624-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~14624-p0a-000.html"
+    },
+    {
+      "callout": "3",
+      "description": "Arm B, Exhaust Rocker (JAPAN)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14625-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~14625-p0a-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Spring, Exhaust Rocker Arm",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14646-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14646-p0a-000.html"
+    },
+    {
+      "callout": "5",
+      "description": "Valve, Inlet (TMSS)",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "14711-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~14711-p0a-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Valve, Exhaust (TMSS)",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "14721-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~14721-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Screw, Tappet Adjusting",
+      "details": "Require Quantity: 16\nPackage Quantity: 1",
+      "part_number": "14744-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~tappet~adjusting~14744-pt0-004.html"
+    },
+    {
+      "callout": "8",
+      "description": "Spring, Inlet Valve (WHITE) (CHUO SPRING)",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "14761-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14761-p0a-004.html"
+    },
+    {
+      "callout": "9",
+      "description": "Spring, Exhaust Valve (VIOLET) (CHUO SPRING)",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "14762-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14762-p0a-004.html"
+    },
+    {
+      "callout": "10",
+      "description": "Retainer, Valve Spring",
+      "details": "Require Quantity: 16\nPackage Quantity: 1",
+      "part_number": "14765-PJ7-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~retainer~valve~spring~14765-pj7-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Seat, Valve Spring",
+      "details": "Require Quantity: 16\nPackage Quantity: 1",
+      "part_number": "14775-PM3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seat~valve~spring~14775-pm3-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Cotter, Valve (FUJI VALVE)",
+      "details": "Require Quantity: 32\nPackage Quantity: 1",
+      "part_number": "14781-PJ7-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cotter~valve~14781-pj7-003.html"
+    },
+    {
+      "callout": "13",
+      "description": "Plate, Timing",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14811-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~timing~14811-p0a-000.html"
+    },
+    {
+      "callout": "14",
+      "description": "Spring, Timing Plate",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "14812-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~timing~plate~14812-p0a-000.html"
+    },
+    {
+      "callout": "15",
+      "description": "Motion Assy., Lost",
+      "details": "Require Quantity: 4\nPackage Quantity: 1\nReplaced By: 14820-PAA-305",
+      "part_number": "14820-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~motion~assy~14820-p0a-000.html"
+    },
+    {
+      "callout": "16",
+      "description": "Orifice Assy., Cam Journal",
+      "details": "",
+      "part_number": "15140-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~orifice~assy~15140-p0a-000.html"
+    },
+    {
+      "callout": "17",
+      "description": "O-Ring (4.8X1.9)",
+      "details": "",
+      "part_number": "15142-PE0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~15142-pe0-000.html"
+    },
+    {
+      "callout": "18",
+      "description": "Nut, Tappet Adjusting",
+      "details": "Require Quantity: 16\nPackage Quantity: 1",
+      "part_number": "90206-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~tappet~adjusting~90206-pt0-004.html"
+    }
+  ]
+}

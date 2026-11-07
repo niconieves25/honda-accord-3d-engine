@@ -1,0 +1,89 @@
+{
+  "slug": "exhaust_manifold",
+  "label": "Exhaust Manifold",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/exhaust_manifold.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3006db8929e7cddfe542e538bf1dbd12.png",
+  "downloaded_at": "2026-11-07T01:16:07.666Z",
+  "image_file": "02_OEM_Diagrams/exhaust_manifold.png",
+  "parts_file": "02_OEM_Diagrams/exhaust_manifold.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Stay, L. Exhaust Manifold",
+      "details": "",
+      "part_number": "11942-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~11942-p0a-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Manifold Assy., Exhaust",
+      "details": "",
+      "part_number": "18000-P0A-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~manifold~assy~18000-p0a-010.html"
+    },
+    {
+      "callout": "3",
+      "description": "Gasket, Exhaust Manifold (NIPPON LEAKLESS)",
+      "details": "",
+      "part_number": "18115-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~18115-p0a-003.html"
+    },
+    {
+      "callout": "4",
+      "description": "Cover A, Exhaust Manifold",
+      "details": "",
+      "part_number": "18120-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~18120-p0a-a00.html"
+    },
+    {
+      "callout": "5",
+      "description": "Bolt-Washer (10X22)",
+      "details": "",
+      "part_number": "90005-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90005-p0a-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Bolt, Special (10X22)",
+      "details": "",
+      "part_number": "90010-PE2-900",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~special~90010-pe2-900.html"
+    },
+    {
+      "callout": "7",
+      "description": "Bolt-Washer (8X14)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "90015-PT0-J00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90015-pt0-j00.html"
+    },
+    {
+      "callout": "8",
+      "description": "Bolt, Stud (10X34.5)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "90065-PC1-300",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90065-pc1-300.html"
+    },
+    {
+      "callout": "9",
+      "description": "Nut, Self-Lock (8MM)",
+      "details": "Require Quantity: 8\nPackage Quantity: 10",
+      "part_number": "90212-RCA-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~self~lock~90212-rca-a01.html"
+    },
+    {
+      "callout": "10",
+      "description": "Washer, Special (11X28)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90451-PE2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~special~90451-pe2-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Bolt, Flange (10X22)",
+      "details": "",
+      "part_number": "95701-10022-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10022-08.html"
+    }
+  ]
+}

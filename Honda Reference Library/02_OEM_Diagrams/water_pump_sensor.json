@@ -1,0 +1,236 @@
+{
+  "slug": "water_pump_sensor",
+  "label": "Water Pump – Sensor",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_pump_sensor.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/16bf95684ace0e21d9c55f099affed1e.png",
+  "downloaded_at": "2026-11-07T01:15:59.164Z",
+  "image_file": "02_OEM_Diagrams/water_pump_sensor.png",
+  "parts_file": "02_OEM_Diagrams/water_pump_sensor.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Water Pump (YAMADA)",
+      "details": "",
+      "part_number": "19200-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~water~pump~19200-p0a-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Gasket, Water Pump",
+      "details": "",
+      "part_number": "19222-PT0-300",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~water~pump~19222-pt0-300.html"
+    },
+    {
+      "callout": "3",
+      "description": "Rubber, Water Pump Seal",
+      "details": "",
+      "part_number": "19223-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~water~pump~seal~19223-pt0-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Thermostat Assy. (NIPPON THERMOSTAT)",
+      "details": "",
+      "part_number": "19301-PAA-306",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~thermostat~assy~19301-paa-306.html"
+    },
+    {
+      "callout": "4",
+      "description": "Thermostat Assy. (NIPPON THERMOSTAT)",
+      "details": "Replaced By: 19301-PAA-306",
+      "part_number": "19301-P08-316",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~thermostat~assy~19301-p08-316.html"
+    },
+    {
+      "callout": "5",
+      "description": "Rubber, Thermostat Mounting",
+      "details": "Replaced By: 19305-PLC-A00",
+      "part_number": "19305-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~thermostat~mounting~19305-pt0-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Cover, Thermostat",
+      "details": "",
+      "part_number": "19311-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~thermostat~19311-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Gasket, Thermostat Case",
+      "details": "",
+      "part_number": "19313-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~thermostat~case~19313-pt0-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Case, Thermostat  (WITH 3-NIPPLE)",
+      "details": "",
+      "part_number": "19320-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~case~thermostat~19320-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Cover, Water Outlet",
+      "details": "",
+      "part_number": "19360-PT3-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~water~outlet~19360-pt3-a00.html"
+    },
+    {
+      "callout": "10",
+      "description": "Joint, Tube",
+      "details": "",
+      "part_number": "19500-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~joint~tube~19500-pt0-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Pipe, Connecting",
+      "details": "",
+      "part_number": "19505-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~connecting~19505-p0a-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bolt, Breathing Water",
+      "details": "",
+      "part_number": "19516-PC1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~breathing~water~19516-pc1-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Clamp E, Engine Wire Harness",
+      "details": "",
+      "part_number": "32745-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~engine~wire~32745-p0a-a00.html"
+    },
+    {
+      "callout": "14",
+      "description": "Stay C, Engine Harness",
+      "details": "",
+      "part_number": "32751-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~engine~harness~32751-p0a-a00.html"
+    },
+    {
+      "callout": "15",
+      "description": "Thermo Unit (DENSO)",
+      "details": "",
+      "part_number": "37750-PH2-014",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~thermo~unit~37750-ph2-014.html"
+    },
+    {
+      "callout": "17",
+      "description": "Sensor, Thermo (A-93) (TEC)",
+      "details": "",
+      "part_number": "37773-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~thermo~37773-pt0-004.html"
+    },
+    {
+      "callout": "18",
+      "description": "Switch (A-106)",
+      "details": "",
+      "part_number": "37773-PT3-505",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~switch~a~106~37773-pt3-505.html"
+    },
+    {
+      "callout": "19",
+      "description": "Sensor Assy., Water Temperature (HADSYS)",
+      "details": "",
+      "part_number": "37870-PK2-015",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~37870-pk2-015.html"
+    },
+    {
+      "callout": "20",
+      "description": "Clamp, Heater Hose",
+      "details": "",
+      "part_number": "79746-SV4-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~heater~hose~79746-sv4-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "Bolt, Flange (8X16)",
+      "details": "",
+      "part_number": "90002-PD2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90002-pd2-000.html"
+    },
+    {
+      "callout": "22",
+      "description": "O-Ring (9.5X1.5) (HONDA KIKAKI)",
+      "details": "",
+      "part_number": "91307-PK2-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91307-pk2-005.html"
+    },
+    {
+      "callout": "23",
+      "description": "O-Ring (17.8X1.4)",
+      "details": "",
+      "part_number": "91307-PN3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91307-pn3-000.html"
+    },
+    {
+      "callout": "24",
+      "description": "O-Ring (13.5X1.4)",
+      "details": "",
+      "part_number": "91307-PH7-660",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91307-ph7-660.html"
+    },
+    {
+      "callout": "25",
+      "description": "Gasket, Thermostat Case",
+      "details": "",
+      "part_number": "91312-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~thermostat~case~91312-p0a-000.html"
+    },
+    {
+      "callout": "26",
+      "description": "O-Ring (31.2X4.1) (NOK)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "91314-PH7-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91314-ph7-003.html"
+    },
+    {
+      "callout": "27",
+      "description": "Bolt-Washer (6X12)",
+      "details": "",
+      "part_number": "93403-06012-04",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06012-04.html"
+    },
+    {
+      "callout": "28",
+      "description": "Bolt, Flange (6X12)",
+      "details": "",
+      "part_number": "95701-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06012-08.html"
+    },
+    {
+      "callout": "29",
+      "description": "Bolt, Flange (6X20)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06020-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06020-08.html"
+    },
+    {
+      "callout": "30",
+      "description": "Bolt, Flange (6X22)",
+      "details": "Require Quantity: 4\nPackage Quantity: 10",
+      "part_number": "95701-06022-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06022-08.html"
+    },
+    {
+      "callout": "31",
+      "description": "Bolt, Flange (8X25)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-08025-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08025-08.html"
+    },
+    {
+      "callout": "32",
+      "description": "Bolt, Flange (8X30)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-08030-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08030-08.html"
+    }
+  ]
+}

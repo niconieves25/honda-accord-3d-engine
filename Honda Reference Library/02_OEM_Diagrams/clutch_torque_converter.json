@@ -1,0 +1,68 @@
+{
+  "slug": "clutch_torque_converter",
+  "label": "Clutch – Torque Converter",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/clutch_torque_converter.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/58358fcab90a834a7871a895b65aa9ff.png",
+  "downloaded_at": "2026-11-07T01:16:31.141Z",
+  "image_file": "02_OEM_Diagrams/clutch_torque_converter.png",
+  "parts_file": "02_OEM_Diagrams/clutch_torque_converter.json",
+  "parts": [
+    {
+      "callout": "2",
+      "description": "Cover, Torque Converter Case",
+      "details": "",
+      "part_number": "21351-PT0-901",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~torque~converter~21351-pt0-901.html"
+    },
+    {
+      "callout": "6",
+      "description": "Converter Assy., Torque",
+      "details": "Replaced By: 26000-P0A-305",
+      "part_number": "26000-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~assy~26000-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Plate, Drive",
+      "details": "",
+      "part_number": "26251-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~drive~26251-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Bolt, Special",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "90023-PA9-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~special~90023-pa9-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Washer (40X86X2)",
+      "details": "",
+      "part_number": "90429-PC6-900",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~90429-pc6-900.html"
+    },
+    {
+      "callout": "12",
+      "description": "O-Ring (32X1.9)",
+      "details": "",
+      "part_number": "91302-639-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91302-639-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bolt-Washer (6X12)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "93403-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06012-08.html"
+    },
+    {
+      "callout": "14",
+      "description": "Bolt, Flange (6X14)",
+      "details": "Require Quantity: 8\nPackage Quantity: 1",
+      "part_number": "95701-06014-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-08.html"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "distributor_hitachi",
+  "label": "Distributor (Hitachi)",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/distributor_hitachi.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/e854b7ce011a1eb2a1f9566e3179bb91.png",
+  "downloaded_at": "2026-11-07T01:16:12.506Z",
+  "image_file": "02_OEM_Diagrams/distributor_hitachi.png",
+  "parts_file": "02_OEM_Diagrams/distributor_hitachi.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Distributor Assy. (D4T92-04) (HITACHI)  (N/A: SEE COMPONENTS)",
+      "details": "Replaced By: 30100-P0A-A02",
+      "part_number": "30100-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~distributor~assy~30100-p0a-a01.html"
+    },
+    {
+      "callout": "2",
+      "description": "Cap Assy.",
+      "details": "",
+      "part_number": "30102-P2M-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~30102-p2m-a01.html"
+    },
+    {
+      "callout": "3",
+      "description": "Head, Rotor",
+      "details": "",
+      "part_number": "30103-PAA-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~head~rotor~30103-paa-a01.html"
+    },
+    {
+      "callout": "4",
+      "description": "Housing, Distributor",
+      "details": "",
+      "part_number": "30105-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~housing~distributor~30105-p0a-a01.html"
+    },
+    {
+      "callout": "6",
+      "description": "O-Ring",
+      "details": "",
+      "part_number": "30110-PC6-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~30110-pc6-005.html"
+    },
+    {
+      "callout": "7",
+      "description": "Igniter Unit (HITACHI)",
+      "details": "",
+      "part_number": "30120-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~igniter~unit~30120-p0a-a01.html"
+    },
+    {
+      "callout": "10",
+      "description": "Gasket (1)",
+      "details": "",
+      "part_number": "30132-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~30132-p0a-a01.html"
+    },
+    {
+      "callout": "11",
+      "description": "Bolt-Washer (5X14)",
+      "details": "",
+      "part_number": "30135-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~30135-p0a-a01.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bolt-Washer (6X30)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "30136-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~30136-p0a-a01.html"
+    },
+    {
+      "callout": "13",
+      "description": "Screw, Pan (4X12)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "30137-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~pan~30137-p0a-a01.html"
+    },
+    {
+      "callout": "15",
+      "description": "Coil, Ignition",
+      "details": "",
+      "part_number": "30500-PCA-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~coil~ignition~30500-pca-003.html"
+    }
+  ]
+}

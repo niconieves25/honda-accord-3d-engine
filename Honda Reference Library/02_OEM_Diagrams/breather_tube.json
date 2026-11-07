@@ -1,0 +1,61 @@
+{
+  "slug": "breather_tube",
+  "label": "Breather Tube",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/breather_tube.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/350ea3f447560ffaa6dfee2f107368bd.png",
+  "downloaded_at": "2026-11-07T01:16:15.070Z",
+  "image_file": "02_OEM_Diagrams/breather_tube.png",
+  "parts_file": "02_OEM_Diagrams/breather_tube.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Valve Assy., PCV",
+      "details": "",
+      "part_number": "17130-PK1-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~17130-pk1-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Pipe, Breather",
+      "details": "",
+      "part_number": "17137-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~breather~17137-p0a-a00.html"
+    },
+    {
+      "callout": "5",
+      "description": "Tube, Breather",
+      "details": "",
+      "part_number": "17138-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~tube~breather~17138-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Grommet, PCV Valve",
+      "details": "",
+      "part_number": "17139-PK1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~pcv~valve~17139-pk1-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Clamp, Tube (D12)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95002-41200-04",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~95002-41200-04.html"
+    },
+    {
+      "callout": "11",
+      "description": "Clamp, Tube (D13)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95002-41300-04",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~95002-41300-04.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bulk Hose, Vacuum (7.3X3000) OEM CUT SIZE: (7.3X225)",
+      "details": "",
+      "part_number": "95005-75003-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-75003-10m.html"
+    }
+  ]
+}

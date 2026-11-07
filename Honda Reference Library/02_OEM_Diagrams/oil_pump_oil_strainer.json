@@ -1,0 +1,257 @@
+{
+  "slug": "oil_pump_oil_strainer",
+  "label": "Oil Pump – Oil Strainer",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/oil_pump_oil_strainer.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8f9801808e9d31b1d90c0b33b93acbcb.png",
+  "downloaded_at": "2026-11-07T01:15:57.015Z",
+  "image_file": "02_OEM_Diagrams/oil_pump_oil_strainer.png",
+  "parts_file": "02_OEM_Diagrams/oil_pump_oil_strainer.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Case Set, Gear",
+      "details": "",
+      "part_number": "13500-PT0-J00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~case~set~gear~13500-pt0-j00.html"
+    },
+    {
+      "callout": "3",
+      "description": "Pump Assy., Oil",
+      "details": "Replaced By: 15100-PT0-030",
+      "part_number": "15100-PT0-020",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pump~assy~15100-pt0-020.html"
+    },
+    {
+      "callout": "4",
+      "description": "Gasket A, Oil Pump (ARAI)",
+      "details": "",
+      "part_number": "15113-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~pump~15113-pt0-003.html"
+    },
+    {
+      "callout": "5",
+      "description": "Gasket B, Oil Pump (ARAI)",
+      "details": "",
+      "part_number": "15114-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~pump~15114-pt0-003.html"
+    },
+    {
+      "callout": "6",
+      "description": "Pipe, Oil Level",
+      "details": "",
+      "part_number": "15200-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~oil~level~15200-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Strainer, Oil",
+      "details": "",
+      "part_number": "15220-P0A-C00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~strainer~oil~15220-p0a-c00.html"
+    },
+    {
+      "callout": "8",
+      "description": "Gasket, Oil Strainer",
+      "details": "",
+      "part_number": "15221-P5K-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~strainer~15221-p5k-004.html"
+    },
+    {
+      "callout": "9",
+      "description": "Valve, Relief",
+      "details": "",
+      "part_number": "15231-PE0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~relief~15231-pe0-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Spring, Relief Valve",
+      "details": "",
+      "part_number": "15232-PG6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~relief~valve~15232-pg6-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Bolt, Sealing (18MM)",
+      "details": "",
+      "part_number": "15233-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~15233-pc6-000.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bolt, Sealing (20MM)",
+      "details": "",
+      "part_number": "15233-PK1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~15233-pk1-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Filter, Oil (ALLIED SIGNAL USA)",
+      "details": "Replaced By: 15400-PLM-A02",
+      "part_number": "15400-PT7-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~filter~oil~15400-pt7-005.html"
+    },
+    {
+      "callout": "14",
+      "description": "Cartridge Set, Oil Filter (TOYO ROKI)",
+      "details": "",
+      "part_number": "15400-PR3-305",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cartridge~set~oil~filter~15400-pr3-305.html"
+    },
+    {
+      "callout": "15",
+      "description": "Dipstick, Oil",
+      "details": "",
+      "part_number": "15650-P0A-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~dipstick~oil~15650-p0a-013.html"
+    },
+    {
+      "callout": "18",
+      "description": "Holder, Oil Filter",
+      "details": "",
+      "part_number": "90015-PH1-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~oil~filter~90015-ph1-013.html"
+    },
+    {
+      "callout": "19",
+      "description": "Bolt, Balancer Belt Adjuster",
+      "details": "",
+      "part_number": "90018-PT0-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~balancer~belt~adjuster~90018-pt0-010.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt-Washer (8X33)",
+      "details": "",
+      "part_number": "90023-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90023-pt0-003.html"
+    },
+    {
+      "callout": "21",
+      "description": "Bolt, Stud (6X28)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90042-PR3-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90042-pr3-000.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt, Flange (6X25)",
+      "details": "Require Quantity: 5\nPackage Quantity: 1",
+      "part_number": "90052-PK1-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90052-pk1-000.html"
+    },
+    {
+      "callout": "23",
+      "description": "Bolt, Stud (6X25)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90063-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90063-pc6-000.html"
+    },
+    {
+      "callout": "24",
+      "description": "Pin, Dowel (49X10)",
+      "details": "",
+      "part_number": "90703-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~90703-pt0-000.html"
+    },
+    {
+      "callout": "25",
+      "description": "Oil Seal (40X52X7) (ARAI)",
+      "details": "",
+      "part_number": "91212-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91212-p0a-004.html"
+    },
+    {
+      "callout": "26",
+      "description": "Oil Seal (27X40X8) (NOK)",
+      "details": "",
+      "part_number": "91233-PT0-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91233-pt0-003.html"
+    },
+    {
+      "callout": "27",
+      "description": "O-Ring (11.5X3.5)",
+      "details": "",
+      "part_number": "91309-PJ7-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91309-pj7-010.html"
+    },
+    {
+      "callout": "28",
+      "description": "O-Ring (9X2.3) (NOK)",
+      "details": "",
+      "part_number": "91313-PC9-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91313-pc9-003.html"
+    },
+    {
+      "callout": "30",
+      "description": "Bolt, Stud (8X55)",
+      "details": "",
+      "part_number": "92900-08055-0B",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~92900-08055-0b.html"
+    },
+    {
+      "callout": "31",
+      "description": "Bolt-Washer (6X12)",
+      "details": "",
+      "part_number": "93401-06012-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93401-06012-08.html"
+    },
+    {
+      "callout": "32",
+      "description": "Nut, Flange (6MM)",
+      "details": "Require Quantity: 2\nPackage Quantity: 10",
+      "part_number": "94050-06080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-06080.html"
+    },
+    {
+      "callout": "33",
+      "description": "Nut, Flange (8MM)",
+      "details": "",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "34",
+      "description": "Washer, Drain Plug (20MM)",
+      "details": "",
+      "part_number": "94109-20000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~drain~plug~94109-20000.html"
+    },
+    {
+      "callout": "35",
+      "description": "Pin, Dowel (8X14)",
+      "details": "",
+      "part_number": "94301-08140",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-08140.html"
+    },
+    {
+      "callout": "36",
+      "description": "Pin, Dowel (10X12)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "94301-10120",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-10120.html"
+    },
+    {
+      "callout": "39",
+      "description": "Bolt, Flange (6X18)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06018-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06018-08.html"
+    },
+    {
+      "callout": "40",
+      "description": "Bolt, Flange (6X50)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06050-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06050-08.html"
+    },
+    {
+      "callout": "41",
+      "description": "Bolt, Flange (8X55)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-08055-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08055-08.html"
+    }
+  ]
+}

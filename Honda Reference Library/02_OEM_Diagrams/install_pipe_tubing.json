@@ -1,0 +1,152 @@
+{
+  "slug": "install_pipe_tubing",
+  "label": "Install Pipe – Tubing",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/install_pipe_tubing.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/d5674df46c2701b7d491ab3bf8a621b5.png",
+  "downloaded_at": "2026-11-07T01:16:21.799Z",
+  "image_file": "02_OEM_Diagrams/install_pipe_tubing.png",
+  "parts_file": "02_OEM_Diagrams/install_pipe_tubing.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Clamp, Tube (7.5X2)",
+      "details": "",
+      "part_number": "17205-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~17205-pc6-000.html"
+    },
+    {
+      "callout": "2",
+      "description": "Pipe A, Install",
+      "details": "",
+      "part_number": "17400-P0B-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~install~17400-p0b-a00.html"
+    },
+    {
+      "callout": "3",
+      "description": "Pipe B, Install",
+      "details": "",
+      "part_number": "17410-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~install~17410-p0a-a00.html"
+    },
+    {
+      "callout": "4",
+      "description": "Pipe C, Install",
+      "details": "",
+      "part_number": "17430-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~install~17430-p0a-a00.html"
+    },
+    {
+      "callout": "5",
+      "description": "Valve, Air Assist Solenoid",
+      "details": "",
+      "part_number": "36281-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~air~assist~solenoid~36281-p0a-a01.html"
+    },
+    {
+      "callout": "6",
+      "description": "Bolt-Washer (6X16) (DACRO COATING)",
+      "details": "Replaced By: 93405-06016-04",
+      "part_number": "90146-SA7-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90146-sa7-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Bolt-Washer (6X16)",
+      "details": "",
+      "part_number": "93403-06016-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06016-08.html"
+    },
+    {
+      "callout": "9",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X70)",
+      "details": "",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "10",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X65)",
+      "details": "",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "11",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X115)",
+      "details": "",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X190)",
+      "details": "",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X195)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "14",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X265)",
+      "details": "",
+      "part_number": "95005-35008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html"
+    },
+    {
+      "callout": "15",
+      "description": "Bulk Hose, Vacuum (5.3X8000) OEM CUT SIZE: (5.3X75)",
+      "details": "Replaced By: 95005-55008-10M",
+      "part_number": "95005-53008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-53008-10m.html"
+    },
+    {
+      "callout": "16",
+      "description": "Bulk Hose, Vacuum (5.3X8000) OEM CUT SIZE: (5.3X100)",
+      "details": "Replaced By: 95005-55008-10M",
+      "part_number": "95005-53008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-53008-10m.html"
+    },
+    {
+      "callout": "17",
+      "description": "Bulk Hose, Vacuum (5.3X8000) OEM CUT SIZE: (5.3X165)",
+      "details": "Replaced By: 95005-55008-10M",
+      "part_number": "95005-53008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-53008-10m.html"
+    },
+    {
+      "callout": "18",
+      "description": "Bulk Hose, Vacuum (5.5X8000) OEM CUT SIZE: (5.3X100)",
+      "details": "",
+      "part_number": "95005-55008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-55008-10m.html"
+    },
+    {
+      "callout": "19",
+      "description": "Bulk Hose, Vacuum (5.5X8000) OEM CUT SIZE: (5.3X120)",
+      "details": "",
+      "part_number": "95005-55008-10M",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-55008-10m.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt, Flange (6X10)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06010-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06010-08.html"
+    },
+    {
+      "callout": "20",
+      "description": "Bolt, Flange (6X10)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 3\nPackage Quantity: 1",
+      "part_number": "95701-06010-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06010-08.html"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+HONDA ENGINE SOURCE READING LIST
+
+Offline: 20 OEM exploded diagram PNGs with JSON parts lists, combined CSV,
+the researched skill brief, and the 280-page 1996 service supplement PDF.
+Other references below remain online links, including the full shop-manual
+viewer and forum discussions. No subscription-only full manual is included.
+
+Source priority: Honda specifications and factory service material first;
+OEM diagrams for assembly identities; forums only as supporting context.
+Confirm engine stamp/market/year before adopting variant-specific details.
+
+Honda's 1994 US specifications
+https://hondanews.com/en-US/releases/release-ce695ed4e4dc2645d260f5004c34ca33-1994-honda-accord-coupe-specifications
+
+1996 Honda service supplement, design specifications
+https://automotrizenvideo.com/wp-content/uploads/2011/12/Honda_Accord_Coupe_Aerodeck_1996_taller_english.pdf
+
+Honda factory manual, engine construction, printed pages 5-2–5-3
+https://www.scribd.com/document/997485691/Honda-Accord-1994-1997-Service-Manual
+
+Honda ignition service information
+https://charm.li/Honda/1994/Accord%20L4-2.2L%20SOHC%20VTEC/Repair%20and%20Diagnosis/Powertrain%20Management/Ignition%20System/Firing%20Order/
+
+Honda timing belt procedure
+https://charm.li/Honda/1994/Accord%20L4-2.2L%20SOHC%20VTEC/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Belt/Service%20and%20Repair/Installation/
+
+Honda's balance-system explanation
+https://hondanews.com/en-US/releases/1990-honda-accord-drivetrain
+
+1994 system continuity
+https://hondanews.com/en-US/honda-automobiles/releases/release-ff6920cad66264558865b7004c34ca33-1994-honda-accord-introduction
+
+F22B1 cylinder-position sensor description
+https://charm.li/Honda/1997/Accord%20EX%20Sedan%20L4-2156cc%202.2L%20SOHC%20%28VTEC%29%20MFI/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/P%20Code%20Charts/P1382/
+
+the full Honda shop-manual contents
+https://www.manualslib.com/manual/464690/Honda-Accord.html
+
+Honda-Tech F22B1 belt/water-pump walkthrough
+https://honda-tech.com/forums/honda-accord-1990-2002-2/how-replace-timing-belt-timing-balancer-belt-water-pump-f22b1-1908944/
+
+intake-valve behavior discussion
+https://honda-tech.com/forums/honda-accord-1990-2002-2/valve-opening-issue-f22b1-3162430/
+
+1994 Accord 4 Door EX KL 4AT catalog
+https://www.hondapartsnow.com/1994-honda-accord--4dr_ex-kl_4at-parts.html
+
+Cylinder head
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_head.html
+
+Valve–rocker arm
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/valve_rocker_arm.html
+
+Camshaft–timing belt
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/camshaft_timing_belt.html
+
+Crankshaft–piston
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/crankshaft_piston.html
+
+Cylinder block–oil pan
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_block_oil_pan.html
+
+Oil pump–oil strainer
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/oil_pump_oil_strainer.html
+
+Water pump–sensor
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_pump_sensor.html
+
+Intake manifold
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/intake_manifold.html
+
+Cylinder head cover
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_head_cover.html
+
+Exhaust manifold
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/exhaust_manifold.html
+
+Throttle body
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/throttle_body.html
+
+Distributor, Hitachi
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/distributor_hitachi.html
+
+High-tension cord–spark plug
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/high_tension_cord_spark_plug.html
+
+Breather tube
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/breather_tube.html
+
+Water hose
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/water_hose.html
+
+Install pipe–tubing
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/install_pipe_tubing.html
+
+Engine wire harness–clamp
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/engine_wire_harness_clamp.html
+
+Alternator, Denso
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/alternator_denso.html
+
+Power-steering pump–bracket
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/p_s_pump_bracket.html
+
+Clutch–torque converter
+https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/clutch_torque_converter.html

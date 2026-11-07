@@ -1,0 +1,208 @@
+{
+  "slug": "throttle_body",
+  "label": "Throttle Body",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/throttle_body.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a47931f6adb5cf0ab19b25d1f93464db.png",
+  "downloaded_at": "2026-11-07T01:16:11.364Z",
+  "image_file": "02_OEM_Diagrams/throttle_body.png",
+  "parts_file": "02_OEM_Diagrams/throttle_body.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Screw Set",
+      "details": "",
+      "part_number": "16016-PM6-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~set~16016-pm6-005.html"
+    },
+    {
+      "callout": "2",
+      "description": "O-Ring (31.2X1.9)",
+      "details": "",
+      "part_number": "16075-PE2-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16075-pe2-005.html"
+    },
+    {
+      "callout": "3",
+      "description": "O-Ring (9.8X1.9)",
+      "details": "",
+      "part_number": "16075-P07-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16075-p07-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "O-Ring",
+      "details": "",
+      "part_number": "16076-P64-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16076-p64-000.html"
+    },
+    {
+      "callout": "5",
+      "description": "O-Ring",
+      "details": "",
+      "part_number": "16077-P06-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16077-p06-a00.html"
+    },
+    {
+      "callout": "6",
+      "description": "O-Ring (15.8X1.9)",
+      "details": "",
+      "part_number": "16078-P06-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16078-p06-a00.html"
+    },
+    {
+      "callout": "7",
+      "description": "Screw-Washer (4X16)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "16080-P07-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~16080-p07-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Bolt, Flange (6X40)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "16081-P06-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~16081-p06-a00.html"
+    },
+    {
+      "callout": "9",
+      "description": "Gasket, Throttle Body (NIPPON LEAKLESS)",
+      "details": "",
+      "part_number": "16176-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~throttle~body~16176-p0a-004.html"
+    },
+    {
+      "callout": "10",
+      "description": "Binder",
+      "details": "",
+      "part_number": "16179-P06-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~binder~16179-p06-a00.html"
+    },
+    {
+      "callout": "11",
+      "description": "Body Assy., Throttle (GR31B)",
+      "details": "",
+      "part_number": "16400-P0A-A60",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~body~assy~16400-p0a-a60.html"
+    },
+    {
+      "callout": "12",
+      "description": "Stay, Throttle Wire",
+      "details": "",
+      "part_number": "16411-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~throttle~wire~16411-p0a-a00.html"
+    },
+    {
+      "callout": "14",
+      "description": "Valve Assy., Fast Idle (AF42D)",
+      "details": "",
+      "part_number": "16500-P0A-A51",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~16500-p0a-a51.html"
+    },
+    {
+      "callout": "15",
+      "description": "Chamber, Boost",
+      "details": "",
+      "part_number": "17111-P0H-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~chamber~boost~17111-p0h-a00.html"
+    },
+    {
+      "callout": "16",
+      "description": "Gasket, Boost Chamber",
+      "details": "",
+      "part_number": "17112-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~boost~chamber~17112-p0a-004.html"
+    },
+    {
+      "callout": "17",
+      "description": "Clamp B, Engine Wire Harness",
+      "details": "",
+      "part_number": "32742-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~engine~wire~32742-p0a-a00.html"
+    },
+    {
+      "callout": "18",
+      "description": "Stay D, Engine Wire Harness",
+      "details": "",
+      "part_number": "32752-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~engine~harness~32752-p0a-a00.html"
+    },
+    {
+      "callout": "19",
+      "description": "Valve Assy., Electronic Air Control (KEIHIN)",
+      "details": "",
+      "part_number": "36450-P0A-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~36450-p0a-a01.html"
+    },
+    {
+      "callout": "20",
+      "description": "Gasket, Electronic Air Control Valve (DENSO)",
+      "details": "",
+      "part_number": "36455-PT3-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~electronic~air~36455-pt3-a01.html"
+    },
+    {
+      "callout": "21",
+      "description": "Sensor Set, Map",
+      "details": "",
+      "part_number": "37830-PAA-S00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~set~map~37830-paa-s00.html"
+    },
+    {
+      "callout": "22",
+      "description": "Sensor Assy., Air Temperature",
+      "details": "",
+      "part_number": "37880-P0A-A02",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~37880-p0a-a02.html"
+    },
+    {
+      "callout": "23",
+      "description": "O-Ring",
+      "details": "",
+      "part_number": "91303-P0A-A02",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91303-p0a-a02.html"
+    },
+    {
+      "callout": "24",
+      "description": "Nut, Flange (8MM)",
+      "details": "Fit Note: Mfg.Origin: JPN\nRequire Quantity: 2\nPackage Quantity: 10",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "24",
+      "description": "Nut, Flange (8MM)",
+      "details": "Fit Note: Mfg.Origin: USA\nRequire Quantity: 4\nPackage Quantity: 10",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "25",
+      "description": "Bolt, Flange (6X14)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "95701-06014-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-08.html"
+    },
+    {
+      "callout": "26",
+      "description": "Bolt, Flange (6X25)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06025-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06025-08.html"
+    },
+    {
+      "callout": "27",
+      "description": "Bolt, Flange (8X40)",
+      "details": "",
+      "part_number": "95701-08040-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08040-08.html"
+    },
+    {
+      "callout": "28",
+      "description": "Bolt, Flange (8X45)",
+      "details": "",
+      "part_number": "95701-08045-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08045-08.html"
+    }
+  ]
+}

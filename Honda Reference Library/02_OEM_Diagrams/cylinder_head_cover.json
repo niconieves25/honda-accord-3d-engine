@@ -1,0 +1,96 @@
+{
+  "slug": "cylinder_head_cover",
+  "label": "Cylinder Head Cover",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/cylinder_head_cover.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/659d0e3b2a5d162e4e824286d6876928.png",
+  "downloaded_at": "2026-11-07T01:16:06.586Z",
+  "image_file": "02_OEM_Diagrams/cylinder_head_cover.png",
+  "parts_file": "02_OEM_Diagrams/cylinder_head_cover.json",
+  "parts": [
+    {
+      "callout": "2",
+      "description": "Gasket Set, Head Cover",
+      "details": "",
+      "part_number": "12030-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~set~head~cover~12030-p0a-000.html"
+    },
+    {
+      "callout": "4",
+      "description": "Cover, Cylinder Head",
+      "details": "",
+      "part_number": "12310-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~cylinder~head~12310-p0a-000.html"
+    },
+    {
+      "callout": "6",
+      "description": "Gasket, Cylinder Head Cover",
+      "details": "",
+      "part_number": "12341-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~head~cover~12341-p0a-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Seal, Spark Plug T",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "12342-RYE-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~spark~plug~12342-rye-004.html"
+    },
+    {
+      "callout": "8",
+      "description": "Seal, Spark Plug Tube (NOK)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1\nReplaced By: 12342-RYE-004",
+      "part_number": "12342-P2F-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~spark~plug~tube~12342-p2f-a01.html"
+    },
+    {
+      "callout": "9",
+      "description": "Cap Assy., Oil Filler",
+      "details": "",
+      "part_number": "15610-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~15610-pc6-000.html"
+    },
+    {
+      "callout": "10",
+      "description": "Gasket, Oil Filler",
+      "details": "",
+      "part_number": "15613-PC6-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~filler~15613-pc6-000.html"
+    },
+    {
+      "callout": "11",
+      "description": "Stay B, Ignition Wire Clamp",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "32762-PT0-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~ignition~wire~32762-pt0-010.html"
+    },
+    {
+      "callout": "12",
+      "description": "Bolt A, Head Cover",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "90013-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~head~cover~90013-p0a-000.html"
+    },
+    {
+      "callout": "13",
+      "description": "Bolt B, Head Cover",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "90014-P07-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~head~cover~90014-p07-000.html"
+    },
+    {
+      "callout": "16",
+      "description": "Washer, Head Cover",
+      "details": "Require Quantity: 5\nPackage Quantity: 1",
+      "part_number": "90442-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~head~cover~90442-p0a-000.html"
+    },
+    {
+      "callout": "17",
+      "description": "Bolt, Flange (6X10)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "96001-06010-07",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~96001-06010-07.html"
+    }
+  ]
+}

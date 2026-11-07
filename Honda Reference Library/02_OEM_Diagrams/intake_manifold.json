@@ -1,0 +1,285 @@
+{
+  "slug": "intake_manifold",
+  "label": "Intake Manifold",
+  "catalog": "1994 Accord 4 Door EX KL 4AT — provisional SOHC VTEC reference",
+  "source_url": "https://www.hondapartsnow.com/parts-list/1994-honda-accord--4dr_ex-kl_4at/engine/intake_manifold.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/586cadcb7a1188b09e4e5398c4459f37.png",
+  "downloaded_at": "2026-11-07T01:16:03.782Z",
+  "image_file": "02_OEM_Diagrams/intake_manifold.png",
+  "parts_file": "02_OEM_Diagrams/intake_manifold.json",
+  "parts": [
+    {
+      "callout": "1",
+      "description": "Injector Set, Fuel",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "06164-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~injector~set~fuel~06164-p0a-a00.html"
+    },
+    {
+      "callout": "2",
+      "description": "Seal Ring, Injector (OTSUKA)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1\nReplaced By: 16472-P0H-A01",
+      "part_number": "16472-PH7-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~ring~injector~16472-ph7-003.html"
+    },
+    {
+      "callout": "2",
+      "description": "Seal Ring, Injector (NOK)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "16472-P0H-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~ring~injector~16472-p0h-a01.html"
+    },
+    {
+      "callout": "3",
+      "description": "Cushion Ring, Injector (NOK)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "16473-P10-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cushion~ring~injector~16473-p10-a01.html"
+    },
+    {
+      "callout": "4",
+      "description": "Pipe, Fuel",
+      "details": "",
+      "part_number": "16610-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~fuel~16610-p0a-a00.html"
+    },
+    {
+      "callout": "5",
+      "description": "Pipe, Fuel",
+      "details": "",
+      "part_number": "16610-P0A-S00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~fuel~16610-p0a-s00.html"
+    },
+    {
+      "callout": "6",
+      "description": "Pipe, Fuel Return",
+      "details": "",
+      "part_number": "16612-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~fuel~return~16612-p0a-000.html"
+    },
+    {
+      "callout": "7",
+      "description": "Hose, Fuel Return",
+      "details": "",
+      "part_number": "16613-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~fuel~return~16613-p0a-000.html"
+    },
+    {
+      "callout": "8",
+      "description": "Mesh, Fuel Filter",
+      "details": "",
+      "part_number": "16614-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~mesh~fuel~filter~16614-p0a-000.html"
+    },
+    {
+      "callout": "9",
+      "description": "Regulator Assy., Pressure",
+      "details": "",
+      "part_number": "16740-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~regulator~assy~16740-p0a-003.html"
+    },
+    {
+      "callout": "10",
+      "description": "O-Ring, Pressure Regulator",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "16741-PG7-005",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~pressure~regulator~16741-pg7-005.html"
+    },
+    {
+      "callout": "11",
+      "description": "Manifold A, Inlet",
+      "details": "",
+      "part_number": "17100-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~manifold~17100-p0a-a00.html"
+    },
+    {
+      "callout": "12",
+      "description": "Gasket A, Inlet Manifold (NIPPON LEAKLESS)",
+      "details": "",
+      "part_number": "17105-P0A-A02",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~17105-p0a-a02.html"
+    },
+    {
+      "callout": "13",
+      "description": "Manifold B, Inlet (HAD)",
+      "details": "",
+      "part_number": "17110-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~manifold~17110-p0a-a00.html"
+    },
+    {
+      "callout": "14",
+      "description": "Gasket B, Inlet Manifold (ISHINO GASKET)",
+      "details": "",
+      "part_number": "17115-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~17115-p0a-003.html"
+    },
+    {
+      "callout": "15",
+      "description": "Stay, Inlet Manifold",
+      "details": "",
+      "part_number": "17125-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~17125-p0a-000.html"
+    },
+    {
+      "callout": "16",
+      "description": "Chamber, EGR",
+      "details": "",
+      "part_number": "17145-P0A-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~chamber~egr~17145-p0a-000.html"
+    },
+    {
+      "callout": "17",
+      "description": "Gasket, EGR Chamber",
+      "details": "",
+      "part_number": "17146-P0A-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~egr~chamber~17146-p0a-004.html"
+    },
+    {
+      "callout": "18",
+      "description": "Valve Set, EGR",
+      "details": "",
+      "part_number": "18011-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~set~egr~18011-p0a-a00.html"
+    },
+    {
+      "callout": "20",
+      "description": "Gasket, EGR Valve (ISHINO GASKET)",
+      "details": "",
+      "part_number": "18715-PB2-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~egr~valve~18715-pb2-000.html"
+    },
+    {
+      "callout": "21",
+      "description": "Stay J, Engine Wire Harness",
+      "details": "",
+      "part_number": "32759-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~engine~wire~harness~32759-p0a-a00.html"
+    },
+    {
+      "callout": "22",
+      "description": "Bolt, Sealing 6Mm",
+      "details": "",
+      "part_number": "90009-RMX-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~6mm~90009-rmx-010.html"
+    },
+    {
+      "callout": "24",
+      "description": "Bolt, Sealing (12MM)",
+      "details": "",
+      "part_number": "90020-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~90020-p0a-003.html"
+    },
+    {
+      "callout": "26",
+      "description": "Bolt A, Fuel Pipe",
+      "details": "Require Quantity: 3\nPackage Quantity: 1\nReplaced By: 90027-P0A-305",
+      "part_number": "90027-P0A-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~fuel~pipe~90027-p0a-003.html"
+    },
+    {
+      "callout": "27",
+      "description": "Washer, Sealing (12MM)",
+      "details": "",
+      "part_number": "90428-PD6-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~sealing~90428-pd6-003.html"
+    },
+    {
+      "callout": "28",
+      "description": "Washer, Sealing (6MM)",
+      "details": "",
+      "part_number": "90430-PD6-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~sealing~90430-pd6-003.html"
+    },
+    {
+      "callout": "29",
+      "description": "O-Ring (7.3X2.2) (NOK)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "91301-P2F-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91301-p2f-a01.html"
+    },
+    {
+      "callout": "30",
+      "description": "O-Ring (10X1.7)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "91302-P0A-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91302-p0a-a00.html"
+    },
+    {
+      "callout": "31",
+      "description": "Clamp, Fuel Hose (D10.5)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "91406-SL4-931",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~fuel~hose~91406-sl4-931.html"
+    },
+    {
+      "callout": "32",
+      "description": "Bolt, Stud (8X22)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "92900-08022-0B",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~92900-08022-0b.html"
+    },
+    {
+      "callout": "33",
+      "description": "Bolt, Stud (8X35)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "92900-08035-1B",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~92900-08035-1b.html"
+    },
+    {
+      "callout": "34",
+      "description": "Nut, Flange (6MM)",
+      "details": "Require Quantity: 3\nPackage Quantity: 10",
+      "part_number": "94050-06080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-06080.html"
+    },
+    {
+      "callout": "35",
+      "description": "Nut, Flange (8MM)",
+      "details": "Require Quantity: 13\nPackage Quantity: 10",
+      "part_number": "94050-08080",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html"
+    },
+    {
+      "callout": "36",
+      "description": "Bolt, Flange (6X10)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-06010-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06010-08.html"
+    },
+    {
+      "callout": "37",
+      "description": "Bolt, Flange (6X14)",
+      "details": "Require Quantity: 4\nPackage Quantity: 1",
+      "part_number": "95701-06014-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-08.html"
+    },
+    {
+      "callout": "38",
+      "description": "Bolt, Flange (6X30)",
+      "details": "Require Quantity: 5\nPackage Quantity: 1",
+      "part_number": "95701-06030-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06030-08.html"
+    },
+    {
+      "callout": "39",
+      "description": "Bolt, Flange (8X16)",
+      "details": "",
+      "part_number": "95701-08016-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08016-08.html"
+    },
+    {
+      "callout": "40",
+      "description": "Bolt, Flange (8X18)",
+      "details": "Require Quantity: 2\nPackage Quantity: 1",
+      "part_number": "95701-08018-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08018-08.html"
+    },
+    {
+      "callout": "41",
+      "description": "Bolt, Flange (8X25)",
+      "details": "Require Quantity: 3\nPackage Quantity: 1",
+      "part_number": "95701-08025-08",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08025-08.html"
+    }
+  ]
+}
