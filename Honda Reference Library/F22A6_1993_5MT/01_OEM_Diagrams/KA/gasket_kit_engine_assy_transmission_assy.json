@@ -1,0 +1,77 @@
+{
+  "slug": "gasket_kit_engine_assy_transmission_assy",
+  "label": "Gasket Kit - Engine Assy.  - Transmission Assy.",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/gasket_kit_engine_assy_transmission_assy.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.json",
+  "part_rows": 6,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "06110-PT3-A01",
+      "description": "Gasket Kit, Cylinder Head",
+      "quantity": null,
+      "details": "Replaced By: 06110-PT3-A03",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~kit~cylinder~06110-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "06111-PT1-000",
+      "description": "Gasket Kit, Cylinder Block",
+      "quantity": null,
+      "details": "Replaced By: 06111-PT1-020",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~kit~cylinder~06111-pt1-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "10002-PT6-A03",
+      "description": "[Freight Parts] General Assy., Cylinder Block",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~general~assy~10002-pt6-a03.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "10002-PT9-A03",
+      "description": "[Freight Parts] General Assy., Cylinder Block (F22A6)",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 10002-PT6-A03",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~general~assy~10002-pt9-a03.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "10003-PT4-X71",
+      "description": "General Assy., Cylinder Head",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~general~assy~10003-pt4-x71.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "20011-PX5-U52",
+      "description": "[Freight Parts] Transmission Assy. (H2U5)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~transmission~assy~20011-px5-u52.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "521f0d8704ef9912b6eb9a131e055eb87d3ba1f8133502d4bfd8495376a969d0",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

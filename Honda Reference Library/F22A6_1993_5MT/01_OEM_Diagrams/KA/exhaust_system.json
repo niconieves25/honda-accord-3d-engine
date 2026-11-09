@@ -1,0 +1,403 @@
+{
+  "slug": "exhaust_system",
+  "label": "Exhaust System",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/exhaust_system.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/exhaust_system.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/exhaust_system.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/exhaust_system.json",
+  "part_rows": 37,
+  "parts": [
+    {
+      "callout": "3",
+      "part_number": "18160-PT6-A30",
+      "description": "Converter (MHE335)",
+      "quantity": null,
+      "details": "Replaced By: 18160-PT6-A40",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a30.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "18160-PT6-A50",
+      "description": "Converter (MHH335)",
+      "quantity": null,
+      "details": "Replaced By: 18160-PT6-A40",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a50.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "18160-PT6-A40",
+      "description": "Converter (MTH335)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a40.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "18176-PT0-003",
+      "description": "Bolt, Converter (YUTAKA)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~converter~18176-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b6b18fc37d9b4f47f5879e12aac7f7a2/e324e377d508f6772827090ef8264f15.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "18176-P08-003",
+      "description": "Bolt, Converter",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~converter~18176-p08-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c7a53e0110b70f388f3966e2cfb0c0f6/9a58f5d7001c17f67e9bba59c5950a59.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "18181-PT4-X00",
+      "description": "Cover (LOWER)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~18181-pt4-x00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "18182-PT4-X00",
+      "description": "Cover (UPPER)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~18182-pt4-x00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "18210-SM4-A70",
+      "description": "Pipe A, Exhaust",
+      "quantity": null,
+      "details": "Replaced By: 18210-SM4-X35",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~18210-sm4-a70.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "18212-SB2-961",
+      "description": "Gasket, Exhaust Pipe (ISHINO)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~18212-sb2-961.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/63c74d7d7b0c34b9128d68a8e3d3876d/bc5bdbb7ba48e4051623915909f4a857.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/63c74d7d7b0c34b9128d68a8e3d3876d/64eac462291635d42048f9df21f381e2.jpg"
+      ]
+    },
+    {
+      "callout": "12",
+      "part_number": "18213-SM4-000",
+      "description": "Stay, Exhaust Pipe",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~18213-sm4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "18215-SA7-000",
+      "description": "Rubber, Muffler Mounting (70X45X25)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~muffler~mounting~18215-sa7-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/52822084171ddcaad100e9fd3fdd6ffb/a683d36e5d054998d9af51fe9813b4b5.jpg"
+      ]
+    },
+    {
+      "callout": "14",
+      "part_number": "18215-SE0-G00",
+      "description": "Rubber, Exhaust Pipe Mounting (60X50X20)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~18215-se0-g00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/96a667c574a8b281ff04c4525e42ba80/7975dd1cb43b04baf2f282f405e9f6b6.jpg"
+      ]
+    },
+    {
+      "callout": "16",
+      "part_number": "18220-SM4-A73",
+      "description": "Pipe B, Exhaust",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN    Replaced By: 18220-SM5-A14",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~18220-sm4-a73.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3254d47c62303301421ac41e2f442a90/84789994ccf94b5c2dc97e5cb45bf42b.jpg"
+      ]
+    },
+    {
+      "callout": "16",
+      "part_number": "18220-SM5-A13",
+      "description": "Pipe B, Exhaust",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 18220-SM5-A14",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~18220-sm5-a13.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "18222-SM1-003",
+      "description": "Bracket, Exhaust Pipe Mounting",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~18222-sm1-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "18282-SM4-020",
+      "description": "Bracket B, Flexible Mounting",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~flexible~mounting~18282-sm4-020.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "21",
+      "part_number": "18303-SM4-020",
+      "description": "Gasket, Muffler",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~muffler~18303-sm4-020.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/055ab71526f064b1c207f0b6c5cf24ad/1574ec2ce3e288229ab3d7213a9f08d2.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/055ab71526f064b1c207f0b6c5cf24ad/d5fa0cdb804dbab5b224b9c6957c4e44.jpg"
+      ]
+    },
+    {
+      "callout": "23",
+      "part_number": "18307-SM1-935",
+      "description": "Muffler, Exhaust",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 18307-SM4-506",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~muffler~18307-sm1-935.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "23",
+      "part_number": "18307-SM4-935",
+      "description": "Muffler, Exhaust",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN    Replaced By: 18307-SM4-506",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~muffler~18307-sm4-935.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "24",
+      "part_number": "18310-SB0-023",
+      "description": "Finisher, Exhaust Pipe",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~finisher~18310-sb0-023.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c07177e08d606bf8510f4a1125ce706e/65eff9287295c900c45269722e8f8321.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c07177e08d606bf8510f4a1125ce706e/c5c3e5ce445fa1fdbaae1585cd9e457f.jpg"
+      ]
+    },
+    {
+      "callout": "26",
+      "part_number": "18393-SH3-S00",
+      "description": "Gasket, Pre Chamber (52.5MM-53.5MM)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~pre~chamber~18393-sh3-s00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b6670b314afb07338080fdcfaed802ce/bd0df18674af4acc585a3275012eebef.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b6670b314afb07338080fdcfaed802ce/b6e0b1829adb696c370ac86e80764609.jpg"
+      ]
+    },
+    {
+      "callout": "27",
+      "part_number": "36531-PT6-A02",
+      "description": "Sensor, Oxygen",
+      "quantity": null,
+      "details": "Replaced By: 36531-PK3-A05",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~oxygen~36531-pt6-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "29",
+      "part_number": "74601-SM4-A20",
+      "description": "Plate, Floor Heat Baffle",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 74601-SM4-G00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~floor~heat~baffle~74601-sm4-a20.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "29",
+      "part_number": "74601-SM4-G00",
+      "description": "Plate, Floor Heat Baffle",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~floor~heat~baffle~74601-sm4-g00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "30",
+      "part_number": "74610-SM4-000",
+      "description": "Reinforcement, FR. Crossmember",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~reinforcement~74610-sm4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "31",
+      "part_number": "74651-SM4-000",
+      "description": "Plate, Tank Baffle",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~tank~baffle~74651-sm4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "32",
+      "part_number": "74655-SM4-000",
+      "description": "Plate, Muffler Baffle",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~muffler~baffle~74655-sm4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "33",
+      "part_number": "90115-659-003",
+      "description": "Nut, Self-Lock (8MM) (CLINCH)",
+      "quantity": 6,
+      "details": "Require Quantity: 6    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~self~lock~90115-659-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/2a1f62dcec1877eddcfc576dffb5b8e8/f180fb8e16792986eb7f096e36792b23.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/2a1f62dcec1877eddcfc576dffb5b8e8/17244e61cbffe1e50cf00da5388e41a7.jpg"
+      ]
+    },
+    {
+      "callout": "34",
+      "part_number": "90212-SA5-003",
+      "description": "Nut, Self-Lock (10MM)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 25",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~self~lock~90212-sa5-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b4863d268d695af618deee895e990ba2/068fb9ae177bef9436b19d61f9b6834b.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b4863d268d695af618deee895e990ba2/afd1b637592b5589a851c197949f9fed.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b4863d268d695af618deee895e990ba2/950745fe1b8767c3d0b8b729ac39a72c.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b4863d268d695af618deee895e990ba2/3d9d3c1e73b41b0febc5cd17618b33ed.jpg"
+      ]
+    },
+    {
+      "callout": "35",
+      "part_number": "90212-671-005",
+      "description": "Nut, Self-Lock (10MM)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~self~lock~90212-671-005.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/07657bcbef261b8af30a1ad7e715c5d4/4c691b669480312355fa30d376c32c55.jpg"
+      ]
+    },
+    {
+      "callout": "36",
+      "part_number": "93404-06016-08",
+      "description": "Bolt-Washer (6X16)",
+      "quantity": 6,
+      "details": "Require Quantity: 6    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93404-06016-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7621a5d8c2027777a05568b0daf73924/c98cc08e6cc75f75515db1f3b36d534b.jpg"
+      ]
+    },
+    {
+      "callout": "37",
+      "part_number": "93405-06012-08",
+      "description": "Bolt-Washer (6X12)",
+      "quantity": 9,
+      "details": "Require Quantity: 9    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93405-06012-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/2a68ee6832849597df6ad16ba4c27a48/25f964b506cf163d48d6038dba19599b.jpg"
+      ]
+    },
+    {
+      "callout": "38",
+      "part_number": "93405-06016-08",
+      "description": "Bolt-Washer (6X16)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93405-06016-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5afd7c423a81fcd74eaaf141c8531588/04648f88ddb1db8fca645dbeee0c825c.jpg"
+      ]
+    },
+    {
+      "callout": "39",
+      "part_number": "90023-PR7-A01",
+      "description": "Bolt, Flange (6X12) (IWATA BOLT)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 5",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90023-pr7-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3fd1c31b45e756224321a8ed6d42227/d7ebf5281fa7ea4b7234920e11a67299.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3fd1c31b45e756224321a8ed6d42227/d12c9bf0fca96b9091fa245cb7a5d395.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3fd1c31b45e756224321a8ed6d42227/f807875620590c1a475069f649f320f7.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3fd1c31b45e756224321a8ed6d42227/ed040283a6966c396c6fba3e4074d635.jpg"
+      ]
+    },
+    {
+      "callout": "40",
+      "part_number": "95701-06014-00",
+      "description": "Bolt, Flange (6X14)",
+      "quantity": 2,
+      "details": "Fit Note: Mfg.Origin: JPN    Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/50484fa220a2ce9575040c649cbcff94/feb30fe3027e0a09e6608095daf22426.jpg"
+      ]
+    },
+    {
+      "callout": "40",
+      "part_number": "95701-06014-00",
+      "description": "Bolt, Flange (6X14)",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/50484fa220a2ce9575040c649cbcff94/feb30fe3027e0a09e6608095daf22426.jpg"
+      ]
+    },
+    {
+      "callout": "41",
+      "part_number": "95701-10020-08",
+      "description": "Bolt, Flange (10X20)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10020-08.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "7ad1b03bf55c04063255388976008e90067ede00bc63c000a030af0c6e7462bf",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

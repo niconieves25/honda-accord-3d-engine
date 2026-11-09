@@ -1,0 +1,289 @@
+{
+  "slug": "water_pump",
+  "label": "Water Pump",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/water_pump.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/water_pump.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/water_pump.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/water_pump.json",
+  "part_rows": 23,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "19200-P0A-003",
+      "description": "Water Pump (YAMADA)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~water~pump~19200-p0a-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e89d728b54ce956ee283dfc75d05d8a2/a34d1541473b4b1d6934f41e9eb9115a.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e89d728b54ce956ee283dfc75d05d8a2/aa25de1ddb8797905e43d1e20c6ed113.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e89d728b54ce956ee283dfc75d05d8a2/be1eabc1c9850d19aec33dcd968ea328.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e89d728b54ce956ee283dfc75d05d8a2/7e31d25e680da711b7dc5603c25dd62e.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "19222-PT0-300",
+      "description": "Gasket, Water Pump",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~water~pump~19222-pt0-300.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1143010aaccdac0cba172985ab3ac9cf/d5417ee030a1764948a473dd31515ebe.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "19223-PT0-000",
+      "description": "Rubber, Water Pump Seal",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~water~pump~seal~19223-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "19301-PAA-306",
+      "description": "Thermostat Assy. (NIPPON THERMOSTAT)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~thermostat~assy~19301-paa-306.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12e1d8567c3e879414d7744413445912/9da091e17958cadbe8c9f7e2285b225f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12e1d8567c3e879414d7744413445912/cc7b4efcee5cf3d3c0df9b2ecb216e52.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12e1d8567c3e879414d7744413445912/f1bc3ddba7433899ed05d50da081691f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12e1d8567c3e879414d7744413445912/ab836844eb9152fb65cd65b7ccd75054.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "19301-P08-316",
+      "description": "Thermostat Assy. (NIPPON THERMOSTAT)",
+      "quantity": null,
+      "details": "Replaced By: 19301-PAA-306",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~thermostat~assy~19301-p08-316.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ae35cc2630407919e378216408c5d3ce/0a53d3cb459e6eddc150535ad2472cb5.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ae35cc2630407919e378216408c5d3ce/7777f4093afbf981a5476442d5f909be.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ae35cc2630407919e378216408c5d3ce/e06c69096d39f96388c101d6edbcdbdc.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8a95edc3fd87159bbefaf23e0f033a66/6e69b408a343200c2c8092074bef164e.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "19305-PT0-000",
+      "description": "Rubber, Thermostat Mounting",
+      "quantity": null,
+      "details": "Replaced By: 19305-PLC-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~thermostat~mounting~19305-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/babdfa990d5174c4c08c1c69b9b69954/eba227d9c5053ebd0bb3fa75450a86d2.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "19311-PT0-000",
+      "description": "Cover, Thermostat",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~thermostat~19311-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "19313-PT0-000",
+      "description": "Gasket, Thermostat Case",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~thermostat~case~19313-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4948bf765f3ec38d307f6ff57af2897e/01b2bf7b0c225910e6c48141d3fda205.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4948bf765f3ec38d307f6ff57af2897e/38566efcbd981e014a45bf4c01ef30b2.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "19320-PT3-A00",
+      "description": "Case, Thermostat",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~case~thermostat~19320-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "19360-PT3-A00",
+      "description": "Cover, Water Outlet",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~water~outlet~19360-pt3-a00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b695ceca942bd8d32a183cbc89fe98eb/80fa9bccdbf0aba12e4a8869b67e3e08.jpg"
+      ]
+    },
+    {
+      "callout": "11",
+      "part_number": "19500-PT0-000",
+      "description": "Joint, Tube",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~joint~tube~19500-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/af5a706de941ccf2d23c147f5674455d/e68141e32c481314c1c90b23747013d8.jpg"
+      ]
+    },
+    {
+      "callout": "12",
+      "part_number": "19505-PT3-A00",
+      "description": "Pipe, Connecting",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~connecting~19505-pt3-a00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b7ea1d4e543358bb93076802b0cf2753/00c4c8fd48b4cf5db95faf30ec8e488f.jpg"
+      ]
+    },
+    {
+      "callout": "13",
+      "part_number": "19516-PC1-000",
+      "description": "Bolt, Breathing Water",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~breathing~water~19516-pc1-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4812b7bd6449a233d803a69791145a97/03768617235f224490bed85bb4c3dcee.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4812b7bd6449a233d803a69791145a97/02356426ed8a213429aa78b0c7c2e114.jpg"
+      ]
+    },
+    {
+      "callout": "14",
+      "part_number": "37773-PT0-004",
+      "description": "Sensor, Thermo (A-93) (TEC)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~thermo~37773-pt0-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/bff383dac969194fc9938c36e3137cdf/5c5abb274bfaae07e1c2f460e66a4ce3.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f640eb76a0677e5300ac6e89dc4b7432/18b149de51d6e5a710c507eec8768392.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f640eb76a0677e5300ac6e89dc4b7432/398f37442850c20012ab8552f3ace494.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/bff383dac969194fc9938c36e3137cdf/a3fa81d3574e61605aa361043718a780.jpg"
+      ]
+    },
+    {
+      "callout": "15",
+      "part_number": "37773-PT3-505",
+      "description": "Switch (A-106)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~switch~a~106~37773-pt3-505.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d1c924f8ddd0b81f6c94b263f4003072/40404fb0b6cd60ff5e0b40cc00632d52.jpg"
+      ]
+    },
+    {
+      "callout": "16",
+      "part_number": "90002-PD2-000",
+      "description": "Bolt, Flange (8X16)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90002-pd2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/999175b1b753e488d7642228548362a7/e4bbc446f27f2ac6571101323a6e5624.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "91307-PN3-000",
+      "description": "O-Ring (17.8X1.4)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91307-pn3-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e6b30a94fec8e7074ed71c9fd4da0ee5/2861c6f9a3d62618c888d93dc40f87d7.jpg"
+      ]
+    },
+    {
+      "callout": "18",
+      "part_number": "91307-PH7-660",
+      "description": "O-Ring (13.5X1.4)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91307-ph7-660.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/be2e178a8fdfae9e0bcedefae7ec7749/52ac73f0f86eff46a3f84f7af4439c9d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/be2e178a8fdfae9e0bcedefae7ec7749/7e40609ce2be762af3044acd8c6dbb6e.jpg"
+      ]
+    },
+    {
+      "callout": "19",
+      "part_number": "91314-PH7-003",
+      "description": "O-Ring (31.2X4.1) (NOK)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91314-ph7-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b5215d8329fe88b0e40918b301b01e74/34e9777af03771534a18643d3687a20d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d3d30fc24cd27ebf2cb6e1f72171aed6/063b0b80bb874083af75fcc8b0907b5a.jpg"
+      ]
+    },
+    {
+      "callout": "20",
+      "part_number": "95701-06020-08",
+      "description": "Bolt, Flange (6X20)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06020-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a5d84e601fe2d74650c01c9b943d36dc/25db62c5a6eb2bfca658c9e7478189dd.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/82193c33befb49c647b4584e54af96a2/c9466aa0ad310278a880e7c10c291732.jpg"
+      ]
+    },
+    {
+      "callout": "21",
+      "part_number": "95701-06022-08",
+      "description": "Bolt, Flange (6X22)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06022-08.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "22",
+      "part_number": "95701-06025-08",
+      "description": "Bolt, Flange (6X25)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06025-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8a78f4236049742fd840f8e728c47366/53e069ee7c157ea2e781d50e5798acc4.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/b72db64bdcee44145114df27d63bb7f0.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/0beb3289310e3319ab559395f2c53e2e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/f207e9ac334f3b1902cdac8a4eb3689c.jpg"
+      ]
+    },
+    {
+      "callout": "23",
+      "part_number": "95701-08025-08",
+      "description": "Bolt, Flange (8X25)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08025-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8269c1a0c570aec88a8876adb721fa23/4bb3c3a24dac0c938b63a471313b423f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8464e6bc35c81cb6cbe0314859373a62/75fbc493afc1689c4fc05184afa16d56.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "67921068bbb3317446054abd5dcbb7b12ca6caee2930f60c8373c2b2905113c1",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

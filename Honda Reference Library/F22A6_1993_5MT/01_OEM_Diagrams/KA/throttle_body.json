@@ -1,0 +1,312 @@
+{
+  "slug": "throttle_body",
+  "label": "Throttle Body",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/throttle_body.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/throttle_body.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/throttle_body.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/throttle_body.json",
+  "part_rows": 27,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "16016-PM6-005",
+      "description": "Screw Set",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~set~16016-pm6-005.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/19910332fa2ed618e695dfa5b56ea836/efd84fbb4300c21d71fb9e4e4aa57cd1.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "16075-PE2-005",
+      "description": "O-Ring (31.2X1.9)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16075-pe2-005.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/01b6b97c0035b6c76eb10005539e8156/a94d443c60c2d6a14aacac2aba21abf0.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "16077-PR3-005",
+      "description": "O-Ring",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~16077-pr3-005.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/bc06c1a762b9205c8123999fc0525432/fbe8ef817cc216a8ac2e7c68e65c47d3.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "16176-PT2-003",
+      "description": "Gasket, Throttle Body (ISHINO GASKET)",
+      "quantity": null,
+      "details": "Replaced By: 16176-PT2-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~throttle~body~16176-pt2-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5c3f9367fcebf868aef373cf858280a1/bd5cb3e8e6aeba0088202691ba3d744f.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "16176-PT2-004",
+      "description": "Gasket, Throttle Body (NIPPON LEAKLESS)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~throttle~body~16176-pt2-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7458b30bd1176a32a64208f192a053c5/c2721161c99dcc3be5ac7ee2f1cb2162.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7458b30bd1176a32a64208f192a053c5/3d2e6caae67ff00baffb2d0a7a435c7c.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "16400-PT6-A00",
+      "description": "Body Assy., Throttle (GF72B)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~body~assy~16400-pt6-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "16411-PT2-000",
+      "description": "Stay, Throttle Wire",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~throttle~wire~16411-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "16500-PT2-000",
+      "description": "Valve Assy., Fast Idle (AF15C)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~16500-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3c311306e5c2186f808d6b08fa4ea3fe/6c9031f40922b791e1b8ecd57eb0c824.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4b826ed58338d71afeb504e6c56c5d06/f15fa9e5038efe2dd57afba1b07126b8.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "17340-PT2-000",
+      "description": "Valve Assy., Air Boost",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~17340-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "17341-PT2-000",
+      "description": "Gasket, Air Boost Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~air~boost~valve~17341-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "17346-PT2-000",
+      "description": "Tube, Air Boost Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~tube~air~boost~valve~17346-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "17347-PT2-000",
+      "description": "Clamp, Air Boost Valve Pipe",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~air~boost~valve~17347-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "17349-PT2-000",
+      "description": "Pipe, Air Boost Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~air~boost~valve~17349-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "36450-PT3-A01",
+      "description": "Valve Assy., Electronic Air Control (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~36450-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "36454-PS4-003",
+      "description": "Filter, Electronic Air Control Valve (TOYO ROKI)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~filter~electronic~air~36454-ps4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/430662c936405f9b541549dbcfb32e44/4030cce4981071c01ce28a79d28739d3.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "36455-PT3-A01",
+      "description": "Gasket, Electronic Air Control Valve (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~electronic~air~36455-pt3-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1311e1d5a3bb9c754cd1ce805082e917/226e2670282b2b444d6099edb9287cfe.jpg"
+      ]
+    },
+    {
+      "callout": "18",
+      "part_number": "90634-PA0-000",
+      "description": "Cap, Sealing",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cap~sealing~90634-pa0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "91304-PE2-005",
+      "description": "O-Ring (15.8X1.9)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91304-pe2-005.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d0c3daaa0c990a6cb13400cc153b99b6/e61ed11912d6e174ccc92b1f07b14b2c.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d0c3daaa0c990a6cb13400cc153b99b6/bce87fb62f57132e7adc9f52290be93f.jpg"
+      ]
+    },
+    {
+      "callout": "20",
+      "part_number": "94050-08080",
+      "description": "Nut, Flange (8MM)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/69defaa27923a7f94a9aa037fdec26ed/a285c7d3fdbcd1d78b42354b2c8fee87.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/69defaa27923a7f94a9aa037fdec26ed/c96e5f38d25bf056558b49431268ac15.jpg"
+      ]
+    },
+    {
+      "callout": "21",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X110)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "22",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X120)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "23",
+      "part_number": "95005-45001-10M",
+      "description": "Bulk Hose, Vacuum (4.5X1000) OEM CUT SIZE: (4.5X15)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-45001-10m.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "24",
+      "part_number": "95701-06014-08",
+      "description": "Bolt, Flange (6X14)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06014-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/98e4911f4ec46db3f566916990791a31/0d208d470823fe019543984e27f6f552.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/61ab251767e2cf3119d7ac720748ea97/7b2adad3d0dce9d9166bddb896e6d4eb.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/61ab251767e2cf3119d7ac720748ea97/515a6cd44638141c5e78fd5a3d5be018.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/61ab251767e2cf3119d7ac720748ea97/286d74e1372903e6452c0441adb45293.jpg"
+      ]
+    },
+    {
+      "callout": "25",
+      "part_number": "95701-06020-08",
+      "description": "Bolt, Flange (6X20)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06020-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a5d84e601fe2d74650c01c9b943d36dc/25db62c5a6eb2bfca658c9e7478189dd.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/82193c33befb49c647b4584e54af96a2/c9466aa0ad310278a880e7c10c291732.jpg"
+      ]
+    },
+    {
+      "callout": "26",
+      "part_number": "95701-06025-08",
+      "description": "Bolt, Flange (6X25)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06025-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8a78f4236049742fd840f8e728c47366/53e069ee7c157ea2e781d50e5798acc4.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/b72db64bdcee44145114df27d63bb7f0.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/0beb3289310e3319ab559395f2c53e2e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/f207e9ac334f3b1902cdac8a4eb3689c.jpg"
+      ]
+    },
+    {
+      "callout": "27",
+      "part_number": "95701-08045-08",
+      "description": "Bolt, Flange (8X45)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08045-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a43b789ae8a42a4e9607cee9fb5e01e5/740b816d5e944a42ec60fb5afdfeaaa5.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5ada929dc028b8cdad315f8598eabf77/3add758b4f3fc23587ef42bfbceb7a26.jpg"
+      ]
+    },
+    {
+      "callout": "29",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X730)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "0bed11fd04116617f04cf10d52c422384c0c35b1069abb4d460ca14cc1c73ca1",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}
