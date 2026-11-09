@@ -1,5 +1,19 @@
 # Explorador del motor Honda F22A6
 
+## Portada y publicación
+
+La portada bilingüe está en `../index.html`. El botón **Entrar al explorador** abre el dashboard existente y conserva las direcciones de las piezas individuales.
+
+El build de producción utiliza dependencias del proyecto con versiones fijadas; no requiere una skill global:
+
+```sh
+npm ci
+npm run build
+npm test
+```
+
+Desde `engine-explorer/`, estos comandos generan los dos dashboards, la portada y `dist/` para Vercel. La publicación conserva los videos y subtítulos en ambos idiomas y los diagramas OEM. Los archivos de desarrollo y los archivos históricos permanecen respaldados en GitHub.
+
 **Español · [English](README.md)**
 
 Reconstrucción educativa de un **F22A6 de fábrica, Honda Accord EX sedán 1993, transmisión manual de cinco marchas**. La identificación del motor está confirmada por el estampado y los documentos del propietario. El mercado original y la especificación de emisiones siguen sin confirmar.

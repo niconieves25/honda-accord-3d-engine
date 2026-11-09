@@ -1,1 +1,15 @@
-{"type":"module"}
+{
+  "name": "honda-accord-1993",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build-engine.mjs && node scripts/build-anatomy.mjs && node scripts/build-landing.mjs && node scripts/package-site.mjs",
+    "build:engine": "node scripts/build-engine.mjs",
+    "build:anatomy": "node scripts/build-anatomy.mjs",
+    "test": "node tests/timing.mjs && node tests/i18n.mjs && node tests/anatomy.mjs"
+  },
+  "dependencies": { "three": "0.186.1" },
+  "devDependencies": { "esbuild": "0.28.1" }
+}

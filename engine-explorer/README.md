@@ -6,6 +6,8 @@ Interactive educational reconstruction of a **factory-standard F22A6 in a 1993 H
 
 ## Open the project
 
+The project root `../index.html` is the bilingual landing page. Its **Enter the explorer** button opens the existing complete-engine dashboard; all previous component URLs remain valid.
+
 Open `index.html` for the complete engine and `anatomy.html` for the bilingual individual-component atlas. Use **Español / English** in either header to change both pages. The preference is shared and remembered locally; switching preserves the current component, camera, view, playback and controls. Spanish is the default. The reference sources remain in their original language. The built HTML files contain their scripts, fonts and rendering assets. Keep `anatomy-media/f22a6/` beside the atlas and `../Honda Reference Library/F22A6_1993_5MT/` in place for media and local evidence links. A local HTTP server is recommended for video captions and reference navigation:
 
 ```sh
@@ -86,7 +88,17 @@ anatomy-media/f22a6/         active MP4s, posters, captions and manifest
 
 ## Build and verification
 
-From `engine-explorer/`, using the existing teardown skill dependencies:
+From `engine-explorer/`, install the pinned project dependencies. The production build no longer requires a globally installed skill:
+
+```sh
+npm ci
+npm run build
+npm test
+```
+
+This builds both self-contained dashboards, the root landing page and `dist/` for Vercel. `dist/` includes active bilingual media and OEM diagrams with the same relative paths as local browsing; development files and prior-version archives are not published. Source and archived work remain in GitHub.
+
+The existing engine-only command is still available. Optional geometry and video-export tools may use the local teardown skill dependencies:
 
 ```sh
 ./scripts/build.sh
