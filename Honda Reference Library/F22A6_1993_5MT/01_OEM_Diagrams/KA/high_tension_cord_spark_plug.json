@@ -1,0 +1,252 @@
+{
+  "slug": "high_tension_cord_spark_plug",
+  "label": "High Tension Cord - Spark Plug",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/high_tension_cord_spark_plug.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.json",
+  "part_rows": 22,
+  "parts": [
+    {
+      "callout": "2",
+      "part_number": "30501-PT3-A00",
+      "description": "Bracket, Ignition Coil",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~ignition~coil~30501-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "30520-PT9-A02",
+      "description": "Coil, Ignition (TC-19A) (TEC)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~coil~ignition~30520-pt9-a02.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8f07e42012f1f44276dcfc77455be82e/c95f437b92f670f2a47dd7188f47f910.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8f07e42012f1f44276dcfc77455be82e/dbc4873723aaf91e1860fe65ce01f3fa.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "30520-PT3-A02",
+      "description": "Coil, Ignition (TC-18A) (TEC)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~coil~ignition~30520-pt3-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "32701-PT0-000",
+      "description": "Wire, Resistance (NO.1) (SUMITOMO)",
+      "quantity": null,
+      "details": "Replaced By: 32701-P0B-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32701-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1141a2e1905acfbaaa12984e54b07f5c/7aea5da40e1b1f6479d3c369ef9ca756.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "32702-PT0-000",
+      "description": "Wire, Resistance (NO.2) (SUMITOMO)",
+      "quantity": null,
+      "details": "Replaced By: 32702-P0B-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32702-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "32703-P0B-A00",
+      "description": "Wire, Resistance (NO.3) (SUMITOMO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32703-p0b-a00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/681b3aff9cdfa4f235cf68bee3baa105/907863e9ba2d31b0013f1f1f2241684e.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "32704-PT0-000",
+      "description": "Wire, Resistance (NO.4) (SUMITOMO)",
+      "quantity": null,
+      "details": "Replaced By: 32704-P0B-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32704-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "32723-PT3-A00",
+      "description": "Wire, Ignition Center (SUMITOMO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~ignition~center~32723-pt3-a00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/2b386218cab83951640786eec5a1b147/0e86b0189629c889c0bd445a4ee69df5.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "32764-PT3-A00",
+      "description": "Clamp A Assy., Ignition Wire",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~assy~32764-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "32765-PT0-000",
+      "description": "Clamp A, Ignition Wire",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~ignition~wire~32765-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "32766-PM3-000",
+      "description": "Clamp B, Ignition Wire",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~ignition~wire~32766-pm3-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "32767-PT0-000",
+      "description": "Grommet, Ignition Wire",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~ignition~wire~32767-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/accf0c97632a24f201836ccded3ac4a5/2fc69e7d127fe244cb92bc3bc23dc989.jpg"
+      ]
+    },
+    {
+      "callout": "13",
+      "part_number": "90002-PD2-000",
+      "description": "Bolt, Flange (8X16)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90002-pd2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/999175b1b753e488d7642228548362a7/e4bbc446f27f2ac6571101323a6e5624.jpg"
+      ]
+    },
+    {
+      "callout": "14",
+      "part_number": "90003-P01-000",
+      "description": "Bolt-Washer (8X28)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90003-p01-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9830e13fdbcb654b52651b242fcb1930/c96751446882fd61e27c02aeda3e0885.jpg"
+      ]
+    },
+    {
+      "callout": "15",
+      "part_number": "90520-PH6-000",
+      "description": "Collar, Ignition Coil",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~collar~ignition~coil~90520-ph6-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "95701-06028-08",
+      "description": "Bolt, Flange (6X28)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06028-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f8c6b19ba1bd4e29496e78707795db0c/53424103603acd547a5a94286db246ae.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6a93058942cbebdbcc4d73dcd8b141e7/1da972b449e85ecfcdd61431131511e4.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "98079-5514G",
+      "description": "Spark Plug (ZFR5F-11) (NGK)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5514g.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3dde7c59c54e6d99eafe14a87baf617/07e4ebe48b94a466fe77bde0e37d72da.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "98079-5615G",
+      "description": "Spark Plug (KJ20CR-L11) (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5615g.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/92bafef3be8feac338a6e9a9e5165957/3d259607c2be7f772dc24a86b06aa50a.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "98079-5515G",
+      "description": "Spark Plug (KJ16CR-L11) (DENSO)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5515g.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b3796bddddc1e8796976f13b5f4b0def/31c61c80158765f56ad9c170ff88e4e2.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "98079-5614G",
+      "description": "Spark Plug (ZFR6F-11) (NGK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5614g.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aae36016a7931894a60fbfd0a2df8cd7/8356d904557839a6dac692a244f5b8ae.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b8be7d3dc63520bdaacdcffe900595a4/84578941e0d2ba07778e9b29217e5860.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b8be7d3dc63520bdaacdcffe900595a4/078838fef6cfeea7db0a2ea3f58b441a.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b8be7d3dc63520bdaacdcffe900595a4/055468759facd58e3c506d3cb55b4afc.jpg"
+      ]
+    },
+    {
+      "callout": "18",
+      "part_number": "32722-PT3-A00",
+      "description": "Wire Assy., Ignition (SUMITOMO)",
+      "quantity": null,
+      "details": "Replaced By: 32700-PT0-000",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~assy~32722-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "32722-P0B-405",
+      "description": "Wire, Ignition (SUMITOMO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~ignition~32722-p0b-405.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b1691fe9af7192c428d7dde659002335/0ac1e09b80db6cd8deb6e9180f0685ec.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "630940dce2a40e3e41e4a4b8d8856332011f3548bcad7903c8e4e71459a75643",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,17 +1,24 @@
+import {createDisclosures} from './ui/disclosures.js';
+import {mountGlyphBackground} from './ui/glyph-background.js';
 // The explorer page: an accessible HTML interface round the 3D stage. Every control is a real button, select or slider,
 // reachable by Tab, with a thick focus ring; text scales up to 2.4×; three colour schemes; spoken part names; an
 // announcement region for screen readers; parts selectable from the engine or a searchable list.
 import * as THREE from 'three';
-import STR from './i18n/en.js';
+import {readAppearance,publishAppearance} from './ui/appearance.js';
+import {icon, SYSTEM_ICONS, VIEW_ICONS} from './ui/icons.js';
+import EN from './i18n/en.js';
+import ES from './i18n/es.js';
+import {getLanguage, setLanguage} from './i18n/locale.js';
 import {firingNow, phase, SPEC, strokeOf, mod} from './kin.js';
-import {PART, PARTS, SYSTEMS} from './parts.js';
+import {PART, PARTS, SYSTEMS, REFERENCE_ROOT, REMOVED_ENGINE_PARTS} from './parts.js';
 import {createStage} from './stage.js';
 import {FLOW_STYLE} from './flows.js';
-import {VIEW_ORDER, VIEWS} from './views.js';
+import {VIEW_ORDER, VIEWS, DIRECTIONS} from './views.js';
 
-const T = STR.ui;
+let STR = getLanguage() === 'es' ? ES : EN;
+let T = STR.ui;
 const D2R = Math.PI / 180;
-const DIAGRAMS = '../Honda Reference Library/02_OEM_Diagrams/';
+const DIAGRAMS = REFERENCE_ROOT + 'KA/';
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'})[c]);
 const store = {
   get(k, d) {
@@ -41,8 +48,7 @@ export function runApp() {
     playing: !reduceDefault,
     speed: 's8',
     stepDeg: 30,
-    vtec: false,
-    locked: [0, 0, 0, 0],
+    iab: false,
     view: 'exterior',
     system: null,
     selected: null,
@@ -58,83 +64,93 @@ export function runApp() {
   const SPEEDS = {s16: 16, s8: 8, s4: 4, s1: 1};
 
   // ------------------------------------------------------------ layout
-  app.innerHTML = `
+  const layout = () => `
   <a class="skip" href="#parts-search">${esc(T.search)}</a>
   <header class="top">
-    <div class="titles">
+    <div class="brand-mark" aria-hidden="true">${icon('engine','mechanical')}</div><div class="titles">
       <h1>${esc(T.title)}</h1>
       <p class="subtitle">${esc(T.subtitle)}</p>
-      <p class="ident">${esc(T.identity)}</p>
+      <a class="anatomy-entry" href="anatomy.html">${icon('exploded','mechanical')}<span>${esc(T.individualParts)}</span>${icon('arrow-up-right')}</a>
     </div>
     <div class="topbtns">
-      <button type="button" id="btn-reset">${esc(T.reset)} <kbd>R</kbd></button>
-      <button type="button" id="btn-settings" aria-expanded="false" aria-controls="settings">${esc(T.settings)}</button>
-      <button type="button" id="btn-help" aria-expanded="false" aria-controls="help">${esc(T.help)}</button>
-      <button type="button" id="btn-about" aria-expanded="false" aria-controls="about">${esc(T.about)}</button>
+      <label class="language-control" for="language-select"><span>${icon('globe')}${esc(T.language)}</span><select id="language-select"><option value="es" lang="es">Español</option><option value="en" lang="en">English</option></select></label>
+      <button type="button" id="btn-settings" aria-expanded="false" aria-controls="settings">${icon('sliders-horizontal')}<span>${esc(T.settings)}</span></button>
+      <details class="help-menu"><summary>${icon('question')}<span>${STR.lang==='es'?'Ayuda':'Help'}</span></summary><div class="help-options"><button type="button" id="btn-help" aria-expanded="false" aria-controls="help">${icon('list-bullets')}<span>${esc(T.help)}</span></button>
+      <button type="button" id="btn-about" aria-expanded="false" aria-controls="about">${icon('info')}<span>${esc(T.about)}</span></button></div></details>
     </div>
   </header>
+  <nav class="views" aria-label="${esc(T.views)}">
+    <span class="lbl" id="views-lbl">${esc(T.views)}</span>
+    <div role="radiogroup" aria-labelledby="views-lbl" class="viewbtns">
+      ${VIEW_ORDER.map((v, i) => `<button type="button" role="radio" data-view="${v}" aria-checked="false" aria-label="${i + 1} ${esc(STR.views[v].name)}" title="${esc(STR.views[v].desc)}">${icon(VIEW_ICONS[v],'mechanical')}<span class="view-copy"><span class="vnum" aria-hidden="true">0${i + 1}</span><span>${esc(T.viewShort[v])}</span></span></button>`).join('')}
+    </div>
+  </nav>
   <main class="main">
+    <div class="viewer">
+    <div class="viewer-heading"><div><h2 id="view-title"></h2><p class="viewdesc" id="viewdesc"></p></div><div class="viewer-utilities"><span class="view-hint">${esc(T.viewHint)}</span><button type="button" id="btn-reset">${icon('arrow-counter-clockwise')}<span>${esc(T.reset)}</span><kbd>R</kbd></button></div></div>
     <section class="stagewrap" aria-label="${esc(T.canvasLabel)}">
       <canvas id="gl" tabindex="0" role="img" aria-label="${esc(T.canvasLabel)}"></canvas>
       <svg class="leaders" aria-hidden="true"></svg>
       <div class="labels" aria-hidden="true"></div>
-      <p class="viewdesc" id="viewdesc"></p>
       <div class="legend" id="legend" aria-hidden="true"></div>
     </section>
-    <aside class="sidebar">
-      <nav class="views" aria-label="${esc(T.views)}">
-    <span class="lbl" id="views-lbl">${esc(T.views)}</span>
-    <div role="radiogroup" aria-labelledby="views-lbl" class="viewbtns">
-      ${VIEW_ORDER.map((v, i) => `<button type="button" role="radio" data-view="${v}" aria-checked="false" title="${esc(STR.views[v].desc)}"><span class="vnum">${i + 1}</span> ${esc(STR.views[v].name)}</button>`).join('')}
+  <footer class="transport" aria-label="${esc(T.animation)}">
+    <div class="grp">
+      <button type="button" id="btn-play" class="big"></button>
+      <button type="button" id="btn-back" class="step-button" aria-label="${esc(T.stepBack)}" title="${esc(T.stepBack)} (,)">${icon('skip-back')}</button>
+      <button type="button" id="btn-fwd" class="step-button" aria-label="${esc(T.stepFwd)}" title="${esc(T.stepFwd)} (.)">${icon('skip-forward')}</button>
+      <label class="speed-control"><span>${esc(T.speed)}</span><select id="speed-select" aria-label="${esc(T.speed)}">${Object.entries(T.speedShort).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('')}</select></label>
     </div>
-      </nav>
-      <section class="panel" aria-labelledby="sys-h">
-        <h2 id="sys-h">${esc(T.systems)}</h2>
-        <label class="sr" for="sys-select">${esc(T.systems)}</label>
+    <div class="transport-end"><div class="crank" aria-live="off"><span>${esc(T.crank)}</span><b id="crank-deg">0°</b></div><button type="button" id="btn-motion" aria-controls="panel-motion" aria-label="${esc(T.motionControls)}" title="${esc(T.motionControls)}">${icon('gauge')}<span>${esc(T.motionControls)}</span></button></div>
+  </footer>
+    </div>
+    <aside class="sidebar" aria-label="${esc(T.inspector)}">
+      <div class="inspector-tabs" role="tablist" aria-label="${esc(T.inspector)}">
+        ${['parts', 'details', 'motion'].map((id, i) => `<button type="button" role="tab" id="tab-${id}" data-inspector="${id}" aria-controls="panel-${id}" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}">${icon({parts:'list-bullets',details:'book-open',motion:'gauge'}[id])}<span>${esc(T[id + 'Tab'])}</span></button>`).join('')}
+      </div>
+      <div class="inspector-body">
+      <section class="inspector-pane" id="panel-parts" role="tabpanel" aria-labelledby="tab-parts">
+        <div class="parts-tools">
+        <label for="parts-search" class="lab">${esc(T.search)} <kbd>/</kbd></label>
+        <input id="parts-search" type="search" autocomplete="off" aria-describedby="parts-hint" placeholder="${esc(T.searchPlaceholder)}">
+        <p id="parts-hint" class="sr">${esc(T.searchHint)}</p>
+        <label class="lab system-label" id="sys-h" for="sys-select">${esc(T.systems)}</label><div class="system-select"><span id="system-mark" class="system-mark">${icon('engine','mechanical')}</span>
         <select id="sys-select">
           <option value="">${esc(T.allSystems)}</option>
           ${SYSTEMS.map((s) => `<option value="${s}">${esc(STR.systems[s])}</option>`).join('')}
-        </select>
-      </section>
-      <section class="panel details" aria-labelledby="det-h" id="details">
-        <h2 id="det-h">${esc(T.details)}</h2>
-        <div id="det-body"><p class="hint">${esc(T.noSelection)}</p></div>
-      </section>
-      <section class="panel" aria-labelledby="parts-h">
-        <h2 id="parts-h">${esc(T.parts)}</h2>
-        <label for="parts-search" class="lab">${esc(T.search)} <kbd>/</kbd></label>
-        <input id="parts-search" type="search" autocomplete="off" aria-describedby="parts-hint" placeholder="${esc(T.searchHint)}">
-        <p id="parts-hint" class="sr">${esc(T.searchHint)}</p>
+        </select></div>
+        </div>
+        <div class="section-heading"><h2 id="parts-h">${esc(T.browseParts)}</h2><span id="parts-count" class="count"></span></div>
         <div id="parts-list" class="partslist"></div>
       </section>
+      <section class="inspector-pane" id="panel-details" role="tabpanel" aria-labelledby="tab-details" hidden>
+      <div class="details" id="details">
+        <h2 id="det-h">${esc(T.details)}</h2>
+        <div id="det-body"><p class="hint">${esc(T.noSelection)}</p></div>
+      </div>
+      </section>
+      <section class="inspector-pane motion-pane" id="panel-motion" role="tabpanel" aria-labelledby="tab-motion" hidden>
+        <div class="motion-section"><button type="button" id="btn-iab" role="switch" aria-checked="false" class="iab"></button><span id="iab-state" class="iabstate" aria-live="polite"></span></div>
+        <h2>${esc(T.motionTitle)}</h2>
+        <div class="cycle-metrics" aria-live="off"><div><span>${esc(T.crank)}</span><strong id="motion-crank-deg">0°</strong></div><div><span>${esc(T.cycle)}</span><strong id="cycle-deg">0°</strong></div></div>
+        <ol class="cyls" id="cyls" aria-label="${esc(T.cylinder)}" aria-live="off"></ol>
+        <p class="hint cycle-hint">${esc(T.cycleHint)}</p>
+        <div class="motion-section"><label class="lab" for="step-select">${esc(T.step)}</label><select id="step-select">${[5, 15, 30, 90, 180].map((d) => `<option value="${d}">${d}°</option>`).join('')}</select></div>
+        <fieldset class="flows"><legend>${esc(T.flows)}</legend>
+          ${Object.keys(FLOW_STYLE).map((f) => `<label class="chk"><input type="checkbox" data-flow="${f}"> <i class="sw sw-${FLOW_STYLE[f].shape}" style="--c:${FLOW_STYLE[f].color}"></i>${esc(T.flowNames[f])}</label>`).join('')}
+        </fieldset>
+      </section>
+      </div>
+      <p class="identity-badge">${esc(T.identityShort)}</p>
     </aside>
   </main>
-  <footer class="transport" aria-label="Animation">
-    <div class="grp">
-      <button type="button" id="btn-play" class="big"></button>
-      <button type="button" id="btn-back" aria-label="${esc(T.stepBack)}">◀ ${esc(T.stepBack)} <kbd>,</kbd></button>
-      <button type="button" id="btn-fwd" aria-label="${esc(T.stepFwd)}">${esc(T.stepFwd)} ▶ <kbd>.</kbd></button>
-      <label>${esc(T.step)} <select id="step-select">${[5, 15, 30, 90, 180].map((d) => `<option value="${d}">${d}°</option>`).join('')}</select></label>
-      <label>${esc(T.speed)} <select id="speed-select">${Object.entries(T.speeds).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('')}</select></label>
-    </div>
-    <div class="grp state" aria-live="off">
-      <div class="crank"><span class="k">${esc(T.crank)}</span> <b id="crank-deg">0°</b></div>
-      <ol class="cyls" id="cyls" aria-label="${esc(T.cylinder)}"></ol>
-    </div>
-    <div class="grp">
-      <button type="button" id="btn-vtec" role="switch" aria-checked="false" class="vtec"></button>
-      <span id="vtec-state" class="vtecstate"></span>
-    </div>
-    <fieldset class="grp flows">
-      <legend>${esc(T.flows)}</legend>
-      ${Object.keys(FLOW_STYLE).map((f) => `<label class="chk"><input type="checkbox" data-flow="${f}"> <i class="sw sw-${FLOW_STYLE[f].shape}" style="--c:${FLOW_STYLE[f].color}"></i>${esc(T.flowNames[f])}</label>`).join('')}
-    </fieldset>
-  </footer>
+
   <div class="dialog" id="settings" role="dialog" aria-modal="false" aria-labelledby="set-h" hidden>
     <h2 id="set-h">${esc(T.settings)}</h2>
     <label class="drow">${esc(T.textSize)} <input type="range" id="text-size" min="1" max="2.4" step="0.05"> <output id="text-size-o"></output></label>
     <label class="drow">${esc(T.labelSize)} <input type="range" id="label-size" min="0.8" max="2.6" step="0.05"> <output id="label-size-o"></output></label>
     <label class="drow">${esc(T.theme)} <select id="theme-select">${Object.entries(T.themes).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('')}</select></label>
+    <label class="drow">${esc(T.cameraDirection)} <select id="camera-direction"><option value="" disabled selected>${esc(T.chooseDirection)}</option>${Object.entries(DIRECTIONS).map(([id,d])=>`<option value="${id}">${esc(T.directions[id])}</option>`).join('')}</select></label>
     <label class="drow">${esc(T.showLabels)} <select id="label-mode">${Object.entries(T.labelModes).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('')}</select></label>
     <label class="drow chk"><input type="checkbox" id="reduce-motion"> ${esc(T.reduceMotion)}</label>
     <label class="drow chk"><input type="checkbox" id="speak-names"> ${esc(T.speakNames)}</label>
@@ -147,18 +163,58 @@ export function runApp() {
   </div>
   <div class="dialog wide" id="about" role="dialog" aria-modal="false" aria-labelledby="about-h" hidden>
     <h2 id="about-h">${esc(STR.notes.title)}</h2>
+    <p class="identity-note">${esc(T.identity)}</p>
     <p>${esc(STR.notes.intro)}</p>
-    <h3>Follows Honda figures</h3>
+    <h3>${esc(T.documentedHeading)}</h3>
     <ul>${STR.notes.exact.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-    <h3>Approximate</h3>
+    <h3>${esc(T.approximateHeading)}</h3>
     <ul>${STR.notes.approx.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-    <p>${esc(T.vtecNote)}</p>
+    <p>${esc(T.iabNote)}</p>
     <p>${esc(T.flowNote)}</p>
     <button type="button" class="closebtn" data-close="about">${esc(T.close)}</button>
   </div>
   <div class="sr" aria-live="polite" id="announce"></div>`;
+  app.innerHTML = layout();
+  mountGlyphBackground();
+  // Retain original text/attribute nodes so translation never replaces the canvas,
+  // event handlers, current selection, controls or camera. Dynamic content is
+  // rendered by its regular functions below after the static copy changes.
+  const staticBindings = [];
+  const bindStatic = (node, path = []) => {
+    if (node.nodeType === Node.TEXT_NODE) staticBindings.push({node, path});
+    else if (node.nodeType === Node.ELEMENT_NODE) {
+      const attrs = ['aria-label', 'title', 'placeholder'].filter((a) => node.hasAttribute(a));
+      if (attrs.length) staticBindings.push({node, path, attrs});
+    }
+    [...node.childNodes].forEach((child, i) => bindStatic(child, [...path, i]));
+  };
+  bindStatic(app);
   const $ = (sel) => app.querySelector(sel);
   const $$ = (sel) => [...app.querySelectorAll(sel)];
+  const disclosure=createDisclosures(app);
+  let inspector = 'parts';
+  const showInspector = (id, focus = false) => {
+    inspector = id;
+    $$('[data-inspector]').forEach((button) => {
+      const active = button.dataset.inspector === id;
+      button.setAttribute('aria-selected', String(active));
+      button.tabIndex = active ? 0 : -1;
+      $('#panel-' + button.dataset.inspector).hidden = !active;
+    });
+    if (focus) $('#tab-' + id).focus();
+    $('.inspector-body').scrollTop = 0;
+  };
+  $$('[data-inspector]').forEach((button) => button.addEventListener('click', () => showInspector(button.dataset.inspector)));
+  $('.inspector-tabs').addEventListener('keydown', (e) => {
+    const ids = ['parts', 'details', 'motion'];
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+    e.preventDefault();
+    const next = e.key === 'Home' ? 0 : e.key === 'End' ? 2 : (ids.indexOf(inspector) + (e.key === 'ArrowLeft' ? 2 : 1)) % 3;
+    showInspector(ids[next], true);
+  });
+  const focusSearch = () => { showInspector('parts'); $('#parts-search').focus(); };
+  $('.skip').addEventListener('click', (e) => { e.preventDefault(); focusSearch(); });
+  $('#btn-motion').addEventListener('click', () => showInspector('motion', true));
   const canvas = $('#gl');
   const st = createStage(canvas);
   const announce = (msg) => {
@@ -170,7 +226,7 @@ export function runApp() {
     if (!('speechSynthesis' in window)) return;
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = STR.lang;
+    u.lang = STR.lang === 'es' ? 'es-ES' : 'en-US';
     u.rate = 0.9;
     speechSynthesis.speak(u);
   };
@@ -179,6 +235,7 @@ export function runApp() {
   const applySettings = () => {
     const root = document.documentElement;
     root.dataset.theme = S.theme;
+    root.dataset.largeText = String(S.textScale > 1.6);
     root.style.setProperty('--scale', S.textScale);
     root.style.setProperty('--lscale', S.labelScale);
     $('#text-size').value = S.textScale;
@@ -192,8 +249,12 @@ export function runApp() {
     st.setTheme(S.theme);
     st.controls.enableDamping = !S.reduceMotion;
     for (const k of ['theme', 'textScale', 'labelScale', 'labelMode', 'reduceMotion', 'speak']) store.set(k, S[k]);
+    publishAppearance({theme:S.theme,scale:S.textScale,reduceMotion:S.reduceMotion});
     requestAnimationFrame(fit);
   };
+  const syncAppearance=event=>{const next=event?.detail??readAppearance();if(next.theme!==S.theme||next.scale!==S.textScale){S.theme=next.theme;S.textScale=next.scale;applySettings();}};
+  addEventListener('f22:appearance',syncAppearance);
+  addEventListener('storage',event=>{if(event.key==='f22.theme'||event.key==='f22.textScale')syncAppearance();});
   $('#text-size').addEventListener('input', (e) => ((S.textScale = Number(e.target.value)), applySettings()));
   $('#label-size').addEventListener('input', (e) => ((S.labelScale = Number(e.target.value)), applySettings()));
   $('#theme-select').addEventListener('change', (e) => ((S.theme = e.target.value), applySettings()));
@@ -208,9 +269,10 @@ export function runApp() {
     d.hidden = !open;
     b.setAttribute('aria-expanded', String(open));
     if (open) {
+      $('.help-menu').open = false;
       for (const other of Object.keys(dialogs)) if (other !== id) openDialog(other, false);
       d.querySelector('input,select,button')?.focus();
-    } else if (d.contains(document.activeElement)) b.focus();
+    } else if (d.contains(document.activeElement)) (id === 'settings' ? b : $('.help-menu>summary')).focus();
   };
   for (const [id, sel] of Object.entries(dialogs)) $(sel).addEventListener('click', () => openDialog(id, $('#' + id).hidden));
   $$('[data-close]').forEach((b) => b.addEventListener('click', () => openDialog(b.dataset.close, false)));
@@ -270,7 +332,8 @@ export function runApp() {
     camTo(V.cam);
     st.setCut(V.cut === undefined ? null : V.cut * 0.001);
     $$('[data-view]').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.view === v)));
-    $('#viewdesc').textContent = `${STR.views[v].name}: ${STR.views[v].desc}`;
+    $('#view-title').textContent = STR.views[v].name;
+    $('#viewdesc').textContent = STR.views[v].desc;
     if (!quiet) announce(`${T.viewAnnounce}: ${STR.views[v].name}. ${STR.views[v].desc}`);
   };
   $$('[data-view]').forEach((b) => b.addEventListener('click', () => setView(b.dataset.view)));
@@ -293,23 +356,29 @@ export function runApp() {
     renderList();
   });
   const nameOf = (id) => STR.parts[id]?.name ?? id;
+  const searchText = (text) => String(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const listEl = $('#parts-list');
   const search = $('#parts-search');
   const renderList = () => {
-    const q = search.value.trim().toLowerCase();
+    const openGroups = new Set([...listEl.querySelectorAll('details[open]')].map((d) => d.dataset.system));
+    const firstRender = !listEl.hasChildNodes();
+    const q = searchText(search.value.trim());
     const groups = SYSTEMS.filter((s) => !S.system || s === S.system)
-      .map((s) => ({s, items: PARTS.filter((p) => p.system === s && (!q || nameOf(p.id).toLowerCase().includes(q) || (STR.parts[p.id]?.where ?? '').toLowerCase().includes(q)))}))
+      .map((s) => ({s, items: PARTS.filter((p) => p.system === s && (!q || [ES, EN].some((copy) => searchText(`${copy.parts[p.id]?.name ?? ''} ${copy.parts[p.id]?.where ?? ''}`).includes(q))))}))
       .filter((g) => g.items.length);
     listEl.innerHTML = groups.length
       ? groups
           .map(
             (g) =>
-              `<h3 class="sysh">${esc(STR.systems[g.s])}</h3><ul>${g.items
+              `<details class="part-group" data-system="${g.s}"${q || S.system || openGroups.has(g.s) || (firstRender && g.s === 'exterior') ? ' open' : ''}><summary>${icon(SYSTEM_ICONS[g.s],'mechanical')}<span>${esc(STR.systems[g.s])}</span><span class="count">${g.items.length}</span></summary><ul>${g.items
                 .map((p) => `<li><button type="button" class="part${p.id === S.selected ? ' on' : ''}" data-part="${p.id}" aria-pressed="${p.id === S.selected}">${esc(nameOf(p.id))}${p.approx ? ` <span class="approx" title="${esc(T.approximate)}">≈</span>` : ''}</button></li>`)
-                .join('')}</ul>`,
+                .join('')}</ul></details>`,
           )
           .join('')
       : `<p class="hint">${esc(T.noMatch)}</p>`;
+    $('#system-mark').innerHTML = icon(S.system ? SYSTEM_ICONS[S.system] : 'engine','mechanical');
+    const total = groups.reduce((n, g) => n + g.items.length, 0);
+    $('#parts-count').textContent = `${total} ${total === 1 ? T.partCount : T.partsCount}`;
   };
   search.addEventListener('input', renderList);
   listEl.addEventListener('click', (e) => {
@@ -317,10 +386,12 @@ export function runApp() {
     if (b) select(b.dataset.part, 'list');
   });
   const renderDetails = () => {
+    disclosure.capture();
     const id = S.selected;
     const body = $('#det-body');
     if (!id) {
-      body.innerHTML = `<p class="hint">${esc(T.noSelection)}</p>`;
+      body.innerHTML = `<div class="empty-selection"><span class="empty-icon" aria-hidden="true">${icon('crosshair')}</span><h3>${esc(T.inspectionTitle)}</h3><p>${esc(T.selectionHint)}</p><p class="hint">${esc(T.inspectionHint)}</p><button type="button" id="btn-browse">${esc(T.browseParts)}</button></div>`;
+      $('#btn-browse').addEventListener('click', focusSearch);
       return;
     }
     const t = STR.parts[id];
@@ -328,19 +399,19 @@ export function runApp() {
     body.innerHTML = `
       <p class="pname">${esc(t.name)}</p>
       <p class="psys"><span class="tag">${esc(STR.systems[p.system])}</span>${p.approx ? ` <span class="tag approxtag">≈ ${esc(T.approximate)}</span>` : ''}</p>
-      <dl class="facts">
-        <dt>${esc(T.where)}</dt><dd>${esc(t.where)}</dd>
-        <dt>${esc(T.does)}</dt><dd>${esc(t.does)}</dd>
-        <dt>${esc(T.connects)}</dt><dd>${esc(t.connects)}</dd>
-        <dt>${esc(T.moves)}</dt><dd>${esc(t.moves)}</dd>
-      </dl>
-      ${p.oem.length ? `<p class="oem"><b>${esc(T.oem)}:</b> ${p.oem.map((o) => `<a href="${esc(DIAGRAMS + o.diagram + '.png')}" target="_blank" rel="noopener">${esc(o.diagram.replace(/_/g, ' '))}, ${esc(T.callout)} ${esc(o.callout)}</a> <span class="pn">${esc(o.pn)}</span>`).join('<br>')}</p>` : ''}
+      <div class="facts disclosure-group">
+        ${disclosure(id+':does',T.does,`<p>${esc(t.does)}</p>`,'info')}
+        ${disclosure(id+':where',T.where,`<p>${esc(t.where)}</p>`,'map-pin')}
+        ${disclosure(id+':connects',T.connects,`<p>${esc(t.connects)}</p>`,'link')}
+        ${disclosure(id+':moves',T.moves,`<p>${esc(t.moves)}</p>`,'gauge')}
+      </div>
+      ${p.oem.length ? `<details class="reference-details"><summary>${esc(T.referenceDetails)}</summary><p class="oem"><b>${esc(T.oem)}:</b> ${p.oem.map((o) => `<a href="${esc(DIAGRAMS + o.diagram + '.png')}" target="_blank" rel="noopener">${esc(STR.diagrams[o.diagram] || o.diagram.replace(/_/g, ' '))}, ${esc(T.callout)} ${esc(o.callout)}</a> <span class="pn">${esc(o.pn)}</span>`).join('<br>')}</p></details>` : ''}
       <div class="detbtns">
-        <button type="button" id="btn-speak">🔊 ${esc(T.speak)}</button>
+        <button type="button" id="btn-speak">${icon('speaker-high')}<span>${esc(T.speak)}</span></button>
         <button type="button" id="btn-clear">${esc(T.clear)} <kbd>Esc</kbd></button>
       </div>`;
     $('#btn-speak').addEventListener('click', () => {
-      if (speechSynthesis.speaking) {
+      if ('speechSynthesis' in window && speechSynthesis.speaking) {
         speechSynthesis.cancel();
         return;
       }
@@ -357,7 +428,7 @@ export function runApp() {
       const name = nameOf(id);
       announce(`${T.selectedAnnounce}: ${name}. ${STR.parts[id].where}`);
       if (S.speak) say(name);
-      if (from === 'canvas') $('#details').scrollIntoView({block: 'nearest'});
+      showInspector('details', from === 'list' || from === 'key');
     }
   };
   const visibleParts = () => PARTS.filter((p) => !S.system || p.system === S.system).map((p) => p.id);
@@ -367,9 +438,9 @@ export function runApp() {
     select(ids[(i + d + ids.length) % ids.length], 'key');
   };
 
-  // ------------------------------------------------------------ transport and VTEC
+  // ------------------------------------------------------------ transport and intake bypass
   const playBtn = $('#btn-play');
-  const renderPlay = () => (playBtn.innerHTML = S.playing ? `❚❚ ${esc(T.pause)} <kbd>Space</kbd>` : `▶ ${esc(T.play)} <kbd>Space</kbd>`);
+  const renderPlay = () => { playBtn.innerHTML = `${icon(S.playing?'pause':'play')}<span class="control-label">${esc(S.playing?T.pause:T.play)}</span><kbd>${esc(T.spaceKey)}</kbd>`; playBtn.setAttribute('aria-pressed',String(S.playing)); };
   playBtn.addEventListener('click', () => {
     S.playing = !S.playing;
     renderPlay();
@@ -387,15 +458,16 @@ export function runApp() {
   $('#step-select').addEventListener('change', (e) => (S.stepDeg = Number(e.target.value)));
   $('#speed-select').value = S.speed;
   $('#speed-select').addEventListener('change', (e) => (S.speed = e.target.value));
-  const vtecBtn = $('#btn-vtec');
-  const renderVtec = () => {
-    vtecBtn.setAttribute('aria-checked', String(S.vtec));
-    vtecBtn.innerHTML = `${esc(T.vtec)}: <b>${esc(S.vtec ? T.vtecOn : T.vtecOff)}</b> <kbd>V</kbd>`;
+  const iabBtn = $('#btn-iab');
+  const renderIab = () => {
+    iabBtn.setAttribute('aria-checked', String(S.iab));
+    iabBtn.innerHTML = `${icon('butterfly','mechanical')}<span>${esc(S.iab ? T.iabShort.on : T.iabShort.off)}</span><span class="switch-track" aria-hidden="true"></span>`;
+    iabBtn.setAttribute('aria-label', `${T.iab}: ${S.iab ? T.iabOn : T.iabOff}`);
   };
-  vtecBtn.addEventListener('click', () => {
-    S.vtec = !S.vtec;
-    renderVtec();
-    announce(`${T.vtec} ${S.vtec ? T.vtecOn : T.vtecOff}`);
+  iabBtn.addEventListener('click', () => {
+    S.iab = !S.iab;
+    renderIab();
+    announce(`${T.iab} ${S.iab ? T.iabOn : T.iabOff}`);
   });
   $$('[data-flow]').forEach((c) =>
     c.addEventListener('change', () => {
@@ -409,7 +481,7 @@ export function runApp() {
     $('#legend').innerHTML = on.length ? `<p>${esc(T.flows)}</p>${on.map(([f]) => `<span><i class="sw sw-${FLOW_STYLE[f].shape}" style="--c:${FLOW_STYLE[f].color}"></i>${esc(T.flowNames[f])}</span>`).join('')}` : '';
   };
   const cylsEl = $('#cyls');
-  cylsEl.innerHTML = [1, 2, 3, 4].map((c) => `<li id="cyl-${c}"></li>`).join('');
+  cylsEl.innerHTML = [1, 2, 3, 4].map((c) => `<li id="cyl-${c}"><span class="cyl-number">${esc(T.cylinder)} ${c}</span><strong class="cyl-stroke"></strong><span class="cyl-status"></span></li>`).join('');
 
   // ------------------------------------------------------------ canvas interaction: click to pick, keys to orbit
   let down = null;
@@ -457,12 +529,14 @@ export function runApp() {
     else if (k === '.') stepBy(S.stepDeg);
     else if (k === '/') {
       e.preventDefault();
-      search.focus();
+      focusSearch();
     } else if (k === 'n' || k === 'N') stepPart(1);
     else if (k === 'p' || k === 'P') stepPart(-1);
-    else if (k === 'v' || k === 'V') vtecBtn.click();
+    else if (k === 'i' || k === 'I') iabBtn.click();
     else if (/^[1-7]$/.test(k) && document.activeElement?.closest?.('.views, .stagewrap, body')) setView(VIEW_ORDER[Number(k) - 1]);
   });
+
+  $('#camera-direction').addEventListener('change',e=>{setView('exterior',true);camTo(DIRECTIONS[e.target.value].cam,true);e.target.value='';openDialog('settings',false);});
 
   // ------------------------------------------------------------ labels on the engine
   const labelsEl = $('.labels');
@@ -510,18 +584,23 @@ export function runApp() {
   const SHAPE = T.strokeShapes;
   const renderCyls = () => {
     const fire = firingNow(S.th);
-    $('#crank-deg').textContent = `${Math.round(mod(S.th, 360))}° · ${T.cycle} ${Math.round(mod(S.th, 720))}°`;
+    const crank = `${Math.round(mod(S.th, 360))}°`;
+    $('#crank-deg').textContent = crank;
+    $('#motion-crank-deg').textContent = crank;
+    $('#cycle-deg').textContent = `${Math.round(mod(S.th, 720))}°`;
     for (const c of [1, 2, 3, 4]) {
       const k = strokeOf(phase(c, S.th));
       const li = $(`#cyl-${c}`);
-      const txt = `${T.cylinder} ${c}: ${SHAPE[k]} ${T.strokes[k]}${c === fire && phase(c, S.th) < 60 ? ` — ${T.firing}` : ''}`;
-      if (li.textContent !== txt) {
-        li.textContent = txt;
-        li.className = `stroke-${k}${c === fire && phase(c, S.th) < 60 ? ' fire' : ''}`;
+      const active = c === fire && phase(c, S.th) < 60;
+      const stroke = `${SHAPE[k]} ${T.strokes[k]}`;
+      const status = active ? T.firing : '';
+      if (li.querySelector('.cyl-stroke').textContent !== stroke || li.querySelector('.cyl-status').textContent !== status) {
+        li.querySelector('.cyl-stroke').textContent = stroke;
+        li.querySelector('.cyl-status').textContent = status;
+        li.className = `stroke-${k}${active ? ' fire' : ''}`;
       }
     }
-    const waiting = S.locked.some((l) => (S.vtec ? l < 1 : l > 0));
-    $('#vtec-state').textContent = waiting ? T.vtecWaiting : '';
+    $('#iab-state').textContent = T.iabState;
   };
 
   // ------------------------------------------------------------ sizing and the loop
@@ -533,13 +612,62 @@ export function runApp() {
   new ResizeObserver(fit).observe(wrap);
   addEventListener('resize', fit);
 
+  const applyLanguage = () => {
+    STR = getLanguage() === 'es' ? ES : EN;
+    T = STR.ui;
+    document.title = T.title;
+    document.documentElement.lang = STR.lang;
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    const translated = document.createElement('div');
+    translated.innerHTML = layout();
+    for (const {node, path, attrs} of staticBindings) {
+      if (!node.isConnected) continue;
+      const source = path.reduce((parent, i) => parent?.childNodes[i], translated);
+      if (!source) continue;
+      if (attrs) for (const attr of attrs) node.setAttribute(attr, source.getAttribute(attr));
+      else node.nodeValue = source.nodeValue;
+    }
+    $('#language-select').value = STR.lang;
+    const referenceOpen = $('#det-body .reference-details')?.open;
+    renderList(); renderDetails(); renderPlay(); renderIab(); renderLegend();
+    if (referenceOpen && $('#det-body .reference-details')) $('#det-body .reference-details').open = true;
+    $('#view-title').textContent = STR.views[S.view].name;
+    $('#viewdesc').textContent = STR.views[S.view].desc;
+    for (const c of [1, 2, 3, 4]) $(`#cyl-${c} .cyl-number`).textContent = `${T.cylinder} ${c}`;
+    const notice = $('#removed-part-notice');
+    if (notice) notice.textContent = T.removedPartNotice;
+    renderCyls(); drawLabels();
+    announce(T.languageChanged);
+    requestAnimationFrame(fit);
+  };
+  $('#language-select').value = STR.lang;
+  $('#language-select').addEventListener('change', (event) => setLanguage(event.target.value));
+  addEventListener('f22:language', applyLanguage);
+  addEventListener('pageshow', () => { $('#language-select').value = STR.lang; });
+
   applySettings();
   renderPlay();
-  renderVtec();
+  renderIab();
   renderList();
   renderDetails();
   setView('exterior', true);
   camTo(VIEWS.exterior.cam, true);
+  // The Anatomy catalogue links back to the existing assembly, with a suitable
+  // cutaway/view. A catalogue component may belong to a larger selectable group.
+  const incoming = new URLSearchParams(location.search);
+  const linkedPart = incoming.get('part');
+  if (linkedPart && PART[linkedPart]) {
+    const linkedView = incoming.get('view');
+    if (linkedView && VIEWS[linkedView]) { setView(linkedView, true); camTo(VIEWS[linkedView].cam, true); }
+    select(linkedPart);
+    S.playing = false;
+    renderPlay();
+  }
+  if (REMOVED_ENGINE_PARTS.includes(linkedPart) || incoming.get('view') === 'vtec') {
+    const notice=document.createElement('p');notice.className='identity-note';notice.setAttribute('role','status');
+    notice.id='removed-part-notice';notice.textContent=T.removedPartNotice;
+    $('.viewer-heading').append(notice);
+  }
   fit();
 
   let last = performance.now();
@@ -553,13 +681,7 @@ export function runApp() {
       simDt = dt;
     }
     if (stepPending) {
-      // step in small increments so VTEC switching on the base circle is seen on the way
-      const n = Math.ceil(Math.abs(stepPending) / 5);
-      const d = stepPending / n;
-      for (let i = 0; i < n; i++) {
-        S.th += d;
-        st.eng.update(S.th, {vtec: S.vtec, dt: 0, locked: S.locked, explode: S.explode});
-      }
+      S.th += stepPending;
       stepPending = 0;
     }
     flowS += S.playing ? dt * (8 / SPEEDS[S.speed]) * 0.6 : 0;
@@ -573,9 +695,8 @@ export function runApp() {
     const V = VIEWS[S.view];
     const keep = keepSet();
     st.eng.update(S.th, {
-      vtec: S.vtec,
+      iab: Number(S.iab),
       dt: S.playing ? simDt : 0,
-      locked: S.locked,
       explode: S.explode,
       hidden: new Set(V.hidden ?? []),
       ghost: new Set(S.system ? [] : V.ghost ?? []),
@@ -584,7 +705,7 @@ export function runApp() {
     });
     const anyFlow = Object.values(S.flows).some(Boolean) && S.explode < 0.01;
     st.flows.root.visible = anyFlow;
-    if (anyFlow) st.flows.update(flowS);
+    if (anyFlow) st.flows.update(flowS,{iab:S.iab});
     st.render();
     drawLabels();
     renderCyls();

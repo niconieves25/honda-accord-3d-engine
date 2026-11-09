@@ -1,0 +1,53 @@
+{
+  "scope": "Spanish/English localization of the F22A6 dashboard and 102-component atlas",
+  "method": "Visible in-app-browser interactions plus DOM-only observations; CPU translation completeness and persistence tests.",
+  "checks": [
+    {
+      "id": "main-live-switch",
+      "status": "pass",
+      "evidence": "Spanish → English → Spanish retained selected Pistons details and paused crank angle 355 degrees."
+    },
+    {
+      "id": "main-search",
+      "status": "pass",
+      "evidence": "pistón found Pistons, rings, pins and connecting rods after accent normalization; both languages searched."
+    },
+    {
+      "id": "main-accessibility",
+      "status": "pass",
+      "evidence": "Translated view labels, settings, evidence, flow and cycle controls. Selector usable at 240 percent text; no document horizontal overflow at 1456px. Restored 140 percent."
+    },
+    {
+      "id": "atlas-live-switch",
+      "status": "pass",
+      "evidence": "IAB butterfly, IAB filter with nine results, Motion tab, 50 percent mechanism progress and 15 degree inspection angle persisted."
+    },
+    {
+      "id": "shared-preference",
+      "status": "pass",
+      "evidence": "Changing atlas language updated the already-open main dashboard; reload and navigation retained language."
+    },
+    {
+      "id": "history-return",
+      "status": "pass",
+      "evidence": "Followed atlas back-engine link, changed main language, returned with browser Back. Atlas title and selector agreed; rotation and switching still worked."
+    },
+    {
+      "id": "atlas-large-text",
+      "status": "pass",
+      "evidence": "English and Spanish header and controls inspected in large-text mode; restored previous standard size."
+    },
+    {
+      "id": "narration",
+      "status": "pass_with_limit",
+      "evidence": "Read-aloud starts; switching language cancels old utterance and restores Listen. Selected-language voice logic reviewed; actual voice pronunciation not audibly assessed."
+    },
+    {
+      "id": "video-language-position",
+      "status": "pass",
+      "evidence": "IAB MP4 switched EN → ES while playing; paused ES → EN preserved exact 5.377363-second position. Correct /en/ MP4, English burned-in text, and srclang=en VTT observed."
+    }
+  ],
+  "defaultLanguage": "es",
+  "evidenceLimits": "Localization preserves the existing technical evidence and approximation notices. It does not establish new measured engine specifications."
+}

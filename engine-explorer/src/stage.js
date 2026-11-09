@@ -1,3 +1,4 @@
+import {mountGlyphBackdrop} from './ui/glyph-backdrop.js';
 // The studio: renderer, lights, a soft floor shadow, orbit controls, a thick outline round the selected part, picking,
 // and the cutaway plane. Themes change the backdrop only; the engine keeps its photographed colours.
 import * as THREE from 'three';
@@ -8,19 +9,19 @@ import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {buildEngine} from './engine.js';
 import {buildFlows} from './flows.js';
+import {BACKDROP,configureStudioRenderer,addStudioLighting} from './studio.js';
+export {BACKDROP} from './studio.js';
 
 const V3 = THREE.Vector3;
-export const BACKDROP = {dark: '#0b0c0e', light: '#f4f4f2', soft: '#d9dbde'};
+
 
 export function createStage(canvas) {
-  const renderer = new THREE.WebGLRenderer({canvas, antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer: true});
-  renderer.toneMapping = THREE.NeutralToneMapping;
-  renderer.toneMappingExposure = 0.85;
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  const renderer = new THREE.WebGLRenderer({canvas, alpha: true, antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer: true});
+  configureStudioRenderer(renderer);
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(BACKDROP.dark);
+  scene.background = null;
+  renderer.setClearColor(0x000000,0);
+  mountGlyphBackdrop(canvas.parentElement);
   const camera = new THREE.PerspectiveCamera(30, 1, 0.02, 40);
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;
@@ -31,37 +32,7 @@ export function createStage(canvas) {
   controls.rotateSpeed = 0.7;
   controls.enableKeys = false;
 
-  // studio lighting: a broad key from above the intake side, a cool fill, a rim, and a soft environment for the metal
-  {
-    const env = new THREE.Scene();
-    env.background = new THREE.Color('#9a9da2');
-    const box = (w, h, pos, k) => {
-      const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({color: new THREE.Color(1, 1, 1).multiplyScalar(k), side: THREE.DoubleSide}));
-      m.position.copy(pos);
-      m.lookAt(0, 0, 0);
-      env.add(m);
-    };
-    box(10, 10, new V3(0, 12, 2), 2.2);
-    box(3, 12, new V3(-10, 3, 6), 2.6);
-    box(3, 12, new V3(10, 3, -4), 1.8);
-    box(16, 2, new V3(0, 1, 12), 1.3);
-    const pm = new THREE.PMREMGenerator(renderer);
-    scene.environment = pm.fromScene(env, 0.03).texture;
-    scene.environmentIntensity = 0.6;
-    pm.dispose();
-  }
-  const key = new THREE.DirectionalLight('#ffffff', 1.7);
-  key.position.set(1.4, 3.0, 1.6);
-  key.castShadow = true;
-  Object.assign(key.shadow.camera, {left: -0.7, right: 0.7, top: 0.7, bottom: -0.7, near: 0.5, far: 8});
-  key.shadow.mapSize.set(2048, 2048);
-  key.shadow.bias = -0.0005;
-  key.shadow.normalBias = 0.003;
-  scene.add(key, key.target);
-  const fill = new THREE.DirectionalLight('#dfe8ff', 0.55);
-  fill.position.set(-2, 1.2, -1.2);
-  scene.add(fill);
-  scene.add(new THREE.HemisphereLight('#ffffff', '#3a3c40', 0.45));
+  addStudioLighting(renderer,scene);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(12, 12), new THREE.ShadowMaterial({color: '#000000', opacity: 0.35}));
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -0.128;
@@ -70,6 +41,7 @@ export function createStage(canvas) {
 
   const eng = buildEngine();
   scene.add(eng.root);
+  floor.position.y = Math.min(-0.128, new THREE.Box3().setFromObject(eng.root).min.y - 0.002);
   const flows = buildFlows();
   scene.add(flows.root);
 
@@ -78,8 +50,8 @@ export function createStage(canvas) {
   const outline = new OutlinePass(new THREE.Vector2(4, 4), scene, camera);
   outline.edgeStrength = 6;
   outline.edgeThickness = 2.5;
-  outline.visibleEdgeColor.set('#ffd400');
-  outline.hiddenEdgeColor.set('#ffd400');
+  outline.visibleEdgeColor.set('#ff4056');
+  outline.hiddenEdgeColor.set('#ff4056');
   outline.edgeGlow = 0;
   composer.addPass(outline);
   composer.addPass(new OutputPass());
@@ -147,13 +119,14 @@ export function createStage(canvas) {
     return [(pv.x * 0.5 + 0.5) * size.w, (-pv.y * 0.5 + 0.5) * size.h];
   };
   const setOutline = (id) => {
-    outline.selectedObjects = id ? [eng.G[id]] : [];
+    // Resolve actual tagged meshes, including details nested inside moving groups.
+    outline.selectedObjects = id ? eng.pickables.filter(m => m.userData.part === id) : [];
   };
   const setTheme = (t) => {
-    scene.background = new THREE.Color(BACKDROP[t] ?? BACKDROP.dark);
+    scene.background = null;
     floor.material.opacity = t === 'dark' ? 0.5 : 0.25;
-    outline.visibleEdgeColor.set(t === 'light' ? '#0047ff' : '#ffd400');
-    outline.hiddenEdgeColor.set(t === 'light' ? '#0047ff' : '#ffd400');
+    outline.visibleEdgeColor.set(t === 'light' ? '#b50b28' : t === 'soft' ? '#a50e2b' : '#ff4056');
+    outline.hiddenEdgeColor.set(t === 'light' ? '#b50b28' : t === 'soft' ? '#a50e2b' : '#ff4056');
   };
   const render = () => composer.render();
   return {renderer, scene, camera, controls, eng, flows, resize, render, pick, project, setCut, setOutline, setTheme, size};

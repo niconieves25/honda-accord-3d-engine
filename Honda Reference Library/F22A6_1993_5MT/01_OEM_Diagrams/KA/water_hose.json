@@ -1,0 +1,220 @@
+{
+  "slug": "water_hose",
+  "label": "Water Hose",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/water_hose.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/water_hose.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/water_hose.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/water_hose.json",
+  "part_rows": 18,
+  "parts": [
+    {
+      "callout": "2",
+      "part_number": "11108-PT0-003",
+      "description": "Bolt, Sealing (18MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~sealing~11108-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3c19d59b4a0331961ef29b4d383a6bec/a8898bbf7aec15a8b91a5bfca1f9a3c8.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "19504-PT2-000",
+      "description": "Hose, Bypass Inlet",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~bypass~inlet~19504-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e5b1d0b6265d22f411a688aa0371e7b5/e98eb30384458e5750ef0b0871461936.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e5b1d0b6265d22f411a688aa0371e7b5/5a20acae249999a68160cf5e9748af77.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "19507-PT6-000",
+      "description": "Hose A, Fast Idle Control",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~fast~idle~control~19507-pt6-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "19508-PT2-000",
+      "description": "Hose B, Fast Idle Control",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~fast~idle~control~19508-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/274f0100c882e1bb6541ef660ccad7bd/6d3358dcfbb18557415307e49a4c402a.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "19510-PT2-000",
+      "description": "Hose, Throttle Body",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~throttle~body~19510-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9eb60c9718feab51772c64be0685bd00/6bfc3f2f563e2d3b1016722395bfe6c9.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "19513-PE0-003",
+      "description": "Clamp, Water Hose (21.7MM) (CHUO SPRING)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~water~hose~19513-pe0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/09c1d05917bdf8e0a948e0822d6f395e/6c9a7e65ac3638badeb93161f7467e69.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "19513-PT2-000",
+      "description": "Hose, Electronic Air Control Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~electronic~air~19513-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3611be7a46bd865bf3c186e83ee8a3dd/334e61247ecb4a09628c740801b0d5be.jpg"
+      ]
+    },
+    {
+      "callout": "11",
+      "part_number": "19514-PT2-000",
+      "description": "Hose A, Breather Heater",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~breather~heater~19514-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a17f4a3873b9aba037b8de043bc4d8e2/03905c174a2d14cef8ddfd296737c990.jpg"
+      ]
+    },
+    {
+      "callout": "12",
+      "part_number": "19515-PT2-010",
+      "description": "Hose B, Breather Heater",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~breather~heater~19515-pt2-010.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/802775f4a6c1460ba064d4d4cd40f00e/39de0393aed8d44639a688da8b94f3ca.jpg"
+      ]
+    },
+    {
+      "callout": "15",
+      "part_number": "19527-PT3-A00",
+      "description": "Clamp, Heater Hose",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~heater~hose~19527-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "79721-SM1-010",
+      "description": "Hose A, Water Inlet",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~water~inlet~79721-sm1-010.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9f6f226d4cb12e4083cbe65b8bba678/df9350d654b0ecc9c788c9f967683eae.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "79725-SM1-040",
+      "description": "Hose, Water Outlet",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~water~outlet~79725-sm1-040.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5d14cfb85e491616f441483e31a421c9/e16ab06ef66fddca1c5dfeb19e736362.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "79725-SM4-050",
+      "description": "Hose, Water Outlet",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN    Replaced By: 79725-SM1-040",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~hose~water~outlet~79725-sm4-050.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "91405-PD1-004",
+      "description": "Clamp, Tube (D12)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-pd1-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5b7e7f19c7cfd47fee059ee9433dea9d/98fd9114b140e09a774c765f6198c4bf.jpg"
+      ]
+    },
+    {
+      "callout": "19",
+      "part_number": "91405-PD1-004",
+      "description": "Clamp, Tube (D12)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-pd1-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5b7e7f19c7cfd47fee059ee9433dea9d/98fd9114b140e09a774c765f6198c4bf.jpg"
+      ]
+    },
+    {
+      "callout": "20",
+      "part_number": "19513-PE0-003",
+      "description": "Clamp, Water Hose (21.7MM) (CHUO SPRING)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~water~hose~19513-pe0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/09c1d05917bdf8e0a948e0822d6f395e/6c9a7e65ac3638badeb93161f7467e69.jpg"
+      ]
+    },
+    {
+      "callout": "21",
+      "part_number": "95002-41250-04",
+      "description": "Clamp, Tube (D12.5)",
+      "quantity": 6,
+      "details": "Require Quantity: 6    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~95002-41250-04.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a275ff5ced2bb3ee084fe40dd21f78ff/4c3a0a2e3a40a7a0e874097a850403b2.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a275ff5ced2bb3ee084fe40dd21f78ff/ebb22ffb0568684cbc08f75427c85711.jpg"
+      ]
+    },
+    {
+      "callout": "22",
+      "part_number": "95701-06012-08",
+      "description": "Bolt, Flange (6X12)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06012-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d69c07b8ef83b8b3acd934de1cc55abc/b21307ec27f74a96ac268405d635792b.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/3b5d6f73f4b68a6034b830ad10ccc390.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/33e1c14a3b2a9aa06a789fdc76d5bdad.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/d427d96d1574d5210fc8787d1162a4e1.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "1e17fe88bd99cbe900676a1b95ea557fbe60e1958c12d77c2f66b56fe92c6b28",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,0 +1,132 @@
+{
+  "note": "Catalogue differences are not proof of target emissions variant; supersessions and supplier alternatives are retained.",
+  "differences": [
+    {
+      "diagram": "control_unit",
+      "ka_only": [
+        {
+          "callout": "4",
+          "part_number": "37820-PT6-A12",
+          "description": "Control Module, Engine",
+          "quantity": null,
+          "details": "",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~control~module~engine~37820-pt6-a12.html",
+          "actual_photo_urls": [
+            "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/792be3da4d68a2b3e276496872323dcb/79b7e6c8a68f92ae4c28e207f086a342.jpg"
+          ]
+        }
+      ],
+      "kl_only": [
+        {
+          "callout": "4",
+          "part_number": "37820-PT6-L12",
+          "description": "Control Module, Engine",
+          "quantity": null,
+          "details": "",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~control~module~engine~37820-pt6-l12.html",
+          "actual_photo_urls": []
+        }
+      ]
+    },
+    {
+      "diagram": "crankshaft_piston",
+      "ka_only": [
+        {
+          "callout": "16",
+          "part_number": "13621-P0A-003",
+          "description": "Pulley, Timing Belt Drive",
+          "quantity": null,
+          "details": "Fit Note: Mfg.Origin: JPN",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~timing~belt~drive~13621-p0a-003.html",
+          "actual_photo_urls": []
+        }
+      ],
+      "kl_only": []
+    },
+    {
+      "diagram": "cylinder_head",
+      "ka_only": [
+        {
+          "callout": "7",
+          "part_number": "14631-P0B-A00",
+          "description": "Shaft A, Rocker Arm",
+          "quantity": 2,
+          "details": "Fit Note: Mfg.Origin: JPN    Require Quantity: 2    Package Quantity: 1",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~shaft~rocker~arm~14631-p0b-a00.html",
+          "actual_photo_urls": []
+        },
+        {
+          "callout": "8",
+          "part_number": "14632-P0B-A00",
+          "description": "Shaft B, Rocker Arm",
+          "quantity": 3,
+          "details": "Fit Note: Mfg.Origin: JPN    Require Quantity: 3    Package Quantity: 1",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~shaft~rocker~arm~14632-p0b-a00.html",
+          "actual_photo_urls": []
+        }
+      ],
+      "kl_only": []
+    },
+    {
+      "diagram": "exhaust_system",
+      "ka_only": [
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-A30",
+          "description": "Converter (MHE335)",
+          "quantity": null,
+          "details": "Replaced By: 18160-PT6-A40",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a30.html",
+          "actual_photo_urls": []
+        },
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-A40",
+          "description": "Converter (MTH335)",
+          "quantity": null,
+          "details": "",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a40.html",
+          "actual_photo_urls": []
+        },
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-A50",
+          "description": "Converter (MHH335)",
+          "quantity": null,
+          "details": "Replaced By: 18160-PT6-A40",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-a50.html",
+          "actual_photo_urls": []
+        }
+      ],
+      "kl_only": [
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-L30",
+          "description": "Converter (MHE345)",
+          "quantity": null,
+          "details": "Replaced By: 18160-PT6-Y31",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-l30.html",
+          "actual_photo_urls": []
+        },
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-L40",
+          "description": "Converter (MTH345)",
+          "quantity": null,
+          "details": "Replaced By: 18160-PT6-Y31",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-l40.html",
+          "actual_photo_urls": []
+        },
+        {
+          "callout": "3",
+          "part_number": "18160-PT6-L50",
+          "description": "Converter (MHH345)",
+          "quantity": null,
+          "details": "Replaced By: 18160-PT6-A40",
+          "part_url": "https://www.hondapartsnow.com/genuine/honda~converter~18160-pt6-l50.html",
+          "actual_photo_urls": []
+        }
+      ]
+    }
+  ]
+}

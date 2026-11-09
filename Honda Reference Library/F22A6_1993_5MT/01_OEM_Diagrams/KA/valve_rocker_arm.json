@@ -1,0 +1,200 @@
+{
+  "slug": "valve_rocker_arm",
+  "label": "Valve - Rocker Arm",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/valve_rocker_arm.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/valve_rocker_arm.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/valve_rocker_arm.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/valve_rocker_arm.json",
+  "part_rows": 17,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "14621-PT0-000",
+      "description": "Arm A, Inlet Rocker",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~14621-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f8a363ebcb8148f89989ffeb83d42e9b/3795cd5a1343c80ac14151667a8887d7.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "14622-PT0-000",
+      "description": "Arm B, Inlet Rocker",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~14622-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4e9b06f6446bc0771f6e7d9d5da05683/2868f783d14cf6bfbec6fade7a5ce56e.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "14623-PT0-000",
+      "description": "Arm, Exhaust Rocker",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~arm~14623-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/36617e9268083f465cf53b1b3fecdf56/328ed5094e9546ccf0ab1e401f1b548f.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "14645-PT0-003",
+      "description": "Spring A, Valve Rocker Arm (SANKO)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~valve~rocker~14645-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c803e2c696d3e5b878b4a89ed8df9d1e/3c2affa3b34bbcd539c5a73c3b963022.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "14646-PN4-003",
+      "description": "Spring B, Valve Rocker Arm (SANKO)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~valve~rocker~14646-pn4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1f6522cbabfffe67cc7cf6182e320b72/35b5384929602bfde33305c23b42722d.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "14647-PT0-000",
+      "description": "Washer, Wave",
+      "quantity": 5,
+      "details": "Require Quantity: 5    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~wave~14647-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/db5eed997e4b9b93951a9bb7de1bae88/7df112d07cb6b430daf61139391512c5.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "14711-PT3-A00",
+      "description": "Valve, Inlet",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~14711-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "14721-P0J-A00",
+      "description": "Valve, Exhaust",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~14721-p0j-a00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d959f20e7d6604b1d7ca1afa55a0dbb3/96f86f672e65f0ec3b78d5d80ec5ccb2.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "14744-PT0-004",
+      "description": "Screw, Tappet Adjusting",
+      "quantity": 16,
+      "details": "Require Quantity: 16    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~tappet~adjusting~14744-pt0-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/968c9b4434e280e64eb8854f5d4f08e3/bbdbf1437fa51aec90fd260054b482d3.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/968c9b4434e280e64eb8854f5d4f08e3/123528251b9215e1bd7c34ea5c477775.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "14761-PT5-003",
+      "description": "Spring, Inlet Valve (BLUE) (NIPPON HATSUJO)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14761-pt5-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "14761-PT5-004",
+      "description": "Spring, Inlet Valve (BLUE) (CHUO SPRING)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1    Replaced By: 14761-PT5-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14761-pt5-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "14762-PT5-003",
+      "description": "Spring, Exhaust Valve (GREEN) (NIPPON HATSUJO)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14762-pt5-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "14762-PT5-004",
+      "description": "Spring, Exhaust Valve (GREEN) (CHUO SPRING)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1    Replaced By: 14762-PT5-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~14762-pt5-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "14765-PT0-000",
+      "description": "Retainer, Valve Spring",
+      "quantity": 16,
+      "details": "Require Quantity: 16    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~retainer~valve~spring~14765-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "14775-PT0-000",
+      "description": "Seat, Valve Spring",
+      "quantity": 16,
+      "details": "Require Quantity: 16    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seat~valve~spring~14775-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ad63794c45afdf06c08a0d6ca45a80e3/5add14e723859a6c3ee8a601cf682e61.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ad63794c45afdf06c08a0d6ca45a80e3/296e9ef6fd4d3c728ceafd92f463e03f.jpg"
+      ]
+    },
+    {
+      "callout": "14",
+      "part_number": "14781-PJ7-003",
+      "description": "Cotter, Valve (FUJI VALVE)",
+      "quantity": 32,
+      "details": "Require Quantity: 32    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cotter~valve~14781-pj7-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/229f4cb36938f92eccfb5cda9802b634/4d85fd03e03310ee4446d5fc06b69e7e.jpg"
+      ]
+    },
+    {
+      "callout": "15",
+      "part_number": "90206-PT0-004",
+      "description": "Nut, Tappet Adjusting",
+      "quantity": 16,
+      "details": "Require Quantity: 16    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~tappet~adjusting~90206-pt0-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/fffa2044ec4eddbb513d24e99cfaac9c/e8746d9cdbf45b8e4b470db804dd36b7.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "b65dd242b64e451c176f595691e4c8703b834030b660dbdb7550395cd2c8ad16",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

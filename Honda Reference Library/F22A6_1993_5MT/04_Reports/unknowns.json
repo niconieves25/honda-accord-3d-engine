@@ -1,0 +1,34 @@
+[
+  {
+    "id": "market",
+    "detail": "KA/KL and exact emissions certification are unknown. Preserve both catalogues; ECU and catalyst differ. A catalogue selection cannot determine the user’s car."
+  },
+  {
+    "id": "cam_topology",
+    "detail": "Exact F22A6 cam lobe count, axial spacing, holder count, lobe width, lift law, opening/closing events and overlap were not established by a readable applicable primary source.16 valves / 16 rockers do not independently prove 16 lobes."
+  },
+  {
+    "id": "engine_dimensions",
+    "detail": "External dimensions, bore pitch, rod centre distance, pin offset, chamber geometry, wall thickness, oil-gallery routing and fastener spacing need dimensioned drawings or physical measurement. No scale can be inferred from shipping dimensions or uncalibrated photos."
+  },
+  {
+    "id": "iab_calibration",
+    "detail": "OEM catalogue proves bypass body, diaphragm, vacuum tank, solenoid/check valve. Exact activation threshold, hysteresis, full vacuum routing and calibrated control logic remain unverified for the target."
+  },
+  {
+    "id": "service_tolerances",
+    "detail": "A complete verified1993 US F22A6 workshop manual 61SM405 was not acquired. Do not label1996 F22B1 tolerances, valve clearances, tightening torques or timing settings as F22A6."
+  },
+  {
+    "id": "exterior_views",
+    "detail": "No set of six directional full-engine photographs with visible F22A6 stamp was verified. One1993 EX dealer engine-bay image supports shared exterior appearance only;60 exact OEM component service photos are available."
+  },
+  {
+    "id": "power_rpm_torque",
+    "detail": "140 hp is verified in Honda’s1993 EX sedan brochure.5600 rpm / 142 lb-ft @ 4500 rpm are familiar secondary values but not promoted to verified here because the available primary table is too small to read confidently."
+  },
+  {
+    "id": "materials",
+    "detail": "OEM diagram silhouettes and dealer service photographs do not establish alloy grades, internal surface finishes or production tolerances."
+  }
+]

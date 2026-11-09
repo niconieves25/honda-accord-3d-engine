@@ -1,0 +1,112 @@
+{
+  "slug": "breather_tube",
+  "label": "Breather Tube",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/breather_tube.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/breather_tube.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/breather_tube.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/breather_tube.json",
+  "part_rows": 8,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "95005-75003-10M",
+      "description": "Bulk Hose, Vacuum (7.3X3000) OEM CUT SIZE: (7.3X255)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-75003-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6af9c3b14b68a2996fa62c98fe26a763/b28b9e88b04b815ac8fd6f3691df3f9d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6aab9a2fd397e358a6f076dc9b0bb310/b99c5ca9995e525da055435b3485f1ab.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "17130-PK1-003",
+      "description": "Valve Assy., PCV",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~17130-pk1-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/dfb52cfe16e5c8171e7aa2feaaeb132d/af1423f7b71603417b88000d4956aa1c.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/dfb52cfe16e5c8171e7aa2feaaeb132d/c34d1eca49881c38a1fe8fac07b372d1.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "17137-PT3-A02",
+      "description": "Pipe, Breather",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pipe~breather~17137-pt3-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "17138-PT3-A00",
+      "description": "Tube, Breather",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~tube~breather~17138-pt3-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "17139-PK1-000",
+      "description": "Grommet, PCV Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~pcv~valve~17139-pk1-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9623c274d2530a3367af8feec6b1e7b/27e150dd6fa99c45e73958f91b79258e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9623c274d2530a3367af8feec6b1e7b/200b879a1aca38b5a9efcb4a15f7433b.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9623c274d2530a3367af8feec6b1e7b/ee397bce2af36f650340d7a004364249.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/41d13a6600e0d11b2b16f2b084a2b2db/9502f0793c364902aa96457359fe4b1b.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "91405-P8E-A01",
+      "description": "Clamp, Tube (D15)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-p8e-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/78f3866750394089719581553006d7e7/7ff3afd3a7518ac1f4839f08a70c5d74.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "91405-PM5-004",
+      "description": "Clamp, Tube (D17)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~91405-pm5-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/010d00278ae318c28eb824aea905e431/58deccae36fd30cdc00301d8169e643b.jpg"
+      ]
+    },
+    {
+      "callout": "8",
+      "part_number": "95002-41200-04",
+      "description": "Clamp, Tube (D12)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~95002-41200-04.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/23c985c3afc244f491fe62f8ac26a59c/449e8dba2594836ff31d79789b2eeef5.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "559b231a754bbbbef585758f1e6f2b4e4037b31e56dfd864c6351d62c5e5791c",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,0 +1,1932 @@
+{
+  "created_local": "2026-11-07_11-58-58",
+  "timezone": "America/Chicago",
+  "description": "Complete pre-migration application sources, generated pages, reference library and media. Git metadata, dependencies and temporary build caches excluded.",
+  "files": [
+    {
+      "path": "engine-explorer/.DS_Store",
+      "bytes": 6148,
+      "sha256": "5ad5f09374ffffdacc12e4dc14ca94d40d91df355e2e02e7b617200abd999ccf"
+    },
+    {
+      "path": "engine-explorer/.gitignore",
+      "bytes": 8,
+      "sha256": "99921edb369e12a35a87d768ae481f8c944573626abd4b8f3a1fe78846f30ba7"
+    },
+    {
+      "path": "engine-explorer/README.md",
+      "bytes": 12156,
+      "sha256": "0caaa04c423f20cd1a4ec7aba20da3a708782b150eeacfb97d46a7213d49228b"
+    },
+    {
+      "path": "engine-explorer/anatomy-app/main.js",
+      "bytes": 63,
+      "sha256": "299491377b0602e71e237cee58341119073b6c69ad0627d404c461b0fdb9c1e1"
+    },
+    {
+      "path": "engine-explorer/anatomy-app/style.css",
+      "bytes": 13623,
+      "sha256": "50c30bcc9550eb908adeed6da33a97412d59252f5aaa627e8dc87d281e6ff145"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/alternator.jpg",
+      "bytes": 37469,
+      "sha256": "667b49a4b3e09ffa027eaef0d223f34f18416664c65bdb794f129561656d9989"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/alternator.mp4",
+      "bytes": 70091,
+      "sha256": "e6d0331342949748371bf9142116ce2910022e05394f431b135567500c7ee4fd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/alternator.vtt",
+      "bytes": 443,
+      "sha256": "7556724c0aa4dcd2f4795ca0723de7e830c51445d9794540eb93847777cdff71"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-main.jpg",
+      "bytes": 31634,
+      "sha256": "af71ea028024c8bbe9ef8b9b7b29aa1ceca3eb5714b2dd0ccbb549d89522b7a5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-main.mp4",
+      "bytes": 174314,
+      "sha256": "1ecb697a01fb09653bd776a985d8a2746217714afcb81dd730f045b11c98a752"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-main.vtt",
+      "bytes": 443,
+      "sha256": "94517c3ef48aeb6c9de0a4300ffc850b08dfb2b8172319c184618e482e9ccf1c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-rod.jpg",
+      "bytes": 28499,
+      "sha256": "957807f472ef28deaed2d0e6f8558153fc671a60031cd554c14c0cbf7ea23747"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-rod.mp4",
+      "bytes": 93117,
+      "sha256": "942829cb28fbee7e1c499b59fb2164d02f438dbe7c2775d2308d852bfd460e0a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bearing-rod.vtt",
+      "bytes": 431,
+      "sha256": "1c513538d5aa6f83e9e8c123ea6bf4d88adf08af7b62b52dedc548080ad7b017"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-balance.jpg",
+      "bytes": 31360,
+      "sha256": "e95d2c99be32a8dd551ec66cf90a52eb6a6bd335066a5304a35a84d08ea79611"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-balance.mp4",
+      "bytes": 127423,
+      "sha256": "5ef146215a804e34500c8d975ea55dae9da243c7e1362c3663751edfe6e2e4b5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-balance.vtt",
+      "bytes": 411,
+      "sha256": "bfad87dd21cb1c416f5988b97bfb8b0ba4d38229ccc23ea7e2c061bd61bb9809"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-power-steering.jpg",
+      "bytes": 29437,
+      "sha256": "747a7f1c4975d548a581b97be103a6aa90eb3ff9fb528a2db78469e813aa8e6c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-power-steering.mp4",
+      "bytes": 128573,
+      "sha256": "4241f6db7bde800661dca46ca889ae290d82892cf9f9e77dfc26546dc17a73dc"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-power-steering.vtt",
+      "bytes": 434,
+      "sha256": "b9afd8cbc9f9ab1ec789b359db82963a4f1bcd2b7a9104e97fb0e115f9e70134"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-timing.jpg",
+      "bytes": 32285,
+      "sha256": "47f313bde47b48d1278d2373b6d0b99645cc8d2a17988d747136caaccf35ce18"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-timing.mp4",
+      "bytes": 144059,
+      "sha256": "28330ba684a3152dde47bc67a15bbe6fbf9c1ee5123bcf4505b071e72ab07330"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/belt-timing.vtt",
+      "bytes": 478,
+      "sha256": "604eb09c5f934ba433cfe6c9b2ee1fc12d2229e6f0f88919e18b91b2c33338fd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/block-cylinders.jpg",
+      "bytes": 38443,
+      "sha256": "dd9c5eee853b4b116e5e837fe1fe09c8a66a95ffda1ae98b628ff4ef88d7c479"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/block-cylinders.mp4",
+      "bytes": 326629,
+      "sha256": "76443024a5711d0b90b26b8a5212aaae61f051ecbc126a992df26568a8dcb2f8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/block-cylinders.vtt",
+      "bytes": 418,
+      "sha256": "0581d068d64e854e87deb94ccf1a752c0e9b957bc5a53b316406d28eaa4f7517"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-connecting-rod.jpg",
+      "bytes": 24209,
+      "sha256": "7779b6138f01bfff5920aefe4a7d05658219fcefff49f755ed1bb683a7b8380e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-connecting-rod.mp4",
+      "bytes": 67247,
+      "sha256": "b15660edbceddb7e6151dce38ba731ef2cd47f99650f214c33f991b96d651743"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-connecting-rod.vtt",
+      "bytes": 398,
+      "sha256": "67e7fa9a350dc9dac110b3b101b051666ff69db8c1996f63ee2c551deef8db7e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-valve-cover.jpg",
+      "bytes": 32380,
+      "sha256": "8971ca22aad22ff696a49be6892315326567b957200f08daadbd643132e910f8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-valve-cover.mp4",
+      "bytes": 156029,
+      "sha256": "16a4f36ffdb02edf276c26503dc9f2b671c8ffd5fa3437d1956c85e2d160c519"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bolt-valve-cover.vtt",
+      "bytes": 451,
+      "sha256": "f9b36ef36a0b9ecdf21870f8dadf23a3731ecf29e05d25929d9e2fb6ec37da72"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bridge-main-bearing.jpg",
+      "bytes": 45555,
+      "sha256": "395e95695fb6df8944d0a84747789ad29c852edd6d9ed764777827b4f5ad2559"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bridge-main-bearing.mp4",
+      "bytes": 300320,
+      "sha256": "e20383bf6a0765c447f95caf7ab4375f37db4d9224ec45f9067c6831b2fdc2a8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/bridge-main-bearing.vtt",
+      "bytes": 437,
+      "sha256": "60d9053700d782615e5a3c9928df129660a4780ba0f76fb0a14ccafe10da0926"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/camshaft.jpg",
+      "bytes": 33680,
+      "sha256": "32af1739c0cf6aaf6dbba6c32426ce6c104458ded1026304202e02de1b1870e1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/camshaft.mp4",
+      "bytes": 150999,
+      "sha256": "32a4ce0766a8fd3bdb89ce760f1fe5736704cffbd6f4756c6d8ac76729ad5fcb"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/camshaft.vtt",
+      "bytes": 398,
+      "sha256": "2c818dd66031dd703749b6c82acafba9e12de9eff7ff402f0dcf7756cf34585a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-distributor.jpg",
+      "bytes": 30441,
+      "sha256": "575ae5f22ceb89fff81f1067f03a34aadfb0b1bd105468c33503062b220ca6bc"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-distributor.mp4",
+      "bytes": 173557,
+      "sha256": "9be742ac405e73aea62441c5eafba79883da4109f2f8a0de73f3f3042e2596f5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-distributor.vtt",
+      "bytes": 458,
+      "sha256": "7289531e1425c32cb63a4a71d68cffffe89e710d6a1200fa62b12beb37dc0016"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-oil-filler.jpg",
+      "bytes": 30506,
+      "sha256": "394b24472862ce0a93398eaae1ac13ec4a5e846ab3e7ac008ca37e45b3e7ceea"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-oil-filler.mp4",
+      "bytes": 180400,
+      "sha256": "0b49cff380b2c38505b00882fddf2d0ea6483a0e405753f386410a7e21dad977"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cap-oil-filler.vtt",
+      "bytes": 435,
+      "sha256": "8759dbd7de173b35924996e48d66c171ce8eaa4ebd3082d3c104226907cf53b0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/coil-ignition.jpg",
+      "bytes": 39423,
+      "sha256": "dda0d50106e4c8d0a1a02d5f966341bda3314ef6703fd331bc925d878bb201d2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/coil-ignition.mp4",
+      "bytes": 290970,
+      "sha256": "ed1aff69babd8e5d83dab41dd1acba29c9e67139a07eccd3e0f793e70f782b67"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/coil-ignition.vtt",
+      "bytes": 462,
+      "sha256": "bcb1080195d249026ad782117f88d71309cdd1b2a7b5b8283d98c4bf5f65bfdf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod-cap.jpg",
+      "bytes": 24253,
+      "sha256": "da82c2df593977b5e5d6262acacfce28acc7d4c519abb8c4901884e03a9b28cf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod-cap.mp4",
+      "bytes": 103348,
+      "sha256": "d3af40889117a3fd6803d8394322ab86090eb5313b84b75f45a9f4209f1687bf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod-cap.vtt",
+      "bytes": 386,
+      "sha256": "f961c1bb032e2c04d43a8e9a956d97575e5584a9fc623402e7ca789b590bce42"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod.jpg",
+      "bytes": 26832,
+      "sha256": "eaec640ed5391152f3cd20e1ba8d141782485f2e20791305163435b8d6580cda"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod.mp4",
+      "bytes": 129699,
+      "sha256": "3f99ecb7e1e0696be27d79a1b90c0e794525d13940fbad555b4d0586dc4a80a6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/connecting-rod.vtt",
+      "bytes": 419,
+      "sha256": "5da1c3964d0e1ecce2e57c1f4592323085ed544704fe04039b281a1dfeac33dc"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-lower.jpg",
+      "bytes": 29946,
+      "sha256": "4eb6e85d546e2a0d67f380918c25f1095b19cfd73e10775559684e1f2e00355e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-lower.mp4",
+      "bytes": 171162,
+      "sha256": "36b8b9772a5a4fd6176769944b495aa996cbccd5ed63bf90975dcdaf6ba1330c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-lower.vtt",
+      "bytes": 438,
+      "sha256": "1a2402f5307f001d2d3e53afaf446d0a085c7bab18b214bdb0c281d4e77d378d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-upper.jpg",
+      "bytes": 32863,
+      "sha256": "d6271ab86ae914b9afeda748338fd6e2266c5e62b153cdf4fb38872cd724259b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-upper.mp4",
+      "bytes": 174229,
+      "sha256": "eae407e37821753f4bb4ff2b09a8fc88cec896ae3da0e0535fb5409e8411f85e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-timing-upper.vtt",
+      "bytes": 466,
+      "sha256": "1ebd08d2dc0a422534c338d6b7f613e2a86fb82805af4305ff2db21493d2784b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-valves.jpg",
+      "bytes": 44404,
+      "sha256": "621bbbdc3991bc37378761e92471de0650e0d0bdbabc1ce92a72e91f90eb068a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-valves.mp4",
+      "bytes": 370019,
+      "sha256": "85b21d079156838039240e37954466c1bbba3c78eac5d6aef97cfbace08c7ecf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cover-valves.vtt",
+      "bytes": 422,
+      "sha256": "943ddfe3bd64dd95ebd394135293402aaf436a084c1b16d7f6d58710a7fc28f2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/crankshaft.jpg",
+      "bytes": 33642,
+      "sha256": "d198a48d89251f7425cb95f1446a351e3054f165d208465aadf6923d1eacb027"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/crankshaft.mp4",
+      "bytes": 239699,
+      "sha256": "187faaf8e1b28da18f199438eba7dd283b9cba3125c463b1547310e9a9a87a90"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/crankshaft.vtt",
+      "bytes": 426,
+      "sha256": "bb674f187efb53bec7482e8760debddc339ff287211092d55568c2956bca0156"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cylinder-head.jpg",
+      "bytes": 47049,
+      "sha256": "6f1f8c3c62c4ca19291b7d8f91eb3387a3198cc52ae56e29a84c26e448013d39"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cylinder-head.mp4",
+      "bytes": 386343,
+      "sha256": "9e3549f21fe2559761435621037d77a9532aafdda849e8f1a9cdbeb062e8914c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/cylinder-head.vtt",
+      "bytes": 414,
+      "sha256": "affca606ced6154808135e3c9ea3f410e1b03deda81b69219cf05f0eeb81e381"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/dipstick-oil.jpg",
+      "bytes": 27460,
+      "sha256": "762c9bad4e8b10dc5838b5c8a37dd6dd859bdc15107d4967a838823237296ea5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/dipstick-oil.mp4",
+      "bytes": 79263,
+      "sha256": "a6b5bc7025dc411875777252fa4e3f9500b6f08e162cf5aaf8ad55200a7d0c24"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/dipstick-oil.vtt",
+      "bytes": 484,
+      "sha256": "7afbebf0a44bbbd66cc072321a24e7b91d3d92e8bff4a3aa628ab9bb13b3d5b0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/duct-intake.jpg",
+      "bytes": 29746,
+      "sha256": "cd734b3af11727ff5a7122e69eebcfa4097c24d0f18793c64a9d6ce75aeaae70"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/duct-intake.mp4",
+      "bytes": 189752,
+      "sha256": "32aad206757e7abcad5eb1ff72d0ce5d904145a336ee117a27cbfcbfbc8c1293"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/duct-intake.vtt",
+      "bytes": 464,
+      "sha256": "405700a86b256edcea09a98c595b5f70f2d2f0a5ef96a1bb05ad7839d74e52cc"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-oil.jpg",
+      "bytes": 31620,
+      "sha256": "fc121228fae893ff34dc873e28ab250c2eb4f16a22dd71aceb6cd0f710068cc7"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-oil.mp4",
+      "bytes": 168589,
+      "sha256": "51ffefc3c0d8e513448b99a0792236b641f79f13b4c1349a9fa720ac0e7d4dfd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-oil.vtt",
+      "bytes": 452,
+      "sha256": "7f9e6f89357012e8a0c355ae0b10e8c277af1112c01f5d6150dd371dea332296"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-vtec.jpg",
+      "bytes": 50736,
+      "sha256": "cbf43a5795911e90e7b2b866c5fa69d9f8bc1eb809a7b688579b14aa969c94d8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-vtec.mp4",
+      "bytes": 798095,
+      "sha256": "132b3cdcfe9ea5770f653f1832590f4ce96bf792867254c8c0f870c6078f78cb"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/filter-vtec.vtt",
+      "bytes": 437,
+      "sha256": "4eefa27b7e9df6c134ca43d39162ab457b9dcc8495e4c8a7c1aa570bd09e4a6c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-cylinder-head.jpg",
+      "bytes": 41182,
+      "sha256": "8c56a32fef9238c093656777bd30b4f86e414d24fa36627cab378a3e7a1dfc2e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-cylinder-head.mp4",
+      "bytes": 455796,
+      "sha256": "bf079b070a7139847bf7d1e829da33903e7b65361b3deee39f5392d5eb420f1c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-cylinder-head.vtt",
+      "bytes": 409,
+      "sha256": "986f548774aa80f67bd4408c2b9bb5840d77dd5fee49f589f0738ba5d022ed07"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-exhaust.jpg",
+      "bytes": 45357,
+      "sha256": "0d67156de39e3250c42fa1e1ea7bd5c6e1695f50cdb2e203efaecb9a68441682"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-exhaust.mp4",
+      "bytes": 331094,
+      "sha256": "5a14de81ca630ed24c24440df2a926c5e3b55407ec021d5662f98fd922250a9a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-exhaust.vtt",
+      "bytes": 414,
+      "sha256": "a7d769f476f251893496522a7f7098ed919de32696a496e13f128148a47cc0d2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-oil-cap.jpg",
+      "bytes": 33618,
+      "sha256": "55dbcb1c34c001d126cceae18c53d5f4d585e6ea57573dd62da2e7d018283692"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-oil-cap.mp4",
+      "bytes": 201570,
+      "sha256": "6e0bd9b144c19838f8bd7cd74899b26a3a381e536944f347f4999d17e2a1b406"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-oil-cap.vtt",
+      "bytes": 401,
+      "sha256": "47dfc57146adcfda3e4a044530ac5ce14b9581f4ee98faf6b9ed44196f6bf5fb"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-valve-cover.jpg",
+      "bytes": 36998,
+      "sha256": "e51cf9d96a68068cd63558761b6e8e456e6ff30cf0b55b3df959bff894bd0787"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-valve-cover.mp4",
+      "bytes": 261465,
+      "sha256": "0d406836c624549db810c1de7f21208711469cc7061c1705ca1874a60bcffa05"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/gasket-valve-cover.vtt",
+      "bytes": 480,
+      "sha256": "a515db393b24139abfa058f2301a9ceb1b3330bc5531321df5651b1ec9ee3e5e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/guide-valve.jpg",
+      "bytes": 32911,
+      "sha256": "f5ab33b89b48778d66425a1f202becf9431ec02359c5823874484619de3a6510"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/guide-valve.mp4",
+      "bytes": 113798,
+      "sha256": "cddbaba3e6ed8ec5003ef5bedb77eaf6e08fce36bd78eb9bd62c64914cfc827b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/guide-valve.vtt",
+      "bytes": 479,
+      "sha256": "c10a69c501df9dccfbed972fb9bdd08b0aa12a66fc681edc35fcba9c5b474aa3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/housing-distributor.jpg",
+      "bytes": 29848,
+      "sha256": "926a00750c8971b28a6b6f9e0692e385e3db354c17250ecca9eb1c0866e720e4"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/housing-distributor.mp4",
+      "bytes": 127795,
+      "sha256": "fa32ad6ad94745fb58f1ff43b678bce31c6f04109196f54b4e617a4436f18643"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/housing-distributor.vtt",
+      "bytes": 435,
+      "sha256": "a445993754fea77c11f35432c7f873fea374bc92e6c0b9e5e911848ac89cdabf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/injector-fuel.jpg",
+      "bytes": 32859,
+      "sha256": "946654eaf505796d6f10135dcfad56d668679c496a12f8d37c663ad2cf9cacae"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/injector-fuel.mp4",
+      "bytes": 51570,
+      "sha256": "fe3e8f90c5050ad60af072d374048c472baf4455a7d349d37b51fe26b445e85e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/injector-fuel.vtt",
+      "bytes": 435,
+      "sha256": "04926f33523667f1698135ae72e0b656c5f9929b2a87bfe858e64145ad6b7b55"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/keepers-valve.jpg",
+      "bytes": 30249,
+      "sha256": "f2a668c59feae96e60613a6a3fbf47ddfebe2e70bfd7022bd78a80f8e6badf9c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/keepers-valve.mp4",
+      "bytes": 69243,
+      "sha256": "7ba0c39f37ed77f2c3d70348bd4a14b2eaaacf1a8954b2b7bced9b18d8db8113"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/keepers-valve.vtt",
+      "bytes": 453,
+      "sha256": "da00074fc1dd225d857cf1d07b64c87ee048807326197550c173377a8fe168a9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lead-spark-plug.jpg",
+      "bytes": 32761,
+      "sha256": "83986fc7da140d0adf470469838db77884fd64e8e47af289f20532e049a39105"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lead-spark-plug.mp4",
+      "bytes": 175523,
+      "sha256": "b08db52b1693fc557a33dd887e35a190e379f112f6804c149e82c84a1211be83"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lead-spark-plug.vtt",
+      "bytes": 466,
+      "sha256": "78d988b16ae809b51799c817fd149267845c4b18a9d4d9448d74866ccbad9405"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lost-motion.jpg",
+      "bytes": 34917,
+      "sha256": "5288f01404b908aa51206f6c317412d228850ec24059e04cd82b9abfa8b8b128"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lost-motion.mp4",
+      "bytes": 62282,
+      "sha256": "2ddde1f8f29ccfae715226b91b40c4c27f3707c98e27eb6e2c531658b164c22f"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/lost-motion.vtt",
+      "bytes": 505,
+      "sha256": "ae8f21f3e2d4d7c5907927577bc57557eb8e33b55cad3b6b9611106bf6e5d339"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/manifest.json",
+      "bytes": 57094,
+      "sha256": "1f35e635c98ff5c2a98e12d965b69780b7af9598b54d5704be20616dcecb6f5a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/manifold-exhaust.jpg",
+      "bytes": 41381,
+      "sha256": "cb6e7a29db17f4fa51840247271dabb52e6b3eb1bdda902c2357b10001ae232d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/manifold-exhaust.mp4",
+      "bytes": 220888,
+      "sha256": "91131714e9b74531917f3d9df18624dbfd1a5e053466dc844e383cf9b4ffc392"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/manifold-exhaust.vtt",
+      "bytes": 490,
+      "sha256": "7ff0dc0ed860eec0521eb10754a0908893a42ed912a9c5ec1ac8585914516c5c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/outlet-coolant.jpg",
+      "bytes": 28398,
+      "sha256": "c2ef652975c05bd52222fcd6ed7e718cb35e082a032f0d4e8047e99857e071c1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/outlet-coolant.mp4",
+      "bytes": 137434,
+      "sha256": "479e284afacca9d88a91cee013ba0afccff5e3371a3119c43254d7ec1018cb95"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/outlet-coolant.vtt",
+      "bytes": 426,
+      "sha256": "fd02c2feac628884db9ff53ab401b25e7c87c3eb98fe6a6f53158060261fc8e5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pan-oil.jpg",
+      "bytes": 36963,
+      "sha256": "09b2e3370e8b02c35e86161354c24ee5e6de695557ebfb81d8542d671dfcf83f"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pan-oil.mp4",
+      "bytes": 254592,
+      "sha256": "2b32c9c0d3088eb140a6ff33cacc169aaf8b5003704f44f8e1d02413ba74e8e2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pan-oil.vtt",
+      "bytes": 440,
+      "sha256": "2ca9ccf2de630bc86df8aa695877834d1576ba32c14a89c4439b45f02e96940e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pin-vtec-sync.jpg",
+      "bytes": 33464,
+      "sha256": "1829472263ca58b46a447e7e69b1731435f7ff82a500cb825caa518ba7529cc4"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pin-vtec-sync.mp4",
+      "bytes": 106605,
+      "sha256": "76cf569e15af41ca36c00d3f9651189843676c35d88b495b34872a64c4fb2824"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pin-vtec-sync.vtt",
+      "bytes": 476,
+      "sha256": "e0859e035f216be99e5ec87c70185584f1d05c4d832b686ac4677e97ab21485b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pipe-coolant.jpg",
+      "bytes": 31646,
+      "sha256": "66f6779068ca45224ef5676260709291e80edcfc0b0b3795fb69e11c120622f7"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pipe-coolant.mp4",
+      "bytes": 162238,
+      "sha256": "834c8984513bf003830c6f68dc8953aeca150ffe84a4ba067528b92dd27b6383"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pipe-coolant.vtt",
+      "bytes": 480,
+      "sha256": "38eb0300217034490b8434a6e30057e41a0d4078bacbc98c49506d2e16efdf47"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston-pin.jpg",
+      "bytes": 29039,
+      "sha256": "a202b76a1880c976bd24039dcdf4a9f849e6c75f79752bd804708b723b030f9b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston-pin.mp4",
+      "bytes": 133794,
+      "sha256": "4e82079ea05667c81032807811b7fb001bd1a105a0e9b7795fba713b14fd93c9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston-pin.vtt",
+      "bytes": 442,
+      "sha256": "152d65650e6b8c30c3404094e71f54e7fb7ec580ba7ec8fcb6459358e7136300"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston.jpg",
+      "bytes": 27391,
+      "sha256": "36744e218797d50c0a5374716013024c6d2a5fffa5afb4faee6b1306e3c57ae0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston.mp4",
+      "bytes": 161523,
+      "sha256": "e404ae1b456ae9416f95279014692c8b9757135184fef0e32475e7b64617eb06"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/piston.vtt",
+      "bytes": 401,
+      "sha256": "ecf194e385ae68fc4cfe3be20edb6c35ada46768ee8337ef51858f28b9d1d014"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plate-vtec-timing.jpg",
+      "bytes": 34397,
+      "sha256": "9532278ba3194fd3a7038c7f094321a405eed416d817f92553ebf6faae396da5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plate-vtec-timing.mp4",
+      "bytes": 117509,
+      "sha256": "076b165cf01816719779f26d64e8f5b9fdcf53124c9bf1f93de5af5ad5c43b3d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plate-vtec-timing.vtt",
+      "bytes": 486,
+      "sha256": "d9d4d906f6d64807f05b732d2f5b97b1a84ce9ffba5fe72baa8f3c9170401721"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plenum-intake.jpg",
+      "bytes": 42143,
+      "sha256": "a4de35187238ef53b4bcf1ddf211e801bfbb83649e4122d80554edbed2f8f906"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plenum-intake.mp4",
+      "bytes": 239387,
+      "sha256": "bda1f0060fee7aad73a3f42079992f5634d9614af91533baae12c8b7297e5a87"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/plenum-intake.vtt",
+      "bytes": 455,
+      "sha256": "de768d51c5e0f8e8587f8ccc1fa02ff5df05a0fba372ba6307864933a72a03b4"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-camshaft.jpg",
+      "bytes": 31872,
+      "sha256": "b78d4062589fe8d5eefb15e44e7536919645df6587b713ca9429713faa114c17"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-camshaft.mp4",
+      "bytes": 291397,
+      "sha256": "cce1c0af03ca173d2818213d434029ee3daa685c382c743a0a43e09391c40121"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-camshaft.vtt",
+      "bytes": 415,
+      "sha256": "1b133d334ca0992ff70182ed895472477214943602ff86a889b1c4ad45d84b7e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-crank-timing.jpg",
+      "bytes": 32335,
+      "sha256": "cb555fdc0c3ef27a6e19155c12c77b3a79d6df84346841ff54fcb3b710a3ffa6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-crank-timing.mp4",
+      "bytes": 290681,
+      "sha256": "dfa64445ec4bb5fda32516b8de7f7574105ade647db12e0528f095f1f18e8cb1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-crank-timing.vtt",
+      "bytes": 425,
+      "sha256": "f598a2835fbb581cbe1581972ddf440eb766c573a5e462c10a5af0f3ec33497e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-power-steering.jpg",
+      "bytes": 31279,
+      "sha256": "79f15feefbcc9e0e7d8e55d3a4e04881cb0f281fd394277c5f17ba534feec3c9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-power-steering.mp4",
+      "bytes": 206658,
+      "sha256": "998da33d6813b9f34186fd4f3d7862b3c523784b0faf66cda95bca25f7506ba9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pulley-power-steering.vtt",
+      "bytes": 410,
+      "sha256": "1d48b5cf495084229ba386865c85a768344c1f5d1673a0b7b948a8efed065b38"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-oil.jpg",
+      "bytes": 31556,
+      "sha256": "19d2b4514dff283f69d71df196e5cabbabf0b6cd63904a4a327399ce720cf5ee"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-oil.mp4",
+      "bytes": 137690,
+      "sha256": "47ab067566b3dd22bb4d65042ebb8b6e65dd3e3ca87ec3507364799f499f42c0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-oil.vtt",
+      "bytes": 437,
+      "sha256": "d0af4761d5948a803b0fdd916535c4749864e19ce61afa611801b1c60c7f7a55"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-power-steering.jpg",
+      "bytes": 31673,
+      "sha256": "393ab83675ebb77550c5532cc56201a68d9ccc3a086256c94d6d6df6ffce4882"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-power-steering.mp4",
+      "bytes": 121980,
+      "sha256": "986f87229d64b54e95d51fcb75f12154223ebc093c4278153e8aa0b3268e35e5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-power-steering.vtt",
+      "bytes": 430,
+      "sha256": "ed06dbca2e53969b352ab32a04951f733e501b3d2cfeb0006ec361fab201091f"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-water.jpg",
+      "bytes": 28672,
+      "sha256": "a1d0fafd0e5e2ccb6baf2fb1080fb87918aab08189b3cf6d541a388efd833aa3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-water.mp4",
+      "bytes": 51608,
+      "sha256": "05610dd8826cb0c7774835c98333fbd0d80d130a6fa4bb36af7cd76d49d30272"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/pump-water.vtt",
+      "bytes": 423,
+      "sha256": "f291017aa487da7e463b76514ba3c7b1ea0e1fba88542d1dc03b7eb79b78d4bf"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rail-fuel.jpg",
+      "bytes": 31501,
+      "sha256": "52088d272a756f80368e0b599b1b74e8eec3f0a9f1f8c8acadfaff45c2e5e099"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rail-fuel.mp4",
+      "bytes": 186018,
+      "sha256": "53b24f8506838b90b61fd9009558433e22ecfca114dcffaf26edd9a954b64327"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rail-fuel.vtt",
+      "bytes": 405,
+      "sha256": "bc308495e651336daed53ea82a54392d91d7a7925bc46a8dcd237cb4727e6de5"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rectifier-alternator.jpg",
+      "bytes": 39942,
+      "sha256": "be762613dc26921d2f1ab8cdb3565640c1e9232a27538ea56ca2f689f5dbd247"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rectifier-alternator.mp4",
+      "bytes": 262580,
+      "sha256": "89ef68c87c8cf0d7826c9095058d8635006d5f34c4203b540443a862cd6d2b3d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rectifier-alternator.vtt",
+      "bytes": 506,
+      "sha256": "be21aaa42839de85a94679337119f3da45a2c1039b42a4cbbd02b6b473c2dd4d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/regulator-fuel.jpg",
+      "bytes": 37643,
+      "sha256": "37184b88936ac96631a2df4a78b670918bc4d96da490b5bd403489254654e7dd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/regulator-fuel.mp4",
+      "bytes": 55665,
+      "sha256": "d78671ecec3a6c2e5b53c138b48bb64ee94c80795a3395daa758f7c292cda097"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/regulator-fuel.vtt",
+      "bytes": 500,
+      "sha256": "ed53fd4c1769b034d4d9051747d87febf6fa015ce0775fdff6c69ccef330c281"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/retainer-valve.jpg",
+      "bytes": 30979,
+      "sha256": "e6bb69b0aa7a08848f2b7f070e60194fb3c664ff4b26796831f31551d74946c7"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/retainer-valve.mp4",
+      "bytes": 73783,
+      "sha256": "aeb72d92aad9dd320bbe619321ce34a30c87d87fcb9907a589d7d68df0e4f3ec"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/retainer-valve.vtt",
+      "bytes": 440,
+      "sha256": "f3c7c55690e7c50e072b9eae22c8fd4f8989e80651f7a91d3cb92ed9251598b6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-oil.jpg",
+      "bytes": 31396,
+      "sha256": "bae69e800fe520a036e0323b67219d1f3b9fa5ccf8ced3fbcabb6a1e5850da7b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-oil.mp4",
+      "bytes": 247162,
+      "sha256": "f6344f3162f7807c7c441c97813bf53f01c4e7e79b19d880be85657881de3550"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-oil.vtt",
+      "bytes": 459,
+      "sha256": "4571485afbc193a5e1e9aabdf7422154f28a7f4c634ccb268facf325a142b93c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-second.jpg",
+      "bytes": 33012,
+      "sha256": "2fcc87278f11b8fddee9152fed193fa83d0605f823383306b9a2c0ca5c17ddae"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-second.mp4",
+      "bytes": 158220,
+      "sha256": "8a265e05b860b833824b5e7158d53cdce03b2d8748e5a8c384af5d9e34eeabc2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-second.vtt",
+      "bytes": 444,
+      "sha256": "22d2de0490911514bc96ae82ec077bfa1f9f6e9fa3b04772027d8d232fdafd6c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-top.jpg",
+      "bytes": 30471,
+      "sha256": "a908d8d3893892d8ce7cb0a632d7c01d6e1b3319de9c363269111b56f7d3cdee"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-top.mp4",
+      "bytes": 143831,
+      "sha256": "8bea4c8595d7ef0aa3d9837c39ae63c6d1d3e28c2ac65692ee645ed948976661"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/ring-top.vtt",
+      "bytes": 448,
+      "sha256": "15de577204f33974ecb367db9160ad57b5285020b31164999a0d177bab83c72c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-a.jpg",
+      "bytes": 33579,
+      "sha256": "5205589ba23ecdeac551b075776e272197d33e78686fbd267cac17c62c5bb200"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-a.mp4",
+      "bytes": 88640,
+      "sha256": "dbfd507d8915461c5c44f362315e1969c1c6f392d0c3bcaa386746e2aa28259a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-a.vtt",
+      "bytes": 473,
+      "sha256": "3f996965f6c89888c61f43bc2f64874e4e8f85318e3bfd8ebd548aa7ec1308fe"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-b.jpg",
+      "bytes": 33536,
+      "sha256": "a58352645571369285876b384e06afd0cd5615e35a162b3eb54f11dd0b6ab1aa"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-b.mp4",
+      "bytes": 93420,
+      "sha256": "c900f18d55912be1ba9d496b0265adced3a1eca10447896783f7f6a85d43ed54"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-exhaust-b.vtt",
+      "bytes": 464,
+      "sha256": "75fb2f7381cc6661789adfba3790f0d5d86d756e8848f56eb04e44237334b76e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-middle.jpg",
+      "bytes": 33165,
+      "sha256": "cbf6b8affb1a50e46a9b7be20b4de3df379bd3fd59dae279f65b90ee1b9bc93b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-middle.mp4",
+      "bytes": 88965,
+      "sha256": "35c2aad64a59ee8011b0ddb5201681b56cb807558d5b7f8d5de21bb0ef6cc952"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-middle.vtt",
+      "bytes": 451,
+      "sha256": "78d086b4446781d0b149421a3c5a9c6c6f27bb4724a6334bda94c2870cd79ec3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-primary.jpg",
+      "bytes": 34062,
+      "sha256": "6262045ea95f24bc03829a76cb7cb55a428bc8e5aa643d17edb3bf772c8ff566"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-primary.mp4",
+      "bytes": 89761,
+      "sha256": "8f6243be09573c019abbb8ece08d4e005ddd6c213363710237b3e4419769d21f"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-primary.vtt",
+      "bytes": 466,
+      "sha256": "6d8f9b61c7c9e29405fbd40989b0a45266572185d6d0a9fd76993f6da45b8b4b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-secondary.jpg",
+      "bytes": 38646,
+      "sha256": "e6876c1bc1ece9a17937247ad5bc44ced9687e82fb2290673445456756b61d7a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-secondary.mp4",
+      "bytes": 76179,
+      "sha256": "c1eee959656aa5af3d61621f8cc26125c32561ded74f618be37ba7171bcd24ae"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rocker-secondary.vtt",
+      "bytes": 518,
+      "sha256": "a79afadcd66b94b89a7a1e843a879b989f8805ea0fe742d91dfebc265734bc9a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-alternator.jpg",
+      "bytes": 33162,
+      "sha256": "5363bb1b1a4b45476f89a4c2f44ce15084ac8f2d5857ffdc2892d9f4bdf458a9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-alternator.mp4",
+      "bytes": 167263,
+      "sha256": "9a51025e8d7af674d99e3429a4c9702850024748d2d208556b1b09eec6466498"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-alternator.vtt",
+      "bytes": 393,
+      "sha256": "85098dd021cd8bcc4b811937cddd602b6263187877e3bc2e3c5f0a10b038c13b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-distributor.jpg",
+      "bytes": 28161,
+      "sha256": "47bb7f8416459c2f8177fdf4da3b10f67082e943bf15d9787a212a2e00300cd2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-distributor.mp4",
+      "bytes": 103742,
+      "sha256": "1bf824a03972dd544c53f938530fbfac30da5d29e81876f567293d1ccd93c02c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/rotor-distributor.vtt",
+      "bytes": 430,
+      "sha256": "626fc824822197d12e527d7609125b12ae720b01b797d03bba38f497c9051b8c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/runner-intake.jpg",
+      "bytes": 32055,
+      "sha256": "09145ef9cc2e69211ce6d2265856c335e66b54be5ab8dfeba541bb19871f2cb3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/runner-intake.mp4",
+      "bytes": 142198,
+      "sha256": "e4a6f2d4e208525ff93615876c6b7dd789bb899b0bf16b87037724a965745530"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/runner-intake.vtt",
+      "bytes": 505,
+      "sha256": "30f4fc565e5d719cdb76f0eabba58806fe363e9b096d85c3cb8fa5926cc27450"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/screw-valve-lash.jpg",
+      "bytes": 29593,
+      "sha256": "ba81fc8d06b056caa4f371b707ba0516089b39d7f27eefd0a3482706e7715d23"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/screw-valve-lash.mp4",
+      "bytes": 78754,
+      "sha256": "7993196f827f321e5e3f9c067e5f359c3deb8d9a6bbfa13cd5dd021d39566f99"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/screw-valve-lash.vtt",
+      "bytes": 426,
+      "sha256": "5965fa585529987f292c89812ac622f45ea87f79e255979f8fa8537c8637c0f7"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-camshaft.jpg",
+      "bytes": 34343,
+      "sha256": "a28493d762df0db58f45dae768da8181a5088fddf830a5a71c3603b273705c7a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-camshaft.mp4",
+      "bytes": 202843,
+      "sha256": "c4e835bc72e983ab83a8b642237eaecf0eef45e1ef39987710afdb5838345594"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-camshaft.vtt",
+      "bytes": 427,
+      "sha256": "4adeb716091f09e59240e99bd56e1c39f3942dd0e85fb5526a58df516d7a0592"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-injector.jpg",
+      "bytes": 33612,
+      "sha256": "2ff7878b01da8a77e6c84626c18ae95e3191deb06114d6bbd3f516625b2fe27c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-injector.mp4",
+      "bytes": 194091,
+      "sha256": "f4d0daa9d354060f7ead789e83579280e4d9a3cd9ec4ba61e2fa0f9f27fc1a06"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-injector.vtt",
+      "bytes": 418,
+      "sha256": "2e6935a3139226773a237ff906e65f3d46eaf1d71fdcb50ba93625f020f3c391"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-plug-tube.jpg",
+      "bytes": 36046,
+      "sha256": "afca3e2d80fbad0feeaebad5acf0aa044f6e5bd96abd14f693e8a220c56f91e3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-plug-tube.mp4",
+      "bytes": 205138,
+      "sha256": "95dffe80fa7a3469f98993dbdb00c4b4acef243a86f79728224615496bd29fe8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-plug-tube.vtt",
+      "bytes": 424,
+      "sha256": "b93b1175c67da514be80806dd5a4b7bd0ce2d43a7a337ed11e013a8e6929e202"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-valve-stem.jpg",
+      "bytes": 35886,
+      "sha256": "288a99cfa428f5ef879b6096ef67c72f6edcf58aebad33c60f222b60df8ceeae"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-valve-stem.mp4",
+      "bytes": 163638,
+      "sha256": "d69d2c0bb39d17159a31dfec9b29393a33b0389fab6b82d303571ac31dbfe3cd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/seal-valve-stem.vtt",
+      "bytes": 489,
+      "sha256": "859baae958d0ed42f33aebf1fdbe5ad9f5d8033279acc0a0ac596489ce975cde"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/sensor-coolant.jpg",
+      "bytes": 32556,
+      "sha256": "37eb5ca80274e87ba30d519f886d023093c0fe06d379d8bcb0984970c2eeced8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/sensor-coolant.mp4",
+      "bytes": 119856,
+      "sha256": "d30760f1cce15701a34f7ea8fd99c62de759d1f598c381c1fd925e0ebd58b7dc"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/sensor-coolant.vtt",
+      "bytes": 510,
+      "sha256": "012c6f7e74850a7c61dae8a290b12140c8840170cf8a3ce17b8555e57c9a9b6d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-front.jpg",
+      "bytes": 37760,
+      "sha256": "6823d3b7a1e521a09acd35576709a9ed72858c28a9879586a634292b9ee871e6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-front.mp4",
+      "bytes": 178342,
+      "sha256": "ed21c82585afc230f09a1b883df33248b01f069d915c9b1ca0d9c2f657b05666"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-front.vtt",
+      "bytes": 475,
+      "sha256": "3c414b92b913e8fc072343cb8d56eb931b26a1a0cc3a632a308991affb309352"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-rear.jpg",
+      "bytes": 37069,
+      "sha256": "109b83a811b3f909e9472f9f1c4afdfddaf976e59e63d0692bd3b55e1d28cb20"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-rear.mp4",
+      "bytes": 183096,
+      "sha256": "0b800b274009d21c418d6d5defd7d8087d4d3bec1035a1b436e064bd169f0468"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-balance-rear.vtt",
+      "bytes": 444,
+      "sha256": "3e7e986937bcfae0906efa3a0836b4f84c731c2cf340174ed09d4090d7fb1b4b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-inlet-rockers.jpg",
+      "bytes": 35550,
+      "sha256": "dbf17ae37827b2264d8f03a7b08a7b0a8a797670426372f89e87b252e0b1c2e6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-inlet-rockers.mp4",
+      "bytes": 150211,
+      "sha256": "d9517480133f0ee346fed3d2eaead45b6e46ac159fcb9166e9bf437a9c4cbf1e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shaft-inlet-rockers.vtt",
+      "bytes": 492,
+      "sha256": "0a558f00b8688398597a3a3b06935d56bc2477f655e8142f043088b9f80a64a1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shield-exhaust.jpg",
+      "bytes": 47730,
+      "sha256": "302a7e6ea694bf9afd085e289bf2ade3aef358678e7fe005bf45fa3be5706a70"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shield-exhaust.mp4",
+      "bytes": 229017,
+      "sha256": "078f892f629724b0d532e2d9714af6ea6ee90e01df665d327ef573e5e7128c10"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/shield-exhaust.vtt",
+      "bytes": 467,
+      "sha256": "4cb55845eac0738c0c4240c0f416f19867c18d5dd0c4071887e2a4920a021bc4"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/solenoid-vtec.jpg",
+      "bytes": 30932,
+      "sha256": "2386ea63733b1f22f7aec49d5e36bcde35879fb39524202ce0f9ca60d1d15b4e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/solenoid-vtec.mp4",
+      "bytes": 54315,
+      "sha256": "df5b4dedd393b6648324fd838b0bfe7b6d7259b3d3e008a64d14304a57726ba8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/solenoid-vtec.vtt",
+      "bytes": 456,
+      "sha256": "5bc59daa9ca5e665776242eba3c4fdf235bec6f9d88213a0a92d71a262d19f8d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spark-plug.jpg",
+      "bytes": 24511,
+      "sha256": "b8b16d4ff8ab62640828386514f0e1a57c7a4234f55ecf5f112e3b790bdea4a8"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spark-plug.mp4",
+      "bytes": 99735,
+      "sha256": "f89ef93f0b8678d2904fafb09c12e2390104162d0e8482240b86c06c43b42616"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spark-plug.vtt",
+      "bytes": 402,
+      "sha256": "2b19a7cacfebd9f9b0b4b3817c46f8cd2e8d6eac21709c27349b93fd11791516"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-oil-relief.jpg",
+      "bytes": 38492,
+      "sha256": "e5af1a557256bdcd6662931a375c90155ee246e83ee3682313ebd7ceb504639b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-oil-relief.mp4",
+      "bytes": 152132,
+      "sha256": "077536ecfc6fec64f8ff819666732d76ed0daa19608c7890199908d21eba76a9"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-oil-relief.vtt",
+      "bytes": 453,
+      "sha256": "794bd25d9d60944a9ae08b1bae5a9076ea6c4c332d57a9aa3486f8309e2bf9b6"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-timing-adjuster.jpg",
+      "bytes": 40714,
+      "sha256": "871ce69c6ccf2fb1bff9d4f65a759d0a11f3c35edb5e0519af0b137328ad05e1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-timing-adjuster.mp4",
+      "bytes": 220125,
+      "sha256": "f2939d85d4dc7712a45788d1ba577b9fcca27ffdc1cfc3408e54966a91665d1e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-timing-adjuster.vtt",
+      "bytes": 507,
+      "sha256": "9eeef14e568d4f95f2a12d9d2fb9768b8ab8cf4cb11a36a569c2ec1c21745a07"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-exhaust.jpg",
+      "bytes": 36487,
+      "sha256": "faccf29fb3430849ffc3d59b5255bf76e7e12424e3f52636bd95afc559accfeb"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-exhaust.mp4",
+      "bytes": 119965,
+      "sha256": "f5e8db6957b28fd206e69d133743f1cd65c530c38e5e8009380d080bc0ab5605"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-exhaust.vtt",
+      "bytes": 435,
+      "sha256": "5138db1423f77041de575fbb7677049006c8c5ffa49974278ef48fe8d98fe1a0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-inlet.jpg",
+      "bytes": 38888,
+      "sha256": "7eeece3663d5e879c71c95fa59943caf36d5e4553929bda9a9d0b8eb25470f03"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-inlet.mp4",
+      "bytes": 119419,
+      "sha256": "5f7e29ec7389c4963d7d710af43d8917cabca4636de956d55dde053162a0c93e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/spring-valve-inlet.vtt",
+      "bytes": 477,
+      "sha256": "4e26fda7c726e3aa19a88fe4cff9077463346b35885696682fde540db9683c0c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/strainer-oil.jpg",
+      "bytes": 35729,
+      "sha256": "8be677de58fc5c4b622610603b1390c6fddaf468ced41b26024554d9bbf62e1a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/strainer-oil.mp4",
+      "bytes": 175298,
+      "sha256": "a772997639e6f6ba6b7efbfdcff480254112d4939cafcc07ca35108369dde302"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/strainer-oil.vtt",
+      "bytes": 466,
+      "sha256": "6a3e44ebd344ab316f134c48c8e3a73fdfb0838e596f4c2ef82474bbedd53f3a"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-balance.jpg",
+      "bytes": 31103,
+      "sha256": "1d02114632cf3115b07dfc44e3b03913bba4f18178c1c3fb5340b47c5de25593"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-balance.mp4",
+      "bytes": 66686,
+      "sha256": "7c6b02fd1c1ed09890ea380945410f6110b3c8f504864c0c197dd366c1339923"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-balance.vtt",
+      "bytes": 461,
+      "sha256": "80ab3499a9cafc8030ce2796a637b112ec7ad808126ffd2c2badb772e0136276"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-timing.jpg",
+      "bytes": 30441,
+      "sha256": "11417d4c1e0c09d982cb84794800013432174600c1da1c74119a7d6fba12ed52"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-timing.mp4",
+      "bytes": 59171,
+      "sha256": "e35d2c97584910563eeedc62de78249e56386ec7db5a9238e53501608af3fddd"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/tensioner-timing.vtt",
+      "bytes": 449,
+      "sha256": "8c85705064714938f517a26e73d58c5fcaec456b21c1328ce86580a9dbaf0370"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/thermostat.jpg",
+      "bytes": 30703,
+      "sha256": "916271dd1d55efe7236dacd24a3e2586d0196fafeb0e48a2fe066829ad8cfd56"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/thermostat.mp4",
+      "bytes": 70568,
+      "sha256": "aa95ce44d32be890e767e0cabc6e030be6d1c45916f4b527f955aaa61488bb6b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/thermostat.vtt",
+      "bytes": 429,
+      "sha256": "aebebc64638bebf3828ad50d799d971fb07ce6b451336df046c684a85bd40aa0"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/throttle-butterfly.jpg",
+      "bytes": 31678,
+      "sha256": "4450d35a1792f6e2a8c06ad848ab2c8fcdafe7ca8258fb205575c499dafe054b"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/throttle-butterfly.mp4",
+      "bytes": 64320,
+      "sha256": "911241ec017eba807152bee664f94b6db691a3f4e1cf55d698f46c4d53ecad94"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/throttle-butterfly.vtt",
+      "bytes": 421,
+      "sha256": "292d6df09d518f485fc951bc04789fe31b8f542abbe36ad3eec2dc497a808835"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-egr.jpg",
+      "bytes": 31867,
+      "sha256": "3f1ceb298c3b4f74f3cc2834a1749233e7e338ba3aa9f325da21abc438b415d4"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-egr.mp4",
+      "bytes": 50277,
+      "sha256": "304827c12ce093a11a106413e416418dcb283a7b61db06785e27fa527c7e6778"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-egr.vtt",
+      "bytes": 414,
+      "sha256": "72da0c434948e6d7945f3e89bef7e22b677d7dba0a452778b4706f1724bc803d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-exhaust.jpg",
+      "bytes": 27760,
+      "sha256": "e7de4e5d610fc55239551e9d1d6edd1433f5f942f58f6b45443060229ab92809"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-exhaust.mp4",
+      "bytes": 58626,
+      "sha256": "be4951fbb15fdcab8628468e9ee8f08befd858536ffbba9c9fe3017fca167480"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-exhaust.vtt",
+      "bytes": 403,
+      "sha256": "20e786e471b1fe0acb2ccaf0813333775825c461aa54feabf3c2761d3689d96d"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-inlet.jpg",
+      "bytes": 28343,
+      "sha256": "d26acf48815ca3e9b8923e41bd05668e688c241aad1c046212cce5f663045ef1"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-inlet.mp4",
+      "bytes": 61867,
+      "sha256": "d03a10871e7629e43d36cff2e3976c65ec987b94823e423be845b9e6eb0362e3"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-inlet.vtt",
+      "bytes": 434,
+      "sha256": "5eea0114f1082e949599db41c3c517cbaf66bae034a1f09a3b1aa4b0719c5e1e"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-oil-relief.jpg",
+      "bytes": 30186,
+      "sha256": "43fe9729470492e348859d86bb6fbb192d40eaf08d5a0f22556af22432311912"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-oil-relief.mp4",
+      "bytes": 67116,
+      "sha256": "ba38dd18038e457204b79d7902636faa5832791efa062c626eccf6962d06234c"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-oil-relief.vtt",
+      "bytes": 473,
+      "sha256": "e28f8a46779ed2ffb648d38584cea9e14902ccdfe89f9c40da4e09753da6124f"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-pcv.jpg",
+      "bytes": 29920,
+      "sha256": "50a79054b0f15d95fdfe4c414082b14e60d5f65f17e64b3b980b8537f3322529"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-pcv.mp4",
+      "bytes": 65763,
+      "sha256": "7ee11d5e9588f151828a2a4a1bd482f50fd6671e6fc49c3319325e1fdb3032be"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/valve-pcv.vtt",
+      "bytes": 447,
+      "sha256": "454c5abf9d6986a163dbfe4da7ab2b2cf2f27a7650035da24b5ae2eda3ae96d2"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/washer-thrust.jpg",
+      "bytes": 36473,
+      "sha256": "b0d81385141f42b5eaa1a9e2cb8469a804387f7c0aa45eab53e94bcd0e7d9b38"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/washer-thrust.mp4",
+      "bytes": 186828,
+      "sha256": "7fbc0746de360ca2583542d216321f8639a26b9897798c34614db669ffccc3db"
+    },
+    {
+      "path": "engine-explorer/anatomy-media/washer-thrust.vtt",
+      "bytes": 487,
+      "sha256": "e4f8576311b89ce8d30f779492a4c12effd1cf1120259f0fa4a7f376d8763f06"
+    },
+    {
+      "path": "engine-explorer/anatomy.html",
+      "bytes": 8094870,
+      "sha256": "8c4e0bae0dc492e265b2d421e63dbe813d6d36068df3264432e2d24dd1d1c611"
+    },
+    {
+      "path": "engine-explorer/app/main.js",
+      "bytes": 155,
+      "sha256": "d0387c0f481f48462de0707b46adb60e3c40d9965c20bb07ee6d039bdbb3aab1"
+    },
+    {
+      "path": "engine-explorer/app/style.css",
+      "bytes": 20623,
+      "sha256": "4098b2f505cdc797dcaef7697f394099502e8884f7a7e28dbeeb149cd386f2e0"
+    },
+    {
+      "path": "engine-explorer/index.html",
+      "bytes": 937475,
+      "sha256": "9e004d9841f2905b450486b334c68ecd92cd1430969d4f2ceab44bc8c919881b"
+    },
+    {
+      "path": "engine-explorer/package.json",
+      "bytes": 18,
+      "sha256": "1239d4d885dcad42201a27ed9324f8f0f760b78700d8db9ced39a511cffe7eae"
+    },
+    {
+      "path": "engine-explorer/scripts/anatomy-video-contact.mjs",
+      "bytes": 2760,
+      "sha256": "d87a65fc0103570a3188afa18c562f9335a577854afe142dac966b29ebb64c37"
+    },
+    {
+      "path": "engine-explorer/scripts/anatomy-video-content.mjs",
+      "bytes": 3606,
+      "sha256": "4e14de57b384f01698760e818edce181909cbc78200b8feb2001d9b687935dc8"
+    },
+    {
+      "path": "engine-explorer/scripts/anatomy-video-framing.mjs",
+      "bytes": 2386,
+      "sha256": "1671ce3a64fb8568be602f43daa8d6b04010053f07b9ab95fd0349d320bdcd0e"
+    },
+    {
+      "path": "engine-explorer/scripts/anatomy-video-verify.mjs",
+      "bytes": 4404,
+      "sha256": "e54009acc820314e791f8d8f0d894b807d2ac5b75fe18623ee2eb73c08f4149f"
+    },
+    {
+      "path": "engine-explorer/scripts/build-anatomy.mjs",
+      "bytes": 1671,
+      "sha256": "1b26215b8782fc64f4dd16d4a01166bf55fe7bf02ed65315623af3f91ea5cb27"
+    },
+    {
+      "path": "engine-explorer/scripts/build.sh",
+      "bytes": 506,
+      "sha256": "16980955049296fae56480d46b666cca355a4b31a85391fa1e90d85abf7f39cd"
+    },
+    {
+      "path": "engine-explorer/scripts/export-anatomy-pbr.mjs",
+      "bytes": 13950,
+      "sha256": "0ca1fb9ff6f9b2afed87014c9f810f545ee9284067a555a409932ed94427e06e"
+    },
+    {
+      "path": "engine-explorer/scripts/export-pbr.js",
+      "bytes": 7285,
+      "sha256": "e92d7c107f3d0cff94bdab0e3e3f9e5338182cff6f8ffe1b8aa1a4b2c80b35d8"
+    },
+    {
+      "path": "engine-explorer/scripts/render-anatomy-videos.mjs",
+      "bytes": 13450,
+      "sha256": "e560ce65cf4b000631a105ba917db0af9dc899206028dabd2c4d21a61d8ff379"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/catalog.js",
+      "bytes": 69746,
+      "sha256": "833a8393fb7ef3514e21dde6b9bcfa22d5582af7960ccd25b9c79dc6be3c2945"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/engine-parts.js",
+      "bytes": 7480,
+      "sha256": "7b10722daacdc4a97c93997e967facaa4687725c9595e2ceb629ac4ad633136f"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/figure-runtime.js",
+      "bytes": 797,
+      "sha256": "f2db8d11879098cb6a5e2edf688bd225310b02f2e54e01720523002363bec285"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/figures.mjs",
+      "bytes": 28387,
+      "sha256": "b34d8373bb2ad5f7b4be189daebdd854b17f3ac8d005ca090e6ad7139caa97c5"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/motion.mjs",
+      "bytes": 2485,
+      "sha256": "d37d527b5be6f065aceffcc6fedba21940c6c84297841c9fbe589f8d3bd1cee5"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/pbr-runtime.js",
+      "bytes": 6148,
+      "sha256": "4b7b7b9ecc549101ff32a161ae2265a020a4bb54c48653192fefb9700145ca99"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/scenes.json",
+      "bytes": 7748436,
+      "sha256": "f45f12b919e8383df3ceac95e8e3adb7e7a7f5c8900ccc79f55b4b1dda7c8f99"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/three-adapter.js",
+      "bytes": 10556,
+      "sha256": "c82c39d2699ee1746217f735b9bb4eb6070046c9723b912df63b3be047f9a37f"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/ui.js",
+      "bytes": 19467,
+      "sha256": "ab431d5d1aef3a368e4dcac1a3944190366079268c3ee9af22eebdf66e6fccb4"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/LICENSE",
+      "bytes": 1061,
+      "sha256": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/audit.mjs",
+      "bytes": 92618,
+      "sha256": "74e605b5d549c1f31c8a1104db7560057105cf86809bf6ced00e4ac79194c8e2"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/iso-kit.mjs",
+      "bytes": 35175,
+      "sha256": "6d3ecc725d30c3b0346da309cf61dfa5a65017c23620bbd4093009d4fb104018"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/lathe.mjs",
+      "bytes": 48028,
+      "sha256": "a4e7e974b1a37e603ad2b76363b6f9815cc101dfff0ad277a5d4e8f1dc56fccb"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/tube.mjs",
+      "bytes": 14230,
+      "sha256": "bcb3cc360f6d83e6a5753f4c464b4587ab7965028b05a5d58e285abce58667c9"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/turn-audit.mjs",
+      "bytes": 57356,
+      "sha256": "e4385f1a8a388c4544b49c6677ff8ab7048f7fcfa8cd5fe653d96a4a0df62843"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/turn-build.mjs",
+      "bytes": 65975,
+      "sha256": "0c088efd9f22329d1b0c2190c95e5b5b43a2c46deae6ff047b3166ef643cfa83"
+    },
+    {
+      "path": "engine-explorer/src/anatomy/vendor/turn.mjs",
+      "bytes": 139815,
+      "sha256": "cb4b530b5e1750ba0e4fd2367d5f25e00195c0136672aa2ecd665c0622ffd1a2"
+    },
+    {
+      "path": "engine-explorer/src/app.js",
+      "bytes": 32711,
+      "sha256": "0d4a308dcb63b6fbeb671732e531559dfe092a5225869b00f604671c66931c11"
+    },
+    {
+      "path": "engine-explorer/src/consolidate-static.js",
+      "bytes": 2172,
+      "sha256": "8a5fe5940096a8674696db60aae8b2ef6c442ef80de914d9fc7a8a66e2108fb6"
+    },
+    {
+      "path": "engine-explorer/src/detail-castings.js",
+      "bytes": 15411,
+      "sha256": "e3e41a0c6f96032ee21ea87ffdf1a2beb87964dfb4c1031da6c751cff01e2467"
+    },
+    {
+      "path": "engine-explorer/src/detail-exterior.js",
+      "bytes": 22994,
+      "sha256": "ceae71407699e195745e88d11348f703cc5007f32bab3ff454aa7daa701ae2fc"
+    },
+    {
+      "path": "engine-explorer/src/detail-internals.js",
+      "bytes": 17027,
+      "sha256": "2c20551d2990d1f9c012359b0192a43cca8012b1bfb3415dd3e5deef42602ca9"
+    },
+    {
+      "path": "engine-explorer/src/detail-timing.js",
+      "bytes": 6294,
+      "sha256": "c15754710432fdc9cb4c5f844d0c8484d62aa83329290f12f7480f7c3bf14d3d"
+    },
+    {
+      "path": "engine-explorer/src/engine.js",
+      "bytes": 54082,
+      "sha256": "ad3d63f102f27c455b7dc0f793623652e49bac18fa35195728270d82ee8ac83a"
+    },
+    {
+      "path": "engine-explorer/src/flows.js",
+      "bytes": 5594,
+      "sha256": "ba3c61a60e9d81bcc6ac7dade7772ab150f3b6ee039f48406d438141fe549dff"
+    },
+    {
+      "path": "engine-explorer/src/i18n/en.js",
+      "bytes": 28338,
+      "sha256": "ce487c8ceed2fee082d573717246b560a0f80afd01a1a4f61c7dcd238a1b011a"
+    },
+    {
+      "path": "engine-explorer/src/kin.js",
+      "bytes": 5869,
+      "sha256": "0205f97f812139f039285a3441a7488622c2ac35a21556614291c05859b62adb"
+    },
+    {
+      "path": "engine-explorer/src/parts.js",
+      "bytes": 6288,
+      "sha256": "f918d7b6ce489b1edf669137ded4cca18c206a0458bf3335c83424127176fcde"
+    },
+    {
+      "path": "engine-explorer/src/stage.js",
+      "bytes": 5206,
+      "sha256": "98b907a1eca3961dbf4d13d2cfe0f18e1a3c24b2d581f0282553abb60d27b1e0"
+    },
+    {
+      "path": "engine-explorer/src/studio.js",
+      "bytes": 1885,
+      "sha256": "d69d9b851b1b74692a341c527fd4f6e9804d0fbc4be5f481b12ed0a6a464f71e"
+    },
+    {
+      "path": "engine-explorer/src/textures.js",
+      "bytes": 3556,
+      "sha256": "bb163572109d5c15d1499ca037c586a44f8c2e0da2855a0daaff55e6372afb2a"
+    },
+    {
+      "path": "engine-explorer/src/views.js",
+      "bytes": 2266,
+      "sha256": "7ec175c728796bbf6a5a1b8bc74286f6d7f262081a272fcd3245a9e01815ca09"
+    },
+    {
+      "path": "engine-explorer/tests/anatomy-pbr.mjs",
+      "bytes": 11822,
+      "sha256": "ab688ed8489fa2511fc9a90aba966beff6ceb159e3c2f6dc4ba03ab81f0eeccc"
+    },
+    {
+      "path": "engine-explorer/tests/anatomy.mjs",
+      "bytes": 9783,
+      "sha256": "495014f25e2f191057d55b9f8831cb4ad4d65d17c0234686e16ba39cd69d7359"
+    },
+    {
+      "path": "engine-explorer/tests/compare.mjs",
+      "bytes": 2464,
+      "sha256": "6b89eba4c866de821ccb2427b0bee6ef02444e983e581bd05f73a40e72b067f2"
+    },
+    {
+      "path": "engine-explorer/tests/geometry.mjs",
+      "bytes": 6341,
+      "sha256": "9316caacfe34c15a4bc23a806511da1d53f1953f6a11e65adddc31f30318cf8f"
+    },
+    {
+      "path": "engine-explorer/tests/timing.mjs",
+      "bytes": 3865,
+      "sha256": "c868b0276e2432451b6f3164d80516d468b8c42a18d4ca8a8c8e91b98efabe4e"
+    },
+    {
+      "path": "engine-explorer/tests/ui.mjs",
+      "bytes": 7345,
+      "sha256": "564ce3741168e1270777955e25859e1c39f384077975093cc4f9e66fccdec821"
+    },
+    {
+      "path": "Honda Reference Library/.DS_Store",
+      "bytes": 8196,
+      "sha256": "48a3b75f49aaaec917dc9dabde1a14a3ee60fa59e1180dbcfbb238abd564af41"
+    },
+    {
+      "path": "Honda Reference Library/01_Research/Honda_F22_Engine_Skill_Brief.md",
+      "bytes": 21244,
+      "sha256": "b90d694fdbaf8c75cbb115c8d8d2e66c28f65b91aea27317881b172eb1eb184f"
+    },
+    {
+      "path": "Honda Reference Library/01_Research/Honda_F22_Engine_Skill_Brief.txt",
+      "bytes": 21244,
+      "sha256": "b90d694fdbaf8c75cbb115c8d8d2e66c28f65b91aea27317881b172eb1eb184f"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/alternator_denso.json",
+      "bytes": 5995,
+      "sha256": "9932649740a6a707861451f026692323a767ada3a1fa59a844a49d697649de6c"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/alternator_denso.png",
+      "bytes": 55632,
+      "sha256": "f172b7cac811e9530f387dee9af52b09f180148746c09a3782129b474fb019bf"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/breather_tube.json",
+      "bytes": 2301,
+      "sha256": "d89ef04fc08d3552a2ae33b997968630426fea104aabd5d84ca5a1167112931e"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/breather_tube.png",
+      "bytes": 48639,
+      "sha256": "3e6b15b6ae368b9191f2bc88227352ba75659897663d89b4959ffb9469420701"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/camshaft_timing_belt.json",
+      "bytes": 7848,
+      "sha256": "e9c70c203fd2ff435e0ab7fa4e06751adf3c63458a089fd6ed5b744a286fbe4b"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/camshaft_timing_belt.png",
+      "bytes": 61975,
+      "sha256": "2ba7b60d1c35c250acc07aafd79c894009009644e4ea89d539ee6c6eb0fa1460"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/clutch_torque_converter.json",
+      "bytes": 2619,
+      "sha256": "277390d4978d328792f9936eaaff8045f9811a9d073ae99fc5370a4f23e2a5cd"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/clutch_torque_converter.png",
+      "bytes": 286341,
+      "sha256": "351437e4b7870fc9ecd7bf7daa6c578bf4507b523f42026abf920c911f80eb36"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/crankshaft_piston.json",
+      "bytes": 17799,
+      "sha256": "295c6a4c2800a6855de3d909ebce2f9aead4f0fb7cc32b947fd39009021037d4"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/crankshaft_piston.png",
+      "bytes": 57291,
+      "sha256": "bc1f761c8b7e8a1b304a74f80dad8b0736220ddfb8a76a21f0e840742d4edf3d"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_block_oil_pan.json",
+      "bytes": 11353,
+      "sha256": "e85c193bc3f3a0ef967aa148c5708f90098eb23c1ea30708b7bbe42f9de7baf0"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_block_oil_pan.png",
+      "bytes": 71096,
+      "sha256": "e74dd850f65586b205b9a7652163db3dbec021659225d00f32a583fe0594f837"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_head.json",
+      "bytes": 7517,
+      "sha256": "4cd8f36d269f7ab3642b97074697ed6543a056ab12fff8dd461e1968b3a37ce5"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_head.png",
+      "bytes": 81139,
+      "sha256": "4f2aeaab4b2c980abdc880184dc20b18240560beded85d98e50b4b1fb6660021"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_head_cover.json",
+      "bytes": 3780,
+      "sha256": "e053333dc613f1de282709c453bf1a2b8bcb343c79389678e4f8ccb6e0f25dd7"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/cylinder_head_cover.png",
+      "bytes": 309025,
+      "sha256": "5e7c836bccaffd07a2385542e3b92d95bd938a6b6142445a390026ba47ccec18"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/distributor_hitachi.json",
+      "bytes": 3253,
+      "sha256": "ff90a0057b86a9875e0eb6391933853f408f81aa02645b989d0e233a6e4cdd44"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/distributor_hitachi.png",
+      "bytes": 52164,
+      "sha256": "1221344969a26b760f32b084e7687e731e24a6b15e1212b0df4c554a770e235a"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/engine_wire_harness_clamp.json",
+      "bytes": 9460,
+      "sha256": "a6197e980a2969dbb36c2533ea9ccfec647574365ec80b4931fa30c241062f46"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/engine_wire_harness_clamp.png",
+      "bytes": 91536,
+      "sha256": "e9de53fafffebf92e53ccdd7683192a8eaf636893e2d449f9e8a20eb90eb036f"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/exhaust_manifold.json",
+      "bytes": 3330,
+      "sha256": "de466013f34ca9ee2baa9c3507db4c72bffdbbc5397147b5c3fdbdc165926940"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/exhaust_manifold.png",
+      "bytes": 48356,
+      "sha256": "ab394ac9581f710a203110f081c0b5e7d791d0504e9b543ae8ef1190661a6d3f"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/high_tension_cord_spark_plug.json",
+      "bytes": 4173,
+      "sha256": "bdb1a5ce1e10ec1e1e313632d8d518f82a58cb901db8a8dea9aff60353c51f3b"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/high_tension_cord_spark_plug.png",
+      "bytes": 57486,
+      "sha256": "d0557834dc4b0ab624cebe03d0188aff732cdffc7e47cf3323236c55554fd4a0"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/install_pipe_tubing.json",
+      "bytes": 6033,
+      "sha256": "232ff33b0dbc052aa5e5ccc77a2ed479b14559f172fd1e2dec42f25b80c1d9bb"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/install_pipe_tubing.png",
+      "bytes": 64413,
+      "sha256": "d0301566eb2cdaff1712917231b9bf80b58df72e19125064c2fadadb5aba1a24"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/intake_manifold.json",
+      "bytes": 10591,
+      "sha256": "a15c8bbc20cb7b8a8416e6d4d440ff6982a8b6bd8458b2ae5c81dc49b3722e88"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/intake_manifold.png",
+      "bytes": 75304,
+      "sha256": "a13f8da789f8a3972a3b091bb8c2609895d594144e9b558dddbfcc2abe20db36"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/oil_pump_oil_strainer.json",
+      "bytes": 9202,
+      "sha256": "0afd87de7ffd99056e05d2e20c1a976daff94150a0f871309fe6e92fb5293601"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/oil_pump_oil_strainer.png",
+      "bytes": 57693,
+      "sha256": "51b9d6bacc94db56b6cfd2b5f2522218c71adcd5233ba330744577106bd6d648"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/p_s_pump_bracket.json",
+      "bytes": 9045,
+      "sha256": "680024a4edd384fcc9edf14ed0e5c32063eed3ad1c51134a93c8abc7dd69b17d"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/p_s_pump_bracket.png",
+      "bytes": 58253,
+      "sha256": "baaf814c3b3f48e01e701f8ed7338b97f3fa896105bb392932eb03c94958ff3f"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/throttle_body.json",
+      "bytes": 7428,
+      "sha256": "ebcb9373571053370ff35d316284b23378fa3c4247aa5e2cc2099f7b4d6cca95"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/throttle_body.png",
+      "bytes": 54699,
+      "sha256": "b281d8ee18a3303cf9df3ff39e6a5e4cc2327d11d0d5251821f8ad8ce6bcb8d7"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/valve_rocker_arm.json",
+      "bytes": 5542,
+      "sha256": "b7a12946c79a47a60cc76a392f07cfbc78d4453f334fbbd4f3cc7e1b2512a312"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/valve_rocker_arm.png",
+      "bytes": 45046,
+      "sha256": "53befc6abd400d311c72f6b24b260ff833331f554d96cfa472bd9a30af8ba271"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/water_hose.json",
+      "bytes": 2868,
+      "sha256": "dbc09ce6408a86e180f8c8fb622ecc30d600cc66a4a569550b6ff31cc66f0818"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/water_hose.png",
+      "bytes": 52170,
+      "sha256": "49e8f73777b665d7c78222ee452ec073eed52a191f290165948f3e84ae40dfc9"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/water_pump_sensor.json",
+      "bytes": 8505,
+      "sha256": "9d5f314cca53a61b59d57811997514fff4f3074fc39f85a753ea8f597ae638cd"
+    },
+    {
+      "path": "Honda Reference Library/02_OEM_Diagrams/water_pump_sensor.png",
+      "bytes": 249423,
+      "sha256": "b2be880a9c6a8623af29346661726c9292aa0d78beed087c05471096941ff0a7"
+    },
+    {
+      "path": "Honda Reference Library/03_Service_References/Honda_Accord_1996_Supplement_Source.txt",
+      "bytes": 1166,
+      "sha256": "6e5529312d068823ef62b8ab0128ea1e78dc7d77b3bb0b24a340c6f35673adeb"
+    },
+    {
+      "path": "Honda Reference Library/03_Service_References/Honda_Accord_Coupe_Aerodeck_1996_Service_Supplement.pdf",
+      "bytes": 10144447,
+      "sha256": "e1cfc087394f94f640b199ff934fcc7357f7619c72f95de3a3ee487a4069ec9a"
+    },
+    {
+      "path": "Honda Reference Library/Catalog_Parts.csv",
+      "bytes": 131799,
+      "sha256": "d920ef9555d6425712a5a0effd4e5988345ffe18257723bb0393a3fa6501e9ef"
+    },
+    {
+      "path": "Honda Reference Library/SHA256SUMS.txt",
+      "bytes": 5129,
+      "sha256": "8c4df1cd8ad01773b284bd24632d8cf2b75ba4b759ad00b3b25dc4f0eb266757"
+    },
+    {
+      "path": "Honda Reference Library/START_HERE.txt",
+      "bytes": 1571,
+      "sha256": "329fc3fe16732ac989b5c733ec9750cefbbb631f6eed717e640d60dd3574da02"
+    },
+    {
+      "path": "Honda Reference Library/Source_Reading_List.txt",
+      "bytes": 4986,
+      "sha256": "fe79af51ac1f9a33c4eafe93d5f8898bd3dd8935b09aaef0b3b581c73f766a27"
+    },
+    {
+      "path": "Honda Reference Library/diagram_manifest.json",
+      "bytes": 12726,
+      "sha256": "9d175f8d3ebf39d8f5415c1b8eed948a7cf7b78478e85566cbff8b07e6de75cc"
+    },
+    {
+      "path": "Honda Reference Library/index.html",
+      "bytes": 76561,
+      "sha256": "0f67bf80060f3ccf1e05f751546773aec556d3b097ad12db31b037e57c246648"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "control_unit",
+  "label": "Control Unit",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/control_unit.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/control_unit.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/control_unit.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/control_unit.json",
+  "part_rows": 8,
+  "parts": [
+    {
+      "callout": "2",
+      "part_number": "30700-SM4-A01",
+      "description": "Resistor Assy.",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~resistor~assy~30700-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "37740-PT3-A01",
+      "description": "Timer, Radiator Fan (SHINDENGEN)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~timer~radiator~fan~37740-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "37740-PT7-A02",
+      "description": "Timer, Radiator Fan (MOTOROLA)",
+      "quantity": null,
+      "details": "Replaced By: 37740-PT3-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~timer~radiator~fan~37740-pt7-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "37820-PT6-A12",
+      "description": "Control Module, Engine",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~control~module~engine~37820-pt6-a12.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/792be3da4d68a2b3e276496872323dcb/79b7e6c8a68f92ae4c28e207f086a342.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "37821-PT6-A00",
+      "description": "Cover, Engine Control Module",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~37821-pt6-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "93405-06016-08",
+      "description": "Bolt-Washer (6X16)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93405-06016-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5afd7c423a81fcd74eaaf141c8531588/04648f88ddb1db8fca645dbeee0c825c.jpg"
+      ]
+    },
+    {
+      "callout": "11",
+      "part_number": "94050-06080",
+      "description": "Nut, Flange (6MM)",
+      "quantity": 6,
+      "details": "Require Quantity: 6    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-06080.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f11e4497c354589953113c99cfd593da/3529cb786fc22c81cdb868f1820ab10b.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f11e4497c354589953113c99cfd593da/fb148d89c6d5aa0cef194f5f940be728.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f11e4497c354589953113c99cfd593da/4308cc4f477985d30512630983521eec.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f0c0f4babb060caa6683b3f09acd2623/eb2b4676d4696c7e275402b128cdd00c.jpg"
+      ]
+    },
+    {
+      "callout": "13",
+      "part_number": "95701-06016-08",
+      "description": "Bolt, Flange (6X16)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06016-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f5dc76b3448d21b882e072c91aa01f35/504091bcabf54729836c8b3d48648fd7.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "55c851c71b7fcbf3a9c0e2d2935fc3e9aac160620c9d0dddb15a646a0db0f00c",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,0 +1,161 @@
+{
+  "slug": "exhaust_manifold",
+  "label": "Exhaust Manifold",
+  "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/exhaust_manifold.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KL/exhaust_manifold.png",
+  "image_files": [
+    "01_OEM_Diagrams/KL/exhaust_manifold.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KL/exhaust_manifold.json",
+  "part_rows": 13,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "11942-PT2-000",
+      "description": "Stay, L. Exhaust Manifold",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~11942-pt2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "18100-PT6-A00",
+      "description": "Manifold, Exhaust",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~manifold~18100-pt6-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "18115-PT0-003",
+      "description": "Gasket, Exhaust Manifold (NIPPON LEAKLESS)",
+      "quantity": null,
+      "details": "Replaced By: 18115-PT0-004",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~18115-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/bdb12e8ca8679282b437f04595ae3884/6f1e14ec68ccd60fb9934cde74d3d791.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "18115-PT0-004",
+      "description": "Gasket, Exhaust Manifold (ISHINO GASKET)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~18115-pt0-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "18120-PT6-A00",
+      "description": "Cover A, Exhaust Manifold",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~18120-pt6-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "32747-PT0-010",
+      "description": "Clamp G, Engine Wire Harness",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~engine~wire~32747-pt0-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "90010-PE2-900",
+      "description": "Bolt, Special (10X22)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~special~90010-pe2-900.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/229ccebcbb6acceb8c3145e5e1f7b621/db4c006157aa7373744025cd37ecb334.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3d20e6065ebb9bc63431baf1ebb3c819/d561521ad8db4f9870886a2c9a0bcb6c.jpg"
+      ]
+    },
+    {
+      "callout": "8",
+      "part_number": "90015-PT0-J00",
+      "description": "Bolt-Washer (8X14)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90015-pt0-j00.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6e2cc0027fbf2fa5e89e861f1f96acab/9aa274024f7aab24db301c6e1e4208d5.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "90065-PC1-300",
+      "description": "Bolt, Stud (10X34.5)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~90065-pc1-300.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/35b53d1608609c676fb422100d247664/dcd0eaafe86aae2a39581689c3212b07.jpg"
+      ]
+    },
+    {
+      "callout": "11",
+      "part_number": "90212-RCA-A01",
+      "description": "Nut, Self-Lock (8MM)",
+      "quantity": 9,
+      "details": "Require Quantity: 9    Package Quantity: 10",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~self~lock~90212-rca-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/450cb9e0d092323b15c9d047fdc7bb22/4225bcabc7ed4d17ef130561ea1e11fb.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ccf87ae69a1b21581440b48b5eb91755/6658070221c80bfdb17dab6c0d153214.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ccf87ae69a1b21581440b48b5eb91755/f97715399fdb9bab840626aacaddbd39.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ccf87ae69a1b21581440b48b5eb91755/a252e82501ef00c0049e422679bb6a48.jpg"
+      ]
+    },
+    {
+      "callout": "12",
+      "part_number": "90451-PE2-000",
+      "description": "Washer, Special (11X28)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~special~90451-pe2-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "95701-06010-08",
+      "description": "Bolt, Flange (6X10)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06010-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e8a6b58f2ec378f8c7037b7aa6a91f41/04034b0d591a3c959b30e8a107bcbe13.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c031153216508dbd4ab6e208efde2cd1/b167a1629b4e447cf6bc78af6ec58d6e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c031153216508dbd4ab6e208efde2cd1/602115ef1aa66dcf71a549c81a2776e1.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/c031153216508dbd4ab6e208efde2cd1/ce4faf6f8fa95742bc9c09a442ee6c9a.jpg"
+      ]
+    },
+    {
+      "callout": "14",
+      "part_number": "95701-10025-08",
+      "description": "Bolt, Flange (10X25)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10025-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/86e17548a85175a513b6160243f60b39/eb2b30de0825ba1c2b773387bafb9ff4.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "9e6b3b7fb457cfef2a158a8834340aa2d7384bf2c36acf513bd061085462b34f",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,0 +1,33 @@
+/* F22A6 instrument panel — shared presentation contract. */
+:root{--font-ui:'IBM Plex Sans',system-ui,sans-serif;--font-heading:'IBM Plex Sans Condensed','IBM Plex Sans',sans-serif;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--radius-sm:8px;--radius-panel:12px;--icon-size:24px;--mechanical-size:32px;--motion-fast:140ms;--edge:color-mix(in srgb,var(--fg) 9%,transparent);--surface-raised:color-mix(in srgb,var(--panel) 95%,var(--fg));--surface-inset:color-mix(in srgb,var(--panel) 85%,var(--bg));--shadow-panel:0 8px 24px #00000018,0 1px 2px #00000018;--shadow-control:inset 0 1px 0 var(--edge),0 1px 2px #00000012;}
+*{box-sizing:border-box}html,body{margin:0}body,#app{font-family:var(--font-ui);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}h1,h2,h3,.pname{font-family:var(--font-heading);font-weight:600;letter-spacing:-.015em;text-wrap:pretty}button,input,select{font:inherit}button,a,summary,input,select{-webkit-tap-highlight-color:transparent}button,select,input[type=search]{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--btn);color:var(--fg);min-height:44px}button{cursor:pointer}button{display:inline-flex;align-items:center;justify-content:center;gap:8px;line-height:1.25;box-shadow:var(--shadow-control)}button,summary,a,select{transition:background-color var(--motion-fast),border-color var(--motion-fast),color var(--motion-fast),box-shadow var(--motion-fast)}button:hover:not(:disabled),select:hover{border-color:var(--dim)}button:active:not(:disabled){box-shadow:inset 0 1px 3px #0003}button:disabled,select:disabled,input:disabled{opacity:.55;cursor:default}button.primary,#btn-play{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}button[aria-pressed=true],button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--focus);outline-offset:3px;scroll-margin:12px}[hidden]{display:none!important}.ui-icon{display:inline-block;width:var(--icon-size);height:var(--icon-size);flex:0 0 var(--icon-size);vertical-align:middle;color:inherit;pointer-events:none}.mechanical-icon{width:var(--mechanical-size);height:var(--mechanical-size);flex-basis:var(--mechanical-size)}.control-label{min-width:0}kbd{font-family:var(--font-ui);font-size:.7em;line-height:1.4;padding:1px 4px;border:1px solid var(--line);border-radius:4px;color:var(--dim);font-weight:400;white-space:nowrap}button[aria-pressed=true] kbd,#btn-play kbd{color:inherit;border-color:currentColor;opacity:.75}.sr{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip{position:fixed;top:-150px;left:16px;z-index:100;background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:8px}.skip:focus{top:12px}a{text-underline-offset:4px}.language-control{display:flex;align-items:center;gap:8px;min-width:0;color:var(--dim);font-size:.78em}.language-control>span{display:flex;align-items:center;gap:6px}.language-control select{padding:8px 12px;color:var(--fg);min-width:120px}.pn,.oem-list p{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.system-mark,.empty-icon{display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--accent) 9%,var(--panel));color:var(--accent);border:1px solid var(--line);border-radius:8px}input[type=search]{padding:10px 13px;width:100%}input::placeholder{color:var(--dim);opacity:1}input[type=checkbox],input[type=range]{accent-color:var(--accent)}@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+
+/* Keep the language chevron inside the control across native select renderers. */
+.language-control{position:relative}
+.language-control select{appearance:none;-webkit-appearance:none;padding-inline-end:38px}
+.language-control::after{content:'';position:absolute;inset-inline-end:16px;top:50%;width:8px;height:8px;border-inline-end:2px solid currentColor;border-block-end:2px solid currentColor;transform:translateY(-70%) rotate(45deg);pointer-events:none}
+
+/* Decorative glyph field stays behind opaque reading panels and 3D canvases. */
+body{isolation:isolate;background-color:var(--bg)}
+.ambient-glyphs{position:fixed;inset:0;display:block;width:100vw;height:100vh;z-index:0;pointer-events:none;opacity:.8}
+#app{position:relative;z-index:1}
+:root[data-theme=light] .ambient-glyphs,:root[data-theme=soft] .ambient-glyphs{opacity:.22}
+@media(prefers-reduced-motion:reduce){.ambient-glyphs{opacity:.35}}
+/* Transparent model canvases reveal the same glyph field behind solid parts. */
+.render-glyphs{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;z-index:0}
+.stagewrap #gl{z-index:1}
+.stagewrap .labels,.stagewrap .leaders,.stagewrap .legend{z-index:2}
+#figure-stage>.part-canvas{position:relative;z-index:1}
+/* Compact, keyboard-operable explanations; closed until requested. */
+.info-disclosure{border:1px solid var(--line);border-radius:8px;background:var(--surface-inset);overflow:clip}
+.info-disclosure+.info-disclosure{margin-top:8px}
+.info-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;cursor:pointer;list-style:none;padding:12px 14px;font-size:.78em;font-weight:500;color:var(--fg)}
+.info-disclosure>summary::-webkit-details-marker{display:none}
+.disclosure-title{display:flex;align-items:center;gap:10px;min-width:0}
+.disclosure-title>.ui-icon{color:var(--accent);width:20px;height:20px;flex-basis:20px}
+.disclosure-chevron{display:flex;flex:none;color:var(--dim)}
+.disclosure-chevron>.ui-icon{width:18px;height:18px;flex-basis:18px}
+.info-disclosure[open]>summary{background:var(--red-inset);border-bottom:1px solid var(--red-edge)}
+.info-disclosure[open] .disclosure-chevron{transform:rotate(90deg)}
+.disclosure-body{padding:14px 16px}
+.disclosure-body>p{font-size:.8em;line-height:1.65;margin:0}

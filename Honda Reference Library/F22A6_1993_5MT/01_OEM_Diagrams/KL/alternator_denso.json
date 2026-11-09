@@ -1,0 +1,303 @@
+{
+  "slug": "alternator_denso",
+  "label": "Alternator (Denso)",
+  "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/alternator_denso.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KL/alternator_denso.png",
+  "image_files": [
+    "01_OEM_Diagrams/KL/alternator_denso.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KL/alternator_denso.json",
+  "part_rows": 29,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "31100-PT3-A52",
+      "description": "Alternator Assy. (CJP16) (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~alternator~assy~31100-pt3-a52.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "31101-PV1-A01",
+      "description": "Rotor Assy.  (N/A FOR USA: SEE ASSEMBLY)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rotor~assy~31101-pv1-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "31103-PT0-003",
+      "description": "Seal, Ring",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~ring~31103-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "31104-PT0-003",
+      "description": "Seal, Ring",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~ring~31104-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "31105-PR7-A01",
+      "description": "Holder Assy., Brush",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~assy~31105-pr7-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/2bebccc3dd929e7ec6584a0d392c4afe/7a929167c0f1fb36a9911a13c8fc874b.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "31109-PT0-003",
+      "description": "Frame Assy., Drive End",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~frame~assy~31109-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "31111-PT0-003",
+      "description": "Bearing, RR. Generator",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~31111-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/869e09d9bcb7890065f8c5f3f98b93bd/f65335c57150df7e8a0f0a3b17402cc9.jpg"
+      ]
+    },
+    {
+      "callout": "8",
+      "part_number": "31114-PT0-013",
+      "description": "Bearing, FR. Generator",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bearing~31114-pt0-013.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aa532854e6e79f25402028ee7984bbe3/2c202bff2d4a6145e9c195c97ee8f9f3.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "31116-PT0-003",
+      "description": "Plate, Retainer",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~retainer~31116-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "31116-P13-003",
+      "description": "Plate, Terminal",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~terminal~31116-p13-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "31118-PT0-003",
+      "description": "Bush, Insulation",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bush~insulation~31118-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "31119-PT0-003",
+      "description": "Bush, Insulation",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bush~insulation~31119-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "31121-PT0-003",
+      "description": "Frame, RR. End",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~frame~31121-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "31127-PT0-013",
+      "description": "Rectifier Assy.",
+      "quantity": null,
+      "details": "Replaced By: 31127-PT2-003",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rectifier~assy~31127-pt0-013.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "31135-PT0-013",
+      "description": "Cover, RR. End",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~31135-pt0-013.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "31138-PD1-004",
+      "description": "Cover, Bearing",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~bearing~31138-pd1-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/52c2c8158191ef57957117bb57a355fd/4950fcd36276419b493666408e6aedca.jpg"
+      ]
+    },
+    {
+      "callout": "17",
+      "part_number": "31141-PT0-003",
+      "description": "Pulley",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~31141-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "31142-PD1-004",
+      "description": "Nut, Pulley Lock",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~pulley~lock~31142-pd1-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/76424c309319773602e275e177458650/650980b5a99f52460c4f2c3d2c88effe.jpg"
+      ]
+    },
+    {
+      "callout": "19",
+      "part_number": "31145-PD1-004",
+      "description": "Bolt, Stud (6X68)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~stud~31145-pd1-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8c3be75a2b4a4a67736bae2b557b00ac/72b32b30bf9f8004ba6f5694786f476a.jpg"
+      ]
+    },
+    {
+      "callout": "20",
+      "part_number": "31146-PT0-003",
+      "description": "Screw",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~31146-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "21",
+      "part_number": "31147-PT0-003",
+      "description": "Screw-Washer",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~31147-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/348db6d8a9c59c999182438ff05361fc/ecb0458fcf5ccb74410c69bae3ca9a04.jpg"
+      ]
+    },
+    {
+      "callout": "22",
+      "part_number": "31147-P13-003",
+      "description": "Screw",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~31147-p13-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "23",
+      "part_number": "31148-PT0-003",
+      "description": "Screw, Wave Washer",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~wave~washer~31148-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "24",
+      "part_number": "31148-P13-003",
+      "description": "Screw, Wave Washer",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~wave~washer~31148-p13-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "25",
+      "part_number": "31150-PT2-003",
+      "description": "Regulator Assy.",
+      "quantity": null,
+      "details": "Replaced By: 31150-P1E-A01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~regulator~assy~31150-pt2-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1520913cf3296ecda92b69b1333123fe/9c079938aa9e08174b013d49cfd9a656.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1520913cf3296ecda92b69b1333123fe/face9e0b5f64d51cd6b85a20bee07633.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1520913cf3296ecda92b69b1333123fe/66ed54dca9a83c5aec364364de74b3bf.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1520913cf3296ecda92b69b1333123fe/e55cbb878a80d88ad4f0bf863b041011.jpg"
+      ]
+    },
+    {
+      "callout": "26",
+      "part_number": "90231-PD1-014",
+      "description": "Nut-Washer (5MM)",
+      "quantity": 7,
+      "details": "Require Quantity: 7    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~washer~90231-pd1-014.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "27",
+      "part_number": "90232-PT0-003",
+      "description": "Nut, Hex. (6MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~hex~90232-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "28",
+      "part_number": "90424-PR7-A01",
+      "description": "Washer",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~90424-pr7-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "30",
+      "part_number": "91415-PT0-013",
+      "description": "Clip, Cord",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~cord~91415-pt0-013.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "0592ecb7b1d1132c4d712f7423b0971355190797bf9a7531b062fc9c8dfbb832",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

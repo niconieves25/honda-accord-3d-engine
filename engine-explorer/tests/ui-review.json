@@ -1,0 +1,112 @@
+{
+  "reviewedAt": "2026-11-07T18:23:40.814831+00:00",
+  "method": "Visible browser controls and accessibility tree through CUA; separate CPU geometry/kinematics checks.",
+  "viewport": [
+    1456,
+    800
+  ],
+  "checks": [
+    {
+      "id": "target",
+      "status": "pass",
+      "observation": "Both dashboards identify F22A6, 1993 EX sedan and 5MT; market remains unresolved."
+    },
+    {
+      "id": "six_exterior_directions",
+      "status": "pass_with_evidence_limit",
+      "observation": "Timing, transmission, intake, exhaust, top and underside captured. Comparison uses OEM plates and limited common-appearance photo; six stamp-verified photos are unavailable."
+    },
+    {
+      "id": "valvetrain_detail",
+      "status": "pass_with_evidence_limit",
+      "observation": "Fixed valve operation and segmented inlet shafts visible; exact cam contact-track geometry remains illustrative."
+    },
+    {
+      "id": "iab_view",
+      "status": "pass",
+      "observation": "Keyboard 6 opens eight-port body view; I changes four secondary butterflies while paused. Uncontrolled primary ports stay open."
+    },
+    {
+      "id": "rear_balance_drive",
+      "status": "pass",
+      "observation": "CPU checks verify separate rear input pulley, reversing gear pair and opposite rear shaft rotation. Geometry and tooth counts remain illustrative."
+    },
+    {
+      "id": "cutaway_exploded_timing",
+      "status": "pass",
+      "observation": "Keyboard 2, 3, 4 and 7 show valvetrain, internal drive, cylinder cutaway and separated assemblies."
+    },
+    {
+      "id": "full_engine_search_selection",
+      "status": "pass",
+      "observation": "Searching flywheel finds the manual system. Selection opens its purpose, connections and crank-speed motion."
+    },
+    {
+      "id": "full_engine_keyboard",
+      "status": "pass",
+      "observation": "Arrow orbit, plus zoom, period stepping and view shortcuts respond. Crank step advanced 132 to 162 degrees."
+    },
+    {
+      "id": "fluid_controls",
+      "status": "pass",
+      "observation": "Air/fuel and oil controls toggle checked states in the schematic-flow panel. All remain marked schematic."
+    },
+    {
+      "id": "atlas_search",
+      "status": "pass",
+      "observation": "IAB search returns nine related entries; body and actuator selection show correct names and quantities."
+    },
+    {
+      "id": "atlas_geometry",
+      "status": "pass",
+      "observation": "Piston and IAB body/actuator visually reviewed; source mesh/material equality checked for all extracted entries."
+    },
+    {
+      "id": "atlas_pose_controls",
+      "status": "pass",
+      "observation": "Actuator scrubber accepts 50%; orbit and zoom controls respond; independent operation explained."
+    },
+    {
+      "id": "atlas_play_pause",
+      "status": "pass",
+      "observation": "Piston playback advances scrubber, pause stops it, keyboard orbit changes view readout."
+    },
+    {
+      "id": "legacy_component_links",
+      "status": "pass",
+      "observation": "Removed synchronization-pin URL displays Spanish absence explanation; valid component chosen as fallback."
+    },
+    {
+      "id": "reference_links",
+      "status": "pass",
+      "observation": "Actuator reference resolves to active KA intake diagram and PN17129-PT2-000; all catalogue numbers separately checked against saved OEM rows."
+    },
+    {
+      "id": "large_text_contrast",
+      "status": "pass",
+      "observation": "Atlas large-text and light/dark modes visually reviewed; complete-engine user settings restored to 140% text, 80% labels, dark theme and view labels."
+    },
+    {
+      "id": "narration_controls",
+      "status": "pass_with_limit",
+      "observation": "Spanish Listen switches to Stop reading and back. Voice availability/pronunciation is browser/system dependent; no auditory quality assessment claimed."
+    },
+    {
+      "id": "runtime_logs",
+      "status": "pass",
+      "observation": "No errors/warnings returned for the reviewed complete-engine and atlas tabs."
+    },
+    {
+      "id": "video_collection",
+      "status": "pass",
+      "observation": "102 MP4s fully decoded and probed; 102 posters decoded; 102 WebVTT files exactly match the Spanish catalogue. All five poster sheets visually reviewed. Actual IAB video played in the atlas from the versioned f22a6 URL, duration12s, readyState4. Two timing-cover posters use a clearer frame from their matching clip."
+    }
+  ],
+  "notes": [
+    "Exhaust shield intersections corrected after visual review.",
+    "Top/underside camera distance increased to retain intake duct in frame.",
+    "Camera-direction selector resets to a command prompt after use, preventing a stale direction label.",
+    "One render tab stalled at item57. Completed media were preserved; resumed from the verified manifest."
+  ],
+  "completedAt": "2026-11-07T18:26:12.027115+00:00"
+}

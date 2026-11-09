@@ -1,0 +1,1427 @@
+[
+  {
+    "file": "00_Acquisition/acquire_oem.py",
+    "bytes": 5121,
+    "sha256": "6d24e262fad5a73ec9a38b827aa72288979b7211985c3900ae9993b078f30ebb"
+  },
+  {
+    "file": "00_Acquisition/build_report.py",
+    "bytes": 19658,
+    "sha256": "388cbb687b70a4de4ee017fad99794fd9ccd1c26201ded0cd8d6f39187d2135a"
+  },
+  {
+    "file": "00_Acquisition/index_ka.html",
+    "bytes": 139887,
+    "sha256": "04831697366e261fbfc837ffb3dc41ac67a68d94b6f402356d180118054309b5"
+  },
+  {
+    "file": "00_Acquisition/index_kl.html",
+    "bytes": 139887,
+    "sha256": "5610f0518cf3d25f721d819dc25972cc8af0650c58e78cd00a0deae39fcf920b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/air_cleaner.json",
+    "bytes": 18117,
+    "sha256": "3b29a8e904ef7eb8aac3ee10316f99f2b998d58f991bda25473b14de5e7fa2aa"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/air_cleaner.png",
+    "bytes": 74660,
+    "sha256": "85944920bface47d877bc648c1638ded184dd733cc5f2082be86fbe3605e9087"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/air_cleaner.source.html",
+    "bytes": 285287,
+    "sha256": "250a3ac96b88ed8728ff2c43c8712ffb8b1c6ca1ee6266603de361f4dc7803ae"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/alternator_denso.json",
+    "bytes": 11369,
+    "sha256": "e23a93f241d810bca8538ee967813f1ddc0990dd3a470273dfaec068800f2f20"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/alternator_denso.png",
+    "bytes": 64714,
+    "sha256": "bc543ba916ca3e0885d258a2a90fa5435ea6d1f235c07ea4e1166f3aa731e4d7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/alternator_denso.source.html",
+    "bytes": 234285,
+    "sha256": "4a0c208ff00c8d31de75367bc032ddf9e6b16d45b49a9b70a6f360c5ea332240"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/breather_tube.json",
+    "bytes": 5122,
+    "sha256": "b3fb902034c3f28db2a15030e3006e7d541ae06e9ec31f6713f8e4f46ca5f632"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/breather_tube.png",
+    "bytes": 38064,
+    "sha256": "8f422acddb50828de1bf663287553b65baaf0dc31770cfca8ed46448b631a51b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/breather_tube.source.html",
+    "bytes": 194810,
+    "sha256": "559b231a754bbbbef585758f1e6f2b4e4037b31e56dfd864c6351d62c5e5791c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/camshaft_timing_belt.json",
+    "bytes": 16240,
+    "sha256": "b1a41c4b8abefdecdbcf11e057d51815a25396120b33c35011a1884f440c0fa6"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/camshaft_timing_belt.png",
+    "bytes": 55928,
+    "sha256": "3d82ec379f78ab36faacffc37957279c3a256a2986e4a1ba480c4c8894d6783e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/camshaft_timing_belt.source.html",
+    "bytes": 268342,
+    "sha256": "54791300b44a6add63705bfe372dd965e7ce7ccb147235236dc0ed423e66eaa3"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/clutch_torque_converter.json",
+    "bytes": 6441,
+    "sha256": "1d90b6bcc095f90c8dd80b96dd7b686c3b63f2d71ea86a6c6b2f1cfd1bd7a087"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/clutch_torque_converter.png",
+    "bytes": 252812,
+    "sha256": "3799e8c1e438365a4a4d4d6a2c72aae295526c2412971f6b39e8f82e577c88f9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/clutch_torque_converter.source.html",
+    "bytes": 201934,
+    "sha256": "beff3f6f4a1b3b759ccf12227acd75c785e638077e13fae7679cb79de9fda9ce"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_box.json",
+    "bytes": 14753,
+    "sha256": "d71e46efb8805f4b7a3cebdb3458ab050ed97a3849fe9747580da25afa6766f5"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_box.png",
+    "bytes": 66504,
+    "sha256": "2b55140c4cb445b3f42bb015f4d4f8cdf133dd3dff7faf6688b77f5358651606"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_box.source.html",
+    "bytes": 263787,
+    "sha256": "a465d5144ea15204b0f5f4398bf2db1292ad896a8d6cac98b254ff8877aa6d51"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_unit.json",
+    "bytes": 4605,
+    "sha256": "ca1725aab864d7e791068091aa153aa377b52ff3d306ff528ca91c4365f968c5"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_unit.png",
+    "bytes": 44262,
+    "sha256": "a323ac09db8544572ca15dbca4b6a85c3c728f10b1f2d38b002613247c33401e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/control_unit.source.html",
+    "bytes": 195392,
+    "sha256": "55c851c71b7fcbf3a9c0e2d2935fc3e9aac160620c9d0dddb15a646a0db0f00c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/crankshaft_piston.json",
+    "bytes": 25576,
+    "sha256": "7f3ab48cb6fbc11aad45d53a9c573a0afaa81efdb5545703cbc1f055f8f6c647"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/crankshaft_piston.png",
+    "bytes": 230731,
+    "sha256": "47a231ffb992ca9b3eb4d02fddf10ba7f550be6f1efc940ac05d74ece3840af8"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/crankshaft_piston.source.html",
+    "bytes": 312173,
+    "sha256": "e7b9ec906182175ceb891eda96739e9ab82b48912f86ad05f69f833fd0f58bf1"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_block_oil_pan.json",
+    "bytes": 25940,
+    "sha256": "35d0ab0706984149183384f939c4f14da6a944cc370270dddfc715b66f19acf7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_block_oil_pan.png",
+    "bytes": 75814,
+    "sha256": "8c81826ce2c4da3b758688208a8fea8dd8976bcf66c3fc325232b1bd37ab901f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_block_oil_pan.source.html",
+    "bytes": 333134,
+    "sha256": "8351cd801e75b8cdc78de14f24bd97d18cf91b8757304aa443680bee6aeef157"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head.json",
+    "bytes": 15620,
+    "sha256": "99a57fa2ef357dee29542f5236be39debdaf234d36a66e88dd6b55f07156aa5e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head.png",
+    "bytes": 70303,
+    "sha256": "68453517ff3ff7f259d1ef7701e39935e2e467dc26bc332036ab9f74406580a9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head.source.html",
+    "bytes": 258478,
+    "sha256": "08d27e0910d33e8c6b397d1ffcd1683fc4d1fb2e3cf8df05e7586e651b4eb023"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head_cover.json",
+    "bytes": 8290,
+    "sha256": "25500b68fe785d64e42fd1890c138c80c38274a8389c560bd3882b9107adc183"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head_cover.png",
+    "bytes": 34586,
+    "sha256": "32969105239bf468b01dbfb713feee82fdd44477d2e7a7a1f1ed31613f9afe42"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/cylinder_head_cover.source.html",
+    "bytes": 210406,
+    "sha256": "ed31957437399b6aaf62ea432bbaa7e1dc89a36c5c8c4bce6f4d352fb5ddf762"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/distributor_tec.json",
+    "bytes": 5994,
+    "sha256": "0630085713c572c1945474d65e2caaa41dad9d643472537f6001d468a0dcac68"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/distributor_tec.png",
+    "bytes": 41084,
+    "sha256": "4fd140f5a9196e6feca42f13c4e7365718876412e8d1646a680a1328f1dabfcb"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/distributor_tec.source.html",
+    "bytes": 201313,
+    "sha256": "a6b922dbedb475297cba4e83fe9c21c3027f31cb5fc9fc5566e265d4f3abc49c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/engine_sub_cord_clamp.json",
+    "bytes": 20777,
+    "sha256": "388f267ea9f750bc63f2a7e9e520e0c9c05b618cb063ac93f9ffad08b7cfc028"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/engine_sub_cord_clamp.png",
+    "bytes": 72982,
+    "sha256": "1d2c6576e1ba7aff9e797e20fbbcfd9de4c187ec944097271d710237e5d8b21c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/engine_sub_cord_clamp.source.html",
+    "bytes": 288842,
+    "sha256": "376f0d1cc34516b91832945e8f962edb0eac9d13aa79862097f3a32142d51aa4"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_manifold.json",
+    "bytes": 7221,
+    "sha256": "b6e88d5f9fb9f7489f2e0176fde45e46976dd713b8b8cb6177b17a2fabbf0d86"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_manifold.png",
+    "bytes": 46261,
+    "sha256": "9ca9eba35841ad56452e6d5047af30b39a9587e5c223a996cdec853839feffe3"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_manifold.source.html",
+    "bytes": 206572,
+    "sha256": "b9b3c1a3d26e85ddad1d9ca0f88cef8a23695e71230eb72529c0d23f25d41f07"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_system.json",
+    "bytes": 17441,
+    "sha256": "96faf3a9b971ddee0eef0b248ac6edcbf36a986b301902a51c59b786e8252696"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_system.png",
+    "bytes": 61475,
+    "sha256": "c997c7d48a2ddf6c08e2765361b81ef04d35666c7cb7375ff7a0cd3ed58cd8ea"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/exhaust_system.source.html",
+    "bytes": 284786,
+    "sha256": "7ad1b03bf55c04063255388976008e90067ede00bc63c000a030af0c6e7462bf"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.json",
+    "bytes": 3199,
+    "sha256": "97834836d5ffaea02aa4f9552f37dede7f7872b202d3846afa0f7f282316dc23"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.png",
+    "bytes": 70981,
+    "sha256": "edebd8b760c87bbcde2478852b0cd307de7981e67c5ac68afa80ba10ae5f0828"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.source.html",
+    "bytes": 181356,
+    "sha256": "521f0d8704ef9912b6eb9a131e055eb87d3ba1f8133502d4bfd8495376a969d0"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.json",
+    "bytes": 10864,
+    "sha256": "dc5342cf59019c6ec97ce8f96fc0aeed844cca1c9e5f4310642bf9dd987f87dc"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.png",
+    "bytes": 53801,
+    "sha256": "de6a1a8cf458bd505b1214931aef8c826e0e08eea090b240ef7125ad7edd267a"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.source.html",
+    "bytes": 229431,
+    "sha256": "630940dce2a40e3e41e4a4b8d8856332011f3548bcad7903c8e4e71459a75643"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/intake_manifold.json",
+    "bytes": 27437,
+    "sha256": "fb55e5d1e190d4f56d0da3438ee47f3ee7a07b35958f8060614385d5d9fd7b57"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/intake_manifold.png",
+    "bytes": 63161,
+    "sha256": "b150e5fe682db64bac0f68908ac057e4c45a065589702f3e08bb5fa3fa326d06"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/intake_manifold.source.html",
+    "bytes": 337686,
+    "sha256": "2167f9eb004fb11396cfe8e63d2e9cf497739ff0ec1dd36c1103a43f78e28b0b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/oil_pump_oil_strainer.json",
+    "bytes": 19678,
+    "sha256": "5bc046a71c49347bea04bd0fdfd3c1cab7dd1134ec77274c9f92ec395410c533"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/oil_pump_oil_strainer.png",
+    "bytes": 60080,
+    "sha256": "9876a6cc72dd50de2fe83752a6023038ce13f93bba4183ffcc425d1b02c96230"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/oil_pump_oil_strainer.source.html",
+    "bytes": 289478,
+    "sha256": "1cafeb62d9e06df9dc0258b49dd1a806fef8d7c6f374654bc5d2c931fbe7a13b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/p_s_pump.json",
+    "bytes": 18238,
+    "sha256": "9f61371a670270e46496949eedd05cecdab4c5d394e9a0a811807aad4575d253"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/p_s_pump.png",
+    "bytes": 66942,
+    "sha256": "b3e4df5e923c9fbab679d1db957856fcf1da8383d3cfd012623a9e2be20a7477"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/p_s_pump.source.html",
+    "bytes": 279704,
+    "sha256": "135e05c65fa804fdd19cbef41e8394cb04d0b083644affa60591b8dc3f1e536c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/starter_motor_denso.json",
+    "bytes": 6876,
+    "sha256": "e92c821fceb8e0e75e5a8592fb943fa19c218f73942d5195a5b44886981e555d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/starter_motor_denso.png",
+    "bytes": 45636,
+    "sha256": "e26877d6835a72e744ec961ae6c9c28dd46bfb1db6bd5ea2e84b687dd12f8969"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/starter_motor_denso.source.html",
+    "bytes": 201821,
+    "sha256": "4a43413ba640fb1547b4ce8cb98b612e236490459445787b14eb0f94b7be6ca4"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/throttle_body.json",
+    "bytes": 13952,
+    "sha256": "594a717d32828c28e26c4eac5d2552fa21d1a9b1bedea3046f91ec378a28dcb7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/throttle_body.png",
+    "bytes": 56592,
+    "sha256": "d0d53332a1a0291cd24db22f415146a0ee5214af8f6eadaa74c0fa08f9907730"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/throttle_body.source.html",
+    "bytes": 250973,
+    "sha256": "0bed11fd04116617f04cf10d52c422384c0c35b1069abb4d460ca14cc1c73ca1"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/valve_rocker_arm.json",
+    "bytes": 8860,
+    "sha256": "22cd1ce500c56ed21748e694132e7c9accad50dba337949ea36671c346298cb9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/valve_rocker_arm.png",
+    "bytes": 53516,
+    "sha256": "aa82c5dbe05a0abb9705322f5762f8c2a48a09e22f1df1e093cdce7e2b573b74"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/valve_rocker_arm.source.html",
+    "bytes": 217355,
+    "sha256": "b65dd242b64e451c176f595691e4c8703b834030b660dbdb7550395cd2c8ad16"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_hose.json",
+    "bytes": 9791,
+    "sha256": "cf33b98449738e1bd91d3498406e2299df8ed476ce452359c783934844d389e9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_hose.png",
+    "bytes": 58053,
+    "sha256": "2922e797d3232faba321569ee6c6a6544d22fbe7e9cec34457600fb468789a20"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_hose.source.html",
+    "bytes": 225391,
+    "sha256": "1e17fe88bd99cbe900676a1b95ea557fbe60e1958c12d77c2f66b56fe92c6b28"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_pump.json",
+    "bytes": 14210,
+    "sha256": "b077c1d4250414275918a55edc1d97fbf18b9401c7dd860d11f99244dfbe8934"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_pump.png",
+    "bytes": 38197,
+    "sha256": "21fb16b14c44cbebb7e292012d76ab3b11ace6b6e1f7e03e38bf069545f58973"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/water_pump.source.html",
+    "bytes": 248083,
+    "sha256": "67921068bbb3317446054abd5dcbb7b12ca6caee2930f60c8373c2b2905113c1"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/wire_harness.json",
+    "bytes": 20327,
+    "sha256": "0f8b1252e1b6f4a6b09acd5a40bb7828b8f6fbc1513eaabb7121fac613a83688"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/wire_harness.png",
+    "bytes": 355255,
+    "sha256": "dd8747057c9564a0f93157371bbf2f7722a194de4d88b9a62e2cbfc16b4abd37"
+  },
+  {
+    "file": "01_OEM_Diagrams/KA/wire_harness.source.html",
+    "bytes": 302757,
+    "sha256": "281e3f99f7c883149ca4b4a890bbf1ba6f3de6438bdae4b35bee8d54f8d8b65d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/air_cleaner.json",
+    "bytes": 18117,
+    "sha256": "4f889892c351304e3e2f9099ca3b50e90cb2ff1fa94447661d97e57a028d6a5f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/air_cleaner.png",
+    "bytes": 74660,
+    "sha256": "85944920bface47d877bc648c1638ded184dd733cc5f2082be86fbe3605e9087"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/air_cleaner.source.html",
+    "bytes": 285287,
+    "sha256": "df18bcb720c432eb044c111214f039a6de632079c00a8232a41aaf27b6f26cfa"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/alternator_denso.json",
+    "bytes": 11369,
+    "sha256": "f268ebaf1cc4110d1144a9f87919e2e9e17f26d05b5d457080d2f3c9403efda7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/alternator_denso.png",
+    "bytes": 64714,
+    "sha256": "bc543ba916ca3e0885d258a2a90fa5435ea6d1f235c07ea4e1166f3aa731e4d7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/alternator_denso.source.html",
+    "bytes": 234285,
+    "sha256": "0592ecb7b1d1132c4d712f7423b0971355190797bf9a7531b062fc9c8dfbb832"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/breather_tube.json",
+    "bytes": 5122,
+    "sha256": "2000d719446519beced0061abfb7990d2275320c9fa642f5ea3c22f684c43539"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/breather_tube.png",
+    "bytes": 38064,
+    "sha256": "8f422acddb50828de1bf663287553b65baaf0dc31770cfca8ed46448b631a51b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/breather_tube.source.html",
+    "bytes": 194810,
+    "sha256": "30a7813889aa3922bf9aa9eadbf6812620d303ec8d2155842b3918fa10438360"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/camshaft_timing_belt.json",
+    "bytes": 16177,
+    "sha256": "593f17b0992262b3b8d08714ca290cf3cd7e92ce1e84357085394942664ee321"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/camshaft_timing_belt.png",
+    "bytes": 55928,
+    "sha256": "3d82ec379f78ab36faacffc37957279c3a256a2986e4a1ba480c4c8894d6783e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/camshaft_timing_belt.source.html",
+    "bytes": 267978,
+    "sha256": "84f70a15670144ce38c81c0f4854301f217f60021e309ac9370fa7d77494f594"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/clutch_torque_converter.json",
+    "bytes": 6441,
+    "sha256": "9d38a822635764980aeef807b299e052a968586b191f29c42c5ea9794303271d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/clutch_torque_converter.png",
+    "bytes": 252812,
+    "sha256": "3799e8c1e438365a4a4d4d6a2c72aae295526c2412971f6b39e8f82e577c88f9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/clutch_torque_converter.source.html",
+    "bytes": 201934,
+    "sha256": "541a6e2ab12a7fbdc6792dd50fe50e65440d3d141625c68e86de8a52c33c94e6"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_box.json",
+    "bytes": 14753,
+    "sha256": "e47ff2cab8b672f97cc5a923ecb236c4d36af033ed410292c231655944a2db14"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_box.png",
+    "bytes": 66504,
+    "sha256": "2b55140c4cb445b3f42bb015f4d4f8cdf133dd3dff7faf6688b77f5358651606"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_box.source.html",
+    "bytes": 263787,
+    "sha256": "5d68c935a5a30f0ceab310aaff5c61c7fe287f7b7feb0d68b7e5c0ae5aec917f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_unit.json",
+    "bytes": 4447,
+    "sha256": "a37d31c44498f416dac4bbe80ff003c4f6c9eb0752c4a921911ce939b7d96789"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_unit.png",
+    "bytes": 44262,
+    "sha256": "a323ac09db8544572ca15dbca4b6a85c3c728f10b1f2d38b002613247c33401e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/control_unit.source.html",
+    "bytes": 194471,
+    "sha256": "587526f7b951c50dd3258b5b717e50387a4a1956f3dee8a4873f80068c9eecc5"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/crankshaft_piston.json",
+    "bytes": 25143,
+    "sha256": "4d4b8169b73699f8169c0c6b09d00fb944d3da657e818f2479300b73480eeddb"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/crankshaft_piston.png",
+    "bytes": 230731,
+    "sha256": "47a231ffb992ca9b3eb4d02fddf10ba7f550be6f1efc940ac05d74ece3840af8"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/crankshaft_piston.source.html",
+    "bytes": 309645,
+    "sha256": "2694ade0f2e38eed3c6efb73ae0b8f02c22d650a632ea658618013a1e5f63f1d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_block_oil_pan.json",
+    "bytes": 25940,
+    "sha256": "5420779abfecdb502a0f9b7fcd32af82e68969cb507d5f5431f58a01ec70ba4d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_block_oil_pan.png",
+    "bytes": 75814,
+    "sha256": "8c81826ce2c4da3b758688208a8fea8dd8976bcf66c3fc325232b1bd37ab901f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_block_oil_pan.source.html",
+    "bytes": 333134,
+    "sha256": "9a4d3739d611226861fa61cccd34b3a63f92ed0eb1a6b295e0e6ed55582ed357"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head.json",
+    "bytes": 14832,
+    "sha256": "59277af92d36965f6e41c367ca8944d20bed14d6498403327543e340880db3f7"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head.png",
+    "bytes": 70303,
+    "sha256": "68453517ff3ff7f259d1ef7701e39935e2e467dc26bc332036ab9f74406580a9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head.source.html",
+    "bytes": 254132,
+    "sha256": "6de03bfeb9d0c5d52e391db6c9e7561a63db845eaba262b62c7daabf20a843cd"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head_cover.json",
+    "bytes": 8290,
+    "sha256": "8dbc7fbbb21a8db00bf522efb4880908e114fa35ded4ea9388e79a3faef98371"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head_cover.png",
+    "bytes": 34586,
+    "sha256": "32969105239bf468b01dbfb713feee82fdd44477d2e7a7a1f1ed31613f9afe42"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/cylinder_head_cover.source.html",
+    "bytes": 210406,
+    "sha256": "42ddc8022c9b7d1192d89399fb7530f6b857029c51c39add89e43b52351fb91d"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/distributor_tec.json",
+    "bytes": 5994,
+    "sha256": "c0704c35110a94f7f3e47ca76c690b41834807c587ddbbf9dfa0c65399671675"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/distributor_tec.png",
+    "bytes": 41084,
+    "sha256": "4fd140f5a9196e6feca42f13c4e7365718876412e8d1646a680a1328f1dabfcb"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/distributor_tec.source.html",
+    "bytes": 201313,
+    "sha256": "a348390b3f55dedd74e83987391087c3cd544fd01ee6f02a9253dee4ef98a85b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/engine_sub_cord_clamp.json",
+    "bytes": 20777,
+    "sha256": "76aa1d1f728a42435255279f38899836f7504e267eb6b95d8e99c498999ac4c4"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/engine_sub_cord_clamp.png",
+    "bytes": 72982,
+    "sha256": "1d2c6576e1ba7aff9e797e20fbbcfd9de4c187ec944097271d710237e5d8b21c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/engine_sub_cord_clamp.source.html",
+    "bytes": 288842,
+    "sha256": "cf3ff4903030b1725aba6ddd22f8660a5e6343aced62e81159d05ae4287ceb73"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_manifold.json",
+    "bytes": 7221,
+    "sha256": "2933bcf2024f5fcec3b3f3f8dce352b0a1940d98b755225d0c1915019fc0295e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_manifold.png",
+    "bytes": 46261,
+    "sha256": "9ca9eba35841ad56452e6d5047af30b39a9587e5c223a996cdec853839feffe3"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_manifold.source.html",
+    "bytes": 206572,
+    "sha256": "9e6b3b7fb457cfef2a158a8834340aa2d7384bf2c36acf513bd061085462b34f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_system.json",
+    "bytes": 16964,
+    "sha256": "fae6a005cc3107d4c62ae05420f638a34001b48993d41127363392c3c499c75f"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_system.png",
+    "bytes": 61475,
+    "sha256": "c997c7d48a2ddf6c08e2765361b81ef04d35666c7cb7375ff7a0cd3ed58cd8ea"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/exhaust_system.source.html",
+    "bytes": 283070,
+    "sha256": "01818885b5f7d7857c9a5fd463db75677d008d837f3f87209356a5b85b323456"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.json",
+    "bytes": 3199,
+    "sha256": "4eec49c695aa2f81ebf1ef4a178b954bd25c84de577d51713e8d006be8326d3b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.png",
+    "bytes": 70981,
+    "sha256": "edebd8b760c87bbcde2478852b0cd307de7981e67c5ac68afa80ba10ae5f0828"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.source.html",
+    "bytes": 181356,
+    "sha256": "d3200c6bcc0762fa66d1a195b892b1fafc55c603b42144a91352b6077b7a6a92"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.json",
+    "bytes": 10864,
+    "sha256": "2b6e5bc5d9e01f8f1a303eb286f1ad25e849aaff32eccf241e851f9d74ecdf3e"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.png",
+    "bytes": 53801,
+    "sha256": "de6a1a8cf458bd505b1214931aef8c826e0e08eea090b240ef7125ad7edd267a"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.source.html",
+    "bytes": 229431,
+    "sha256": "9d122c2296995635444bfe0d8fa5300e22babcb0280ac09673e5053877b30356"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/intake_manifold.json",
+    "bytes": 27437,
+    "sha256": "32106c4fdcde9a540322d76a60f24422b23bbebf66290b3081c4d7e66eab82b9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/intake_manifold.png",
+    "bytes": 63161,
+    "sha256": "b150e5fe682db64bac0f68908ac057e4c45a065589702f3e08bb5fa3fa326d06"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/intake_manifold.source.html",
+    "bytes": 337686,
+    "sha256": "b41ae29e3d509a2f8cae3842eb33ce771e55e998d55fa57abc7c9b62e76a0887"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/oil_pump_oil_strainer.json",
+    "bytes": 19678,
+    "sha256": "93ade4eec6ef9762a0eba13a1d3aa40de15599ebb9b9fcedc7e6d22ec0fed2d9"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/oil_pump_oil_strainer.png",
+    "bytes": 60080,
+    "sha256": "9876a6cc72dd50de2fe83752a6023038ce13f93bba4183ffcc425d1b02c96230"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/oil_pump_oil_strainer.source.html",
+    "bytes": 289478,
+    "sha256": "71e601d5ee45992e8ff7fcbdaea084d6fe2be6a520b02563863e28ea8c555312"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/p_s_pump.json",
+    "bytes": 18238,
+    "sha256": "e7fa229497db50ea3c10947e2cd0e0f733e1d696b3736d3e5632fa9a1aceed21"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/p_s_pump.png",
+    "bytes": 66942,
+    "sha256": "b3e4df5e923c9fbab679d1db957856fcf1da8383d3cfd012623a9e2be20a7477"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/p_s_pump.source.html",
+    "bytes": 279704,
+    "sha256": "b60116f9ff11cb4eb01fae00431fb6c3a431196919a355a7940062dfe91f3178"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/starter_motor_denso.json",
+    "bytes": 6876,
+    "sha256": "c6b2e2ab39d36460fe615f9f9be1a42c9ef9df8aec4f182158a6d23ca0d3e748"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/starter_motor_denso.png",
+    "bytes": 45636,
+    "sha256": "e26877d6835a72e744ec961ae6c9c28dd46bfb1db6bd5ea2e84b687dd12f8969"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/starter_motor_denso.source.html",
+    "bytes": 201821,
+    "sha256": "c6e53707b17275835e6653a55f20fbfdf6f5c7e45074af2a687a53add6a81f31"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/throttle_body.json",
+    "bytes": 13952,
+    "sha256": "7bd8ced2605d15567ddef6c08d07b64c3b48209807c74bd92d18232ac18facb6"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/throttle_body.png",
+    "bytes": 56592,
+    "sha256": "d0d53332a1a0291cd24db22f415146a0ee5214af8f6eadaa74c0fa08f9907730"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/throttle_body.source.html",
+    "bytes": 250973,
+    "sha256": "9c1738e9641f606fdcde93a27d788c3842248a986b4dda50d78b48a51ca8c107"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/valve_rocker_arm.json",
+    "bytes": 8860,
+    "sha256": "586ce9bb7b1ea9a76c7932436518ac3c8a11e93082031dc92d0721833ee0291b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/valve_rocker_arm.png",
+    "bytes": 53516,
+    "sha256": "aa82c5dbe05a0abb9705322f5762f8c2a48a09e22f1df1e093cdce7e2b573b74"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/valve_rocker_arm.source.html",
+    "bytes": 217355,
+    "sha256": "3d09fcc49d7fe323e9d84ba115b1e5b861e02c23452371ab89c1b0e8a75ff88a"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_hose.json",
+    "bytes": 9791,
+    "sha256": "cd205a1ca660433f537a5f51359426b2c8f8aedd49b5a8c84740bbeb8ee091ca"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_hose.png",
+    "bytes": 58053,
+    "sha256": "2922e797d3232faba321569ee6c6a6544d22fbe7e9cec34457600fb468789a20"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_hose.source.html",
+    "bytes": 225391,
+    "sha256": "6fd0f9ad40311a2614682b0731ff753a389e793c155f09b893be2ce0518bb308"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_pump.json",
+    "bytes": 14210,
+    "sha256": "b578592166dfa21a4db1231527f752ff5362561ff8ccefd4e45afb728e3a2e4b"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_pump.png",
+    "bytes": 38197,
+    "sha256": "21fb16b14c44cbebb7e292012d76ab3b11ace6b6e1f7e03e38bf069545f58973"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/water_pump.source.html",
+    "bytes": 248083,
+    "sha256": "9c6350a1e94a9598dd8776fa234ffa61badf421f5568716b3af9f0487289cc9c"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/wire_harness.json",
+    "bytes": 19951,
+    "sha256": "b5a1b936545757a3b3578c5a54064fa16597bea0b8272c34d98c029e982f3e26"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/wire_harness.png",
+    "bytes": 355255,
+    "sha256": "dd8747057c9564a0f93157371bbf2f7722a194de4d88b9a62e2cbfc16b4abd37"
+  },
+  {
+    "file": "01_OEM_Diagrams/KL/wire_harness.source.html",
+    "bytes": 299633,
+    "sha256": "1e93cbff2ca11bb46214003db447494c11aa3aa7db8104caf3fe858703ab95f3"
+  },
+  {
+    "file": "02_Service_Evidence/1993-accord-owner-manual.pdf",
+    "bytes": 1588432,
+    "sha256": "64121bc3ca3d9bcfa31113d9b6c4ded4312388d806925e2b1f5e8fe3f3d7e3b6"
+  },
+  {
+    "file": "02_Service_Evidence/1993-accord-owner-manual.txt",
+    "bytes": 195195,
+    "sha256": "711ac23d70870b8faf0b9a9dc1f32e7b3cd034163b45ac97f6a720d9362d7186"
+  },
+  {
+    "file": "02_Service_Evidence/1993-honda-us-brochure.pdf",
+    "bytes": 3089648,
+    "sha256": "fed5bb2f1b9d721c9f04ac8eda24228f53a1b190062f9621c132422d16810e30"
+  },
+  {
+    "file": "02_Service_Evidence/1993-sedan-brochure-index.html",
+    "bytes": 36912,
+    "sha256": "ae6874627f90a0c635aa6aa07fbf60c3805cbb1cc2296b9c7e7724f2b83869e7"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/READ_ME.txt",
+    "bytes": 511,
+    "sha256": "859e2c3ba6937bcdfa1555948fc27be547904b7a30716fca36f6a30581ec45f7"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-1-2.png",
+    "bytes": 256808,
+    "sha256": "513221b70ae6df63cdfed9c6d325a95c5f8917e836f79c5972c8367b9fdf67e4"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-1991-service.zip",
+    "bytes": 37920420,
+    "sha256": "af7ed7ab33de68c65779a7dda3222a7e0a9ab6743a312796d1e1ea072fe5959f"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-10-0.png",
+    "bytes": 72076,
+    "sha256": "b5c3542cb93ede0895c1f21a3fb1d7cf44de7299760cb08c7918163ef3614e18"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-12-0.png",
+    "bytes": 232078,
+    "sha256": "fdede04da9abdd21da47b0ad928fd056901bd150691f9dc9c9237a8b663ae83e"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-14-0.png",
+    "bytes": 235316,
+    "sha256": "38319b8bb32bcfdb58deae5740452bf005f039246e55670c8ec8896da2ced475"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-2-0.png",
+    "bytes": 85213,
+    "sha256": "a91825eccbba1f5238fa39219ccdf21ba0c3745408c4b3c627561cf7e1290470"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-23-0.png",
+    "bytes": 137912,
+    "sha256": "b525a604f1470187594a867f114ad8f977768e4472b486cf49b6d6978a721e90"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-3-0.png",
+    "bytes": 127255,
+    "sha256": "41ba7662a4c14997368530e753295aa7841afe67f212c0d4d60a4af4017d8ee2"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-39-0.png",
+    "bytes": 174792,
+    "sha256": "386aab783f85657e6aff53ea5acea61cfaef769f007b117a67c575d2905928f6"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-42-0.png",
+    "bytes": 177338,
+    "sha256": "69caadcb255eeeb0a6f8806c9a1e49229bdd72a8b1d565a7c1dcbd9e6995ea9b"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-48-0.png",
+    "bytes": 144117,
+    "sha256": "f93caacc9033dfce565d4012e019d4940e26862f0b48f759179dd05aac3d3298"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-5-0.png",
+    "bytes": 186180,
+    "sha256": "c83e51e642580cfd6bedd01b2893fc3f0d222830198b6fccae4715557f45239a"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-5-1.png",
+    "bytes": 188872,
+    "sha256": "30e0ad901c5bd11c6d3aea4bc41bfca40b3854fe20c8b9f590c220fec7e74b7d"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-5-2.png",
+    "bytes": 250487,
+    "sha256": "b96c8b1a4b6bdc750b6ec6b13f45f44a4b54b22a58ce364881632be9737900b1"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-7-0.png",
+    "bytes": 138158,
+    "sha256": "55f423bf25e21ac6ccadfb9bc0b426f117e2cb45f84748f89f62e4df2ae4da60"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-8-0.png",
+    "bytes": 151001,
+    "sha256": "cdb134ac63557d29625be188ceb8b8f9ad79244b12262f8a99d5fa8b4beceed7"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-5-9-0.png",
+    "bytes": 103442,
+    "sha256": "79023bc829df8eabc18ccdffb89bb37eacf26f403ba41f434bbaa93229f65b93"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-100.png",
+    "bytes": 221777,
+    "sha256": "347cdc314c9eaa674c5b6142e0b87294ac17f25cccc9bbfcd0105570fda1aec1"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-101.png",
+    "bytes": 183269,
+    "sha256": "ba10e4e7b5cb2667554524b37868d41f342cfe32caaaa6776a07b11033ab37b6"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-103.png",
+    "bytes": 176203,
+    "sha256": "8296efaa2307818b73458d82dba9886345f56964db7f6a3896a0138e40f01836"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-2.png",
+    "bytes": 114155,
+    "sha256": "e5f27332fb1492935a31675c6d794d4d95c9e6b633191bfa1c98113c2e65a3cb"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-3.png",
+    "bytes": 167002,
+    "sha256": "4da863e0b80c6ee07a6a2a4447e80ef3a03abfbf28f7abf07637b9536b438fbc"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-83.png",
+    "bytes": 197593,
+    "sha256": "95a5d1fc74d5e64d74611a41210e4d74772556bb0e8d3f827c7634c9a9fac655"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-84.png",
+    "bytes": 182519,
+    "sha256": "be935e3cdd53ac3f206041cdbe4ee51c6871638bfce83e1f3bf1439f6f5d2efa"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-85.png",
+    "bytes": 192180,
+    "sha256": "7a279d76f3f859f39b436ba20fce30cc727f69aa258c3a9cb6ea0ac59e047eee"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-6-86.png",
+    "bytes": 163105,
+    "sha256": "2af4781460757b548a3a909e505cdfab0c2c31ce3c5de5fda0e35254cb977176"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-91-96-helms.pdf",
+    "bytes": 6332026,
+    "sha256": "43075c4256f953a9c4a16551c60383d9bcd777dff47e83aa8b2510a7b2c6fe63"
+  },
+  {
+    "file": "02_Service_Evidence/Limited_Applicability_Candidates/candidate-helms-cover.png",
+    "bytes": 182332,
+    "sha256": "6bf4919bbb55b6c670843c0b5a77c9789372678867e2d11b0e572f396f8b5fa0"
+  },
+  {
+    "file": "02_Service_Evidence/brochure-contact.jpg",
+    "bytes": 192898,
+    "sha256": "219fb02e2f7a78566f285be05421ed205f16bb6584dad1f5fc0eaef10c6d0959"
+  },
+  {
+    "file": "02_Service_Evidence/full-line-brochure-contact.jpg",
+    "bytes": 223992,
+    "sha256": "b7df98fedbc5677b1c0baaa39805ee08181beba0c7ec2060af40fcef670cbb76"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-020.jpg",
+    "bytes": 30075,
+    "sha256": "36f61d52ff4403ffa11d459b26f3293cafe89fd38f153fa401bd46e9b3d2dd97"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-021.jpg",
+    "bytes": 32204,
+    "sha256": "5a4b558423a9fe71022e17505d62dacb81d1d1ea3573ffa52ea5189ae73e9eff"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-022.jpg",
+    "bytes": 28942,
+    "sha256": "4a296e3fbb54a97a83e754a362a1fa5111f05e23df3e69344b8ecdba15ba2657"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-023.jpg",
+    "bytes": 28465,
+    "sha256": "9298c118bfa682ec416a1974f4700136543e2736895c51a2b4a0e208441f6a74"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-024.jpg",
+    "bytes": 28748,
+    "sha256": "70fe52c7408df5e4b8b6ca0af0025c81cbf39a2d563ea72d0a9e151fd18a34ed"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-025.jpg",
+    "bytes": 25714,
+    "sha256": "091f21a3e4bb13b4ea9d51f662e6c27258c28d5089f8e72a2a75c82b622b485b"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-026.jpg",
+    "bytes": 32881,
+    "sha256": "10e00b0985919126839efbbc165a7839cdb5e679b40979c2de0a02b1da1dac25"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-027.jpg",
+    "bytes": 26181,
+    "sha256": "a8dbd5b954805f0531bb7fc126b14d3f85f712e4fcb03d22313bc7053b4ea30f"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-028.jpg",
+    "bytes": 31284,
+    "sha256": "4795a47267fa57a381f65a5f91c9afa444524bfa54b295c76e68048adacb8d78"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-029.jpg",
+    "bytes": 30750,
+    "sha256": "0b7ca05754fbbba077c6849850347ea2a186f69e2622f4b2e3b205bb37e36a89"
+  },
+  {
+    "file": "02_Service_Evidence/honda-brochure-page-030.jpg",
+    "bytes": 12301,
+    "sha256": "d4d001ecf76b711c88e15e331ee23862492534298e36b2c9e9f72b14a060e77f"
+  },
+  {
+    "file": "02_Service_Evidence/honda-us-brochure-p12.png",
+    "bytes": 1927100,
+    "sha256": "b7f168db6e8eb69e1d10cb2d4aeec76b141e202dd6adb4e6dc421ad4ec9b7c54"
+  },
+  {
+    "file": "02_Service_Evidence/honda-us-brochure-p15.png",
+    "bytes": 1447405,
+    "sha256": "1a2ff51e25b6813812bab3758fdd8381f702aefeef4c4006192413f1baab8ef8"
+  },
+  {
+    "file": "02_Service_Evidence/owner-p158.png",
+    "bytes": 161841,
+    "sha256": "1961ecb30069fb04693d5ab75649a1ef1ca26cff0833834b6ef6f4d8894a479e"
+  },
+  {
+    "file": "02_Service_Evidence/owner-p159.png",
+    "bytes": 141761,
+    "sha256": "29709c82b8bde10697ad39be05d141731aa8cc2c399aebb055f660b7f36cfa57"
+  },
+  {
+    "file": "02_Service_Evidence/owner-p160.png",
+    "bytes": 185426,
+    "sha256": "0b4708ab80690e00905f369e9c5de39b8cfada60cb8f0807b85c5b7a98371681"
+  },
+  {
+    "file": "02_Service_Evidence/owner-p174.png",
+    "bytes": 149507,
+    "sha256": "d80ddae6ca78a69ddad35a0771c532cc48d4100b7cec2bcac115ff8911b3e69e"
+  },
+  {
+    "file": "03_Photo_References/1993-ex-dealer-engine.jpg",
+    "bytes": 312339,
+    "sha256": "c8baed2ace4e45bb57ec814d49de13162f394312f5ebc00ca65a1e8a3e7a7cf5"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/11300-PT0-B00.jpg",
+    "bytes": 13551,
+    "sha256": "3302ab2111772db32b6dd79f3161820edfc1bfd8dcc72d07e2f62208f79758f5"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/11810-PT0-010.jpg",
+    "bytes": 19739,
+    "sha256": "0c6a4e9c499a5c1d802270af86a3706e2c1028e8ad0c0792f960b3bd6007a99f"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/11830-PT0-000.jpg",
+    "bytes": 10800,
+    "sha256": "396d5747f163808d1580e5a22f36124e478248f1ca4414b49b233982b727fe90"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12030-PT0-000.jpg",
+    "bytes": 25979,
+    "sha256": "e11b40922f346f45d75bc6c2de2202837c52d10cede2ae239b4c645ee20debe8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12204-PJ7-305.jpg",
+    "bytes": 10374,
+    "sha256": "43840f9522f5df77570356acce08ed29f3999d22866467f772c48b9dcd7d72fe"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12205-PJ7-305.jpg",
+    "bytes": 4315,
+    "sha256": "afb62b63564a94edcb8dbfb0e46db6305a999d6d8ad1639b00a445fbdf13fe31"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12210-PZ1-004.jpg",
+    "bytes": 19576,
+    "sha256": "063db6ff0cb9b4d32ced62b07010eb0bed458d6b537de508eeceaf0cbb3376e7"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12211-PZ1-004.jpg",
+    "bytes": 27718,
+    "sha256": "2e95cb351d708490d3c7a57eaa12644fb9890e918a0caa3208293b96b4a53bfa"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12341-PT0-000.jpg",
+    "bytes": 12555,
+    "sha256": "7ccb4767b521b09dffc20f3c5f1bd0ba6b9af74c0863380cfb732256c20d8fae"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/12342-PT0-000.jpg",
+    "bytes": 11494,
+    "sha256": "8ce1e2af7c850f05de1c2e1c9dbddc23b52e3714ae107708efd02c66a5ebeaf3"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13011-PT2-003.jpg",
+    "bytes": 13160,
+    "sha256": "06a7e8f85ffbd414324700c2af07839fc4d11d7a4fa6676478f2d271f67c4e5a"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13011-PT2-004.jpg",
+    "bytes": 12304,
+    "sha256": "519e4e00eef23c038236a76cfdfb754a2328dc33cd273380f4e00c3e85e29bff"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13101-PT3-A01.jpg",
+    "bytes": 10400,
+    "sha256": "6ef6b033c21db8a494e0f1bf8806a6d3c557be558e9286fafa7923bea45afa6e"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13400-PT3-010.jpg",
+    "bytes": 5274,
+    "sha256": "c0037f43946d346c3d29affa4dcf51758b933f524af5e5c7f1f78c29bb298c7b"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13401-P5M-000.jpg",
+    "bytes": 6997,
+    "sha256": "74a5705b6e8140f6693e1a0580a131a0d76e5bb6c9132cd9359d73c42e160f9d"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13406-PT0-003.jpg",
+    "bytes": 4685,
+    "sha256": "ced81fdeeb7f4ec29b86765333c9592b23d022d07a2b7a0073af51d6fd3e7796"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13421-PT0-003.jpg",
+    "bytes": 9783,
+    "sha256": "9ee7da9d530f0b36930042c28c7713c3bd11bde626e5b671cf12341ff662ae89"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13422-PT0-013.jpg",
+    "bytes": 10676,
+    "sha256": "49a9b46ab4a72dc0e4d201b2f099098017e404e61006e4ede835717a42870347"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/13810-PT1-003.jpg",
+    "bytes": 8150,
+    "sha256": "828b3905bf3aadbc8671c2fb1703c4f43323f229d7bf0102357cd70ffa3b7de8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14621-PT0-000.jpg",
+    "bytes": 8821,
+    "sha256": "df95f195e2a2e77152b22dbddf72c60ba348e2f1609cb4c3878ef0fc16cd0dca"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14622-PT0-000.jpg",
+    "bytes": 5673,
+    "sha256": "b738c7d78e534b69762596ffc09a8efe2e4d8c4e15e848cc6dc1eb1014c3af4f"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14623-PT0-000.jpg",
+    "bytes": 9281,
+    "sha256": "62b55a34c8356baca4fefd1ef22483206f4e0839b4a15d082c58f92e602c82cc"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14632-PT0-010.jpg",
+    "bytes": 6467,
+    "sha256": "3fe229b03d2b99d55a2f2097aa5a4ce333d28a39a46a40b7f98db3a36707e6d3"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14645-PT0-003.jpg",
+    "bytes": 14125,
+    "sha256": "09bcb47bccfbe9427a142151c75c27094ec9cd4157afacbd6e184ac05516b965"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14646-PN4-003.jpg",
+    "bytes": 9199,
+    "sha256": "975f258ef511ee882964444e925591b20616c6c285ffe4e41644f9e2057307ae"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14721-P0J-A00.jpg",
+    "bytes": 5050,
+    "sha256": "8632501aad833435f2d175d053af13cc32c2d0e1f9e9e589daf676d00c2d70a3"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14775-PT0-000.jpg",
+    "bytes": 15703,
+    "sha256": "6ad97a3fa616ed92c31ca8d5af1f10ebbfa644e8c5c218e7dd4bc62a6ca32651"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/14781-PJ7-003.jpg",
+    "bytes": 10290,
+    "sha256": "c6d47718fdc8545abfef2d1b26e123adfd2557ff5769a6d28a1f76e975b30435"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/15231-PE0-000.jpg",
+    "bytes": 5556,
+    "sha256": "fd5e8a7ff789c97cb2754cbfe18d646b02a26b77a50b2396fe37168ad1accdb5"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/15232-PG6-000.jpg",
+    "bytes": 9697,
+    "sha256": "37ad41aaad6bb32e6bf6a2e4ca8281ce8a883e56ca8f7ee14b2ac1504bbd3ee8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/16500-PT2-000.jpg",
+    "bytes": 6141,
+    "sha256": "e7f95271bbf9007b528b54b097eecd19963a3ef4b5fbfaa25ea8dd73e2ec7dc4"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/16741-PG7-005.jpg",
+    "bytes": 4322,
+    "sha256": "51e3e07b300fdf663d85e4c6907eb0789580515bac2f7a9d90247f8b177aa16c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17105-PT2-003.jpg",
+    "bytes": 9634,
+    "sha256": "b12d5f1cef245ba13032a1243faf95554344b6e90393216150b4e396b2f6ab9e"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17105-PT2-004.jpg",
+    "bytes": 8148,
+    "sha256": "51949646b5ba393fbf957e1aa11b466b7779f9f413e69363d0c1c78e0d17e65c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17105-PT2-014.jpg",
+    "bytes": 12930,
+    "sha256": "82e024717764a36b6df808f1ae7f14038986f68670ddce976c83eb34f67bdf76"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17120-PT2-000.jpg",
+    "bytes": 12132,
+    "sha256": "3d20cb65757644aed4a0c0f9f8fc257a4af5f1e414834bcff5637129e08e8559"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17121-PT2-004.jpg",
+    "bytes": 14347,
+    "sha256": "bc063807b19f49062f0aa279cf20e6f3e9b85a86942caf6049609672264d5224"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17130-PK1-003.jpg",
+    "bytes": 20578,
+    "sha256": "5d73c0a88759ef74eba98ee5c672a875af18c75b34ccb3391166f2dc725fda9c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17139-PK1-000.jpg",
+    "bytes": 15098,
+    "sha256": "8291bd9e3731625ee51c08bac1048fae41991f33e62005e384bd828ea772bff8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/17290-PR7-A01.jpg",
+    "bytes": 7171,
+    "sha256": "aa58b81739cf502d867f35ea884533b7bb181c468a8354b361bbe695c468be2c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/18011-PT6-A00.jpg",
+    "bytes": 8562,
+    "sha256": "3885e794c0e4adeff068fc2f70f29f2da43162f7c329e34f87109fb07651d003"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/18115-PT0-003.jpg",
+    "bytes": 7835,
+    "sha256": "fca9e833f63e513f1da30c0e4b993afd23f6653aa466e03276a0e99f2e6feaf3"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/18715-PB2-000.jpg",
+    "bytes": 16985,
+    "sha256": "202ec64ed830b23445cb1950e36c1316ef1a9b0418a1e8b3695a9fc32b954df8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/19360-PT3-A00.jpg",
+    "bytes": 12884,
+    "sha256": "f9fd83912d167a04f52d17c8c9505b817ee30039dec43abec428eb8a19bcdb6f"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/19513-PT2-000.jpg",
+    "bytes": 11847,
+    "sha256": "59b64f34d5fd81c95352fcdeec15b5110d01c3ee5d9dd1385d3fa8df93711ac4"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/22100-PT7-013.jpg",
+    "bytes": 11406,
+    "sha256": "95b2a3511afc6f91f636b0791bdc21f771ab777fd96d061c01907ec54819b05c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/22300-PT7-023.jpg",
+    "bytes": 11899,
+    "sha256": "cd4b0917d9a135a03e8408238a01e97640943955e36fc166917d2a0cb7da8124"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/30107-P08-006.jpg",
+    "bytes": 9443,
+    "sha256": "7fe3bdca107a1ad9506d0f67db16dd00a8f5ba4aa10d3376e0184641f78ad00f"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/31138-PD1-004.jpg",
+    "bytes": 5703,
+    "sha256": "65be1c5bd8a6dee7ad84de3b4b8cfde323adbb072ea1f58e988ff112584cde09"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/36145-PM4-004.jpg",
+    "bytes": 5543,
+    "sha256": "efe19fa2e6ca12db10d6b08c758bdf3f50dabd52de01765f8114e8831f7cacd3"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/36454-PS4-003.jpg",
+    "bytes": 9051,
+    "sha256": "3cdaf189103ba49732a0f3be755a0df0436e03c6ed2d00ff76d7846660b4f20e"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/36455-PT3-A01.jpg",
+    "bytes": 8155,
+    "sha256": "b482f4bfb758f9ac6509b16c867efd016cd972a399ed440ec71b2e69f5dd924d"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/37240-PT0-014.jpg",
+    "bytes": 14438,
+    "sha256": "6f5821972e49959f1353331e2e7692fac6e4877c798bf26b733184ea96e76ba0"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/37240-PT0-023.jpg",
+    "bytes": 10521,
+    "sha256": "556d51a41c8775e3acaee30dcecfd5ccd5b441cd2c43a291c53bd37364a32eb5"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/90002-PT0-000.jpg",
+    "bytes": 9728,
+    "sha256": "48acd0133e012a73526cd36cf2deec08a265e4de795ed4e7ea8030c3e7b1dd90"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/90007-679-000.jpg",
+    "bytes": 9593,
+    "sha256": "3a8bf878744c419223ecc42534b45e871cc0f37bdd200b02cd3de7120cab3ac8"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/90012-PT0-000.jpg",
+    "bytes": 5577,
+    "sha256": "2704897d9211a928030b88c538bcd4fc77ca513f2defd0a0c3154d5bb02096e7"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/90013-PT0-000.jpg",
+    "bytes": 5048,
+    "sha256": "f805ab1d8036beb5e2d24a94ba4584d4892cfa0cab291db89e76e61788e9de67"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/90441-PT0-000.jpg",
+    "bytes": 12880,
+    "sha256": "beb614b0a85e1ecbbd4d3fd8ffc0dde9ca39a27d02453d01661d02d1aa02210c"
+  },
+  {
+    "file": "03_Photo_References/OEM_Parts/91306-PT0-004.jpg",
+    "bytes": 8582,
+    "sha256": "d043671d616c9f695917cbbce48d853bbd575c2d2ca45690bc23b1d3343fce37"
+  },
+  {
+    "file": "03_Photo_References/oem_photo_manifest.json",
+    "bytes": 37469,
+    "sha256": "59e7f5c3c113fc32982308956c87a0a09763da448f4b9a9fec32bb506fb8aeb9"
+  },
+  {
+    "file": "03_Photo_References/photo_manifest.json",
+    "bytes": 38030,
+    "sha256": "e3f8698b85e19802277cfdae2c8a5e7d759120e24dcbcd605e0ccc0648e0b4c2"
+  },
+  {
+    "file": "04_Reports/component_reuse_rebuild_audit.json",
+    "bytes": 2479,
+    "sha256": "9cbfc3c7bfcd24abc1976b59c10697ea51633357190253d093b23d252825b642"
+  },
+  {
+    "file": "04_Reports/ka_kl_catalogue_differences.json",
+    "bytes": 4608,
+    "sha256": "2f027a782f149cb45674eaad1e1ac24bb0073ce51316df2912a74289ea361ca8"
+  },
+  {
+    "file": "04_Reports/reference_report.html",
+    "bytes": 12909,
+    "sha256": "069199d778200c195bf60828e4a1b77cc237903c59f0dfdbb41ca7fcc14d4501"
+  },
+  {
+    "file": "04_Reports/reference_report.json",
+    "bytes": 15125,
+    "sha256": "8ee7946f1aa7f5bd9347a531f22fc1d81e6690347b2fb6ba13913144536879b4"
+  },
+  {
+    "file": "04_Reports/reference_report.txt",
+    "bytes": 8379,
+    "sha256": "642460cdb65c69c1f183c1873c1d14fdb892ab1b70533231b626f0e397e2c4ce"
+  },
+  {
+    "file": "04_Reports/sources.json",
+    "bytes": 2848,
+    "sha256": "09c4b4bded1fca8d2e34b733a4beabfeb3d43fb5370e663ee51b938e30ba204a"
+  },
+  {
+    "file": "04_Reports/specification_evidence.json",
+    "bytes": 5364,
+    "sha256": "bc1fc4e2e9379a8e96ebc7cd18707ba0869f5af871f64403b149fcb0e9c58207"
+  },
+  {
+    "file": "04_Reports/unknowns.json",
+    "bytes": 2038,
+    "sha256": "0c80c108ec617f5109b762c5b4067ecd311e80accc500f545a2c5e7e166dea9d"
+  },
+  {
+    "file": "README.txt",
+    "bytes": 487,
+    "sha256": "585691781d2da8216940d3f27264a5b8516f04e0720b021b1d8721ad5818cc91"
+  },
+  {
+    "file": "diagram_manifest.json",
+    "bytes": 59671,
+    "sha256": "f555dbdc27b3634a7a0ec49493800cf856b0f9f882e558cd06e9e1dca45f082c"
+  }
+]

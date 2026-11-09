@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+IAB control solenoid
+What it does: Switches the pneumatic circuit that controls the IAB actuator.
+
+2
+00:00:04.000 --> 00:00:08.000
+IAB control solenoid
+How it works: The pneumatic connection changes.
+
+3
+00:00:08.000 --> 00:00:12.000
+IAB control solenoid
+How it moves: Changes position when the IAB operates; the demonstration opens and closes the mechanism, not once per 720° engine cycle.

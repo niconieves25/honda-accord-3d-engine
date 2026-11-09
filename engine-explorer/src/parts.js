@@ -1,83 +1,902 @@
-// The selectable parts: id, the system they belong to, the OEM diagram callouts that identify them (diagram slug in
-// "Honda Reference Library/02_OEM_Diagrams", callout number, Honda part number) and whether their shape or position is
-// an approximation. Every word shown to the viewer lives in i18n/<lang>.js under the same ids.
-
-export const SYSTEMS = ['exterior', 'bottom', 'balance', 'head', 'vtec', 'timing', 'intake', 'exhaust', 'ignition', 'oil', 'cooling', 'accessory'];
-
-const P = (id, system, oem = [], approx = false) => ({id, system, oem, approx});
-const o = (diagram, callout, pn) => ({diagram, callout, pn});
-
+// Active F22A6 assembly registry. Catalogue references identify assembly relationships;
+// dimensions reconstructed from illustrations are not manufacturing measurements.
+// KA is a source listing, NOT an assertion of the car's emissions market.
+export const REFERENCE_ROOT = '../Honda Reference Library/F22A6_1993_5MT/01_OEM_Diagrams/';
+export const SYSTEMS = ['exterior','bottom','balance','head','timing','intake','exhaust','ignition','oil','cooling','accessory','manual'];
 export const PARTS = [
-  // exterior and covers
-  P('valveCover', 'exterior', [o('cylinder_head_cover', '4', '12310-P0A-000')]),
-  P('oilCap', 'exterior', [o('cylinder_head_cover', '9', '15610-PC6-000')]),
-  P('timingCoverUpper', 'exterior', [o('camshaft_timing_belt', '3', '11820-P0A-000')]),
-  P('timingCoverLower', 'exterior', [o('camshaft_timing_belt', '1', '11810-P0A-000')]),
-  P('engineMount', 'exterior', [o('camshaft_timing_belt', '8', '11925-P0A-000')], true),
-  P('oilPan', 'exterior', [o('cylinder_block_oil_pan', '6', '11200-PT0-010')]),
-  // block and bottom end
-  P('block', 'bottom', [o('cylinder_block_oil_pan', '1', '11000-P0A-000')]),
-  P('bearingBridge', 'bottom', [o('cylinder_block_oil_pan', '5', '11130-PT0-000')], true),
-  P('crankshaft', 'bottom', [o('crankshaft_piston', '9', '13310-P0A-000'), o('crankshaft_piston', '10', 'main bearings')]),
-  P('pistons', 'bottom', [o('crankshaft_piston', '1', '13010-P0A-000')]),
-  P('rings', 'bottom', [o('crankshaft_piston', '2', '13011-PT2-003')]),
-  P('wristPins', 'bottom', [o('crankshaft_piston', '5', '13112-PT0-000')]),
-  P('rods', 'bottom', [o('crankshaft_piston', '7', '13210-PT3-A00')], true),
-  P('crankPulley', 'bottom', [o('crankshaft_piston', '20', '13810-P0A-003')]),
-  P('crankFlange', 'bottom', [o('crankshaft_piston', '9', '13310-P0A-000')]),
-  // balance system
-  P('balancerFront', 'balance', [o('crankshaft_piston', '12', '13401-P5M-000')], true),
-  P('balancerRear', 'balance', [o('crankshaft_piston', '11', '13400-PT3-010'), o('oil_pump_oil_strainer', '1', '13500-PT0-J00')], true),
-  P('balancerBelt', 'balance', [o('camshaft_timing_belt', '11', '13405-PT0-004'), o('crankshaft_piston', '15', '13408-PT0-003'), o('crankshaft_piston', '13', '13402-PT7-A01')], true),
-  P('balancerAdjuster', 'balance', [o('camshaft_timing_belt', '10', '13404-PT0-004')], true),
-  // head and valvetrain
-  P('head', 'head', [o('cylinder_head', '1', '12100-P0A-000')]),
-  P('headGasket', 'head', [o('cylinder_head', '6', '12251-P0A-004')]),
-  P('camshaft', 'head', [o('camshaft_timing_belt', '14', '14111-P0A-000')]),
-  P('intakeValves', 'head', [o('valve_rocker_arm', '5', '14711-P0A-000'), o('valve_rocker_arm', '8', '14761-P0A-004')], true),
-  P('exhaustValves', 'head', [o('valve_rocker_arm', '6', '14721-P0A-000'), o('valve_rocker_arm', '9', '14762-P0A-004')], true),
-  P('exhaustRockers', 'head', [o('valve_rocker_arm', '2', '14624-P0A-000'), o('valve_rocker_arm', '3', '14625-P0A-000')], true),
-  P('rockerShafts', 'head', [o('cylinder_head', '7', '14631-P0A-000'), o('cylinder_head', '8', '14633-P0A-000')], true),
-  // VTEC
-  P('primaryRocker', 'vtec', [o('valve_rocker_arm', '1', '14620-P0A-000')], true),
-  P('middleRocker', 'vtec', [o('valve_rocker_arm', '1', '14620-P0A-000')], true),
-  P('secondaryRocker', 'vtec', [o('valve_rocker_arm', '1', '14620-P0A-000')], true),
-  P('syncPistons', 'vtec', [o('valve_rocker_arm', '1', '14620-P0A-000')], true),
-  P('lostMotion', 'vtec', [o('valve_rocker_arm', '15', '14820-P0A-000')], true),
-  P('timingPlate', 'vtec', [o('valve_rocker_arm', '13', '14811-P0A-000'), o('valve_rocker_arm', '14', '14812-P0A-000')], true),
-  P('vtecSolenoid', 'vtec', [o('cylinder_head', '9', '15810-P0A-005'), o('cylinder_head', '11', '36171-P0A-005'), o('cylinder_head', '13', '37250-P07-003')], true),
-  // timing drive
-  P('timingBelt', 'timing', [o('camshaft_timing_belt', '16', '14400-P0A-004')], true),
-  P('camPulley', 'timing', [o('camshaft_timing_belt', '15', '14210-PT0-003')]),
-  P('crankTimingPulley', 'timing', [o('crankshaft_piston', '18', '13621-P0A-003')]),
-  P('timingTensioner', 'timing', [o('camshaft_timing_belt', '17', '14510-PT0-004')], true),
-  // intake and fuel
-  P('intakeDuct', 'intake', [], true),
-  P('throttleBody', 'intake', [o('throttle_body', '11', '16400-P0A-A60')]),
-  P('plenum', 'intake', [o('intake_manifold', '13', '17110-P0A-A00')]),
-  P('runners', 'intake', [o('intake_manifold', '11', '17100-P0A-A00')]),
-  P('fuelRail', 'intake', [o('intake_manifold', '4', '16610-P0A-A00'), o('intake_manifold', '9', '16740-P0A-003')]),
-  P('injectors', 'intake', [o('intake_manifold', '1', '06164-P0A-A00')], true),
-  // exhaust
-  P('exhaustManifold', 'exhaust', [o('exhaust_manifold', '2', '18000-P0A-010')], true),
-  P('heatShield', 'exhaust', [o('exhaust_manifold', '4', '18120-P0A-A00')]),
-  // ignition
-  P('distributor', 'ignition', [o('distributor_hitachi', '1', '30100-P0A-A01')]),
-  P('plugLeads', 'ignition', [o('high_tension_cord_spark_plug', '1', 'cord set')]),
-  P('sparkPlugs', 'ignition', [o('high_tension_cord_spark_plug', '14', '98079-5514G')], true),
-  // lubrication
-  P('oilPump', 'oil', [o('oil_pump_oil_strainer', '3', '15100-PT0-020')], true),
-  P('oilStrainer', 'oil', [o('oil_pump_oil_strainer', '7', '15220-P0A-C00')], true),
-  P('oilFilter', 'oil', [o('oil_pump_oil_strainer', '13', '15400-PT7-005')]),
-  P('dipstick', 'oil', [o('oil_pump_oil_strainer', '15', '15650-P0A-013')]),
-  // cooling
-  P('waterPump', 'cooling', [o('water_pump_sensor', '1', '19200-P0A-003')], true),
-  P('thermostat', 'cooling', [o('water_pump_sensor', '4', '19301-PAA-306'), o('water_pump_sensor', '8', '19320-P0A-000')], true),
-  P('coolantOutlet', 'cooling', [o('water_pump_sensor', '9', '19360-PT3-A00')]),
-  // accessories
-  P('alternator', 'accessory', [o('alternator_denso', '1', '06311-P0A-A01RM')]),
-  P('psPump', 'accessory', [o('p_s_pump_bracket', '3', '56110-P0A-013'), o('p_s_pump_bracket', '5', '56483-P0A-003')]),
-  P('accessoryBelts', 'accessory', [o('p_s_pump_bracket', '6', '56992-P0A-J01')], true),
-  P('psHose', 'accessory', [], true),
+  {
+    "id": "valveCover",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "cylinder_head_cover",
+        "callout": "2",
+        "pn": "12310-PT3-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "oilCap",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "cylinder_head_cover",
+        "callout": "5",
+        "pn": "15610-PC6-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "timingCoverUpper",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "3",
+        "pn": "11820-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "timingCoverLower",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "1",
+        "pn": "11810-PT0-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "engineMount",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "cylinder_block_oil_pan",
+        "callout": "9",
+        "pn": "11910-PT0-020",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "oilPan",
+    "system": "exterior",
+    "oem": [
+      {
+        "diagram": "cylinder_block_oil_pan",
+        "callout": "5",
+        "pn": "11200-PT0-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "block",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "cylinder_block_oil_pan",
+        "callout": "1",
+        "pn": "11000-PT0-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "bearingBridge",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "cylinder_block_oil_pan",
+        "callout": "4",
+        "pn": "11130-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "crankshaft",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "8",
+        "pn": "13310-PT3-315",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "pistons",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "2",
+        "pn": "13101-PT3-A01",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "rings",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "1",
+        "pn": "13011-PT2-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "wristPins",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "3",
+        "pn": "13112-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "rods",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "5",
+        "pn": "13210-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "crankPulley",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "18",
+        "pn": "13810-PT1-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "crankFlange",
+    "system": "bottom",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "8",
+        "pn": "13310-PT3-315",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "balancerFront",
+    "system": "balance",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "12",
+        "pn": "13401-P5M-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "balancerRear",
+    "system": "balance",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "11",
+        "pn": "13400-PT3-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "balancerBelt",
+    "system": "balance",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "11",
+        "pn": "13405-PT0-004",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "balancerAdjuster",
+    "system": "balance",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "10",
+        "pn": "13404-PT0-004",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "head",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "cylinder_head",
+        "callout": "1",
+        "pn": "12100-PT3-A01",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "headGasket",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "cylinder_head",
+        "callout": "6",
+        "pn": "12251-PT0-014",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "camshaft",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "14",
+        "pn": "14111-PT4-F50",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "intakeValves",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "valve_rocker_arm",
+        "callout": "7",
+        "pn": "14711-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "exhaustValves",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "valve_rocker_arm",
+        "callout": "8",
+        "pn": "14721-P0J-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "exhaustRockers",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "valve_rocker_arm",
+        "callout": "3",
+        "pn": "14623-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "rockerShafts",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "cylinder_head",
+        "callout": "7",
+        "pn": "14631-PT0-010",
+        "market": "KA"
+      },
+      {
+        "diagram": "cylinder_head",
+        "callout": "8",
+        "pn": "14632-PT0-010",
+        "market": "KA"
+      },
+      {
+        "diagram": "cylinder_head",
+        "callout": "9",
+        "pn": "14633-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "timingBelt",
+    "system": "timing",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "16",
+        "pn": "14400-PT0-004",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "camPulley",
+    "system": "timing",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "15",
+        "pn": "14210-PT0-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "crankTimingPulley",
+    "system": "timing",
+    "oem": [
+      {
+        "diagram": "crankshaft_piston",
+        "callout": "16",
+        "pn": "13621-PT0-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "timingTensioner",
+    "system": "timing",
+    "oem": [
+      {
+        "diagram": "camshaft_timing_belt",
+        "callout": "17",
+        "pn": "14510-PT0-004",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "intakeDuct",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "air_cleaner",
+        "callout": "6",
+        "pn": "17225-PT2-010",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "throttleBody",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "throttle_body",
+        "callout": "6",
+        "pn": "16400-PT6-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "plenum",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "10",
+        "pn": "17010-PT9-A01",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "runners",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "11",
+        "pn": "17100-PT9-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "fuelRail",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "5",
+        "pn": "16610-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "injectors",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "1",
+        "pn": "06164-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "exhaustManifold",
+    "system": "exhaust",
+    "oem": [
+      {
+        "diagram": "exhaust_manifold",
+        "callout": "2",
+        "pn": "18100-PT6-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "heatShield",
+    "system": "exhaust",
+    "oem": [
+      {
+        "diagram": "exhaust_manifold",
+        "callout": "4",
+        "pn": "18120-PT6-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "distributor",
+    "system": "ignition",
+    "oem": [
+      {
+        "diagram": "distributor_tec",
+        "callout": "1",
+        "pn": "30100-PT3-A12",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "plugLeads",
+    "system": "ignition",
+    "oem": [
+      {
+        "diagram": "high_tension_cord_spark_plug",
+        "callout": "4",
+        "pn": "32701-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "sparkPlugs",
+    "system": "ignition",
+    "oem": [
+      {
+        "diagram": "high_tension_cord_spark_plug",
+        "callout": "17",
+        "pn": "98079-5514G",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "oilPump",
+    "system": "oil",
+    "oem": [
+      {
+        "diagram": "oil_pump_oil_strainer",
+        "callout": "7",
+        "pn": "15100-PT0-020",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "oilStrainer",
+    "system": "oil",
+    "oem": [
+      {
+        "diagram": "oil_pump_oil_strainer",
+        "callout": "14",
+        "pn": "15220-P0A-C00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "oilFilter",
+    "system": "oil",
+    "oem": [
+      {
+        "diagram": "oil_pump_oil_strainer",
+        "callout": "20",
+        "pn": "15400-PT7-005",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "dipstick",
+    "system": "oil",
+    "oem": [
+      {
+        "diagram": "cylinder_block_oil_pan",
+        "callout": "19",
+        "pn": "15650-PT0-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "waterPump",
+    "system": "cooling",
+    "oem": [
+      {
+        "diagram": "water_pump",
+        "callout": "1",
+        "pn": "19200-P0A-003",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "thermostat",
+    "system": "cooling",
+    "oem": [
+      {
+        "diagram": "water_pump",
+        "callout": "9",
+        "pn": "19320-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "coolantOutlet",
+    "system": "cooling",
+    "oem": [
+      {
+        "diagram": "water_pump",
+        "callout": "10",
+        "pn": "19360-PT3-A00",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "alternator",
+    "system": "accessory",
+    "oem": [
+      {
+        "diagram": "alternator_denso",
+        "callout": "1",
+        "pn": "31100-PT3-A52",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "psPump",
+    "system": "accessory",
+    "oem": [
+      {
+        "diagram": "p_s_pump",
+        "callout": "2",
+        "pn": "56110-PT0-050",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "accessoryBelts",
+    "system": "accessory",
+    "oem": [
+      {
+        "diagram": "p_s_pump",
+        "callout": "10",
+        "pn": "56992-PT0-J03",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "psHose",
+    "system": "accessory",
+    "oem": [],
+    "approx": true,
+    "evidence": "approximate"
+  },
+  {
+    "id": "intakeRockers",
+    "system": "head",
+    "oem": [
+      {
+        "diagram": "valve_rocker_arm",
+        "callout": "1",
+        "pn": "14621-PT0-000",
+        "market": "KA"
+      },
+      {
+        "diagram": "valve_rocker_arm",
+        "callout": "2",
+        "pn": "14622-PT0-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabBody",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "14",
+        "pn": "17120-PT2-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabButterflies",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "14",
+        "pn": "17120-PT2-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabShaft",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "14",
+        "pn": "17120-PT2-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabActuator",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "17",
+        "pn": "17129-PT2-000",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabSolenoid",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "24",
+        "pn": "36163-PT2-004",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "iabVacuumTank",
+    "system": "intake",
+    "oem": [
+      {
+        "diagram": "intake_manifold",
+        "callout": "25",
+        "pn": "36361-PT2-014",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "ignitionCoil",
+    "system": "ignition",
+    "oem": [
+      {
+        "diagram": "high_tension_cord_spark_plug",
+        "callout": "3",
+        "pn": "30520-PT9-A02",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "flywheel",
+    "system": "manual",
+    "oem": [
+      {
+        "diagram": "clutch_torque_converter",
+        "callout": "3",
+        "pn": "22100-PT7-013",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "clutchDisc",
+    "system": "manual",
+    "oem": [
+      {
+        "diagram": "clutch_torque_converter",
+        "callout": "4",
+        "pn": "22200-PT1-020",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  },
+  {
+    "id": "clutchPressurePlate",
+    "system": "manual",
+    "oem": [
+      {
+        "diagram": "clutch_torque_converter",
+        "callout": "5",
+        "pn": "22300-PT7-023",
+        "market": "KA"
+      }
+    ],
+    "approx": true,
+    "evidence": "visually reconstructed"
+  }
 ];
-export const PART = Object.fromEntries(PARTS.map((p) => [p.id, p]));
+export const PART = Object.fromEntries(PARTS.map(p=>[p.id,p]));
+export const REMOVED_ENGINE_PARTS = ["primaryRocker", "middleRocker", "secondaryRocker", "syncPistons", "lostMotion", "timingPlate", "vtecSolenoid"];

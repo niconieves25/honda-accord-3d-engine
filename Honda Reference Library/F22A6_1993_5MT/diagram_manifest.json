@@ -1,0 +1,1110 @@
+{
+  "schema_version": 1,
+  "target": {
+    "engine": "F22A6",
+    "year": 1993,
+    "model": "Honda Accord",
+    "body": "4 Door EX sedan",
+    "transmission": "5MT",
+    "stock": true,
+    "identity_basis": "User confirmed engine stamp and paperwork",
+    "market_emissions_variant": null
+  },
+  "scope": "Parallel KA and KL catalogues; neither selected as the confirmed vehicle emissions variant.",
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "diagrams": [
+    {
+      "slug": "air_cleaner",
+      "label": "Air Cleaner",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/air_cleaner.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/20094d24284e4022b3ddf7a97d7e1a38.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/20094d24284e4022b3ddf7a97d7e1a38.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/air_cleaner.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/air_cleaner.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/air_cleaner.json",
+      "part_rows": 43,
+      "source_html_sha256": "250a3ac96b88ed8728ff2c43c8712ffb8b1c6ca1ee6266603de361f4dc7803ae",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "alternator_denso",
+      "label": "Alternator (Denso)",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/alternator_denso.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/alternator_denso.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/alternator_denso.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/alternator_denso.json",
+      "part_rows": 29,
+      "source_html_sha256": "4a0c208ff00c8d31de75367bc032ddf9e6b16d45b49a9b70a6f360c5ea332240",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "breather_tube",
+      "label": "Breather Tube",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/breather_tube.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/breather_tube.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/breather_tube.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/breather_tube.json",
+      "part_rows": 8,
+      "source_html_sha256": "559b231a754bbbbef585758f1e6f2b4e4037b31e56dfd864c6351d62c5e5791c",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "camshaft_timing_belt",
+      "label": "Camshaft - Timing Belt",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/camshaft_timing_belt.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/37b616d74358f08fb7c461e733866b34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/37b616d74358f08fb7c461e733866b34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/camshaft_timing_belt.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/camshaft_timing_belt.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/camshaft_timing_belt.json",
+      "part_rows": 32,
+      "source_html_sha256": "54791300b44a6add63705bfe372dd965e7ce7ccb147235236dc0ed423e66eaa3",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "clutch_torque_converter",
+      "label": "Clutch - Torque Converter",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/clutch_torque_converter.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/clutch_torque_converter.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/clutch_torque_converter.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/clutch_torque_converter.json",
+      "part_rows": 12,
+      "source_html_sha256": "beff3f6f4a1b3b759ccf12227acd75c785e638077e13fae7679cb79de9fda9ce",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "control_box",
+      "label": "Control Box",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/control_box.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/control_box.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/control_box.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/control_box.json",
+      "part_rows": 37,
+      "source_html_sha256": "a465d5144ea15204b0f5f4398bf2db1292ad896a8d6cac98b254ff8877aa6d51",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "control_unit",
+      "label": "Control Unit",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/control_unit.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/control_unit.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/control_unit.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/control_unit.json",
+      "part_rows": 8,
+      "source_html_sha256": "55c851c71b7fcbf3a9c0e2d2935fc3e9aac160620c9d0dddb15a646a0db0f00c",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "crankshaft_piston",
+      "label": "Crankshaft - Piston",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/crankshaft_piston.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3a9f9d2b92fa0dbbbf6ab7d3f23b0d34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3a9f9d2b92fa0dbbbf6ab7d3f23b0d34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/crankshaft_piston.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/crankshaft_piston.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/crankshaft_piston.json",
+      "part_rows": 53,
+      "source_html_sha256": "e7b9ec906182175ceb891eda96739e9ab82b48912f86ad05f69f833fd0f58bf1",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_block_oil_pan",
+      "label": "Cylinder Block - Oil Pan",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/cylinder_block_oil_pan.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/4ca78bd58f422d21ab2852f6ccd8a2a1.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/4ca78bd58f422d21ab2852f6ccd8a2a1.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/cylinder_block_oil_pan.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/cylinder_block_oil_pan.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/cylinder_block_oil_pan.json",
+      "part_rows": 47,
+      "source_html_sha256": "8351cd801e75b8cdc78de14f24bd97d18cf91b8757304aa443680bee6aeef157",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_head",
+      "label": "Cylinder Head",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/cylinder_head.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1c7e82337dec4678b407c7b8ea71109e.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1c7e82337dec4678b407c7b8ea71109e.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/cylinder_head.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/cylinder_head.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/cylinder_head.json",
+      "part_rows": 27,
+      "source_html_sha256": "08d27e0910d33e8c6b397d1ffcd1683fc4d1fb2e3cf8df05e7586e651b4eb023",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_head_cover",
+      "label": "Cylinder Head Cover",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/cylinder_head_cover.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/cylinder_head_cover.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/cylinder_head_cover.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/cylinder_head_cover.json",
+      "part_rows": 11,
+      "source_html_sha256": "ed31957437399b6aaf62ea432bbaa7e1dc89a36c5c8c4bce6f4d352fb5ddf762",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "distributor_tec",
+      "label": "Distributor (TEC)",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/distributor_tec.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/distributor_tec.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/distributor_tec.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/distributor_tec.json",
+      "part_rows": 11,
+      "source_html_sha256": "a6b922dbedb475297cba4e83fe9c21c3027f31cb5fc9fc5566e265d4f3abc49c",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "engine_sub_cord_clamp",
+      "label": "Engine Sub Cord - Clamp",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/engine_sub_cord_clamp.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/13c7ccf8fd45c24250b12a674ea2c915.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/13c7ccf8fd45c24250b12a674ea2c915.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/engine_sub_cord_clamp.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/engine_sub_cord_clamp.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/engine_sub_cord_clamp.json",
+      "part_rows": 41,
+      "source_html_sha256": "376f0d1cc34516b91832945e8f962edb0eac9d13aa79862097f3a32142d51aa4",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "exhaust_manifold",
+      "label": "Exhaust Manifold",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/exhaust_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/exhaust_manifold.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/exhaust_manifold.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/exhaust_manifold.json",
+      "part_rows": 13,
+      "source_html_sha256": "b9b3c1a3d26e85ddad1d9ca0f88cef8a23695e71230eb72529c0d23f25d41f07",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "exhaust_system",
+      "label": "Exhaust System",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/exhaust_system.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/exhaust_system.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/exhaust_system.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/exhaust_system.json",
+      "part_rows": 37,
+      "source_html_sha256": "7ad1b03bf55c04063255388976008e90067ede00bc63c000a030af0c6e7462bf",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "gasket_kit_engine_assy_transmission_assy",
+      "label": "Gasket Kit - Engine Assy.  - Transmission Assy.",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/gasket_kit_engine_assy_transmission_assy.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/gasket_kit_engine_assy_transmission_assy.json",
+      "part_rows": 6,
+      "source_html_sha256": "521f0d8704ef9912b6eb9a131e055eb87d3ba1f8133502d4bfd8495376a969d0",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "high_tension_cord_spark_plug",
+      "label": "High Tension Cord - Spark Plug",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/high_tension_cord_spark_plug.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/high_tension_cord_spark_plug.json",
+      "part_rows": 22,
+      "source_html_sha256": "630940dce2a40e3e41e4a4b8d8856332011f3548bcad7903c8e4e71459a75643",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "intake_manifold",
+      "label": "Intake Manifold",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/intake_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ead1f5d0c7c34e0304c413a25979cae0.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ead1f5d0c7c34e0304c413a25979cae0.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/intake_manifold.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/intake_manifold.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/intake_manifold.json",
+      "part_rows": 54,
+      "source_html_sha256": "2167f9eb004fb11396cfe8e63d2e9cf497739ff0ec1dd36c1103a43f78e28b0b",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "oil_pump_oil_strainer",
+      "label": "Oil Pump - Oil Strainer",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/oil_pump_oil_strainer.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3c6d5323515b8bfe3b02286926279fd6.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3c6d5323515b8bfe3b02286926279fd6.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/oil_pump_oil_strainer.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/oil_pump_oil_strainer.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/oil_pump_oil_strainer.json",
+      "part_rows": 35,
+      "source_html_sha256": "1cafeb62d9e06df9dc0258b49dd1a806fef8d7c6f374654bc5d2c931fbe7a13b",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "p_s_pump",
+      "label": "P.S. Pump",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/p_s_pump.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/p_s_pump.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/p_s_pump.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/p_s_pump.json",
+      "part_rows": 39,
+      "source_html_sha256": "135e05c65fa804fdd19cbef41e8394cb04d0b083644affa60591b8dc3f1e536c",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "starter_motor_denso",
+      "label": "Starter Motor (Denso)",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/starter_motor_denso.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/starter_motor_denso.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/starter_motor_denso.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/starter_motor_denso.json",
+      "part_rows": 19,
+      "source_html_sha256": "4a43413ba640fb1547b4ce8cb98b612e236490459445787b14eb0f94b7be6ca4",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "throttle_body",
+      "label": "Throttle Body",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/throttle_body.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/throttle_body.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/throttle_body.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/throttle_body.json",
+      "part_rows": 27,
+      "source_html_sha256": "0bed11fd04116617f04cf10d52c422384c0c35b1069abb4d460ca14cc1c73ca1",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "valve_rocker_arm",
+      "label": "Valve - Rocker Arm",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/valve_rocker_arm.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/valve_rocker_arm.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/valve_rocker_arm.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/valve_rocker_arm.json",
+      "part_rows": 17,
+      "source_html_sha256": "b65dd242b64e451c176f595691e4c8703b834030b660dbdb7550395cd2c8ad16",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "water_hose",
+      "label": "Water Hose",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/water_hose.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/water_hose.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/water_hose.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/water_hose.json",
+      "part_rows": 18,
+      "source_html_sha256": "1e17fe88bd99cbe900676a1b95ea557fbe60e1958c12d77c2f66b56fe92c6b28",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "water_pump",
+      "label": "Water Pump",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/water_pump.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/water_pump.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/water_pump.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/water_pump.json",
+      "part_rows": 23,
+      "source_html_sha256": "67921068bbb3317446054abd5dcbb7b12ca6caee2930f60c8373c2b2905113c1",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "wire_harness",
+      "label": "Wire Harness",
+      "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/wire_harness.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KA/wire_harness.png",
+      "image_files": [
+        "01_OEM_Diagrams/KA/wire_harness.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KA/wire_harness.json",
+      "part_rows": 55,
+      "source_html_sha256": "281e3f99f7c883149ca4b4a890bbf1ba6f3de6438bdae4b35bee8d54f8d8b65d",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "air_cleaner",
+      "label": "Air Cleaner",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/air_cleaner.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/20094d24284e4022b3ddf7a97d7e1a38.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/20094d24284e4022b3ddf7a97d7e1a38.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/air_cleaner.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/air_cleaner.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/air_cleaner.json",
+      "part_rows": 43,
+      "source_html_sha256": "df18bcb720c432eb044c111214f039a6de632079c00a8232a41aaf27b6f26cfa",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "alternator_denso",
+      "label": "Alternator (Denso)",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/alternator_denso.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1743c1bac108dfb9397ced038e5e7fe6.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/alternator_denso.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/alternator_denso.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/alternator_denso.json",
+      "part_rows": 29,
+      "source_html_sha256": "0592ecb7b1d1132c4d712f7423b0971355190797bf9a7531b062fc9c8dfbb832",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "breather_tube",
+      "label": "Breather Tube",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/breather_tube.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/679a869edd61328e52c2223a4c908a06.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/breather_tube.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/breather_tube.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/breather_tube.json",
+      "part_rows": 8,
+      "source_html_sha256": "30a7813889aa3922bf9aa9eadbf6812620d303ec8d2155842b3918fa10438360",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "camshaft_timing_belt",
+      "label": "Camshaft - Timing Belt",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/camshaft_timing_belt.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/37b616d74358f08fb7c461e733866b34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/37b616d74358f08fb7c461e733866b34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/camshaft_timing_belt.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/camshaft_timing_belt.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/camshaft_timing_belt.json",
+      "part_rows": 32,
+      "source_html_sha256": "84f70a15670144ce38c81c0f4854301f217f60021e309ac9370fa7d77494f594",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "clutch_torque_converter",
+      "label": "Clutch - Torque Converter",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/clutch_torque_converter.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/clutch_torque_converter.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/clutch_torque_converter.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/clutch_torque_converter.json",
+      "part_rows": 12,
+      "source_html_sha256": "541a6e2ab12a7fbdc6792dd50fe50e65440d3d141625c68e86de8a52c33c94e6",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "control_box",
+      "label": "Control Box",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/control_box.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/control_box.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/control_box.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/control_box.json",
+      "part_rows": 37,
+      "source_html_sha256": "5d68c935a5a30f0ceab310aaff5c61c7fe287f7b7feb0d68b7e5c0ae5aec917f",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "control_unit",
+      "label": "Control Unit",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/control_unit.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/bcd05f719974b688d46da6332f1b9268.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/control_unit.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/control_unit.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/control_unit.json",
+      "part_rows": 8,
+      "source_html_sha256": "587526f7b951c50dd3258b5b717e50387a4a1956f3dee8a4873f80068c9eecc5",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "crankshaft_piston",
+      "label": "Crankshaft - Piston",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/crankshaft_piston.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3a9f9d2b92fa0dbbbf6ab7d3f23b0d34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3a9f9d2b92fa0dbbbf6ab7d3f23b0d34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/crankshaft_piston.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/crankshaft_piston.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/crankshaft_piston.json",
+      "part_rows": 52,
+      "source_html_sha256": "2694ade0f2e38eed3c6efb73ae0b8f02c22d650a632ea658618013a1e5f63f1d",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_block_oil_pan",
+      "label": "Cylinder Block - Oil Pan",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/cylinder_block_oil_pan.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/4ca78bd58f422d21ab2852f6ccd8a2a1.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/4ca78bd58f422d21ab2852f6ccd8a2a1.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/cylinder_block_oil_pan.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/cylinder_block_oil_pan.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/cylinder_block_oil_pan.json",
+      "part_rows": 47,
+      "source_html_sha256": "9a4d3739d611226861fa61cccd34b3a63f92ed0eb1a6b295e0e6ed55582ed357",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_head",
+      "label": "Cylinder Head",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/cylinder_head.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1c7e82337dec4678b407c7b8ea71109e.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1c7e82337dec4678b407c7b8ea71109e.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/cylinder_head.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/cylinder_head.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/cylinder_head.json",
+      "part_rows": 25,
+      "source_html_sha256": "6de03bfeb9d0c5d52e391db6c9e7561a63db845eaba262b62c7daabf20a843cd",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "cylinder_head_cover",
+      "label": "Cylinder Head Cover",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/cylinder_head_cover.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/cylinder_head_cover.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/cylinder_head_cover.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/cylinder_head_cover.json",
+      "part_rows": 11,
+      "source_html_sha256": "42ddc8022c9b7d1192d89399fb7530f6b857029c51c39add89e43b52351fb91d",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "distributor_tec",
+      "label": "Distributor (TEC)",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/distributor_tec.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/distributor_tec.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/distributor_tec.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/distributor_tec.json",
+      "part_rows": 11,
+      "source_html_sha256": "a348390b3f55dedd74e83987391087c3cd544fd01ee6f02a9253dee4ef98a85b",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "engine_sub_cord_clamp",
+      "label": "Engine Sub Cord - Clamp",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/engine_sub_cord_clamp.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/13c7ccf8fd45c24250b12a674ea2c915.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/13c7ccf8fd45c24250b12a674ea2c915.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/engine_sub_cord_clamp.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/engine_sub_cord_clamp.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/engine_sub_cord_clamp.json",
+      "part_rows": 41,
+      "source_html_sha256": "cf3ff4903030b1725aba6ddd22f8660a5e6343aced62e81159d05ae4287ceb73",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "exhaust_manifold",
+      "label": "Exhaust Manifold",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/exhaust_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/2da0321e784d3d956b4fc62de9b29e32.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/exhaust_manifold.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/exhaust_manifold.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/exhaust_manifold.json",
+      "part_rows": 13,
+      "source_html_sha256": "9e6b3b7fb457cfef2a158a8834340aa2d7384bf2c36acf513bd061085462b34f",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "exhaust_system",
+      "label": "Exhaust System",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/exhaust_system.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/523daaccce3eb44d9d00e08d4ca91dda.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/exhaust_system.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/exhaust_system.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/exhaust_system.json",
+      "part_rows": 36,
+      "source_html_sha256": "01818885b5f7d7857c9a5fd463db75677d008d837f3f87209356a5b85b323456",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "gasket_kit_engine_assy_transmission_assy",
+      "label": "Gasket Kit - Engine Assy.  - Transmission Assy.",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/gasket_kit_engine_assy_transmission_assy.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/0f3081f4a99681cd35bb2a4932706e76.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/gasket_kit_engine_assy_transmission_assy.json",
+      "part_rows": 6,
+      "source_html_sha256": "d3200c6bcc0762fa66d1a195b892b1fafc55c603b42144a91352b6077b7a6a92",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "high_tension_cord_spark_plug",
+      "label": "High Tension Cord - Spark Plug",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/high_tension_cord_spark_plug.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/a2d7ac21829eb8359c517bfa55624ee9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/high_tension_cord_spark_plug.json",
+      "part_rows": 22,
+      "source_html_sha256": "9d122c2296995635444bfe0d8fa5300e22babcb0280ac09673e5053877b30356",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "intake_manifold",
+      "label": "Intake Manifold",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/intake_manifold.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ead1f5d0c7c34e0304c413a25979cae0.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/ead1f5d0c7c34e0304c413a25979cae0.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/intake_manifold.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/intake_manifold.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/intake_manifold.json",
+      "part_rows": 54,
+      "source_html_sha256": "b41ae29e3d509a2f8cae3842eb33ce771e55e998d55fa57abc7c9b62e76a0887",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "oil_pump_oil_strainer",
+      "label": "Oil Pump - Oil Strainer",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/oil_pump_oil_strainer.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3c6d5323515b8bfe3b02286926279fd6.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3c6d5323515b8bfe3b02286926279fd6.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/oil_pump_oil_strainer.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/oil_pump_oil_strainer.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/oil_pump_oil_strainer.json",
+      "part_rows": 35,
+      "source_html_sha256": "71e601d5ee45992e8ff7fcbdaea084d6fe2be6a520b02563863e28ea8c555312",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "p_s_pump",
+      "label": "P.S. Pump",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/p_s_pump.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/p_s_pump.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/p_s_pump.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/p_s_pump.json",
+      "part_rows": 39,
+      "source_html_sha256": "b60116f9ff11cb4eb01fae00431fb6c3a431196919a355a7940062dfe91f3178",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "starter_motor_denso",
+      "label": "Starter Motor (Denso)",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/starter_motor_denso.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/starter_motor_denso.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/starter_motor_denso.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/starter_motor_denso.json",
+      "part_rows": 19,
+      "source_html_sha256": "c6e53707b17275835e6653a55f20fbfdf6f5c7e45074af2a687a53add6a81f31",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "throttle_body",
+      "label": "Throttle Body",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/throttle_body.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/526aedbeb087cc4889671acbc23ad6c9.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/throttle_body.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/throttle_body.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/throttle_body.json",
+      "part_rows": 27,
+      "source_html_sha256": "9c1738e9641f606fdcde93a27d788c3842248a986b4dda50d78b48a51ca8c107",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "valve_rocker_arm",
+      "label": "Valve - Rocker Arm",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/valve_rocker_arm.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/5df89c31bccedcb368e413e16d9e9499.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/valve_rocker_arm.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/valve_rocker_arm.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/valve_rocker_arm.json",
+      "part_rows": 17,
+      "source_html_sha256": "3d09fcc49d7fe323e9d84ba115b1e5b861e02c23452371ab89c1b0e8a75ff88a",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "water_hose",
+      "label": "Water Hose",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/water_hose.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/142310100283a4537c917a989729450b.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/water_hose.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/water_hose.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/water_hose.json",
+      "part_rows": 18,
+      "source_html_sha256": "6fd0f9ad40311a2614682b0731ff753a389e793c155f09b893be2ce0518bb308",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "water_pump",
+      "label": "Water Pump",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/water_pump.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/66ba2a2e721ce2a26d24c701d40a286e.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/water_pump.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/water_pump.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/water_pump.json",
+      "part_rows": 23,
+      "source_html_sha256": "9c6350a1e94a9598dd8776fa234ffa61badf421f5568716b3af9f0487289cc9c",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    },
+    {
+      "slug": "wire_harness",
+      "label": "Wire Harness",
+      "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+      "target_engine": "F22A6",
+      "vehicle_emissions_variant_confirmed": false,
+      "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/wire_harness.html",
+      "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png",
+      "image_urls": [
+        "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png"
+      ],
+      "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+      "image_file": "01_OEM_Diagrams/KL/wire_harness.png",
+      "image_files": [
+        "01_OEM_Diagrams/KL/wire_harness.png"
+      ],
+      "parts_file": "01_OEM_Diagrams/KL/wire_harness.json",
+      "part_rows": 54,
+      "source_html_sha256": "1e93cbff2ca11bb46214003db447494c11aa3aa7db8104caf3fe858703ab95f3",
+      "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+    }
+  ],
+  "errors": []
+}

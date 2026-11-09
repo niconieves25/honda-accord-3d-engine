@@ -1,0 +1,145 @@
+{
+  "slug": "clutch_torque_converter",
+  "label": "Clutch - Torque Converter",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/clutch_torque_converter.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/3016e104670ec825cd2768ffb8a64294.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/clutch_torque_converter.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/clutch_torque_converter.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/clutch_torque_converter.json",
+  "part_rows": 12,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "21350-PT0-000",
+      "description": "Cover, Clutch Case",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~clutch~case~21350-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "22100-PT7-013",
+      "description": "Flywheel",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~flywheel~22100-pt7-013.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/438d844a5f1074d58d9fb344caea3649/24a41ff9f010abdac9491abfb7a93fde.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "22200-PT1-020",
+      "description": "Disk, Friction",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN    Replaced By: 22200-PT7-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~disk~friction~22200-pt1-020.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "22200-PT7-003",
+      "description": "Disk, Friction (ASK)",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 22200-PT7-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~disk~friction~22200-pt7-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "22200-PT7-305",
+      "description": "Disk, Friction (VALEO)",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 22200-PT7-013",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~disk~friction~22200-pt7-305.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "22300-PT7-023",
+      "description": "Disk, Pressure",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~disk~pressure~22300-pt7-023.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12608e894fbaa1be60bc63ca0bf898bc/7dca05518bc39a109b1fec3d977c640c.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "22300-PT7-003",
+      "description": "Disk, Pressure",
+      "quantity": null,
+      "details": "Replaced By: 22300-PT7-023",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~disk~pressure~22300-pt7-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "90011-PH3-000",
+      "description": "Bolt, Flange (12MM)",
+      "quantity": 8,
+      "details": "Require Quantity: 8    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90011-ph3-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9059dcb0521a802d7cab7ccb8181e20d/4dfe2339c4e51fa17d8ba90414822759.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9059dcb0521a802d7cab7ccb8181e20d/806ce2fe086793b7508e79bfa8495baa.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9059dcb0521a802d7cab7ccb8181e20d/ed79eda83341d077bd7113f1455f7e98.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ac3a38ac43c866cf8e5fda5084f4e585/1d30421fe70cf7ab582ec7747e5a224e.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "90034-P10-A01",
+      "description": "Bolt, Twelve Point (8MM) (ROCKNEL FASTENER)",
+      "quantity": 6,
+      "details": "Fit Note: Mfg.Origin: USA    Require Quantity: 6    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~twelve~point~90034-p10-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/51c02e69612f2738a752357e289a4779/54ff811d7314172af0cbb934a67c28d0.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "90034-689-000",
+      "description": "Bolt, Twelve Point (8MM) (TOKAI TRW)",
+      "quantity": 6,
+      "details": "Fit Note: Mfg.Origin: JPN,USA    Require Quantity: 6    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~twelve~point~90034-689-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/098714a665197b9cc3b042d9af2373f9/0e9a2b914c4980a03536fa6e3a8dcc72.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/098714a665197b9cc3b042d9af2373f9/030f4cdad47b551c16a09120d618876b.jpg"
+      ]
+    },
+    {
+      "callout": "13",
+      "part_number": "93403-06012-08",
+      "description": "Bolt-Washer (6X12)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06012-08.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "96220-60178",
+      "description": "Roller (6X17.8)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~roller~96220-60178.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "beff3f6f4a1b3b759ccf12227acd75c785e638077e13fae7679cb79de9fda9ce",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

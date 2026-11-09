@@ -1,0 +1,194 @@
+{
+  "slug": "starter_motor_denso",
+  "label": "Starter Motor (Denso)",
+  "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/starter_motor_denso.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/8b8dc2c9dec50252c2f90094faf77cce.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KL/starter_motor_denso.png",
+  "image_files": [
+    "01_OEM_Diagrams/KL/starter_motor_denso.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KL/starter_motor_denso.json",
+  "part_rows": 19,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "31200-PT0-003",
+      "description": "Starter Motor Assy. (DR4U2) (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~starter~motor~assy~31200-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "31201-657-671",
+      "description": "Screw (DENSO) (FRAME NO.)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~31201-657-671.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "31202-PC2-661",
+      "description": "Bolt, Through (DENSO) (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~through~31202-pc2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "31202-PC2-661",
+      "description": "Bolt, Through (DENSO)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~through~31202-pc2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "31203-PT0-003",
+      "description": "Cover, Gear",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~gear~31203-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "31204-PH3-003",
+      "description": "Clutch, Overrunning (DENSO)  (N/A: SEE ASSEMBLY)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clutch~overrunning~31204-ph3-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "31205-657-671",
+      "description": "Ball, Steel (DENSO) (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ball~steel~31205-657-671.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "31206-PT0-003",
+      "description": "Yoke  (N/A: SEE ASSEMBLY)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~yoke~31206-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "31207-PH7-662",
+      "description": "Armature (DENSO)  (N/A: SEE ASSEMBLY)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~armature~31207-ph7-662.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "31208-PC2-661",
+      "description": "Plate, Brush Holder (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plate~brush~holder~31208-pc2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "31209-PT0-003",
+      "description": "Frame, Starter End",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~frame~starter~end~31209-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "31210-PT0-003",
+      "description": "Switch Assy., Magnet  (N/A: SEE ASSEMBLY)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~switch~assy~31210-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "31211-PC2-661",
+      "description": "Gear, Drive Pinion (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gear~drive~pinion~31211-pc2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "31222-657-671",
+      "description": "Gear, Idle (DENSO) (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gear~idle~31222-657-671.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "31225-PB2-006",
+      "description": "Roller, Bearing (DENSO) (FRAME NO.)",
+      "quantity": 5,
+      "details": "Require Quantity: 5    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~roller~bearing~31225-pb2-006.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "31226-PB2-006",
+      "description": "Retainer, Bearing (DENSO) (FRAME NO.)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~retainer~bearing~31226-pb2-006.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "17",
+      "part_number": "31228-PC2-661",
+      "description": "O-Ring, Yoke Body (FRAME NO.)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~yoke~body~31228-pc2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "31235-PT0-003",
+      "description": "Cover, Terminal",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~terminal~31235-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "31291-PT0-003",
+      "description": "Stay",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~31291-pt0-003.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "c6e53707b17275835e6653a55f20fbfdf6f5c7e45074af2a687a53add6a81f31",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

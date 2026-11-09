@@ -1,0 +1,385 @@
+{
+  "slug": "control_box",
+  "label": "Control Box",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/electrical_exhaust_heater_fuel/control_box.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/67edc9a0969edb3e7a99f42df193c5b9.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/control_box.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/control_box.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/control_box.json",
+  "part_rows": 37,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "17205-PC6-000",
+      "description": "Clamp, Tube (7.5X2)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~17205-pc6-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ab07df74c69fdbf2c980256a7e3db6f8/aa7648f72d72917f0991f22997f24ab7.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "17290-PR7-A01",
+      "description": "Valve Assy., Control",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~17290-pr7-a01.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3386f04e05efae1cd6a81337836c634d/b60dc6cb9b55f64200e68b2b321c3003.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3386f04e05efae1cd6a81337836c634d/257dc0738325af65fc1028fb24e6c4e5.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3386f04e05efae1cd6a81337836c634d/58da8d431acd3e413dbdf86cc7e96db2.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d5fa0d27589af8871761f61885935728/e5d610caee0df6d6d5855416f88782a8.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "17361-PC6-000",
+      "description": "Clamp, Tube (7.5X3)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~17361-pc6-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "17361-PK2-661",
+      "description": "Clamp, Tube (7.5X5)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clamp~tube~17361-pk2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "36010-PA6-004",
+      "description": "Joint, Three Way",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~joint~three~way~36010-pa6-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/de9c5fe63ca61e8766387ca36f3ee97c/282dbed7e14293a53998faeb0693b4ed.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "36013-PG7-661",
+      "description": "Holder, Solenoid (3.5MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~solenoid~36013-pg7-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "36017-PM3-004",
+      "description": "Bolt, Mounting",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~mounting~36017-pm3-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "36019-PT3-A01",
+      "description": "Cover (LOWER)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~36019-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "36020-PT3-A01",
+      "description": "Cover (UPPER)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~36020-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "36022-PT3-A01",
+      "description": "Label, Control Box",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~label~control~box~36022-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "36024-PT3-A01",
+      "description": "Holder A, Tube",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~tube~36024-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "36025-PK2-661",
+      "description": "Grommet B",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~36025-pk2-661.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "36025-PT3-A01",
+      "description": "Holder B, Tube",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~tube~36025-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "36033-PT3-A02",
+      "description": "Stay",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~36033-pt3-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "36034-PM6-901",
+      "description": "Plug, Sealing",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~plug~sealing~36034-pm6-901.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "17",
+      "part_number": "36034-PT3-A02",
+      "description": "Base",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~base~36034-pt3-a02.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "36035-PT3-A01",
+      "description": "Stay, Connector",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~connector~36035-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "36041-PT3-A01",
+      "description": "Wire Assy.",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~assy~36041-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "20",
+      "part_number": "36053-PM6-A01",
+      "description": "Rubber, Mounting (20MM)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~mounting~36053-pm6-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "21",
+      "part_number": "36057-PH7-004",
+      "description": "Screw, Tapping (4X25)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~tapping~36057-ph7-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "22",
+      "part_number": "36058-PA0-004",
+      "description": "Rubber, Cushion",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~rubber~cushion~36058-pa0-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "25",
+      "part_number": "36138-PE0-004",
+      "description": "Filter Assy., Solenoid Valve",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~filter~assy~36138-pe0-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "26",
+      "part_number": "36166-PE7-662",
+      "description": "Valve Assy., Purge Cut Solenoid",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~36166-pe7-662.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "27",
+      "part_number": "36190-PT3-A01",
+      "description": "Valve Assy., Frequency Solenoid",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~36190-pt3-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "28",
+      "part_number": "36194-PD2-661",
+      "description": "Filter Assy., Air",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~filter~assy~36194-pd2-661.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/dd30f51ae284b2e13db3f18ef909d7f7/156ad5d06fa0b5c76249a0a31e782f85.jpg"
+      ]
+    },
+    {
+      "callout": "31",
+      "part_number": "37830-PT0-003",
+      "description": "Sensor Assy., Map",
+      "quantity": null,
+      "details": "Replaced By: 37830-P01-G01",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~37830-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3f1abe05a7e1df8c8ac6decdbdc4b20a/335bde059f62b9f1765864aa68ba79a9.jpg"
+      ]
+    },
+    {
+      "callout": "32",
+      "part_number": "90041-PH2-004",
+      "description": "Screw-Washer (5X8)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~90041-ph2-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "33",
+      "part_number": "90146-SA7-000",
+      "description": "Bolt-Washer (6X16) (DACRO COATING)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1    Replaced By: 93405-06016-04",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90146-sa7-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/64f0a3cb051b8f7735876b6b9d6f5492/ffe084cd8afb2ff4aac32670b5175a8b.jpg"
+      ]
+    },
+    {
+      "callout": "35",
+      "part_number": "93892-05010-08",
+      "description": "Screw-Washer (5X10)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~93892-05010-08.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "36",
+      "part_number": "93893-04012-08",
+      "description": "Screw-Washer (4X12)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~screw~washer~93893-04012-08.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "38",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X90)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "39",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X100)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "40",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X250)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "41",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X270)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "42",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X360)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "43",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X380)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    },
+    {
+      "callout": "44",
+      "part_number": "95005-35008-10M",
+      "description": "Bulk Hose, Vacuum (3.5X8000) OEM CUT SIZE: (3.5X400)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bulk~hose~vacuum~95005-35008-10m.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/06e5b235260662073cdf14e105dacecf/35cb093250c5a0174242831327c0f749.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "a465d5144ea15204b0f5f4398bf2db1292ad896a8d6cac98b254ff8877aa6d51",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

@@ -1,0 +1,11 @@
+/* La Furia Roja — shared by the assembled engine and Anatomy.
+   Black grounds the workspace; red occupies the instrument bands; text stays white. */
+:root{--scale:1.25;--bg:#08090c;--panel:#121317;--fg:#fff;--dim:#d0cbd0;--line:#786b73;--accent:#ff4056;--accent-ink:#fff;--focus:#ff6677;--btn:#201b22;--action:#c8102e;--action-hover:#df1736;--red-band:#c8102e;--red-inset:#530c1c;--red-edge:#ed3650;--label-bg:#08090ced;--label-fg:#fff;color-scheme:dark}
+:root[data-theme=light]{--bg:#ece9ec;--panel:#faf7f8;--fg:#191217;--dim:#493a43;--line:#8a727c;--accent:#b50b28;--accent-ink:#fff;--focus:#b50b28;--btn:#fff;--action:#c8102e;--action-hover:#ae0b26;--red-band:#b50b28;--red-inset:#f5dbe1;--red-edge:#c8102e;--label-bg:#fffffff5;--label-fg:#191217;color-scheme:light}
+:root[data-theme=soft]{--bg:#e4dfe3;--panel:#f2edef;--fg:#20161c;--dim:#4c3c45;--line:#88717c;--accent:#a50e2b;--accent-ink:#fff;--focus:#a50e2b;--btn:#faf7f9;--action:#b50e2b;--action-hover:#9b0923;--red-band:#a50e2b;--red-inset:#ead0d9;--red-edge:#b50e2b;--label-bg:#fffffff0;--label-fg:#20161c;color-scheme:light}
+/* Brand is a name, so it is retained in both interface languages. */
+.project-name{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:.14em;line-height:1.4;color:var(--accent);white-space:nowrap}
+.project-name::before{content:'';width:18px;height:3px;background:currentColor;transform:skewX(-25deg)}
+/* Keep the primary action red while using white text at readable contrast. */
+button.primary,#btn-play,button[aria-pressed=true]{background:var(--action);border-color:var(--red-edge);color:#fff}
+button.primary:hover:not(:disabled),#btn-play:hover:not(:disabled){background:var(--action-hover)}
