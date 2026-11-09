@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Sensor de temperatura del refrigerante
+Qué hace: Informa al control del motor de la temperatura del refrigerante.
+
+2
+00:00:04.000 --> 00:00:08.000
+Sensor de temperatura del refrigerante
+Cómo trabaja: Su elemento cambia la respuesta eléctrica.
+
+3
+00:00:08.000 --> 00:00:12.000
+Sensor de temperatura del refrigerante
+Pieza fija · inspección: No tiene movimiento mecánico de lectura; cambia su señal eléctrica con la temperatura. El giro mostrado es de la cámara.
