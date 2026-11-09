@@ -1,0 +1,431 @@
+{
+  "slug": "p_s_pump",
+  "label": "P.S. Pump",
+  "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/engine/p_s_pump.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/339f46404b9114cbd2d82d59d3558da4.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KL/p_s_pump.png",
+  "image_files": [
+    "01_OEM_Diagrams/KL/p_s_pump.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KL/p_s_pump.json",
+  "part_rows": 39,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "31114-PL2-000",
+      "description": "Bolt, Tensioner",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~tensioner~31114-pl2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/fb5df6c1aff4ae3fa205fb342f366910/9562b8dea6fc490adb98c57502b803a8.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "56110-PT0-050",
+      "description": "Pump Sub-Assy., Power Steering",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pump~sub~assy~56110-pt0-050.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "56250-PT0-310",
+      "description": "Cover, FR. Pump",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~56250-pt0-310.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "56350-PC1-010",
+      "description": "Spool Assy. (-0.005 / 0) (A)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spool~assy~56350-pc1-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "56360-PC1-010",
+      "description": "Spool Assy. (0 / +0.006) (B)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spool~assy~56360-pc1-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "56385-PT0-000",
+      "description": "Spring, Spool",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~spring~spool~56385-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "56471-PT0-000",
+      "description": "Cover, Port Housing",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~port~housing~56471-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "7",
+      "part_number": "56472-PT0-300",
+      "description": "Cover B, Port Housing",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~port~housing~56472-pt0-300.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "56483-PV0-000",
+      "description": "Pulley, Power Steering Pump",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-pv0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "56500-PT3-010",
+      "description": "Sensor Assy., Power Steering",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~56500-pt3-010.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5f3a5a8272a75497983010d216e078f4/12adc37c518b33ccfec6e500edb437b7.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "56992-PT0-J03",
+      "description": "Belt, Power Steering Pump (4PK1068)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~belt~power~steering~pump~4pk1068~56992-pt0-j03.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6b2b56d9ace92513cb43df8c7323d8f5/a14c7a61b9098bca1b8b1780e3aff2fa.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "56992-PT0-J02",
+      "description": "Belt, Power Steering Pump (BANDO)",
+      "quantity": null,
+      "details": "Replaced By: 56992-PT0-J03",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~belt~power~steering~56992-pt0-j02.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8e5b75ecfd0d8e3343bc27bc2f1667af/5e3dee3b65cef695198746b66be3db8d.jpg"
+      ]
+    },
+    {
+      "callout": "11",
+      "part_number": "56994-PT9-000",
+      "description": "Bracket, Power Steering Pump",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~power~steering~56994-pt9-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "12",
+      "part_number": "56998-PT0-000",
+      "description": "Stay, Power Steering Pump Adjuster",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~power~steering~56998-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "90001-PC1-000",
+      "description": "Bolt, Flange (6X78)",
+      "quantity": 5,
+      "details": "Require Quantity: 5    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~90001-pc1-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "90011-PT0-000",
+      "description": "Bolt-Washer (8X26)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~90011-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "90305-PT0-000",
+      "description": "Nut, Power Steering Pulley",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~power~steering~pulley~90305-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1e2e0264a48d66b96ee6d2991c166518/7ac499e86de858cd01e708bb97d8c55b.jpg"
+      ]
+    },
+    {
+      "callout": "16",
+      "part_number": "90306-PT0-000",
+      "description": "Key, Power Steering Pulley",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~key~power~steering~pulley~90306-pt0-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "17",
+      "part_number": "90311-PT0-000",
+      "description": "Bolt, Adjuster Special",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~adjuster~special~90311-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5eef5d730f1993ebaf8db8f8c11b9cf1/137073b6601f8fed6ffb2e637b7ffce8.jpg"
+      ]
+    },
+    {
+      "callout": "18",
+      "part_number": "94301-08100",
+      "description": "Pin, Dowel (8X10)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~pin~dowel~94301-08100.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "91216-PL6-003",
+      "description": "Oil Seal, 20X34X7",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~20x34x7~91216-pl6-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5f9fe83155959be4186cf33fa351babf/d45b82ff889be7478192f186f6d9d7c4.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5f9fe83155959be4186cf33fa351babf/6d5c5da7bc942f4d0ef1f9374d5c471e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5f9fe83155959be4186cf33fa351babf/a95dcc419bd13324e6c0ec2f292413b6.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/281cc8a39b8a22e60e19d1fb935a7047/84e9813f1ec3df073edc659049df15af.jpg"
+      ]
+    },
+    {
+      "callout": "20",
+      "part_number": "91303-PT0-004",
+      "description": "Seal, Housing (ARAI)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~housing~91303-pt0-004.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "21",
+      "part_number": "91304-PT0-000",
+      "description": "O-Ring (14.8X1.9)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91304-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/12988d798d77c732a6b7c5a7195f5a48/a76b355028a4c290eac02691107e921a.jpg"
+      ]
+    },
+    {
+      "callout": "22",
+      "part_number": "91305-PT0-003",
+      "description": "Seal, Plunger (NOK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~plunger~91305-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/23427f59cb27264302947752802d6245/d514dcbe92fd9f6baab8420401e1c207.jpg"
+      ]
+    },
+    {
+      "callout": "23",
+      "part_number": "91306-PT0-004",
+      "description": "Seal, FR. Cover (ARAI)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~seal~91306-pt0-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/75adb865ef82e9ba673230488c5a547f/224c8c7d36817809136c2229267c3129.jpg"
+      ]
+    },
+    {
+      "callout": "24",
+      "part_number": "91313-611-010",
+      "description": "O-Ring (23.5X2)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91313-611-010.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/51ba3210df2a01b894f68133c0cea4ca/5279e42eaa463de9056990b6e3a83188.jpg"
+      ]
+    },
+    {
+      "callout": "25",
+      "part_number": "91317-PT0-003",
+      "description": "O-Ring (3.8X1.9) (NOK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91317-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/26de79ca7f6c305e4acf721c4509be60/0130a23a0d59f751c60306b05ea04d7f.jpg"
+      ]
+    },
+    {
+      "callout": "26",
+      "part_number": "91318-PT0-003",
+      "description": "O-Ring (9.8X1.9) (NOK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91318-pt0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/5dfefa2b906ca07e24a5e160772472e6/a617fab1865597da8e76f2c94b5e0601.jpg"
+      ]
+    },
+    {
+      "callout": "26",
+      "part_number": "91318-PT0-004",
+      "description": "O-Ring (9.8X1.9) (ARAI)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91318-pt0-004.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ca8faf9ae39ca5fc06df68c78a8f8cd3/b8903dd6e3cc9c469e6eb526a0b7dce7.jpg"
+      ]
+    },
+    {
+      "callout": "27",
+      "part_number": "91322-PT0-003",
+      "description": "O-Ring (17.8X1.9) (NOK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~91322-pt0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "28",
+      "part_number": "94050-08080",
+      "description": "Nut, Flange (8MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~flange~94050-08080.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/69defaa27923a7f94a9aa037fdec26ed/a285c7d3fdbcd1d78b42354b2c8fee87.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/69defaa27923a7f94a9aa037fdec26ed/c96e5f38d25bf056558b49431268ac15.jpg"
+      ]
+    },
+    {
+      "callout": "29",
+      "part_number": "95701-06025-08",
+      "description": "Bolt, Flange (6X25)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06025-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8a78f4236049742fd840f8e728c47366/53e069ee7c157ea2e781d50e5798acc4.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/b72db64bdcee44145114df27d63bb7f0.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/0beb3289310e3319ab559395f2c53e2e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aba4428f10a3ea41ddfa8a96a2628f53/f207e9ac334f3b1902cdac8a4eb3689c.jpg"
+      ]
+    },
+    {
+      "callout": "30",
+      "part_number": "95701-06012-08",
+      "description": "Bolt, Flange (6X12)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06012-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d69c07b8ef83b8b3acd934de1cc55abc/b21307ec27f74a96ac268405d635792b.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/3b5d6f73f4b68a6034b830ad10ccc390.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/33e1c14a3b2a9aa06a789fdc76d5bdad.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7e21a41bb419a4efd01fbab634ee3d42/d427d96d1574d5210fc8787d1162a4e1.jpg"
+      ]
+    },
+    {
+      "callout": "31",
+      "part_number": "95701-06016-08",
+      "description": "Bolt, Flange (6X16)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06016-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f5dc76b3448d21b882e072c91aa01f35/504091bcabf54729836c8b3d48648fd7.jpg"
+      ]
+    },
+    {
+      "callout": "32",
+      "part_number": "95701-06028-08",
+      "description": "Bolt, Flange (6X28)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-06028-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f8c6b19ba1bd4e29496e78707795db0c/53424103603acd547a5a94286db246ae.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6a93058942cbebdbcc4d73dcd8b141e7/1da972b449e85ecfcdd61431131511e4.jpg"
+      ]
+    },
+    {
+      "callout": "33",
+      "part_number": "95701-08040-08",
+      "description": "Bolt, Flange (8X40)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-08040-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/07d4c205843ce675deafa37aa54113f1/7c37557c9de18a2aca2015909d4777ea.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/07d4c205843ce675deafa37aa54113f1/78fdaf5e3da1276c00e2361ff4ad05de.jpg"
+      ]
+    },
+    {
+      "callout": "34",
+      "part_number": "95701-10050-08",
+      "description": "Bolt, Flange (10X50)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10050-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8c317e02f27d544da7dbaa2a2756a315/f7f3bc5d49d9b2e5511ed6846ce32ab8.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ad4dc7aa381b3c7e09e0e8557bcce415/a805dbdde21a3f41a0bd19724254737e.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ad4dc7aa381b3c7e09e0e8557bcce415/b4bc7a568b1428e5ae9de69be94a20ad.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ad4dc7aa381b3c7e09e0e8557bcce415/6b018bdf44191ce32bd92dda7372cb80.jpg"
+      ]
+    },
+    {
+      "callout": "35",
+      "part_number": "95701-10070-08",
+      "description": "Bolt, Flange (10X70)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95701-10070-08.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "36",
+      "part_number": "95801-10080-08",
+      "description": "Bolt, Flange (10X80)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~95801-10080-08.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "b60116f9ff11cb4eb01fae00431fb6c3a431196919a355a7940062dfe91f3178",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}
