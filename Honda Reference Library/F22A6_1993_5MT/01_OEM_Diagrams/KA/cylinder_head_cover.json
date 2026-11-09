@@ -1,0 +1,154 @@
+{
+  "slug": "cylinder_head_cover",
+  "label": "Cylinder Head Cover",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/cylinder_head_cover.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/704a3a87417cf4ffd31aaea316a1de17.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/cylinder_head_cover.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/cylinder_head_cover.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/cylinder_head_cover.json",
+  "part_rows": 11,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "12030-PT0-000",
+      "description": "Gasket Set, Head Cover",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~set~head~cover~12030-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4f2809d87d12a367858964f5e38088ce/d227ebff6155fa7205883d1ad904dc91.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4f2809d87d12a367858964f5e38088ce/77f6ea39da342d8e9cba8fbed7bd6450.jpg"
+      ]
+    },
+    {
+      "callout": "2",
+      "part_number": "12310-PT3-010",
+      "description": "Cover, Cylinder Head",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: JPN",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~cylinder~head~12310-pt3-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "12310-PT7-020",
+      "description": "Cover, Cylinder Head",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA    Replaced By: 12310-PT3-010",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~cylinder~head~12310-pt7-020.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "12341-PT0-000",
+      "description": "Gasket, Cylinder Head Cover",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~cylinder~head~12341-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/48f7f1e6d841384e1cbfa687c43e2724/980c70810b93a98cbdec9d06e3b25adc.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/48f7f1e6d841384e1cbfa687c43e2724/e4871950d182acce7284dd02049bab66.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/48f7f1e6d841384e1cbfa687c43e2724/8a253b90dc12b81902b3399830f81426.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/79217e062bca615c0bf1d4483159faec/52626b3d96a7f89de86c77099d95d8de.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "12342-PT0-000",
+      "description": "Gasket B, Head Cover",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~head~cover~12342-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9b3aef0a9137601d223bba49f17a32e/472ba9a3e4d9597d9ec0a3f341679efb.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9b3aef0a9137601d223bba49f17a32e/3a18844d8e0987a36bd770baf16d096d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d9b3aef0a9137601d223bba49f17a32e/efb822c40feeb730986b2b3c83918cba.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/246b6ae7e95387e68b22d46a46f775ae/dc9c90ce83b675f94ca1c6d09fb5b466.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "15610-PC6-000",
+      "description": "Cap Assy., Oil Filler",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~15610-pc6-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/dd832554505cee47a9653b58eb0ec7f8/7a1c34f212761a8f188dcbcd1cc0e725.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/dd832554505cee47a9653b58eb0ec7f8/adf56d30ecb021b4dcc62a6e25983605.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7fd42275bf75fb1cdec1f5c81c768fec/46e68d4517d3ad686408e23ba2bc552d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/7fd42275bf75fb1cdec1f5c81c768fec/a4f9c6022ebc4e10cdd84b211b728939.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "15613-PC6-000",
+      "description": "Gasket, Oil Filler",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~filler~15613-pc6-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/232bf24a5dc27c7d85add4045e0002ab/db1736eb76282935ec7e4edc268536be.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/232bf24a5dc27c7d85add4045e0002ab/5a1fb6dfdb913a982e9de77404f20a97.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/232bf24a5dc27c7d85add4045e0002ab/3040c0431c2baf67bd60840d2e82a1e1.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/4d40b7bc503066499cf62086ec0db74b/b18c261d2d9862603d68a8f19955b665.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "32762-PT0-010",
+      "description": "Stay B, Ignition Wire Clamp",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~ignition~wire~32762-pt0-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "90213-PH3-000",
+      "description": "Nut, Cap (6MM)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~cap~90213-ph3-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/83a28227fb45f8f741398ab78a3470cc/79fd9c338473f5c0c892e6cd011074a1.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/83a28227fb45f8f741398ab78a3470cc/3d8fea207ae80c938b9eb1eabc6b8b9f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/83a28227fb45f8f741398ab78a3470cc/13a6f47f30536d6c89c4ec23c73949b4.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/83a28227fb45f8f741398ab78a3470cc/c1abce135f97180fed3bfcb51b0c7b56.jpg"
+      ]
+    },
+    {
+      "callout": "9",
+      "part_number": "90441-PT0-000",
+      "description": "Washer, Head Cover",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~washer~head~cover~90441-pt0-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/1cdeb60e21e0e64a7d38298b4d09f15a/5aad1184add2752a44fa6ca97f6213c7.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "96001-06010-07",
+      "description": "Bolt, Flange (6X10)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~flange~96001-06010-07.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/588df5ae117a152d348745032da63111/d20b0d9465856cf2b6876bdea4bc06b0.jpg"
+      ]
+    }
+  ],
+  "source_html_sha256": "ed31957437399b6aaf62ea432bbaa7e1dc89a36c5c8c4bce6f4d352fb5ddf762",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}

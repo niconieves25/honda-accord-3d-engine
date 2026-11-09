@@ -1,0 +1,140 @@
+{
+  "slug": "distributor_tec",
+  "label": "Distributor (TEC)",
+  "catalog": "1993 Honda Accord 4 Door EX KA 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-ka_5mt/engine/distributor_tec.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/1f5dbe38f8672523f67372ee37d250ab.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KA/distributor_tec.png",
+  "image_files": [
+    "01_OEM_Diagrams/KA/distributor_tec.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KA/distributor_tec.json",
+  "part_rows": 11,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "30100-PT3-A12",
+      "description": "Distributor Assy. (TD-52U) (TEC)  (N/A: SEE COMPONENTS)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~distributor~assy~30100-pt3-a12.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "30102-PT3-A12",
+      "description": "Cap Assy.",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~30102-pt3-a12.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/402cc124e0e27fea433247adc736496f/dc450201570d4164d59c5636070b4a0d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/402cc124e0e27fea433247adc736496f/d144ef4bcf416b244619bc0fb7825e23.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/402cc124e0e27fea433247adc736496f/8a58ca540ae8e7b21732628af6678c0f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/65b8fc5eed92c35b1325baea790d1227/cf68eae309f686a3a78cdc91cb62c507.jpg"
+      ]
+    },
+    {
+      "callout": "3",
+      "part_number": "30103-PT3-C02",
+      "description": "Head, Rotor",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~head~rotor~30103-pt3-c02.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/33dac5660b8c8b0e5d41682ce9f50d46/984e3efa6f531afd469216f415d937fb.jpg"
+      ]
+    },
+    {
+      "callout": "4",
+      "part_number": "06301-PT3-A20",
+      "description": "Distributor Housing Kit",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~distributor~housing~kit~06301-pt3-a20.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/58deb87706bff6bf89d76416c203ae05/9fdd158bfa4ff8479fc99be388985ba9.jpg"
+      ]
+    },
+    {
+      "callout": "5",
+      "part_number": "30107-P08-006",
+      "description": "Cover, Leak",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~cover~leak~30107-p08-006.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f3f1a19cde279422ae56d70693bf1819/c0ddfd19750014d620352d94177b4075.jpg"
+      ]
+    },
+    {
+      "callout": "6",
+      "part_number": "30110-PA1-732",
+      "description": "O-Ring (26.4X3.1) (TEC)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~30110-pa1-732.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ea3fa654e2801932c50b459f3fdb0244/26b52a88716746feaa389e6120e9ab5d.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ea3fa654e2801932c50b459f3fdb0244/344ba87f818e67df49734ea9615c54c3.jpg"
+      ]
+    },
+    {
+      "callout": "7",
+      "part_number": "06302-PT2-000",
+      "description": "Igniter Unit Kit (NEC/ELESYS)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~igniter~unit~kit~06302-pt2-000.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/f9e5662a327b9a584dcea6cd75edda6b/7de37f9158b03632baa766d54322d1ec.jpg"
+      ]
+    },
+    {
+      "callout": "8",
+      "part_number": "30121-PT2-006",
+      "description": "Sink, Heat",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~sink~heat~30121-pt2-006.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "30132-PT2-006",
+      "description": "Gasket, Cap",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~gasket~cap~30132-pt2-006.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/d33e17d5e53629a7d3c243c07d9db7da/0a263d7e0b80d6543ffdb76625090725.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "30130-PT2-006",
+      "description": "Igniter Unit (OKI)",
+      "quantity": null,
+      "details": "Replaced By: 30130-P54-006",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~igniter~unit~30130-pt2-006.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "10",
+      "part_number": "30130-P54-006",
+      "description": "Igniter Unit (MC-8132) (NEC)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~igniter~unit~30130-p54-006.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "a6b922dbedb475297cba4e83fe9c21c3027f31cb5fc9fc5566e265d4f3abc49c",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}
