@@ -1,5 +1,6 @@
-// Checks the mechanical timing against the reference brief (section 5). Run: node tests/timing.mjs
-import {CYL, DECK, exhaustLift, firingNow, intakeLift, onBaseCircle, phase, piston, pinXY, R, RATIO, SPEC, strokeOf, TDC, travel, ASSUMED} from '../src/kin.js';
+// Checks the fixed-profile F22A6 kinematics and the independent IAB input. Run: node tests/timing.mjs
+import {ENGINE, CAM_LAYOUT, VALVE_EVENTS, VALVETRAIN, SPEC_EVIDENCE} from '../src/engine-spec.js';
+import {CYL, DECK, exhaustLift, firingNow, intakeLift, iabPosition, phase, piston, pinXY, R, RATIO, SPEC, strokeOf, TDC, travel, ASSUMED} from '../src/kin.js';
 
 let fails = 0;
 const ok = (cond, msg) => {
@@ -55,18 +56,31 @@ ok(RATIO.balanceFront === 2 && RATIO.balanceRear === -2, 'balance shafts at twic
 // valves: shut through most of compression and power (allowing the brief's overlap at the stroke boundaries)
 let shut = true;
 for (let ps = 0; ps < 120; ps++) {
-  const v = intakeLift(ps, 0);
+  const v = intakeLift(ps);
   if (v.a || v.b || exhaustLift(ps)) shut = false;
 }
 for (let ps = 610; ps < 720; ps++) {
-  const v = intakeLift(ps, 1);
+  const v = intakeLift(ps);
   if (v.a || v.b || exhaustLift(ps)) shut = false;
 }
 ok(shut, 'all valves closed from 610° to 120° after TDC (around the firing TDC)');
-ok(intakeLift(450, 0).b < 0.15 * intakeLift(450, 0).a, 'VTEC off: second intake valve opens only slightly');
-ok(near(intakeLift(450, 1).a, intakeLift(450, 1).b) && intakeLift(450, 1).a > intakeLift(450, 0).a, 'VTEC on: both intake valves follow the larger middle lobe');
-ok(onBaseCircle(100) && !onBaseCircle(450), 'VTEC may switch only on the base circle (zero lift)');
-ok(DECK > S_TDC, `piston crown stays below the deck at TDC (deck ${DECK.toFixed(1)} mm)`);
+let fixedInlet = true, repeatable = true;
+for (let ps = -720; ps <= 1440; ps += 0.5) {
+  const a = intakeLift(ps), b = intakeLift(ps + 720);
+  if (!near(a.a,a.b) || a.a < 0 || a.a > VALVE_EVENTS.intake.lift) fixedInlet = false;
+  if (!near(a.a,b.a) || !near(exhaustLift(ps),exhaustLift(ps+720))) repeatable = false;
+}
+ok(fixedInlet, 'both inlet valves follow the same fixed profile over the entire cycle');
+ok(repeatable, 'valve motion repeats every 720 crank degrees including negative/seeking angles');
+ok(ENGINE.code === 'F22A6' && ENGINE.transmission === '5MT' && ENGINE.market === null, 'identity is F22A6 / 5MT with unresolved market');
+ok(!ENGINE.variableValveLift && !VALVETRAIN.variableValveLift, 'no variable-lift mechanism is specified');
+ok(VALVETRAIN.intakeRockersA === 4 && VALVETRAIN.intakeRockersB === 4 && VALVETRAIN.exhaustRockers === 8, 'OEM valvetrain quantities: inlet A4 + inlet B4 + exhaust8');
+ok(VALVETRAIN.intakeShaftsShort === 2 && VALVETRAIN.intakeShaftsLong === 3 && VALVETRAIN.exhaustShafts === 1, 'OEM rocker-shaft quantities: inlet short2/long3, exhaust1');
+ok(Object.keys(VALVE_EVENTS).join(',') === 'intake,exhaust', 'there are only fixed inlet/exhaust timing profiles');
+ok(CAM_LAYOUT.every(t => ['intake','exhaust'].includes(t.profile) && t.classification === 'illustrative'), 'unmeasured cam-track geometry is explicitly qualified');
+ok(['bore','stroke','cr','displacementCc'].every(k => SPEC_EVIDENCE[k].classification === 'verified'), 'primary 1993 manual supports bore, stroke, compression and displacement');
+ok(iabPosition(-1) === 0 && iabPosition(0.45) === 0.45 && iabPosition(2) === 1 && iabPosition(NaN) === 0, 'IAB presentation state is clamped independently of crank input');
+ok(DECK > S_TDC + ASSUMED.pistonCompressionHeight, `piston crown stays below the deck at TDC (deck ${DECK.toFixed(1)} mm)`);
 
 console.log(fails ? `\n${fails} check(s) failed` : '\nall timing checks passed');
 process.exit(fails ? 1 : 0);

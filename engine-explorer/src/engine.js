@@ -1,21 +1,27 @@
-// The F22 engine built from code, in millimetres, after the ten photographs (exterior) and the Honda exploded diagrams
-// (how the inside fits together). Every mesh belongs to a part group named after its id in parts.js; update(th, st)
-// poses all moving parts for crank angle th (degrees) and the VTEC state.
+// The F22A6 engine built from the 1993 EX 5MT OEM diagrams, in millimetres.
+// Each mesh belongs to a named selectable assembly. update(theta, {iab, ...}) poses
+// the fixed-profile engine from crank angle and the independent manifold bypass state.
 //
 // Axes: +z toward the timing-belt end (cylinder 1), y up, exhaust side -x, intake side +x. Sizes that are not Honda
-// figures come from ASSUMED in kin.js or are estimated from the photographs (see "About accuracy" on the page).
+// figures are qualified in engine-spec.js. The base envelope is illustrative shared-family layout;
+// the detail passes replace assemblies using the active A6 references.
 import * as THREE from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
-import {ASSUMED, balanceAngle, camAngle, CYL, DECK, exhaustLift, intakeLift, LOBE, lobePeak, phase, piston, pinXY, PULLEY, R, SPEC, strokeOf, TDC} from './kin.js';
+import {ASSUMED, balanceAngle, camAngle, CAM_LAYOUT, CYL, DECK, exhaustLift, iabPosition, intakeLift, LOBE, lobePeak, phase, piston, pinXY, PULLEY, R, SPEC, strokeOf, TDC} from './kin.js';
 import {PARTS, PART} from './parts.js';
 import {castBump, coverTop, ribs, rustShield} from './textures.js';
+import {detailCastings} from './detail-castings.js';
+import {detailExterior} from './detail-exterior.js';
+import {detailInternals} from './detail-internals.js';
+import {detailTiming} from './detail-timing.js';
+import {consolidateStatic} from './consolidate-static.js';
 
 const V3 = THREE.Vector3;
 const V2 = THREE.Vector2;
 const D2R = Math.PI / 180;
 const v = (x, y, z) => new V3(x, y, z);
 
-// layout (mm) — positions estimated from the photographs unless noted
+// layout (mm) — shared-family envelope estimates, not measured A6 manufacturing dimensions
 export const L = {
   blockZ: [-250, 211],
   headZ: [-250, 211],
@@ -31,10 +37,11 @@ export const L = {
   wp: [52, 150], // water-pump pulley centre
   tens: [-46, 140], // timing-belt tensioner
   balF: [-72, 92], // front balance shaft
-  balR: [70, -35], // rear balance shaft
+  balR: [70, 60], // rear balance shaft; reconstructed placement
+  balDrive: [106, 60], // separate belt-driven input to rear reversing gearcase
   balAdj: [-46, -48], // balancer belt adjuster
-  alt: [-176, 186, 168], // alternator centre (x, y, z), measured against the crank pulley in photo 3
-  psp: [-150, 305, 196], // power-steering pump centre (photo 3)
+  alt: [-176, 186, 168], // approximate alternator centre (x, y, z)
+  psp: [-150, 305, 196], // power-steering pump centre (illustrative shared layout)
 };
 const zOf = (c) => CYL[c - 1].z;
 
@@ -120,15 +127,16 @@ function pulleyGeo(r, w, grooves = 0, seg = 48) {
   return g;
 }
 
-export function buildEngine() {
+export function buildEngine(options = {}) {
+  const mark=(mesh,id,instance=0)=>{mesh.userData.catalogPiece=id;mesh.userData.catalogInstance=instance;mesh.name=`${id}:${instance}`;return mesh;};
   const root = new THREE.Group();
   const bump = castBump();
   bump.repeat.set(3, 3);
   const M = {
     cast: new THREE.MeshStandardMaterial({color: '#8d9094', roughness: 0.8, metalness: 0.45, bumpMap: bump, bumpScale: 0.6}),
     castLight: new THREE.MeshStandardMaterial({color: '#9b9ea2', roughness: 0.74, metalness: 0.45, bumpMap: bump, bumpScale: 0.5}),
-    cover: new THREE.MeshStandardMaterial({color: '#a2a29b', roughness: 0.5, metalness: 0.55}),
-    coverTop: new THREE.MeshStandardMaterial({map: coverTop(), roughness: 0.5, metalness: 0.5}),
+    cover: new THREE.MeshStandardMaterial({color: '#252729', roughness: 0.5, metalness: 0.55}),
+    coverTop: new THREE.MeshStandardMaterial({color: '#ffffff', map: coverTop(), roughness: 0.5, metalness: 0.5}),
     plastic: new THREE.MeshStandardMaterial({color: '#232427', roughness: 0.62, metalness: 0.05, bumpMap: ribs(), bumpScale: 1.2}),
     plasticPlain: new THREE.MeshStandardMaterial({color: '#232427', roughness: 0.62, metalness: 0.05}),
     paintBlack: new THREE.MeshStandardMaterial({color: '#19191b', roughness: 0.42, metalness: 0.2}),
@@ -149,7 +157,6 @@ export function buildEngine() {
     oil: new THREE.MeshStandardMaterial({color: '#c98a14', roughness: 0.35, metalness: 0.2, emissive: '#c98a14', emissiveIntensity: 0}),
     brass: new THREE.MeshStandardMaterial({color: '#b8a06a', roughness: 0.4, metalness: 0.9}),
     forged: new THREE.MeshStandardMaterial({color: '#9fa3a8', roughness: 0.35, metalness: 0.95}),
-    forgedMid: new THREE.MeshStandardMaterial({color: '#c9ccd1', roughness: 0.3, metalness: 0.95}),
   };
   // the shells that turn see-through in the lower-block and cutaway views
   const SHELL = new Set(['block', 'head', 'valveCover', 'oilPan', 'bearingBridge', 'timingCoverUpper', 'timingCoverLower', 'heatShield', 'exhaustManifold', 'plenum', 'runners']);
@@ -199,7 +206,7 @@ export function buildEngine() {
   // alternator and pump mounting bosses
   at(add('block', new THREE.BoxGeometry(30, 60, 50), M.cast), -105, 70, 160);
   at(add('block', new THREE.BoxGeometry(24, 46, 40), M.cast), 104, 20, -40);
-  // the rear (transmission) face: a wide flange with bolt bosses (photo 8)
+  // the rear (transmission) face: a wide flange with bolt bosses (illustrative shared layout)
   {
     const sh = new THREE.Shape();
     const pts = [[-150, -70], [-160, 40], [-128, 150], [-110, 228], [110, 228], [128, 150], [160, 40], [150, -70]];
@@ -215,7 +222,7 @@ export function buildEngine() {
   // bearing-cap bridge (the stiffener under the crank, photo 7) — shape approximate
   at(add('bearingBridge', new RoundedBoxGeometry(200, 26, BL - 14, 2, 4), M.cast), 0, -58, BZ);
   for (const z of [192, 96, 0, -96, -192]) at(add('bearingBridge', new THREE.BoxGeometry(206, 34, 22), M.cast), 0, -56, z);
-  // oil pan: deep under the front and middle, shallower toward the transmission (photos 3, 7)
+  // oil pan: deep under the front and middle, shallower toward the transmission (illustrative shared layout)
   {
     const sh = new THREE.Shape();
     const pts = [[Z1 - 8, -71], [Z1 - 8, -104], [Z1 - 40, -122], [-110, -122], [-140, -104], [Z0 + 6, -100], [Z0 + 6, -71]];
@@ -261,7 +268,7 @@ export function buildEngine() {
     const top = add('valveCover', new THREE.PlaneGeometry(CL - 40, 190), M.coverTop);
     top.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(v(0, 0, 1), v(1, 0, 0), v(0, 1, 0)));
     top.position.set(8, y1 + 0.3, CZ);
-    // raised ribs along both long edges, the plug-hole row on the exhaust side (boots and bolts alternate, photo 5)
+    // raised ribs along both long edges, base plug-well row, replaced by the A6 detail pass
     for (const s of [-1, 1]) at(add('valveCover', new RoundedBoxGeometry(8, 6, CL - 30, 1, 2), M.cover), s * 97, y1 + 1, CZ);
     for (const cy of CYL) {
       at(add('valveCover', new THREE.CylinderGeometry(19, 21, 10, 28), M.cover), -66, y1 + 3, cy.z);
@@ -270,7 +277,7 @@ export function buildEngine() {
     for (const z of [192, 96, 0, -96, -192]) bolt('valveCover', -66, y1 + 4, z, 'y', 7, M.darkSteel);
     for (const z of [140, 0, -150]) bolt('valveCover', 84, y1 + 4, z, 'y', 7, M.darkSteel);
     for (const z of [-220, -60, 60, 180]) bolt('valveCover', 113, y0 + 10, z, 'x', 6, M.darkSteel);
-    // oil filler cap at the timing end, intake half (photos 1, 2, 5)
+    // base oil filler cap, replaced by the A6 detail pass (illustrative shared layout)
     at(add('oilCap', new THREE.CylinderGeometry(30, 30, 18, 36), M.paintBlack), 40, y1 + 10, 160);
     for (let k = 0; k < 6; k++) {
       const a = (k / 6) * Math.PI;
@@ -314,7 +321,7 @@ export function buildEngine() {
     });
     add('crankshaft', cylZ(19, 90), M.steel, crank).position.z = 245; // snout through the front pulleys
   }
-  // rear flange with eight bolts (photo 8)
+  // rear flange with eight bolts (illustrative shared layout)
   const flange = new THREE.Group();
   flange.position.z = Z0 - 22;
   G.crankFlange.add(flange);
@@ -369,8 +376,16 @@ export function buildEngine() {
   const balF = balancer('balancerFront', L.balF);
   const balR = balancer('balancerRear', L.balR);
   // the rear shaft's drive gear at the front, in the oil-pump gear case (layout approximate)
-  const balRGear = add('balancerRear', cylZ(22, 12, 24), M.darkSteel);
+  const balRGear = add('balancerRear', cylZ(18, 12, 24), M.darkSteel);
   balRGear.position.set(L.balR[0], L.balR[1], 196);
+
+  const balInputGear=add('balancerRear',cylZ(18,12,24),M.darkSteel);
+  balInputGear.position.set(...L.balDrive,196);
+  // Two meshing gears reverse the rear shaft. No front-shaft-to-rear-shaft link.
+  const caseShape=new THREE.Shape();caseShape.moveTo(49,34);caseShape.lineTo(124,34);caseShape.lineTo(131,84);caseShape.lineTo(49,84);caseShape.closePath();
+  for(const x of [L.balR[0],L.balDrive[0]]){const h=new THREE.Path();h.absarc(x,60,19,0,Math.PI*2,true);caseShape.holes.push(h);}
+  const caseGeo=new THREE.ExtrudeGeometry(caseShape,{depth:17,bevelEnabled:false});
+  at(add('balancerRear',caseGeo,M.cast),0,0,186);
 
   // ============================================================ timing drive (front): pulleys, belts, tensioners
   const crankTiming = add('crankTimingPulley', pulleyGeo(PULLEY.crankTiming / 2, 22, 8, 40), M.steel);
@@ -395,24 +410,26 @@ export function buildEngine() {
   crankBal.position.z = L.balZ;
   const balFPulley = add('balancerBelt', pulleyGeo(PULLEY.balancer / 2, 14, 4, 28), M.steel);
   balFPulley.position.set(L.balF[0], L.balF[1], L.balZ);
+  const balInputPulley=add('balancerBelt',pulleyGeo(PULLEY.balancer/2,14,4,28),M.steel);
+  balInputPulley.position.set(...L.balDrive,L.balZ);
   const balAdj = add('balancerAdjuster', pulleyGeo(18, 14), M.steel);
   balAdj.position.set(L.balAdj[0], L.balAdj[1], L.balZ);
-  add('balancerBelt', beltGeo(beltPath([[0, 0, PULLEY.crankBalancer / 2], [L.balF[0], L.balF[1], PULLEY.balancer / 2], [L.balAdj[0], L.balAdj[1], 18]]), L.balZ, 14, 3.5), M.rubber);
+  add('balancerBelt', beltGeo(beltPath([[0, 0, PULLEY.crankBalancer / 2], [L.balF[0], L.balF[1], PULLEY.balancer / 2], [L.balDrive[0],L.balDrive[1],PULLEY.balancer/2], [L.balAdj[0], L.balAdj[1], 18]]), L.balZ, 14, 3.5), M.rubber);
   // oil pump: a housing round the crank snout, its gear case reaching to the rear balance shaft
   at(add('oilPump', cylZ(66, 14, 40), M.cast), 0, -8, 200);
   at(add('oilPump', new RoundedBoxGeometry(70, 46, 14, 1, 6), M.cast), 45, -30, 200);
 
-  // timing covers: black ribbed plastic (photos 1, 3, 6)
+  // timing covers: black ribbed plastic (illustrative shared layout)
   {
     const up = add('timingCoverUpper', new RoundedBoxGeometry(150, 120, 30, 4, 14), M.plastic);
     up.position.set(4, L.camY + 24, 238);
     const lo = add('timingCoverLower', new RoundedBoxGeometry(200, 250, 34, 4, 18), M.plastic);
     lo.position.set(2, 98, 240);
     at(add('timingCoverLower', new RoundedBoxGeometry(150, 66, 34, 4, 18), M.plastic), 10, -40, 242);
-    at(add('timingCoverLower', cylZ(22, 14), M.plasticPlain), 52, 70, 260); // round boss (photo 3)
+    at(add('timingCoverLower', cylZ(22, 14), M.plasticPlain), 52, 70, 260); // round boss (illustrative shared layout)
     at(add('timingCoverLower', new THREE.BoxGeometry(22, 30, 10), M.plasticPlain), -30, 110, 258);
   }
-  // engine mounting bracket with its stud (photo 3)
+  // engine mounting bracket with its stud (illustrative shared layout)
   at(add('engineMount', new RoundedBoxGeometry(84, 34, 26, 2, 4), M.rust), 46, 196, 262);
   at(add('engineMount', new THREE.CylinderGeometry(6, 6, 70, 12), M.darkSteel), 46, 246, 266);
   for (const x of [20, 72]) bolt('engineMount', x, 196, 276, 'z', 8, M.darkSteel);
@@ -423,7 +440,7 @@ export function buildEngine() {
   G.crankPulley.add(crankPulley);
   add('crankPulley', pulleyGeo(PULLEY.crank / 2, 30, 8, 64), M.pulley, crankPulley);
   add('crankPulley', cylZ(28, 34, 6), M.darkSteel, crankPulley).position.z = 4;
-  // alternator: finned case with red windings in the vents (photos 6, 7)
+  // alternator: finned case with red windings in the vents (illustrative shared layout)
   const alt = new THREE.Group();
   alt.position.set(L.alt[0], L.alt[1], L.alt[2]);
   G.alternator.add(alt);
@@ -444,7 +461,7 @@ export function buildEngine() {
   const altPulley = add('alternator', pulleyGeo(PULLEY.alternator / 2, 22, 6, 32), M.pulley);
   altPulley.position.set(L.alt[0], L.alt[1], L.accZ[0]);
   add('alternator', cylZ(12, 70), M.steel).position.set(L.alt[0], L.alt[1], L.accZ[0] - 40);
-  // power-steering pump: body, bracket, holed pulley (photos 3, 6)
+  // power-steering pump: body, bracket, holed pulley (illustrative shared layout)
   const psp = new THREE.Group();
   psp.position.set(L.psp[0], L.psp[1], L.psp[2]);
   G.psPump.add(psp);
@@ -472,9 +489,9 @@ export function buildEngine() {
   // accessory belts: crank → alternator, crank → power steering
   add('accessoryBelts', beltGeo(beltPath([[0, 0, PULLEY.crank / 2], [L.alt[0], L.alt[1], PULLEY.alternator / 2]]), L.accZ[0], 18, 4), M.rubber);
   add('accessoryBelts', beltGeo(beltPath([[0, 0, PULLEY.crank / 2], [L.psp[0], L.psp[1], PULLEY.powerSteering / 2]]), L.accZ[1], 13, 4), M.rubber);
-  // power-steering hose looping over the timing end to the intake side (photo 1)
+  // power-steering hose looping over the timing end to the intake side (illustrative shared layout)
   tube('psHose', [[L.psp[0] + 30, L.psp[1] + 30, 186], [-40, DECK + 140, 214], [80, DECK + 120, 236], [138, DECK + 20, 250], [150, 80, 262], [160, -80, 270], [175, -125, 250]], 10, M.rubber, null, 96);
-  // dipstick: tube and yellow loop (photos 3, 6)
+  // dipstick: tube and yellow loop (illustrative shared layout)
   tube('dipstick', [[-62, 60, 188], [-58, 200, 196], [-55, DECK + 60, 206], [-54, DECK + 100, 208]], 4, M.steel, null, 32, 8);
   {
     const loop = add('dipstick', new THREE.TorusGeometry(14, 3.5, 8, 24), M.yellow);
@@ -491,7 +508,7 @@ export function buildEngine() {
       tube('runners', [[121, DECK + 50, cy.z], [165, DECK + 34, cy.z], [211, DECK - 34, cy.z * 0.98], [247, DECK - 10, cy.z * 0.96], [241, DECK + 22, cy.z * 0.95], [PX, PY, cy.z * 0.94]], 21, M.cast, null, 56, 16);
       at(add('runners', new THREE.BoxGeometry(14, 60, 62), M.cast), 127, DECK + 50, cy.z);
     }
-    // throttle body at the transmission end, the corrugated duct rising and crossing the end (photos 2, 5, 8)
+    // throttle body at the transmission end, the corrugated duct rising and crossing the end (illustrative shared layout)
     at(add('throttleBody', cylZ(34, 46, 32), M.castLight), PX, PY + 6, -284);
     at(add('throttleBody', new THREE.BoxGeometry(30, 44, 24), M.paintBlack), PX + 38, PY + 10, -280);
     at(add('throttleBody', new THREE.BoxGeometry(14, 30, 30), M.paintBlack), PX - 38, PY + 20, -288);
@@ -509,15 +526,15 @@ export function buildEngine() {
     mouth.quaternion.setFromUnitVectors(v(0, 0, 1), dc.getTangentAt(1));
     // a resonator box on the duct
     at(add('intakeDuct', new RoundedBoxGeometry(150, 46, 60, 3, 14), M.rubber), 110, DECK + 160, -350);
-    // the second, smaller opening beside it (photo 8)
+    // the second, smaller opening beside it (illustrative shared layout)
     const d2 = crv([[150, DECK + 40, -320], [140, DECK + 50, -360], [130, DECK + 54, -400]]);
     add('intakeDuct', new THREE.TubeGeometry(d2, 24, 24, 20, false), M.rubber);
     const m2 = add('intakeDuct', new THREE.TorusGeometry(25, 5, 8, 28), M.rubber);
     m2.position.copy(d2.getPointAt(1));
     // fuel rail with the pressure regulator at the transmission end, injectors under it into the runner ends
-    at(add('fuelRail', new THREE.BoxGeometry(18, 18, 390), M.castLight), 140, DECK + 82, -30);
+    mark(at(add('fuelRail', new THREE.BoxGeometry(18, 18, 390), M.castLight), 140, DECK + 82, -30),'rail-fuel');
     at(add('fuelRail', cylZ(13, 34, 20), M.steel), 140, DECK + 82, -242);
-    tube('fuelRail', [[140, DECK + 82, 170], [152, DECK + 100, 200], [162, DECK + 90, 230]], 4, M.steel, null, 16, 8);
+    mark(tube('fuelRail', [[140, DECK + 82, 170], [152, DECK + 100, 200], [162, DECK + 90, 230]], 4, M.steel, null, 16, 8),'rail-fuel');
     for (const cy of CYL) {
       const inj = add('injectors', new THREE.CylinderGeometry(7, 6, 44, 16), M.paintBlack);
       inj.position.set(137, DECK + 60, cy.z);
@@ -525,7 +542,7 @@ export function buildEngine() {
       at(add('injectors', new THREE.BoxGeometry(14, 10, 18), M.rubber), 145, DECK + 78, cy.z + 14);
     }
   }
-  // wiring loom along the intake side and over the top (photos 1, 2) — decoration, not selectable
+  // wiring loom along the intake side and over the top (illustrative shared layout) — decoration, not selectable
   tube(null, [[165, DECK + 110, 200], [165, DECK + 112, 80], [161, DECK + 108, -60], [165, DECK + 104, -200], [135, DECK + 120, -250]], 7, M.rubber, null, 48, 8);
   tube(null, [[165, DECK + 20, 230], [185, DECK - 60, 200], [195, DECK - 90, 60], [191, DECK - 80, -120]], 6, M.rubber, null, 48, 8);
 
@@ -538,7 +555,7 @@ export function buildEngine() {
     }
     at(add('exhaustManifold', new THREE.CylinderGeometry(26, 24, 60, 24), M.iron), col[0], col[1], col[2]);
     at(add('exhaustManifold', new THREE.CylinderGeometry(40, 40, 10, 3), M.iron), col[0], col[1] - 34, col[2]);
-    // the heat shield: a curved sheet over the manifold, wide at the head, narrowing to the collector (photos 5–7)
+    // the heat shield: a curved sheet over the manifold, wide at the head, narrowing to the collector (illustrative shared layout)
     const NU = 28;
     const NV = 36;
     const pos = [];
@@ -573,7 +590,7 @@ export function buildEngine() {
     g.computeVertexNormals();
     add('heatShield', g, M.shield);
     for (const [y, z] of [[DECK + 30, -110], [DECK + 30, 30], [100, -70]]) bolt('heatShield', -214, y, z, 'x', 7, M.rust);
-    // coolant outlet at the transmission end of the head with its hose stub (photos 5, 7)
+    // coolant outlet at the transmission end of the head with its hose stub (illustrative shared layout)
     at(add('coolantOutlet', new RoundedBoxGeometry(40, 50, 44, 2, 8), M.castLight), -131, DECK + 46, -226);
     tube('coolantOutlet', [[-145, DECK + 44, -226], [-180, DECK + 38, -240], [-204, DECK + 30, -252]], 17, M.rubber, null, 16, 16);
   }
@@ -591,18 +608,18 @@ export function buildEngine() {
       const a = (k / 5) * Math.PI * 2 + 0.3;
       at(add('distributor', cylZ(7, 16, 12), M.paintBlack), Math.cos(a) * 24, L.camY + Math.sin(a) * 24, dz - 78);
     }
-    // leads from the cap along the exhaust edge of the cover to each plug boot (photos 2, 5)
+    // leads from the cap along the intake edge of the cover to each plug boot (illustrative shared layout)
     CYL.forEach((cy, k) => {
       const a = (k / 5) * Math.PI * 2 + 0.3;
       const sx = Math.cos(a) * 24;
       const sy = L.camY + Math.sin(a) * 24;
-      tube('plugLeads', [[sx, sy, dz - 86], [sx - 30, L.coverY[1] + 30 + k * 4, dz - 90], [-88 - k * 5, L.coverY[1] + 18 + k * 3, dz + 20], [-90, L.coverY[1] + 30, cy.z - 30], [-66, L.coverY[1] + 30, cy.z]], 3.6, M.rubber, null, 64, 8);
+      tube('plugLeads', [[sx, sy, dz - 86], [sx - 30, L.coverY[1] + 30 + k * 4, dz - 90], [88 + k * 5, L.coverY[1] + 18 + k * 3, dz + 20], [90, L.coverY[1] + 30, cy.z - 30], [66, L.coverY[1] + 30, cy.z]], 3.6, M.rubber, null, 64, 8);
     });
   }
-  const plugAxis = new V3(-66, L.coverY[1] - 30 - DECK, 0).normalize(); // from the chamber centre up to the boot
+  const plugAxis = new V3(66, L.coverY[1] - 30 - DECK, 0).normalize(); // from the chamber centre up to the boot
   for (const cy of CYL) {
     const g = new THREE.Group();
-    g.position.set(-6, DECK + 6, cy.z);
+    g.position.set(6, DECK + 6, cy.z);
     g.quaternion.setFromUnitVectors(v(0, 1, 0), plugAxis);
     G.sparkPlugs.add(g);
     at(add('sparkPlugs', new THREE.CylinderGeometry(5, 5, 20, 12), M.steel, g), 0, 10, 0);
@@ -611,36 +628,37 @@ export function buildEngine() {
   }
   const sparks = CYL.map((cy) => {
     const s = new THREE.Mesh(new THREE.SphereGeometry(9, 16, 12), new THREE.MeshBasicMaterial({color: '#ffe066', transparent: true, opacity: 0, depthWrite: false}));
-    s.position.set(-4, DECK + 2, cy.z);
+    s.position.set(4, DECK + 2, cy.z);
     s.userData.part = 'sparkPlugs';
     s.userData.fx = true;
     G.sparkPlugs.add(s);
     return s;
   });
 
-  // ============================================================ valvetrain: camshaft, valves, springs, rockers, VTEC
+  // ============================================================ fixed SOHC valvetrain
   const cam = new THREE.Group();
   cam.position.set(0, L.camY, 0);
   G.camshaft.add(cam);
   add('camshaft', cylZ(13, L.headZ[1] - L.headZ[0] + 20, 20), M.steel, cam).position.z = (L.headZ[0] + L.headZ[1]) / 2;
-  // lobe order per cylinder along z: exhaust A, primary, middle, secondary, exhaust B
-  const LZ = {exA: 36, primary: 14, middle: 0, secondary: -14, exB: -36};
+  const LZ = Object.fromEntries(CAM_LAYOUT.map(track => [track.key, track.offsetMm]));
   const lobes = [];
-  CYL.forEach((cy) => {
-    for (const [key, lobe] of [['exA', 'exhaust'], ['primary', 'primary'], ['middle', 'middle'], ['secondary', 'secondary'], ['exB', 'exhaust']]) {
-      const lg = new THREE.Group();
-      lg.position.z = cy.z + LZ[key];
-      // nose straight up when this lobe is at full lift: cam angle at that moment, wound back
-      lg.rotation.z = -camAngle(TDC[cy.c] + lobePeak(lobe)) * D2R;
-      cam.add(lg);
-      const isV = ['primary', 'middle', 'secondary'].includes(lobe);
-      add(isV ? 'camshaft' : 'camshaft', lobeGeo(LOBE[lobe].lift, LOBE[lobe].win, 11), M.steel, lg);
-      lobes.push({lg, cy, lobe});
-    }
-  });
-  // rocker shafts
-  for (const s of [-1, 1]) at(add('rockerShafts', cylZ(8, L.headZ[1] - L.headZ[0] - 10, 16), M.steel), s * L.rockX, L.rockY, (L.headZ[0] + L.headZ[1]) / 2);
-  const intakeShaftOil = at(add('rockerShafts', cylZ(4, L.headZ[1] - L.headZ[0] - 12, 12), M.oil), L.rockX, L.rockY, (L.headZ[0] + L.headZ[1]) / 2);
+  for (const cy of CYL) for (const track of CAM_LAYOUT) {
+    const lg = new THREE.Group();
+    lg.name = `cam-track-${cy.c}-${track.key}`;
+    lg.userData.profile = track.profile;
+    lg.userData.evidence = track.classification;
+    lg.position.z = cy.z + track.offsetMm;
+    lg.rotation.z = -camAngle(TDC[cy.c] + lobePeak(track.profile)) * D2R;
+    cam.add(lg);
+    add('camshaft', lobeGeo(LOBE[track.profile].lift, LOBE[track.profile].win, track.widthMm), M.steel, lg);
+    lobes.push({lg, cy, lobe: track.profile, key: track.key});
+  }
+  // A6 OEM head: one full exhaust shaft, TWO short inlet shafts plus THREE long
+  // inlet shafts. Inlet sections sit in the five holders, with gaps between them.
+  // Segment lengths/locations are illustrative; the topology and quantities are OEM.
+  mark(at(add('rockerShafts', cylZ(8, L.headZ[1] - L.headZ[0] - 10, 24), M.steel), -L.rockX, L.rockY, (L.headZ[0] + L.headZ[1]) / 2), 'shaft-exhaust-rockers');
+  for (const [i,z] of [172,-172].entries()) mark(at(add('rockerShafts', cylZ(8,56,24), M.steel), L.rockX,L.rockY,z), 'shaft-inlet-rockers-a', i);
+  for (const [i,z] of [96,0,-96].entries()) mark(at(add('rockerShafts', cylZ(8,84,24), M.steel), L.rockX,L.rockY,z), 'shaft-inlet-rockers-b', i);
 
   // valves: tilted in the pent roof; d = unit vector from the valve head up the stem
   const tilt = ASSUMED.valveTilt * D2R;
@@ -649,14 +667,14 @@ export function buildEngine() {
   const valveGroup = (id, x0, z, side) => {
     const dir = v(side * Math.sin(tilt), Math.cos(tilt), 0);
     const g = new THREE.Group();
-    g.position.set(x0, DECK + 3, z);
+    g.position.set(x0, DECK + ASSUMED.valveSeatAboveDeck, z);
     g.quaternion.setFromUnitVectors(v(0, 1, 0), dir);
     G[id].add(g);
     at(add(id, new THREE.CylinderGeometry(2.8, 2.8, 80, 10), M.steel, g), 0, 40, 0);
     at(add(id, new THREE.CylinderGeometry(side > 0 ? 16 : 14, 4, 4, 28), M.steel, g), 0, 1, 0);
     // spring and retainer stay with the head; they compress as the valve opens
     const sp = new THREE.Group();
-    sp.position.set(x0, DECK + 3, z);
+    sp.position.set(x0, DECK + ASSUMED.valveSeatAboveDeck, z);
     sp.quaternion.copy(g.quaternion);
     G[id].add(sp);
     const pts = [];
@@ -677,7 +695,7 @@ export function buildEngine() {
     }
   });
   // where a valve tip sits (top of the stem), for the rocker arms
-  const tipOf = (x0, side) => [x0 + side * Math.sin(tilt) * 76, DECK + 3 + Math.cos(tilt) * 76];
+  const tipOf = (x0, side) => [x0 + side * Math.sin(tilt) * 76, DECK + ASSUMED.valveSeatAboveDeck + Math.cos(tilt) * 76];
   /** a rocker arm on a shaft: pad over the cam lobe at padZ, tip over the valve (or plunger) at tipZ */
   const rocker = (id, side, padZ, tipXY, tipZ, mat = M.darkSteel) => {
     const g = new THREE.Group();
@@ -701,36 +719,20 @@ export function buildEngine() {
     return g;
   };
   const rockers = [];
-  CYL.forEach((cy) => {
-    const ta = tipOf(22, 1);
-    const te = tipOf(-22, -1);
-    const pri = rocker('primaryRocker', 1, cy.z + LZ.primary, ta, cy.z + 17, M.forged);
-    const mid = rocker('middleRocker', 1, cy.z + LZ.middle, [48, DECK + 70], cy.z, M.forgedMid);
-    const sec = rocker('secondaryRocker', 1, cy.z + LZ.secondary, ta, cy.z - 17, M.forged);
+  for (const cy of CYL) {
+    const ti = tipOf(22, 1), te = tipOf(-22, -1);
+    const inA = rocker('intakeRockers', 1, cy.z + LZ.inA, ti, cy.z + 17, M.forged);
+    const inB = rocker('intakeRockers', 1, cy.z + LZ.inB, ti, cy.z - 17, M.forged);
     const exA = rocker('exhaustRockers', -1, cy.z + LZ.exA, te, cy.z + 17, M.forged);
     const exB = rocker('exhaustRockers', -1, cy.z + LZ.exB, te, cy.z - 17, M.forged);
-    // synchronising pistons: one in each intake rocker, in a bore parallel to the shaft (between pad and shaft)
-    const bore = v(8 - L.rockX + 7, L.camY + L.camBase + 9 - L.rockY, 0);
-    const sync = [[pri, LZ.primary], [mid, LZ.middle], [sec, LZ.secondary]].map(([r, dz]) => {
-      const m = add('syncPistons', cylZ(4.6, 11, 16), M.oil, r);
-      m.position.set(bore.x, bore.y, cy.z + dz);
-      m.userData.z0 = cy.z + dz;
-      return m;
-    });
-    // lost-motion assembly under the middle rocker's outer end
-    const lmBody = at(add('lostMotion', new THREE.CylinderGeometry(9, 9, 28, 16), M.castLight), 48, DECK + 48, cy.z);
-    const lmPlunger = at(add('lostMotion', new THREE.CylinderGeometry(6, 6, 18, 14), M.steel), 48, DECK + 66, cy.z);
-    // timing plate beside the rocker set
-    const plate = new THREE.Group();
-    plate.position.set(L.rockX, L.rockY, cy.z + 24);
-    G.timingPlate.add(plate);
-    add('timingPlate', new THREE.BoxGeometry(26, 6, 3), M.brass, plate).position.set(-12, -8, 0);
-    rockers.push({cy, pri, mid, sec, exA, exB, sync, lmPlunger, lmBody, plate});
-  });
-  // VTEC solenoid and spool valve on the intake side at the transmission end
-  at(add('vtecSolenoid', new RoundedBoxGeometry(34, 40, 46, 2, 6), M.castLight), 127, DECK + 80, -224);
-  at(add('vtecSolenoid', cylZ(13, 30, 20), M.paintBlack), 127, DECK + 106, -224);
-  at(add('vtecSolenoid', new THREE.BoxGeometry(14, 16, 14), M.paintBlack), 141, DECK + 84, -200);
+    for (const [group, id, instance] of [[inA,'rocker-inlet-a',cy.i],[inB,'rocker-inlet-b',cy.i],[exA,'rocker-exhaust',cy.i*2],[exB,'rocker-exhaust',cy.i*2+1]]) {
+      group.name = `${id}:${instance}`;
+      group.userData.catalogPiece = id;
+      group.userData.catalogInstance = instance;
+      group.traverse(m => { if(m.isMesh) mark(m,id,instance); });
+    }
+    rockers.push({cy, inA, inB, exA, exB});
+  }
 
   // ============================================================ oil: strainer, filter; cooling: thermostat housing
   tube('oilStrainer', [[30, -20, 200], [30, -70, 180], [20, -100, 120], [0, -106, 60]], 9, M.steel, null, 32, 10);
@@ -762,8 +764,11 @@ export function buildEngine() {
     heatShield: [-300, 0, 0], exhaustManifold: [-170, 0, 0], coolantOutlet: [-150, 40, -60],
     plenum: [240, 40, 0], runners: [190, 20, 0], throttleBody: [260, 40, -60], intakeDuct: [260, 140, -120], fuelRail: [150, 80, 0], injectors: [120, 60, 0],
     distributor: [0, 60, -220],
-    head: [0, 150, 0], headGasket: [0, 75, 0], camshaft: [0, 205, 0], rockerShafts: [0, 230, 0], primaryRocker: [0, 230, 0], middleRocker: [0, 230, 0], secondaryRocker: [0, 230, 0], exhaustRockers: [0, 230, 0], syncPistons: [0, 230, 0], timingPlate: [0, 230, 0],
-    lostMotion: [0, 150, 0], intakeValves: [0, 150, 0], exhaustValves: [0, 150, 0], sparkPlugs: [0, 180, 0], vtecSolenoid: [60, 190, 0],
+    flywheel: [0, 0, -110], clutchDisc: [0, 0, -170], clutchPressurePlate: [0, 0, -240],
+    iabBody: [220, 45, 0], iabButterflies: [220, 45, 0], iabShaft: [220, 45, 0],
+    iabActuator: [250, 65, -50], iabSolenoid: [220, -30, -60], iabVacuumTank: [220, -100, -40],
+    head: [0, 150, 0], headGasket: [0, 75, 0], camshaft: [0, 205, 0], rockerShafts: [0, 230, 0], intakeRockers: [0, 230, 0], exhaustRockers: [0, 230, 0],
+    intakeValves: [0, 150, 0], exhaustValves: [0, 150, 0], sparkPlugs: [0, 180, 0],
     timingBelt: [0, 30, 150], camPulley: [0, 205, 150], crankTimingPulley: [0, 0, 150], timingTensioner: [0, 0, 150], waterPump: [0, 0, 150],
     balancerBelt: [0, 0, 100], balancerAdjuster: [0, 0, 100],
     oilPan: [0, -200, 0], oilStrainer: [0, -130, 0], oilFilter: [160, 0, 0], thermostat: [140, 0, -60], oilPump: [0, 0, 60],
@@ -772,6 +777,13 @@ export function buildEngine() {
   };
   // the head assembly moves as one, then each part goes a little further
   const exVec = (id) => v(...(EX[id] ?? [0, 0, 0]));
+
+  // Reference-detail passes retain the same selectable groups and motion inputs.
+  detailCastings({G,M,add,at,tube,cylZ,cylX,bolt,L,CYL,DECK,SPEC,ASSUMED,liners,camPulley});
+  const exterior = detailExterior({G,M,add,at,tube,cylZ,cylX,bolt,L,CYL,DECK}) ?? {};
+  detailInternals({G,M,add,at,tube,cylZ,L,CYL,DECK,ASSUMED,SPEC,crank,pistons,rockers,valves});
+  const updateTiming = detailTiming({G,M,L,PULLEY,beltPath,crankTiming,wpPulley,crankBal,balFPulley,balInputPulley,balRGear,balInputGear,camPulley});
+  if (options.consolidate !== false) consolidateStatic(G);
 
   // ============================================================ materials for isolate / see-through
   const allMats = new Set();
@@ -814,21 +826,16 @@ export function buildEngine() {
     anchors.camshaft = v(0, L.camY, zOf(1) + 60);
     anchors.timingBelt = v(-44, 180, L.beltZ);
     anchors.balancerBelt = v(-40, 40, L.balZ);
-    anchors.primaryRocker = v(40, L.rockY, zOf(1) + 14);
-    anchors.middleRocker = v(40, L.rockY, zOf(1));
-    anchors.secondaryRocker = v(40, L.rockY, zOf(1) - 14);
-    anchors.syncPistons = v(15, L.rockY - 4, zOf(1));
-    anchors.lostMotion = v(48, DECK + 56, zOf(1));
+    anchors.intakeRockers = v(40, L.rockY, zOf(1) + 12);
     anchors.intakeValves = v(36, DECK + 40, zOf(1) + 17);
     anchors.exhaustValves = v(-36, DECK + 40, zOf(1) + 17);
     anchors.rods = v(0, 90, zOf(1));
-    anchors.sparkPlugs = v(-30, DECK + 60, zOf(1));
+    anchors.sparkPlugs = v(30, DECK + 60, zOf(1));
     root.updateMatrixWorld(true);
   }
 
-  const st0 = {locked: [0, 0, 0, 0]};
   const tmp = new V3();
-  /** st: {vtec: 0|1, dt (s, for the switch), explode 0..1, hidden: Set, ghost: Set of part ids, keepSystems: Set|null,
+  /** st: {iab: 0..1, explode 0..1, hidden: Set, ghost: Set of part ids, keepSystems: Set|null,
    *  selected: id|null, shells: 0..1 (see-through shells)} */
   const update = (th, st = {}) => {
     // ---- explode: each part along its own direction
@@ -837,6 +844,10 @@ export function buildEngine() {
     // ---- crank, pistons, rods
     crank.rotation.z = th * D2R;
     flange.rotation.z = th * D2R;
+    // Coupled clutch demonstration: flywheel, disc and pressure plate share crank
+    // speed. This does not simulate clutch release or a transmission input shaft.
+    for (const id of ['flywheel','clutchDisc','clutchPressurePlate']) if(G[id]) G[id].rotation.z = th * D2R;
+    exterior.updateIab?.(iabPosition(st.iab ?? 0));
     crankPulley.rotation.z = th * D2R;
     crankTiming.rotation.z = th * D2R;
     crankBal.rotation.z = th * D2R;
@@ -857,7 +868,7 @@ export function buildEngine() {
       pp.small.position.y = len / 2;
       // charge column: crown to deck, coloured by stroke
       const ps = phase(cy.c, th);
-      const crown = s + ASSUMED.pistonCompressionHeight + 2;
+      const crown = s + ASSUMED.pistonCompressionHeight;
       const ch = charges[i];
       ch.position.y = (crown + DECK) / 2;
       ch.scale.y = Math.max(1, DECK - crown);
@@ -872,6 +883,8 @@ export function buildEngine() {
     distRotor.rotation.z = camAngle(th) * D2R;
     balF.rotation.z = balanceAngle(th, 'front') * D2R;
     balFPulley.rotation.z = balanceAngle(th, 'front') * D2R;
+    balInputPulley.rotation.z = balanceAngle(th, 'front') * D2R;
+    balInputGear.rotation.z = balanceAngle(th, 'front') * D2R;
     balR.rotation.z = balanceAngle(th, 'rear') * D2R;
     balRGear.rotation.z = balanceAngle(th, 'rear') * D2R;
     balAdj.rotation.z = th * D2R * (PULLEY.crankBalancer / 36);
@@ -879,47 +892,26 @@ export function buildEngine() {
     tens.rotation.z = th * D2R * (PULLEY.crankTiming / 52);
     altPulley.rotation.z = th * D2R * (PULLEY.crank / PULLEY.alternator);
     psPulley.rotation.z = th * D2R * (PULLEY.crank / PULLEY.powerSteering);
-    // ---- VTEC: each cylinder's pistons travel only while its intake lobes are on the base circle
-    const want = st.vtec ? 1 : 0;
-    const dt = st.dt ?? 0;
-    const locked = st.locked ?? st0.locked;
-    // ---- valves and rockers
-    const lever = 24; // valve-side arm length (mm) ≈ angle × lever
+    updateTiming(th);
+    // ---- fixed valve profiles: identical inlet lift, no state/history switching
+    const lever = 24; // illustrative valve-side arm length, mm
     for (const r of rockers) {
       const ps = phase(r.cy.c, th);
-      const base = intakeLift(ps, 0);
-      if (base.middle === 0 && base.a === 0 && base.b === 0) {
-        const i = r.cy.i;
-        locked[i] += Math.sign(want - locked[i]) * Math.min(Math.abs(want - locked[i]), dt / 0.25);
-        if (dt === 0) locked[i] = want; // seeking (film, step): settle immediately
-      }
-      const lk = locked[r.cy.i] >= 0.999;
-      const il = intakeLift(ps, lk);
+      const il = intakeLift(ps);
       const mm = ASSUMED.liftScale;
-      r.pri.rotation.z = -(il.a * mm) / lever;
-      r.sec.rotation.z = -(il.b * mm) / lever;
-      r.mid.rotation.z = -(il.middle * mm) / lever;
-      const exl = exhaustLift(ps) * mm;
-      r.exA.rotation.z = exl / lever;
-      r.exB.rotation.z = exl / lever;
-      r.lmPlunger.position.y = DECK + 66 - il.middle * mm * 0.95;
-      // the locking pistons slide toward the secondary side as oil pressure pushes them
-      const travel = locked[r.cy.i] * 7;
-      for (const m of r.sync) m.position.z = m.userData.z0 - travel;
-      r.plate.rotation.z = -0.35 * Math.sin(Math.PI * locked[r.cy.i]);
+      r.inA.rotation.z = -(il.a * mm) / lever;
+      r.inB.rotation.z = -(il.b * mm) / lever;
+      r.exA.rotation.z = exhaustLift(ps) * mm / lever;
+      r.exB.rotation.z = exhaustLift(ps) * mm / lever;
     }
     for (const vv of valves) {
       const ps = phase(vv.cy.c, th);
-      const lk = (st.locked ?? st0.locked)[vv.cy.i] >= 0.999;
-      const il = intakeLift(ps, lk);
+      const il = intakeLift(ps);
       const lift = (vv.kind === 'ex' ? exhaustLift(ps) : vv.which === 'a' ? il.a : il.b) * ASSUMED.liftScale;
-      vv.g.position.set(vv.x0, DECK + 3, vv.z).addScaledVector(vv.dir, -lift);
+      vv.g.position.set(vv.x0, DECK + ASSUMED.valveSeatAboveDeck, vv.z).addScaledVector(vv.dir, -lift);
       vv.coil.scale.y = (30 - lift) / 30;
-      vv.coil.position.y = 42 + 0;
+      vv.coil.position.y = 42;
     }
-    const oilOn = Math.max(...locked);
-    M.oil.emissiveIntensity = 0.6 * oilOn;
-    intakeShaftOil.visible = oilOn > 0.01;
 
     // ---- visibility: hidden parts, see-through shells, isolate, selection highlight
     for (const m of ghosted) m.material = m.userData.mat0;
@@ -957,6 +949,14 @@ export function buildEngine() {
   root.scale.setScalar(0.001);
   const pickables = [];
   root.traverse((m) => m.isMesh && m.userData.part && pickables.push(m));
-  return {root, update, G, M, GHOST, anchors, anchorOf, setExplode, pickables, SHELL, liners, L, STROKE_COL};
+  // Optional non-rendering references let the individual-parts atlas reuse the
+  // exact assembled geometry. Ordinary callers keep the original public shape.
+  const detailedRegistry = options.detailedRegistry ? {
+    crank, cam, lobes, flange, pistons, valves, rockers, balF, balR, balAdj,
+    crankTiming, camPulley, wpPulley, tens, crankBal, balFPulley, balInputPulley, balInputGear, balRGear,
+    crankPulley, alt, altPulley, psp, psPulley, distRotor,
+    iab: exterior.iab, flywheel: G.flywheel, clutchDisc: G.clutchDisc, clutchPressurePlate: G.clutchPressurePlate,
+  } : undefined;
+  return {root, update, G, M, GHOST, anchors, anchorOf, setExplode, pickables, SHELL, liners, L, STROKE_COL, ...(detailedRegistry ? {detailedRegistry} : {})};
 }
 export {PART};

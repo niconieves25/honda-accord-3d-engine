@@ -1,0 +1,30 @@
+/* Fully clear dashboard cards: no tint, opacity layer, backdrop blur or shadow.
+   Buttons, inputs and floating dialogs retain their independent control styling. */
+.viewer,.viewer-heading,.stagewrap,.sidebar,.parts-tools,
+.part-group,.part-group[open] summary,.identity-badge,
+.cycle-metrics>div,.cyls li,.cyls li.fire,.flows,
+.reference-details,.tag,.system-mark,.empty-icon,.identity-note,
+.views,.transport,.inspector-tabs,
+.catalog,.catalog-heading,.system-group,.system-group[open] summary,
+.visual-column,.piece-explanation,.visual-tabs,.info-tabs,
+.figure-plate,.figure-caption,.figure-foot,.piece-meta,.phase-control,
+.representation-note,.locate-link,.oem-list li,
+.info-disclosure,.info-disclosure[open]>summary,.disclosure-body,
+.explanation-steps li>span,.total-count,.figure-caption>span:last-child{
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+}
+/* Text follows the theme once the formerly red header fills are removed. */
+.views>.lbl,.viewbtns button,.viewbtns .vnum,
+.inspector-tabs button,.catalog-heading,.catalog-heading .mechanical-icon,
+.figure-caption,.figure-caption>span:last-child,
+.visual-tabs button,.info-tabs button,.cyls li.fire{
+  color:var(--fg);
+}
+.cyls li.fire{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.cyls li.fire .cyl-number{color:var(--accent)}
+.info-disclosure[open]>summary,.part-group[open] summary,.system-group[open] summary{border-bottom-color:var(--red-edge)}
+/* A fine text shadow keeps the moving glyph field separate from reading text. */
+:root:not([data-theme=light]):not([data-theme=soft]) :is(.viewer-heading,.inspector-pane,.catalog,.piece-header,.piece-explanation,.representation-note,.motion-caption){text-shadow:0 1px 2px #000,0 0 6px #000}

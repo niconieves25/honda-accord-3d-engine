@@ -1,0 +1,26 @@
+[
+  {
+    "theme": "dark",
+    "textOnPanel": 18.56,
+    "secondaryOnPanel": 11.61,
+    "whiteOnRedBand": 5.88,
+    "whiteOnAction": 5.88,
+    "whiteOnActionHover": 4.87
+  },
+  {
+    "theme": "light",
+    "textOnPanel": 17.3,
+    "secondaryOnPanel": 10.01,
+    "whiteOnRedBand": 6.9,
+    "whiteOnAction": 5.88,
+    "whiteOnActionHover": 7.3
+  },
+  {
+    "theme": "soft",
+    "textOnPanel": 15.2,
+    "secondaryOnPanel": 8.89,
+    "whiteOnRedBand": 7.78,
+    "whiteOnAction": 6.86,
+    "whiteOnActionHover": 8.55
+  }
+]

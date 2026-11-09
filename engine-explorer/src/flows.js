@@ -4,6 +4,7 @@
 import * as THREE from 'three';
 import {CYL, DECK} from './kin.js';
 import {L} from './engine.js';
+import {INTAKE} from './exterior-layout.js';
 
 const v = (x, y, z) => new THREE.Vector3(x, y, z);
 const crv = (pts) => new THREE.CatmullRomCurve3(pts.map((p) => v(...p)), false, 'centripetal');
@@ -17,11 +18,15 @@ export const FLOW_STYLE = {
 
 function paths() {
   const P = {air: [], exhaust: [], oil: [], coolant: []};
-  // air: duct mouth → throttle body → plenum → each runner → intake port
-  P.air.push(crv([[30, DECK + 114, -410], [40, DECK + 118, -380], [90, DECK + 122, -360], [170, DECK + 112, -356], [210, DECK + 30, -340], [220, DECK + 54, -284], [220, DECK + 48, -220], [220, DECK + 48, 150]]));
-  for (const cy of CYL) P.air.push(crv([[220, DECK + 48, cy.z * 0.94], [241, DECK + 22, cy.z * 0.95], [247, DECK - 10, cy.z * 0.96], [211, DECK - 34, cy.z * 0.98], [165, DECK + 34, cy.z], [121, DECK + 50, cy.z], [40, DECK + 18, cy.z]]));
-  // exhaust: each port → manifold → collector → out
-  for (const cy of CYL) P.exhaust.push(crv([[-40, DECK + 18, cy.z], [-119, DECK + 44, cy.z], [-148, DECK + 36, cy.z * 0.95], [-162, DECK - 30, cy.z * 0.75], [-172, DECK - 120, cy.z * 0.35 - 14], [-176, 20, -22], [-176, -70, -22]]));
+  // Air route follows the reconstructed A6 manifold. Secondary branches depend
+  // on actuator state; every cylinder retains its always-open primary branch.
+  const {x,y,plateY,primaryX,bypassX,ductEnd}=INTAKE;
+  P.air.push(crv([ductEnd,[185,y-4,-385],[x-16,y-1,-333],[x,y+6,-253],[x,y+6,-220],[x,y,145]]));
+  for(const cy of CYL){
+    P.air.push(crv([[x,y,cy.z],[primaryX,plateY,cy.z],[259,DECK-12,cy.z],[206,DECK-26,cy.z],[157,DECK+24,cy.z],[120,DECK+44,cy.z],[40,DECK+18,cy.z]]));
+    const secondary=crv([[x,y,cy.z],[bypassX,plateY,cy.z],[163,DECK+54,cy.z],[120,DECK+44,cy.z],[40,DECK+18,cy.z]]);secondary.iabOnly=true;P.air.push(secondary);
+  }
+  for(const cy of CYL){const oz=cy.i===0||cy.i===3?-62:12;P.exhaust.push(crv([[-40,DECK+18,cy.z],[-118,DECK+44,cy.z],[-157,DECK+28,cy.z],[-190,DECK-38,cy.z*.6],[-195,DECK-115,oz],[-195,DECK-151,oz]]));}
   // oil: pan → strainer → pump → filter → main gallery; branches to the main bearings and up to the head; returns
   P.oil.push(crv([[0, -108, 50], [20, -100, 120], [30, -70, 180], [30, -20, 200], [100, 0, 150], [140, 18, -20], [150, 18, -46]]));
   P.oil.push(crv([[150, 18, -46], [95, -20, -46], [92, -24, 100], [90, -26, 190]]));
@@ -70,7 +75,7 @@ export function buildFlows() {
       inst.renderOrder = 11;
       inst.frustumCulled = false;
       g.add(inst);
-      movers.push({c, inst, n, double: st.shape === 'double', name});
+      movers.push({c, inst, line:t, n, double: st.shape === 'double', name});
     }
   }
   const m4 = new THREE.Matrix4();
@@ -80,9 +85,10 @@ export function buildFlows() {
   const one = new THREE.Vector3(1, 1, 1);
   const Z = new THREE.Vector3(0, 0, 1);
   /** s: distance travelled, in path lengths (the caller advances it with time) */
-  const update = (s) => {
+  const update = (s,{iab=false}={}) => {
     for (const mv of movers) {
-      if (!groups[mv.name].visible) continue;
+      mv.inst.visible=mv.line.visible=!mv.c.iabOnly||!!iab;
+      if (!groups[mv.name].visible||!mv.inst.visible) continue;
       for (let k = 0; k < mv.n; k++) {
         const u = (((k / mv.n + s * (140 / mv.c.getLength())) % 1) + 1) % 1;
         mv.c.getPointAt(u, p);
@@ -99,7 +105,7 @@ export function buildFlows() {
       mv.inst.instanceMatrix.needsUpdate = true;
     }
   };
-  const anchors = {air: v(220, DECK + 60, 60), exhaust: v(-176, 40, -22), oil: v(150, 18, -46), coolant: v(62, 150, 0)};
+  const anchors = {air: v(INTAKE.x,INTAKE.y,60), exhaust: v(-176, 40, -22), oil: v(150, 18, -46), coolant: v(62, 150, 0)};
   root.scale.setScalar(0.001);
   return {root, groups, update, anchors};
 }
