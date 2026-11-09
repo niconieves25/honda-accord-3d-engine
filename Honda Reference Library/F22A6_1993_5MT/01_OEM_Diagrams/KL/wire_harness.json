@@ -1,0 +1,532 @@
+{
+  "slug": "wire_harness",
+  "label": "Wire Harness",
+  "catalog": "1993 Honda Accord 4 Door EX KL 5MT",
+  "target_engine": "F22A6",
+  "vehicle_emissions_variant_confirmed": false,
+  "source_url": "https://www.hondapartsnow.com/parts-list/1993-honda-accord--4dr_ex-kl_5mt/electrical_exhaust_heater_fuel/wire_harness.html",
+  "image_url": "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png",
+  "image_urls": [
+    "https://www.hondapartsnow.com/resources/encry/diagram/hpn/2021/large/c7683eabf629c9b752c77e73a2d6ca34.png"
+  ],
+  "downloaded_at": "2026-11-07T18:01:49.489456+00:00",
+  "image_file": "01_OEM_Diagrams/KL/wire_harness.png",
+  "image_files": [
+    "01_OEM_Diagrams/KL/wire_harness.png"
+  ],
+  "parts_file": "01_OEM_Diagrams/KL/wire_harness.json",
+  "part_rows": 54,
+  "parts": [
+    {
+      "callout": "1",
+      "part_number": "32100-SM5-L61",
+      "description": "Wire Harness, Cabin",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~cabin~32100-sm5-l61.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "2",
+      "part_number": "32107-SM4-A22",
+      "description": "Wire Harness, Floor",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~floor~32107-sm4-a22.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "3",
+      "part_number": "32108-SM4-A11",
+      "description": "Wire Harness, RR.",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~32108-sm4-a11.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "4",
+      "part_number": "32109-SM4-003",
+      "description": "Ring, Wheelhouse Hole (40MM) (WHITE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~wheelhouse~hole~32109-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "5",
+      "part_number": "32109-SM4-901",
+      "description": "Ring, Wheelhouse Hole (30MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~ring~wheelhouse~hole~32109-sm4-901.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "6",
+      "part_number": "32117-SM4-A54",
+      "description": "Wire Harness, Instrument",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~instrument~32117-sm4-a54.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "8",
+      "part_number": "32128-SM4-A01",
+      "description": "Holder, Connector",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~connector~32128-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "9",
+      "part_number": "32132-SM4-003",
+      "description": "Band, Wire Harness Offset (20)(122.5MM) (BLACK)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~offset~32132-sm4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/720a72d8bbc1ec53ce32378beee9341a/295a44214a68667fd46d1b36cf2a03d6.jpg"
+      ]
+    },
+    {
+      "callout": "10",
+      "part_number": "32133-SM4-003",
+      "description": "Band, Harness Offset (30) (122.5MM) (YELLOW)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~harness~offset~32133-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "11",
+      "part_number": "32134-SM4-003",
+      "description": "Band, Harness Offset (10) (122.5MM) (BROWN)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~harness~offset~32134-sm4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/b21f3046fdd4f58f5f27b7c0758b8534/07f778c33e5224b17ddc979c1cc5deb7.jpg"
+      ]
+    },
+    {
+      "callout": "12",
+      "part_number": "32135-SM4-A00",
+      "description": "Stay, Dashboard Harness (LH)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~stay~dashboard~harness~32135-sm4-a00.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "13",
+      "part_number": "32143-SM4-000",
+      "description": "Bracket, Floor Harness",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bracket~floor~harness~32143-sm4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "14",
+      "part_number": "32156-SM4-A01",
+      "description": "Wire, Sunroof",
+      "quantity": null,
+      "details": "Replaced By: 32156-SM4-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~sunroof~32156-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "15",
+      "part_number": "32158-SM4-A21",
+      "description": "Wire Harness, Side",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~side~32158-sm4-a21.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "16",
+      "part_number": "32170-SM4-010",
+      "description": "Wire, Fuel Unit",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~fuel~unit~32170-sm4-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "17",
+      "part_number": "32202-SH4-000",
+      "description": "Wire, Defroster Ground",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~defroster~ground~32202-sh4-000.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "18",
+      "part_number": "32311-SM4-A01",
+      "description": "Holder, Connector",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~connector~32311-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "19",
+      "part_number": "32312-SM4-013",
+      "description": "Holder, Connector",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~connector~32312-sm4-013.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "20",
+      "part_number": "32751-SM4-A22",
+      "description": "Wire Harness, FR. Door (DRIVER SIDE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~32751-sm4-a22.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "21",
+      "part_number": "32752-SM4-C23",
+      "description": "Wire Harness, FR. Door (PASSENGER SIDE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~32752-sm4-c23.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "22",
+      "part_number": "32753-SM4-A01",
+      "description": "Wire Harness, R. RR. Door",
+      "quantity": null,
+      "details": "Replaced By: 32753-SM4-A00",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~32753-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "23",
+      "part_number": "32754-SM4-A01",
+      "description": "Wire Harness, L. RR. Door",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~wire~harness~32754-sm4-a01.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "25",
+      "part_number": "32760-SM4-010",
+      "description": "Protector, R. Door Wire Harness",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~protector~32760-sm4-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "26",
+      "part_number": "32765-SM4-010",
+      "description": "Protector, L. Door Wire Harness",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~protector~32765-sm4-010.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "28",
+      "part_number": "90148-SE0-003",
+      "description": "Bolt, Ground (6X16) (WASHER 12.5MM) (ZN)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~ground~90148-se0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/8404cce131925127e24f054b71f08e62/1543bfc94cf377e2307454c0dbd4dfd1.jpg"
+      ]
+    },
+    {
+      "callout": "29",
+      "part_number": "90149-SE0-003",
+      "description": "Bolt, Ground (6X16)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~ground~90149-se0-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/db3f22559fa6b7d877ef1b0747c42ca4/217bfa0e8eed51b1eca04cfa2c9b7833.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/080fc77f5307865ceffdd197e527427d/d2ccf91da8496bf7b965df13397b81c6.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/080fc77f5307865ceffdd197e527427d/8aec07555df785e007d900ad9ceb820f.jpg",
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/080fc77f5307865ceffdd197e527427d/f3b6c0646dbd11a4da2c9545ebf6abfd.jpg"
+      ]
+    },
+    {
+      "callout": "30",
+      "part_number": "90602-SB2-003",
+      "description": "Clip, Protector",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~protector~90602-sb2-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "31",
+      "part_number": "90627-SA5-003",
+      "description": "Clip, Wire Harness (50MM) (BLUE)(HARNESS TAPING)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~90627-sa5-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "32",
+      "part_number": "90681-SD4-003",
+      "description": "Clip, Wire Harness",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~90681-sd4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "33",
+      "part_number": "90667-SB2-003",
+      "description": "Clip, Wire Harness (50MM) (GRAY)(HARNESS TAPING)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~90667-sb2-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "35",
+      "part_number": "90676-SA8-003",
+      "description": "Band, Wire Harness (150MM) (BLUE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~90676-sa8-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "36",
+      "part_number": "90691-SA0-003",
+      "description": "Clip, Wire Harness (WHITE)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~90691-sa0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "37",
+      "part_number": "91504-SM4-003",
+      "description": "Clip, Door Protector",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~door~protector~91504-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "38",
+      "part_number": "91507-693-003",
+      "description": "Clip, Wire Harness (50MM) (BLACK)(HARNESS TAPING)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91507-693-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/9a65921f3e7c5b246e024aae7a842f41/f55c2bc86e81b5e3a3981ecd1ce9224c.jpg"
+      ]
+    },
+    {
+      "callout": "39",
+      "part_number": "91547-SF4-003",
+      "description": "Band, Wire Harness (123.5MM) (BLUE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~91547-sf4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "40",
+      "part_number": "91547-SH3-003",
+      "description": "Clip, Band (160MM) (NATURAL)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~band~91547-sh3-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/102d7ed481e3977015e5361396abe045/0e8ac4354181ebec61ab4ea1a77797f8.jpg"
+      ]
+    },
+    {
+      "callout": "41",
+      "part_number": "91545-S30-003",
+      "description": "Clip, Harness Band (151.5MM) (NATURAL)(W/SEAL)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~harness~band~91545-s30-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "43",
+      "part_number": "91551-SF4-003",
+      "description": "Band, Wire Harness (110MM) (BROWN)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~91551-sf4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/ec8fa8d6be35367f3f11e19369403cd4/0dd3700bff07c2dbe2a56f390af81b4c.jpg"
+      ]
+    },
+    {
+      "callout": "45",
+      "part_number": "91552-SS0-003",
+      "description": "Clip, Wire Harness (M5) (93.5MM) (BROWN)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91552-ss0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "46",
+      "part_number": "91554-SM4-003",
+      "description": "Holder, Bracket (RED)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~holder~bracket~91554-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "47",
+      "part_number": "91555-SM4-003",
+      "description": "Clip, Connector (RED)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~connector~91555-sm4-003.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/aadc2bd46463c499b4b5f8b01739e8dd/c9eaf583ecd40660ddcb5347c3724aed.jpg"
+      ]
+    },
+    {
+      "callout": "48",
+      "part_number": "91556-SM4-003",
+      "description": "Clip, Band (100MM) (BLACK)",
+      "quantity": 4,
+      "details": "Require Quantity: 4    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~band~91556-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "49",
+      "part_number": "91559-SE0-003",
+      "description": "Clip, Wire Harness (23.2MM)",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91559-se0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "50",
+      "part_number": "91559-SE3-003",
+      "description": "Clip, Wire Harness (55MM) (WHITE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91559-se3-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "51",
+      "part_number": "91566-SM4-003",
+      "description": "Clip, Wire Harness Seal (W/SEAL)",
+      "quantity": 2,
+      "details": "Fit Note: Mfg.Origin: JPN    Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~seal~91566-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "51",
+      "part_number": "91566-SM4-003",
+      "description": "Clip, Wire Harness Seal (W/SEAL)",
+      "quantity": null,
+      "details": "Fit Note: Mfg.Origin: USA",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~seal~91566-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "52",
+      "part_number": "91567-SE0-003",
+      "description": "Band, Wire Harness (93.5MM) (WHITE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~band~wire~harness~91567-se0-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "54",
+      "part_number": "91572-SM4-003",
+      "description": "Clip, Wire Harness",
+      "quantity": 2,
+      "details": "Require Quantity: 2    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91572-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "56",
+      "part_number": "91582-SM4-003",
+      "description": "Clip, Wire Harness (NATURAL)",
+      "quantity": 3,
+      "details": "Require Quantity: 3    Package Quantity: 1",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~clip~wire~harness~91582-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "57",
+      "part_number": "91642-SM4-003",
+      "description": "Grommet, Wire Harness (20MM) (WHITE)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~wire~harness~91642-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "58",
+      "part_number": "91644-SM4-003",
+      "description": "Grommet, Wire Harness (32MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~grommet~wire~harness~91644-sm4-003.html",
+      "actual_photo_urls": []
+    },
+    {
+      "callout": "60",
+      "part_number": "93403-06020-08",
+      "description": "Bolt-Washer (6X20)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bolt~washer~93403-06020-08.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/e58571d4cffb3fa7993756b60c937492/60cd197e2db86627d1cc57388c6619e2.jpg"
+      ]
+    },
+    {
+      "callout": "61",
+      "part_number": "94070-06080",
+      "description": "Nut-Washer (6MM)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~nut~washer~94070-06080.html",
+      "actual_photo_urls": [
+        "https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/6336f23d9895c69cd40b95eaf1de2a63/246b77e329b948c51062b858ebfacc9c.jpg"
+      ]
+    },
+    {
+      "callout": "63",
+      "part_number": "91786-SR3-003",
+      "description": "Bar, Joint (10P)",
+      "quantity": null,
+      "details": "",
+      "part_url": "https://www.hondapartsnow.com/genuine/honda~bar~joint~91786-sr3-003.html",
+      "actual_photo_urls": []
+    }
+  ],
+  "source_html_sha256": "1e93cbff2ca11bb46214003db447494c11aa3aa7db8104caf3fe858703ab95f3",
+  "authority_note": "Honda OEM catalogue reproduced by HondaPartsNow; target vehicle KA/KL assignment unresolved."
+}
