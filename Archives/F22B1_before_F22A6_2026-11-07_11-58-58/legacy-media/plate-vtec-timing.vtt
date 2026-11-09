@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Placa de sincronización VTEC
+Qué hace: Participa en completar la conmutación cuando el tren alcanza la condición adecuada de alzada cero.
+
+2
+00:00:04.000 --> 00:00:08.000
+Placa de sincronización VTEC
+Cómo trabaja: La placa coordina la condición de conmutación.
+
+3
+00:00:08.000 --> 00:00:12.000
+Placa de sincronización VTEC
+Cómo se mueve: Realiza un pequeño movimiento de control; no desplaza continuamente la fase del árbol de levas.
