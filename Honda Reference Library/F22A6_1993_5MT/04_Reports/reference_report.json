@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-07T12:08:48.747334-06:00",
+  "target": {
+    "engine": "F22A6",
+    "year": 1993,
+    "model": "Honda Accord",
+    "body": "4 Door EX sedan",
+    "transmission": "5MT",
+    "stock": true,
+    "identity_basis": "User confirmed engine stamp and paperwork",
+    "market_emissions_variant": null
+  },
+  "status": "Reference baseline complete with explicit unresolved geometry; not exhaustive engineering drawings",
+  "inventory": {
+    "catalogue_pages": 52,
+    "categories": 26,
+    "catalogue_part_rows": {
+      "KA": 724,
+      "KL": 719
+    },
+    "component_service_photos": 60,
+    "shared_exterior_photos": 1,
+    "verified_owner_manual_pages": 178
+  },
+  "sources": [
+    {
+      "id": "owner1993",
+      "title": "Honda 1993 Accord Sedan Owner’s Manual",
+      "url": "https://www.carmanual.org/OwnersManual/honda/1993_honda_accord_sedan.pdf",
+      "file": "02_Service_Evidence/1993-accord-owner-manual.pdf",
+      "authority": "Honda publication hosted by a third-party mirror",
+      "scope": "1993 sedan; US/Canada variants distinguished in text",
+      "reviewed_pages": [
+        158,
+        159,
+        160,
+        174
+      ],
+      "status": "downloaded; specifications visually checked in raster pages"
+    },
+    {
+      "id": "brochure1993",
+      "title": "Honda 1993 US Full Line sales brochure",
+      "url": "https://www.auto-brochures.com/makes/Honda/Honda_US%20Model%20Range_1993.pdf",
+      "file": "02_Service_Evidence/1993-honda-us-brochure.pdf",
+      "authority": "Honda sales publication hosted by third-party mirror",
+      "scope": "1993 US; EX sedan statement on PDF page15",
+      "reviewed_pages": [
+        12,
+        15
+      ],
+      "status": "downloaded; EX sedan 140 hp and PGM-FI visually checked"
+    },
+    {
+      "id": "sedan_brochure1993",
+      "title": "Honda 1993 Sedan/Wagon brochure ZO301A 9/92",
+      "url": "https://importarchive.com/brochure/hondaaccord1993_02",
+      "file": "02_Service_Evidence/1993-sedan-brochure-index.html",
+      "authority": "Honda publication scans hosted by collector",
+      "scope": "US sedan/wagon",
+      "reviewed_pages": [
+        28
+      ],
+      "status": "public low-resolution pages only; fine numerals too small to rely on"
+    },
+    {
+      "id": "oem_ka",
+      "title": "1993 Accord 4 Door EX KA 5MT OEM parts catalogue",
+      "url": "https://www.hondapartsnow.com/1993-honda-accord--4dr_ex-ka_5mt-parts.html",
+      "authority": "Honda OEM diagrams and catalogue part data via HondaPartsNow",
+      "scope": "KA 5MT reference variant; not a declaration of target market",
+      "status": "26 categories saved, complete row extraction checked"
+    },
+    {
+      "id": "oem_kl",
+      "title": "1993 Accord 4 Door EX KL 5MT OEM parts catalogue",
+      "url": "https://www.hondapartsnow.com/1993-honda-accord--4dr_ex-kl_5mt-parts.html",
+      "authority": "Honda OEM diagrams and catalogue part data via HondaPartsNow",
+      "scope": "KL 5MT reference variant; not a declaration of target market",
+      "status": "26 categories saved, complete row extraction checked"
+    },
+    {
+      "id": "dealer_exterior",
+      "title": "Victory Motors 1993 Accord EX sedan listing",
+      "url": "https://www.victorymotorsofcolorado.com/inventory/1993-honda-accord-ex/612428",
+      "file": "03_Photo_References/1993-ex-dealer-engine.jpg",
+      "authority": "First-party seller photographs of listed vehicle",
+      "scope": "VIN 1HGCB7676PA125840; listing says 4-speed automatic. Engine stamp not visible. Common exterior appearance only; not evidence for target 5MT output assembly.",
+      "status": "image downloaded and visually checked"
+    }
+  ],
+  "specifications": [
+    {
+      "id": "engine_identity",
+      "value": "F22A6",
+      "unit": null,
+      "source_id": "user",
+      "locator": "engine stamp + paperwork confirmed by user",
+      "status": "user_confirmed",
+      "note": "Research package does not contain a new photograph of the user’s stamp."
+    },
+    {
+      "id": "bore",
+      "value": 85.0,
+      "unit": "mm",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page159",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "stroke",
+      "value": 95.0,
+      "unit": "mm",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page159",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "displacement",
+      "value": 2156,
+      "unit": "cm³",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page159",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "compression_ratio",
+      "value": 8.8,
+      "unit": ":1",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page159",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "operating_cycle",
+      "value": "four-stroke gasoline, water cooled, overhead camshaft",
+      "unit": null,
+      "source_id": "owner1993",
+      "locator": "printed/PDF page159",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "rated_power",
+      "value": 140,
+      "unit": "hp",
+      "source_id": "brochure1993",
+      "locator": "PDF page15: EX sedan",
+      "status": "verified",
+      "note": "US sales figure; no RPM value asserted from this source."
+    },
+    {
+      "id": "fuel_injection",
+      "value": "PGM-FI",
+      "unit": null,
+      "source_id": "brochure1993",
+      "locator": "PDF page15: EX sedan",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "oil_change_with_filter",
+      "value": 3.8,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": "Change capacity excludes oil remaining in engine."
+    },
+    {
+      "id": "oil_change_without_filter",
+      "value": 3.5,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "oil_total",
+      "value": 4.9,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "coolant_5mt_total",
+      "value": 6.6,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": "Whole installed cooling system, not volume of engine water jackets."
+    },
+    {
+      "id": "coolant_5mt_change",
+      "value": 3.0,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": "Manual footnote includes0.6 L reserve tank and coolant remaining in engine."
+    },
+    {
+      "id": "manual_transmission_oil_change",
+      "value": 1.9,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "manual_transmission_oil_total",
+      "value": 2.0,
+      "unit": "L",
+      "source_id": "owner1993",
+      "locator": "printed/PDF page158",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "intake_valves",
+      "value": 8,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "valve_rocker_arm #7,14711-PT3-A00",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "exhaust_valves",
+      "value": 8,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "valve_rocker_arm #8,14721-P0J-A00",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "inlet_rocker_A",
+      "value": 4,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "valve_rocker_arm #1,14621-PT0-000",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "inlet_rocker_B",
+      "value": 4,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "valve_rocker_arm #2,14622-PT0-000",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "exhaust_rocker",
+      "value": 8,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "valve_rocker_arm #3,14623-PT0-000",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "inlet_rocker_shaft_A",
+      "value": 2,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "cylinder_head #7",
+      "status": "verified",
+      "note": "Segmented inlet shaft system; do not draw two continuous full-length rocker shafts."
+    },
+    {
+      "id": "inlet_rocker_shaft_B",
+      "value": 3,
+      "unit": "pieces",
+      "source_id": "oem_ka",
+      "locator": "cylinder_head #8",
+      "status": "verified",
+      "note": ""
+    },
+    {
+      "id": "camshaft_service_number",
+      "value": "14111-PT4-F50",
+      "unit": null,
+      "source_id": "oem_ka",
+      "locator": "camshaft_timing_belt #14",
+      "status": "verified",
+      "note": "Current service catalogue number is not proof of original cam profile or lobe count."
+    },
+    {
+      "id": "crank_throw",
+      "value": 47.5,
+      "unit": "mm",
+      "source_id": "owner1993",
+      "locator": "stroke/2",
+      "status": "derived",
+      "note": "Exact geometric derivation from 95 mm stroke; not an additional factory dimension."
+    },
+    {
+      "id": "swept_volume_per_cylinder",
+      "value": 539,
+      "unit": "cm³",
+      "source_id": "owner1993",
+      "locator": "2156/4",
+      "status": "derived",
+      "note": "Rounded nominal displacement divided by 4."
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "market",
+      "detail": "KA/KL and exact emissions certification are unknown. Preserve both catalogues; ECU and catalyst differ. A catalogue selection cannot determine the user’s car."
+    },
+    {
+      "id": "cam_topology",
+      "detail": "Exact F22A6 cam lobe count, axial spacing, holder count, lobe width, lift law, opening/closing events and overlap were not established by a readable applicable primary source.16 valves / 16 rockers do not independently prove 16 lobes."
+    },
+    {
+      "id": "engine_dimensions",
+      "detail": "External dimensions, bore pitch, rod centre distance, pin offset, chamber geometry, wall thickness, oil-gallery routing and fastener spacing need dimensioned drawings or physical measurement. No scale can be inferred from shipping dimensions or uncalibrated photos."
+    },
+    {
+      "id": "iab_calibration",
+      "detail": "OEM catalogue proves bypass body, diaphragm, vacuum tank, solenoid/check valve. Exact activation threshold, hysteresis, full vacuum routing and calibrated control logic remain unverified for the target."
+    },
+    {
+      "id": "service_tolerances",
+      "detail": "A complete verified1993 US F22A6 workshop manual 61SM405 was not acquired. Do not label1996 F22B1 tolerances, valve clearances, tightening torques or timing settings as F22A6."
+    },
+    {
+      "id": "exterior_views",
+      "detail": "No set of six directional full-engine photographs with visible F22A6 stamp was verified. One1993 EX dealer engine-bay image supports shared exterior appearance only;60 exact OEM component service photos are available."
+    },
+    {
+      "id": "power_rpm_torque",
+      "detail": "140 hp is verified in Honda’s1993 EX sedan brochure.5600 rpm / 142 lb-ft @ 4500 rpm are familiar secondary values but not promoted to verified here because the available primary table is too small to read confidently."
+    },
+    {
+      "id": "materials",
+      "detail": "OEM diagram silhouettes and dealer service photographs do not establish alloy grades, internal surface finishes or production tolerances."
+    }
+  ],
+  "migration_audit": [
+    {
+      "area": "UI/navigation/accessibility",
+      "decision": "reuse",
+      "action": "Keep explorer controls, PBR stage, parts navigation, speech/captions and inspection modes; replace identity strings and sources."
+    },
+    {
+      "area": "rendering/export pipeline",
+      "decision": "reuse",
+      "action": "Keep shared-material extraction, camera rigs and media pipeline; regenerate images/videos after F22A6 geometry is accepted."
+    },
+    {
+      "area": "short block and kinematic math",
+      "decision": "verify before reuse",
+      "action": "85mm bore and 95 mm stroke confirmed. Recheck all hidden dimensions and each OEM part; visual resemblance is not compatibility proof."
+    },
+    {
+      "area": "head/valvetrain",
+      "decision": "rebuild and verify",
+      "action": "Remove B1 VTEC centre rockers, locking pistons, solenoid passages and switched cam profiles. Model8 inlet rockers as A×4 + B×4,8 exhaust, segmented inlet shafts. Hold exact cam topology as unresolved."
+    },
+    {
+      "area": "cover/manifolds/exterior",
+      "decision": "rebuild against references",
+      "action": "Black HONDA 16 VALVE cover,4 cap nuts, silver PGM-FI plenum, A6 intake bypass assembly and correct manifold/shield. Do not use original VTEC photo silhouette."
+    },
+    {
+      "area": "IAB",
+      "decision": "new mechanism",
+      "action": "Separate manifold bypass actuator from throttle. Show vacuum diaphragm/shaft relationship as explanatory where detailed dimensions/control calibration remain unknown."
+    },
+    {
+      "area": "5MT output assembly",
+      "decision": "rebuild",
+      "action": "Use flywheel22100-PT7-013, clutch disc/pressure plate families,8 flywheel bolts and6 pressure plate bolts as catalogue references; no flexplate/torque converter."
+    },
+    {
+      "area": "emissions/electrical",
+      "decision": "variant-aware",
+      "action": "Shared items may be represented; ECU/catalyst and unverified hose routing must retain unknown-market status."
+    },
+    {
+      "area": "anatomy catalogue and media",
+      "decision": "remap/regenerate",
+      "action": "Check every callout/PN against new JSON; supplier alternatives and supersessions are not extra simultaneous components. Recreate all affected captions, videos and explanations."
+    },
+    {
+      "area": "tests/flows/tours",
+      "decision": "revise",
+      "action": "Remove hard-coded VTEC states,20-lobe assumptions, old timing/lift numbers, fixed flow coordinates and old 92-item assumptions. Test non-VTEC mechanics and5MT content."
+    }
+  ],
+  "catalogue_rules": [
+    "Parts list row is a listing, not necessarily a distinct physical part.",
+    "Alternatives/supersessions should not inflate part counts.",
+    "quantity:null means source omitted quantity; do not replace with1 without evidence.",
+    "Exploded diagrams establish topology/identity, not scale.",
+    "Actual OEM photos represent supplied service parts; historical factory finish is not guaranteed.",
+    "Only photos from confirmed matching assemblies may establish shape; earlierVTEC photos are historical."
+  ],
+  "files": {
+    "oem_manifest": "diagram_manifest.json",
+    "market_comparison": "04_Reports/ka_kl_catalogue_differences.json",
+    "photos": "03_Photo_References/photo_manifest.json",
+    "specifications": "04_Reports/specification_evidence.json",
+    "audit": "04_Reports/component_reuse_rebuild_audit.json"
+  }
+}

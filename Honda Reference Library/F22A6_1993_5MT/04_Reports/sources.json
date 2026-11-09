@@ -1,0 +1,67 @@
+[
+  {
+    "id": "owner1993",
+    "title": "Honda 1993 Accord Sedan Owner’s Manual",
+    "url": "https://www.carmanual.org/OwnersManual/honda/1993_honda_accord_sedan.pdf",
+    "file": "02_Service_Evidence/1993-accord-owner-manual.pdf",
+    "authority": "Honda publication hosted by a third-party mirror",
+    "scope": "1993 sedan; US/Canada variants distinguished in text",
+    "reviewed_pages": [
+      158,
+      159,
+      160,
+      174
+    ],
+    "status": "downloaded; specifications visually checked in raster pages"
+  },
+  {
+    "id": "brochure1993",
+    "title": "Honda 1993 US Full Line sales brochure",
+    "url": "https://www.auto-brochures.com/makes/Honda/Honda_US%20Model%20Range_1993.pdf",
+    "file": "02_Service_Evidence/1993-honda-us-brochure.pdf",
+    "authority": "Honda sales publication hosted by third-party mirror",
+    "scope": "1993 US; EX sedan statement on PDF page15",
+    "reviewed_pages": [
+      12,
+      15
+    ],
+    "status": "downloaded; EX sedan 140 hp and PGM-FI visually checked"
+  },
+  {
+    "id": "sedan_brochure1993",
+    "title": "Honda 1993 Sedan/Wagon brochure ZO301A 9/92",
+    "url": "https://importarchive.com/brochure/hondaaccord1993_02",
+    "file": "02_Service_Evidence/1993-sedan-brochure-index.html",
+    "authority": "Honda publication scans hosted by collector",
+    "scope": "US sedan/wagon",
+    "reviewed_pages": [
+      28
+    ],
+    "status": "public low-resolution pages only; fine numerals too small to rely on"
+  },
+  {
+    "id": "oem_ka",
+    "title": "1993 Accord 4 Door EX KA 5MT OEM parts catalogue",
+    "url": "https://www.hondapartsnow.com/1993-honda-accord--4dr_ex-ka_5mt-parts.html",
+    "authority": "Honda OEM diagrams and catalogue part data via HondaPartsNow",
+    "scope": "KA 5MT reference variant; not a declaration of target market",
+    "status": "26 categories saved, complete row extraction checked"
+  },
+  {
+    "id": "oem_kl",
+    "title": "1993 Accord 4 Door EX KL 5MT OEM parts catalogue",
+    "url": "https://www.hondapartsnow.com/1993-honda-accord--4dr_ex-kl_5mt-parts.html",
+    "authority": "Honda OEM diagrams and catalogue part data via HondaPartsNow",
+    "scope": "KL 5MT reference variant; not a declaration of target market",
+    "status": "26 categories saved, complete row extraction checked"
+  },
+  {
+    "id": "dealer_exterior",
+    "title": "Victory Motors 1993 Accord EX sedan listing",
+    "url": "https://www.victorymotorsofcolorado.com/inventory/1993-honda-accord-ex/612428",
+    "file": "03_Photo_References/1993-ex-dealer-engine.jpg",
+    "authority": "First-party seller photographs of listed vehicle",
+    "scope": "VIN 1HGCB7676PA125840; listing says 4-speed automatic. Engine stamp not visible. Common exterior appearance only; not evidence for target 5MT output assembly.",
+    "status": "image downloaded and visually checked"
+  }
+]

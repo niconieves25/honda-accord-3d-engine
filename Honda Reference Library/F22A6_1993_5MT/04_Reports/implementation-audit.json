@@ -1,0 +1,3609 @@
+{
+  "updatedAt": "2026-11-07T18:23:14.105Z",
+  "engine": {
+    "code": "F22A6",
+    "modelYear": 1993,
+    "vehicle": "Honda Accord EX sedan",
+    "transmission": "5MT",
+    "market": null,
+    "emissionsVariant": null,
+    "marketStatus": "unresolved",
+    "architecture": "SOHC inline four, 16 valves, fixed valve lift",
+    "variableValveLift": false,
+    "intakeAirBypass": true,
+    "referenceCatalogs": [
+      "1993 Accord 4 Door EX KA 5MT",
+      "1993 Accord 4 Door EX KL 5MT"
+    ]
+  },
+  "specification": {
+    "bore": 85,
+    "stroke": 95,
+    "cr": 8.8,
+    "displacementCc": 2156,
+    "headHeight": 100,
+    "wristPinDia": 22,
+    "rodJournalDia": 48,
+    "mainJournalDia": 50,
+    "firingOrder": [
+      1,
+      3,
+      4,
+      2
+    ],
+    "cylinders": 4,
+    "valvesPerCylinder": 4
+  },
+  "specificationEvidence": {
+    "bore": {
+      "classification": "verified",
+      "sourceIds": [
+        "owner-1993-specifications"
+      ],
+      "note": "Honda specifies 85.0 mm bore on printed page 159."
+    },
+    "stroke": {
+      "classification": "verified",
+      "sourceIds": [
+        "owner-1993-specifications"
+      ],
+      "note": "Honda specifies 95.0 mm stroke on printed page 159."
+    },
+    "cr": {
+      "classification": "verified",
+      "sourceIds": [
+        "owner-1993-specifications"
+      ],
+      "note": "Honda specifies 8.8:1. This figure is not derived from the illustrative chamber surfaces."
+    },
+    "displacementCc": {
+      "classification": "verified",
+      "sourceIds": [
+        "owner-1993-specifications"
+      ],
+      "note": "Honda specifies 2156 cc; swept volume is also calculated from bore and stroke."
+    },
+    "headHeight": {
+      "classification": "illustrative",
+      "sourceIds": [],
+      "note": "100 mm layout envelope, not a verified F22A6 machining specification."
+    },
+    "wristPinDia": {
+      "classification": "unresolved",
+      "sourceIds": [],
+      "note": "22 mm nominal retained for geometric fit; A6 service tolerance not yet verified."
+    },
+    "rodJournalDia": {
+      "classification": "unresolved",
+      "sourceIds": [],
+      "note": "48 mm nominal retained for geometric fit; A6 service tolerance not yet verified."
+    },
+    "mainJournalDia": {
+      "classification": "unresolved",
+      "sourceIds": [],
+      "note": "50 mm nominal retained for geometric fit; A6 service tolerance not yet verified."
+    },
+    "firingOrder": {
+      "classification": "unresolved",
+      "sourceIds": [],
+      "note": "1-3-4-2 model order; primary F22A6 timing reference pending."
+    },
+    "cylinders": {
+      "classification": "verified",
+      "sourceIds": [
+        "oem-crank"
+      ],
+      "note": "Four piston / connecting-rod assemblies."
+    },
+    "valvesPerCylinder": {
+      "classification": "verified",
+      "sourceIds": [
+        "oem-rockers"
+      ],
+      "note": "Eight inlet valves and eight exhaust valves across four cylinders."
+    }
+  },
+  "assumedDimensions": {
+    "rod": 142,
+    "pistonCompressionHeight": 31,
+    "pitch": 96,
+    "valveTilt": 21,
+    "valveSeatAboveDeck": 11,
+    "liftScale": 9
+  },
+  "driveEvidence": {
+    "cam": {
+      "classification": "derived",
+      "sourceIds": [
+        "oem-cam"
+      ],
+      "note": "A four-stroke camshaft completes one turn per two crank revolutions."
+    },
+    "accessoryDiameters": {
+      "classification": "illustrative",
+      "sourceIds": [],
+      "note": "Pulley diameters are visual estimates; accessory speeds derived from them are approximate."
+    },
+    "balanceShafts": {
+      "classification": "unresolved",
+      "sourceIds": [],
+      "note": "Counter-rotating at twice crank speed in the teaching model; A6 manual page pending."
+    }
+  },
+  "valvetrain": {
+    "camshafts": 1,
+    "intakeRockersA": 4,
+    "intakeRockersB": 4,
+    "exhaustRockers": 8,
+    "intakeShaftsShort": 2,
+    "intakeShaftsLong": 3,
+    "exhaustShafts": 1,
+    "valveAdjusters": 16,
+    "valveKeepers": 32,
+    "variableValveLift": false,
+    "evidence": {
+      "classification": "verified",
+      "sourceIds": [
+        "oem-rockers",
+        "oem-head"
+      ],
+      "note": "OEM quantities establish independent A/B inlet arms, eight identical exhaust arms and segmented inlet shafts."
+    }
+  },
+  "counts": {
+    "assemblyGroups": 63,
+    "componentTypes": 102,
+    "systems": 12,
+    "originalEngineExtracts": 78,
+    "supplementaryReconstructions": 24
+  },
+  "componentAudit": [
+    {
+      "id": "valveCover",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "callout": "2",
+          "pn": "12310-PT3-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Valve cover",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "oilCap",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "callout": "5",
+          "pn": "15610-PC6-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil filler cap",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "timingCoverUpper",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "3",
+          "pn": "11820-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Upper timing-belt cover",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "timingCoverLower",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "1",
+          "pn": "11810-PT0-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Lower timing-belt cover",
+      "implementation": "refined"
+    },
+    {
+      "id": "engineMount",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "callout": "9",
+          "pn": "11910-PT0-020",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Engine mounting bracket",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "oilPan",
+      "system": "exterior",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "callout": "5",
+          "pn": "11200-PT0-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil pan",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "block",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "callout": "1",
+          "pn": "11000-PT0-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Cylinder block",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "bearingBridge",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "callout": "4",
+          "pn": "11130-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Bearing-cap bridge",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "crankshaft",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "8",
+          "pn": "13310-PT3-315",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Crankshaft",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "pistons",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "2",
+          "pn": "13101-PT3-A01",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Pistons",
+      "implementation": "refined"
+    },
+    {
+      "id": "rings",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "1",
+          "pn": "13011-PT2-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Piston rings",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "wristPins",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "3",
+          "pn": "13112-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Wrist pins",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "rods",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "5",
+          "pn": "13210-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Connecting rods",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "crankPulley",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "18",
+          "pn": "13810-PT1-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Crankshaft pulley",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "crankFlange",
+      "system": "bottom",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "8",
+          "pn": "13310-PT3-315",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Crankshaft rear flange",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "balancerFront",
+      "system": "balance",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "12",
+          "pn": "13401-P5M-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Front balance shaft",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "balancerRear",
+      "system": "balance",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "11",
+          "pn": "13400-PT3-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Rear balance shaft",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "balancerBelt",
+      "system": "balance",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "11",
+          "pn": "13405-PT0-004",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Balancer belt and pulleys",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "balancerAdjuster",
+      "system": "balance",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "10",
+          "pn": "13404-PT0-004",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Balancer belt adjuster",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "head",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "callout": "1",
+          "pn": "12100-PT3-A01",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Cylinder head",
+      "implementation": "refined"
+    },
+    {
+      "id": "headGasket",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "callout": "6",
+          "pn": "12251-PT0-014",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Head gasket",
+      "implementation": "refined"
+    },
+    {
+      "id": "camshaft",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "14",
+          "pn": "14111-PT4-F50",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Camshaft",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "intakeValves",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "callout": "7",
+          "pn": "14711-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Intake valves",
+      "implementation": "refined"
+    },
+    {
+      "id": "exhaustValves",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "callout": "8",
+          "pn": "14721-P0J-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Exhaust valves",
+      "implementation": "refined"
+    },
+    {
+      "id": "exhaustRockers",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "callout": "3",
+          "pn": "14623-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Exhaust rocker arms",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "rockerShafts",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "callout": "7",
+          "pn": "14631-PT0-010",
+          "market": "KA"
+        },
+        {
+          "diagram": "cylinder_head",
+          "callout": "8",
+          "pn": "14632-PT0-010",
+          "market": "KA"
+        },
+        {
+          "diagram": "cylinder_head",
+          "callout": "9",
+          "pn": "14633-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Rocker shafts",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "timingBelt",
+      "system": "timing",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "16",
+          "pn": "14400-PT0-004",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Timing belt",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "camPulley",
+      "system": "timing",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "15",
+          "pn": "14210-PT0-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Camshaft pulley",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "crankTimingPulley",
+      "system": "timing",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "callout": "16",
+          "pn": "13621-PT0-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Crankshaft timing pulley",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "timingTensioner",
+      "system": "timing",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "callout": "17",
+          "pn": "14510-PT0-004",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Timing-belt tensioner",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "intakeDuct",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "air_cleaner",
+          "callout": "6",
+          "pn": "17225-PT2-010",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Air intake duct",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "throttleBody",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "throttle_body",
+          "callout": "6",
+          "pn": "16400-PT6-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Throttle body",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "plenum",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "10",
+          "pn": "17010-PT9-A01",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Upper intake manifold B",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "runners",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "11",
+          "pn": "17100-PT9-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Lower intake manifold A",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "fuelRail",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "5",
+          "pn": "16610-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Fuel rail and pressure regulator",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "injectors",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "1",
+          "pn": "06164-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Fuel injectors",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "exhaustManifold",
+      "system": "exhaust",
+      "oem": [
+        {
+          "diagram": "exhaust_manifold",
+          "callout": "2",
+          "pn": "18100-PT6-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Exhaust manifold",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "heatShield",
+      "system": "exhaust",
+      "oem": [
+        {
+          "diagram": "exhaust_manifold",
+          "callout": "4",
+          "pn": "18120-PT6-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Exhaust heat shield",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "distributor",
+      "system": "ignition",
+      "oem": [
+        {
+          "diagram": "distributor_tec",
+          "callout": "1",
+          "pn": "30100-PT3-A12",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Distributor",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "plugLeads",
+      "system": "ignition",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "callout": "4",
+          "pn": "32701-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Spark and coil high-tension leads",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "sparkPlugs",
+      "system": "ignition",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "callout": "17",
+          "pn": "98079-5514G",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Spark plugs",
+      "implementation": "refined"
+    },
+    {
+      "id": "oilPump",
+      "system": "oil",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "callout": "7",
+          "pn": "15100-PT0-020",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil pump",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "oilStrainer",
+      "system": "oil",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "callout": "14",
+          "pn": "15220-P0A-C00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil pickup and strainer",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "oilFilter",
+      "system": "oil",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "callout": "20",
+          "pn": "15400-PT7-005",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil filter",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "dipstick",
+      "system": "oil",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "callout": "19",
+          "pn": "15650-PT0-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Oil dipstick",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "waterPump",
+      "system": "cooling",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "callout": "1",
+          "pn": "19200-P0A-003",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Water pump",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "thermostat",
+      "system": "cooling",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "callout": "9",
+          "pn": "19320-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Thermostat and housing",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "coolantOutlet",
+      "system": "cooling",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "callout": "10",
+          "pn": "19360-PT3-A00",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Coolant outlet",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "alternator",
+      "system": "accessory",
+      "oem": [
+        {
+          "diagram": "alternator_denso",
+          "callout": "1",
+          "pn": "31100-PT3-A52",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Alternator",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "psPump",
+      "system": "accessory",
+      "oem": [
+        {
+          "diagram": "p_s_pump",
+          "callout": "2",
+          "pn": "56110-PT0-050",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Power-steering pump",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "accessoryBelts",
+      "system": "accessory",
+      "oem": [
+        {
+          "diagram": "p_s_pump",
+          "callout": "10",
+          "pn": "56992-PT0-J03",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Accessory belts",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "psHose",
+      "system": "accessory",
+      "oem": [],
+      "approx": true,
+      "evidence": "approximate",
+      "name": "Power-steering hose",
+      "implementation": "retained with corrected A6 source identity; dimensions remain approximate"
+    },
+    {
+      "id": "intakeRockers",
+      "system": "head",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "callout": "1",
+          "pn": "14621-PT0-000",
+          "market": "KA"
+        },
+        {
+          "diagram": "valve_rocker_arm",
+          "callout": "2",
+          "pn": "14622-PT0-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Intake rocker arms A and B",
+      "implementation": "rebuilt"
+    },
+    {
+      "id": "iabBody",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Intake bypass body",
+      "implementation": "added"
+    },
+    {
+      "id": "iabButterflies",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Four intake bypass butterflies",
+      "implementation": "added"
+    },
+    {
+      "id": "iabShaft",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Intake bypass shaft",
+      "implementation": "added"
+    },
+    {
+      "id": "iabActuator",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "17",
+          "pn": "17129-PT2-000",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Bypass diaphragm and linkage",
+      "implementation": "added"
+    },
+    {
+      "id": "iabSolenoid",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "24",
+          "pn": "36163-PT2-004",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Bypass control solenoid",
+      "implementation": "added"
+    },
+    {
+      "id": "iabVacuumTank",
+      "system": "intake",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "callout": "25",
+          "pn": "36361-PT2-014",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Bypass vacuum reservoir",
+      "implementation": "added"
+    },
+    {
+      "id": "ignitionCoil",
+      "system": "ignition",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "callout": "3",
+          "pn": "30520-PT9-A02",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "External ignition coil",
+      "implementation": "added"
+    },
+    {
+      "id": "flywheel",
+      "system": "manual",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "callout": "3",
+          "pn": "22100-PT7-013",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Manual flywheel",
+      "implementation": "added"
+    },
+    {
+      "id": "clutchDisc",
+      "system": "manual",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "callout": "4",
+          "pn": "22200-PT1-020",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Clutch friction disc",
+      "implementation": "added"
+    },
+    {
+      "id": "clutchPressurePlate",
+      "system": "manual",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "callout": "5",
+          "pn": "22300-PT7-023",
+          "market": "KA"
+        }
+      ],
+      "approx": true,
+      "evidence": "visually reconstructed",
+      "name": "Clutch pressure plate",
+      "implementation": "added"
+    }
+  ],
+  "catalogue": [
+    {
+      "id": "cover-valves",
+      "label": "Tapa de válvulas",
+      "parentId": "valveCover",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Tapa F22A6 de fábrica; las alternativas de origen JPN/USA figuran en el catálogo. El detalle de fundición se reconstruye y no es un plano de fabricación.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "2",
+          "pn": "12310-PT3-010",
+          "description": "Cover, Cylinder Head",
+          "fitNote": "Fit Note: Mfg.Origin: JPN",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cover~cylinder~head~12310-pt3-010.html"
+        }
+      ]
+    },
+    {
+      "id": "gasket-valve-cover",
+      "label": "Junta de la tapa de válvulas",
+      "parentId": "valveCover",
+      "quantity": "1 junta perimetral",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece comprimida entre dos piezas fijas; no sigue el movimiento de las válvulas.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "3",
+          "pn": "12341-PT0-000",
+          "description": "Gasket, Cylinder Head Cover",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~cylinder~head~12341-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "seal-plug-tube",
+      "label": "Sello del tubo de bujía",
+      "parentId": "valveCover",
+      "quantity": "4; uno por bujía",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El catálogo lista sustituciones del mismo sello; no se montan todas a la vez.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "4",
+          "pn": "12342-PT0-000",
+          "description": "Gasket B, Head Cover",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~head~cover~12342-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "cap-oil-filler",
+      "label": "Tapón de llenado de aceite",
+      "parentId": "oilCap",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Se retira al añadir aceite; permanece fijo cuando el motor funciona.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "5",
+          "pn": "15610-PC6-000",
+          "description": "Cap Assy., Oil Filler",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~15610-pc6-000.html"
+        }
+      ]
+    },
+    {
+      "id": "gasket-oil-cap",
+      "label": "Junta del tapón de aceite",
+      "parentId": "oilCap",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "6",
+          "pn": "15613-PC6-000",
+          "description": "Gasket, Oil Filler",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~oil~filler~15613-pc6-000.html"
+        }
+      ]
+    },
+    {
+      "id": "cover-timing-upper",
+      "label": "Cubierta superior de distribución",
+      "parentId": "timingCoverUpper",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "3",
+          "pn": "11820-PT0-000",
+          "description": "Cover, Timing Belt (UPPER)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cover~timing~belt~11820-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "cover-timing-lower",
+      "label": "Cubierta inferior de distribución",
+      "parentId": "timingCoverLower",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "1",
+          "pn": "11810-PT0-010",
+          "description": "Cover, Timing Belt (LOWER)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cover~timing~belt~11810-pt0-010.html"
+        }
+      ]
+    },
+    {
+      "id": "nut-valve-cover",
+      "label": "Tuerca ciega de la tapa",
+      "parentId": "valveCover",
+      "quantity": "4",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "8",
+          "pn": "90213-PH3-000",
+          "description": "Nut, Cap (6MM)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~nut~cap~90213-ph3-000.html"
+        }
+      ]
+    },
+    {
+      "id": "washer-valve-cover",
+      "label": "Arandela de la tapa",
+      "parentId": "valveCover",
+      "quantity": "4",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "cylinder_head_cover",
+          "market": "KA",
+          "callout": "9",
+          "pn": "90441-PT0-000",
+          "description": "Washer, Head Cover",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~washer~head~cover~90441-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "block-cylinders",
+      "label": "Bloque de cilindros",
+      "parentId": "block",
+      "quantity": "1 bloque con 4 cilindros",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Bloque de aleación de aluminio con camisas de hierro. Los conductos internos de la figura son explicativos.",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "market": "KA",
+          "callout": "1",
+          "pn": "11000-PT0-010",
+          "description": "[Freight Parts] Block Assy., Cylinder",
+          "fitNote": "Fit Note: Mfg.Origin: JPN    Replaced By: 11000-PT0-020",
+          "url": "https://www.hondapartsnow.com/genuine/honda~block~assy~11000-pt0-010.html"
+        }
+      ]
+    },
+    {
+      "id": "piston",
+      "label": "Pistón",
+      "parentId": "pistons",
+      "quantity": "4; uno por cilindro",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Sube y baja 95 mm entre sus puntos extremos. Los pistones 1 y 4 comparten altura; 2 y 3 se oponen.",
+        "driver": "Cigüeñal y biela; durante la expansión, la presión de combustión aporta trabajo."
+      },
+      "evidence": "Pistón nominal STD. El catálogo contiene clases A/B y recambios sobremedida; no se instalan todas esas alternativas. Perfil de corona y rebajes ilustrativos.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "2",
+          "pn": "13102-PT3-A01",
+          "description": "Piston B (STD)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~piston~13102-pt3-a01.html"
+        }
+      ]
+    },
+    {
+      "id": "ring-top",
+      "label": "Primer aro de compresión",
+      "parentId": "rings",
+      "quantity": "4; uno por pistón",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Acompaña la subida y bajada del pistón; su apertura permite dilatación.",
+        "driver": "Movimiento del pistón, elasticidad del aro y presión de los gases."
+      },
+      "evidence": "La referencia OEM corresponde al juego de aros, no a un aro superior vendido por separado.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "1",
+          "pn": "13011-PT2-003",
+          "description": "Ring Set, Piston (STD) (TEIKOKU)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1    Replaced By: 13011-P0A-004",
+          "url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-pt2-003.html"
+        }
+      ]
+    },
+    {
+      "id": "ring-second",
+      "label": "Segundo aro de compresión",
+      "parentId": "rings",
+      "quantity": "4; uno por pistón",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Se desplaza con el pistón, manteniendo contacto elástico con el cilindro.",
+        "driver": "Pistón y elasticidad del aro."
+      },
+      "evidence": "Subcomponente del juego de aros. La sección y orientación de montaje exactas no se deducen de esta figura.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "1",
+          "pn": "13011-PT2-003",
+          "description": "Ring Set, Piston (STD) (TEIKOKU)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1    Replaced By: 13011-P0A-004",
+          "url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-pt2-003.html"
+        }
+      ]
+    },
+    {
+      "id": "ring-oil",
+      "label": "Conjunto de aro de aceite",
+      "parentId": "rings",
+      "quantity": "4 conjuntos; uno por pistón",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Las láminas y el expansor acompañan al pistón; el conjunto conserva presión radial.",
+        "driver": "Pistón y elasticidad del expansor."
+      },
+      "evidence": "Referencia del juego completo; geometría del expansor y drenajes simplificada.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "1",
+          "pn": "13011-PT2-003",
+          "description": "Ring Set, Piston (STD) (TEIKOKU)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1    Replaced By: 13011-P0A-004",
+          "url": "https://www.hondapartsnow.com/genuine/honda~ring~set~piston~13011-pt2-003.html"
+        }
+      ]
+    },
+    {
+      "id": "piston-pin",
+      "label": "Bulón del pistón",
+      "parentId": "wristPins",
+      "quantity": "4",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Se traslada con el pistón mientras permite el giro relativo de la articulación.",
+        "driver": "Pistón y biela."
+      },
+      "evidence": "Diámetro de referencia del manual: 21,994–22,000 mm. No se afirma una velocidad de giro propia del bulón.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "3",
+          "pn": "13112-PT0-000",
+          "description": "Pin, Piston",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pin~piston~13112-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "connecting-rod",
+      "label": "Biela",
+      "parentId": "rods",
+      "quantity": "4",
+      "motion": {
+        "type": "rock",
+        "description": "Oscila lateralmente mientras su cabeza grande sigue una órbita; su pie acompaña al pistón.",
+        "driver": "Geometría articulada de pistón, bulón y cigüeñal."
+      },
+      "evidence": "La longitud entre centros sigue sin verificarse. La demostración usa una longitud ilustrativa.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "5",
+          "pn": "13210-PT3-A00",
+          "description": "Rod, Connecting",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~rod~connecting~13210-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "connecting-rod-cap",
+      "label": "Tapa de biela",
+      "parentId": "rods",
+      "quantity": "4",
+      "motion": {
+        "type": "rock",
+        "description": "Se mueve solidaria con la cabeza de la biela; no gira de forma independiente.",
+        "driver": "Biela a la que está fijada."
+      },
+      "evidence": "Se muestra un subcomponente de la biela; el número OEM corresponde a la biela completa.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "5",
+          "pn": "13210-PT3-A00",
+          "description": "Rod, Connecting",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~rod~connecting~13210-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "bearing-rod",
+      "label": "Semicojinete de biela",
+      "parentId": "rods",
+      "quantity": "8 semicojinetes; 2 por biela",
+      "motion": {
+        "type": "rock",
+        "description": "Queda retenido en la biela y se mueve con ella; el eje desliza respecto al cojinete.",
+        "driver": "Biela y película de lubricante."
+      },
+      "evidence": "Se cita el grado D verde como ejemplo documentado. El grado correcto depende de las mediciones; no se montan todos los colores.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "6",
+          "pn": "13211-PH3-004",
+          "description": "Bearing A, Connecting Rod (BLUE) (TAIHO)",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~bearing~connecting~13211-ph3-004.html"
+        }
+      ]
+    },
+    {
+      "id": "crankshaft",
+      "label": "Cigüeñal",
+      "parentId": "crankshaft",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira una vuelta por ciclo de subida y bajada de cada pistón; el ciclo completo de cuatro tiempos requiere dos vueltas.",
+        "driver": "Presión de combustión transmitida por los pistones y bielas."
+      },
+      "evidence": "El catálogo incluye variantes de origen y recambios. Se conserva la arquitectura de cinco apoyos y cuatro muñequillas; perfil de contrapesos ilustrativo.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "8",
+          "pn": "13310-PT3-315",
+          "description": "Crankshaft",
+          "fitNote": "Fit Note: Mfg.Origin: JPN,USA",
+          "url": "https://www.hondapartsnow.com/genuine/honda~crankshaft~13310-pt3-315.html"
+        }
+      ]
+    },
+    {
+      "id": "bearing-main",
+      "label": "Semicojinete de bancada",
+      "parentId": "bearingBridge",
+      "quantity": "10 semicojinetes; 5 apoyos",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece retenido en su alojamiento; el cigüeñal gira dentro.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Referencia ilustrativa de grado C verde. El color/grado instalado debe seleccionarse por medición.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "9",
+          "pn": "13321-PT0-004",
+          "description": "Bearing A, Main (BLACK) (TAIHO)",
+          "fitNote": "Require Quantity: 10    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~bearing~main~13321-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "washer-thrust",
+      "label": "Arandela de empuje del cigüeñal",
+      "parentId": "bearingBridge",
+      "quantity": "2 arandelas",
+      "motion": {
+        "type": "fixed",
+        "description": "Queda retenida; el cigüeñal gira frente a su superficie lubricada.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El catálogo identifica un juego. La cantidad de piezas dentro del paquete comercial no se trata como cantidad instalada.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "10",
+          "pn": "13331-PT0-003",
+          "description": "Washer, Thrust (DAIDO)",
+          "fitNote": "Require Quantity: 2    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~washer~thrust~13331-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "bridge-main-bearing",
+      "label": "Puente de apoyos de bancada",
+      "parentId": "bearingBridge",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "market": "KA",
+          "callout": "4",
+          "pn": "11130-PT0-000",
+          "description": "Bridge, Bearing Cap",
+          "fitNote": "Replaced By: 11130-PT0-030",
+          "url": "https://www.hondapartsnow.com/genuine/honda~bridge~bearing~cap~11130-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "bolt-connecting-rod",
+      "label": "Perno de biela",
+      "parentId": "rods",
+      "quantity": "8; dos por biela",
+      "motion": {
+        "type": "rock",
+        "description": "No gira dentro de la biela; se desplaza y oscila con el conjunto al que está sujeto.",
+        "driver": "Biela."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "7",
+          "pn": "13213-ME2-000",
+          "description": "Bolt, Connecting Rod",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~bolt~connecting~rod~13213-me2-000.html"
+        }
+      ]
+    },
+    {
+      "id": "shaft-balance-front",
+      "label": "Eje equilibrador delantero",
+      "parentId": "balancerFront",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira al doble de la velocidad del cigüeñal y en sentido opuesto al otro eje equilibrador.",
+        "driver": "Correa y poleas del sistema de equilibrado."
+      },
+      "evidence": "La fase de montaje requiere las marcas y el procedimiento de servicio; no se obtiene únicamente de la relación 2:1.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "12",
+          "pn": "13401-P5M-000",
+          "description": "Shaft, FR. Balancer",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~13401-p5m-000.html"
+        }
+      ]
+    },
+    {
+      "id": "shaft-balance-rear",
+      "label": "Eje equilibrador trasero",
+      "parentId": "balancerRear",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira a dos veces la velocidad del cigüeñal, contrarrotando respecto al eje delantero.",
+        "driver": "Sistema de equilibrado y caja de engranajes."
+      },
+      "evidence": "El engranaje cambia el sentido de la pareja; su dentado exacto está simplificado.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "11",
+          "pn": "13400-PT3-010",
+          "description": "Shaft, RR. Balancer",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~13400-pt3-010.html"
+        }
+      ]
+    },
+    {
+      "id": "belt-balance",
+      "label": "Correa de equilibrado",
+      "parentId": "balancerBelt",
+      "quantity": "1",
+      "motion": {
+        "type": "flow",
+        "description": "Avanza por un circuito cerrado; sus dientes engranan con las poleas.",
+        "driver": "Polea de equilibrado movida por el cigüeñal."
+      },
+      "evidence": "Es una correa distinta de la de distribución y de las correas exteriores de accesorios.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "11",
+          "pn": "13405-PT0-004",
+          "description": "Belt, Balancer Timing (UNITTA)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~belt~balancer~timing~13405-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "tensioner-balance",
+      "label": "Rodillo ajustador de equilibrado",
+      "parentId": "balancerAdjuster",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "El rodillo gira por contacto con la correa; la posición ajustada de su soporte queda fijada.",
+        "driver": "Correa de equilibrado."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "10",
+          "pn": "13404-PT0-004",
+          "description": "Adjuster, Balancer Belt (NIPPON SEIKO)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~adjuster~balancer~belt~13404-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "cylinder-head",
+      "label": "Culata",
+      "parentId": "head",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "La geometría interna de puertos y cámaras es aproximada; no se ha calibrado su volumen a la relación de compresión.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "1",
+          "pn": "12100-PT3-A01",
+          "description": "Cylinder Head Assy.",
+          "fitNote": "Fit Note: Mfg.Origin: JPN,USA    Replaced By: 12100-PT3-A02",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cylinder~head~assy~12100-pt3-a01.html"
+        }
+      ]
+    },
+    {
+      "id": "gasket-cylinder-head",
+      "label": "Junta de culata",
+      "parentId": "headGasket",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "6",
+          "pn": "12251-PT0-014",
+          "description": "Gasket, Cylinder Head (NIPPON LEAKLESS)",
+          "fitNote": "Replaced By: 12251-PT0-J02",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~cylinder~head~12251-pt0-014.html"
+        }
+      ]
+    },
+    {
+      "id": "camshaft",
+      "label": "Árbol de levas",
+      "parentId": "camshaft",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira a la mitad de la velocidad del cigüeñal: una vuelta de leva por dos de cigüeñal.",
+        "driver": "Correa de distribución y polea del árbol."
+      },
+      "evidence": "Árbol de perfil fijo F22A6, PN14111-PT4-F50 en el catálogo consultado. Curvas y posiciones de detalle no medidas; no hay lóbulo VTEC conmutable.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "14",
+          "pn": "14111-PT4-F50",
+          "description": "Camshaft",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~camshaft~14111-pt4-f50.html"
+        }
+      ]
+    },
+    {
+      "id": "valve-inlet",
+      "label": "Válvula de admisión",
+      "parentId": "intakeValves",
+      "quantity": "8; dos por cilindro",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Se abre y cierra siguiendo un perfil fijo de admisión; no cambia de lóbulo por régimen.",
+        "driver": "Lóbulo de leva a través del balancín; el resorte realiza el cierre."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "7",
+          "pn": "14711-PT3-A00",
+          "description": "Valve, Inlet",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~14711-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "valve-exhaust",
+      "label": "Válvula de escape",
+      "parentId": "exhaustValves",
+      "quantity": "8; dos por cilindro",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Se abre y cierra siguiendo el perfil fijo de escape mediante su balancín.",
+        "driver": "Árbol de levas, balancín de escape y resorte."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "8",
+          "pn": "14721-P0J-A00",
+          "description": "Valve, Exhaust",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~14721-p0j-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-valve-inlet",
+      "label": "Resorte de válvula de admisión",
+      "parentId": "intakeValves",
+      "quantity": "8",
+      "motion": {
+        "type": "spring",
+        "description": "Se comprime al abrir la válvula y se extiende al cerrarla; conserva precarga en reposo.",
+        "driver": "Desplazamiento de la válvula y elasticidad del resorte."
+      },
+      "evidence": "Resorte de admisión identificado como azul en el catálogo F22A6. Alzada y espiras de la reconstrucción son ilustrativas.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "10",
+          "pn": "14761-PT5-003",
+          "description": "Spring, Inlet Valve (BLUE) (NIPPON HATSUJO)",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~14761-pt5-003.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-valve-exhaust",
+      "label": "Resorte de válvula de escape",
+      "parentId": "exhaustValves",
+      "quantity": "8",
+      "motion": {
+        "type": "spring",
+        "description": "Se acorta durante la apertura y recupera su longitud instalada durante el cierre.",
+        "driver": "Balancín de escape, válvula y fuerza elástica."
+      },
+      "evidence": "Resorte de escape identificado como verde en el catálogo F22A6; número distinto del resorte de admisión.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "11",
+          "pn": "14762-PT5-003",
+          "description": "Spring, Exhaust Valve (GREEN) (NIPPON HATSUJO)",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~14762-pt5-003.html"
+        }
+      ]
+    },
+    {
+      "id": "retainer-valve",
+      "label": "Platillo superior del resorte",
+      "parentId": "intakeValves",
+      "quantity": "16; uno por válvula",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Acompaña a la válvula en su recorrido, comprimiendo o liberando el resorte.",
+        "driver": "Válvula, chavetas y resorte."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "12",
+          "pn": "14765-PT0-000",
+          "description": "Retainer, Valve Spring",
+          "fitNote": "Require Quantity: 16    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~retainer~valve~spring~14765-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "keepers-valve",
+      "label": "Chavetas de retención de válvula",
+      "parentId": "intakeValves",
+      "quantity": "32 mitades; dos por válvula",
+      "motion": {
+        "type": "reciprocate",
+        "description": "Viajan con válvula y platillo; no se separan durante el funcionamiento.",
+        "driver": "Válvula a la que quedan retenidas."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "14",
+          "pn": "14781-PJ7-003",
+          "description": "Cotter, Valve (FUJI VALVE)",
+          "fitNote": "Require Quantity: 32    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cotter~valve~14781-pj7-003.html"
+        }
+      ]
+    },
+    {
+      "id": "guide-valve",
+      "label": "Guía de válvula de admisión",
+      "parentId": "head",
+      "quantity": "8 guías de admisión",
+      "motion": {
+        "type": "fixed",
+        "description": "La guía permanece fija; la válvula desliza por su interior.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "La fila OEM disponible es una guía de recambio sobremedida. Acredita la pieza y su ubicación, no una medida nominal del modelo 3D.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "2",
+          "pn": "12204-PJ7-305",
+          "description": "Guide, Valve (OVER SIZE)",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~guide~valve~12204-pj7-305.html"
+        }
+      ]
+    },
+    {
+      "id": "seal-valve-stem",
+      "label": "Retén del vástago de admisión",
+      "parentId": "intakeValves",
+      "quantity": "8 de admisión; el escape usa otra referencia",
+      "motion": {
+        "type": "fixed",
+        "description": "El retén queda fijo mientras el vástago se desliza por su labio.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "4",
+          "pn": "12210-PZ1-004",
+          "description": "Seal A, Valve Stem (NOK)",
+          "fitNote": "Require Quantity: 8    Package Quantity: 10",
+          "url": "https://www.hondapartsnow.com/genuine/honda~seal~valve~stem~12210-pz1-004.html"
+        }
+      ]
+    },
+    {
+      "id": "screw-valve-lash",
+      "label": "Tornillo de ajuste de válvula",
+      "parentId": "exhaustRockers",
+      "quantity": "16; uno por válvula accionada",
+      "motion": {
+        "type": "rock",
+        "description": "Conserva su ajuste y oscila con el balancín; no se autorregula girando.",
+        "driver": "Balancín."
+      },
+      "evidence": "Hay 16 ajustadores: uno por cada válvula. Las holguras de servicio deben consultarse en el manual aplicable.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "9",
+          "pn": "14744-PT0-004",
+          "description": "Screw, Tappet Adjusting",
+          "fitNote": "Require Quantity: 16    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~screw~tappet~adjusting~14744-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "rocker-inlet-a",
+      "label": "Balancín de admisión A",
+      "parentId": "intakeRockers",
+      "quantity": "4",
+      "motion": {
+        "type": "rock",
+        "description": "Oscila sobre su apoyo para abrir la válvula; el resorte sigue el retorno del perfil fijo.",
+        "driver": "Árbol de levas a la mitad de velocidad del cigüeñal."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "1",
+          "pn": "14621-PT0-000",
+          "description": "Arm A, Inlet Rocker",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~arm~14621-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "rocker-inlet-b",
+      "label": "Balancín de admisión B",
+      "parentId": "intakeRockers",
+      "quantity": "4",
+      "motion": {
+        "type": "rock",
+        "description": "Oscila sobre su apoyo para abrir la válvula; el resorte sigue el retorno del perfil fijo.",
+        "driver": "Árbol de levas a la mitad de velocidad del cigüeñal."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "2",
+          "pn": "14622-PT0-000",
+          "description": "Arm B, Inlet Rocker",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~arm~14622-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "rocker-exhaust",
+      "label": "Balancín de escape",
+      "parentId": "exhaustRockers",
+      "quantity": "8",
+      "motion": {
+        "type": "rock",
+        "description": "Oscila sobre su apoyo para abrir la válvula; el resorte sigue el retorno del perfil fijo.",
+        "driver": "Árbol de levas a la mitad de velocidad del cigüeñal."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "3",
+          "pn": "14623-PT0-000",
+          "description": "Arm, Exhaust Rocker",
+          "fitNote": "Require Quantity: 8    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~arm~14623-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "shaft-inlet-rockers-a",
+      "label": "Tramo A del eje de admisión",
+      "parentId": "rockerShafts",
+      "quantity": "2",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "La admisión usa cinco tramos: dos de tipo A y tres de tipo B; no es un eje continuo.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "7",
+          "pn": "14631-P0B-A00",
+          "description": "Shaft A, Rocker Arm",
+          "fitNote": "Fit Note: Mfg.Origin: JPN    Require Quantity: 2    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~rocker~arm~14631-p0b-a00.html"
+        },
+        {
+          "diagram": "cylinder_head",
+          "market": "KL",
+          "callout": "7",
+          "pn": "14631-PT0-010",
+          "description": "Shaft A, Valve Rocker Arm",
+          "fitNote": "Require Quantity: 2    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~valve~rocker~14631-pt0-010.html"
+        }
+      ]
+    },
+    {
+      "id": "shaft-inlet-rockers-b",
+      "label": "Tramo B del eje de admisión",
+      "parentId": "rockerShafts",
+      "quantity": "3",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "La admisión usa cinco tramos: dos de tipo A y tres de tipo B; no es un eje continuo.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "8",
+          "pn": "14632-P0B-A00",
+          "description": "Shaft B, Rocker Arm",
+          "fitNote": "Fit Note: Mfg.Origin: JPN    Require Quantity: 3    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~rocker~arm~14632-p0b-a00.html"
+        },
+        {
+          "diagram": "cylinder_head",
+          "market": "KL",
+          "callout": "8",
+          "pn": "14632-PT0-010",
+          "description": "Shaft B, Valve Rocker Arm",
+          "fitNote": "Require Quantity: 3    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~valve~rocker~14632-pt0-010.html"
+        }
+      ]
+    },
+    {
+      "id": "shaft-exhaust-rockers",
+      "label": "Eje de balancines de escape",
+      "parentId": "rockerShafts",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Un eje continuo de escape; sus dimensiones de detalle son ilustrativas.",
+      "oem": [
+        {
+          "diagram": "cylinder_head",
+          "market": "KA",
+          "callout": "9",
+          "pn": "14633-PT0-000",
+          "description": "Shaft, Exhaust Valve Rocker Arm",
+          "fitNote": "Replaced By: 14633-P0B-A00",
+          "url": "https://www.hondapartsnow.com/genuine/honda~shaft~14633-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-rocker-a",
+      "label": "Resorte separador de balancines A",
+      "parentId": "rockerShafts",
+      "quantity": "3",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "4",
+          "pn": "14645-PT0-003",
+          "description": "Spring A, Valve Rocker Arm (SANKO)",
+          "fitNote": "Require Quantity: 3    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~valve~rocker~14645-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-rocker-b",
+      "label": "Resorte separador de balancines B",
+      "parentId": "rockerShafts",
+      "quantity": "2",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "5",
+          "pn": "14646-PN4-003",
+          "description": "Spring B, Valve Rocker Arm (SANKO)",
+          "fitNote": "Require Quantity: 2    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~valve~rocker~14646-pn4-003.html"
+        }
+      ]
+    },
+    {
+      "id": "washer-rocker-wave",
+      "label": "Arandela ondulada de balancines",
+      "parentId": "rockerShafts",
+      "quantity": "5",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "valve_rocker_arm",
+          "market": "KA",
+          "callout": "6",
+          "pn": "14647-PT0-000",
+          "description": "Washer, Wave",
+          "fitNote": "Require Quantity: 5    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~washer~wave~14647-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "belt-timing",
+      "label": "Correa de distribución",
+      "parentId": "timingBelt",
+      "quantity": "1",
+      "motion": {
+        "type": "flow",
+        "description": "Sus dientes avanzan por un circuito cerrado manteniendo la relación 2:1 entre cigüeñal y árbol.",
+        "driver": "Polea dentada del cigüeñal."
+      },
+      "evidence": "La referencia del catálogo incluye 112RU24. La representación del dentado puede simplificarse y no es una plantilla de fabricación.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "16",
+          "pn": "14400-PT0-004",
+          "description": "Belt, Timing (113RU24 A-555) (UNITTA)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~belt~timing~14400-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "pulley-camshaft",
+      "label": "Polea del árbol de levas",
+      "parentId": "camPulley",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira con el árbol a la mitad de la velocidad del cigüeñal.",
+        "driver": "Correa de distribución."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "15",
+          "pn": "14210-PT0-003",
+          "description": "Pulley, Timing Belt Driven",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pulley~timing~belt~driven~14210-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "pulley-crank-timing",
+      "label": "Piñón de distribución del cigüeñal",
+      "parentId": "crankTimingPulley",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira solidario con el cigüeñal, a su misma velocidad.",
+        "driver": "Cigüeñal."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "crankshaft_piston",
+          "market": "KA",
+          "callout": "16",
+          "pn": "13621-PT0-003",
+          "description": "Pulley, Timing Belt Drive",
+          "fitNote": "Fit Note: Mfg.Origin: JPN,USA    Replaced By: 13621-P0A-003",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pulley~timing~belt~drive~13621-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "tensioner-timing",
+      "label": "Rodillo tensor de distribución",
+      "parentId": "timingTensioner",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "El rodillo gira con el contacto de la correa; su posición de ajuste queda sujeta.",
+        "driver": "Avance de la correa."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "17",
+          "pn": "14510-PT0-004",
+          "description": "Adjuster, Timing Belt (NIPPON SEIKO)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~adjuster~timing~belt~14510-pt0-004.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-timing-adjuster",
+      "label": "Muelle del ajuste de distribución",
+      "parentId": "timingTensioner",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Queda instalado con tensión. No se representa como un tensor automático que bombea en cada vuelta.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "18",
+          "pn": "14516-P0A-000",
+          "description": "Spring, Timing Belt Adjuster",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~timing~belt~adjuster~14516-p0a-000.html"
+        }
+      ]
+    },
+    {
+      "id": "seal-camshaft",
+      "label": "Retén del árbol de levas",
+      "parentId": "camshaft",
+      "quantity": "1 en el extremo de distribución",
+      "motion": {
+        "type": "fixed",
+        "description": "El retén no gira; su labio trabaja contra el eje giratorio.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "camshaft_timing_belt",
+          "market": "KA",
+          "callout": "30",
+          "pn": "91213-PT0-003",
+          "description": "Oil Seal (28X42X8) (ARAI)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~oil~seal~91213-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "duct-intake",
+      "label": "Conducto de admisión",
+      "parentId": "intakeDuct",
+      "quantity": "1 conjunto visible",
+      "motion": {
+        "type": "fixed",
+        "description": "El conducto permanece montado; admite flexión por el movimiento del motor, no un bombeo propio.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Forma observada en las fotos. No se encontró una referencia específica del conjunto en los 20 JSON locales.",
+      "oem": [
+        {
+          "diagram": "air_cleaner",
+          "market": "KA",
+          "callout": "6",
+          "pn": "17225-PT2-010",
+          "description": "Tube, Air Flow",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~tube~air~flow~17225-pt2-010.html"
+        }
+      ]
+    },
+    {
+      "id": "throttle-butterfly",
+      "label": "Mariposa de aceleración",
+      "parentId": "throttleBody",
+      "quantity": "1",
+      "motion": {
+        "type": "rock",
+        "description": "Gira una fracción de vuelta para abrir o cerrar el paso; no gira al régimen del motor.",
+        "driver": "Cable del acelerador y resorte de retorno."
+      },
+      "evidence": "Se muestra la placa dentro del conjunto; el OEM identifica el cuerpo completo, no la placa suelta.",
+      "oem": [
+        {
+          "diagram": "throttle_body",
+          "market": "KA",
+          "callout": "6",
+          "pn": "16400-PT6-A00",
+          "description": "Body Assy., Throttle (GF72B)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~body~assy~16400-pt6-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "plenum-intake",
+      "label": "Cámara común de admisión",
+      "parentId": "plenum",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "La cámara queda fija; el aire circula y su presión cambia con el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "10",
+          "pn": "17010-PT9-A01",
+          "description": "Manifold B, Inlet",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~manifold~17010-pt9-a01.html"
+        }
+      ]
+    },
+    {
+      "id": "runner-intake",
+      "label": "Conducto individual de admisión",
+      "parentId": "runners",
+      "quantity": "4 pares de pasos en el colector",
+      "motion": {
+        "type": "fixed",
+        "description": "El conducto es fijo; la carga fluye de forma pulsante según las aperturas de válvula.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Subdivisión didáctica: los cuatro conductos forman parte de una misma pieza de colector.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "11",
+          "pn": "17100-PT9-A00",
+          "description": "Manifold A, Inlet",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~manifold~17100-pt9-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "injector-fuel",
+      "label": "Inyector de combustible",
+      "parentId": "injectors",
+      "quantity": "4; uno por cilindro",
+      "motion": {
+        "type": "switch",
+        "description": "La carcasa queda fija; la válvula interna abre y cierra mediante pulsos eléctricos.",
+        "driver": "ECU y bobina electromagnética del inyector."
+      },
+      "evidence": "Duración de pulso, caudal y recorrido interno no calibrados. La animación muestra el principio de inyección secuencial.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "1",
+          "pn": "06164-PT3-A00",
+          "description": "Injector Set, Fuel",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1    Replaced By: 06164-P0A-000",
+          "url": "https://www.hondapartsnow.com/genuine/honda~injector~set~fuel~06164-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "seal-injector",
+      "label": "Sello del inyector",
+      "parentId": "injectors",
+      "quantity": "4 del tipo representado",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El catálogo también contiene anillos amortiguadores y otras juntas. Esta ficha no los cuenta como el mismo sello.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "2",
+          "pn": "16472-PH7-003",
+          "description": "Seal Ring, Injector (OTSUKA)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 1    Replaced By: 16472-P0H-A01",
+          "url": "https://www.hondapartsnow.com/genuine/honda~seal~ring~injector~16472-ph7-003.html"
+        }
+      ]
+    },
+    {
+      "id": "rail-fuel",
+      "label": "Riel de combustible",
+      "parentId": "fuelRail",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece sujeto; el combustible circula por dentro.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "5",
+          "pn": "16610-PT3-A00",
+          "description": "Pipe, Fuel",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pipe~fuel~16610-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "regulator-fuel",
+      "label": "Regulador de presión de combustible",
+      "parentId": "fuelRail",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "El cuerpo queda fijo; el diafragma y la válvula interna modulan el retorno.",
+        "driver": "Equilibrio entre presiones y fuerza del resorte; no es un motor eléctrico."
+      },
+      "evidence": "La figura muestra el principio del regulador. Su tarado y el recorrido del diafragma no se simulan.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "8",
+          "pn": "16740-PT6-A00",
+          "description": "Regulator Assy., Pressure",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~regulator~assy~16740-pt6-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "valve-egr",
+      "label": "Válvula EGR",
+      "parentId": "plenum",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "switch",
+        "description": "La carcasa permanece fija; el elemento de cierre abre o limita el paso de gases.",
+        "driver": "Sistema de control del motor; condiciones de carga y temperatura."
+      },
+      "evidence": "No se representa como una apertura en cada ciclo. Estrategia de control y recorrido internos simplificados.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "18",
+          "pn": "18011-PT6-A00",
+          "description": "Valve Set, EGR (KEIHIN)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~set~egr~18011-pt6-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "valve-pcv",
+      "label": "Válvula de ventilación PCV",
+      "parentId": "intakeDuct",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "El cuerpo queda fijo; el elemento interno responde a las diferencias de presión.",
+        "driver": "Diferencia de presión y resorte interno."
+      },
+      "evidence": "El visor general la localiza en el sistema de respiración; su paso interno es una explicación simplificada.",
+      "oem": [
+        {
+          "diagram": "breather_tube",
+          "market": "KA",
+          "callout": "2",
+          "pn": "17130-PK1-003",
+          "description": "Valve Assy., PCV",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~17130-pk1-003.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-body",
+      "label": "Cuerpo de las válvulas IAB",
+      "parentId": "iabBody",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "description": "Body Assy., Bypass Valve",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~body~assy~17120-pt2-000.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-butterfly",
+      "label": "Mariposa secundaria IAB",
+      "parentId": "iabButterflies",
+      "quantity": "4; una por paso secundario",
+      "motion": {
+        "type": "switch",
+        "description": "Cambia de posición al accionar el IAB; la demostración abre y cierra el mecanismo, no representa una apertura por cada ciclo de 720°.",
+        "driver": "Vacío controlado por electroválvula y retorno del actuador."
+      },
+      "evidence": "Subcomponente del conjunto OEM#14, no una pieza vendida por separado. Ángulo y diámetro ilustrativos.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "description": "Body Assy., Bypass Valve",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~body~assy~17120-pt2-000.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-shaft",
+      "label": "Eje común IAB",
+      "parentId": "iabShaft",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "Cambia de posición al accionar el IAB; la demostración abre y cierra el mecanismo, no representa una apertura por cada ciclo de 720°.",
+        "driver": "Vacío controlado por electroválvula y retorno del actuador."
+      },
+      "evidence": "Subcomponente del conjunto OEM#14; cotas y recorrido angular ilustrativos.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "14",
+          "pn": "17120-PT2-000",
+          "description": "Body Assy., Bypass Valve",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~body~assy~17120-pt2-000.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-actuator",
+      "label": "Actuador de diafragma IAB",
+      "parentId": "iabActuator",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "Cambia de posición al accionar el IAB; la demostración abre y cierra el mecanismo, no representa una apertura por cada ciclo de 720°.",
+        "driver": "Vacío controlado por electroválvula y retorno del actuador."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "17",
+          "pn": "17129-PT2-000",
+          "description": "Diaphragm Assy.",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~diaphragm~assy~17129-pt2-000.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-solenoid",
+      "label": "Electroválvula de control IAB",
+      "parentId": "iabSolenoid",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "Cambia de posición al accionar el IAB; la demostración abre y cierra el mecanismo, no representa una apertura por cada ciclo de 720°.",
+        "driver": "Vacío controlado por electroválvula y retorno del actuador."
+      },
+      "evidence": "La demostración muestra la función de conmutación, no su construcción interna exacta ni una calibración ECU verificada.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "24",
+          "pn": "36163-PT2-004",
+          "description": "Valve Assy., Bypass Control Solenoid",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~assy~36163-pt2-004.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-vacuum-chamber",
+      "label": "Depósito de vacío IAB",
+      "parentId": "iabVacuumTank",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "25",
+          "pn": "36361-PT2-014",
+          "description": "Tank, Vacuum",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~tank~vacuum~36361-pt2-014.html"
+        }
+      ]
+    },
+    {
+      "id": "iab-check-valve",
+      "label": "Válvula antirretorno IAB",
+      "parentId": "iabVacuumTank",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "Su cierre interno responde a la diferencia de presión, no a un ángulo fijo del cigüeñal.",
+        "driver": "Diferencia de presión entre sus dos conexiones."
+      },
+      "evidence": "Mecanismo interno esquemático; recorrido y geometría no medidos.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "23",
+          "pn": "36145-PM4-004",
+          "description": "Valve, Check",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~check~36145-pm4-004.html"
+        }
+      ]
+    },
+    {
+      "id": "gasket-iab",
+      "label": "Junta del cuerpo IAB",
+      "parentId": "iabBody",
+      "quantity": "2",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento normal del motor.",
+        "driver": "La mantienen sus apoyos y fijaciones."
+      },
+      "evidence": "Forma reconstruida a partir del diagrama; no se han verificado todas sus dimensiones.",
+      "oem": [
+        {
+          "diagram": "intake_manifold",
+          "market": "KA",
+          "callout": "15",
+          "pn": "17121-PT2-004",
+          "description": "Gasket, Bypass Valve (NIPPON LEAKLESS)",
+          "fitNote": "Require Quantity: 2    Package Quantity: 1",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~bypass~valve~17121-pt2-004.html"
+        }
+      ]
+    },
+    {
+      "id": "manifold-exhaust",
+      "label": "Colector de escape",
+      "parentId": "exhaustManifold",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "fixed",
+        "description": "El colector queda sujeto; los gases circulan en pulsos y la pieza se dilata por temperatura.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "exhaust_manifold",
+          "market": "KA",
+          "callout": "2",
+          "pn": "18100-PT6-A00",
+          "description": "Manifold, Exhaust",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~manifold~18100-pt6-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "shield-exhaust",
+      "label": "Pantalla térmica del escape",
+      "parentId": "heatShield",
+      "quantity": "1 cubierta principal visible",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "exhaust_manifold",
+          "market": "KA",
+          "callout": "4",
+          "pn": "18120-PT6-A00",
+          "description": "Cover A, Exhaust Manifold",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cover~18120-pt6-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "gasket-exhaust",
+      "label": "Junta del colector de escape",
+      "parentId": "exhaustManifold",
+      "quantity": "1 junta del colector",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "exhaust_manifold",
+          "market": "KA",
+          "callout": "3",
+          "pn": "18115-PT0-003",
+          "description": "Gasket, Exhaust Manifold (NIPPON LEAKLESS)",
+          "fitNote": "Replaced By: 18115-PT0-004",
+          "url": "https://www.hondapartsnow.com/genuine/honda~gasket~18115-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "housing-distributor",
+      "label": "Carcasa del distribuidor",
+      "parentId": "distributor",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "La carcasa permanece fija; el eje y el rotor giran dentro.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Referencia Hitachi del catálogo elegido. El proveedor del motor fotografiado requiere confirmación.",
+      "oem": [
+        {
+          "diagram": "distributor_tec",
+          "market": "KA",
+          "callout": "4",
+          "pn": "06301-PT3-A20",
+          "description": "Distributor Housing Kit",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~distributor~housing~kit~06301-pt3-a20.html"
+        }
+      ]
+    },
+    {
+      "id": "cap-distributor",
+      "label": "Tapa del distribuidor",
+      "parentId": "distributor",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija mientras el rotor pasa cerca de sus contactos internos.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "distributor_tec",
+          "market": "KA",
+          "callout": "2",
+          "pn": "30102-PT3-A12",
+          "description": "Cap Assy.",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cap~assy~30102-pt3-a12.html"
+        }
+      ]
+    },
+    {
+      "id": "rotor-distributor",
+      "label": "Rotor del distribuidor",
+      "parentId": "distributor",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira con el árbol de levas: una vuelta por cada dos del cigüeñal.",
+        "driver": "Accionamiento desde el árbol de levas."
+      },
+      "evidence": "El encendido real se adelanta o retrasa electrónicamente; no se supone chispa siempre exactamente en punto muerto superior.",
+      "oem": [
+        {
+          "diagram": "distributor_tec",
+          "market": "KA",
+          "callout": "3",
+          "pn": "30103-PT3-C02",
+          "description": "Head, Rotor",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~head~rotor~30103-pt3-c02.html"
+        }
+      ]
+    },
+    {
+      "id": "coil-ignition",
+      "label": "Bobina de encendido",
+      "parentId": "ignitionCoil",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "No tiene un movimiento mecánico de funcionamiento; cambian corriente y campo magnético.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El catálogo F22A6 muestra bobina externa y cable de alta tensión central. La variante exacta requiere identificar el vehículo.",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "market": "KA",
+          "callout": "3",
+          "pn": "30520-PT9-A02",
+          "description": "Coil, Ignition (TC-19A) (TEC)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~coil~ignition~30520-pt9-a02.html"
+        }
+      ]
+    },
+    {
+      "id": "lead-spark-plug",
+      "label": "Cable de bujía",
+      "parentId": "plugLeads",
+      "quantity": "4; se muestra el del cilindro 1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece sujeto; transmite pulsos eléctricos, no piezas que se desplazan por el cable.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Se muestra uno de los cuatro cables de bujía. Existe además un quinto cable central desde la bobina externa al distribuidor.",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "market": "KA",
+          "callout": "4",
+          "pn": "32701-PT0-000",
+          "description": "Wire, Resistance (NO.1) (SUMITOMO)",
+          "fitNote": "Replaced By: 32701-P0B-A00",
+          "url": "https://www.hondapartsnow.com/genuine/honda~wire~resistance~32701-pt0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "spark-plug",
+      "label": "Bujía",
+      "parentId": "sparkPlugs",
+      "quantity": "4; una por cilindro",
+      "motion": {
+        "type": "fixed",
+        "description": "La bujía permanece fija; la descarga eléctrica salta entre electrodos.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Ejemplo NGK ZFR5F-11 listado. Otras marcas y grados térmicos del catálogo son alternativas.",
+      "oem": [
+        {
+          "diagram": "high_tension_cord_spark_plug",
+          "market": "KA",
+          "callout": "17",
+          "pn": "98079-5514G",
+          "description": "Spark Plug (ZFR5F-11) (NGK)",
+          "fitNote": "Require Quantity: 4    Package Quantity: 10",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spark~plug~98079-5514g.html"
+        }
+      ]
+    },
+    {
+      "id": "pan-oil",
+      "label": "Cárter de aceite",
+      "parentId": "oilPan",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "El recipiente permanece fijo; el aceite retorna por gravedad y se agita con el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "market": "KA",
+          "callout": "5",
+          "pn": "11200-PT0-010",
+          "description": "Pan, Oil",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pan~oil~11200-pt0-010.html"
+        }
+      ]
+    },
+    {
+      "id": "pump-oil",
+      "label": "Bomba de aceite",
+      "parentId": "oilPump",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "rotate",
+        "description": "La carcasa queda fija; los rotores internos de tipo trocoidal giran y cambian el volumen de sus cámaras.",
+        "driver": "Cigüeñal."
+      },
+      "evidence": "Principio trocoidal documentado; número de lóbulos, holguras y caudal no se consideran medidos.",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "market": "KA",
+          "callout": "7",
+          "pn": "15100-PT0-020",
+          "description": "Pump Assy., Oil",
+          "fitNote": "Replaced By: 15100-PT0-030",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pump~assy~15100-pt0-020.html"
+        }
+      ]
+    },
+    {
+      "id": "strainer-oil",
+      "label": "Pescante con colador de aceite",
+      "parentId": "oilStrainer",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "El pescante está sujeto; el aceite se mueve por su interior.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "market": "KA",
+          "callout": "14",
+          "pn": "15220-P0A-C00",
+          "description": "Strainer, Oil",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~strainer~oil~15220-p0a-c00.html"
+        }
+      ]
+    },
+    {
+      "id": "valve-oil-relief",
+      "label": "Válvula de alivio de aceite",
+      "parentId": "oilPump",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "El émbolo se desplaza al variar el equilibrio entre presión de aceite y fuerza del resorte.",
+        "driver": "Presión hidráulica y resorte de alivio."
+      },
+      "evidence": "No se muestra un umbral numérico de apertura: su tarado no se ha verificado en este atlas.",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "market": "KA",
+          "callout": "16",
+          "pn": "15231-PE0-000",
+          "description": "Valve, Relief",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~valve~relief~15231-pe0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "spring-oil-relief",
+      "label": "Resorte de alivio de aceite",
+      "parentId": "oilPump",
+      "quantity": "1",
+      "motion": {
+        "type": "spring",
+        "description": "Se comprime cuando la presión desplaza la válvula y se extiende al cerrarla.",
+        "driver": "Fuerza hidráulica sobre el émbolo."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "market": "KA",
+          "callout": "17",
+          "pn": "15232-PG6-000",
+          "description": "Spring, Relief Valve",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~spring~relief~valve~15232-pg6-000.html"
+        }
+      ]
+    },
+    {
+      "id": "filter-oil",
+      "label": "Filtro de aceite",
+      "parentId": "oilFilter",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "La carcasa y el medio filtrante permanecen fijos; el aceite circula a través de ellos.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El plegado y las válvulas internas del filtro son ilustrativos; el catálogo incluye alternativas de proveedor.",
+      "oem": [
+        {
+          "diagram": "oil_pump_oil_strainer",
+          "market": "KA",
+          "callout": "20",
+          "pn": "15400-PT7-005",
+          "description": "Filter, Oil (ALLIED SIGNAL USA)",
+          "fitNote": "Replaced By: 15400-PLM-A02",
+          "url": "https://www.hondapartsnow.com/genuine/honda~filter~oil~15400-pt7-005.html"
+        }
+      ]
+    },
+    {
+      "id": "dipstick-oil",
+      "label": "Varilla de nivel de aceite",
+      "parentId": "dipstick",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece insertada durante el funcionamiento; se extrae manualmente para la lectura.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "cylinder_block_oil_pan",
+          "market": "KA",
+          "callout": "19",
+          "pn": "15650-PT0-003",
+          "description": "Dipstick, Oil",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~dipstick~oil~15650-pt0-003.html"
+        }
+      ]
+    },
+    {
+      "id": "pump-water",
+      "label": "Bomba de refrigerante",
+      "parentId": "waterPump",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "La carcasa queda fija; el eje y el impulsor giran. Su relación exacta depende de las poleas.",
+        "driver": "Correa de distribución."
+      },
+      "evidence": "Paletas y relación de velocidad aproximadas; no se simula un caudal de fábrica.",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "market": "KA",
+          "callout": "1",
+          "pn": "19200-P0A-003",
+          "description": "Water Pump (YAMADA)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~water~pump~19200-p0a-003.html"
+        }
+      ]
+    },
+    {
+      "id": "thermostat",
+      "label": "Termostato",
+      "parentId": "thermostat",
+      "quantity": "1",
+      "motion": {
+        "type": "switch",
+        "description": "La válvula se desplaza lentamente al calentarse la cápsula; no sigue las revoluciones del cigüeñal.",
+        "driver": "Dilatación térmica del elemento de cera y resorte de retorno."
+      },
+      "evidence": "Referencia de servicio listada. Temperatura exacta de apertura y carrera no calibradas.",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "market": "KA",
+          "callout": "5",
+          "pn": "19301-PAA-306",
+          "description": "Thermostat Assy. (NIPPON THERMOSTAT)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~thermostat~assy~19301-paa-306.html"
+        }
+      ]
+    },
+    {
+      "id": "outlet-coolant",
+      "label": "Salida de refrigerante",
+      "parentId": "coolantOutlet",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "Permanece fija durante el funcionamiento.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "market": "KA",
+          "callout": "10",
+          "pn": "19360-PT3-A00",
+          "description": "Cover, Water Outlet",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~cover~water~outlet~19360-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "pipe-coolant",
+      "label": "Tubo de conexión del refrigerante",
+      "parentId": "thermostat",
+      "quantity": "1",
+      "motion": {
+        "type": "fixed",
+        "description": "El tubo queda sujeto; el refrigerante se desplaza por su interior.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Identidad documentada en el catálogo de referencia; geometría individual aproximada.",
+      "oem": [
+        {
+          "diagram": "water_pump",
+          "market": "KA",
+          "callout": "12",
+          "pn": "19505-PT3-A00",
+          "description": "Pipe, Connecting",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pipe~connecting~19505-pt3-a00.html"
+        }
+      ]
+    },
+    {
+      "id": "sensor-coolant",
+      "label": "Sensor de temperatura del refrigerante",
+      "parentId": "thermostat",
+      "quantity": "1 sensor de control representado",
+      "motion": {
+        "type": "fixed",
+        "description": "No tiene movimiento mecánico de lectura; cambia su señal eléctrica con la temperatura.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "El catálogo contiene además una unidad para indicación e interruptores térmicos; no son el mismo dispositivo.",
+      "oem": [
+        {
+          "diagram": "engine_sub_cord_clamp",
+          "market": "KA",
+          "callout": "24",
+          "pn": "37870-PK2-015",
+          "description": "Sensor Assy., Water Temperature (HADSYS)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~sensor~assy~37870-pk2-015.html"
+        }
+      ]
+    },
+    {
+      "id": "alternator",
+      "label": "Alternador",
+      "parentId": "alternator",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "La carcasa permanece fija; polea y rotor giran dentro. La relación exacta con el cigüeñal no está medida.",
+        "driver": "Correa exterior impulsada por la polea del cigüeñal."
+      },
+      "evidence": "Referencia Denso. La figura individual no implica que los componentes internos tengan todos dimensiones medidas.",
+      "oem": [
+        {
+          "diagram": "alternator_denso",
+          "market": "KA",
+          "callout": "1",
+          "pn": "31100-PT3-A52",
+          "description": "Alternator Assy. (CJP16) (DENSO)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~alternator~assy~31100-pt3-a52.html"
+        }
+      ]
+    },
+    {
+      "id": "rotor-alternator",
+      "label": "Rotor del alternador",
+      "parentId": "alternator",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira solidario con el eje y la polea del alternador.",
+        "driver": "Correa de accesorios; la excitación eléctrica regula su campo."
+      },
+      "evidence": "Referencia de componente mostrada por el catálogo, con nota de disponibilidad por mercado.",
+      "oem": [
+        {
+          "diagram": "alternator_denso",
+          "market": "KA",
+          "callout": "2",
+          "pn": "31101-PV1-A01",
+          "description": "Rotor Assy.  (N/A FOR USA: SEE ASSEMBLY)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~rotor~assy~31101-pv1-a01.html"
+        }
+      ]
+    },
+    {
+      "id": "rectifier-alternator",
+      "label": "Rectificador del alternador",
+      "parentId": "alternator",
+      "quantity": "1 conjunto",
+      "motion": {
+        "type": "fixed",
+        "description": "No gira; sus diodos conducen eléctricamente según la polaridad de la tensión.",
+        "driver": "No tiene accionamiento propio."
+      },
+      "evidence": "Se representa el conjunto como pieza física; la forma de onda no es una medición de este alternador.",
+      "oem": [
+        {
+          "diagram": "alternator_denso",
+          "market": "KA",
+          "callout": "14",
+          "pn": "31127-PT0-013",
+          "description": "Rectifier Assy.",
+          "fitNote": "Replaced By: 31127-PT2-003",
+          "url": "https://www.hondapartsnow.com/genuine/honda~rectifier~assy~31127-pt0-013.html"
+        }
+      ]
+    },
+    {
+      "id": "pump-power-steering",
+      "label": "Bomba de dirección asistida",
+      "parentId": "psPump",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "La carcasa está fija; el eje y el elemento de bombeo giran por la polea exterior.",
+        "driver": "Correa de dirección asistida."
+      },
+      "evidence": "La arquitectura interna se simplifica. La presión depende de la carga y del control hidráulico, no solo del régimen.",
+      "oem": [
+        {
+          "diagram": "p_s_pump",
+          "market": "KA",
+          "callout": "2",
+          "pn": "56110-PT0-050",
+          "description": "Pump Sub-Assy., Power Steering",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pump~sub~assy~56110-pt0-050.html"
+        }
+      ]
+    },
+    {
+      "id": "pulley-power-steering",
+      "label": "Polea de dirección asistida",
+      "parentId": "psPump",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira con el eje de la bomba; no es la polea del árbol de levas.",
+        "driver": "Correa de dirección."
+      },
+      "evidence": "Es la polea superior expuesta que aparece en las fotos del extremo de distribución.",
+      "oem": [
+        {
+          "diagram": "p_s_pump",
+          "market": "KA",
+          "callout": "8",
+          "pn": "56483-PV0-000",
+          "description": "Pulley, Power Steering Pump",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-pv0-000.html"
+        }
+      ]
+    },
+    {
+      "id": "belt-power-steering",
+      "label": "Correa de dirección asistida",
+      "parentId": "accessoryBelts",
+      "quantity": "1 correa de dirección",
+      "motion": {
+        "type": "flow",
+        "description": "Se desplaza continuamente alrededor de las poleas; no fija el tiempo de apertura de las válvulas.",
+        "driver": "Polea exterior del cigüeñal."
+      },
+      "evidence": "No se confunde con la correa de distribución ni con la del alternador. Relación de velocidades sin verificar.",
+      "oem": [
+        {
+          "diagram": "p_s_pump",
+          "market": "KA",
+          "callout": "10",
+          "pn": "56992-PT0-J03",
+          "description": "Belt, Power Steering Pump (4PK1068)",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~belt~power~steering~pump~4pk1068~56992-pt0-j03.html"
+        }
+      ]
+    },
+    {
+      "id": "flywheel",
+      "label": "Volante motor",
+      "parentId": "flywheel",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira solidario con el cigüeñal; se muestra el embrague acoplado, sin simular deslizamiento.",
+        "driver": "Cigüeñal y conjunto de embrague en estado acoplado."
+      },
+      "evidence": "Adjunto del motor con transmisión 5MT. Geometría reconstruida; no se simulan deslizamiento, desgaste ni actuación del pedal.",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "market": "KA",
+          "callout": "3",
+          "pn": "22100-PT7-013",
+          "description": "Flywheel",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~flywheel~22100-pt7-013.html"
+        }
+      ]
+    },
+    {
+      "id": "clutch-disc",
+      "label": "Disco de embrague",
+      "parentId": "clutchDisc",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira con el volante cuando el embrague está acoplado. Al desacoplarlo puede girar a una velocidad distinta; aquí se muestra el estado acoplado.",
+        "driver": "Cigüeñal y conjunto de embrague en estado acoplado."
+      },
+      "evidence": "Adjunto del motor con transmisión 5MT. Geometría reconstruida; no se simulan deslizamiento, desgaste ni actuación del pedal.",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "market": "KA",
+          "callout": "4",
+          "pn": "22200-PT1-020",
+          "description": "Disk, Friction",
+          "fitNote": "Fit Note: Mfg.Origin: JPN    Replaced By: 22200-PT7-013",
+          "url": "https://www.hondapartsnow.com/genuine/honda~disk~friction~22200-pt1-020.html"
+        }
+      ]
+    },
+    {
+      "id": "clutch-pressure-plate",
+      "label": "Plato de presión del embrague",
+      "parentId": "clutchPressurePlate",
+      "quantity": "1",
+      "motion": {
+        "type": "rotate",
+        "description": "Gira solidario con el cigüeñal; se muestra el embrague acoplado, sin simular deslizamiento.",
+        "driver": "Cigüeñal y conjunto de embrague en estado acoplado."
+      },
+      "evidence": "Adjunto del motor con transmisión 5MT. Geometría reconstruida; no se simulan deslizamiento, desgaste ni actuación del pedal.",
+      "oem": [
+        {
+          "diagram": "clutch_torque_converter",
+          "market": "KA",
+          "callout": "5",
+          "pn": "22300-PT7-023",
+          "description": "Disk, Pressure",
+          "fitNote": "",
+          "url": "https://www.hondapartsnow.com/genuine/honda~disk~pressure~22300-pt7-023.html"
+        }
+      ]
+    }
+  ],
+  "removedAssemblyGroups": [
+    "primaryRocker",
+    "middleRocker",
+    "secondaryRocker",
+    "syncPistons",
+    "lostMotion",
+    "timingPlate",
+    "vtecSolenoid"
+  ],
+  "removedComponentLinks": {
+    "rocker-primary": {
+      "label": "Balancín primario de admisión",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "rocker-middle": {
+      "label": "Balancín central VTEC",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "rocker-secondary": {
+      "label": "Balancín secundario de admisión",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "pin-vtec-sync": {
+      "label": "Pasador de sincronización VTEC",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "lost-motion": {
+      "label": "Mecanismo de movimiento perdido",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "plate-vtec-timing": {
+      "label": "Placa de sincronización VTEC",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "solenoid-vtec": {
+      "label": "Electroválvula de control VTEC",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "filter-vtec": {
+      "label": "Filtro de la válvula VTEC",
+      "reason": "Esta pieza pertenecía al modelo SOHC VTEC anterior. El F22A6 de fábrica tiene accionamiento fijo de válvulas y no lleva este mecanismo."
+    },
+    "shaft-inlet-rockers": {
+      "label": "Eje continuo de admisión anterior",
+      "reason": "El F22A6 usa cinco tramos de apoyo: dos de tipo A y tres de tipo B. Consulte las fichas de cada tipo."
+    },
+    "bolt-valve-cover": {
+      "label": "Fijación de tapa del modelo anterior",
+      "reason": "La tapa F22A6 se sujeta con cuatro tuercas ciegas sobre sus espárragos. Consulte Tuerca de la tapa de válvulas."
+    }
+  },
+  "legacyAliases": {
+    "rocker-exhaust-a": "rocker-exhaust",
+    "rocker-exhaust-b": "rocker-exhaust"
+  },
+  "limitations": [
+    "No complete set of six stamp-verified exterior photographs",
+    "No complete verified 1993 US F22A6 factory service manual acquired",
+    "Unmeasured cam topology/profiles, casting dimensions and calibrated controls remain approximate",
+    "Original emissions market unresolved",
+    "Clearance checks validate this educational geometry only"
+  ]
+}

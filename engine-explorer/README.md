@@ -1,64 +1,132 @@
-# Honda F22 Engine Explorer
+# Honda F22A6 Engine Explorer
 
-An interactive 3D explainer of the 1994–97 Honda Accord 2.2-litre SOHC VTEC engine. It was built for a viewer with glaucoma, to help recognise the outside parts, see where they connect, and explore how the inside works.
+**[Español](README.es.md) · English**
 
-## Open it
+Interactive educational reconstruction of a **factory-standard F22A6 in a 1993 Honda Accord EX sedan, 5-speed manual**. Engine identity is confirmed by the owner's stamp and paperwork. Original market and emissions specification remain unresolved. The dashboard, high-contrast controls, large text, spoken descriptions and bilingual component atlas are retained for the intended low-vision viewer.
 
-Double-click **`index.html`**, or from the project folder run:
+## Open the project
 
-```sh
-open "engine-explorer/index.html"
-```
+The project root `../index.html` is the bilingual landing page. Its **Enter the explorer** button opens the existing complete-engine dashboard; all previous component URLs remain valid.
 
-It is one offline file and needs no internet or install. Chrome, Safari, Edge and Firefox all work. It keeps the reference library in place: the "Honda diagram" links open the OEM drawings from `../Honda Reference Library/02_OEM_Diagrams/`.
-
-## Using it
-
-- **Views** (keys `1`–`7`): Outside (photo 1's angle), Valve cover off, Timing covers off, One cylinder cut open, Crankshaft and bottom, VTEC close-up, Taken apart.
-- **Turn and zoom:** drag, or focus the engine and use the arrow keys (Shift for bigger steps); scroll or `+`/`−` to zoom; `R` resets the view.
-- **Parts:** click a part on the engine, search the list (`/`), or step through with `N`/`P`. Each part says where it is, what it does, what it connects to and how it moves, with its Honda diagram callout. A ≈ mark means the shape or position is approximate.
-- **One system at a time:** "Show one system" fades everything else but keeps it faintly visible for orientation.
-- **Motion:** Play/Pause (`Space`), step back and forward (`,` `.`) by 5–180°, and four speeds from one crank turn in 16 s to one per second. The bar shows every cylinder's stroke as a word and a shape, not by colour alone.
-- **VTEC** (`V`): an educational switch. Each cylinder changes over only while its intake valves are closed, as on the real engine.
-- **Flow paths:** air and fuel, exhaust, oil and coolant. Each has its own marker shape, and all are labelled schematic.
-- **Display:** text size 100–240 %, label size, three colour schemes (high-contrast dark, high-contrast light, soft), labels on the engine (key parts, selected only, or none), reduce motion, and spoken part names. "Read aloud" in the details panel reads the whole description. Settings are remembered on this computer.
-
-## Rebuilding and checking
-
-The page is built with the [teardown](https://github.com/elvarofficial/teardown) skill's bundler (three.js, fonts and styles inlined):
+Open `index.html` for the complete engine and `anatomy.html` for the bilingual individual-component atlas. Use **Español / English** in either header to change both pages. The preference is shared and remembered locally; switching preserves the current component, camera, view, playback and controls. Spanish is the default. The reference sources remain in their original language. The built HTML files contain their scripts, fonts and rendering assets. Keep `anatomy-media/f22a6/` beside the atlas and `../Honda Reference Library/F22A6_1993_5MT/` in place for media and local evidence links. A local HTTP server is recommended for video captions and reference navigation:
 
 ```sh
-engine-explorer/scripts/build.sh     # → engine-explorer/index.html, then runs the timing checks
-node engine-explorer/tests/timing.mjs   # 20 checks: firing order, piston pairs, rotation, ratios, VTEC switching
-node engine-explorer/tests/ui.mjs       # drives the page: every view, picking, keyboard, focus ring, text size, VTEC
-node engine-explorer/tests/compare.mjs  # renders each photo's viewpoint beside the photo (.build/compare)
+# From Honda Accord Motor Project:
+python3 -m http.server 8765 --bind 127.0.0.1
+# http://127.0.0.1:8765/engine-explorer/index.html
+# http://127.0.0.1:8765/engine-explorer/anatomy.html
 ```
 
-On macOS the tests launch headless Chromium with the Metal backend so WebGL works.
+## Controls
 
-## Layout
+- **Views, keys 1–7:** outside, valve cover off, timing covers off, cylinder cutaway, crankshaft, intake bypass, exploded assembly.
+- **Camera:** drag to orbit; scroll or +/− to zoom. Focus the engine and use arrow keys for rotation; Shift increases the step. R resets. Display includes six reference directions and a three-quarter view.
+- **Inspector:** Parts, Details and Motion are separate tabs. Arrow keys, Home and End navigate the tabs. Search with `/`; N/P select adjacent parts; Escape clears selection or closes a dialog.
+- **Playback:** Space plays/pauses, comma/period step the crank. Motion contains cylinder strokes, step size and schematic air/fuel, exhaust, oil and coolant paths.
+- **Intake bypass, I:** an independent open/closed actuator state. It changes four secondary intake butterflies without changing cam profiles. No factory ECU activation threshold is claimed.
+- **Accessibility:** text 100–240%, independent label size, three contrast themes, reduced motion, optional spoken names and Read aloud. Meaning is conveyed by words and shapes as well as colour. Preferences are remembered locally.
 
+## Component atlas and videos
+
+The atlas contains **102 component types in 12 systems**, linked to **63 complete-engine selection groups**. **78 types reuse original meshes and materials directly**; **24 use supplementary PBR reconstructions** for functional detail absent from the assembled model. Provenance and approximation are visible in the viewer. A type is not an installed instance: one piston entry represents four pistons, for example. Supplier alternatives and bearing grades are not counted as additional simultaneously installed components.
+
+Each entry has Spanish and English explanations of location, function, connections and motion, an installed quantity or limitation, operating steps and OEM diagram callouts. Fixed parts remain fixed: their inspection videos move the camera. Pumps and actuators use separate moving and stationary members where modeled. The engine-side flywheel, clutch disc and pressure plate are included; gearbox internals are outside the project. Their coupled rotation is shown, not a complete clutch-release simulation.
+
+The active media collection is **`anatomy-media/f22a6/`**. Each entry has a 12-second H.264 MP4, JPEG poster and WebVTT captions in each language: Spanish in this directory, English in its `en/` subdirectory. Captions are also burned into the matching language video. Videos have **no embedded audio**; browser speech synthesis supplies optional Spanish or English narration in the page. Voice availability and pronunciation depend on the installed system voices.
+
+The media manifest records engine identity and a source revision hash. URLs include a manifest hash to avoid stale clips. Removed legacy component links display an explanation; valid links and documented aliases are retained.
+
+## Evidence and limits
+
+The active reference package contains 26 assembly categories for each of the KA and KL 1993 EX sedan 5MT catalogues: **52 OEM diagrams**, saved catalogue pages and structured rows, **60 service-part photographs**, a limited exterior comparison photo, Honda's 1993 owner manual and brochure, a service excerpt, specification evidence, source hashes, the KA/KL comparison and a component reuse/rebuild audit.
+
+Start with `../Honda Reference Library/F22A6_1993_5MT/04_Reports/reference_report.html`. Individual rows distinguish documented facts, visual reconstruction and approximation. Exploded plates establish assembly relationships; they are not scaled manufacturing drawings. KA and KL references are both retained; a displayed KA part number does not confirm that the owner's car is a federal-emissions vehicle.
+
+Honda's 1993 owner manual, printed page 159, documents **85 mm bore, 95 mm stroke, 2,156 cc and 8.8:1 compression ratio**. The modeled piston travel follows the stroke. The chamber surfaces have not been calibrated to reproduce the published compression ratio.
+
+The OEM inventory establishes one camshaft, eight intake arms in A/B types, eight exhaust arms, two short and three long inlet shaft segments, one exhaust shaft, sixteen valve adjusters, four valve-cover cap nuts, intake-bypass hardware and the manual engine attachments. The rebuilt exterior includes the black 16 VALVE cover, eight-port intake-bypass body, four butterfly discs, plenum/runner assembly, cast exhaust layout and shield, external ignition coil and manual flywheel/clutch.
+
+Remaining limits are explicit:
+
+- No complete set of six stamp-verified F22A6 exterior photographs was obtained. The dealer engine photo is a 1993 EX automatic and supports only common visible cover/intake appearance.
+- Exact cam profiles, contact-track topology and axial widths remain unmeasured. The model uses an illustrative fixed-profile contact layout, with equal intake-valve lift and no hydraulic lift switching.
+- Rod length 142 mm, cylinder pitch 96 mm, valve lift/angles, piston pin and journal diameters, casting envelopes and many fastener details are nominal teaching geometry, not verified machining dimensions.
+- The 1-3-4-2 firing sequence and counter-rotating balance shafts at twice crank speed are implemented and tested. A primary A6 service-manual page for these entries remains pending in the evidence registry. Cam and distributor run at half crank speed.
+- The rear balance drive includes a belt-driven input and reversing gear pair. Positions, tooth profiles, counts, phases and belt meshing are illustrative.
+- Vacuum routing, emissions equipment calibration and ECU thresholds remain unresolved. IAB travel is an independent educational state, not an RPM-triggered factory simulation.
+- Oil/coolant paths are schematic; pressures, temperatures, loads, deformation, tolerances and complete collision clearance are not simulated.
+- A positive sampled model valve/piston clearance does not establish real-engine clearance or timing safety.
+
+## Source organization
+
+```text
+src/engine-spec.js           canonical engine identity, dimensions, ratios and evidence
+src/kin.js                   deterministic crank-angle mechanics
+src/parts.js                 complete-engine component registry and OEM references
+src/engine.js                complete model and pose update
+src/detail-internals.js      internal component detail
+src/detail-exterior.js       intake, bypass, exhaust, ignition and manual attachments
+src/detail-castings.js       covers, head and block castings
+src/detail-timing.js         belt and sprocket detail
+src/exterior-layout.js       shared exterior coordinates
+src/studio.js               common PBR lighting and appearance
+src/flows.js                 schematic fluid paths
+src/views.js                 educational views and reference camera directions
+src/app.js, app/style.css    complete-engine dashboard
+src/i18n/{en,es}.js          complete-engine text and narration
+src/i18n/locale.js           shared persistent language preference
+src/anatomy/catalog.js      component entries, Spanish text and evidence
+src/anatomy/catalog-en.js   complete English component text
+src/anatomy/catalog-i18n.js localized catalogue access without geometry duplication
+src/anatomy/engine-parts.js  extraction of original engine meshes/materials
+src/anatomy/figures.mjs      supplementary Anatomy reconstruction recipes
+src/anatomy/motion.mjs       deterministic supplementary motion
+src/anatomy/pbr-runtime.js  shared individual-part/video renderer
+src/anatomy/ui.js            atlas, accessibility and versioned media
+anatomy-media/f22a6/         active MP4s, posters, captions and manifest
 ```
-src/kin.js        the math: one crank angle drives everything; SPEC and ASSUMED values kept apart
-src/engine.js     the geometry, built from code after the photos and the OEM diagrams
-src/parts.js      every selectable part, its system and its OEM diagram callouts
-src/i18n/en.js    every word shown or spoken, ready to copy for a translation
-src/flows.js      the schematic flow paths
-src/stage.js      lights, camera, orbit, outline, picking, cutaway
-src/views.js      the seven views
-src/app.js        the accessible interface
-app/              build entry and stylesheet
-tests/            timing, interface and photo-comparison checks
+
+## Build and verification
+
+From `engine-explorer/`, install the pinned project dependencies. The production build no longer requires a globally installed skill:
+
+```sh
+npm ci
+npm run build
+npm test
 ```
 
-## What is approximate
+This builds both self-contained dashboards, the root landing page and `dist/` for Vercel. `dist/` includes active bilingual media and OEM diagrams with the same relative paths as local browsing; development files and prior-version archives are not published. Source and archived work remain in GitHub.
 
-The motion follows Honda's figures: 85 × 95 mm, 2,156 cc and 8.8:1. Cylinder 1 is at the timing-belt end and the firing order is 1-3-4-2. The crank turns counter-clockwise from the pulley end, the cam runs at half speed, and the balance shafts run at twice speed, counter-rotating. These are approximate:
+The existing engine-only command is still available. Optional geometry and video-export tools may use the local teardown skill dependencies:
 
-- **Engine identity:** the stamped engine code is unconfirmed. F22B1 (1994 US Accord EX) is the provisional reference.
-- **Internal dimensions:** rod length (142 mm), piston pin height and cylinder spacing (96 mm) are assumed.
-- **Valvetrain:** valve angles, valve lift and cam lobe shapes are teaching shapes, not Honda profiles. The VTEC switching rule is real, but the lift curves are not.
-- **Outside shapes:** sizes are estimated from the photographs. Brackets, wiring, connectors, sensors and the rear block face are simplified, and the intake plenum and the timing covers are smoothed.
-- **Hidden part positions:** the balance shafts and their drive, the oil-pump gear case, the water pump, the tensioner and the thermostat are placed approximately.
-- **Pulley speeds:** accessory pulley sizes, and so their speeds, are estimated.
-- **Flow paths:** oil and coolant lines show the route in general, not the real drillings. No live pressures are simulated.
+```sh
+./scripts/build.sh
+node scripts/build-anatomy.mjs
+node tests/timing.mjs
+node tests/geometry.mjs
+node tests/anatomy.mjs
+node tests/anatomy-pbr.mjs
+node tests/i18n.mjs
+```
+
+These CPU checks cover firing sequence, piston pairs/travel, shaft ratios, deterministic seeks, independent intake bypass, finite geometry, open bores, sampled valve/piston clearance, catalogue OEM evidence and exact parent/extract mesh/material identity. Visible browser review is recorded in `tests/ui-review.json`. The historical browser runner and old-photo comparison script were archived because they tested the earlier engine variant.
+
+Regenerate the production videos with the same PBR runtime as the atlas:
+
+```sh
+node scripts/export-anatomy-pbr.mjs --port 8766 --theme light --language es
+# For English, start another batch with --language en (default output: anatomy-media/f22a6/en).
+# Open its printed local URL and press “Iniciar toda la colección”.
+node scripts/select-anatomy-posters.mjs --language es
+node scripts/anatomy-video-verify.mjs --language es --revision REVISION_PRINTED_BY_EXPORTER
+# Use --language en for the English poster and verification commands.
+node scripts/anatomy-video-contact.mjs
+node scripts/build-anatomy.mjs
+```
+
+The exporter accepts its own canvas frames on loopback and uses local ffmpeg/ffprobe. It verifies every MP4 before committing its manifest entry and resumes completed clips from the same source revision. Keep the geometry and narration unchanged during a batch. The former SVG video command now points to this production workflow.
+
+## Preserved prior version
+
+Before the migration, all 385 source/reference/media files were archived and SHA-256 verified in `../Archives/F22B1_before_F22A6_2026-11-07_11-58-58/project-and-references.tar.gz`, with `manifest.json`. The previous VTEC photos and 1994–96 documentation are excluded from the active reference root. Previous media are preserved in the archive’s `legacy-media/` directory and are not linked by the active atlas. The archive retains the earlier model for comparison and recovery.

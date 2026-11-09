@@ -1,0 +1,227 @@
+[
+  {
+    "id": "engine_identity",
+    "value": "F22A6",
+    "unit": null,
+    "source_id": "user",
+    "locator": "engine stamp + paperwork confirmed by user",
+    "status": "user_confirmed",
+    "note": "Research package does not contain a new photograph of the user’s stamp."
+  },
+  {
+    "id": "bore",
+    "value": 85.0,
+    "unit": "mm",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page159",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "stroke",
+    "value": 95.0,
+    "unit": "mm",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page159",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "displacement",
+    "value": 2156,
+    "unit": "cm³",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page159",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "compression_ratio",
+    "value": 8.8,
+    "unit": ":1",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page159",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "operating_cycle",
+    "value": "four-stroke gasoline, water cooled, overhead camshaft",
+    "unit": null,
+    "source_id": "owner1993",
+    "locator": "printed/PDF page159",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "rated_power",
+    "value": 140,
+    "unit": "hp",
+    "source_id": "brochure1993",
+    "locator": "PDF page15: EX sedan",
+    "status": "verified",
+    "note": "US sales figure; no RPM value asserted from this source."
+  },
+  {
+    "id": "fuel_injection",
+    "value": "PGM-FI",
+    "unit": null,
+    "source_id": "brochure1993",
+    "locator": "PDF page15: EX sedan",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "oil_change_with_filter",
+    "value": 3.8,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": "Change capacity excludes oil remaining in engine."
+  },
+  {
+    "id": "oil_change_without_filter",
+    "value": 3.5,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "oil_total",
+    "value": 4.9,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "coolant_5mt_total",
+    "value": 6.6,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": "Whole installed cooling system, not volume of engine water jackets."
+  },
+  {
+    "id": "coolant_5mt_change",
+    "value": 3.0,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": "Manual footnote includes0.6 L reserve tank and coolant remaining in engine."
+  },
+  {
+    "id": "manual_transmission_oil_change",
+    "value": 1.9,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "manual_transmission_oil_total",
+    "value": 2.0,
+    "unit": "L",
+    "source_id": "owner1993",
+    "locator": "printed/PDF page158",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "intake_valves",
+    "value": 8,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "valve_rocker_arm #7,14711-PT3-A00",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "exhaust_valves",
+    "value": 8,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "valve_rocker_arm #8,14721-P0J-A00",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "inlet_rocker_A",
+    "value": 4,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "valve_rocker_arm #1,14621-PT0-000",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "inlet_rocker_B",
+    "value": 4,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "valve_rocker_arm #2,14622-PT0-000",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "exhaust_rocker",
+    "value": 8,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "valve_rocker_arm #3,14623-PT0-000",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "inlet_rocker_shaft_A",
+    "value": 2,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "cylinder_head #7",
+    "status": "verified",
+    "note": "Segmented inlet shaft system; do not draw two continuous full-length rocker shafts."
+  },
+  {
+    "id": "inlet_rocker_shaft_B",
+    "value": 3,
+    "unit": "pieces",
+    "source_id": "oem_ka",
+    "locator": "cylinder_head #8",
+    "status": "verified",
+    "note": ""
+  },
+  {
+    "id": "camshaft_service_number",
+    "value": "14111-PT4-F50",
+    "unit": null,
+    "source_id": "oem_ka",
+    "locator": "camshaft_timing_belt #14",
+    "status": "verified",
+    "note": "Current service catalogue number is not proof of original cam profile or lobe count."
+  },
+  {
+    "id": "crank_throw",
+    "value": 47.5,
+    "unit": "mm",
+    "source_id": "owner1993",
+    "locator": "stroke/2",
+    "status": "derived",
+    "note": "Exact geometric derivation from 95 mm stroke; not an additional factory dimension."
+  },
+  {
+    "id": "swept_volume_per_cylinder",
+    "value": 539,
+    "unit": "cm³",
+    "source_id": "owner1993",
+    "locator": "2156/4",
+    "status": "derived",
+    "note": "Rounded nominal displacement divided by 4."
+  }
+]
