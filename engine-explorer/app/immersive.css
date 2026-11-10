@@ -36,7 +36,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .help-options{top:calc(100% + 8px);min-width:240px;background:var(--panel)}
 
 /* Small edge controls remain discoverable while the canvas fills the viewport. */
-#app.immersive-shell .immersive-rail{position:absolute;z-index:21;top:calc(var(--hud-gap) + 76px);pointer-events:auto}
+#app.immersive-shell .immersive-rail{position:absolute;z-index:21;top:calc(var(--hud-gap) + 76px);display:flex;pointer-events:auto}
 #app.immersive-shell .immersive-rail-left{left:var(--hud-gap)}
 #app.immersive-shell .immersive-rail-right{right:var(--hud-gap)}
 #app.immersive-shell .immersive-toggle{min-height:48px;padding:10px 14px;font-size:.67em;background:var(--btn);border-color:var(--line);box-shadow:none}
@@ -45,15 +45,21 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .immersive-toggle[aria-expanded=true]{border-color:var(--accent);background:var(--red-inset);color:var(--fg)}
 #app.immersive-shell .viewer-heading{
   position:absolute;z-index:18;top:var(--view-title-top,var(--hud-gap));left:50%;transform:translateX(-50%);
-  display:flex;justify-content:center;align-items:center;width:var(--view-title-width,calc(100% - 800px));max-width:calc(100% - 24px);
+  --view-heading-base:clamp(40px,3.6vw,52px);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;width:min(1100px,calc(100% - 24px));
   padding:0;margin:0;border:0;border-radius:0;background:transparent;pointer-events:none;
 }
-#app.immersive-shell .viewer-heading>div{width:100%;min-width:0}
-#app.immersive-shell .viewer-heading h2{
-  font-size:.84em;line-height:1.2;font-weight:600;text-align:center;text-transform:uppercase;
-  letter-spacing:.1em;text-wrap:balance;overflow-wrap:anywhere;text-shadow:0 1px 8px var(--bg);
+#app.immersive-shell .view-title-composition{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;min-width:0}
+#app.immersive-shell .view-eyebrow{
+  margin:0;font-size:calc(11px * var(--scale,1.25) / 1.25);font-weight:500;line-height:1.3;
+  letter-spacing:.16em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--dim);
 }
-#app.immersive-shell[data-title-row=inline] .viewer-heading{transform:translate(-50%,-50%)}
+#app.immersive-shell .viewer-heading h2{
+  margin:0;width:100%;font-family:var(--font-heading);font-size:calc(var(--view-heading-base) * var(--scale,1.25) / 1.25);
+  line-height:1.1;font-weight:700;text-align:center;text-transform:uppercase;color:var(--fg);
+  letter-spacing:.035em;text-wrap:balance;hyphens:auto;overflow-wrap:anywhere;text-shadow:none;
+}
+#app.immersive-shell .view-title-rule{display:block;flex:none;width:72px;height:3px;margin-top:4px;background:var(--accent)}
 #app.immersive-shell .immersive-rail{top:var(--view-rail-top,calc(var(--hud-gap) + 76px))}
 #app.immersive-shell .view-hint{display:none}
 
@@ -154,6 +160,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell .topbtns{font-size:.61em;gap:6px}
 }
 @media(max-width:700px){
+  #app.immersive-shell .viewer-heading{--view-heading-base:clamp(26px,4.4vw,32px);width:calc(100% - 12px)}
   #app.immersive-shell{--hud-gap:12px;--drawer-width:calc(100vw - 24px)}
   #app.immersive-shell .top{gap:8px;min-height:44px;align-items:center}
   #app.immersive-shell .brand-mark{display:none}
@@ -186,7 +193,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 }
 @media(max-height:500px){
   #app.immersive-shell .top{top:8px}
-  #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{bottom:66px;max-height:31dvh}
+  #app.immersive-shell .immersive-toggle{min-height:44px;padding:4px 10px;line-height:1.1}
   #app.immersive-shell .assembly-transport{gap:0;padding:6px 10px}
   #app.immersive-shell .assembly-buttons button{min-height:44px}
 }
@@ -243,7 +250,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 /* Zoom stays available in every view, including Assembly, and uses the same
    orbit camera as the wheel and keyboard controls. */
 #app.immersive-shell .scene-zoom{
-  position:absolute;z-index:19;top:50%;right:var(--hud-gap);transform:translateY(-50%);
+  position:absolute;z-index:19;top:var(--view-camera-top,50%);right:var(--hud-gap);transform:none;
   display:flex;flex-direction:column;gap:6px;align-items:center;pointer-events:auto;
 }
 #app.immersive-shell .scene-tool-caption{font-size:12px;font-weight:500;text-shadow:0 1px 5px var(--bg);color:var(--dim)}
@@ -264,9 +271,22 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell[data-controls=open] .scene-zoom{top:180px;bottom:auto}
 }
 @media(max-height:500px){
-  #app.immersive-shell .scene-label-toggle{bottom:var(--hud-gap)}
-  #app.immersive-shell .scene-zoom{right:var(--hud-gap);top:var(--view-camera-top,132px);bottom:auto;transform:none;flex-direction:column}
+  #app.immersive-shell .viewer-heading{--view-heading-base:26px}
+  #app.immersive-shell .view-title-composition{gap:5px}
+  #app.immersive-shell #view-counter-label{display:none}
+  #app.immersive-shell .scene-label-toggle,
+  #app.immersive-shell[data-controls=open] .scene-label-toggle{top:auto;bottom:calc(var(--hud-gap) + 62px)}
+  #app.immersive-shell .scene-zoom,
+  #app.immersive-shell[data-controls=open] .scene-zoom{top:auto;bottom:var(--hud-gap);transform:none;display:grid;grid-template-columns:repeat(2,44px);gap:6px}
+  #app.immersive-shell .scene-zoom button{width:44px;height:44px;padding:9px}
+  #app.immersive-shell .scene-zoom #btn-reset{grid-column:1 / -1;width:100%}
   #app.immersive-shell .scene-tool-caption{display:none}
+  #app.immersive-shell .transport,
+  #app.immersive-shell .assembly-transport{
+    left:var(--low-transport-left,var(--hud-gap));right:var(--low-transport-right,calc(var(--hud-gap) + 106px));
+    bottom:var(--low-transport-bottom,80px);width:auto;max-width:none!important;transform:none;
+    max-height:max(48px,min(31dvh,calc(100dvh - var(--view-drawer-top,180px) - var(--low-transport-bottom,80px))));
+  }
 }
 
 /* Structural section headings share the view title treatment. Component names,

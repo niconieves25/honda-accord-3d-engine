@@ -45,7 +45,9 @@ export function runApp() {
   document.title = T.title;
   document.documentElement.lang = STR.lang;
   const app = document.getElementById('app');
-  const reduceDefault = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reducedMotionQuery = matchMedia('(prefers-reduced-motion: reduce)');
+  const reduceDefault = reducedMotionQuery.matches;
+  let titleReady = false, titleEntrance = null;
   const S = {
     th: 0,
     playing: !store.get('reduceMotion', reduceDefault),
@@ -97,7 +99,7 @@ export function runApp() {
   </section>
   <main class="main">
     <div class="viewer">
-    <div class="viewer-heading"><div><h2 id="view-title"></h2></div></div>
+    <div class="viewer-heading"><div class="view-title-composition"><p class="view-eyebrow"><span id="view-counter-label"></span><span id="view-counter"></span></p><h2 id="view-title"></h2><span class="view-title-rule" aria-hidden="true"></span></div></div>
     <section class="stagewrap" aria-label="${esc(T.canvasLabel)}">
       <canvas id="gl" tabindex="0" role="img" aria-label="${esc(T.canvasLabel)}"></canvas>
       <svg class="leaders" aria-hidden="true"></svg>
@@ -256,6 +258,7 @@ export function runApp() {
     root.dataset.theme = S.theme;
     root.dataset.largeText = String(S.textScale > 1.6);
     root.dataset.reducedMotion = String(S.reduceMotion);
+    if (S.reduceMotion || reducedMotionQuery.matches) titleEntrance?.cancel();
     root.style.setProperty('--scale', S.textScale);
     root.style.setProperty('--lscale', S.labelScale);
     $('#text-size').value = S.textScale;
@@ -355,8 +358,25 @@ export function runApp() {
   st.controls.addEventListener('start', () => {tween=null;if(S.view==='assembly')assembly?.manualCamera();});
 
   // ------------------------------------------------------------ views
+  // One presentation-only update: never touch the camera, engine clock or
+  // Assembly timeline when translating or reflowing this composition.
+  const updateViewHeading = (animate = false) => {
+    titleEntrance?.cancel();
+    const index = VIEW_ORDER.indexOf(S.view) + 1;
+    $('#view-counter-label').textContent = T.viewAnnounce + ' ';
+    $('#view-counter').textContent = `${String(index).padStart(2, '0')} / ${String(VIEW_ORDER.length).padStart(2, '0')}`;
+    $('#view-title').textContent = STR.views[S.view].name;
+    $('#view-menu-current').textContent = STR.views[S.view].name;
+    if (animate && titleReady && !S.reduceMotion && !reducedMotionQuery.matches) {
+      titleEntrance = $('.view-title-composition').animate([{opacity: 0}, {opacity: 1}], {duration: 200, easing: 'ease-out'});
+    }
+  };
+  reducedMotionQuery.addEventListener('change', () => {
+    if (reducedMotionQuery.matches) titleEntrance?.cancel();
+  });
   const setView = (v, quiet) => {
     if(!VIEWS[v])return;
+    const previousView = S.view;
     if(v==='assembly'&&S.view!=='assembly'){
       operatingSnapshot={th:S.th,playing:S.playing,speed:S.speed,view:S.view,cam:currentCam()};
       S.playing=false;stepPending=0;st.setCut(null);st.setOutline(null);
@@ -388,12 +408,11 @@ export function runApp() {
     const current=$(`[data-view="${v}"]`),strip=$('.viewbtns');
     const buttonRect=current.getBoundingClientRect(),stripRect=strip.getBoundingClientRect();
     strip.scrollLeft+=buttonRect.left<stripRect.left?buttonRect.left-stripRect.left:buttonRect.right>stripRect.right?buttonRect.right-stripRect.right:0;
-    $('#view-title').textContent = STR.views[v].name;
-    $('#view-menu-current').textContent = STR.views[v].name;
+    updateViewHeading(previousView !== v);
     immersive.translate();
     $('#viewdesc').textContent = STR.views[v].desc;
     if (!quiet) announce(`${T.viewAnnounce}: ${STR.views[v].name}. ${STR.views[v].desc}`);
-    requestAnimationFrame(fit);
+    fit();
   };
   $$('[data-view]').forEach((b) => b.addEventListener('click', () => {setView(b.dataset.view);immersive.close({returnFocus:false});canvas.focus({preventScroll:true});}));
   $('.viewbtns').addEventListener('keydown', (e) => {
@@ -653,28 +672,19 @@ export function runApp() {
 
   // ------------------------------------------------------------ sizing and the loop
   const wrap = $('.stagewrap');
-  const titleMeasure=document.createElement('canvas').getContext('2d');
   const fit = () => {
     const r = wrap.getBoundingClientRect();
-    // Reserve a symmetric slot between the actual brand and utility controls.
-    // Long titles get a separate row; the title never follows the camera offset.
-    const header=$('.top').getBoundingClientRect(),tools=$('.topbtns').getBoundingClientRect();
-    const brand=$('.top h1').getBoundingClientRect(),heading=$('.viewer-heading'),title=$('#view-title');
-    const font=getComputedStyle(title),center=r.left+r.width/2;
-    titleMeasure.font=font.font;
-    const titleText=title.textContent.toLocaleUpperCase(STR.lang);
-    const naturalWidth=titleMeasure.measureText(titleText).width+(parseFloat(font.letterSpacing)||0)*Math.max(0,titleText.length-1);
-    const slot=2*Math.max(0,Math.min(center-brand.right,tools.left-center)-24);
-    const inline=r.width>=1100&&S.textScale<=1.6&&naturalWidth<=slot&&slot>=240;
-    app.dataset.titleRow=inline?'inline':'stacked';
-    app.style.setProperty('--view-title-width',(inline?slot:Math.max(0,r.width-24))+'px');
-    app.style.setProperty('--view-title-top',(inline?header.top-r.top+header.height/2:header.bottom-r.top+12)+'px');
+    // Always use a viewport-centered row below the compact brand. Measure the
+    // entire composition, including wrapping, counter and decorative rule.
+    const header=$('.top').getBoundingClientRect(),heading=$('.viewer-heading');
+    app.style.setProperty('--view-title-top',(header.bottom-r.top+(r.height<=500?8:16))+'px');
     const headingRect=heading.getBoundingClientRect();
-    const railTop=inline?header.bottom-r.top+24:headingRect.bottom-r.top+12;
+    const railTop=headingRect.bottom-r.top+12;
     app.style.setProperty('--view-rail-top',railTop+'px');
     const railBottom=Math.max(...$$('.immersive-rail').map(node=>node.getBoundingClientRect().bottom-r.top));
     app.style.setProperty('--view-drawer-top',(railBottom+12)+'px');
-    app.style.setProperty('--view-camera-top',(railBottom+12)+'px');
+    const cameraHeight=$('.scene-zoom').getBoundingClientRect().height;
+    app.style.setProperty('--view-camera-top',Math.max((r.height-cameraHeight)/2,railBottom+12)+'px');
     st.resize(Math.max(1, r.width), Math.max(1, r.height), Math.min(devicePixelRatio || 1, 2));
     const panel=immersive.active ? $('#'+(immersive.active==='views'?'view':'inspector')+'-drawer') : null;
     const panelRect=panel?.getBoundingClientRect(),appRect=app.getBoundingClientRect();
@@ -685,6 +695,18 @@ export function runApp() {
     st.setPresentationOffset(shift,presentationScale);
     app.style.setProperty('--scene-shift',shift+'px');
     app.style.setProperty('--active-panel-width',panelWidth+'px');
+    if (r.height <= 500) {
+      // Keep an open timeline between the Names control and the two-column
+      // camera dock, including when a desktop inspector occupies an edge.
+      const names=$('#btn-scene-labels'),namesRect=names.hidden?null:names.getBoundingClientRect();
+      const cameraRect=$('.scene-zoom').getBoundingClientRect();
+      const playbackRect=$('.immersive-playback').getBoundingClientRect();
+      const availableLeft=panel&&!immersive.modal&&immersive.active==='views'?panelRect.right:r.left;
+      const left=Math.max(availableLeft+12,namesRect?namesRect.right+12:0);
+      app.style.setProperty('--low-transport-left',(left-r.left)+'px');
+      app.style.setProperty('--low-transport-right',(r.right-cameraRect.left+12)+'px');
+      app.style.setProperty('--low-transport-bottom',(r.bottom-playbackRect.top+12)+'px');
+    }
     const rectOf=node=>{const b=node.getBoundingClientRect();return {x:b.left-r.left,y:b.top-r.top,width:b.width,height:b.height};};
     annotationObstacles=[...app.querySelectorAll('.top,.help-options,.immersive-rail,.viewer-heading,.scene-zoom,#btn-scene-labels,.immersive-playback,.transport,.assembly-transport,.immersive-drawer:not([hidden]),.dialog:not([hidden])')]
       .filter(node=>node.getClientRects().length&&!node.closest('[hidden]')).map(rectOf);
@@ -719,8 +741,7 @@ export function runApp() {
     const referenceOpen = $('#det-body .reference-details')?.open;
     renderList(); renderDetails(); renderPlay(); renderIab(); renderLegend();
     if (referenceOpen && $('#det-body .reference-details')) $('#det-body .reference-details').open = true;
-    $('#view-title').textContent = STR.views[S.view].name;
-    $('#view-menu-current').textContent = STR.views[S.view].name;
+    updateViewHeading();
     immersive.translate();
     $('#viewdesc').textContent = STR.views[S.view].desc;
     $('#btn-scene-labels').setAttribute('aria-label',T.togglePartNames);
@@ -730,7 +751,7 @@ export function runApp() {
     renderCyls(); drawLabels();
     assembly.translate();
     announce(T.languageChanged);
-    requestAnimationFrame(fit);
+    fit();
   };
   $('#language-select').value = STR.lang;
   $('#language-select').addEventListener('change', (event) => setLanguage(event.target.value));
@@ -765,6 +786,7 @@ export function runApp() {
     if(incoming.get('step'))assembly.enter({stepId:incoming.get('step')});
   }
   fit();
+  titleReady = true;
 
   let last = performance.now();
   let flowS = 0;

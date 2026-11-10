@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-10",
+  "target": "Local production build, Codex in-app browser",
+  "scope": "Main explorer title composition and necessary space adaptations only",
+  "matrix": {
+    "samples": 240,
+    "views": 8,
+    "languages": [
+      "es",
+      "en"
+    ],
+    "viewports": [
+      [
+        375,
+        812
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        812,
+        375
+      ]
+    ],
+    "textScales": [
+      1.25,
+      1.6,
+      2.4
+    ],
+    "detail": "cinematic-title-review/matrix.json",
+    "titleOrPageOverflow": false,
+    "controlCollisions": false,
+    "controlsOutsideViewport": false
+  },
+  "checks": {
+    "font": "Locally bundled IBM Plex Sans Condensed 700 with OFL license; app-only face",
+    "desktop125PercentFontAt1440": 51.84,
+    "viewportCenteredWithInspectorOpen": 720,
+    "counterFromActualViewOrder": true,
+    "shortHeightCounter": "01 / 08",
+    "ruleSize": [
+      72,
+      3
+    ],
+    "keyboard": "Canvas shortcuts 1–8; radio arrow navigation; Escape returns focus to Views opener",
+    "opacityObserved": {
+      "realViewChange": 0,
+      "sameView": 1,
+      "languageChange": 1,
+      "appReducedMotion": 1
+    },
+    "animationCodeReview": "200 ms opacity only; initialization gate; OS and app reduced-motion guards; OS change cancellation",
+    "assemblyLanguageSwitch": {
+      "progressBefore": "5000",
+      "progressAfter": "5000",
+      "selectedStepBefore": "194",
+      "selectedStepAfter": "194",
+      "playingBefore": "false",
+      "playingAfter": "false"
+    },
+    "lowHeightCameraAndTimeline": "Two-column camera grid and open scrollable timeline occupy separate bounds; playback has 12 px gap",
+    "unchangedOutputs": [
+      "anatomy.html",
+      "root landing",
+      "geometry",
+      "media"
+    ],
+    "existingChecks": "npm test and npm run build"
+  },
+  "screenshots": "cinematic-title-review/"
+}

@@ -72,3 +72,15 @@ Verified through visible browser controls: closed summaries expose only their he
 `src/ui/surfaces.css` is embedded last by `scripts/presentation.mjs` in both viewers. Dashboard cards, their structural headers, accordion sections and metric panels have transparent backgrounds without backdrop blur or surface shadows. Borders, red selection accents and fully opaque text preserve structure. Buttons, inputs, model labels and floating dialogs retain their independent readable treatments.
 
 Both pages were rebuilt and visually reviewed. Computed backgrounds for the main viewer, inspector, navigation, transport, catalogue, figure frame and explanation sections are `rgba(0, 0, 0, 0)`. The glyph background is visible through them. This revision changes presentation only.
+
+## Cinematic motorsport view titles
+
+The main explorer uses a dedicated, viewport-centered title row below the compact brand and utilities. It combines a localized counter calculated from `VIEW_ORDER`, an uppercase IBM Plex Sans Condensed 700 heading, and a decorative 72 × 3 px red rule. The local 700 face and its OFL license are bundled only into the main explorer; Anatomy, geometry and videos are unchanged.
+
+At 125% text, headings use 40–52 px on desktop and 26–32 px on phones, scaling proportionally with the existing text preference. Tracking is .035 em and line height is 1.1. Balanced natural wrapping and language-aware hyphenation preserve complete labels. No halo or title shadow is used. Secondary section headings retain their existing scale.
+
+`updateViewHeading` owns the title and counter. Its opacity-only 200 ms entrance runs on actual view changes after initialization. Initial/deep-linked loads, language changes and resizing do not trigger an entrance. Both the application and OS reduced-motion preferences prevent the animation; switching either preference on also cancels an active entrance.
+
+Layout measures the entire title composition before placing menus and docked drawers. The title stays centered when a drawer changes the model's presentation offset. At heights of 500 px or less, the counter omits its word prefix, the heading uses a 26 px base, and the camera becomes a two-column bottom-right grid. Names sits above playback. An open timeline reserves space around both controls and scrolls internally at extreme text enlargement, keeping its controls reachable.
+
+Browser review covers all eight views in Spanish and English across 375, 768, 1024 and 1440 px widths, plus 812 × 375 landscape, at 125%, 160% and 240% text. Evidence and measured results are in `tests/cinematic-title-review/` and `tests/cinematic-title-ui-review.json`. Keyboard view navigation, Escape focus return, centered titles with a panel, reduced motion and language-preserved Assembly progress were also checked.
