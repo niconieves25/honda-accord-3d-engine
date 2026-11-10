@@ -1,0 +1,107 @@
+{
+  "pass": true,
+  "engine": "F22A6 · 1993 Accord EX sedan · 5MT",
+  "collections": {
+    "es": {
+      "pass": true,
+      "language": "es",
+      "engine": {
+        "code": "F22A6",
+        "modelYear": 1993,
+        "vehicle": "Honda Accord EX sedan",
+        "transmission": "5MT",
+        "market": null,
+        "emissionsVariant": null,
+        "marketStatus": "unresolved",
+        "architecture": "SOHC inline four, 16 valves, fixed valve lift",
+        "variableValveLift": false,
+        "intakeAirBypass": true,
+        "referenceCatalogs": [
+          "1993 Accord 4 Door EX KA 5MT",
+          "1993 Accord 4 Door EX KL 5MT"
+        ]
+      },
+      "renderer": "three-pbr",
+      "count": 102,
+      "decodedCount": 102,
+      "posterCount": 102,
+      "captionCount": 102,
+      "totalSeconds": 1224,
+      "totalFrames": 29376,
+      "videoBytes": 12830815,
+      "posterBytes": 3222523,
+      "captionBytes": 45183,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "resolution": [
+        720,
+        540
+      ],
+      "fps": 24,
+      "secondsEach": 12,
+      "mediaBytes": 16098521,
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
+      "checkedAt": "2026-11-10T18:32:27.132Z",
+      "notes": "All MP4s independently re-probed and fully decoded; posters fully decoded; captions compared with the selected language catalogue.",
+      "errors": []
+    },
+    "en": {
+      "pass": true,
+      "language": "en",
+      "engine": {
+        "code": "F22A6",
+        "modelYear": 1993,
+        "vehicle": "Honda Accord EX sedan",
+        "transmission": "5MT",
+        "market": null,
+        "emissionsVariant": null,
+        "marketStatus": "unresolved",
+        "architecture": "SOHC inline four, 16 valves, fixed valve lift",
+        "variableValveLift": false,
+        "intakeAirBypass": true,
+        "referenceCatalogs": [
+          "1993 Accord 4 Door EX KA 5MT",
+          "1993 Accord 4 Door EX KL 5MT"
+        ]
+      },
+      "renderer": "three-pbr",
+      "count": 102,
+      "decodedCount": 102,
+      "posterCount": 102,
+      "captionCount": 102,
+      "totalSeconds": 1224,
+      "totalFrames": 29376,
+      "videoBytes": 12764155,
+      "posterBytes": 3134715,
+      "captionBytes": 42704,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "resolution": [
+        720,
+        540
+      ],
+      "fps": 24,
+      "secondsEach": 12,
+      "mediaBytes": 15941574,
+      "revision": "7d094e9b8030d7f67841006731870558062cf1415077b259964d3bdd42c9d8b9",
+      "checkedAt": "2026-11-10T18:35:03.943Z",
+      "notes": "All MP4s independently re-probed and fully decoded; posters fully decoded; captions compared with the selected language catalogue.",
+      "errors": []
+    }
+  },
+  "totals": {
+    "videos": 204,
+    "posters": 204,
+    "captions": 204,
+    "frames": 58752,
+    "seconds": 2448,
+    "bytes": 32040095
+  },
+  "notes": [
+    "All 102 component entries in both languages were regenerated from the canonical shared model, including unchanged entries to maintain one media revision per language.",
+    "Both collections were independently decoded and checked against localized captions. Each video is 12 seconds, 720×540, H.264 yuv420p at24fps.",
+    "Representative thrust-washer, connecting-rod, cylinder-head, oil/water pump, thermostat and injector posters were visually checked for framing and readable explanations.",
+    "150 preexisting media conflict copies were preserved outside the published media directory, with verified SHA-256 hashes. Active media contains no unfinished exports or conflict copies.",
+    "Supplementary dimensions, installation sockets and paths remain educational approximations; market and emissions remain unresolved."
+  ]
+}

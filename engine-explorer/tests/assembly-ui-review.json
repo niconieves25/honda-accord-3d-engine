@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-10",
+  "browser": "Codex in-app browser",
+  "target": "local production build",
+  "engine": "F22A6 / 1993 EX sedan / 5MT / market unresolved",
+  "catalogueTypes": 102,
+  "units": 374,
+  "steps": 388,
+  "checks": {
+    "playPause": true,
+    "previousNext": true,
+    "speedSelection": true,
+    "timelineKeyboardSeek": true,
+    "completionStopped": true,
+    "reducedMotionImmediateStep": true,
+    "reducedMotionReplay": true,
+    "languagePreservesProgress": true,
+    "manualCameraDisablesFollowing": true,
+    "returnPreservesProgressAndCamera": true,
+    "returnPaused": true,
+    "returnRestoresKeyboardFocus": true,
+    "shortcut8": true,
+    "smallUnitSearch": "keepers-valve:32",
+    "narrationControls": true,
+    "normalViewLeadersHidden": true,
+    "consoleErrors": []
+  },
+  "viewports160Percent": [
+    {"width": 375, "height": 812, "canvasHeight": 422.23, "pageOverflow": false},
+    {"width": 768, "height": 1024, "canvasHeight": 563.20, "pageOverflow": false},
+    {"width": 1024, "height": 768, "canvasHeight": 422.40, "pageOverflow": false},
+    {"width": 812, "height": 375, "canvasHeight": 360, "pageOverflow": false},
+    {"width": 1456, "height": 800, "canvasHeight": 360, "pageOverflow": false}
+  ],
+  "text240Percent": {"width": 375, "height": 812, "canvasHeight": 487.20, "pageOverflow": false},
+  "themesVisuallyReviewed": ["dark", "light", "soft"],
+  "limitations": [
+    "Viewport checks do not benchmark a physical phone.",
+    "Representative visual insertion review is not a workshop collision or tolerance certification.",
+    "Speech voices depend on browser and operating system."
+  ]
+}

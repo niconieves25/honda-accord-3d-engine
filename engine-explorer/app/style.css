@@ -33,3 +33,56 @@ html,body{height:100%;background:var(--bg);color:var(--fg)}#app{height:100dvh;mi
 .cycle-metrics>div{background:var(--red-inset);border-color:var(--red-edge)}
 .cyls li.fire{background:var(--action);color:#fff;border-color:var(--red-edge)}
 #btn-iab[aria-checked=true]{background:var(--red-inset)}
+
+/* Assembly uses its own timeline and inspector, while sharing the engine frame. */
+.assembly-transport{padding:12px;border-top:1px solid var(--red-edge);font-size:.7em;display:grid;gap:12px;background:transparent}
+.assembly-buttons{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.assembly-buttons button{min-width:44px;min-height:44px;padding:8px 10px}
+.assembly-buttons .primary{min-width:180px;justify-content:center}
+.assembly-buttons label{display:flex;align-items:center;gap:8px;margin-left:auto;min-width:0;color:var(--dim)}
+.assembly-buttons select{max-width:150px;font-size:1em}
+.assembly-scrubber{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:.9em}
+.assembly-scrubber label{font-variant-numeric:tabular-nums;min-width:10ch}
+.assembly-scrubber input{flex:1;min-width:80px;min-height:44px;accent-color:var(--accent)}
+.assembly-scrubber output{min-width:4ch;text-align:right;font-variant-numeric:tabular-nums}
+.assembly-inspector{display:flex;flex:1;flex-direction:column;min-height:0}
+.assembly-inspector-heading{padding:16px;border-bottom:1px solid var(--red-edge);display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.assembly-inspector-heading h2{font-size:.9em}
+.assembly-inspector-heading p{font-size:.62em;color:var(--dim);margin-top:5px;font-variant-numeric:tabular-nums}
+.assembly-inspector-heading button{font-size:.6em;min-height:44px;justify-content:space-between;width:100%}
+.assembly-inspector-scroll{padding:16px;overflow:auto;min-height:0;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.assembly-inspector-scroll>.lab:not(:first-child){margin-top:16px}
+.assembly-inspector-scroll>select,.assembly-inspector-scroll>input{width:100%;font-size:.72em;min-height:44px;min-width:0}
+.assembly-camera-tools,.assembly-speech{display:flex;gap:8px 12px;align-items:center;flex-wrap:wrap;margin:14px 0}
+.assembly-camera-tools button,.assembly-speech button{font-size:.67em;min-height:44px}
+.assembly-camera-tools button[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.assembly-camera-tools .chk,.assembly-speech .chk{font-size:.63em}
+.assembly-unit-info{border:1px solid var(--line);border-radius:10px;padding:14px;overflow-wrap:anywhere;background:transparent}
+.assembly-meta{font-size:.58em;color:var(--dim);font-variant-numeric:tabular-nums}
+.assembly-unit-info h3{font-size:1em;margin:6px 0 12px}
+.assembly-unit-info>p:not(.assembly-meta){font-size:.72em;line-height:1.65;margin-bottom:14px}
+.assembly-unit-info details{border-top:1px solid var(--line);font-size:.71em}
+.assembly-unit-info summary{display:flex;align-items:center;min-height:44px;cursor:pointer;font-weight:500}
+.assembly-unit-info summary::before{content:'+';color:var(--accent);margin-right:10px;font-family:monospace}
+.assembly-unit-info details[open] summary::before{content:'−'}
+.assembly-unit-info details p{padding-bottom:14px;line-height:1.65}
+.assembly-unit-info>a{display:flex;align-items:center;min-height:44px;font-size:.66em;color:var(--accent);margin-top:12px}
+.assembly-unit-info>button{width:100%;min-height:44px;font-size:.66em;justify-content:flex-start;margin-top:7px;text-align:left}
+.assembly-complete{border:1px solid var(--accent);border-radius:8px;padding:12px;margin:12px 0;font-size:.7em}
+.assembly-complete strong,.assembly-complete span{display:block}.assembly-complete strong{margin-bottom:5px}
+.assembly-limits{border-top:1px solid var(--line);margin-top:20px;padding-top:12px;font-size:.6em;line-height:1.6;color:var(--dim)}
+#assembly-result-count{margin:8px 0}
+#assembly-results{display:grid;gap:6px}
+#assembly-results button{width:100%;display:block;min-height:44px;text-align:left;font-size:.72em;overflow-wrap:anywhere;background:transparent}
+#assembly-results button span{display:block;color:var(--dim);font-size:.78em;margin-top:4px}
+#assembly-results p{font-size:.72em}
+@media(min-width:1200px){#app[data-assembly=true]{height:auto;min-height:100dvh;overflow:visible}#app[data-assembly=true] .main{min-height:0;align-items:start}#app[data-assembly=true] .stagewrap{flex:none;height:clamp(360px,calc(100dvh - 500px),600px)}#app[data-assembly=true] .sidebar{height:calc(100dvh - 270px);min-height:600px;max-height:none}#app[data-assembly=true] .assembly-inspector-scroll{max-height:none}}
+@media(max-width:1199px){.assembly-inspector-scroll{overflow:visible}.assembly-inspector-heading{display:block}.assembly-inspector-heading button{width:auto;margin-top:10px}.assembly-buttons .primary{min-width:160px}}
+@media(max-width:700px){.assembly-buttons{gap:6px}.assembly-buttons .primary{flex:1 1 100%}.assembly-buttons label{flex:1;justify-content:flex-end}.assembly-buttons label>span{display:none}.assembly-scrubber label{flex:1 1 100%}.assembly-inspector-scroll{padding:14px}.assembly-scrubber input{min-width:0}}
+:root[data-large-text=true] .assembly-inspector-scroll{max-height:none!important;overflow:visible}
+:root[data-large-text=true] .assembly-buttons label{flex-wrap:wrap}
+:root[data-large-text=true] #app[data-assembly=true] .sidebar{height:auto;min-height:0}
+.assembly-uncertainties{border-top:1px solid var(--line);font-size:.68em;margin-top:18px}
+.assembly-uncertainties>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent)}
+.assembly-uncertainties ul{margin:0;padding-left:20px}.assembly-uncertainties li{margin:12px 0;line-height:1.6}.assembly-uncertainties li strong{display:block}
+.assembly-uncertainties dl{margin:0}.assembly-uncertainties dt{font-weight:600;margin-top:14px}.assembly-uncertainties dd{margin:5px 0 14px;line-height:1.6;color:var(--dim)}

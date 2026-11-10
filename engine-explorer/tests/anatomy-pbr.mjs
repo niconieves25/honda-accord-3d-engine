@@ -18,13 +18,13 @@ const check=(name,fn)=>{try{fn();}catch(error){failures.push(`${name}: ${error.m
 try{
   const output=path.join(scratch,'anatomy-pbr.cjs');
   await build({
-    stdin:{contents:"export {buildEngine} from './src/engine.js'; export * as parts from './src/anatomy/engine-parts.js'; export {buildAnatomyMesh} from './src/anatomy/three-adapter.js'; export {CATALOG} from './src/anatomy/catalog.js'; export {ENGINE,SPEC} from './src/engine-spec.js'; export * as THREE from 'three';",resolveDir:project},
+    stdin:{contents:"export {buildEngine} from './src/engine.js'; export * as parts from './src/anatomy/engine-parts.js'; export {buildAnatomyMesh} from './src/anatomy/three-adapter.js'; export {CATALOG} from './src/anatomy/catalog.js'; export {ENGINE,SPEC,PULLEY} from './src/engine-spec.js'; export * as THREE from 'three';",resolveDir:project},
     outfile:output,bundle:true,platform:'node',format:'cjs',
     nodePaths:[path.join(skill,'node_modules')],logLevel:'silent',
   });
   const ctx=new Proxy({createImageData:(w,h)=>({data:new Uint8ClampedArray(w*h*4)})},{get:(o,k)=>k in o?o[k]:()=>{}});
   globalThis.document={createElement:tag=>{assert.equal(tag,'canvas');return{width:0,height:0,getContext:()=>ctx};}};
-  const {buildEngine,parts,buildAnatomyMesh,CATALOG,THREE,ENGINE,SPEC}=await import(pathToFileURL(output));
+  const {buildEngine,parts,buildAnatomyMesh,CATALOG,THREE,ENGINE,SPEC,PULLEY}=await import(pathToFileURL(output));
   const scenes=JSON.parse(await readFile(path.join(project,'src/anatomy/scenes.json'),'utf8'));
   const V=THREE.Vector3;
   const entryFor=id=>{const entry=CATALOG.find(e=>e.id===id);assert.ok(entry,`Missing catalogue entry ${id}`);return entry;};
@@ -38,7 +38,7 @@ try{
   // A four-stroke cycle returns pistons, valves, crank and cam to their starting
   // poses. A belt's individual tooth, or an accessory with a noninteger ratio,
   // need not complete an integer revolution during those two crank turns.
-  const independentCycle=new Set(['belt-timing','belt-balance','belt-power-steering','belt-alternator','tensioner-timing','tensioner-balance','alternator','rotor-alternator','pulley-power-steering','pump-power-steering','pump-oil']);
+  const independentCycle=new Set(['belt-timing','belt-balance','belt-power-steering','belt-alternator','tensioner-timing','tensioner-balance','alternator','rotor-alternator','pulley-power-steering','pump-power-steering','pump-oil','pump-water']);
 
   function verifyModel(model,entry,label){
     assert.ok(model?.root?.isObject3D,`${label}: missing object`);
@@ -142,6 +142,7 @@ try{
   const physicalNodes=[source.G.pistons,source.G.intakeValves,source.G.exhaustValves];
   const physicalSnapshot=()=>physicalNodes.flatMap(root=>meshesOf(root).filter(m=>!m.userData.fx).flatMap(m=>m.matrixWorld.elements));
   source.update(425,{dt:0,iab:0,charge:false});source.root.updateMatrixWorld(true);const iabClosedTrain=physicalSnapshot();
+  assert.ok(Math.abs(source.detailedRegistry.wpPulley.rotation.z-425*Math.PI/180*(PULLEY.crankTiming/PULLEY.waterPump))<1e-12,'Water pump must follow the shared illustrative timing-pulley ratio, not a forced 720-degree reset');
   source.update(425,{dt:0,iab:1,charge:false});source.root.updateMatrixWorld(true);
   samePose(iabClosedTrain,physicalSnapshot(),'IAB changes piston positions or fixed-profile valve motion');
   for(const id of ['primaryRocker','middleRocker','secondaryRocker','syncPistons','lostMotion','timingPlate','vtecSolenoid']){

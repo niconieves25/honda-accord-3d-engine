@@ -15,11 +15,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 362912,
+      "bytes": 207517,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.9
+      "renderSeconds": 3.1
     },
     "gasket-valve-cover": {
       "id": "gasket-valve-cover",
@@ -36,11 +36,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 261939,
+      "bytes": 102685,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 3.1
     },
     "seal-plug-tube": {
       "id": "seal-plug-tube",
@@ -57,11 +57,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 205386,
+      "bytes": 76752,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "cap-oil-filler": {
       "id": "cap-oil-filler",
@@ -78,11 +78,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 181390,
+      "bytes": 113040,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.8
+      "renderSeconds": 2.7
     },
     "gasket-oil-cap": {
       "id": "gasket-oil-cap",
@@ -99,11 +99,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 202374,
+      "bytes": 114013,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.3
+      "renderSeconds": 2.6
     },
     "cover-timing-upper": {
       "id": "cover-timing-upper",
@@ -120,13 +120,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 174773,
+      "bytes": 114080,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.6,
-      "posterTimeSeconds": 9,
-      "posterSelection": "Face-on reference view decoded from the matching verified MP4."
+      "renderSeconds": 2.7
     },
     "cover-timing-lower": {
       "id": "cover-timing-lower",
@@ -143,13 +141,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 167609,
+      "bytes": 109730,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.8,
-      "posterTimeSeconds": 9,
-      "posterSelection": "Face-on reference view decoded from the matching verified MP4."
+      "renderSeconds": 2.8
     },
     "nut-valve-cover": {
       "id": "nut-valve-cover",
@@ -166,11 +162,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 144537,
+      "bytes": 93082,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.6
+      "renderSeconds": 2.5
     },
     "washer-valve-cover": {
       "id": "washer-valve-cover",
@@ -187,11 +183,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 174384,
+      "bytes": 145780,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "block-cylinders": {
       "id": "block-cylinders",
@@ -208,11 +204,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 327250,
+      "bytes": 306222,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "piston": {
       "id": "piston",
@@ -229,11 +225,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 168419,
+      "bytes": 164778,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.9
     },
     "ring-top": {
       "id": "ring-top",
@@ -250,11 +246,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 144482,
+      "bytes": 128634,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "ring-second": {
       "id": "ring-second",
@@ -271,11 +267,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 159157,
+      "bytes": 111980,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "ring-oil": {
       "id": "ring-oil",
@@ -292,11 +288,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 248210,
+      "bytes": 190690,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.8
     },
     "piston-pin": {
       "id": "piston-pin",
@@ -313,11 +309,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 134485,
+      "bytes": 107700,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.1
+      "renderSeconds": 2.7
     },
     "connecting-rod": {
       "id": "connecting-rod",
@@ -334,11 +330,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 130275,
+      "bytes": 93895,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.1
+      "renderSeconds": 2.5
     },
     "connecting-rod-cap": {
       "id": "connecting-rod-cap",
@@ -355,11 +351,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 103997,
+      "bytes": 85472,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "bearing-rod": {
       "id": "bearing-rod",
@@ -376,9 +372,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 93878,
+      "bytes": 78051,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -397,11 +393,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 240221,
+      "bytes": 172426,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.7
+      "renderSeconds": 2.6
     },
     "bearing-main": {
       "id": "bearing-main",
@@ -418,11 +414,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 174545,
+      "bytes": 145548,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3
+      "renderSeconds": 2.9
     },
     "washer-thrust": {
       "id": "washer-thrust",
@@ -439,11 +435,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 187649,
+      "bytes": 122949,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.1
+      "renderSeconds": 2.6
     },
     "bridge-main-bearing": {
       "id": "bridge-main-bearing",
@@ -460,11 +456,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 300745,
+      "bytes": 200560,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "bolt-connecting-rod": {
       "id": "bolt-connecting-rod",
@@ -481,11 +477,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 67886,
+      "bytes": 65074,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.2
+      "renderSeconds": 2.8
     },
     "shaft-balance-front": {
       "id": "shaft-balance-front",
@@ -502,11 +498,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 178938,
+      "bytes": 133058,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.5
+      "renderSeconds": 3.1
     },
     "shaft-balance-rear": {
       "id": "shaft-balance-rear",
@@ -523,11 +519,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 171076,
+      "bytes": 123677,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.7
+      "renderSeconds": 2.9
     },
     "belt-balance": {
       "id": "belt-balance",
@@ -544,11 +540,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 120747,
+      "bytes": 79415,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.1
+      "renderSeconds": 2.6
     },
     "tensioner-balance": {
       "id": "tensioner-balance",
@@ -565,11 +561,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 67318,
+      "bytes": 59825,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.4
+      "renderSeconds": 2.6
     },
     "cylinder-head": {
       "id": "cylinder-head",
@@ -586,11 +582,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 387072,
+      "bytes": 383868,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.7
+      "renderSeconds": 3
     },
     "gasket-cylinder-head": {
       "id": "gasket-cylinder-head",
@@ -607,11 +603,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 456329,
+      "bytes": 293297,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.8
+      "renderSeconds": 2.6
     },
     "camshaft": {
       "id": "camshaft",
@@ -628,11 +624,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 149100,
+      "bytes": 131858,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.5
+      "renderSeconds": 2.5
     },
     "valve-inlet": {
       "id": "valve-inlet",
@@ -649,11 +645,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 63108,
+      "bytes": 60010,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.2
+      "renderSeconds": 2.7
     },
     "valve-exhaust": {
       "id": "valve-exhaust",
@@ -670,11 +666,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 58052,
+      "bytes": 57063,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.3
+      "renderSeconds": 2.6
     },
     "spring-valve-inlet": {
       "id": "spring-valve-inlet",
@@ -691,11 +687,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 120154,
+      "bytes": 114408,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5
+      "renderSeconds": 2.6
     },
     "spring-valve-exhaust": {
       "id": "spring-valve-exhaust",
@@ -712,11 +708,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 120702,
+      "bytes": 113516,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.5
+      "renderSeconds": 2.6
     },
     "retainer-valve": {
       "id": "retainer-valve",
@@ -733,11 +729,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 74385,
+      "bytes": 53646,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.9
+      "renderSeconds": 2.6
     },
     "keepers-valve": {
       "id": "keepers-valve",
@@ -754,11 +750,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 69877,
+      "bytes": 62019,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.9
+      "renderSeconds": 2.9
     },
     "guide-valve": {
       "id": "guide-valve",
@@ -775,11 +771,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 114248,
+      "bytes": 91341,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.2
+      "renderSeconds": 2.6
     },
     "seal-valve-stem": {
       "id": "seal-valve-stem",
@@ -796,11 +792,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 164294,
+      "bytes": 113909,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.8
+      "renderSeconds": 2.7
     },
     "screw-valve-lash": {
       "id": "screw-valve-lash",
@@ -817,11 +813,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 69585,
+      "bytes": 67966,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.9
+      "renderSeconds": 2.7
     },
     "rocker-inlet-a": {
       "id": "rocker-inlet-a",
@@ -838,11 +834,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 84375,
+      "bytes": 76656,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.6
+      "renderSeconds": 2.6
     },
     "rocker-inlet-b": {
       "id": "rocker-inlet-b",
@@ -859,11 +855,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 87016,
+      "bytes": 80323,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.4
+      "renderSeconds": 2.6
     },
     "rocker-exhaust": {
       "id": "rocker-exhaust",
@@ -880,11 +876,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 80593,
+      "bytes": 78643,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.2
+      "renderSeconds": 2.6
     },
     "shaft-inlet-rockers-a": {
       "id": "shaft-inlet-rockers-a",
@@ -901,11 +897,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 170309,
+      "bytes": 148802,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.6
+      "renderSeconds": 2.6
     },
     "shaft-inlet-rockers-b": {
       "id": "shaft-inlet-rockers-b",
@@ -922,11 +918,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 165080,
+      "bytes": 146774,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.2
+      "renderSeconds": 2.7
     },
     "shaft-exhaust-rockers": {
       "id": "shaft-exhaust-rockers",
@@ -943,11 +939,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 146974,
+      "bytes": 133918,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.7
+      "renderSeconds": 2.7
     },
     "spring-rocker-a": {
       "id": "spring-rocker-a",
@@ -964,11 +960,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 330835,
+      "bytes": 251993,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.6
+      "renderSeconds": 2.6
     },
     "spring-rocker-b": {
       "id": "spring-rocker-b",
@@ -985,11 +981,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 326111,
+      "bytes": 253500,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.4
+      "renderSeconds": 2.6
     },
     "washer-rocker-wave": {
       "id": "washer-rocker-wave",
@@ -1006,11 +1002,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 189230,
+      "bytes": 108318,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.8
+      "renderSeconds": 2.7
     },
     "belt-timing": {
       "id": "belt-timing",
@@ -1027,11 +1023,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 144628,
+      "bytes": 96527,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.8
+      "renderSeconds": 2.6
     },
     "pulley-camshaft": {
       "id": "pulley-camshaft",
@@ -1048,11 +1044,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 291866,
+      "bytes": 247795,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.3
+      "renderSeconds": 2.6
     },
     "pulley-crank-timing": {
       "id": "pulley-crank-timing",
@@ -1069,11 +1065,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 291509,
+      "bytes": 264553,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.9
+      "renderSeconds": 2.8
     },
     "tensioner-timing": {
       "id": "tensioner-timing",
@@ -1090,11 +1086,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 59846,
+      "bytes": 56712,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.4
+      "renderSeconds": 2.5
     },
     "spring-timing-adjuster": {
       "id": "spring-timing-adjuster",
@@ -1111,11 +1107,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 225028,
+      "bytes": 118885,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.9
+      "renderSeconds": 2.6
     },
     "seal-camshaft": {
       "id": "seal-camshaft",
@@ -1132,11 +1128,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 203693,
+      "bytes": 103117,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.6
+      "renderSeconds": 2.6
     },
     "duct-intake": {
       "id": "duct-intake",
@@ -1153,11 +1149,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 200776,
+      "bytes": 146448,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.3
+      "renderSeconds": 2.5
     },
     "throttle-butterfly": {
       "id": "throttle-butterfly",
@@ -1174,11 +1170,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 68977,
+      "bytes": 81218,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.8
+      "renderSeconds": 2.7
     },
     "plenum-intake": {
       "id": "plenum-intake",
@@ -1195,11 +1191,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 240669,
+      "bytes": 233858,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.6
+      "renderSeconds": 2.7
     },
     "runner-intake": {
       "id": "runner-intake",
@@ -1216,11 +1212,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 153409,
+      "bytes": 121011,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.6
+      "renderSeconds": 2.6
     },
     "injector-fuel": {
       "id": "injector-fuel",
@@ -1237,11 +1233,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 52412,
+      "bytes": 52253,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.7
+      "renderSeconds": 2.4
     },
     "seal-injector": {
       "id": "seal-injector",
@@ -1258,11 +1254,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 194831,
+      "bytes": 69753,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.9
+      "renderSeconds": 2.4
     },
     "rail-fuel": {
       "id": "rail-fuel",
@@ -1279,11 +1275,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 166936,
+      "bytes": 146439,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5.1
+      "renderSeconds": 2.5
     },
     "regulator-fuel": {
       "id": "regulator-fuel",
@@ -1300,11 +1296,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 56426,
+      "bytes": 58244,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.1
+      "renderSeconds": 2.5
     },
     "valve-egr": {
       "id": "valve-egr",
@@ -1321,11 +1317,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 51112,
+      "bytes": 51834,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.6
+      "renderSeconds": 2.5
     },
     "valve-pcv": {
       "id": "valve-pcv",
@@ -1342,11 +1338,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 76065,
+      "bytes": 76827,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.9
+      "renderSeconds": 2.4
     },
     "iab-body": {
       "id": "iab-body",
@@ -1363,11 +1359,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 211574,
+      "bytes": 193923,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5
+      "renderSeconds": 2.6
     },
     "iab-butterfly": {
       "id": "iab-butterfly",
@@ -1384,11 +1380,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 124691,
+      "bytes": 109953,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.5
+      "renderSeconds": 2.4
     },
     "iab-shaft": {
       "id": "iab-shaft",
@@ -1405,11 +1401,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 61672,
+      "bytes": 56691,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 5
+      "renderSeconds": 2.5
     },
     "iab-actuator": {
       "id": "iab-actuator",
@@ -1426,11 +1422,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 62044,
+      "bytes": 60553,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 4.7
+      "renderSeconds": 2.6
     },
     "iab-solenoid": {
       "id": "iab-solenoid",
@@ -1447,11 +1443,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 58148,
+      "bytes": 57304,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.4
     },
     "iab-vacuum-chamber": {
       "id": "iab-vacuum-chamber",
@@ -1468,9 +1464,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 173672,
+      "bytes": 105380,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1489,11 +1485,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 74327,
+      "bytes": 81163,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "gasket-iab": {
       "id": "gasket-iab",
@@ -1510,11 +1506,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 342948,
+      "bytes": 206560,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "manifold-exhaust": {
       "id": "manifold-exhaust",
@@ -1531,11 +1527,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 223311,
+      "bytes": 113147,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "shield-exhaust": {
       "id": "shield-exhaust",
@@ -1552,11 +1548,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 160191,
+      "bytes": 145588,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "gasket-exhaust": {
       "id": "gasket-exhaust",
@@ -1573,9 +1569,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 331684,
+      "bytes": 270258,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1594,9 +1590,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 128426,
+      "bytes": 125539,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1615,9 +1611,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 174198,
+      "bytes": 115318,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1636,9 +1632,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 104903,
+      "bytes": 87640,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1657,11 +1653,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 191281,
+      "bytes": 129386,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "lead-spark-plug": {
       "id": "lead-spark-plug",
@@ -1678,11 +1674,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 179130,
+      "bytes": 85943,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "spark-plug": {
       "id": "spark-plug",
@@ -1699,9 +1695,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 87847,
+      "bytes": 94008,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.8
     },
@@ -1720,9 +1716,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 255566,
+      "bytes": 170744,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1741,9 +1737,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 136848,
+      "bytes": 91841,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1762,11 +1758,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 175959,
+      "bytes": 143320,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.7
     },
     "valve-oil-relief": {
       "id": "valve-oil-relief",
@@ -1783,11 +1779,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 77437,
+      "bytes": 77924,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 2.6
     },
     "spring-oil-relief": {
       "id": "spring-oil-relief",
@@ -1804,9 +1800,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 208461,
+      "bytes": 185666,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1825,11 +1821,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 168653,
+      "bytes": 101823,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 4.5
     },
     "dipstick-oil": {
       "id": "dipstick-oil",
@@ -1846,11 +1842,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 79951,
+      "bytes": 72513,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 5.8
     },
     "pump-water": {
       "id": "pump-water",
@@ -1867,11 +1863,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 52298,
+      "bytes": 196811,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 5.8
     },
     "thermostat": {
       "id": "thermostat",
@@ -1888,11 +1884,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 79213,
+      "bytes": 72186,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.5
+      "renderSeconds": 5.2
     },
     "outlet-coolant": {
       "id": "outlet-coolant",
@@ -1909,9 +1905,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 138122,
+      "bytes": 106681,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1930,9 +1926,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 162985,
+      "bytes": 112486,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1951,9 +1947,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 120538,
+      "bytes": 124247,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1972,9 +1968,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 70765,
+      "bytes": 63087,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -1993,9 +1989,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 203686,
+      "bytes": 179241,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -2014,11 +2010,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 263239,
+      "bytes": 147806,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.7
+      "renderSeconds": 2.6
     },
     "pump-power-steering": {
       "id": "pump-power-steering",
@@ -2035,9 +2031,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 121118,
+      "bytes": 53638,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     },
@@ -2056,11 +2052,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 207545,
+      "bytes": 198415,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.7
+      "renderSeconds": 2.5
     },
     "belt-power-steering": {
       "id": "belt-power-steering",
@@ -2077,11 +2073,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 133959,
+      "bytes": 54614,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 3.4
+      "renderSeconds": 2.5
     },
     "flywheel": {
       "id": "flywheel",
@@ -2098,11 +2094,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 191314,
+      "bytes": 138758,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.6
+      "renderSeconds": 2.5
     },
     "clutch-disc": {
       "id": "clutch-disc",
@@ -2119,11 +2115,11 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 144784,
+      "bytes": 130848,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
-      "renderSeconds": 2.4
+      "renderSeconds": 2.5
     },
     "clutch-pressure-plate": {
       "id": "clutch-pressure-plate",
@@ -2140,9 +2136,9 @@
       "frames": 288,
       "fps": 24,
       "duration": 12,
-      "bytes": 213499,
+      "bytes": 175877,
       "verified": true,
-      "revision": "5b8031fc3238e1039d5056da80580a96c75e005bd6afa2e6ceed614ee62921aa",
+      "revision": "187e02df59b2ae882a3aa2b8ce009c932599e982349cf2ccd0d420f49abd55ee",
       "renderer": "three-pbr",
       "renderSeconds": 2.5
     }

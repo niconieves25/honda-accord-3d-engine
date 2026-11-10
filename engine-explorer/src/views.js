@@ -4,11 +4,12 @@ import {CYL, DECK} from './kin.js';
 import {L} from './engine.js';
 
 const z1 = CYL[0].z;
-export const VIEW_ORDER = ['exterior', 'noCover', 'noTiming', 'cutaway', 'lower', 'iab', 'exploded'];
+export const VIEW_ORDER = ['exterior', 'noCover', 'noTiming', 'cutaway', 'lower', 'iab', 'exploded', 'assembly'];
 const COVER = ['valveCover', 'oilCap', 'plugLeads'];
 const FRONT = ['timingCoverUpper', 'timingCoverLower', 'engineMount', 'crankPulley', 'accessoryBelts', 'psHose'];
 const ATTACHMENTS = ['plenum','runners','throttleBody','intakeDuct','fuelRail','injectors','exhaustManifold','heatShield','coolantOutlet','alternator','psPump','distributor','oilFilter','dipstick','ignitionCoil','iabBody','iabButterflies','iabShaft','iabActuator','iabSolenoid','iabVacuumTank','flywheel','clutchDisc','clutchPressurePlate'];
 export const VIEWS = {
+  assembly: {cam:{t:[100,120,0],az:48,el:28,d:2.5},labels:[]},
   exterior: {cam: {t: [10, 110, -30], az: 52, el: 28, d: 1.5}, labels: ['valveCover', 'timingCoverUpper', 'crankPulley', 'psPump', 'plenum', 'oilFilter', 'throttleBody']},
   noCover: {cam: {t: [0, DECK + 60, -10], az: 62, el: 52, d: 1.35}, hidden: COVER, labels: ['camshaft', 'intakeRockers', 'exhaustRockers', 'rockerShafts', 'distributor', 'sparkPlugs']},
   noTiming: {cam: {t: [-10, 130, 200], az: 18, el: 14, d: 1.25}, hidden: FRONT, labels: ['timingBelt', 'camPulley', 'balancerBelt', 'waterPump', 'timingTensioner', 'crankTimingPulley']},

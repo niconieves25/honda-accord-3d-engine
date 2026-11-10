@@ -176,9 +176,12 @@ export function detailInternals(ctx) {
   cap.absarc(0, 0, 27, Math.PI, TAU, false);
   cap.lineTo(40, 0); cap.lineTo(49, -34); cap.lineTo(91, -34);
   cap.lineTo(91, -59); cap.lineTo(-91, -59); cap.closePath();
-  for (const z of [192, 96, 0, -96, -192]) {
-    at(add('bearingBridge', plate(cap, 22), M.cast), 0, 0, z);
-    mark(at(add('bearingBridge', annulus(26.9, SPEC.mainJournalDia / 2 + 0.08, 21, Math.PI, Math.PI), M.steel), 0, 0, z), 'bearing-main', z);
+  for (const [i,z] of [192, 96, 0, -96, -192].entries()) {
+    mark(at(add('bearingBridge', plate(cap, 22), M.cast), 0, 0, z), 'main-bearing-cap', i);
+    mark(at(add('bearingBridge', annulus(26.9, SPEC.mainJournalDia / 2 + 0.08, 21, Math.PI, Math.PI), M.steel), 0, 0, z), 'bearing-main', i*2+1);
+    // Ten physical half shells, two per documented main journal. The upper
+    // half belongs to the block saddle, independently of the removable cap.
+    mark(at(add('block', annulus(26.9, SPEC.mainJournalDia / 2 + 0.08, 21, 0, Math.PI), M.steel), 0, 0, z), 'bearing-main', i*2);
     for (const x of [-43, 43]) {
       at(add('bearingBridge', new THREE.CylinderGeometry(7, 7, 5, 6), M.darkSteel), x, -62, z);
       washerY('bearingBridge', 9, 4, 1.5, x, -59.7, z, M.steel);
@@ -196,9 +199,9 @@ export function detailInternals(ctx) {
   for (const [x,y,r] of [[0,L.camY,15.9],[-L.rockX,L.rockY,8.1],[L.rockX,L.rockY,8.1]]) {
     const hole = new THREE.Path(); hole.absarc(x,y,r,0,TAU,true); holder.holes.push(hole);
   }
-  for (const z of [192, 96, 0, -96, -192]) {
-    at(add('head', plate(holder, 12), M.castLight), 0, 0, z);
-    at(add('head', annulus(15.85, 13.08, 12), M.steel), 0, L.camY, z);
+  for (const [i,z] of [192, 96, 0, -96, -192].entries()) {
+    mark(at(add('head', plate(holder, 12), M.castLight), 0, 0, z),'camshaft-holder',i);
+    mark(at(add('head', annulus(15.85, 13.08, 12), M.steel), 0, L.camY, z),'camshaft-holder',i);
     for (const x of [-40, 40]) {
       localBolt('head', x, y1 + 3, z, 5.8, 42, G.head);
       washerY('head', 7.5, 3.4, 1.3, x, y1 + 0.6, z);

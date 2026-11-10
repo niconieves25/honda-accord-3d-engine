@@ -14,6 +14,7 @@ import {PART, PARTS, SYSTEMS, REFERENCE_ROOT, REMOVED_ENGINE_PARTS} from './part
 import {createStage} from './stage.js';
 import {FLOW_STYLE} from './flows.js';
 import {VIEW_ORDER, VIEWS, DIRECTIONS} from './views.js';
+import {createAssemblyUI} from './assembly/ui.js';
 
 let STR = getLanguage() === 'es' ? ES : EN;
 let T = STR.ui;
@@ -62,6 +63,7 @@ export function runApp() {
     explode: 0,
   };
   const SPEEDS = {s16: 16, s8: 8, s4: 4, s1: 1};
+  let assembly=null, operatingSnapshot=null;
 
   // ------------------------------------------------------------ layout
   const layout = () => `
@@ -103,6 +105,7 @@ export function runApp() {
     </div>
     <div class="transport-end"><div class="crank" aria-live="off"><span>${esc(T.crank)}</span><b id="crank-deg">0°</b></div><button type="button" id="btn-motion" aria-controls="panel-motion" aria-label="${esc(T.motionControls)}" title="${esc(T.motionControls)}">${icon('gauge')}<span>${esc(T.motionControls)}</span></button></div>
   </footer>
+    <footer id="assembly-transport" class="assembly-transport" hidden></footer>
     </div>
     <aside class="sidebar" aria-label="${esc(T.inspector)}">
       <div class="inspector-tabs" role="tablist" aria-label="${esc(T.inspector)}">
@@ -141,6 +144,7 @@ export function runApp() {
         </fieldset>
       </section>
       </div>
+      <section id="assembly-inspector" class="assembly-inspector" aria-label="${STR.lang==='es'?'Montaje por capítulos':'Assembly chapters'}" hidden></section>
       <p class="identity-badge">${esc(T.identityShort)}</p>
     </aside>
   </main>
@@ -212,7 +216,7 @@ export function runApp() {
     const next = e.key === 'Home' ? 0 : e.key === 'End' ? 2 : (ids.indexOf(inspector) + (e.key === 'ArrowLeft' ? 2 : 1)) % 3;
     showInspector(ids[next], true);
   });
-  const focusSearch = () => { showInspector('parts'); $('#parts-search').focus(); };
+  const focusSearch = () => { if(S.view==='assembly'){assembly?.focusSearch();return;}showInspector('parts'); $('#parts-search').focus(); };
   $('.skip').addEventListener('click', (e) => { e.preventDefault(); focusSearch(); });
   $('#btn-motion').addEventListener('click', () => showInspector('motion', true));
   const canvas = $('#gl');
@@ -252,9 +256,9 @@ export function runApp() {
     publishAppearance({theme:S.theme,scale:S.textScale,reduceMotion:S.reduceMotion});
     requestAnimationFrame(fit);
   };
-  const syncAppearance=event=>{const next=event?.detail??readAppearance();if(next.theme!==S.theme||next.scale!==S.textScale){S.theme=next.theme;S.textScale=next.scale;applySettings();}};
+  const syncAppearance=event=>{const next=event?.detail??readAppearance();const reduced=typeof next.reduceMotion==='boolean'?next.reduceMotion:S.reduceMotion;if(next.theme!==S.theme||next.scale!==S.textScale||reduced!==S.reduceMotion){S.theme=next.theme;S.textScale=next.scale;S.reduceMotion=reduced;applySettings();}};
   addEventListener('f22:appearance',syncAppearance);
-  addEventListener('storage',event=>{if(event.key==='f22.theme'||event.key==='f22.textScale')syncAppearance();});
+  addEventListener('storage',event=>{if(['f22.theme','f22.textScale','f22.reduceMotion'].includes(event.key))syncAppearance();});
   $('#text-size').addEventListener('input', (e) => ((S.textScale = Number(e.target.value)), applySettings()));
   $('#label-size').addEventListener('input', (e) => ((S.labelScale = Number(e.target.value)), applySettings()));
   $('#theme-select').addEventListener('change', (e) => ((S.theme = e.target.value), applySettings()));
@@ -314,24 +318,51 @@ export function runApp() {
     if (k >= 1) tween = null;
   };
   const orbitBy = (daz, del) => {
+    if(S.view==='assembly')assembly?.manualCamera();
     tween = null;
     const c = currentCam();
     setCam({...c, az: c.az + daz, el: Math.max(-80, Math.min(85, c.el + del))});
   };
   const zoomBy = (f) => {
+    if(S.view==='assembly')assembly?.manualCamera();
     tween = null;
     const c = currentCam();
     setCam({...c, d: Math.max(st.controls.minDistance, Math.min(st.controls.maxDistance, c.d * f))});
   };
-  st.controls.addEventListener('start', () => (tween = null));
+  st.controls.addEventListener('start', () => {tween=null;if(S.view==='assembly')assembly?.manualCamera();});
 
   // ------------------------------------------------------------ views
   const setView = (v, quiet) => {
+    if(!VIEWS[v])return;
+    if(v==='assembly'&&S.view!=='assembly'){
+      operatingSnapshot={th:S.th,playing:S.playing,speed:S.speed,view:S.view,cam:currentCam()};
+      S.playing=false;stepPending=0;st.setCut(null);st.setOutline(null);
+    }else if(S.view==='assembly'&&v!=='assembly'){
+      assembly.leave();
+      if(operatingSnapshot){S.th=operatingSnapshot.th;S.playing=operatingSnapshot.playing;S.speed=operatingSnapshot.speed;}
+      renderPlay();st.setOutline(S.selected);
+      const url=new URL(location.href);if(url.searchParams.get('view')==='assembly'){url.searchParams.delete('view');url.searchParams.delete('step');history.replaceState(null,'',url);}
+    }
     S.view = v;
     const V = VIEWS[v];
-    camTo(V.cam);
+    if(v==='assembly'){
+      if(assembly.enter()===false){
+        // A failed optional presentation must leave the existing explorer usable.
+        const original=operatingSnapshot;assembly.leave();S.view=original?.view||'exterior';
+        if(original){S.th=original.th;S.playing=original.playing;S.speed=original.speed;const c=original.cam;camTo({t:c.t.toArray().map(n=>n*1000),az:c.az,el:c.el,d:c.d},true);}
+        operatingSnapshot=null;renderPlay();st.setOutline(S.selected);
+        st.setCut(VIEWS[S.view].cut===undefined?null:VIEWS[S.view].cut*.001);return;
+      }
+    }
+    else if(operatingSnapshot?.view===v){const c=operatingSnapshot.cam;camTo({t:c.t.toArray().map(n=>n*1000),az:c.az,el:c.el,d:c.d},true);operatingSnapshot=null;}
+    else {camTo(V.cam);operatingSnapshot=null;}
     st.setCut(V.cut === undefined ? null : V.cut * 0.001);
     $$('[data-view]').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.view === v)));
+    // Reveal the selected view within its horizontal strip without scrolling
+    // the whole document away from a mobile reader's current position.
+    const current=$(`[data-view="${v}"]`),strip=$('.viewbtns');
+    const buttonRect=current.getBoundingClientRect(),stripRect=strip.getBoundingClientRect();
+    strip.scrollLeft+=buttonRect.left<stripRect.left?buttonRect.left-stripRect.left:buttonRect.right>stripRect.right?buttonRect.right-stripRect.right:0;
     $('#view-title').textContent = STR.views[v].name;
     $('#viewdesc').textContent = STR.views[v].desc;
     if (!quiet) announce(`${T.viewAnnounce}: ${STR.views[v].name}. ${STR.views[v].desc}`);
@@ -346,7 +377,8 @@ export function runApp() {
     setView(n);
     $(`[data-view="${n}"]`).focus();
   });
-  $('#btn-reset').addEventListener('click', () => camTo(VIEWS[S.view].cam));
+  $('#btn-reset').addEventListener('click', () => S.view==='assembly'?assembly.resetCamera():camTo(VIEWS[S.view].cam));
+  assembly=createAssemblyUI({app,st,getLanguage,getSettings:()=>S,camTo,announce,say,onExit:()=>setView(operatingSnapshot?.view||'exterior')});
 
   // ------------------------------------------------------------ systems, parts list, details
   const sysSel = $('#sys-select');
@@ -489,11 +521,13 @@ export function runApp() {
   canvas.addEventListener('pointerup', (e) => {
     if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) > 6) return;
     const r = canvas.getBoundingClientRect();
+    if(S.view==='assembly'){assembly.pick(e.clientX-r.left,e.clientY-r.top);return;}
     const keep = keepSet();
     const id = st.pick(e.clientX - r.left, e.clientY - r.top, (pid) => !keep || keep.has(PART[pid].system) || pid === S.selected);
     select(id, 'canvas');
   });
   canvas.addEventListener('pointermove', (e) => {
+    if(S.view==='assembly'){canvas.style.cursor='grab';return;}
     const r = canvas.getBoundingClientRect();
     canvas.style.cursor = st.pick(e.clientX - r.left, e.clientY - r.top) ? 'pointer' : 'grab';
   });
@@ -514,26 +548,26 @@ export function runApp() {
     if (e.key === 'Escape') {
       const open = Object.keys(dialogs).find((d) => !$('#' + d).hidden);
       if (open) openDialog(open, false);
-      else select(null);
+      else if(S.view==='assembly')assembly.clear();else select(null);
       return;
     }
     if (typing || tag === 'SELECT') return;
     const k = e.key;
     if (k === ' ' && (document.activeElement === canvas || document.activeElement === document.body)) {
       e.preventDefault();
-      playBtn.click();
+      if(S.view==='assembly')assembly.toggle();else playBtn.click();
     } else if (k === '+' || k === '=') zoomBy(0.85);
     else if (k === '-' || k === '_') zoomBy(1 / 0.85);
-    else if (k === 'r' || k === 'R') camTo(VIEWS[S.view].cam);
-    else if (k === ',') stepBy(-S.stepDeg);
-    else if (k === '.') stepBy(S.stepDeg);
+    else if (k === 'r' || k === 'R') S.view==='assembly'?assembly.resetCamera():camTo(VIEWS[S.view].cam);
+    else if (k === ',') S.view==='assembly'?assembly.step(-1):stepBy(-S.stepDeg);
+    else if (k === '.') S.view==='assembly'?assembly.step(1):stepBy(S.stepDeg);
     else if (k === '/') {
       e.preventDefault();
       focusSearch();
-    } else if (k === 'n' || k === 'N') stepPart(1);
-    else if (k === 'p' || k === 'P') stepPart(-1);
-    else if (k === 'i' || k === 'I') iabBtn.click();
-    else if (/^[1-7]$/.test(k) && document.activeElement?.closest?.('.views, .stagewrap, body')) setView(VIEW_ORDER[Number(k) - 1]);
+    } else if (k === 'n' || k === 'N') S.view==='assembly'?assembly.step(1):stepPart(1);
+    else if (k === 'p' || k === 'P') S.view==='assembly'?assembly.step(-1):stepPart(-1);
+    else if ((k === 'i' || k === 'I')&&S.view!=='assembly') iabBtn.click();
+    else if (/^[1-8]$/.test(k) && document.activeElement?.closest?.('.views, .stagewrap, body')) setView(VIEW_ORDER[Number(k) - 1]);
   });
 
   $('#camera-direction').addEventListener('change',e=>{setView('exterior',true);camTo(DIRECTIONS[e.target.value].cam,true);e.target.value='';openDialog('settings',false);});
@@ -547,6 +581,7 @@ export function runApp() {
     return k ? new Set(k) : null;
   };
   const drawLabels = () => {
+    if(S.view==='assembly')return;
     const ids = S.labelMode === 'none' ? [] : S.labelMode === 'view' ? [...new Set([...(VIEWS[S.view].labels ?? []), ...(S.selected ? [S.selected] : [])])] : S.selected ? [S.selected] : [];
     const W = st.size.w;
     const H = st.size.h;
@@ -637,6 +672,7 @@ export function runApp() {
     const notice = $('#removed-part-notice');
     if (notice) notice.textContent = T.removedPartNotice;
     renderCyls(); drawLabels();
+    assembly.translate();
     announce(T.languageChanged);
     requestAnimationFrame(fit);
   };
@@ -668,6 +704,10 @@ export function runApp() {
     notice.id='removed-part-notice';notice.textContent=T.removedPartNotice;
     $('.viewer-heading').append(notice);
   }
+  if(incoming.get('view')==='assembly'){
+    setView('assembly',true);
+    if(incoming.get('step'))assembly.enter({stepId:incoming.get('step')});
+  }
   fit();
 
   let last = performance.now();
@@ -675,6 +715,9 @@ export function runApp() {
   const loop = (now) => {
     const dt = Math.min(0.1, (now - last) / 1000);
     last = now;
+    if(S.view==='assembly'){
+      assembly.tick(dt);stepTween(now);if(!tween)st.controls.update();st.render();requestAnimationFrame(loop);return;
+    }
     let simDt = 0;
     if (S.playing) {
       S.th += (360 * dt) / SPEEDS[S.speed];
@@ -712,5 +755,5 @@ export function runApp() {
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
-  window.EXPLORER = {S, st, select, setView, stepBy, camTo};
+  window.EXPLORER = {S, st, select, setView, stepBy, camTo,assembly};
 }

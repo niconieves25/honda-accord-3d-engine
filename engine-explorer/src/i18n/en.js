@@ -37,7 +37,8 @@ export default {
       "cutaway": "Cutaway",
       "lower": "Crankshaft",
       "exploded": "Exploded",
-      "iab": "Intake bypass"
+      "iab": "Intake bypass",
+      "assembly": "Assembly"
     },
     "speedShort": {
       "s16": "Very slow · 16 s / turn",
@@ -115,6 +116,7 @@ export default {
     "reset": "Reset view",
     "help": "Keys",
     "helpText": [
+      ["1–8", "choose a view; 8 opens assembly"],
       [
         "Arrow keys",
         "turn the engine (when the engine has focus)"
@@ -141,7 +143,7 @@ export default {
       ],
       [
         "N and P",
-        "next and previous part"
+        "next and previous part, or assembly step"
       ],
       [
         "I",
@@ -186,6 +188,10 @@ export default {
     "iabNote": "This switch demonstrates the manifold actuator. It is independent of crank angle. The factory ECU threshold, vacuum routing and market-specific calibration have not been verified."
   },
   "views": {
+    "assembly": {
+      "name": "Assembly, piece by piece",
+      "desc": "Build the F22A6 by chapter. Pause, rewind or choose a unit; unmeasured placement and installation paths are illustrative."
+    },
     "exterior": {
       "name": "Outside",
       "desc": "The F22A6 with its black 16 VALVE cover, intake bypass assembly and manual flywheel/clutch. Drag to inspect every side."

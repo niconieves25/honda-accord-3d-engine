@@ -19,12 +19,22 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## Controls
 
-- **Views, keys 1–7:** outside, valve cover off, timing covers off, cylinder cutaway, crankshaft, intake bypass, exploded assembly.
+- **Views, keys 1–8:** outside, valve cover off, timing covers off, cylinder cutaway, crankshaft, intake bypass, exploded assembly, guided assembly.
 - **Camera:** drag to orbit; scroll or +/− to zoom. Focus the engine and use arrow keys for rotation; Shift increases the step. R resets. Display includes six reference directions and a three-quarter view.
 - **Inspector:** Parts, Details and Motion are separate tabs. Arrow keys, Home and End navigate the tabs. Search with `/`; N/P select adjacent parts; Escape clears selection or closes a dialog.
 - **Playback:** Space plays/pauses, comma/period step the crank. Motion contains cylinder strokes, step size and schematic air/fuel, exhaust, oil and coolant paths.
 - **Intake bypass, I:** an independent open/closed actuator state. It changes four secondary intake butterflies without changing cam profiles. No factory ECU activation threshold is claimed.
 - **Accessibility:** text 100–240%, independent label size, three contrast themes, reduced motion, optional spoken names and Read aloud. Meaning is conveyed by words and shapes as well as colour. Preferences are remembered locally.
+
+## Guided assembly / Montaje
+
+Choose **8 · Montaje / Assembly** to build the F22A6 from its shared physical components. The view starts paused. Ten chapters contain **374 installation units and 388 selectable steps**, including the four piston insertions, separate connecting-rod caps, five main-bearing caps, and the head joining the block. Catalogue types, physical units and visual meshes are different counts; the model covers all 102 catalogue types plus 21 explicitly labelled supporting-detail types.
+
+Use play/pause, previous/next, speed, restart or the timeline. Chapters and steps can be selected directly. The current chapter provides staging trays; installed units remain in the engine. Search locates a specific occurrence, outlines it, and links to its Anatomy entry. **See inside / Ver interior** temporarily makes enclosing shells transparent. Turning or zooming manually disables automatic camera following; **Follow part / Seguir pieza** resumes it.
+
+The assembly timeline is independent of engine operation, with the crankshaft frozen at its reference angle. Leaving restores the previous explorer state; returning preserves assembly progress and stays paused. Language changes preserve progress and camera. With reduced motion enabled, play advances immediately to the next completed step. Keyboard: **8** opens assembly; **Space** plays/pauses; **, / .** or **P / N** select steps; **R** resumes the guided camera; **/** searches units. Deep links use `index.html?view=assembly&step=piston:1` (catalogue IDs also resolve to their first occurrence).
+
+Este montaje es educativo. Las posiciones no medidas, las trayectorias y la colocación de correas/mangueras se identifican como ilustrativas; no constituye un procedimiento de taller. Las referencias no establecen holguras, pares de apriete ni calibraciones. Consulta [el inventario y sus límites](docs/assembly-inventory.md) y [las comprobaciones](docs/assembly-verification.md). El mercado y la variante de emisiones siguen pendientes.
 
 ## Component atlas and videos
 

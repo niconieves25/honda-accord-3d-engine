@@ -2,6 +2,7 @@
 import utility from '../../assets/icons/utility.json';
 const fill = body => `<g fill="currentColor" fill-opacity=".18" stroke="none">${body}</g>`;
 const custom = {
+  assembly: fill('<path d="M5 18h22v12H5zM3 3h7v7H3zm19 0h7v7h-7z"/>')+'<path d="M5 18h22v12H5zM11 18v12m10-12v12M3 3h7v7H3zm19 0h7v7h-7zM16 2v12m-4-4 4 4 4-4M1 22h4m22 0h4"/>',
   engine: fill('<path d="M7 10h18v16H7z"/><path d="M10 5h12v5H10z"/>')+'<path d="M10 5h12v5H10zM7 10h18v16H7zM7 15H3v7h4m18-6h4v6h-4M11 26v3m10-3v3M13 10v16m6-16v16"/><path d="M14 5V2h4v3"/>',
   cover: fill('<path d="M5 8h22l2 17H3z"/>')+'<path d="M5 8h22l2 17H3zM8 13h16M8 18h16"/><circle cx="23" cy="21" r="1"/><path d="M10 8V5h8v3M7 25v3m18-3v3"/>',
   piston: fill('<path d="M8 4h16v13H8zM13 17h6v9h-6z"/>')+'<path d="M8 4h16v13H8zM8 8h16M8 11h16M13 17v8m6-8v8"/><circle cx="16" cy="26" r="4"/><circle cx="16" cy="26" r="1"/>',
@@ -21,7 +22,7 @@ const custom = {
   exploded: fill('<path d="m16 2 13 7-13 7L3 9zm0 14 13 7-13 7-13-7z"/>')+'<path d="m16 2 13 7-13 7L3 9zM3 16l13 7 13-7M3 23l13 7 13-7M16 16v7"/>',
 };
 export const SYSTEM_ICONS={exterior:'cover',bottom:'piston',balance:'balance',head:'valves',timing:'belt',intake:'intake',exhaust:'exhaust',ignition:'spark',oil:'oil',cooling:'cooling',accessory:'accessory',manual:'flywheel'};
-export const VIEW_ICONS={exterior:'engine',noCover:'valves',noTiming:'belt',cutaway:'cylinder',lower:'crank',iab:'butterfly',exploded:'exploded'};
+export const VIEW_ICONS={exterior:'engine',noCover:'valves',noTiming:'belt',cutaway:'cylinder',lower:'crank',iab:'butterfly',exploded:'exploded',assembly:'assembly'};
 export const ICON_NAMES=[...Object.keys(custom),...Object.keys(utility)];
 export function icon(name,kind='utility') {
   if(custom[name]) return `<svg class="ui-icon ${kind==='mechanical'?'mechanical-icon':''}" data-icon="${name}" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${custom[name]}</svg>`;

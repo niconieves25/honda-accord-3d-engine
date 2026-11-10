@@ -14,6 +14,7 @@ import {detailCastings} from './detail-castings.js';
 import {detailExterior} from './detail-exterior.js';
 import {detailInternals} from './detail-internals.js';
 import {detailTiming} from './detail-timing.js';
+import {detailComponents} from './detail-components.js';
 import {consolidateStatic} from './consolidate-static.js';
 
 const V3 = THREE.Vector3;
@@ -783,6 +784,7 @@ export function buildEngine(options = {}) {
   const exterior = detailExterior({G,M,add,at,tube,cylZ,cylX,bolt,L,CYL,DECK}) ?? {};
   detailInternals({G,M,add,at,tube,cylZ,L,CYL,DECK,ASSUMED,SPEC,crank,pistons,rockers,valves});
   const updateTiming = detailTiming({G,M,L,PULLEY,beltPath,crankTiming,wpPulley,crankBal,balFPulley,balInputPulley,balRGear,balInputGear,camPulley});
+  const updateComponents = detailComponents({root,G,M,L,CYL,DECK,PULLEY,beltPath,pistons,valves,rockers,crank,flange,distRotor,psPulley,crankBal,balFPulley,balInputPulley,balInputGear,balRGear,wpPulley,alt});
   if (options.consolidate !== false) consolidateStatic(G);
 
   // ============================================================ materials for isolate / see-through
@@ -893,6 +895,7 @@ export function buildEngine(options = {}) {
     altPulley.rotation.z = th * D2R * (PULLEY.crank / PULLEY.alternator);
     psPulley.rotation.z = th * D2R * (PULLEY.crank / PULLEY.powerSteering);
     updateTiming(th);
+    updateComponents(th,st);
     // ---- fixed valve profiles: identical inlet lift, no state/history switching
     const lever = 24; // illustrative valve-side arm length, mm
     for (const r of rockers) {
