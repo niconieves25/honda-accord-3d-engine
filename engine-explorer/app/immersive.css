@@ -1,0 +1,205 @@
+/* Scene-first shell. Panel contents keep the existing instrument vocabulary;
+   these terminal rules own viewport layout in every view and text size. */
+#app.immersive-shell{
+  --hud-gap:clamp(12px,1.5vw,24px);
+  --drawer-width:clamp(340px,32vw,460px);
+  position:fixed;inset:0;display:block;grid-template-rows:none;
+  width:100%;height:100dvh!important;min-height:0!important;
+  padding:0!important;overflow:hidden!important;
+}
+html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidden}
+#app.immersive-shell .main,
+#app.immersive-shell .viewer{
+  position:absolute;inset:0;display:block!important;min-width:0;min-height:0!important;
+  width:100%;height:100%;margin:0;padding:0;border:0;border-radius:0;
+  overflow:visible;box-shadow:none;background:transparent;pointer-events:none;
+}
+#app.immersive-shell .stagewrap{
+  position:absolute;inset:0;z-index:1;display:block;flex:none;
+  width:100%;height:100%!important;min-height:0!important;max-height:none;
+  margin:0;border:0;border-radius:0;overflow:hidden;background:transparent;pointer-events:auto;
+}
+#app.immersive-shell #gl{width:100%;height:100%;inset:0}
+#app.immersive-shell .top{
+  position:absolute;z-index:20;top:var(--hud-gap);left:var(--hud-gap);right:var(--hud-gap);
+  min-width:0;min-height:48px;display:flex;flex-wrap:nowrap!important;align-items:center;
+  gap:12px;margin:0;padding:0;pointer-events:none;
+}
+#app.immersive-shell .brand-mark{display:grid;width:48px;height:48px;border-radius:12px}
+#app.immersive-shell .brand-mark .ui-icon{width:32px;height:32px}
+#app.immersive-shell .titles{flex:1;min-width:0;max-width:none}
+#app.immersive-shell h1{font-size:.88em;line-height:1.15;margin:0;text-shadow:0 1px 8px var(--bg)}
+#app.immersive-shell .brand-short{display:none}
+#app.immersive-shell .topbtns{flex:none;gap:8px;margin:0;font-size:.64em;pointer-events:auto}
+#app.immersive-shell .topbtns>button,#app.immersive-shell .help-menu>summary{min-height:44px;background:var(--btn)}
+#app.immersive-shell .language-control select{font-size:1em;min-width:112px;background:var(--btn)}
+#app.immersive-shell .help-options{top:calc(100% + 8px);min-width:240px;background:var(--panel)}
+
+/* Small edge controls remain discoverable while the canvas fills the viewport. */
+#app.immersive-shell .immersive-rail{position:absolute;z-index:21;top:calc(var(--hud-gap) + 76px);pointer-events:auto}
+#app.immersive-shell .immersive-rail-left{left:var(--hud-gap)}
+#app.immersive-shell .immersive-rail-right{right:var(--hud-gap)}
+#app.immersive-shell .immersive-toggle{min-height:48px;padding:10px 14px;font-size:.67em;background:var(--btn);border-color:var(--line);box-shadow:none}
+#app.immersive-shell .immersive-toggle>.mechanical-icon{width:24px;height:24px;flex-basis:24px;color:var(--accent)}
+#app.immersive-shell .immersive-toggle:hover{border-color:var(--accent)}
+#app.immersive-shell .immersive-toggle[aria-expanded=true]{border-color:var(--accent);background:var(--red-inset);color:var(--fg)}
+#app.immersive-shell .viewer-heading{
+  position:absolute;z-index:18;top:calc(var(--hud-gap) + 72px);left:calc(50% - var(--scene-shift,0px));transform:translateX(-50%);
+  display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100% - 370px);
+  padding:0;margin:0;border:0;border-radius:0;background:transparent;pointer-events:none;
+}
+#app.immersive-shell .viewer-heading h2{font-size:.78em;line-height:1.2;text-align:center;text-shadow:0 1px 8px var(--bg)}
+#app.immersive-shell .viewer-utilities{pointer-events:auto}
+#app.immersive-shell .view-hint{display:none}
+#app.immersive-shell .viewer-utilities button{width:44px;min-height:44px;padding:8px;background:var(--btn)}
+#app.immersive-shell .viewer-utilities button>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+#app.immersive-shell .viewer-utilities kbd{display:none}
+
+/* Transparent drawers sit over a temporary scrim, preserving the scene behind
+   them without placing moving metallic highlights directly under reading text. */
+#app.immersive-shell .immersive-backdrop{position:absolute;inset:0;z-index:30;background:color-mix(in srgb,var(--bg) 78%,transparent)}
+#app.immersive-shell .immersive-drawer{
+  position:absolute;z-index:40;top:var(--hud-gap);bottom:var(--hud-gap);
+  width:var(--drawer-width);max-width:calc(100vw - var(--hud-gap)*2);
+  height:auto!important;min-height:0!important;max-height:none!important;
+  margin:0;display:flex;flex-direction:column;overflow:hidden;pointer-events:auto;
+  border:1px solid var(--red-edge);border-radius:14px;background:transparent;box-shadow:none;
+}
+#app.immersive-shell .immersive-drawer:not([hidden]){animation:drawer-arrive 160ms ease-out}
+#app.immersive-shell .immersive-drawer-left{left:var(--hud-gap)}
+#app.immersive-shell .immersive-drawer-right{right:var(--hud-gap)}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-drawer{top:calc(var(--hud-gap) + 138px)}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-backdrop{top:calc(var(--hud-gap) + 138px);width:calc(var(--active-panel-width,460px) + var(--hud-gap)*3);pointer-events:none}
+#app.immersive-shell[data-drawer-mode=docked][data-drawer=inspector] .immersive-backdrop{left:auto;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
+#app.immersive-shell[data-drawer-mode=docked][data-drawer=views] .immersive-backdrop{right:auto;background:linear-gradient(270deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
+#app.immersive-shell .immersive-drawer-heading{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;
+  padding:12px 16px;border-bottom:1px solid var(--red-edge);
+}
+#app.immersive-shell .immersive-drawer-heading h2{font-size:.85em;line-height:1.2}
+#app.immersive-shell .immersive-close{flex:none;width:44px;height:44px;min-height:44px;padding:8px;background:var(--btn)}
+#app.immersive-shell .views{display:block;flex:1;min-height:0;margin:0;padding:10px;overflow:auto;border:0;border-radius:0;box-shadow:none;scroll-padding:12px}
+#app.immersive-shell .views>.lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+#app.immersive-shell .viewbtns{display:grid;grid-template-columns:1fr;gap:6px;padding:0;overflow:visible;flex:none}
+#app.immersive-shell .viewbtns button{flex:none;width:100%;min-height:64px;padding:12px;text-align:left;font-size:.72em;white-space:normal;border:1px solid transparent;border-radius:9px}
+#app.immersive-shell .viewbtns button[aria-checked=true]{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent);background:transparent}
+#app.immersive-shell .viewbtns button:hover{background:var(--btn)}
+#app.immersive-shell .immersive-view-description{flex:none;border-top:1px solid var(--line);padding:14px 18px;max-height:30%;overflow:auto}
+#app.immersive-shell .immersive-view-description h3{font-size:.75em;margin-bottom:7px}
+#app.immersive-shell .immersive-view-description .viewdesc{font-size:.67em;margin:0;line-height:1.6}
+#app.immersive-shell .immersive-view-footer{flex:none;padding:12px 18px;border-top:1px solid var(--line)}
+#app.immersive-shell .immersive-view-footer .subtitle{font-size:.58em;line-height:1.5;margin:0}
+#app.immersive-shell .anatomy-entry{font-size:.64em;margin-top:6px;min-height:44px}
+#app.immersive-shell .inspector-tabs{flex:none;padding:8px;grid-template-columns:1fr 1fr 1.25fr;overflow:auto}
+#app.immersive-shell .inspector-tabs button{font-size:.64em;flex:1 0 auto;min-height:44px}
+#app.immersive-shell .inspector-body{flex:1;min-height:0;max-height:none!important;overflow:auto!important;scroll-padding:18px}
+#app.immersive-shell .inspector-pane{padding:16px}
+#app.immersive-shell .partslist ul{grid-template-columns:1fr}
+#app.immersive-shell .identity-badge{flex:none;font-size:.5em;line-height:1.5;padding:8px 16px}
+#app.immersive-shell .assembly-inspector{flex:1;min-height:0;overflow:hidden}
+#app.immersive-shell .assembly-inspector-heading{flex:none;padding:14px 16px;gap:8px}
+#app.immersive-shell .assembly-inspector-heading h2{font-size:.78em}
+#app.immersive-shell .assembly-inspector-heading p{font-size:.6em}
+#app.immersive-shell .assembly-inspector-heading button{margin:0;width:100%;font-size:.6em}
+#app.immersive-shell .assembly-inspector-scroll{flex:1;min-height:0;max-height:none!important;overflow:auto!important;padding:16px;scroll-padding:18px;overscroll-behavior:contain}
+
+/* Both timelines occupy one floating dock; the engine canvas never resizes. */
+#app.immersive-shell .transport,
+#app.immersive-shell .assembly-transport{
+  position:absolute;z-index:20;left:calc(50% - var(--scene-shift,0px));bottom:calc(var(--hud-gap) + 62px);transform:translateX(-50%);
+  width:max-content;max-width:calc(100% - var(--hud-gap)*2);max-height:42dvh;
+  margin:0;padding:10px 12px;border:1px solid var(--line);border-radius:14px;
+  background:transparent;box-shadow:none;overflow:auto;overscroll-behavior:contain;
+  pointer-events:auto;text-shadow:0 1px 5px var(--bg);font-size:.65em;
+}
+#app.immersive-shell .transport{display:flex;flex-wrap:wrap;gap:12px}
+#app.immersive-shell .transport .grp{width:auto;flex-wrap:wrap;gap:6px}
+#app.immersive-shell .transport-end{width:auto;gap:10px}
+#app.immersive-shell .transport-end .crank>span{display:none}
+#app.immersive-shell .transport #btn-motion>span{display:none}
+#app.immersive-shell .speed-control{flex:none;min-width:0;flex-wrap:nowrap}
+#app.immersive-shell .speed-control>span{display:none}
+#app.immersive-shell .speed-control select{max-width:190px;background:var(--btn)}
+#app.immersive-shell .assembly-transport{width:min(860px,calc(100% - var(--hud-gap)*2));display:grid;gap:6px}
+#app.immersive-shell:not([data-controls=open]) .transport,
+#app.immersive-shell:not([data-controls=open]) .assembly-transport{display:none!important}
+#app.immersive-shell #engine-playback #btn-play,
+#app.immersive-shell #assembly-transport #assembly-play{display:none}
+#app.immersive-shell .immersive-playback{position:absolute;z-index:20;left:calc(50% - var(--scene-shift,0px));bottom:var(--hud-gap);transform:translateX(-50%);display:flex;align-items:stretch;gap:8px;width:max-content;max-width:calc(100% - var(--hud-gap)*2);pointer-events:auto;font-size:.65em}
+#app.immersive-shell .immersive-playback button{min-height:48px;min-width:0;padding:10px 14px;flex:1 1 auto}
+#app.immersive-shell #btn-quick-play{background:var(--action);border-color:var(--red-edge);color:white;font-weight:500}
+#app.immersive-shell #btn-controls-toggle{background:var(--btn)}
+#app.immersive-shell #btn-controls-toggle[aria-expanded=true]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
+#app.immersive-shell[data-drawer-mode=docked][data-drawer] .transport,
+#app.immersive-shell[data-drawer-mode=docked][data-drawer] .assembly-transport{max-width:calc(100% - var(--active-panel-width,0px) - var(--hud-gap)*3)}
+#app.immersive-shell .assembly-buttons{gap:6px}
+#app.immersive-shell .assembly-buttons .primary{flex:0 1 auto;min-width:0}
+#app.immersive-shell .assembly-buttons label{margin-left:auto;font-size:.95em;flex:none;flex-wrap:nowrap}
+#app.immersive-shell .assembly-buttons select{min-width:100px;background:var(--btn)}
+#app.immersive-shell .assembly-scrubber{flex-wrap:nowrap;gap:10px;font-size:.9em}
+#app.immersive-shell .assembly-scrubber label{flex:0 0 auto;min-width:0}
+#app.immersive-shell .assembly-scrubber input{flex:1;min-width:44px}
+#app.immersive-shell .legend{bottom:140px;font-size:.55em;max-width:min(360px,calc(100% - 32px))}
+#app.immersive-shell .dialog{z-index:50;top:var(--hud-gap);right:var(--hud-gap);max-height:calc(100dvh - var(--hud-gap)*2)}
+#app.immersive-shell .dialog[hidden]{display:none!important}
+#app.immersive-shell .lab3d{font-size:clamp(11px,.48em,20px)}
+
+@keyframes drawer-arrive{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
+@media(max-width:1000px){
+  #app.immersive-shell .top{gap:10px}
+  #app.immersive-shell .brand-mark{width:44px;height:44px}
+  #app.immersive-shell h1{font-size:.76em}
+  #app.immersive-shell .topbtns{font-size:.61em;gap:6px}
+  #app.immersive-shell .viewer-heading{max-width:calc(100% - 330px)}
+}
+@media(max-width:700px){
+  #app.immersive-shell{--hud-gap:12px;--drawer-width:calc(100vw - 24px)}
+  #app.immersive-shell .top{gap:8px;min-height:44px;align-items:center}
+  #app.immersive-shell .brand-mark{display:none}
+  #app.immersive-shell .titles{flex:1;flex-basis:auto!important}
+  #app.immersive-shell .brand-full{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  #app.immersive-shell .brand-short{display:block}
+  #app.immersive-shell h1{font-size:.74em}
+  #app.immersive-shell .topbtns{flex-wrap:nowrap;font-size:.58em;gap:6px}
+  #app.immersive-shell .language-control select{min-width:106px;max-width:134px;padding-left:10px}
+  #app.immersive-shell #btn-settings,#app.immersive-shell .help-menu>summary{width:44px;padding:9px;gap:0}
+  #app.immersive-shell #btn-settings>span,#app.immersive-shell .help-menu>summary>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  #app.immersive-shell .immersive-rail{top:70px}
+  #app.immersive-shell .immersive-toggle{padding:8px 10px;font-size:.61em;min-height:44px}
+  #app.immersive-shell .viewer-heading{top:124px;width:calc(100% - 24px);max-width:none;justify-content:center;gap:10px}
+  #app.immersive-shell .viewer-heading h2{font-size:.69em}
+  #app.immersive-shell .viewer-utilities{flex:none}
+  #app.immersive-shell .immersive-drawer{top:12px;bottom:12px;max-width:calc(100vw - 24px)}
+  #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{font-size:.61em;padding:8px;max-height:38dvh;bottom:calc(var(--hud-gap) + 80px)}
+  #app.immersive-shell .immersive-playback{font-size:.61em}
+  #app.immersive-shell .immersive-playback button{padding:9px 12px}
+  #app.immersive-shell .transport{width:max-content;gap:7px;justify-content:center}
+  #app.immersive-shell .transport .big{min-width:110px}
+  #app.immersive-shell .transport .grp{justify-content:center;flex:1}
+  #app.immersive-shell .transport .transport-end{justify-content:center}
+  #app.immersive-shell .speed-control select{max-width:160px}
+  #app.immersive-shell .assembly-buttons .primary{flex:1 1 auto}
+  #app.immersive-shell .assembly-buttons label{flex:1;justify-content:flex-end}
+  #app.immersive-shell .assembly-buttons label>span{display:none}
+  #app.immersive-shell .assembly-scrubber{flex-wrap:wrap;gap:0 10px}
+  #app.immersive-shell .assembly-scrubber label{flex:1 1 calc(100% - 60px);font-size:.9em}
+  #app.immersive-shell .assembly-scrubber input{order:3;flex:1 0 100%;min-height:32px}
+  #app.immersive-shell .assembly-scrubber output{flex:0 0 auto;min-width:4ch}
+  #app.immersive-shell .legend{bottom:170px;left:12px;max-width:calc(100% - 24px)}
+}
+@media(max-height:500px){
+  #app.immersive-shell .top{top:8px}
+  #app.immersive-shell .viewer-heading{top:68px}
+  #app.immersive-shell .immersive-rail{top:68px}
+  #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{bottom:66px;max-height:31dvh}
+  #app.immersive-shell .assembly-transport{gap:0;padding:6px 10px}
+  #app.immersive-shell .assembly-buttons button{min-height:44px}
+}
+:root[data-large-text=true] #app.immersive-shell .immersive-drawer{width:min(600px,calc(100vw - var(--hud-gap)*2))}
+:root[data-large-text=true] #app.immersive-shell .top .brand-mark{display:none}
+:root[data-large-text=true] #app.immersive-shell .top .brand-full{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+:root[data-large-text=true] #app.immersive-shell .top .brand-short{display:block}
+:root[data-large-text=true] #app.immersive-shell .topbtns>button,:root[data-large-text=true] #app.immersive-shell .help-menu>summary{width:44px;padding:9px;gap:0}
+:root[data-large-text=true] #app.immersive-shell .topbtns>button>span,:root[data-large-text=true] #app.immersive-shell .help-menu>summary>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){#app.immersive-shell .immersive-drawer:not([hidden]){animation:none}}
+:root[data-reduced-motion=true] #app.immersive-shell .immersive-drawer:not([hidden]){animation:none}

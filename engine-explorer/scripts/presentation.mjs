@@ -9,5 +9,5 @@ export function presentationCss(page){
     const data=fs.readFileSync(path.join(project,`assets/fonts/${slug}-latin-${weight}-normal.woff2`)).toString('base64');
     fonts.push(`@font-face{font-family:'${name}';font-style:normal;font-weight:${weight};font-display:swap;src:url(data:font/woff2;base64,${data}) format('woff2');}`);
   }
-  return fonts.join('\n')+'\n'+fs.readFileSync(path.join(project,'src/ui/presentation.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,'src/ui/theme.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,page,'style.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,'src/ui/surfaces.css'),'utf8');
+  return fonts.join('\n')+'\n'+fs.readFileSync(path.join(project,'src/ui/presentation.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,'src/ui/theme.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,page,'style.css'),'utf8')+'\n'+fs.readFileSync(path.join(project,'src/ui/surfaces.css'),'utf8')+(page==='app'?'\n'+fs.readFileSync(path.join(project,'app/immersive.css'),'utf8'):'');
 }

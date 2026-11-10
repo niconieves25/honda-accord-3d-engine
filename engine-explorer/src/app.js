@@ -15,6 +15,7 @@ import {createStage} from './stage.js';
 import {FLOW_STYLE} from './flows.js';
 import {VIEW_ORDER, VIEWS, DIRECTIONS} from './views.js';
 import {createAssemblyUI} from './assembly/ui.js';
+import {createImmersiveShell, immersiveCopy} from './ui/immersive.js';
 
 let STR = getLanguage() === 'es' ? ES : EN;
 let T = STR.ui;
@@ -46,7 +47,7 @@ export function runApp() {
   const reduceDefault = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const S = {
     th: 0,
-    playing: !reduceDefault,
+    playing: !store.get('reduceMotion', reduceDefault),
     speed: 's8',
     stepDeg: 30,
     iab: false,
@@ -66,13 +67,11 @@ export function runApp() {
   let assembly=null, operatingSnapshot=null;
 
   // ------------------------------------------------------------ layout
-  const layout = () => `
+  const layout = () => {const I=immersiveCopy(STR.lang);return `
   <a class="skip" href="#parts-search">${esc(T.search)}</a>
   <header class="top">
     <div class="brand-mark" aria-hidden="true">${icon('engine','mechanical')}</div><div class="titles">
-      <h1>${esc(T.title)}</h1>
-      <p class="subtitle">${esc(T.subtitle)}</p>
-      <a class="anatomy-entry" href="anatomy.html">${icon('exploded','mechanical')}<span>${esc(T.individualParts)}</span>${icon('arrow-up-right')}</a>
+      <h1><span class="brand-full">${esc(T.title)}</span><span class="brand-short" aria-hidden="true">F22A6</span></h1>
     </div>
     <div class="topbtns">
       <label class="language-control" for="language-select"><span>${icon('globe')}${esc(T.language)}</span><select id="language-select"><option value="es" lang="es">Español</option><option value="en" lang="en">English</option></select></label>
@@ -81,22 +80,31 @@ export function runApp() {
       <button type="button" id="btn-about" aria-expanded="false" aria-controls="about">${icon('info')}<span>${esc(T.about)}</span></button></div></details>
     </div>
   </header>
+  <div class="immersive-rail immersive-rail-left"><button type="button" id="btn-views-toggle" class="immersive-toggle" aria-controls="view-drawer" aria-expanded="false">${icon('exploded','mechanical')}<span data-immersive-copy="views">${esc(I.views)}</span></button></div>
+  <div class="immersive-rail immersive-rail-right"><button type="button" id="btn-inspector-toggle" class="immersive-toggle" aria-controls="inspector-drawer" aria-expanded="false">${icon('list-bullets')}<span data-immersive-copy="explore">${esc(I.explore)}</span></button></div>
+  <div id="immersive-backdrop" class="immersive-backdrop" hidden aria-hidden="true"></div>
+  <section id="view-drawer" class="immersive-drawer immersive-drawer-left" role="dialog" aria-modal="true" aria-labelledby="views-drawer-title" hidden>
+    <div class="immersive-drawer-heading"><h2 id="views-drawer-title">${esc(I.viewMenu)}</h2><button type="button" class="immersive-close" data-drawer-close="views" aria-label="${esc(I.close)}">${icon('x')}</button></div>
   <nav class="views" aria-label="${esc(T.views)}">
     <span class="lbl" id="views-lbl">${esc(T.views)}</span>
     <div role="radiogroup" aria-labelledby="views-lbl" class="viewbtns">
       ${VIEW_ORDER.map((v, i) => `<button type="button" role="radio" data-view="${v}" aria-checked="false" aria-label="${i + 1} ${esc(STR.views[v].name)}" title="${esc(STR.views[v].desc)}">${icon(VIEW_ICONS[v],'mechanical')}<span class="view-copy"><span class="vnum" aria-hidden="true">0${i + 1}</span><span>${esc(T.viewShort[v])}</span></span></button>`).join('')}
     </div>
   </nav>
+    <div class="immersive-view-description"><h3 id="view-menu-current"></h3><p class="viewdesc" id="viewdesc"></p></div>
+    <div class="immersive-view-footer"><p class="subtitle">${esc(T.subtitle)}</p><a class="anatomy-entry" href="anatomy.html">${icon('exploded','mechanical')}<span>${esc(T.individualParts)}</span>${icon('arrow-up-right')}</a></div>
+  </section>
   <main class="main">
     <div class="viewer">
-    <div class="viewer-heading"><div><h2 id="view-title"></h2><p class="viewdesc" id="viewdesc"></p></div><div class="viewer-utilities"><span class="view-hint">${esc(T.viewHint)}</span><button type="button" id="btn-reset">${icon('arrow-counter-clockwise')}<span>${esc(T.reset)}</span><kbd>R</kbd></button></div></div>
+    <div class="viewer-heading"><div><h2 id="view-title"></h2></div><div class="viewer-utilities"><span class="view-hint">${esc(T.viewHint)}</span><button type="button" id="btn-reset">${icon('arrow-counter-clockwise')}<span>${esc(T.reset)}</span><kbd>R</kbd></button></div></div>
     <section class="stagewrap" aria-label="${esc(T.canvasLabel)}">
       <canvas id="gl" tabindex="0" role="img" aria-label="${esc(T.canvasLabel)}"></canvas>
       <svg class="leaders" aria-hidden="true"></svg>
       <div class="labels" aria-hidden="true"></div>
       <div class="legend" id="legend" aria-hidden="true"></div>
     </section>
-  <footer class="transport" aria-label="${esc(T.animation)}">
+  <div class="immersive-playback" role="group" aria-label="${esc(T.animation)}"><button type="button" id="btn-quick-play" class="primary">${icon('play')}<span class="control-label">${esc(T.play)}</span></button><button type="button" id="btn-controls-toggle" aria-expanded="false" aria-controls="engine-playback assembly-transport">${icon('sliders-horizontal')}<span data-immersive-copy="controls">${esc(I.controls)}</span></button></div>
+  <footer id="engine-playback" class="transport" aria-label="${esc(T.animation)}">
     <div class="grp">
       <button type="button" id="btn-play" class="big"></button>
       <button type="button" id="btn-back" class="step-button" aria-label="${esc(T.stepBack)}" title="${esc(T.stepBack)} (,)">${icon('skip-back')}</button>
@@ -107,7 +115,8 @@ export function runApp() {
   </footer>
     <footer id="assembly-transport" class="assembly-transport" hidden></footer>
     </div>
-    <aside class="sidebar" aria-label="${esc(T.inspector)}">
+    <aside id="inspector-drawer" class="sidebar immersive-drawer immersive-drawer-right" role="dialog" aria-modal="true" aria-labelledby="inspector-drawer-title" hidden>
+      <div class="immersive-drawer-heading"><h2 id="inspector-drawer-title">${esc(I.inspector)}</h2><button type="button" class="immersive-close" data-drawer-close="inspector" aria-label="${esc(I.close)}">${icon('x')}</button></div>
       <div class="inspector-tabs" role="tablist" aria-label="${esc(T.inspector)}">
         ${['parts', 'details', 'motion'].map((id, i) => `<button type="button" role="tab" id="tab-${id}" data-inspector="${id}" aria-controls="panel-${id}" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}">${icon({parts:'list-bullets',details:'book-open',motion:'gauge'}[id])}<span>${esc(T[id + 'Tab'])}</span></button>`).join('')}
       </div>
@@ -177,7 +186,7 @@ export function runApp() {
     <p>${esc(T.flowNote)}</p>
     <button type="button" class="closebtn" data-close="about">${esc(T.close)}</button>
   </div>
-  <div class="sr" aria-live="polite" id="announce"></div>`;
+  <div class="sr" aria-live="polite" id="announce"></div>`;};
   app.innerHTML = layout();
   mountGlyphBackground();
   // Retain original text/attribute nodes so translation never replaces the canvas,
@@ -196,6 +205,7 @@ export function runApp() {
   const $ = (sel) => app.querySelector(sel);
   const $$ = (sel) => [...app.querySelectorAll(sel)];
   const disclosure=createDisclosures(app);
+  const immersive=createImmersiveShell({app,getLanguage,getView:()=>S.view});
   let inspector = 'parts';
   const showInspector = (id, focus = false) => {
     inspector = id;
@@ -205,6 +215,7 @@ export function runApp() {
       button.tabIndex = active ? 0 : -1;
       $('#panel-' + button.dataset.inspector).hidden = !active;
     });
+    immersive.open('inspector',{focus:false});
     if (focus) $('#tab-' + id).focus();
     $('.inspector-body').scrollTop = 0;
   };
@@ -216,7 +227,7 @@ export function runApp() {
     const next = e.key === 'Home' ? 0 : e.key === 'End' ? 2 : (ids.indexOf(inspector) + (e.key === 'ArrowLeft' ? 2 : 1)) % 3;
     showInspector(ids[next], true);
   });
-  const focusSearch = () => { if(S.view==='assembly'){assembly?.focusSearch();return;}showInspector('parts'); $('#parts-search').focus(); };
+  const focusSearch = () => { if(S.view==='assembly'){immersive.open('inspector',{focus:false});assembly?.focusSearch();return;}showInspector('parts'); $('#parts-search').focus(); };
   $('.skip').addEventListener('click', (e) => { e.preventDefault(); focusSearch(); });
   $('#btn-motion').addEventListener('click', () => showInspector('motion', true));
   const canvas = $('#gl');
@@ -240,6 +251,7 @@ export function runApp() {
     const root = document.documentElement;
     root.dataset.theme = S.theme;
     root.dataset.largeText = String(S.textScale > 1.6);
+    root.dataset.reducedMotion = String(S.reduceMotion);
     root.style.setProperty('--scale', S.textScale);
     root.style.setProperty('--lscale', S.labelScale);
     $('#text-size').value = S.textScale;
@@ -273,6 +285,7 @@ export function runApp() {
     d.hidden = !open;
     b.setAttribute('aria-expanded', String(open));
     if (open) {
+      immersive.close({returnFocus:false});
       $('.help-menu').open = false;
       for (const other of Object.keys(dialogs)) if (other !== id) openDialog(other, false);
       d.querySelector('input,select,button')?.focus();
@@ -364,10 +377,12 @@ export function runApp() {
     const buttonRect=current.getBoundingClientRect(),stripRect=strip.getBoundingClientRect();
     strip.scrollLeft+=buttonRect.left<stripRect.left?buttonRect.left-stripRect.left:buttonRect.right>stripRect.right?buttonRect.right-stripRect.right:0;
     $('#view-title').textContent = STR.views[v].name;
+    $('#view-menu-current').textContent = STR.views[v].name;
+    immersive.translate();
     $('#viewdesc').textContent = STR.views[v].desc;
     if (!quiet) announce(`${T.viewAnnounce}: ${STR.views[v].name}. ${STR.views[v].desc}`);
   };
-  $$('[data-view]').forEach((b) => b.addEventListener('click', () => setView(b.dataset.view)));
+  $$('[data-view]').forEach((b) => b.addEventListener('click', () => {setView(b.dataset.view);immersive.close({returnFocus:false});canvas.focus({preventScroll:true});}));
   $('.viewbtns').addEventListener('keydown', (e) => {
     if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) return;
     e.preventDefault();
@@ -378,7 +393,7 @@ export function runApp() {
     $(`[data-view="${n}"]`).focus();
   });
   $('#btn-reset').addEventListener('click', () => S.view==='assembly'?assembly.resetCamera():camTo(VIEWS[S.view].cam));
-  assembly=createAssemblyUI({app,st,getLanguage,getSettings:()=>S,camTo,announce,say,onExit:()=>setView(operatingSnapshot?.view||'exterior')});
+  assembly=createAssemblyUI({app,st,getLanguage,getSettings:()=>S,camTo,announce,say,onExit:()=>{setView(operatingSnapshot?.view||'exterior');immersive.close({returnFocus:false});canvas.focus({preventScroll:true});},onInspect:()=>immersive.open('inspector',{focus:false})});
 
   // ------------------------------------------------------------ systems, parts list, details
   const sysSel = $('#sys-select');
@@ -548,6 +563,7 @@ export function runApp() {
     if (e.key === 'Escape') {
       const open = Object.keys(dialogs).find((d) => !$('#' + d).hidden);
       if (open) openDialog(open, false);
+      else if(immersive.close())return;
       else if(S.view==='assembly')assembly.clear();else select(null);
       return;
     }
@@ -567,7 +583,7 @@ export function runApp() {
     } else if (k === 'n' || k === 'N') S.view==='assembly'?assembly.step(1):stepPart(1);
     else if (k === 'p' || k === 'P') S.view==='assembly'?assembly.step(-1):stepPart(-1);
     else if ((k === 'i' || k === 'I')&&S.view!=='assembly') iabBtn.click();
-    else if (/^[1-8]$/.test(k) && document.activeElement?.closest?.('.views, .stagewrap, body')) setView(VIEW_ORDER[Number(k) - 1]);
+    else if (/^[1-8]$/.test(k) && (document.activeElement === canvas || document.activeElement === document.body || document.activeElement?.closest?.('.views'))) setView(VIEW_ORDER[Number(k) - 1]);
   });
 
   $('#camera-direction').addEventListener('change',e=>{setView('exterior',true);camTo(DIRECTIONS[e.target.value].cam,true);e.target.value='';openDialog('settings',false);});
@@ -643,7 +659,17 @@ export function runApp() {
   const fit = () => {
     const r = wrap.getBoundingClientRect();
     st.resize(Math.max(1, r.width), Math.max(1, r.height), Math.min(devicePixelRatio || 1, 2));
+    const panel=immersive.active ? $('#'+(immersive.active==='views'?'view':'inspector')+'-drawer') : null;
+    const panelRect=panel?.getBoundingClientRect(),appRect=app.getBoundingClientRect();
+    const panelWidth=panelRect?.width||0;
+    const gap=panelRect ? Math.max(0,immersive.active==='inspector'?appRect.right-panelRect.right:panelRect.left-appRect.left) : 0;
+    const shift=panel&&!immersive.modal ? (panelWidth+gap)/2*(immersive.active==='inspector'?1:-1) : 0;
+    const presentationScale=panel&&!immersive.modal ? Math.max(.35,Math.min(1,(r.width-panelWidth-3*gap)/Math.max(1,r.width))) : 1;
+    st.setPresentationOffset(shift,presentationScale);
+    app.style.setProperty('--scene-shift',shift+'px');
+    app.style.setProperty('--active-panel-width',panelWidth+'px');
   };
+  addEventListener('f22:drawer',fit);
   new ResizeObserver(fit).observe(wrap);
   addEventListener('resize', fit);
 
@@ -667,6 +693,8 @@ export function runApp() {
     renderList(); renderDetails(); renderPlay(); renderIab(); renderLegend();
     if (referenceOpen && $('#det-body .reference-details')) $('#det-body .reference-details').open = true;
     $('#view-title').textContent = STR.views[S.view].name;
+    $('#view-menu-current').textContent = STR.views[S.view].name;
+    immersive.translate();
     $('#viewdesc').textContent = STR.views[S.view].desc;
     for (const c of [1, 2, 3, 4]) $(`#cyl-${c} .cyl-number`).textContent = `${T.cylinder} ${c}`;
     const notice = $('#removed-part-notice');
@@ -755,5 +783,5 @@ export function runApp() {
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
-  window.EXPLORER = {S, st, select, setView, stepBy, camTo,assembly};
+  window.EXPLORER = {S, st, select, setView, stepBy, camTo,assembly,immersive};
 }

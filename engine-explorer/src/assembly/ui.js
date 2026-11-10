@@ -11,7 +11,7 @@ const COPY={
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 
-export function createAssemblyUI({app,st,getLanguage,getSettings,camTo,announce,say,onExit}){
+export function createAssemblyUI({app,st,getLanguage,getSettings,camTo,announce,say,onExit,onInspect=()=>{}}){
  let runtime=null,active=false,progress=0,playing=false,speed=1,following=true,interior=true,narration=false,selectedId=null,lastStep=-1,lastCameraStep=-1,lastInfo='',state=null,lang=getLanguage(),catalog=new Map(),savedCamera=null,savedMinDistance=null,lastPlayKey='';
  const $=s=>app.querySelector(s),transport=$('#assembly-transport'),inspector=$('#assembly-inspector');
  const text=()=>COPY[lang],unitById=id=>runtime?.inventory.units.find(u=>u.id===id);
@@ -22,8 +22,7 @@ export function createAssemblyUI({app,st,getLanguage,getSettings,camTo,announce,
  function focus(force=false){
   if(!state?.focus||(!following&&!force))return;if(!force&&lastCameraStep===state.index)return;
   lastCameraStep=state.index;
-  const aspect=Math.max(1,(st.size.h||1)/Math.max(1,st.size.w||1));
-  camTo({t:state.focus.target,az:48,el:28,d:Math.max(.08,state.focus.distance*aspect)},getSettings().reduceMotion);
+  camTo({t:state.focus.target,az:48,el:28,d:Math.max(.08,state.focus.distance)},getSettings().reduceMotion);
  }
  function cameraSnapshot(){
   const offset=st.camera.position.clone().sub(st.controls.target),distance=Math.max(.001,offset.length());
@@ -34,7 +33,7 @@ export function createAssemblyUI({app,st,getLanguage,getSettings,camTo,announce,
  function selectUnit(id){
   if(!unitById(id))return;pause();selectedId=id;lastInfo='';
   if(!runtime.snapshot().unitStates.find(unit=>unit.id===id)?.visible)progress=runtime.progressForStep(runtime.findStep(id));
-  pose(progress);focus(true);announce(name(unitById(id)));if(narration)say(reading());
+  pose(progress);focus(true);onInspect();announce(name(unitById(id)));if(narration)say(reading());
  }
  function renderSearch(){
   const field=$('#assembly-search');if(!runtime||!field)return;

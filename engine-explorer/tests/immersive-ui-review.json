@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-10",
+  "browser": "Codex in-app browser",
+  "target": "local production build",
+  "scope": "Complete-engine immersive dashboard; unchanged geometry and media",
+  "checks": {
+    "allEightViews": true,
+    "canvasRemainsViewportSizedWithDrawers": true,
+    "desktopDrawerNonmodal": true,
+    "desktopModelUsesUnobstructedWidth": true,
+    "mobileDrawerModal": true,
+    "mobileTabAndShiftTabWrap": true,
+    "escapeRestoresOpenerFocus": true,
+    "viewSelectionClosesDrawerAndFocusesCanvas": true,
+    "canvasPickingOpensDetails": true,
+    "searchShortcutOpensInspector": true,
+    "searchAndPartSelection": "buj / sparkPlugs",
+    "quickPlaybackForwardsToExistingControllers": true,
+    "advancedControlsCollapsedInitially": true,
+    "escapeClosesAdvancedControls": true,
+    "languagePreservesOpenPanelAndAssemblyProgress": true,
+    "reducedMotionDisablesDrawerAnimation": true,
+    "reducedMotionQuickPlayAdvancesOneAssemblyStep": true,
+    "numericShortcutIgnoresInspectorButtons": true,
+    "consoleErrorsOrWarnings": []
+  },
+  "viewport160Percent": [
+    {"width": 375, "height": 812, "canvasWidth": 375, "canvasHeight": 812, "pageOverflow": false},
+    {"width": 768, "height": 1024, "canvasWidth": 768, "canvasHeight": 1024, "pageOverflow": false},
+    {"width": 1024, "height": 768, "canvasWidth": 1024, "canvasHeight": 768, "pageOverflow": false},
+    {"width": 812, "height": 375, "canvasWidth": 812, "canvasHeight": 375, "pageOverflow": false},
+    {"width": 1280, "height": 720, "canvasWidth": 1280, "canvasHeight": 720, "pageOverflow": false},
+    {"width": 1440, "height": 900, "canvasWidth": 1440, "canvasHeight": 900, "pageOverflow": false}
+  ],
+  "text240Percent": [
+    {"width": 375, "height": 812, "canvasHeight": 812, "pageOverflow": false, "reviewed": ["quick playback", "advanced controls", "view menu", "focus trap"]},
+    {"width": 1440, "height": 900, "canvasHeight": 900, "pageOverflow": false, "reviewed": ["assembly inspector", "chapter and step selectors", "quick playback"]}
+  ],
+  "projectionRegression": "tests/framing.mjs projects real engine vertices for portrait reference poses and verifies view-offset picking, pose preservation and unobstructed-width fit",
+  "screenshots": "tests/immersive-review/",
+  "limitations": [
+    "Viewport emulation does not benchmark a physical phone.",
+    "Canvas fills the browser viewport; this does not enter the operating system fullscreen mode.",
+    "The prior production screenshot is 1280 by 720; desktop after screenshots are 1440 by 900."
+  ]
+}
