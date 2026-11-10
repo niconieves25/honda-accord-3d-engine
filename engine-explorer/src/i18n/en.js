@@ -2,6 +2,7 @@
 export default {
   "lang": "en",
   "ui": {
+    "cameraZoom": "Zoom the engine", "zoomIn": "Zoom in", "zoomOut": "Zoom out", "partNames": "Labels", "togglePartNames": "Show or hide part names", "annotationGroup": "Part markers: tap or focus one to see its name", "annotationDetails": "View details", "annotationPreview": "Part",
     "title": "Honda F22A6 Engine Explorer",
     "language": "Language",
     "individualParts": "Individual parts · Anatomy",
@@ -109,8 +110,9 @@ export default {
     "speakNames": "Speak part names",
     "showLabels": "Labels on the engine",
     "labelModes": {
+      "view": "Key part markers",
+      "all": "Key part names",
       "selected": "Selected part only",
-      "view": "Key parts in this view",
       "none": "None"
     },
     "reset": "Reset view",

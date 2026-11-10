@@ -23,10 +23,16 @@ The complete-engine canvas fills the viewport. **Views** opens the left menu; **
 
 The compact bottom bar keeps play/pause visible. **Controls** expands the existing speed and step controls, plus the timeline in Assembly; it starts collapsed and preserves its state when changing views or languages. **Escape** closes a panel and returns focus to its opener. Choosing a view closes the view menu and focuses the canvas. Existing reduced-motion settings remain available; in Assembly, play advances directly to the next completed step when reduced motion is enabled.
 
+### Part markers and zoom
+
+Inspection views use compact numbered part markers by default. Hover, focus with the keyboard, or tap a marker to reveal its name in a single preview card. **View details** opens the inspector for that part. **Labels / Nombres** opts into expanded names; Display also offers selected-part-only and no-label modes. Markers and names avoid controls and one another; annotations without enough free space are omitted instead of overlapping.
+
+The visible **Zoom in / Zoom out** buttons use the same camera limits as the wheel and **+ / −** keys. In Assembly, manual zoom pauses camera following without changing assembly progress; **Follow part** resumes following.
+
 ## Controls
 
 - **Views, keys 1–8:** outside, valve cover off, timing covers off, cylinder cutaway, crankshaft, intake bypass, exploded assembly, guided assembly.
-- **Camera:** drag to orbit; scroll or +/− to zoom. Focus the engine and use arrow keys for rotation; Shift increases the step. R resets. Display includes six reference directions and a three-quarter view.
+- **Camera:** drag to orbit; use the visible zoom buttons, scroll or +/− to zoom. Focus the engine and use arrow keys for rotation; Shift increases the step. R resets. Display includes six reference directions and a three-quarter view.
 - **Inspector:** Parts, Details and Motion are separate tabs. Arrow keys, Home and End navigate the tabs. Search with `/`; N/P select adjacent parts; Escape closes a panel or dialog, or clears selection when neither is open.
 - **Playback:** Space plays/pauses, comma/period step the crank. Motion contains cylinder strokes, step size and schematic air/fuel, exhaust, oil and coolant paths.
 - **Intake bypass, I:** an independent open/closed actuator state. It changes four secondary intake butterflies without changing cam profiles. No factory ECU activation threshold is claimed.
@@ -92,6 +98,8 @@ src/app.js, app/style.css    complete-engine dashboard
 app/immersive.css           full-viewport canvas, edge panels and playback dock
 src/ui/immersive.js          responsive panels, focus and canonical playback mirror
 src/ui/framing.js            portrait/panel projection without changing camera pose
+src/ui/annotations.js        deterministic pin/tag placement and HUD avoidance
+src/ui/engine-annotations.js persistent markers, preview card and part selection
 src/i18n/{en,es}.js          complete-engine text and narration
 src/i18n/locale.js           shared persistent language preference
 src/anatomy/catalog.js      component entries, Spanish text and evidence

@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-10",
+  "browser": "Codex in-app browser",
+  "target": "local production build",
+  "scope": "Engine annotations and visible zoom; unchanged engine geometry, mechanics and media",
+  "checks": {
+    "compactPointsByDefault": true,
+    "minimumPinHitArea": "44 x 44 CSS pixels",
+    "pinClickSelectsWithoutOpeningInspector": true,
+    "keyboardTabOpensNamedPreview": true,
+    "detailsButtonOpensCorrectInspectorEntry": true,
+    "escapeDismissesPreviewAndRestoresCanvasFocus": true,
+    "expandedNamesOptIn": true,
+    "spanishAndEnglishNamesAndAccessibleZoomLabels": true,
+    "languagePreservesSelection": true,
+    "settingsModeValuesAndLabelsRemainAlignedAcrossLanguages": true,
+    "markersReturnAfterClosingDisplaySettings": true,
+    "filterRespectsSystem": "intake leaves plenum and throttleBody markers",
+    "zoomInChangesProjectionAndZoomOutRestoresIt": true,
+    "zoomLeavesCanvasViewportSized": true,
+    "assemblyZoomPreservesProgressAndDisablesCameraFollowing": true,
+    "newCameraControlsAreInertDuringMobileModal": true,
+    "consoleErrorsOrWarnings": []
+  },
+  "viewports160Percent": [
+    {"width": 375, "height": 812, "pageOverflow": false},
+    {"width": 768, "height": 1024, "pageOverflow": false},
+    {"width": 812, "height": 375, "pageOverflow": false, "previewVisible": true},
+    {"width": 1024, "height": 768, "pageOverflow": false, "previewVisible": true},
+    {"width": 1440, "height": 900, "pageOverflow": false, "previewVisible": true}
+  ],
+  "text240Percent": {"width": 375, "height": 812, "previewVisible": true, "pageOverflow": false},
+  "pureRegressionTests": "tests/annotations.mjs: deterministic layout, non-overlapping hit areas, HUD avoidance, selected priority, enlarged labels, actual desktop preview geometry and crowded mobile fallback",
+  "screenshots": "tests/annotation-review/",
+  "limits": [
+    "Markers identify existing approximate part anchors, not measured moving surface points.",
+    "Expanded names are omitted when they cannot fit. A preview may temporarily hide covered inactive markers. All parts remain available in Explore.",
+    "Viewport emulation is not a physical-device performance benchmark."
+  ]
+}

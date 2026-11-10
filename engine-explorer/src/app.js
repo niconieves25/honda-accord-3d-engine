@@ -16,6 +16,7 @@ import {FLOW_STYLE} from './flows.js';
 import {VIEW_ORDER, VIEWS, DIRECTIONS} from './views.js';
 import {createAssemblyUI} from './assembly/ui.js';
 import {createImmersiveShell, immersiveCopy} from './ui/immersive.js';
+import {createEngineAnnotations} from './ui/engine-annotations.js';
 
 let STR = getLanguage() === 'es' ? ES : EN;
 let T = STR.ui;
@@ -100,9 +101,12 @@ export function runApp() {
     <section class="stagewrap" aria-label="${esc(T.canvasLabel)}">
       <canvas id="gl" tabindex="0" role="img" aria-label="${esc(T.canvasLabel)}"></canvas>
       <svg class="leaders" aria-hidden="true"></svg>
-      <div class="labels" aria-hidden="true"></div>
+      <div class="labels" role="group" aria-label="${esc(T.annotationGroup)}"></div>
+      <div id="annotation-card" class="annotation-card" hidden></div>
       <div class="legend" id="legend" aria-hidden="true"></div>
     </section>
+  <div class="scene-zoom" role="group" aria-label="${esc(T.cameraZoom)}"><span class="scene-tool-caption">Zoom</span><button type="button" id="btn-zoom-in" aria-label="${esc(T.zoomIn)}" title="${esc(T.zoomIn)} (+)">${icon('magnifying-glass-plus')}</button><button type="button" id="btn-zoom-out" aria-label="${esc(T.zoomOut)}" title="${esc(T.zoomOut)} (−)">${icon('magnifying-glass-minus')}</button></div>
+  <button type="button" id="btn-scene-labels" class="scene-label-toggle" aria-pressed="false" title="${esc(T.togglePartNames)}">${icon('map-pin')}<span>${esc(T.partNames)}</span></button>
   <div class="immersive-playback" role="group" aria-label="${esc(T.animation)}"><button type="button" id="btn-quick-play" class="primary">${icon('play')}<span class="control-label">${esc(T.play)}</span></button><button type="button" id="btn-controls-toggle" aria-expanded="false" aria-controls="engine-playback assembly-transport">${icon('sliders-horizontal')}<span data-immersive-copy="controls">${esc(I.controls)}</span></button></div>
   <footer id="engine-playback" class="transport" aria-label="${esc(T.animation)}">
     <div class="grp">
@@ -260,6 +264,8 @@ export function runApp() {
     $('#label-size-o').textContent = `${Math.round(S.labelScale * 100)}%`;
     $('#theme-select').value = S.theme;
     $('#label-mode').value = S.labelMode;
+    $('#btn-scene-labels').setAttribute('aria-pressed',String(S.labelMode==='all'));
+    $('#btn-scene-labels').setAttribute('aria-label',T.togglePartNames);
     $('#reduce-motion').checked = S.reduceMotion;
     $('#speak-names').checked = S.speak;
     st.setTheme(S.theme);
@@ -275,6 +281,7 @@ export function runApp() {
   $('#label-size').addEventListener('input', (e) => ((S.labelScale = Number(e.target.value)), applySettings()));
   $('#theme-select').addEventListener('change', (e) => ((S.theme = e.target.value), applySettings()));
   $('#label-mode').addEventListener('change', (e) => ((S.labelMode = e.target.value), applySettings()));
+  $('#btn-scene-labels').addEventListener('click',()=>{S.labelMode=S.labelMode==='all'?'view':'all';applySettings();});
   $('#reduce-motion').addEventListener('change', (e) => ((S.reduceMotion = e.target.checked), applySettings()));
   $('#speak-names').addEventListener('change', (e) => ((S.speak = e.target.checked), applySettings()));
   // dialogs: toggle buttons, Escape closes, focus returns to the opener
@@ -290,6 +297,7 @@ export function runApp() {
       for (const other of Object.keys(dialogs)) if (other !== id) openDialog(other, false);
       d.querySelector('input,select,button')?.focus();
     } else if (d.contains(document.activeElement)) (id === 'settings' ? b : $('.help-menu>summary')).focus();
+    requestAnimationFrame(fit);
   };
   for (const [id, sel] of Object.entries(dialogs)) $(sel).addEventListener('click', () => openDialog(id, $('#' + id).hidden));
   $$('[data-close]').forEach((b) => b.addEventListener('click', () => openDialog(b.dataset.close, false)));
@@ -342,6 +350,8 @@ export function runApp() {
     const c = currentCam();
     setCam({...c, d: Math.max(st.controls.minDistance, Math.min(st.controls.maxDistance, c.d * f))});
   };
+  $('#btn-zoom-in').addEventListener('click',()=>zoomBy(.85));
+  $('#btn-zoom-out').addEventListener('click',()=>zoomBy(1/.85));
   st.controls.addEventListener('start', () => {tween=null;if(S.view==='assembly')assembly?.manualCamera();});
 
   // ------------------------------------------------------------ views
@@ -357,6 +367,8 @@ export function runApp() {
       const url=new URL(location.href);if(url.searchParams.get('view')==='assembly'){url.searchParams.delete('view');url.searchParams.delete('step');history.replaceState(null,'',url);}
     }
     S.view = v;
+    $('#btn-scene-labels').hidden=v==='assembly';
+    if(v==='assembly')annotations.clear();
     const V = VIEWS[v];
     if(v==='assembly'){
       if(assembly.enter()===false){
@@ -381,6 +393,7 @@ export function runApp() {
     immersive.translate();
     $('#viewdesc').textContent = STR.views[v].desc;
     if (!quiet) announce(`${T.viewAnnounce}: ${STR.views[v].name}. ${STR.views[v].desc}`);
+    requestAnimationFrame(fit);
   };
   $$('[data-view]').forEach((b) => b.addEventListener('click', () => {setView(b.dataset.view);immersive.close({returnFocus:false});canvas.focus({preventScroll:true});}));
   $('.viewbtns').addEventListener('keydown', (e) => {
@@ -475,7 +488,7 @@ export function runApp() {
       const name = nameOf(id);
       announce(`${T.selectedAnnounce}: ${name}. ${STR.parts[id].where}`);
       if (S.speak) say(name);
-      showInspector('details', from === 'list' || from === 'key');
+      if(from!=='pin')showInspector('details', from === 'list' || from === 'key');
     }
   };
   const visibleParts = () => PARTS.filter((p) => !S.system || p.system === S.system).map((p) => p.id);
@@ -564,7 +577,7 @@ export function runApp() {
       const open = Object.keys(dialogs).find((d) => !$('#' + d).hidden);
       if (open) openDialog(open, false);
       else if(immersive.close())return;
-      else if(S.view==='assembly')assembly.clear();else select(null);
+      else if(S.view==='assembly')assembly.clear();else {select(null);annotations.clear();}
       return;
     }
     if (typing || tag === 'SELECT') return;
@@ -591,6 +604,12 @@ export function runApp() {
   // ------------------------------------------------------------ labels on the engine
   const labelsEl = $('.labels');
   const leaders = $('.leaders');
+  const annotations=createEngineAnnotations({
+    container:labelsEl,leaders,card:$('#annotation-card'),getName:nameOf,
+    getCopy:()=>({details:T.annotationDetails,preview:T.annotationPreview,annotations:T.annotationGroup}),
+    onSelect:id=>select(id,'pin'),onDetails:id=>{select(id,'pin');showInspector('details',true);},
+  });
+  let annotationObstacles=[],annotationBounds=null;
   const keepSet = () => {
     if (S.system) return new Set([S.system]);
     const k = VIEWS[S.view].keep;
@@ -598,37 +617,15 @@ export function runApp() {
   };
   const drawLabels = () => {
     if(S.view==='assembly')return;
-    const ids = S.labelMode === 'none' ? [] : S.labelMode === 'view' ? [...new Set([...(VIEWS[S.view].labels ?? []), ...(S.selected ? [S.selected] : [])])] : S.selected ? [S.selected] : [];
-    const W = st.size.w;
-    const H = st.size.h;
-    const placed = [];
-    let html = '';
-    let svg = '';
-    const fs = 15 * S.labelScale;
-    for (const id of ids) {
-      if (VIEWS[S.view].hidden?.includes(id)) continue;
-      const p = st.project(st.eng.anchorOf(id));
-      if (!p) continue;
-      const [ax, ay] = p;
-      if (ax < -20 || ay < -20 || ax > W + 20 || ay > H + 20) continue;
-      const name = nameOf(id);
-      const w = Math.min(W * 0.45, name.length * fs * 0.6 + 24);
-      const h = fs * 1.9;
-      // push the label away from the centre of the view, then down until it does not overlap another
-      let lx = ax + (ax < W / 2 ? -w - 60 : 60);
-      let ly = ay - h / 2 + (ay < H / 2 ? -40 : 40);
-      lx = Math.max(8, Math.min(W - w - 8, lx));
-      ly = Math.max(8, Math.min(H - h - 8, ly));
-      for (let k = 0; k < 20 && placed.some((q) => lx < q.x + q.w + 6 && lx + w + 6 > q.x && ly < q.y + q.h + 6 && ly + h + 6 > q.y); k++) ly = Math.min(H - h - 8, ly + h * 0.6 + 4);
-      placed.push({x: lx, y: ly, w, h});
-      const sel = id === S.selected;
-      const ex = lx + w / 2 < ax ? lx + w : lx;
-      svg += `<line x1="${ax.toFixed(1)}" y1="${ay.toFixed(1)}" x2="${ex.toFixed(1)}" y2="${(ly + h / 2).toFixed(1)}" class="ldr${sel ? ' sel' : ''}"/><circle cx="${ax.toFixed(1)}" cy="${ay.toFixed(1)}" r="${(5 * S.labelScale).toFixed(1)}" class="dot${sel ? ' sel' : ''}"/>`;
-      html += `<div class="lab3d${sel ? ' sel' : ''}" style="left:${lx.toFixed(1)}px;top:${ly.toFixed(1)}px;max-width:${w.toFixed(0)}px;font-size:${fs.toFixed(1)}px">${esc(name)}</div>`;
-    }
-    leaders.setAttribute('viewBox', `0 0 ${W} ${H}`);
-    leaders.innerHTML = svg;
-    labelsEl.innerHTML = html;
+    const ids=S.labelMode==='none'?[]:S.labelMode==='selected'?(S.selected?[S.selected]:[]):[...new Set([...(VIEWS[S.view].labels??[]),...(S.selected?[S.selected]:[])])];
+    const keep=keepSet();
+    const anchors=ids.flatMap((id,index)=>{
+      if(VIEWS[S.view].hidden?.includes(id)|| (keep&&!keep.has(PART[id]?.system)&&id!==S.selected))return [];
+      const p=st.project(st.eng.anchorOf(id));
+      return p?[{id,x:p[0],y:p[1],number:index+1,selected:id===S.selected}]:[];
+    });
+    annotations.update({anchors,width:st.size.w,height:st.size.h,mode:S.labelMode,selected:S.selected,
+      scale:S.labelScale,textScale:S.textScale,lang:STR.lang,obstacles:annotationObstacles,bounds:annotationBounds});
   };
 
   // ------------------------------------------------------------ cylinder readout
@@ -668,8 +665,18 @@ export function runApp() {
     st.setPresentationOffset(shift,presentationScale);
     app.style.setProperty('--scene-shift',shift+'px');
     app.style.setProperty('--active-panel-width',panelWidth+'px');
+    const rectOf=node=>{const b=node.getBoundingClientRect();return {x:b.left-r.left,y:b.top-r.top,width:b.width,height:b.height};};
+    annotationObstacles=[...app.querySelectorAll('.top,.help-options,.immersive-rail,.viewer-heading,.scene-zoom,#btn-scene-labels,.immersive-playback,.transport,.assembly-transport,.immersive-drawer:not([hidden]),.dialog:not([hidden])')]
+      .filter(node=>node.getClientRects().length&&!node.closest('[hidden]')).map(rectOf);
+    const heading=$('.viewer-heading').getBoundingClientRect();
+    const top=Math.min(r.height*.46,Math.max(heading.bottom-r.top+14,80));
+    const left=panel&&!immersive.modal&&immersive.active==='views'?panelRect.right-r.left+12:12;
+    const right=panel&&!immersive.modal&&immersive.active==='inspector'?panelRect.left-r.left-12:r.width-12;
+    annotationBounds={x:left,y:top,width:Math.max(0,right-left),height:Math.max(0,r.height-top-76)};
   };
   addEventListener('f22:drawer',fit);
+  $('.help-menu').addEventListener('toggle',()=>requestAnimationFrame(fit));
+  $('#btn-controls-toggle').addEventListener('click',()=>requestAnimationFrame(fit));
   new ResizeObserver(fit).observe(wrap);
   addEventListener('resize', fit);
 
@@ -696,6 +703,7 @@ export function runApp() {
     $('#view-menu-current').textContent = STR.views[S.view].name;
     immersive.translate();
     $('#viewdesc').textContent = STR.views[S.view].desc;
+    $('#btn-scene-labels').setAttribute('aria-label',T.togglePartNames);
     for (const c of [1, 2, 3, 4]) $(`#cyl-${c} .cyl-number`).textContent = `${T.cylinder} ${c}`;
     const notice = $('#removed-part-notice');
     if (notice) notice.textContent = T.removedPartNotice;

@@ -39,10 +39,16 @@ El lienzo del motor completo ocupa toda la pantalla. **Vistas** abre el menú iz
 
 La barra inferior compacta mantiene visible reproducir/pausar. **Controles** despliega la velocidad y el avance por pasos, además de la línea de tiempo en Montaje; empieza cerrado y conserva su estado al cambiar la vista o el idioma. **Escape** cierra el panel y devuelve el foco al control que lo abrió. Elegir una vista cierra su menú y enfoca el lienzo. Se conservan los ajustes de movimiento reducido; en Montaje, reproducir avanza directamente al siguiente paso terminado cuando esta opción está activada.
 
+### Puntos de piezas y zoom
+
+Las vistas de inspección muestran puntos numerados compactos de forma predeterminada. Pasa el cursor, enfoca un punto con el teclado o tócalo para ver su nombre en una sola tarjeta de vista previa. **Ver detalles** abre la información de esa pieza en el panel lateral. **Nombres / Labels** activa los nombres desplegados; Pantalla también permite mostrar solo la pieza seleccionada u ocultar todas las etiquetas. Los puntos y nombres evitan los controles y otras etiquetas; si falta espacio, se omiten en lugar de superponerse.
+
+Los botones visibles **Acercar motor / Alejar motor** usan los mismos límites de cámara que la rueda y las teclas **+ / −**. En Montaje, el zoom manual detiene el seguimiento de cámara sin cambiar el progreso; **Seguir pieza** lo reanuda.
+
 ## Controles
 
 - **Vistas, teclas 1–8:** exterior, sin tapa de válvulas, sin tapas de distribución, corte de un cilindro, cigüeñal, admisión secundaria IAB, despiece y montaje guiado.
-- **Cámara:** arrastra para girar; usa la rueda o +/− para acercar y alejar. Con el visor enfocado, las flechas giran la cámara y Mayús aumenta el paso. R restablece la vista. Pantalla incluye seis direcciones de inspección y una vista de tres cuartos.
+- **Cámara:** arrastra para girar; usa los botones de zoom, la rueda o +/− para acercar y alejar. Con el visor enfocado, las flechas giran la cámara y Mayús aumenta el paso. R restablece la vista. Pantalla incluye seis direcciones de inspección y una vista de tres cuartos.
 - **Información:** las pestañas Piezas, Detalles y Movimiento separan sus contenidos. Flechas, Inicio y Fin recorren las pestañas. `/` enfoca la búsqueda; N/P seleccionan piezas contiguas; Escape cierra un panel o diálogo; si ninguno está abierto, borra la selección.
 - **Reproducción:** Espacio inicia o pausa; coma y punto retroceden o avanzan el cigüeñal. Movimiento muestra las fases de los cilindros, el paso angular y los recorridos esquemáticos de admisión, escape, aceite y refrigerante.
 - **Admisión IAB, tecla I:** estado independiente de apertura o cierre de cuatro mariposas secundarias. No modifica los perfiles de las válvulas. No representa un umbral de activación de fábrica.
@@ -98,6 +104,8 @@ src/app.js, app/style.css   panel del motor completo
 app/immersive.css          lienzo a pantalla completa, paneles y controles flotantes
 src/ui/immersive.js         paneles adaptables, foco y reflejo de la reproducción
 src/ui/framing.js           proyección para retrato/paneles sin cambiar la cámara
+src/ui/annotations.js       colocación determinista de puntos/rótulos sin tapar controles
+src/ui/engine-annotations.js puntos persistentes, vista previa y selección de piezas
 src/i18n/{es,en}.js         textos y narración del motor
 src/i18n/locale.js          preferencia de idioma compartida
 src/anatomy/catalog.js      fichas en español y evidencia

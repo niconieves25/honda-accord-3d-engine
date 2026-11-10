@@ -22,7 +22,7 @@ export function createImmersiveShell({app, getLanguage, getView, onChange = () =
   }
   function backgroundInert(enabled) {
     if (enabled) {
-      for (const node of app.querySelectorAll('.top, .immersive-rail, .viewer-heading, .stagewrap, .immersive-playback, .transport, .assembly-transport')) {
+      for (const node of app.querySelectorAll('.top, .immersive-rail, .viewer-heading, .stagewrap, .scene-zoom, .scene-label-toggle, .immersive-playback, .transport, .assembly-transport')) {
         if (!inertBefore.has(node)) inertBefore.set(node, node.inert);
         node.inert = true;
       }
