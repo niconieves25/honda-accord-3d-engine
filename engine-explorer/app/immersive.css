@@ -49,11 +49,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   padding:0;margin:0;border:0;border-radius:0;background:transparent;pointer-events:none;
 }
 #app.immersive-shell .viewer-heading h2{font-size:.78em;line-height:1.2;text-align:center;text-shadow:0 1px 8px var(--bg)}
-#app.immersive-shell .viewer-utilities{pointer-events:auto}
 #app.immersive-shell .view-hint{display:none}
-#app.immersive-shell .viewer-utilities button{width:44px;min-height:44px;padding:8px;background:var(--btn)}
-#app.immersive-shell .viewer-utilities button>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-#app.immersive-shell .viewer-utilities kbd{display:none}
 
 /* Transparent drawers sit over a temporary scrim, preserving the scene behind
    them without placing moving metallic highlights directly under reading text. */
@@ -168,7 +164,6 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell .immersive-toggle{padding:8px 10px;font-size:.61em;min-height:44px}
   #app.immersive-shell .viewer-heading{top:124px;width:calc(100% - 24px);max-width:none;justify-content:center;gap:10px}
   #app.immersive-shell .viewer-heading h2{font-size:.69em}
-  #app.immersive-shell .viewer-utilities{flex:none}
   #app.immersive-shell .immersive-drawer{top:12px;bottom:12px;max-width:calc(100vw - 24px)}
   #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{font-size:.61em;padding:8px;max-height:38dvh;bottom:calc(var(--hud-gap) + 80px)}
   #app.immersive-shell .immersive-playback{font-size:.61em}
@@ -270,6 +265,6 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 }
 @media(max-height:500px){
   #app.immersive-shell .scene-label-toggle{bottom:var(--hud-gap)}
-  #app.immersive-shell .scene-zoom{right:var(--hud-gap);top:50%;bottom:auto;transform:translateY(-50%);flex-direction:column}
+  #app.immersive-shell .scene-zoom{right:var(--hud-gap);top:132px;bottom:auto;transform:none;flex-direction:column}
   #app.immersive-shell .scene-tool-caption{display:none}
 }

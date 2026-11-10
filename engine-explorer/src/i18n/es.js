@@ -69,7 +69,7 @@ const parts = Object.fromEntries(Object.entries(rows).map(([id, [name, where, do
 export default {
   lang: 'es',
   ui: {
-    cameraZoom:'Acercar o alejar el motor',zoomIn:'Acercar motor',zoomOut:'Alejar motor',partNames:'Nombres',togglePartNames:'Mostrar u ocultar los nombres de las piezas',annotationGroup:'Puntos de piezas: toca o enfoca uno para ver su nombre',annotationDetails:'Ver detalles',annotationPreview:'Pieza',
+    cameraTools:'Cámara',cameraControls:'Controles de cámara',cameraZoom:'Acercar o alejar el motor',zoomIn:'Acercar motor',zoomOut:'Alejar motor',partNames:'Nombres',togglePartNames:'Mostrar u ocultar los nombres de las piezas',annotationGroup:'Puntos de piezas: toca o enfoca uno para ver su nombre',annotationDetails:'Ver detalles',annotationPreview:'Pieza',
     title: 'Explorador Honda F22A6', subtitle: 'Accord EX sedán 1993 · 2,2 L SOHC · manual de 5 marchas',
     identity: 'F22A6 confirmado por el propietario mediante el estampado y la documentación. Accord EX sedán 1993, manual de 5 marchas. El mercado original y la especificación de emisiones están por verificar.',
     identityShort: 'F22A6 · EX 1993 · 5 marchas · mercado por verificar', inspector: 'Información del motor', partsTab: 'Piezas', detailsTab: 'Detalles', motionTab: 'Movimiento', motionControls: 'Controles de movimiento', motionTitle: 'Dentro del ciclo', browseParts: 'Explorar piezas', partsCount: 'piezas', partCount: 'pieza', selectionHint: 'Selecciona una pieza en el motor o explora por sistema.', inspectionTitle: 'Conoce cada pieza', inspectionHint: 'Aquí aparecerán su ubicación, función y conexiones.',

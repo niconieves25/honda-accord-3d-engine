@@ -97,7 +97,7 @@ export function runApp() {
   </section>
   <main class="main">
     <div class="viewer">
-    <div class="viewer-heading"><div><h2 id="view-title"></h2></div><div class="viewer-utilities"><span class="view-hint">${esc(T.viewHint)}</span><button type="button" id="btn-reset">${icon('arrow-counter-clockwise')}<span>${esc(T.reset)}</span><kbd>R</kbd></button></div></div>
+    <div class="viewer-heading"><div><h2 id="view-title"></h2></div></div>
     <section class="stagewrap" aria-label="${esc(T.canvasLabel)}">
       <canvas id="gl" tabindex="0" role="img" aria-label="${esc(T.canvasLabel)}"></canvas>
       <svg class="leaders" aria-hidden="true"></svg>
@@ -105,7 +105,7 @@ export function runApp() {
       <div id="annotation-card" class="annotation-card" hidden></div>
       <div class="legend" id="legend" aria-hidden="true"></div>
     </section>
-  <div class="scene-zoom" role="group" aria-label="${esc(T.cameraZoom)}"><span class="scene-tool-caption">Zoom</span><button type="button" id="btn-zoom-in" aria-label="${esc(T.zoomIn)}" title="${esc(T.zoomIn)} (+)">${icon('magnifying-glass-plus')}</button><button type="button" id="btn-zoom-out" aria-label="${esc(T.zoomOut)}" title="${esc(T.zoomOut)} (−)">${icon('magnifying-glass-minus')}</button></div>
+  <div class="scene-zoom" role="group" aria-label="${esc(T.cameraControls)}"><span class="scene-tool-caption">${esc(T.cameraTools)}</span><button type="button" id="btn-zoom-in" aria-label="${esc(T.zoomIn)}" title="${esc(T.zoomIn)} (+)">${icon('magnifying-glass-plus')}</button><button type="button" id="btn-zoom-out" aria-label="${esc(T.zoomOut)}" title="${esc(T.zoomOut)} (−)">${icon('magnifying-glass-minus')}</button><button type="button" id="btn-reset" aria-label="${esc(T.reset)}" title="${esc(T.reset)} (R)">${icon('arrow-counter-clockwise')}</button></div>
   <button type="button" id="btn-scene-labels" class="scene-label-toggle" aria-pressed="false" title="${esc(T.togglePartNames)}">${icon('map-pin')}<span>${esc(T.partNames)}</span></button>
   <div class="immersive-playback" role="group" aria-label="${esc(T.animation)}"><button type="button" id="btn-quick-play" class="primary">${icon('play')}<span class="control-label">${esc(T.play)}</span></button><button type="button" id="btn-controls-toggle" aria-expanded="false" aria-controls="engine-playback assembly-transport">${icon('sliders-horizontal')}<span data-immersive-copy="controls">${esc(I.controls)}</span></button></div>
   <footer id="engine-playback" class="transport" aria-label="${esc(T.animation)}">
