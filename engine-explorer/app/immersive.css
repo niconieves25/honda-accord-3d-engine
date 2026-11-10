@@ -28,7 +28,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .brand-mark{display:grid;width:48px;height:48px;border-radius:12px}
 #app.immersive-shell .brand-mark .ui-icon{width:32px;height:32px}
 #app.immersive-shell .titles{flex:1;min-width:0;max-width:none}
-#app.immersive-shell h1{font-size:.88em;line-height:1.15;margin:0;text-shadow:0 1px 8px var(--bg)}
+#app.immersive-shell h1{width:max-content;max-width:100%;font-size:.88em;line-height:1.15;margin:0;text-shadow:0 1px 8px var(--bg)}
 #app.immersive-shell .brand-short{display:none}
 #app.immersive-shell .topbtns{flex:none;gap:8px;margin:0;font-size:.64em;pointer-events:auto}
 #app.immersive-shell .topbtns>button,#app.immersive-shell .help-menu>summary{min-height:44px;background:var(--btn)}
@@ -44,11 +44,17 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .immersive-toggle:hover{border-color:var(--accent)}
 #app.immersive-shell .immersive-toggle[aria-expanded=true]{border-color:var(--accent);background:var(--red-inset);color:var(--fg)}
 #app.immersive-shell .viewer-heading{
-  position:absolute;z-index:18;top:calc(var(--hud-gap) + 72px);left:calc(50% - var(--scene-shift,0px));transform:translateX(-50%);
-  display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100% - 370px);
+  position:absolute;z-index:18;top:var(--view-title-top,var(--hud-gap));left:50%;transform:translateX(-50%);
+  display:flex;justify-content:center;align-items:center;width:var(--view-title-width,calc(100% - 800px));max-width:calc(100% - 24px);
   padding:0;margin:0;border:0;border-radius:0;background:transparent;pointer-events:none;
 }
-#app.immersive-shell .viewer-heading h2{font-size:.78em;line-height:1.2;text-align:center;text-shadow:0 1px 8px var(--bg)}
+#app.immersive-shell .viewer-heading>div{width:100%;min-width:0}
+#app.immersive-shell .viewer-heading h2{
+  font-size:.84em;line-height:1.2;font-weight:600;text-align:center;text-transform:uppercase;
+  letter-spacing:.1em;text-wrap:balance;overflow-wrap:anywhere;text-shadow:0 1px 8px var(--bg);
+}
+#app.immersive-shell[data-title-row=inline] .viewer-heading{transform:translate(-50%,-50%)}
+#app.immersive-shell .immersive-rail{top:var(--view-rail-top,calc(var(--hud-gap) + 76px))}
 #app.immersive-shell .view-hint{display:none}
 
 /* Transparent drawers sit over a temporary scrim, preserving the scene behind
@@ -64,8 +70,8 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .immersive-drawer:not([hidden]){animation:drawer-arrive 160ms ease-out}
 #app.immersive-shell .immersive-drawer-left{left:var(--hud-gap)}
 #app.immersive-shell .immersive-drawer-right{right:var(--hud-gap)}
-#app.immersive-shell[data-drawer-mode=docked] .immersive-drawer{top:calc(var(--hud-gap) + 138px)}
-#app.immersive-shell[data-drawer-mode=docked] .immersive-backdrop{top:calc(var(--hud-gap) + 138px);width:calc(var(--active-panel-width,460px) + var(--hud-gap)*3);pointer-events:none}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-drawer{top:var(--view-drawer-top,calc(var(--hud-gap) + 138px))}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-backdrop{top:var(--view-drawer-top,calc(var(--hud-gap) + 138px));width:calc(var(--active-panel-width,460px) + var(--hud-gap)*3);pointer-events:none}
 #app.immersive-shell[data-drawer-mode=docked][data-drawer=inspector] .immersive-backdrop{left:auto;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
 #app.immersive-shell[data-drawer-mode=docked][data-drawer=views] .immersive-backdrop{right:auto;background:linear-gradient(270deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
 #app.immersive-shell .immersive-drawer-heading{
@@ -146,7 +152,6 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell .brand-mark{width:44px;height:44px}
   #app.immersive-shell h1{font-size:.76em}
   #app.immersive-shell .topbtns{font-size:.61em;gap:6px}
-  #app.immersive-shell .viewer-heading{max-width:calc(100% - 330px)}
 }
 @media(max-width:700px){
   #app.immersive-shell{--hud-gap:12px;--drawer-width:calc(100vw - 24px)}
@@ -160,10 +165,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell .language-control select{min-width:106px;max-width:134px;padding-left:10px}
   #app.immersive-shell #btn-settings,#app.immersive-shell .help-menu>summary{width:44px;padding:9px;gap:0}
   #app.immersive-shell #btn-settings>span,#app.immersive-shell .help-menu>summary>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-  #app.immersive-shell .immersive-rail{top:70px}
   #app.immersive-shell .immersive-toggle{padding:8px 10px;font-size:.61em;min-height:44px}
-  #app.immersive-shell .viewer-heading{top:124px;width:calc(100% - 24px);max-width:none;justify-content:center;gap:10px}
-  #app.immersive-shell .viewer-heading h2{font-size:.69em}
   #app.immersive-shell .immersive-drawer{top:12px;bottom:12px;max-width:calc(100vw - 24px)}
   #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{font-size:.61em;padding:8px;max-height:38dvh;bottom:calc(var(--hud-gap) + 80px)}
   #app.immersive-shell .immersive-playback{font-size:.61em}
@@ -184,8 +186,6 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 }
 @media(max-height:500px){
   #app.immersive-shell .top{top:8px}
-  #app.immersive-shell .viewer-heading{top:68px}
-  #app.immersive-shell .immersive-rail{top:68px}
   #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{bottom:66px;max-height:31dvh}
   #app.immersive-shell .assembly-transport{gap:0;padding:6px 10px}
   #app.immersive-shell .assembly-buttons button{min-height:44px}
@@ -265,6 +265,18 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 }
 @media(max-height:500px){
   #app.immersive-shell .scene-label-toggle{bottom:var(--hud-gap)}
-  #app.immersive-shell .scene-zoom{right:var(--hud-gap);top:132px;bottom:auto;transform:none;flex-direction:column}
+  #app.immersive-shell .scene-zoom{right:var(--hud-gap);top:var(--view-camera-top,132px);bottom:auto;transform:none;flex-direction:column}
   #app.immersive-shell .scene-tool-caption{display:none}
 }
+
+/* Structural section headings share the view title treatment. Component names,
+   body copy and action labels retain their normal casing. */
+#app.immersive-shell :is(.immersive-drawer-heading h2,.section-heading h2,.inspector-pane>h2,.assembly-inspector-heading h2,.dialog>h2,.immersive-view-description h3){
+  text-align:center;text-transform:uppercase;letter-spacing:.08em;text-wrap:balance;
+}
+#app.immersive-shell .immersive-drawer-heading{position:relative;padding-inline:64px;justify-content:center;min-height:68px}
+#app.immersive-shell .immersive-drawer-heading h2{width:100%;min-width:0;overflow-wrap:anywhere}
+#app.immersive-shell .immersive-drawer-heading .immersive-close{position:absolute;right:12px;top:50%;transform:translateY(-50%)}
+#app.immersive-shell .section-heading{position:relative;justify-content:center;flex-wrap:wrap;gap:6px 12px}
+#app.immersive-shell .section-heading h2{flex:1 1 100%}
+#app.immersive-shell .assembly-inspector-heading>div{width:100%}

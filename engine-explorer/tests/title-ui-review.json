@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-10",
+  "target": "local production build / Codex in-app browser",
+  "checks": {
+    "allEightViewTitlesUppercase": true,
+    "allEightViewTitlesCenteredAtDesktop640Of1280": true,
+    "titleRemainsAtViewportCenterWithInspectorOpen": true,
+    "structuralPanelHeadingsCenteredUppercase": true,
+    "brandAndUtilityControlsReserveTitleSpace": true,
+    "narrowOrEnlargedTitlesUseSeparateRow": true,
+    "longSpanishAndEnglishTitlesWrapWithoutTruncation": true,
+    "mobile375x812At160And240PercentNoPageOverflow": true,
+    "landscape812x375At240PercentNoPageOverflow": true,
+    "landscapeCameraControlsBelowMenuAndInsideViewport": true,
+    "consoleWarningsOrErrors": []
+  },
+  "screenshots": "tests/title-review/",
+  "scope": "Main explorer view titles and structural panel headings; component names and descriptions retain their normal casing."
+}

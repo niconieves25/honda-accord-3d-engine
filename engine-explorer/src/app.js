@@ -653,8 +653,28 @@ export function runApp() {
 
   // ------------------------------------------------------------ sizing and the loop
   const wrap = $('.stagewrap');
+  const titleMeasure=document.createElement('canvas').getContext('2d');
   const fit = () => {
     const r = wrap.getBoundingClientRect();
+    // Reserve a symmetric slot between the actual brand and utility controls.
+    // Long titles get a separate row; the title never follows the camera offset.
+    const header=$('.top').getBoundingClientRect(),tools=$('.topbtns').getBoundingClientRect();
+    const brand=$('.top h1').getBoundingClientRect(),heading=$('.viewer-heading'),title=$('#view-title');
+    const font=getComputedStyle(title),center=r.left+r.width/2;
+    titleMeasure.font=font.font;
+    const titleText=title.textContent.toLocaleUpperCase(STR.lang);
+    const naturalWidth=titleMeasure.measureText(titleText).width+(parseFloat(font.letterSpacing)||0)*Math.max(0,titleText.length-1);
+    const slot=2*Math.max(0,Math.min(center-brand.right,tools.left-center)-24);
+    const inline=r.width>=1100&&S.textScale<=1.6&&naturalWidth<=slot&&slot>=240;
+    app.dataset.titleRow=inline?'inline':'stacked';
+    app.style.setProperty('--view-title-width',(inline?slot:Math.max(0,r.width-24))+'px');
+    app.style.setProperty('--view-title-top',(inline?header.top-r.top+header.height/2:header.bottom-r.top+12)+'px');
+    const headingRect=heading.getBoundingClientRect();
+    const railTop=inline?header.bottom-r.top+24:headingRect.bottom-r.top+12;
+    app.style.setProperty('--view-rail-top',railTop+'px');
+    const railBottom=Math.max(...$$('.immersive-rail').map(node=>node.getBoundingClientRect().bottom-r.top));
+    app.style.setProperty('--view-drawer-top',(railBottom+12)+'px');
+    app.style.setProperty('--view-camera-top',(railBottom+12)+'px');
     st.resize(Math.max(1, r.width), Math.max(1, r.height), Math.min(devicePixelRatio || 1, 2));
     const panel=immersive.active ? $('#'+(immersive.active==='views'?'view':'inspector')+'-drawer') : null;
     const panelRect=panel?.getBoundingClientRect(),appRect=app.getBoundingClientRect();
@@ -668,8 +688,7 @@ export function runApp() {
     const rectOf=node=>{const b=node.getBoundingClientRect();return {x:b.left-r.left,y:b.top-r.top,width:b.width,height:b.height};};
     annotationObstacles=[...app.querySelectorAll('.top,.help-options,.immersive-rail,.viewer-heading,.scene-zoom,#btn-scene-labels,.immersive-playback,.transport,.assembly-transport,.immersive-drawer:not([hidden]),.dialog:not([hidden])')]
       .filter(node=>node.getClientRects().length&&!node.closest('[hidden]')).map(rectOf);
-    const heading=$('.viewer-heading').getBoundingClientRect();
-    const top=Math.min(r.height*.46,Math.max(heading.bottom-r.top+14,80));
+    const top=Math.min(r.height*.46,Math.max(headingRect.bottom-r.top+14,80));
     const left=panel&&!immersive.modal&&immersive.active==='views'?panelRect.right-r.left+12:12;
     const right=panel&&!immersive.modal&&immersive.active==='inspector'?panelRect.left-r.left-12:r.width-12;
     annotationBounds={x:left,y:top,width:Math.max(0,right-left),height:Math.max(0,r.height-top-76)};
@@ -678,6 +697,7 @@ export function runApp() {
   $('.help-menu').addEventListener('toggle',()=>requestAnimationFrame(fit));
   $('#btn-controls-toggle').addEventListener('click',()=>requestAnimationFrame(fit));
   new ResizeObserver(fit).observe(wrap);
+  document.fonts.ready.then(fit);
   addEventListener('resize', fit);
 
   const applyLanguage = () => {
