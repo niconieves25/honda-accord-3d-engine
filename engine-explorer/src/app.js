@@ -47,6 +47,7 @@ export function runApp() {
   const app = document.getElementById('app');
   const reducedMotionQuery = matchMedia('(prefers-reduced-motion: reduce)');
   const reduceDefault = reducedMotionQuery.matches;
+  const legacyLabels = store.get('labelMode', 'none');
   let titleReady = false, titleEntrance = null;
   const S = {
     th: 0,
@@ -57,7 +58,9 @@ export function runApp() {
     view: 'exterior',
     system: null,
     selected: null,
-    labelMode: store.get('labelMode', 'view'),
+    // The old default placed numbered pins on every scene. Keep deliberate
+    // name/selection modes and start the new scene preference with a clear model.
+    labelMode: store.get('sceneLabelMode', legacyLabels === 'view' ? 'none' : legacyLabels),
     theme: store.get('theme', 'dark'),
     textScale: store.get('textScale', 1.25),
     labelScale: store.get('labelScale', 1.25),
@@ -107,9 +110,11 @@ export function runApp() {
       <div id="annotation-card" class="annotation-card" hidden></div>
       <div class="legend" id="legend" aria-hidden="true"></div>
     </section>
-  <div class="scene-zoom" role="group" aria-label="${esc(T.cameraControls)}"><span class="scene-tool-caption">${esc(T.cameraTools)}</span><button type="button" id="btn-zoom-in" aria-label="${esc(T.zoomIn)}" title="${esc(T.zoomIn)} (+)">${icon('magnifying-glass-plus')}</button><button type="button" id="btn-zoom-out" aria-label="${esc(T.zoomOut)}" title="${esc(T.zoomOut)} (−)">${icon('magnifying-glass-minus')}</button><button type="button" id="btn-reset" aria-label="${esc(T.reset)}" title="${esc(T.reset)} (R)">${icon('arrow-counter-clockwise')}</button></div>
+  <div class="scene-dock">
   <button type="button" id="btn-scene-labels" class="scene-label-toggle" aria-pressed="false" title="${esc(T.togglePartNames)}">${icon('map-pin')}<span>${esc(T.partNames)}</span></button>
+  <div class="scene-zoom" role="group" aria-label="${esc(T.cameraControls)}"><button type="button" id="btn-zoom-in" aria-label="${esc(T.zoomIn)}" title="${esc(T.zoomIn)} (+)">${icon('magnifying-glass-plus')}</button><button type="button" id="btn-zoom-out" aria-label="${esc(T.zoomOut)}" title="${esc(T.zoomOut)} (−)">${icon('magnifying-glass-minus')}</button><button type="button" id="btn-reset" aria-label="${esc(T.reset)}" title="${esc(T.reset)} (R)">${icon('arrow-counter-clockwise')}</button></div>
   <div class="immersive-playback" role="group" aria-label="${esc(T.animation)}"><button type="button" id="btn-quick-play" class="primary">${icon('play')}<span class="control-label">${esc(T.play)}</span></button><button type="button" id="btn-controls-toggle" aria-expanded="false" aria-controls="engine-playback assembly-transport">${icon('sliders-horizontal')}<span data-immersive-copy="controls">${esc(I.controls)}</span></button></div>
+  </div>
   <footer id="engine-playback" class="transport" aria-label="${esc(T.animation)}">
     <div class="grp">
       <button type="button" id="btn-play" class="big"></button>
@@ -273,7 +278,8 @@ export function runApp() {
     $('#speak-names').checked = S.speak;
     st.setTheme(S.theme);
     st.controls.enableDamping = !S.reduceMotion;
-    for (const k of ['theme', 'textScale', 'labelScale', 'labelMode', 'reduceMotion', 'speak']) store.set(k, S[k]);
+    for (const k of ['theme', 'textScale', 'labelScale', 'reduceMotion', 'speak']) store.set(k, S[k]);
+    store.set('sceneLabelMode', S.labelMode);
     publishAppearance({theme:S.theme,scale:S.textScale,reduceMotion:S.reduceMotion});
     requestAnimationFrame(fit);
   };
@@ -284,7 +290,7 @@ export function runApp() {
   $('#label-size').addEventListener('input', (e) => ((S.labelScale = Number(e.target.value)), applySettings()));
   $('#theme-select').addEventListener('change', (e) => ((S.theme = e.target.value), applySettings()));
   $('#label-mode').addEventListener('change', (e) => ((S.labelMode = e.target.value), applySettings()));
-  $('#btn-scene-labels').addEventListener('click',()=>{S.labelMode=S.labelMode==='all'?'view':'all';applySettings();});
+  $('#btn-scene-labels').addEventListener('click',()=>{S.labelMode=S.labelMode==='all'?'none':'all';applySettings();});
   $('#reduce-motion').addEventListener('change', (e) => ((S.reduceMotion = e.target.checked), applySettings()));
   $('#speak-names').addEventListener('change', (e) => ((S.speak = e.target.checked), applySettings()));
   // dialogs: toggle buttons, Escape closes, focus returns to the opener
@@ -672,53 +678,73 @@ export function runApp() {
 
   // ------------------------------------------------------------ sizing and the loop
   const wrap = $('.stagewrap');
+  const header = $('.top'), heading = $('.viewer-heading'), dock = $('.scene-dock');
+  const rails = $$('.immersive-rail');
+  const timelines = [$('#engine-playback'), $('#assembly-transport')];
+  let frameRequest = 0;
+  const compactLandscape = matchMedia('(max-height: 420px) and (max-width: 900px)');
+  const playback = $('.immersive-playback'), cameraTools = $('.scene-zoom'), names = $('#btn-scene-labels');
+  const scheduleFit = () => {
+    if (frameRequest) return;
+    frameRequest = requestAnimationFrame(() => {frameRequest = 0; fit();});
+  };
   const fit = () => {
+    const viewport = app.getBoundingClientRect();
+    const setPx = (key, value) => app.style.setProperty(key, `${value}px`);
+    const headerRect = header.getBoundingClientRect();
+    const gap = headerRect.left - viewport.left;
+    const titleTop = headerRect.bottom - viewport.top + gap;
+    const railRects = rails.map(node => node.getBoundingClientRect());
+    const railInset = Math.max(...railRects.map(r => r.width)) + gap * 2;
+    const besideTitle = viewport.width - railInset * 2 >= 400;
+    setPx('--view-title-width', Math.min(1100, viewport.width - (besideTitle ? railInset * 2 : gap * 2)));
+    setPx('--view-title-top', titleTop);
+    const titleHeight = heading.getBoundingClientRect().height;
+    const railHeight = Math.max(...railRects.map(r => r.height));
+    const railTop = titleTop + (besideTitle ? Math.max(0, (titleHeight - railHeight) / 2) : titleHeight + gap);
+    setPx('--view-rail-top', railTop);
+    const sceneTop = Math.max(titleTop + titleHeight, railTop + railHeight) + gap;
+    setPx('--scene-top', sceneTop);
+
+    const panel = immersive.active && !immersive.modal
+      ? $(immersive.active === 'views' ? '#view-drawer' : '#inspector-drawer')
+      : null;
+    const panelWidth = panel?.getBoundingClientRect().width ?? 0;
+    const left = gap + (panel && immersive.active === 'views' ? panelWidth + gap : 0);
+    const right = gap + (panel && immersive.active === 'inspector' ? panelWidth + gap : 0);
+    setPx('--active-panel-width', panelWidth);
+    setPx('--scene-left', left);
+    setPx('--scene-right', right);
+    const dockWidth = viewport.width - left - right;
+    const sideWidth = Math.max(cameraTools.offsetWidth, names.offsetWidth);
+    const rowWidth = playback.scrollWidth + sideWidth * 2 + 12;
+    dock.dataset.layout = compactLandscape.matches ? 'compact' : dockWidth < rowWidth ? 'stacked' : 'row';
+
+    const dockTop = dock.getBoundingClientRect().top - viewport.top;
+    const timelineBottom = viewport.height - dockTop + gap;
+    setPx('--timeline-bottom', timelineBottom);
+    const openTimeline = timelines.find(node => node.getClientRects().length);
+    // Give the model the majority of the available height. Advanced controls
+    // scroll independently when a large text preference needs more room.
+    setPx('--timeline-max-height', Math.max(44, Math.min(200, (dockTop - sceneTop - 2 * gap) * .38)));
+    const sceneEnd = openTimeline ? openTimeline.getBoundingClientRect().top - viewport.top : dockTop;
+    setPx('--scene-bottom', viewport.height - Math.max(sceneTop + 1, sceneEnd - gap));
+
+    // Measure the real canvas after placing all chrome. Projection, picking
+    // and annotations use this same rectangle, rather than the window size.
     const r = wrap.getBoundingClientRect();
-    // Always use a viewport-centered row below the compact brand. Measure the
-    // entire composition, including wrapping, counter and decorative rule.
-    const header=$('.top').getBoundingClientRect(),heading=$('.viewer-heading');
-    app.style.setProperty('--view-title-top',(header.bottom-r.top+(r.height<=500?8:16))+'px');
-    const headingRect=heading.getBoundingClientRect();
-    const railTop=headingRect.bottom-r.top+12;
-    app.style.setProperty('--view-rail-top',railTop+'px');
-    const railBottom=Math.max(...$$('.immersive-rail').map(node=>node.getBoundingClientRect().bottom-r.top));
-    app.style.setProperty('--view-drawer-top',(railBottom+12)+'px');
-    const cameraHeight=$('.scene-zoom').getBoundingClientRect().height;
-    app.style.setProperty('--view-camera-top',Math.max((r.height-cameraHeight)/2,railBottom+12)+'px');
-    st.resize(Math.max(1, r.width), Math.max(1, r.height), Math.min(devicePixelRatio || 1, 2));
-    const panel=immersive.active ? $('#'+(immersive.active==='views'?'view':'inspector')+'-drawer') : null;
-    const panelRect=panel?.getBoundingClientRect(),appRect=app.getBoundingClientRect();
-    const panelWidth=panelRect?.width||0;
-    const gap=panelRect ? Math.max(0,immersive.active==='inspector'?appRect.right-panelRect.right:panelRect.left-appRect.left) : 0;
-    const shift=panel&&!immersive.modal ? (panelWidth+gap)/2*(immersive.active==='inspector'?1:-1) : 0;
-    const presentationScale=panel&&!immersive.modal ? Math.max(.35,Math.min(1,(r.width-panelWidth-3*gap)/Math.max(1,r.width))) : 1;
-    st.setPresentationOffset(shift,presentationScale);
-    app.style.setProperty('--scene-shift',shift+'px');
-    app.style.setProperty('--active-panel-width',panelWidth+'px');
-    if (r.height <= 500) {
-      // Keep an open timeline between the Names control and the two-column
-      // camera dock, including when a desktop inspector occupies an edge.
-      const names=$('#btn-scene-labels'),namesRect=names.hidden?null:names.getBoundingClientRect();
-      const cameraRect=$('.scene-zoom').getBoundingClientRect();
-      const playbackRect=$('.immersive-playback').getBoundingClientRect();
-      const availableLeft=panel&&!immersive.modal&&immersive.active==='views'?panelRect.right:r.left;
-      const left=Math.max(availableLeft+12,namesRect?namesRect.right+12:0);
-      app.style.setProperty('--low-transport-left',(left-r.left)+'px');
-      app.style.setProperty('--low-transport-right',(r.right-cameraRect.left+12)+'px');
-      app.style.setProperty('--low-transport-bottom',(r.bottom-playbackRect.top+12)+'px');
-    }
-    const rectOf=node=>{const b=node.getBoundingClientRect();return {x:b.left-r.left,y:b.top-r.top,width:b.width,height:b.height};};
-    annotationObstacles=[...app.querySelectorAll('.top,.help-options,.immersive-rail,.viewer-heading,.scene-zoom,#btn-scene-labels,.immersive-playback,.transport,.assembly-transport,.immersive-drawer:not([hidden]),.dialog:not([hidden])')]
-      .filter(node=>node.getClientRects().length&&!node.closest('[hidden]')).map(rectOf);
-    const top=Math.min(r.height*.46,Math.max(headingRect.bottom-r.top+14,80));
-    const left=panel&&!immersive.modal&&immersive.active==='views'?panelRect.right-r.left+12:12;
-    const right=panel&&!immersive.modal&&immersive.active==='inspector'?panelRect.left-r.left-12:r.width-12;
-    annotationBounds={x:left,y:top,width:Math.max(0,right-left),height:Math.max(0,r.height-top-76)};
+    const width = Math.max(1, r.width), height = Math.max(1, r.height);
+    st.resize(width, height, Math.min(devicePixelRatio || 1, 2), S.view);
+    annotationObstacles = $$('.help-options,.dialog:not([hidden])').filter(node => node.getClientRects().length).map(node => {
+      const b = node.getBoundingClientRect();
+      return {x:b.left-r.left,y:b.top-r.top,width:b.width,height:b.height};
+    });
+    annotationBounds = {x:8,y:8,width:Math.max(0,width-16),height:Math.max(0,height-16)};
   };
   addEventListener('f22:drawer',fit);
-  $('.help-menu').addEventListener('toggle',()=>requestAnimationFrame(fit));
-  $('#btn-controls-toggle').addEventListener('click',()=>requestAnimationFrame(fit));
-  new ResizeObserver(fit).observe(wrap);
+  $('.help-menu').addEventListener('toggle',scheduleFit);
+  const layoutObserver = new ResizeObserver(scheduleFit);
+  for (const node of [app, header, heading, dock, playback, ...rails, ...timelines]) layoutObserver.observe(node);
   document.fonts.ready.then(fit);
   addEventListener('resize', fit);
 

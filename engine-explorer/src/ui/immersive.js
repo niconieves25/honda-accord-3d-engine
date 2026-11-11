@@ -1,4 +1,4 @@
-// Edge drawers keep the engine canvas in place and leave the scene/controller state untouched.
+// Edge drawers leave the scene and controller state untouched.
 const COPY = {
   es: {views: 'Vistas', explore: 'Explorar', assembly: 'Montaje', viewMenu: 'Elegir una vista', inspector: 'Explorar el motor', assemblyInspector: 'Explorar el montaje', close: 'Cerrar menú', openViews: 'Abrir menú de vistas', closeViews: 'Cerrar menú de vistas', openInspector: 'Abrir panel de exploración', closeInspector: 'Cerrar panel de exploración', controls: 'Controles', showControls: 'Mostrar controles', hideControls: 'Ocultar controles'},
   en: {views: 'Views', explore: 'Explore', assembly: 'Assembly', viewMenu: 'Choose a view', inspector: 'Explore the engine', assemblyInspector: 'Explore the assembly', close: 'Close menu', openViews: 'Open view menu', closeViews: 'Close view menu', openInspector: 'Open exploration panel', closeInspector: 'Close exploration panel', controls: 'Controls', showControls: 'Show controls', hideControls: 'Hide controls'},
@@ -22,7 +22,7 @@ export function createImmersiveShell({app, getLanguage, getView, onChange = () =
   }
   function backgroundInert(enabled) {
     if (enabled) {
-      for (const node of app.querySelectorAll('.top, .immersive-rail, .viewer-heading, .stagewrap, .scene-zoom, .scene-label-toggle, .immersive-playback, .transport, .assembly-transport')) {
+      for (const node of app.querySelectorAll('.top, .immersive-rail, .viewer-heading, .stagewrap, .scene-dock, .transport, .assembly-transport')) {
         if (!inertBefore.has(node)) inertBefore.set(node, node.inert);
         node.inert = true;
       }

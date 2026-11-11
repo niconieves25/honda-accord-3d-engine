@@ -1,7 +1,7 @@
-// Projection checks for the full-viewport engine. No WebGL or browser is needed.
+// Test the actual projection without requiring a WebGL context.
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
-import {resizePerspectiveCamera, setPerspectivePresentationOffset, PORTRAIT_REFERENCE_FOV} from '../src/ui/framing.js';
+import {resizePerspectiveCamera} from '../src/ui/framing.js';
 import {buildEngine} from '../src/engine.js';
 import {createAssemblyRuntime} from '../src/assembly/runtime.js';
 import {VIEWS} from '../src/views.js';
@@ -18,115 +18,32 @@ const pose = () => ({
 });
 const originalPose = pose();
 
-// An engine-sized volume in the current viewing orientation, including its
-// closest corners. This checks real perspective projection, not just FOV values.
-const corners = [];
-for (const x of [-.30, .30]) for (const y of [-.275, .275]) for (const z of [-.22, .22]) {
-  corners.push(new THREE.Vector3(x, y, z).applyQuaternion(camera.quaternion).add(target));
-}
-const projected = () => corners.map(point => point.clone().project(camera));
-resizePerspectiveCamera(camera, 800, 800);
-const squareProjection = projected();
-camera.fov = PORTRAIT_REFERENCE_FOV;
-camera.updateProjectionMatrix();
-const portraitReferenceProjection = projected();
-const viewports = [[375,812],[768,1024],[1024,768],[1440,900],[1456,800],[812,375]];
-for (const [width, height] of viewports) {
-  resizePerspectiveCamera(camera, width, height);
-  const points = projected();
-  for (const [index, point] of points.entries()) {
-    assert.ok([point.x, point.y, point.z].every(Number.isFinite), `${width}×${height}: nonfinite projection`);
-    assert.ok(Math.abs(point.x) < 1 && Math.abs(point.y) < 1 && point.z > -1 && point.z < 1,
-      `${width}×${height}: engine volume cropped`);
-    const axis = width < height ? 'x' : 'y';
-    const reference = width < height ? portraitReferenceProjection : squareProjection;
-    assert.ok(Math.abs(point[axis] - reference[index][axis]) < 1e-12,
-      `${width}×${height}: reference framing changed on shorter axis`);
+const stages = [[320,340],[375,560],[340,320],[350,350],[720,160],[960,500]];
+for (const [width, height] of stages) {
+  for (const view of ['exterior','noCover','assembly']) {
+    resizePerspectiveCamera(camera, width, height, view);
+    const projected = target.clone().project(camera);
+    assert.ok(Math.hypot(projected.x, projected.y) < 1e-12, 'Orbit target must stay centered in its own stage');
+    assert.deepEqual(pose(), originalPose, 'Refitting the viewport moved the camera or changed the user zoom');
   }
-  assert.deepEqual(pose(), originalPose, `${width}×${height}: resizing moved the camera or changed zoom`);
-  if (width >= height) assert.equal(camera.fov, 30, 'Landscape reference lens must remain unchanged');
 }
 
-// Negative control: the old fixed vertical lens crops this same volume on a
-// tall phone. The scenario above must catch a regression back to that behavior.
-camera.aspect = 375 / 812;
-camera.fov = 30;
-camera.updateProjectionMatrix();
-assert.ok(projected().some(point => Math.abs(point.x) > 1), 'Portrait test volume does not detect fixed-FOV cropping');
+// A small adjustment across a square stage must not suddenly zoom the scene.
+resizePerspectiveCamera(camera, 349.9, 350, 'noCover');
+const portraitLens = camera.fov;
+resizePerspectiveCamera(camera, 350.1, 350, 'noCover');
+assert.ok(Math.abs(camera.fov - portraitLens) < .1, 'The lens jumps across square viewports');
 
 for (const dimensions of [[0,0],[NaN,Infinity]]) {
   resizePerspectiveCamera(camera, ...dimensions);
   assert.equal(camera.aspect, 1);
-  assert.equal(camera.fov, 30);
   assert.ok(camera.projectionMatrix.elements.every(Number.isFinite), 'Transient zero viewport broke projection');
   assert.deepEqual(pose(), originalPose);
 }
 
-// Side drawers shift the projection rather than the orbit pivot. Measure the
-// shift in CSS pixels, including after resizing, and verify inverse picking.
-const compositionSizes = [[1440,900],[1200,800],[375,812]];
-const plane = new THREE.Plane().setFromNormalAndCoplanarPoint(camera.getWorldDirection(new THREE.Vector3()), target);
-const ray = new THREE.Raycaster();
-for (const [width, height] of compositionSizes) {
-  resizePerspectiveCamera(camera, width, height);
-  setPerspectivePresentationOffset(camera, width, height);
-  const centered = projected();
-  for (const offset of [210,-210]) {
-    setPerspectivePresentationOffset(camera, width, height, offset);
-    const shifted = projected();
-    shifted.forEach((point, index) => {
-      const pixelShift = (point.x - centered[index].x) * width / 2;
-      assert.ok(Math.abs(pixelShift + offset) < 1e-9, `${width}×${height}: offset has wrong direction or magnitude`);
-      assert.ok(Math.abs(point.y - centered[index].y) < 1e-12, 'Side drawer moved the projection vertically');
-    });
-    const screenTarget = target.clone().project(camera);
-    ray.setFromCamera(new THREE.Vector2(screenTarget.x, screenTarget.y), camera);
-    const picked = ray.ray.intersectPlane(plane, new THREE.Vector3());
-    assert.ok(picked?.distanceTo(target) < 1e-10, 'Picking does not match the offset projection');
-    assert.deepEqual(pose(), originalPose, 'Side drawer changed camera pose or zoom');
-  }
-  setPerspectivePresentationOffset(camera, width, height);
-  projected().forEach((point, index) => assert.ok(point.distanceTo(centered[index]) < 1e-12, 'Closing drawer did not restore centered projection'));
-  assert.equal(camera.view?.enabled, false, 'Closing drawer did not clear the view offset');
-}
-setPerspectivePresentationOffset(camera, 1440, 900, 210);
-resizePerspectiveCamera(camera, 1200, 800);
-setPerspectivePresentationOffset(camera, 1200, 800, 210);
-const resizedTargetX = (target.clone().project(camera).x + 1) * 1200 / 2;
-assert.ok(Math.abs(resizedTargetX - (1200 / 2 - 210)) < 1e-9, 'Active drawer offset changed after viewport resize');
-setPerspectivePresentationOffset(camera, 0, 0, NaN);
-assert.ok(camera.projectionMatrix.elements.every(Number.isFinite));
-assert.deepEqual(pose(), originalPose);
-
-// A docked inspector also reduces the unobstructed width. Lens expansion must
-// shrink the projected volume by the requested factor while retaining the exact
-// CSS-pixel shift and restoring the original composition when the panel closes.
-for (const [width, height] of [[1280,800],[375,812]]) {
-  resizePerspectiveCamera(camera, width, height);
-  setPerspectivePresentationOffset(camera, width, height);
-  const fullSize = projected();
-  for (const scale of [.65,.5,.35]) {
-    resizePerspectiveCamera(camera, width, height, 30, scale);
-    setPerspectivePresentationOffset(camera, width, height);
-    const reduced = projected();
-    reduced.forEach((point,index) => {
-      assert.ok(Math.abs(point.x - fullSize[index].x * scale) < 1e-12, 'Drawer lens has incorrect horizontal scale');
-      assert.ok(Math.abs(point.y - fullSize[index].y * scale) < 1e-12, 'Drawer lens has incorrect vertical scale');
-      assert.ok(Math.abs(point.z - fullSize[index].z) < 1e-12, 'Drawer lens changed depth');
-    });
-    setPerspectivePresentationOffset(camera, width, height, 214);
-    projected().forEach((point,index) => assert.ok(Math.abs((point.x - reduced[index].x) * width / 2 + 214) < 1e-9, 'Scaled presentation changed pixel offset'));
-    assert.deepEqual(pose(), originalPose, 'Fitting a docked panel changed camera pose or zoom');
-  }
-  resizePerspectiveCamera(camera, width, height);
-  setPerspectivePresentationOffset(camera, width, height);
-  projected().forEach((point,index) => assert.ok(point.distanceTo(fullSize[index]) < 1e-12, 'Closing docked panel changed original framing'));
-}
-
-// Regress the real failure seen on phones: the synthetic test volume above is
-// smaller and more centered than several canonical F22A6 reference views. Use
-// actual visible mesh vertices, including their native instances, to measure the
-// exterior, valve-view accessories, first seated block and complete assembly.
+// Use actual mesh vertices (including native instances) to ensure the reference
+// views fit a stage bounded by the heading, side panels and controls. Faint
+// context geometry in the interior views is intentionally outside this fit.
 const previousDocument = globalThis.document;
 const textureContext = new Proxy({createImageData:(w,h)=>({data:new Uint8ClampedArray(w*h*4)})}, {
   get:(object,key)=>key in object ? object[key] : ()=>{},
@@ -143,7 +60,7 @@ try {
     modelCamera.position.set(center.x+d*Math.cos(e)*Math.sin(a),center.y+d*Math.sin(e),center.z+d*Math.cos(e)*Math.cos(a));
     modelCamera.lookAt(center);modelCamera.updateMatrixWorld(true);
   };
-  function visibleProjection(root) {
+  function visibleProjection(root, cut) {
     const bounds = new THREE.Box3();let vertices=0;
     root.updateMatrixWorld(true);
     root.traverse(mesh=>{
@@ -156,39 +73,43 @@ try {
         worldMatrix.copy(mesh.matrixWorld);
         if(mesh.isInstancedMesh){mesh.getMatrixAt(instance,instanceMatrix);worldMatrix.multiply(instanceMatrix);}
         for(let index=0;index<position.count;index++){
-          modelPoint.fromBufferAttribute(position,index).applyMatrix4(worldMatrix).project(modelCamera);
-          bounds.expandByPoint(modelPoint);vertices++;
+          modelPoint.fromBufferAttribute(position,index).applyMatrix4(worldMatrix);
+          if (cut !== undefined && modelPoint.z > cut * .001) continue;
+          bounds.expandByPoint(modelPoint.project(modelCamera));vertices++;
         }
       }
     });
     return {bounds,vertices};
   }
-  function checkPhonePose(label,root,pose) {
+  function checkBoundedPose(label, root, pose, lens = label, cut) {
     modelPose(pose);
-    for(const [width,height] of [[375,812],[768,1024]]){
-      resizePerspectiveCamera(modelCamera,width,height);
-      setPerspectivePresentationOffset(modelCamera,width,height);
-      const {bounds,vertices}=visibleProjection(root);
+    let horizontal = 1, vertical = 1;
+    for (const [width,height] of stages) {
+      resizePerspectiveCamera(modelCamera,width,height,lens);
+      const {bounds,vertices}=visibleProjection(root,cut);
       assert.ok(vertices>10000,`${label}: actual model geometry not exercised`);
-      const sideClearance=Math.min((bounds.min.x+1)*width/2,(1-bounds.max.x)*width/2);
-      assert.ok(sideClearance>=14.5,`${label} at ${width}×${height}: only ${sideClearance.toFixed(2)}px side clearance`);
-      assert.ok(bounds.min.y>=-.95&&bounds.max.y<=.95,`${label}: real model cropped vertically`);
-      realViewChecks.push({view:label,width,sideClearance:Math.round(sideClearance*10)/10});
+      const sideMargin = Math.min(bounds.min.x + 1, 1 - bounds.max.x) / 2;
+      const verticalMargin = Math.min(bounds.min.y + 1, 1 - bounds.max.y) / 2;
+      assert.ok(sideMargin >= .03 && verticalMargin >= .03,
+        `${label} at ${width}×${height}: insufficient clearance (${(sideMargin*width).toFixed(1)}px horizontal, ${(verticalMargin*height).toFixed(1)}px vertical)`);
+      horizontal = Math.min(horizontal, sideMargin);
+      vertical = Math.min(vertical, verticalMargin);
     }
+    realViewChecks.push({view:label,minSideMarginPct:Math.round(horizontal*1000)/10,minVerticalMarginPct:Math.round(vertical*1000)/10});
   }
   const engine=buildEngine();
-  for(const id of ['exterior','noCover']){
-    const view=VIEWS[id];
-    engine.update(0,{dt:0,iab:0,charge:false,hidden:new Set(view.hidden??[]),ghost:new Set(view.ghost??[]),keepSystems:view.keep?new Set(view.keep):null});
-    checkPhonePose(id,engine.root,view.cam);
+  for (const [id,view] of Object.entries(VIEWS)) {
+    if (id === 'assembly') continue;
+    engine.update(0,{dt:0,iab:0,explode:view.explode??0,hidden:new Set(view.hidden??[]),ghost:new Set(view.ghost??[]),keepSystems:view.keep?new Set(view.keep):null});
+    checkBoundedPose(id,engine.root,view.cam,id,view.cut);
   }
   assembly=createAssemblyRuntime();
   const first=assembly.setProgress(assembly.progressForStep(0));
-  checkPhonePose('assembly:block-seated',assembly.unitGroups.get('block-cylinders:1'),{t:first.focus.target,az:48,el:28,d:first.focus.distance});
+  checkBoundedPose('assembly:block-seated',assembly.unitGroups.get('block-cylinders:1'),{t:first.focus.target,az:48,el:28,d:first.focus.distance},'assembly');
   const complete=assembly.setProgress(1);
-  checkPhonePose('assembly:complete',assembly.root,{t:complete.focus.target,az:48,el:28,d:complete.focus.distance});
+  checkBoundedPose('assembly:complete',assembly.root,{t:complete.focus.target,az:48,el:28,d:complete.focus.distance},'assembly');
 } finally {
   assembly?.dispose();
   if(previousDocument===undefined)delete globalThis.document;else globalThis.document=previousDocument;
 }
-console.log(JSON.stringify({pass:true, viewports:viewports.length, portraitCropRegression:true, orbitAndZoomPreserved:true, drawerOffsetAndPicking:true, unobstructedWidthFit:true, portraitReferenceFov:PORTRAIT_REFERENCE_FOV, realViewChecks}));
+console.log(JSON.stringify({pass:true,boundedStages:stages.length,squareAspectContinuity:true,orbitAndZoomPreserved:true,realViewChecks}));

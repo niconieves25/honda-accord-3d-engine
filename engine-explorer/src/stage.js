@@ -1,4 +1,3 @@
-import {mountGlyphBackdrop} from './ui/glyph-backdrop.js';
 // The studio: renderer, lights, a soft floor shadow, orbit controls, a thick outline round the selected part, picking,
 // and the cutaway plane. Themes change the backdrop only; the engine keeps its photographed colours.
 import * as THREE from 'three';
@@ -10,7 +9,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {buildEngine} from './engine.js';
 import {buildFlows} from './flows.js';
 import {BACKDROP,configureStudioRenderer,addStudioLighting} from './studio.js';
-import {resizePerspectiveCamera, setPerspectivePresentationOffset} from './ui/framing.js';
+import {resizePerspectiveCamera} from './ui/framing.js';
 export {BACKDROP} from './studio.js';
 
 const V3 = THREE.Vector3;
@@ -22,7 +21,6 @@ export function createStage(canvas) {
   const scene = new THREE.Scene();
   scene.background = null;
   renderer.setClearColor(0x000000,0);
-  mountGlyphBackdrop(canvas.parentElement);
   const camera = new THREE.PerspectiveCamera(30, 1, 0.02, 40);
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;
@@ -79,24 +77,23 @@ export function createStage(canvas) {
   };
 
   const size = {w: 1, h: 1};
-  let presentationOffset = 0, presentationScale = 1;
-  const updatePresentation = () => {
-    resizePerspectiveCamera(camera, size.w, size.h, 30, presentationScale);
-    setPerspectivePresentationOffset(camera, size.w, size.h, presentationOffset);
-  };
-  const setPresentationOffset = (offsetX = 0, scale = 1) => {
-    presentationOffset = Number.isFinite(offsetX) ? offsetX : 0;
-    presentationScale = Number.isFinite(scale) && scale > 0 ? Math.min(1, scale) : 1;
-    updatePresentation();
-  };
-  const resize = (w, h, pr) => {
-    size.w = w;
-    size.h = h;
-    renderer.setPixelRatio(pr);
-    renderer.setSize(w, h, false);
-    composer.setPixelRatio(pr);
-    composer.setSize(w, h);
-    updatePresentation();
+  let pixelRatio = 0, framedView;
+  const resize = (w, h, pr, view = 'exterior') => {
+    const resized = w !== size.w || h !== size.h || pr !== pixelRatio;
+    if (!resized && view === framedView) return;
+    if (resized) {
+      size.w = w;
+      size.h = h;
+      if (pr !== pixelRatio) {
+        pixelRatio = pr;
+        renderer.setPixelRatio(pr);
+        composer.setPixelRatio(pr);
+      }
+      renderer.setSize(w, h, false);
+      composer.setSize(w, h);
+    }
+    framedView = view;
+    resizePerspectiveCamera(camera, w, h, view);
   };
   const ray = new THREE.Raycaster();
   const ndc = new THREE.Vector2();
@@ -139,5 +136,5 @@ export function createStage(canvas) {
     outline.hiddenEdgeColor.set(t === 'light' ? '#b50b28' : t === 'soft' ? '#a50e2b' : '#ff4056');
   };
   const render = () => composer.render();
-  return {renderer, scene, camera, controls, eng, flows, resize, setPresentationOffset, render, pick, project, setCut, setOutline, setTheme, size};
+  return {renderer, scene, camera, controls, eng, flows, resize, render, pick, project, setCut, setOutline, setTheme, size};
 }

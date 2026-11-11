@@ -84,3 +84,13 @@ At 125% text, headings use 40–52 px on desktop and 26–32 px on phones, scali
 Layout measures the entire title composition before placing menus and docked drawers. The title stays centered when a drawer changes the model's presentation offset. At heights of 500 px or less, the counter omits its word prefix, the heading uses a 26 px base, and the camera becomes a two-column bottom-right grid. Names sits above playback. An open timeline reserves space around both controls and scrolls internally at extreme text enlargement, keeping its controls reachable.
 
 Browser review covers all eight views in Spanish and English across 375, 768, 1024 and 1440 px widths, plus 812 × 375 landscape, at 125%, 160% and 240% text. Evidence and measured results are in `tests/cinematic-title-review/` and `tests/cinematic-title-ui-review.json`. Keyboard view navigation, Escape focus return, centered titles with a panel, reduced motion and language-preserved Assembly progress were also checked.
+
+## Responsive scene framing
+
+The explorer scales its title, utility text and spacing using both viewport axes and the saved text preference. Navigation sits beside the title when it fits and moves below it when it needs another row. Playback, camera controls and optional names use a separate bottom dock. In short landscape views the dock uses accessible icons with 44 px targets; longer control rows stack when they exceed the available width.
+
+The actual WebGL area starts below the title and navigation and ends above the dock and any open timeline. It fits next to a docked side panel. The projection maintains horizontal and vertical clearance for each reference view while preserving the orbit target and manual zoom. Selection and part labels use the new canvas coordinates. The transparent scene uses the same page background, with no second background layer.
+
+The model opens without the previous default numbered pins. The Names control reveals labels on demand, and Display still offers all label modes. Saved explicit name and selected-part modes carry forward.
+
+Checked 320 × 568, 375 × 812, 568 × 320, 812 × 375, 768 × 600, 1024 × 600, 1440 × 900 and 1920 × 1080 at 125% and 240% text in Exterior, Timing Covers Off and Assembly. The framing regression checks the actual model meshes in six bounded canvas sizes, including square and short scenes.

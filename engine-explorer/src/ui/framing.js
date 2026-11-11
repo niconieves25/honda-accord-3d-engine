@@ -1,27 +1,25 @@
-// Preserve the desktop reference lens; portrait adds breathing room on its
-// shorter axis. The actual valve-view accessories and completed assembly crop
-// at a 30–36° horizontal lens. A 44° portrait reference contains those canonical
-// poses with at least 15 CSS pixels of side clearance on a 375 px phone.
-// Projection changes leave the user's orbit target, orientation and zoom intact.
-export const PORTRAIT_REFERENCE_FOV = 44;
-export function resizePerspectiveCamera(camera, width, height, baseFov = 30, presentationScale = 1) {
-  const w = Math.max(1, Number.isFinite(width) ? width : 1);
-  const h = Math.max(1, Number.isFinite(height) ? height : 1);
-  const aspect = w / h;
-  const scale = Number.isFinite(presentationScale) && presentationScale > 0 ? Math.min(1, presentationScale) : 1;
-  const referenceFov = aspect < 1 ? Math.max(baseFov, PORTRAIT_REFERENCE_FOV) : baseFov;
-  const halfReference = referenceFov * Math.PI / 360;
-  camera.aspect = aspect;
-  camera.fov = aspect >= 1 && scale === 1 ? baseFov : 2 * Math.atan(Math.tan(halfReference) / Math.min(1, aspect) / scale) * 180 / Math.PI;
-  camera.updateProjectionMatrix();
-}
+// Minimum vertical and horizontal field of view for each reference pose.
+// The valve view and completed assembly need extra room around their geometry.
+const lenses = new Map([
+  ['exterior', [36, 42]],
+  ['noCover', [42, 48]],
+  ['noTiming', [34, 40]],
+  ['cutaway', [30, 36]],
+  ['lower', [32, 36]],
+  ['iab', [30, 38]],
+  ['exploded', [30, 38]],
+  ['assembly', [50, 50]],
+]);
+const halfAngle = Math.PI / 360;
 
-// Shift the composition beneath a nonmodal side panel without changing the
-// orbit pivot. Positive offsets shift the rendered engine left in CSS pixels.
-export function setPerspectivePresentationOffset(camera, width, height, offsetX = 0) {
+export function resizePerspectiveCamera(camera, width, height, view = 'exterior') {
   const w = Math.max(1, Number.isFinite(width) ? width : 1);
   const h = Math.max(1, Number.isFinite(height) ? height : 1);
-  const x = Number.isFinite(offsetX) ? offsetX : 0;
-  if (x === 0) camera.clearViewOffset();
-  else camera.setViewOffset(w, h, x, 0, w, h);
+  const [vertical, horizontal] = lenses.get(view) ?? lenses.get('exterior');
+  camera.aspect = w / h;
+  // Choose the more constrained axis without a jump at square sizes.
+  // Resizing the lens leaves the orbit target, orientation and user zoom intact.
+  const tangent = Math.max(Math.tan(vertical * halfAngle), Math.tan(horizontal * halfAngle) / camera.aspect);
+  camera.fov = Math.atan(tangent) / halfAngle;
+  camera.updateProjectionMatrix();
 }

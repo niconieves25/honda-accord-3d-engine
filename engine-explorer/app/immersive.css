@@ -1,7 +1,10 @@
 /* Scene-first shell. Panel contents keep the existing instrument vocabulary;
    these terminal rules own viewport layout in every view and text size. */
 #app.immersive-shell{
-  --hud-gap:clamp(12px,1.5vw,24px);
+  --hud-gap:clamp(8px,min(1.25vw,1.8dvh),18px);
+  --reader-scale:calc(var(--scale,1.25) / 1.25);
+  --control-font:calc(clamp(12px,min(1.25vw,2.3dvh),14px) * var(--reader-scale));
+  font-size:calc(clamp(16px,min(2.2vw,3.6dvh),18px) * var(--scale,1.25));
   --drawer-width:clamp(340px,32vw,460px);
   position:fixed;inset:0;display:block;grid-template-rows:none;
   width:100%;height:100dvh!important;min-height:0!important;
@@ -15,52 +18,51 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   overflow:visible;box-shadow:none;background:transparent;pointer-events:none;
 }
 #app.immersive-shell .stagewrap{
-  position:absolute;inset:0;z-index:1;display:block;flex:none;
-  width:100%;height:100%!important;min-height:0!important;max-height:none;
+  position:absolute;inset:var(--scene-top,150px) var(--scene-right,var(--hud-gap)) var(--scene-bottom,64px) var(--scene-left,var(--hud-gap));z-index:1;display:block;flex:none;
+  width:auto;height:auto!important;min-height:0!important;max-height:none;
   margin:0;border:0;border-radius:0;overflow:hidden;background:transparent;pointer-events:auto;
 }
 #app.immersive-shell #gl{width:100%;height:100%;inset:0}
 #app.immersive-shell .top{
   position:absolute;z-index:20;top:var(--hud-gap);left:var(--hud-gap);right:var(--hud-gap);
-  min-width:0;min-height:48px;display:flex;flex-wrap:nowrap!important;align-items:center;
+  min-width:0;min-height:44px;display:flex;flex-wrap:nowrap!important;align-items:center;
   gap:12px;margin:0;padding:0;pointer-events:none;
 }
-#app.immersive-shell .brand-mark{display:grid;width:48px;height:48px;border-radius:12px}
-#app.immersive-shell .brand-mark .ui-icon{width:32px;height:32px}
+#app.immersive-shell .brand-mark{display:grid;width:44px;height:44px;border-radius:10px}
+#app.immersive-shell .brand-mark .ui-icon{width:28px;height:28px}
 #app.immersive-shell .titles{flex:1;min-width:0;max-width:none}
-#app.immersive-shell h1{width:max-content;max-width:100%;font-size:.88em;line-height:1.15;margin:0;text-shadow:0 1px 8px var(--bg)}
+#app.immersive-shell h1{width:max-content;max-width:100%;font-size:calc(clamp(15px,min(1.5vw,3.3dvh),20px) * var(--reader-scale));line-height:1.15;margin:0;text-shadow:0 1px 8px var(--bg)}
 #app.immersive-shell .brand-short{display:none}
-#app.immersive-shell .topbtns{flex:none;gap:8px;margin:0;font-size:.64em;pointer-events:auto}
-#app.immersive-shell .topbtns>button,#app.immersive-shell .help-menu>summary{min-height:44px;background:var(--btn)}
-#app.immersive-shell .language-control select{font-size:1em;min-width:112px;background:var(--btn)}
+#app.immersive-shell .topbtns{flex:none;gap:6px;margin:0;font-size:var(--control-font);pointer-events:auto}
+#app.immersive-shell .topbtns>button,#app.immersive-shell .help-menu>summary{min-height:44px;padding:6px 10px;background:var(--btn)}
+#app.immersive-shell .language-control select{font-size:1em;min-width:104px;padding-block:6px;background:var(--btn)}
 #app.immersive-shell .help-options{top:calc(100% + 8px);min-width:240px;background:var(--panel)}
 
-/* Small edge controls remain discoverable while the canvas fills the viewport. */
-#app.immersive-shell .immersive-rail{position:absolute;z-index:21;top:calc(var(--hud-gap) + 76px);display:flex;pointer-events:auto}
+/* Navigation shares the title band when there is enough horizontal room. */
+#app.immersive-shell .immersive-rail{position:absolute;z-index:21;top:var(--view-rail-top,98px);display:flex;pointer-events:auto}
 #app.immersive-shell .immersive-rail-left{left:var(--hud-gap)}
 #app.immersive-shell .immersive-rail-right{right:var(--hud-gap)}
-#app.immersive-shell .immersive-toggle{min-height:48px;padding:10px 14px;font-size:.67em;background:var(--btn);border-color:var(--line);box-shadow:none}
+#app.immersive-shell .immersive-toggle{min-height:44px;padding:6px 10px;font-size:var(--control-font);background:var(--btn);border-color:var(--line);box-shadow:none}
 #app.immersive-shell .immersive-toggle>.mechanical-icon{width:24px;height:24px;flex-basis:24px;color:var(--accent)}
 #app.immersive-shell .immersive-toggle:hover{border-color:var(--accent)}
 #app.immersive-shell .immersive-toggle[aria-expanded=true]{border-color:var(--accent);background:var(--red-inset);color:var(--fg)}
 #app.immersive-shell .viewer-heading{
   position:absolute;z-index:18;top:var(--view-title-top,var(--hud-gap));left:50%;transform:translateX(-50%);
-  --view-heading-base:clamp(40px,3.6vw,52px);
-  display:flex;flex-direction:column;justify-content:center;align-items:center;width:min(1100px,calc(100% - 24px));
+  --view-heading-base:clamp(20px,min(3vw,5dvh),42px);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;width:var(--view-title-width,calc(100% - var(--hud-gap) * 2));
   padding:0;margin:0;border:0;border-radius:0;background:transparent;pointer-events:none;
 }
-#app.immersive-shell .view-title-composition{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;min-width:0}
+#app.immersive-shell .view-title-composition{display:flex;flex-direction:column;align-items:center;gap:4px;width:100%;min-width:0}
 #app.immersive-shell .view-eyebrow{
   margin:0;font-size:calc(11px * var(--scale,1.25) / 1.25);font-weight:500;line-height:1.3;
   letter-spacing:.16em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:var(--dim);
 }
 #app.immersive-shell .viewer-heading h2{
-  margin:0;width:100%;font-family:var(--font-heading);font-size:calc(var(--view-heading-base) * var(--scale,1.25) / 1.25);
+  margin:0;width:100%;font-family:var(--font-heading);font-size:calc(var(--view-heading-base) * var(--reader-scale));
   line-height:1.1;font-weight:700;text-align:center;text-transform:uppercase;color:var(--fg);
   letter-spacing:.035em;text-wrap:balance;hyphens:auto;overflow-wrap:anywhere;text-shadow:none;
 }
-#app.immersive-shell .view-title-rule{display:block;flex:none;width:72px;height:3px;margin-top:4px;background:var(--accent)}
-#app.immersive-shell .immersive-rail{top:var(--view-rail-top,calc(var(--hud-gap) + 76px))}
+#app.immersive-shell .view-title-rule{display:block;flex:none;width:72px;height:3px;background:var(--accent)}
 #app.immersive-shell .view-hint{display:none}
 
 /* Transparent drawers sit over a temporary scrim, preserving the scene behind
@@ -76,8 +78,8 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .immersive-drawer:not([hidden]){animation:drawer-arrive 160ms ease-out}
 #app.immersive-shell .immersive-drawer-left{left:var(--hud-gap)}
 #app.immersive-shell .immersive-drawer-right{right:var(--hud-gap)}
-#app.immersive-shell[data-drawer-mode=docked] .immersive-drawer{top:var(--view-drawer-top,calc(var(--hud-gap) + 138px))}
-#app.immersive-shell[data-drawer-mode=docked] .immersive-backdrop{top:var(--view-drawer-top,calc(var(--hud-gap) + 138px));width:calc(var(--active-panel-width,460px) + var(--hud-gap)*3);pointer-events:none}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-drawer{top:var(--scene-top,150px)}
+#app.immersive-shell[data-drawer-mode=docked] .immersive-backdrop{top:var(--scene-top,150px);width:calc(var(--active-panel-width,460px) + var(--hud-gap)*2);pointer-events:none}
 #app.immersive-shell[data-drawer-mode=docked][data-drawer=inspector] .immersive-backdrop{left:auto;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
 #app.immersive-shell[data-drawer-mode=docked][data-drawer=views] .immersive-backdrop{right:auto;background:linear-gradient(270deg,transparent,color-mix(in srgb,var(--bg) 92%,transparent) 18%,color-mix(in srgb,var(--bg) 96%,transparent))}
 #app.immersive-shell .immersive-drawer-heading{
@@ -111,14 +113,14 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .assembly-inspector-heading button{margin:0;width:100%;font-size:.6em}
 #app.immersive-shell .assembly-inspector-scroll{flex:1;min-height:0;max-height:none!important;overflow:auto!important;padding:16px;scroll-padding:18px;overscroll-behavior:contain}
 
-/* Both timelines occupy one floating dock; the engine canvas never resizes. */
+/* The optional timeline stays above the dock and below the engine. */
 #app.immersive-shell .transport,
 #app.immersive-shell .assembly-transport{
-  position:absolute;z-index:20;left:calc(50% - var(--scene-shift,0px));bottom:calc(var(--hud-gap) + 62px);transform:translateX(-50%);
-  width:max-content;max-width:calc(100% - var(--hud-gap)*2);max-height:42dvh;
-  margin:0;padding:10px 12px;border:1px solid var(--line);border-radius:14px;
+  position:absolute;z-index:20;left:var(--scene-left,var(--hud-gap));right:var(--scene-right,var(--hud-gap));bottom:var(--timeline-bottom,64px);
+  width:max-content;max-width:calc(100% - var(--scene-left,var(--hud-gap)) - var(--scene-right,var(--hud-gap)));max-height:var(--timeline-max-height,160px);
+  margin:0 auto;padding:6px 10px;border:1px solid var(--line);border-radius:10px;
   background:transparent;box-shadow:none;overflow:auto;overscroll-behavior:contain;
-  pointer-events:auto;text-shadow:0 1px 5px var(--bg);font-size:.65em;
+  pointer-events:auto;font-size:var(--control-font);
 }
 #app.immersive-shell .transport{display:flex;flex-wrap:wrap;gap:12px}
 #app.immersive-shell .transport .grp{width:auto;flex-wrap:wrap;gap:6px}
@@ -128,18 +130,24 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .speed-control{flex:none;min-width:0;flex-wrap:nowrap}
 #app.immersive-shell .speed-control>span{display:none}
 #app.immersive-shell .speed-control select{max-width:190px;background:var(--btn)}
-#app.immersive-shell .assembly-transport{width:min(860px,calc(100% - var(--hud-gap)*2));display:grid;gap:6px}
+#app.immersive-shell .assembly-transport{width:760px;display:grid;gap:6px}
 #app.immersive-shell:not([data-controls=open]) .transport,
 #app.immersive-shell:not([data-controls=open]) .assembly-transport{display:none!important}
 #app.immersive-shell #engine-playback #btn-play,
 #app.immersive-shell #assembly-transport #assembly-play{display:none}
-#app.immersive-shell .immersive-playback{position:absolute;z-index:20;left:calc(50% - var(--scene-shift,0px));bottom:var(--hud-gap);transform:translateX(-50%);display:flex;align-items:stretch;gap:8px;width:max-content;max-width:calc(100% - var(--hud-gap)*2);pointer-events:auto;font-size:.65em}
-#app.immersive-shell .immersive-playback button{min-height:48px;min-width:0;padding:10px 14px;flex:1 1 auto}
+#app.immersive-shell .scene-dock{
+  position:absolute;z-index:20;left:var(--scene-left,var(--hud-gap));right:var(--scene-right,var(--hud-gap));bottom:var(--hud-gap);
+  display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);grid-template-areas:"names playback camera";
+  align-items:center;gap:6px;font-size:var(--control-font);pointer-events:none;
+}
+#app.immersive-shell .scene-dock[data-layout=stacked]{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"names camera" "playback playback"}
+#app.immersive-shell .scene-dock[data-layout=compact]{grid-template-columns:auto minmax(0,1fr) auto}
+#app.immersive-shell .immersive-playback{grid-area:playback;justify-self:center;display:flex;align-items:stretch;gap:6px;max-width:100%;min-width:0;pointer-events:auto}
+#app.immersive-shell .immersive-playback button{min-height:44px;min-width:44px;padding:6px 10px}
+#app.immersive-shell .immersive-playback button>span{min-width:0;overflow-wrap:anywhere}
 #app.immersive-shell #btn-quick-play{background:var(--action);border-color:var(--red-edge);color:white;font-weight:500}
 #app.immersive-shell #btn-controls-toggle{background:var(--btn)}
 #app.immersive-shell #btn-controls-toggle[aria-expanded=true]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
-#app.immersive-shell[data-drawer-mode=docked][data-drawer] .transport,
-#app.immersive-shell[data-drawer-mode=docked][data-drawer] .assembly-transport{max-width:calc(100% - var(--active-panel-width,0px) - var(--hud-gap)*3)}
 #app.immersive-shell .assembly-buttons{gap:6px}
 #app.immersive-shell .assembly-buttons .primary{flex:0 1 auto;min-width:0}
 #app.immersive-shell .assembly-buttons label{margin-left:auto;font-size:.95em;flex:none;flex-wrap:nowrap}
@@ -147,7 +155,7 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .assembly-scrubber{flex-wrap:nowrap;gap:10px;font-size:.9em}
 #app.immersive-shell .assembly-scrubber label{flex:0 0 auto;min-width:0}
 #app.immersive-shell .assembly-scrubber input{flex:1;min-width:44px}
-#app.immersive-shell .legend{bottom:140px;font-size:.55em;max-width:min(360px,calc(100% - 32px))}
+#app.immersive-shell .legend{bottom:8px;font-size:.55em;max-width:min(360px,calc(100% - 24px))}
 #app.immersive-shell .dialog{z-index:50;top:var(--hud-gap);right:var(--hud-gap);max-height:calc(100dvh - var(--hud-gap)*2)}
 #app.immersive-shell .dialog[hidden]{display:none!important}
 #app.immersive-shell .lab3d{font-size:clamp(11px,.48em,20px)}
@@ -155,28 +163,20 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 @keyframes drawer-arrive{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
 @media(max-width:1000px){
   #app.immersive-shell .top{gap:10px}
-  #app.immersive-shell .brand-mark{width:44px;height:44px}
-  #app.immersive-shell h1{font-size:.76em}
-  #app.immersive-shell .topbtns{font-size:.61em;gap:6px}
 }
 @media(max-width:700px){
-  #app.immersive-shell .viewer-heading{--view-heading-base:clamp(26px,4.4vw,32px);width:calc(100% - 12px)}
-  #app.immersive-shell{--hud-gap:12px;--drawer-width:calc(100vw - 24px)}
+  #app.immersive-shell .viewer-heading{--view-heading-base:clamp(20px,min(6.4vw,4.8dvh),30px)}
+  #app.immersive-shell{--drawer-width:calc(100vw - 24px)}
   #app.immersive-shell .top{gap:8px;min-height:44px;align-items:center}
   #app.immersive-shell .brand-mark{display:none}
   #app.immersive-shell .titles{flex:1;flex-basis:auto!important}
   #app.immersive-shell .brand-full{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
   #app.immersive-shell .brand-short{display:block}
-  #app.immersive-shell h1{font-size:.74em}
-  #app.immersive-shell .topbtns{flex-wrap:nowrap;font-size:.58em;gap:6px}
+  #app.immersive-shell .topbtns{flex-wrap:nowrap}
   #app.immersive-shell .language-control select{min-width:106px;max-width:134px;padding-left:10px}
   #app.immersive-shell #btn-settings,#app.immersive-shell .help-menu>summary{width:44px;padding:9px;gap:0}
   #app.immersive-shell #btn-settings>span,#app.immersive-shell .help-menu>summary>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-  #app.immersive-shell .immersive-toggle{padding:8px 10px;font-size:.61em;min-height:44px}
   #app.immersive-shell .immersive-drawer{top:12px;bottom:12px;max-width:calc(100vw - 24px)}
-  #app.immersive-shell .transport,#app.immersive-shell .assembly-transport{font-size:.61em;padding:8px;max-height:38dvh;bottom:calc(var(--hud-gap) + 80px)}
-  #app.immersive-shell .immersive-playback{font-size:.61em}
-  #app.immersive-shell .immersive-playback button{padding:9px 12px}
   #app.immersive-shell .transport{width:max-content;gap:7px;justify-content:center}
   #app.immersive-shell .transport .big{min-width:110px}
   #app.immersive-shell .transport .grp{justify-content:center;flex:1}
@@ -189,13 +189,16 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
   #app.immersive-shell .assembly-scrubber label{flex:1 1 calc(100% - 60px);font-size:.9em}
   #app.immersive-shell .assembly-scrubber input{order:3;flex:1 0 100%;min-height:32px}
   #app.immersive-shell .assembly-scrubber output{flex:0 0 auto;min-width:4ch}
-  #app.immersive-shell .legend{bottom:170px;left:12px;max-width:calc(100% - 24px)}
 }
 @media(max-height:500px){
-  #app.immersive-shell .top{top:8px}
-  #app.immersive-shell .immersive-toggle{min-height:44px;padding:4px 10px;line-height:1.1}
-  #app.immersive-shell .assembly-transport{gap:0;padding:6px 10px}
-  #app.immersive-shell .assembly-buttons button{min-height:44px}
+  #app.immersive-shell #view-counter-label{display:none}
+}
+@media(max-height:420px) and (max-width:900px){
+  #app.immersive-shell .viewer-heading{--view-heading-base:clamp(16px,4.8dvh,20px)}
+  #app.immersive-shell :is(.immersive-toggle,.scene-label-toggle,.immersive-playback button){width:44px;padding:8px;gap:0}
+  #app.immersive-shell :is(.immersive-toggle,.scene-label-toggle,.immersive-playback button)>span{
+    position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
 }
 :root[data-large-text=true] #app.immersive-shell .immersive-drawer{width:min(600px,calc(100vw - var(--hud-gap)*2))}
 :root[data-large-text=true] #app.immersive-shell .top .brand-mark{display:none}
@@ -203,6 +206,13 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 :root[data-large-text=true] #app.immersive-shell .top .brand-short{display:block}
 :root[data-large-text=true] #app.immersive-shell .topbtns>button,:root[data-large-text=true] #app.immersive-shell .help-menu>summary{width:44px;padding:9px;gap:0}
 :root[data-large-text=true] #app.immersive-shell .topbtns>button>span,:root[data-large-text=true] #app.immersive-shell .help-menu>summary>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:390px){
+  :root[data-large-text=true] #app.immersive-shell #btn-controls-toggle{width:44px;padding:8px;gap:0}
+  :root[data-large-text=true] #app.immersive-shell #btn-controls-toggle>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+}
+@media(max-width:350px){
+  :root[data-large-text=true] #app.immersive-shell .top h1{font-size:calc(11.5px * var(--reader-scale))}
+}
 @media(prefers-reduced-motion:reduce){#app.immersive-shell .immersive-drawer:not([hidden]){animation:none}}
 :root[data-reduced-motion=true] #app.immersive-shell .immersive-drawer:not([hidden]){animation:none}
 
@@ -247,47 +257,14 @@ html:has(.immersive-shell),body:has(.immersive-shell){height:100%;overflow:hidde
 #app.immersive-shell .annotation-name{font-family:var(--font-heading);font-weight:600;font-size:1.15em;line-height:1.25;overflow-wrap:anywhere}
 #app.immersive-shell .annotation-details{align-self:flex-start;min-height:44px;padding:8px 12px;background:transparent;font-size:.9em;border-color:var(--line)}
 
-/* Zoom stays available in every view, including Assembly, and uses the same
-   orbit camera as the wheel and keyboard controls. */
-#app.immersive-shell .scene-zoom{
-  position:absolute;z-index:19;top:var(--view-camera-top,50%);right:var(--hud-gap);transform:none;
-  display:flex;flex-direction:column;gap:6px;align-items:center;pointer-events:auto;
-}
-#app.immersive-shell .scene-tool-caption{font-size:12px;font-weight:500;text-shadow:0 1px 5px var(--bg);color:var(--dim)}
-#app.immersive-shell .scene-zoom button{width:48px;height:48px;padding:10px;background:var(--btn)}
+/* All orbit controls sit outside the scene, with 44 px hit targets. */
+#app.immersive-shell .scene-zoom{grid-area:camera;justify-self:end;display:flex;gap:4px;pointer-events:auto}
+#app.immersive-shell .scene-zoom button{width:44px;height:44px;padding:8px;background:var(--btn)}
 #app.immersive-shell .scene-label-toggle{
-  position:absolute;z-index:19;left:var(--hud-gap);bottom:var(--hud-gap);min-height:48px;
-  padding:10px 12px;pointer-events:auto;background:var(--btn);font-size:.62em;
+  grid-area:names;justify-self:start;min-height:44px;min-width:44px;max-width:100%;
+  padding:6px 10px;pointer-events:auto;background:var(--btn);font-size:inherit;
 }
 #app.immersive-shell .scene-label-toggle[aria-pressed=true]{background:var(--red-inset);color:var(--fg);border-color:var(--accent)}
-#app.immersive-shell[data-drawer-mode=docked][data-drawer=inspector] .scene-zoom{right:calc(var(--active-panel-width,0px) + var(--hud-gap)*2)}
-#app.immersive-shell[data-drawer-mode=docked][data-drawer=views] .scene-label-toggle{left:calc(var(--active-panel-width,0px) + var(--hud-gap)*2)}
-@media(max-width:700px){
-  #app.immersive-shell .scene-label-toggle{bottom:calc(var(--hud-gap) + 70px);font-size:.6em}
-  #app.immersive-shell .scene-zoom{right:12px;top:auto;bottom:calc(var(--hud-gap) + 70px);transform:none;flex-direction:row;gap:6px}
-  #app.immersive-shell .scene-tool-caption{display:none}
-  #app.immersive-shell .scene-zoom button{width:44px;height:44px;padding:9px}
-  #app.immersive-shell[data-controls=open] .scene-label-toggle,
-  #app.immersive-shell[data-controls=open] .scene-zoom{top:180px;bottom:auto}
-}
-@media(max-height:500px){
-  #app.immersive-shell .viewer-heading{--view-heading-base:26px}
-  #app.immersive-shell .view-title-composition{gap:5px}
-  #app.immersive-shell #view-counter-label{display:none}
-  #app.immersive-shell .scene-label-toggle,
-  #app.immersive-shell[data-controls=open] .scene-label-toggle{top:auto;bottom:calc(var(--hud-gap) + 62px)}
-  #app.immersive-shell .scene-zoom,
-  #app.immersive-shell[data-controls=open] .scene-zoom{top:auto;bottom:var(--hud-gap);transform:none;display:grid;grid-template-columns:repeat(2,44px);gap:6px}
-  #app.immersive-shell .scene-zoom button{width:44px;height:44px;padding:9px}
-  #app.immersive-shell .scene-zoom #btn-reset{grid-column:1 / -1;width:100%}
-  #app.immersive-shell .scene-tool-caption{display:none}
-  #app.immersive-shell .transport,
-  #app.immersive-shell .assembly-transport{
-    left:var(--low-transport-left,var(--hud-gap));right:var(--low-transport-right,calc(var(--hud-gap) + 106px));
-    bottom:var(--low-transport-bottom,80px);width:auto;max-width:none!important;transform:none;
-    max-height:max(48px,min(31dvh,calc(100dvh - var(--view-drawer-top,180px) - var(--low-transport-bottom,80px))));
-  }
-}
 
 /* Structural section headings share the view title treatment. Component names,
    body copy and action labels retain their normal casing. */
