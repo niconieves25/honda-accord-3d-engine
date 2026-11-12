@@ -94,3 +94,7 @@ The actual WebGL area starts below the title and navigation and ends above the d
 The model opens without the previous default numbered pins. The Names control reveals labels on demand, and Display still offers all label modes. Saved explicit name and selected-part modes carry forward.
 
 Checked 320 × 568, 375 × 812, 568 × 320, 812 × 375, 768 × 600, 1024 × 600, 1440 × 900 and 1920 × 1080 at 125% and 240% text in Exterior, Timing Covers Off and Assembly. The framing regression checks the actual model meshes in six bounded canvas sizes, including square and short scenes.
+
+## Contained dropdown arrows
+
+`src/ui/controls.css` loads last in both viewers. All 13 single-select controls share a 16 px SVG indicator inset 12 px from the edge and reserve 40 px for it. This replaces the native edge arrow and the previous language-only pseudo-element. The controls remain native selects, retaining their labels, values and events. The indicator follows the three existing themes and logical text direction; forced-colors mode restores the system indicator. Reviewed the engine speed control on desktop and a 375 px phone at 240% text, plus all main, Assembly and Anatomy select styles.
